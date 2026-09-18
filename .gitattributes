@@ -1,0 +1,4 @@
+# Archival data files must stay byte-for-byte identical to their documented
+# SHA-256 checksum on every platform. Treat as binary so git never rewrites
+# line endings on checkout or commit, regardless of core.autocrlf.
+data/** -text
