@@ -27,7 +27,7 @@ Not "solve it in one shot" — run a rigorous, falsification-driven process acro
 
 ## Status
 
-Bootstrap. Agent roles, process, and Claude↔ChatGPT comms protocol defined; first real corpus analysis pending real EVA transcription data (see `data/README.md`). First comms round posted, awaiting ChatGPT's reply.
+Active. Canonical EVA transcription imported (`data/ZL3b-n.txt`, ZL 3b), normalized into a tokenized corpus with a full ambiguity audit trail, and Statistician pass 1 complete (entropy, word-length, Zipf, Currier A/B split — see `knowledge-base/state.md`). No natural-language baseline yet, so those numbers aren't interpretable as findings about meaning yet. Four comms rounds in; public site live at the link below.
 
 
 ## Public research site

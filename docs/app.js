@@ -11,7 +11,15 @@ function escapeHtml(value) {
 function inlineMarkdown(value) {
   let text = escapeHtml(value);
   text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
-  text = text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+|[^\s)]+)\)/g, '<a href="$2">$1</a>');
+  text = text.replace(/\[([^\]]+)\]\(([^\s)]+)\)/g, (match, label, href) => {
+    // Repository content is written by two AI agents from largely
+    // uncontrolled research material; only allow http(s) links or
+    // scheme-less relative paths through to a clickable href, so a
+    // markdown link can't smuggle a javascript:/data: URI onto this
+    // public page.
+    const safe = /^https?:\/\//i.test(href) || !/^[a-z][a-z0-9+.-]*:/i.test(href);
+    return safe ? `<a href="${href}">${label}</a>` : label;
+  });
   text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   text = text.replace(/__([^_]+)__/g, '<strong>$1</strong>');
   text = text.replace(/(?<!\*)\*([^*]+)\*(?!\*)/g, '<em>$1</em>');
