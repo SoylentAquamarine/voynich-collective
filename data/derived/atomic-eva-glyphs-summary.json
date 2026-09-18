@@ -1,0 +1,22 @@
+{
+  "atomic_glyph_set": [
+    "ckh",
+    "cth",
+    "cph",
+    "cfh",
+    "ch",
+    "sh"
+  ],
+  "not_implemented": [
+    "qo- clustering",
+    "in/ii/iii minim-group clustering"
+  ],
+  "source": "data/derived/ZL3b-normalized.txt",
+  "char_level_constraint_reference": 0.4539,
+  "glyph_level_constraint_ratio": 0.4247,
+  "glyph_alphabet_size": 48,
+  "total_glyph_tokens": 176471,
+  "multi_char_glyph_occurrences": 17726,
+  "glyph_h1_bits": 3.9679,
+  "glyph_h2_bits": 2.2829
+}
