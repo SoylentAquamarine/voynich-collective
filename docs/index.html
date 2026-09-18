@@ -47,14 +47,29 @@
       <section class="status-panel" aria-labelledby="status-title">
         <div>
           <p class="kicker">Where the work stands</p>
-          <h2 id="status-title">Foundation laid. Corpus analysis beginning.</h2>
+          <h2 id="status-title">Loading current status…</h2>
         </div>
         <div class="status-grid">
-          <div><strong>1</strong><span>confirmed finding</span></div>
+          <div><strong id="stat-findings">–</strong><span>confirmed findings</span></div>
           <div><strong>5</strong><span>specialist lenses</span></div>
           <div><strong>2</strong><span>AI collaborators</span></div>
         </div>
-        <p>The canonical source is the Zandbergen–Landini ZL 3b transcription, preserved with its uncertainty markers. The next task is reproducible normalization before statistical analysis.</p>
+        <p id="status-summary">Reading the live knowledge base…</p>
+      </section>
+
+      <section class="status-panel snapshot-panel" aria-labelledby="snapshot-title">
+        <div>
+          <p class="kicker">Statistician, pass 1</p>
+          <h2 id="snapshot-title">Corpus measured. Not yet interpreted.</h2>
+          <p class="snapshot-caveat">No natural-language baseline exists yet — these are measurements, not conclusions about meaning. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/statistician-pass1-report.md">Full method ↗</a></p>
+        </div>
+        <div class="status-grid snapshot-grid" id="snapshot-grid">
+          <div><strong id="snap-tokens">–</strong><span>tokens (words)</span></div>
+          <div><strong id="snap-vocab">–</strong><span>unique word types</span></div>
+          <div><strong id="snap-entropy">–</strong><span>char entropy H1 (bits)</span></div>
+          <div><strong id="snap-zipf">–</strong><span>Zipf log-log slope</span></div>
+        </div>
+        <div class="currier-compare" id="currier-compare" aria-label="Currier A vs B comparison">Loading Currier A/B comparison…</div>
       </section>
     </section>
 

@@ -60,6 +60,15 @@ nav a.active, nav a:hover { color: var(--red); border-color: var(--red); }
 .status-grid strong { display: block; font: 400 2.5rem var(--serif); color: var(--red); }
 .status-grid span { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }
 
+.snapshot-panel { margin-top: 2rem; background: var(--paper-light); }
+.snapshot-caveat { margin: .75rem 0 0; color: #6b6252; font-family: var(--sans); font-size: .85rem; line-height: 1.6; }
+.snapshot-caveat a { color: var(--red); }
+.status-grid.snapshot-grid { grid-template-columns: repeat(2, 1fr); }
+.snapshot-grid strong { font-size: 2rem; color: var(--moss); }
+.currier-compare { grid-column: 1 / -1; display: grid; gap: .6rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.currier-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem; font-family: var(--sans); font-size: .88rem; color: #5f574b; }
+.currier-label { flex: 0 0 auto; padding: .15rem .55rem; border-radius: 3px; background: var(--paper-dark); font-weight: 700; font-size: .74rem; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); }
+
 .document-route { padding: clamp(3rem, 7vw, 7rem) clamp(1rem, 6vw, 6rem); }
 .section-intro { max-width: 780px; margin: 0 auto 3.5rem; text-align: center; }
 .section-intro h1 { margin: .25rem 0 1rem; font: 400 clamp(3rem, 6vw, 5.6rem)/1 var(--serif); letter-spacing: -.04em; }

@@ -18,17 +18,23 @@ Usage:
 Reads:  data/ZL3b-n.txt (for page -> Currier language headers)
         data/derived/ZL3b-normalized.txt
 Writes: data/derived/statistician-pass1-report.md
+        data/derived/statistician-pass1-summary.json (machine-readable
+        headline figures only, for the public site's live stat tiles --
+        the report.md above remains the authoritative, full-detail output)
 """
 
+import json
 import math
 import re
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 RAW = REPO_ROOT / "data" / "ZL3b-n.txt"
 NORMALIZED = REPO_ROOT / "data" / "derived" / "ZL3b-normalized.txt"
 OUT_REPORT = REPO_ROOT / "data" / "derived" / "statistician-pass1-report.md"
+OUT_SUMMARY = REPO_ROOT / "data" / "derived" / "statistician-pass1-summary.json"
 
 PAGE_HEADER = re.compile(r'^<(f[^>]+)>\s+<!.*\$L=([AB]).*>')
 LOCUS_PAGE = re.compile(r'^(f[^.,]+)[.,]')
@@ -128,21 +134,38 @@ def word_length_stats(words):
 def analyze(words, label, report_lines):
     wc = Counter(words)
     char_counts = Counter(''.join(words))
+    char_h1 = shannon_entropy(char_counts)
+    char_h2 = char_bigram_conditional_entropy(words)
+    word_h1 = shannon_entropy(wc)
+    slope = zipf_slope(wc)
+    wl = word_length_stats(words)
+
     report_lines.append(f"### {label}\n")
     report_lines.append(f"- Tokens: {len(words)}")
     report_lines.append(f"- Vocabulary (unique word types): {len(wc)}")
     report_lines.append(f"- Type-token ratio: {len(wc) / len(words):.4f}" if words else "- Type-token ratio: n/a")
-    wl = word_length_stats(words)
     if wl:
         report_lines.append(f"- Word length: mean {wl['mean']:.2f}, stdev {wl['stdev']:.2f}, range {wl['min']}-{wl['max']}")
-    report_lines.append(f"- Character-level entropy H1 (unconditional): {shannon_entropy(char_counts):.4f} bits")
-    report_lines.append(f"- Character bigram conditional entropy H(X_i|X_{{i-1}}): {char_bigram_conditional_entropy(words):.4f} bits")
-    report_lines.append(f"- Word-level entropy (unconditional, over word-type distribution): {shannon_entropy(wc):.4f} bits")
-    slope = zipf_slope(wc)
+    report_lines.append(f"- Character-level entropy H1 (unconditional): {char_h1:.4f} bits")
+    report_lines.append(f"- Character bigram conditional entropy H(X_i|X_{{i-1}}): {char_h2:.4f} bits")
+    report_lines.append(f"- Word-level entropy (unconditional, over word-type distribution): {word_h1:.4f} bits")
     report_lines.append(f"- Zipf log-log slope (top 500 ranks): {slope:.4f}" if slope is not None else "- Zipf slope: n/a (too few types)")
     report_lines.append(f"- Top 15 words: {', '.join(f'{w}({c})' for w, c in wc.most_common(15))}")
     report_lines.append("")
-    return wc
+
+    metrics = {
+        'tokens': len(words),
+        'vocabulary': len(wc),
+        'type_token_ratio': round(len(wc) / len(words), 4) if words else None,
+        'char_entropy_h1_bits': round(char_h1, 4),
+        'char_bigram_conditional_entropy_bits': round(char_h2, 4),
+        'word_entropy_h1_bits': round(word_h1, 4),
+        'zipf_slope': round(slope, 4) if slope is not None else None,
+    }
+    if wl:
+        metrics['word_length_mean'] = round(wl['mean'], 2)
+        metrics['word_length_stdev'] = round(wl['stdev'], 2)
+    return wc, metrics
 
 
 def main():
@@ -173,11 +196,11 @@ def main():
     lines.append("**Caveat:** downstream of the normalize_eva.py first-option-kept alternative-reading policy (open question in knowledge-base/state.md) -- word-internal stats here should be re-checked once an alt-option-kept corpus exists.\n")
 
     lines.append("## Overall\n")
-    analyze(all_words, "All loci", lines)
+    _, overall_metrics = analyze(all_words, "All loci", lines)
 
     lines.append("## Currier A vs B\n")
-    analyze(a_words, "Currier Language A", lines)
-    analyze(b_words, "Currier Language B", lines)
+    _, a_metrics = analyze(a_words, "Currier Language A", lines)
+    _, b_metrics = analyze(b_words, "Currier Language B", lines)
 
     lines.append("## Interpretation notes (Statistician role -- numbers and method only, no meaning claims)\n")
     lines.append("- A lower character bigram conditional entropy than a natural-language baseline would be consistent with (but not proof of) a small, highly structured glyph-transition system -- compare against a real-language baseline before drawing any conclusion; no baseline has been computed yet.")
@@ -185,7 +208,21 @@ def main():
     lines.append("- Zipf slope near -1 is the natural-language-like signature; meaningfully steeper or shallower is a data point worth flagging to the Linguist and Skeptic, not a conclusion on its own.")
 
     OUT_REPORT.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+    summary = {
+        'generated_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        'source_script': 'data/scripts/statistician_pass1.py',
+        'full_report': 'data/derived/statistician-pass1-report.md',
+        'caveat': 'No natural-language baseline computed yet -- these are measurements, not interpretations. Word-internal stats inherit the normalize_eva.py first-option-kept alternative-reading policy (open question).',
+        'pages': {'currier_a': pages_a, 'currier_b': pages_b, 'unlabeled': pages_unlabeled},
+        'overall': overall_metrics,
+        'currier_a': a_metrics,
+        'currier_b': b_metrics,
+    }
+    OUT_SUMMARY.write_text(json.dumps(summary, indent=2) + '\n', encoding='utf-8')
+
     print(f"Wrote {OUT_REPORT}")
+    print(f"Wrote {OUT_SUMMARY}")
     print(f"Overall tokens: {len(all_words)}, A tokens: {len(a_words)}, B tokens: {len(b_words)}, unlabeled: {len(unlabeled_words)}")
 
 

@@ -93,6 +93,57 @@ async function renderFile(path, element) {
   }
 }
 
+function extractSection(source, heading) {
+  const lines = source.split('\n');
+  const start = lines.findIndex(line => line.trim() === `## ${heading}`);
+  if (start === -1) return '';
+  let end = lines.length;
+  for (let i = start + 1; i < lines.length; i++) {
+    if (/^##\s/.test(lines[i])) { end = i; break; }
+  }
+  return lines.slice(start + 1, end).join('\n').trim();
+}
+
+function countBullets(sectionText) {
+  if (!sectionText || /^_.*_$/.test(sectionText)) return 0;
+  return sectionText.split('\n').filter(line => /^-\s/.test(line.trim())).length;
+}
+
+let overviewLoaded = false;
+async function loadOverviewStats() {
+  if (overviewLoaded) return;
+  overviewLoaded = true;
+
+  try {
+    const state = await getText('knowledge-base/state.md');
+    const findings = countBullets(extractSection(state, 'Confirmed Findings'));
+    const openQuestions = countBullets(extractSection(state, 'Open Questions'));
+    document.querySelector('#stat-findings').textContent = findings;
+    document.querySelector('#status-title').textContent = findings > 0
+      ? 'Corpus analysis underway.'
+      : 'Foundation laid. Corpus analysis beginning.';
+    document.querySelector('#status-summary').textContent =
+      `${findings} confirmed finding${findings === 1 ? '' : 's'} so far, ${openQuestions} open question${openQuestions === 1 ? '' : 's'} actively tracked. See Current thinking for the full, live record.`;
+  } catch (error) {
+    document.querySelector('#status-title').textContent = 'Status unavailable';
+    document.querySelector('#status-summary').textContent = `${error.message}. View the knowledge base on GitHub instead.`;
+  }
+
+  try {
+    const summary = JSON.parse(await getText('data/derived/statistician-pass1-summary.json'));
+    document.querySelector('#snap-tokens').textContent = summary.overall.tokens.toLocaleString();
+    document.querySelector('#snap-vocab').textContent = summary.overall.vocabulary.toLocaleString();
+    document.querySelector('#snap-entropy').textContent = summary.overall.char_entropy_h1_bits.toFixed(2);
+    document.querySelector('#snap-zipf').textContent = summary.overall.zipf_slope.toFixed(2);
+    document.querySelector('#currier-compare').innerHTML = `
+      <div class="currier-row"><span class="currier-label">Currier A</span><span>${summary.pages.currier_a} pages · ${summary.currier_a.tokens.toLocaleString()} tokens · type-token ratio ${summary.currier_a.type_token_ratio}</span></div>
+      <div class="currier-row"><span class="currier-label">Currier B</span><span>${summary.pages.currier_b} pages · ${summary.currier_b.tokens.toLocaleString()} tokens · type-token ratio ${summary.currier_b.type_token_ratio}</span></div>
+    `;
+  } catch (error) {
+    document.querySelector('#currier-compare').textContent = `${error.message}. View the report on GitHub instead.`;
+  }
+}
+
 const routes = [...document.querySelectorAll('.route')];
 const links = [...document.querySelectorAll('[data-route]')];
 function showRoute() {
@@ -100,6 +151,7 @@ function showRoute() {
   const route = routes.some(item => item.id === requested) ? requested : 'overview';
   routes.forEach(item => item.classList.toggle('active', item.id === route));
   links.forEach(item => item.classList.toggle('active', item.dataset.route === route));
+  if (route === 'overview') loadOverviewStats();
   if (route === 'theories') renderFile('knowledge-base/state.md', document.querySelector('#state-content'));
   if (route === 'logs') loadLogs();
   if (route === 'dialogue') loadDialogue(document.querySelector('[data-dialogue].active')?.dataset.dialogue || 'claude');
