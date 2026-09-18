@@ -69,9 +69,11 @@ nav a.active, nav a:hover { color: var(--red); border-color: var(--red); }
 .currier-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: .6rem; font-family: var(--sans); font-size: .88rem; color: #5f574b; }
 .currier-label { flex: 0 0 auto; padding: .15rem .55rem; border-radius: 3px; background: var(--paper-dark); font-weight: 700; font-size: .74rem; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); }
 .baseline-panel { margin-top: 2rem; background: #e5dcc8; }
+.baseline-figures { display: grid; gap: 1.5rem; }
 .baseline-panel figure { margin: 0; }
 .baseline-panel img { display: block; width: 100%; height: auto; }
 .baseline-panel figcaption { margin-top: .6rem; color: #6b6252; font-size: .72rem; line-height: 1.45; }
+.baseline-panel figcaption a { color: var(--red); }
 .baseline-panel > p a { color: var(--red); }
 
 .document-route { padding: clamp(3rem, 7vw, 7rem) clamp(1rem, 6vw, 6rem); }

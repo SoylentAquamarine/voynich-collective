@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="330" viewBox="0 0 920 330" role="img" aria-labelledby="title desc">
+  <title id="title">Constraint ratios across randomized language samples</title>
+  <desc id="desc">Latin and Italian randomized samples remain near 0.22 and 0.23, far below the fixed Voynich value of 0.4539. Thick bars show fifth to ninety-fifth percentiles, thin bars minima to maxima, filled dots means, and hollow dots the original first-N samples.</desc>
+  <style>
+    .title { font: 700 20px Georgia, serif; fill: #2d2922; }
+    .subtitle, .tick, .legend { font: 13px Arial, sans-serif; fill: #665f53; }
+    .label { font: 700 15px Arial, sans-serif; fill: #2d2922; }
+    .grid { stroke: #cec5b4; stroke-width: 1; }
+    .range { stroke: #756d60; stroke-width: 2; }
+    .interval { stroke-width: 12; stroke-linecap: round; }
+    .first { fill: #f6f0e3; stroke: #2d2922; stroke-width: 2; }
+    .voynich { stroke: #5e2f2f; stroke-width: 3; stroke-dasharray: 7 5; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="210" y="30" class="title">First-N ordering does not explain the constraint gap</text>
+  <text x="210" y="52" class="subtitle">200 deterministic sentence-randomized samples per corpus; each sample = 39,020 tokens</text>
+  <line x1="210.0" y1="70" x2="210.0" y2="260" class="grid"/><text x="210.0" y="285" text-anchor="middle" class="tick">0.0</text><line x1="342.0" y1="70" x2="342.0" y2="260" class="grid"/><text x="342.0" y="285" text-anchor="middle" class="tick">0.1</text><line x1="474.0" y1="70" x2="474.0" y2="260" class="grid"/><text x="474.0" y="285" text-anchor="middle" class="tick">0.2</text><line x1="606.0" y1="70" x2="606.0" y2="260" class="grid"/><text x="606.0" y="285" text-anchor="middle" class="tick">0.3</text><line x1="738.0" y1="70" x2="738.0" y2="260" class="grid"/><text x="738.0" y="285" text-anchor="middle" class="tick">0.4</text><line x1="870.0" y1="70" x2="870.0" y2="260" class="grid"/><text x="870.0" y="285" text-anchor="middle" class="tick">0.5</text>
+  <line x1="809.1" y1="70" x2="809.1" y2="260" class="voynich"/>
+  <text x="801.1" y="86" text-anchor="end" class="legend">Voynich 0.4539</text>
+  <text x="192" y="140" text-anchor="end" class="label">Medieval Latin</text><line x1="486.5" y1="135" x2="492.1" y2="135" class="range"/><line x1="487.5" y1="135" x2="490.9" y2="135" class="interval" style="stroke:#496a63"/><circle cx="489.1" cy="135" r="7" fill="#496a63"/><circle cx="495.6" cy="135" r="5" class="first"/><text x="192" y="230" text-anchor="end" class="label">Italian</text><line x1="513.3" y1="225" x2="519.3" y2="225" class="range"/><line x1="515.1" y1="225" x2="518.4" y2="225" class="interval" style="stroke:#9b5948"/><circle cx="516.6" cy="225" r="7" fill="#9b5948"/><circle cx="514.9" cy="225" r="5" class="first"/>
+  <text x="210" y="318" class="legend">Thick: 5th–95th percentile · thin: min–max · filled: mean · hollow: original first-N</text>
+</svg>

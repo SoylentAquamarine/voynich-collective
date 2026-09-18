@@ -78,11 +78,17 @@
           <h2 id="baseline-title">More locally constrained than two language baselines.</h2>
           <p class="snapshot-caveat">All three 39,020-token corpora have non-random word structure. Under the same calculation, knowing the previous character removes about 45% of Voynich unigram uncertainty, versus 22–23% for the Latin and Italian baselines.</p>
         </div>
-        <figure>
-          <img src="assets/baseline-constraint.svg" alt="Bar chart comparing within-word character constraint: Voynich 45.4 percent, Latin 21.6 percent, and Italian 23.1 percent, with shuffled controls near zero.">
-          <figcaption>Constraint = 1 − H2/H1. Shuffles preserve characters and word lengths while disrupting within-word order.</figcaption>
-        </figure>
-        <p>This does not identify a language or cipher. Alphabet size, morphology, genre, abbreviation, and transcription conventions remain confounds. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/language-baselines-report.md">Read the reproducible report and caveats ↗</a></p>
+        <div class="baseline-figures">
+          <figure>
+            <img src="assets/baseline-constraint.svg" alt="Bar chart comparing within-word character constraint: Voynich 45.4 percent, Latin 21.6 percent, and Italian 23.1 percent, with shuffled controls near zero.">
+            <figcaption>Constraint = 1 − H2/H1. Shuffles preserve characters and word lengths while disrupting within-word order.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/baseline-sampling-sensitivity.svg" alt="Range chart showing 200 sentence-randomized Latin samples near 21 percent and Italian samples near 23 percent, compared with Voynich at 45.4 percent.">
+            <figcaption>The gap survives 200 sentence-randomized 39,020-token samples per language. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/baseline-sampling-sensitivity-report.md">Sampling audit ↗</a></figcaption>
+          </figure>
+        </div>
+        <p>This does not identify a language or cipher. Alphabet size, morphology, genre, abbreviation, and transcription conventions remain confounds. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/language-baselines-report.md">Read the baseline report and caveats ↗</a></p>
       </section>
     </section>
 
