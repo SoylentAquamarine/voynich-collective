@@ -1,0 +1,102 @@
+{
+  "target_tokens": 39020,
+  "shuffle_seed": 20260918,
+  "method_source": "data/scripts/statistician_pass1.py",
+  "corpora": {
+    "Voynich": {
+      "tokens": 39020,
+      "vocabulary": 8377,
+      "type_token_ratio": 0.2147,
+      "char_entropy_h1_bits": 3.9429,
+      "char_bigram_conditional_entropy_bits": 2.1534,
+      "word_entropy_h1_bits": 10.4451,
+      "zipf_slope": -0.9266,
+      "word_length_mean": 5.03,
+      "word_length_stdev": 1.89,
+      "alphabet_size": 42,
+      "constraint_ratio": 0.4539
+    },
+    "Voynich alpha-only sensitivity": {
+      "tokens": 38312,
+      "vocabulary": 7762,
+      "type_token_ratio": 0.2026,
+      "char_entropy_h1_bits": 3.8644,
+      "char_bigram_conditional_entropy_bits": 2.0884,
+      "word_entropy_h1_bits": 10.336,
+      "zipf_slope": -0.9266,
+      "word_length_mean": 4.98,
+      "word_length_stdev": 1.82,
+      "alphabet_size": 25,
+      "constraint_ratio": 0.4596
+    },
+    "Voynich shuffled": {
+      "tokens": 39020,
+      "vocabulary": 23795,
+      "type_token_ratio": 0.6098,
+      "char_entropy_h1_bits": 3.9429,
+      "char_bigram_conditional_entropy_bits": 3.6269,
+      "word_entropy_h1_bits": 13.5406,
+      "zipf_slope": -0.6769,
+      "word_length_mean": 5.03,
+      "word_length_stdev": 1.89,
+      "alphabet_size": 42,
+      "constraint_ratio": 0.0801
+    },
+    "Medieval Latin — Index Thomisticus Treebank": {
+      "tokens": 39020,
+      "vocabulary": 4265,
+      "type_token_ratio": 0.1093,
+      "char_entropy_h1_bits": 3.905,
+      "char_bigram_conditional_entropy_bits": 3.0599,
+      "word_entropy_h1_bits": 9.2072,
+      "zipf_slope": -0.953,
+      "word_length_mean": 5.57,
+      "word_length_stdev": 2.86,
+      "alphabet_size": 22,
+      "constraint_ratio": 0.2164
+    },
+    "Medieval Latin — Index Thomisticus Treebank shuffled": {
+      "tokens": 39020,
+      "vocabulary": 21402,
+      "type_token_ratio": 0.5485,
+      "char_entropy_h1_bits": 3.905,
+      "char_bigram_conditional_entropy_bits": 3.8052,
+      "word_entropy_h1_bits": 12.5869,
+      "zipf_slope": -0.9958,
+      "word_length_mean": 5.57,
+      "word_length_stdev": 2.86,
+      "alphabet_size": 22,
+      "constraint_ratio": 0.0256
+    },
+    "Italian — Italian Stanford Dependency Treebank": {
+      "tokens": 39020,
+      "vocabulary": 8541,
+      "type_token_ratio": 0.2189,
+      "char_entropy_h1_bits": 4.0444,
+      "char_bigram_conditional_entropy_bits": 3.11,
+      "word_entropy_h1_bits": 9.8275,
+      "zipf_slope": -0.9759,
+      "word_length_mean": 4.67,
+      "word_length_stdev": 3.02,
+      "alphabet_size": 32,
+      "constraint_ratio": 0.231
+    },
+    "Italian — Italian Stanford Dependency Treebank shuffled": {
+      "tokens": 39020,
+      "vocabulary": 19984,
+      "type_token_ratio": 0.5121,
+      "char_entropy_h1_bits": 4.0444,
+      "char_bigram_conditional_entropy_bits": 3.9268,
+      "word_entropy_h1_bits": 11.4402,
+      "zipf_slope": -1.2851,
+      "word_length_mean": 4.67,
+      "word_length_stdev": 3.02,
+      "alphabet_size": 32,
+      "constraint_ratio": 0.0291
+    }
+  },
+  "source_commits": {
+    "latin_ittb": "b19bcbd3ab66914570b5bb0616a9066d56d5e7ea",
+    "italian_isdt": "ff2447f6b21e03adbbbed5eff306f79b8857286b"
+  }
+}

@@ -27,7 +27,7 @@ Not "solve it in one shot" — run a rigorous, falsification-driven process acro
 
 ## Status
 
-Active. Canonical EVA transcription imported (`data/ZL3b-n.txt`, ZL 3b), normalized into a tokenized corpus with a full ambiguity audit trail, and Statistician pass 1 complete (entropy, word-length, Zipf, Currier A/B split — see `knowledge-base/state.md`). No natural-language baseline yet, so those numbers aren't interpretable as findings about meaning yet. Four comms rounds in; public site live at the link below.
+Active. Canonical EVA transcription imported (`data/ZL3b-n.txt`, ZL 3b), normalized into a tokenized corpus with a full ambiguity audit trail, and Statistician pass 1 complete (entropy, word-length, Zipf, Currier A/B split — see `knowledge-base/state.md`). Size-matched Medieval Latin and Italian baselines plus within-word shuffled controls have now been computed; interpretation awaits adversarial review before any knowledge-base promotion. Public site live at the link below.
 
 
 ## Public research site
