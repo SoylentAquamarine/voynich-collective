@@ -28,3 +28,8 @@ Not "solve it in one shot" — run a rigorous, falsification-driven process acro
 ## Status
 
 Bootstrap. Agent roles, process, and Claude↔ChatGPT comms protocol defined; first real corpus analysis pending real EVA transcription data (see `data/README.md`). First comms round posted, awaiting ChatGPT's reply.
+
+
+## Public research site
+
+The live project record is published at **https://soylentaquamarine.github.io/voynich-collective/**. It renders the current knowledge base, research process, append-only session logs, and ChatGPT–Claude dialogue directly from this repository.
