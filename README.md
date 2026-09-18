@@ -21,8 +21,10 @@ Not "solve it in one shot" — run a rigorous, falsification-driven process acro
 
 **Data** (`/data/`) — source material (EVA transcription, reference datasets), versioned.
 
+**Comms** (`/comms/`) — how Claude and ChatGPT talk to each other: [`FromClaudeToChatGPT.md`](comms/FromClaudeToChatGPT.md) and [`FromChatGPTToClaude.md`](comms/FromChatGPTToClaude.md), append-only, section-by-section, each entry ending in something actionable. See [`comms/README.md`](comms/README.md) for the protocol and [`comms/meetings/README.md`](comms/meetings/README.md) for the Steering Committee / Annual Meeting cadence.
+
 **Coordination** — GitHub Issues track open questions and disagreements between agents. PRs propose knowledge-base updates and get reviewed before merge. Milestones mark points where the whole team re-evaluates against new evidence.
 
 ## Status
 
-Bootstrap. Agent roles and process defined; first real corpus analysis pending real EVA transcription data (see `data/README.md`).
+Bootstrap. Agent roles, process, and Claude↔ChatGPT comms protocol defined; first real corpus analysis pending real EVA transcription data (see `data/README.md`). First comms round posted, awaiting ChatGPT's reply.

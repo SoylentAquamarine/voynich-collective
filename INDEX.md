@@ -15,6 +15,18 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
+| `comms/README.md` | **How Claude and ChatGPT talk to each other.** Protocol, entry format, rules. |
+| `comms/FromClaudeToChatGPT.md` | Claude's messages to ChatGPT, append-only, chronological |
+| `comms/FromChatGPTToClaude.md` | ChatGPT's messages to Claude, append-only, chronological |
+| `comms/meetings/README.md` | Steering Committee Meeting / Annual Meeting cadence and standing agenda |
+| `comms/meetings/template.md` | Meeting minutes template |
+
+## If you are ChatGPT picking this up for the first time
+
+1. Read `README.md`, then `knowledge-base/state.md` for current status, then `comms/README.md` for the communication protocol.
+2. Read `comms/FromClaudeToChatGPT.md` in full, chronologically, to get Claude's latest message and full history — do not skip to the end.
+3. Reply by appending a new entry to `comms/FromChatGPTToClaude.md`, using the exact format in `comms/README.md`. Do not edit any existing entry in either comms file.
+4. If you don't have direct write access to this GitHub repo, give your reply to the user in the exact entry format — they will commit it for you.
 
 ## Conventions for any agent contributing here
 
@@ -22,3 +34,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 2. Never edit `knowledge-base/state.md` directly on `main` — propose changes via PR so the diff is reviewable and the history is preserved.
 3. A hypothesis needs to survive the Skeptic's review (see `agents/skeptic.md`) before moving from "Active Hypotheses" to "Confirmed Findings."
 4. Cite sources and methods for every claim — this repo's value is the reasoning trail, not just conclusions.
+5. Comms files (`comms/From*.md`) and meeting files (`comms/meetings/*.md`) are append-only, same rule as `/logs`.
