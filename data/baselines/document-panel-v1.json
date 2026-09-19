@@ -1,0 +1,179 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-awaiting-claude-review",
+  "registered_utc": "2026-09-19T04:47:00Z",
+  "purpose": "Test whether the Voynich within-word local-constraint gap survives a typologically broader, genuinely document-stratified natural-language panel.",
+  "result_blinding": "No constraint metric was calculated for any panel corpus before this manifest was committed. Only eligibility, provenance, document counts, token counts, length counts, and checksums were inspected.",
+  "target_tokens": 39026,
+  "replicates_per_corpus": 200,
+  "base_seed": 20260919,
+  "primary_token_view": "surface",
+  "sensitivity_token_view": "syntactic",
+  "normalization": {
+    "unicode": "NFKC",
+    "case": "lowercase",
+    "characters_retained": "Unicode alphabetic characters only",
+    "excluded_rows": ["CoNLL-U empty nodes", "PUNCT", "SYM"],
+    "surface_view": "Use a multiword-token header FORM once and skip its covered syntactic-word rows; otherwise use the ordinary FORM.",
+    "syntactic_view": "Skip multiword-token headers and use their component syntactic-word FORMs, matching the existing language_baselines.py policy.",
+    "transliteration": "none"
+  },
+  "document_policy": {
+    "boundary": "Only explicit '# newdoc id = ...' markers count. Do not infer documents from sentence IDs, file splits, or topic labels.",
+    "unassigned_tokens": "Exclude every token before the first explicit newdoc marker in each file and report the count.",
+    "minimum_unique_documents": 20,
+    "minimum_documents_with_100_primary_tokens": 20,
+    "minimum_primary_tokens": 39026,
+    "document_level_minimum_tokens": 100,
+    "maximum_tokens_from_one_document_per_replicate": 3902,
+    "sampling": "For each replicate, shuffle unique document IDs without replacement using base_seed + 1000*corpus_index + replicate_index. For each document in that order, take the full primary token stream if it has at most 3,902 tokens; otherwise take a deterministic circular contiguous window of 3,902 tokens using the same RNG. Stop at exactly 39,026 tokens, truncating only the final selected contribution. Fail if the document pool is exhausted.",
+    "reason_for_cap": "No document can contribute more than 10% of a matched sample, forcing every replicate to use at least 10 genuinely distinct documents."
+  },
+  "analysis_plan": {
+    "metric": "1 - H(next character | previous character) / H(character), within tokens only, reusing statistician_pass1.py",
+    "voynich_literal_reference": 0.4539,
+    "voynich_atomic_eva_sensitivity_reference": 0.424711,
+    "matched_sample_reporting": "For both token views, report each corpus's median, minimum, maximum, and 2.5th/97.5th percentiles over 200 replicates, plus the gap from both fixed Voynich references.",
+    "document_reporting": "For every explicit document with at least 100 eligible tokens, report the equal-document median and IQR. This diagnoses heterogeneity but is not part of the pass/fail rule because small documents have wider estimation error.",
+    "negative_control": "Within each matched sample, independently shuffle characters inside every token with a separately derived fixed seed; preserve token count, token lengths, and character unigrams.",
+    "pass_fail_rule": "The broader-panel claim survives only if the 97.5th percentile of every corpus's primary surface-token replicate distribution remains below the lower atomic-EVA Voynich reference (0.424711). If any corpus reaches or exceeds that bound, retire the general statement that Voynich is more constrained than the broader natural-language panel and report the overlap. Literal-EVA comparisons and syntactic-token results are secondary sensitivities.",
+    "interpretation_limit": "Survival establishes a representation-level difference from this panel only. It does not distinguish meaningful language, cipher, stenography, or mechanically generated pseudo-text."
+  },
+  "eligibility_stop_conditions": [
+    "A pinned file checksum or license claim changes.",
+    "A corpus lacks 39,026 eligible surface tokens after explicit-document filtering.",
+    "A corpus has fewer than 20 explicit documents or fewer than 20 documents with 100 eligible surface tokens.",
+    "The implementation cannot reproduce every audit count in this manifest.",
+    "The sampling, tokenization, metric, or pass/fail rule is changed after results are inspected; such a change requires a versioned new manifest and the old result must still be reported."
+  ],
+  "corpora": [
+    {
+      "key": "turkish_imst",
+      "label": "Turkish — IMST",
+      "repository": "https://github.com/UniversalDependencies/UD_Turkish-IMST",
+      "commit": "0c939115d8277ecfb39e1bbc3f066b1852ab5ddc",
+      "family_profile": "Turkic; strongly suffixing/agglutinative; Latin script",
+      "genre": "nonfiction and news",
+      "panel_role": "Agglutinative non-Indo-European Latin-script stress test",
+      "license": "README metadata says CC BY-NC-SA 4.0; bundled LICENSE.txt says CC BY-NC-SA 3.0. Treat 3.0 as the conservative claim and commit aggregates only.",
+      "citation": "Pinned repository README and references therein",
+      "files": [
+        {"path": "tr_imst-ud-train.conllu", "sha256": "d7d65fb10bd0f6ed6ecb0258938d6d126a2b93b409582759d2b52195dd5b7313"},
+        {"path": "tr_imst-ud-dev.conllu", "sha256": "f58d60666d3a9a7fea843b36444da5d6a7849b1172a851b2223479682c53d0d4"},
+        {"path": "tr_imst-ud-test.conllu", "sha256": "299d3af2adb8722b5dd09cd17a20302af3670d36f2e57ed26170bf21526fd3d4"}
+      ],
+      "audit": {
+        "explicit_documents": 169,
+        "unassigned_syntactic_tokens": 0,
+        "unassigned_surface_tokens": 0,
+        "syntactic": {"tokens": 47614, "within_token_character_pairs": 244702, "single_character_tokens": 376, "documents_ge_100_tokens": 32},
+        "surface": {"tokens": 45997, "within_token_character_pairs": 246319, "single_character_tokens": 342, "documents_ge_100_tokens": 32},
+        "capped_surface_capacity": 45997
+      }
+    },
+    {
+      "key": "estonian_edt",
+      "label": "Estonian — EDT",
+      "repository": "https://github.com/UniversalDependencies/UD_Estonian-EDT",
+      "commit": "594d1c3902783812d383227e640c0ae782798efd",
+      "family_profile": "Uralic; morphologically rich/agglutinative; Latin script",
+      "genre": "fiction, news, nonfiction, and academic",
+      "panel_role": "Second agglutinative family plus mixed-genre document test",
+      "license": "README metadata says CC BY-NC-SA 4.0; bundled LICENSE.txt says CC BY-NC-SA 3.0. Treat 3.0 as the conservative claim and commit aggregates only.",
+      "citation": "Pinned repository README and references therein",
+      "files": [
+        {"path": "et_edt-ud-train.conllu", "sha256": "b2d06c0b607a990d0eac2f1264014bf6baf52d0889622fc4fb3ec05f45929f42"},
+        {"path": "et_edt-ud-dev.conllu", "sha256": "fd53fa0d460498648633c524a72f6740f2157cd1d811caf1553c463ec434c51e"},
+        {"path": "et_edt-ud-test.conllu", "sha256": "ad138953e46b36ea378c28b21a70265dba56c6696ec9f7418adae01d5dfb1525"}
+      ],
+      "audit": {
+        "explicit_documents": 32,
+        "unassigned_syntactic_tokens": 14436,
+        "unassigned_surface_tokens": 14436,
+        "syntactic": {"tokens": 343786, "within_token_character_pairs": 1887907, "single_character_tokens": 944, "documents_ge_100_tokens": 32},
+        "surface": {"tokens": 343785, "within_token_character_pairs": 1887908, "single_character_tokens": 943, "documents_ge_100_tokens": 32},
+        "capped_surface_capacity": 112854
+      }
+    },
+    {
+      "key": "arabic_padt",
+      "label": "Arabic — PADT",
+      "repository": "https://github.com/UniversalDependencies/UD_Arabic-PADT",
+      "commit": "dfb6b4c547f1fe10f1857b39e44de3f86c47a2fe",
+      "family_profile": "Afro-Asiatic, Semitic; root-and-pattern morphology; Arabic abjad",
+      "genre": "newswire",
+      "panel_role": "Different script and nonconcatenative morphology with many real documents",
+      "license": "CC BY-NC-SA 3.0",
+      "citation": "Prague Arabic Dependency Treebank; pinned repository README and references therein",
+      "files": [
+        {"path": "ar_padt-ud-train.conllu", "sha256": "f0b56962b340f5325bb5d293f47717522e706112c19029e82c225355c6d65e85"},
+        {"path": "ar_padt-ud-dev.conllu", "sha256": "0d95ee511cf2f26a64e229e86e5e9b37851555ebc8b53c5ebb261f2dfbc185e7"},
+        {"path": "ar_padt-ud-test.conllu", "sha256": "793c87bf173d491af2092ef7f87b04a2cf6c596490e7347a2065058a053a6389"}
+      ],
+      "audit": {
+        "explicit_documents": 874,
+        "unassigned_syntactic_tokens": 0,
+        "unassigned_surface_tokens": 0,
+        "syntactic": {"tokens": 254029, "within_token_character_pairs": 801526, "single_character_tokens": 36007, "documents_ge_100_tokens": 810},
+        "surface": {"tokens": 213702, "within_token_character_pairs": 839140, "single_character_tokens": 958, "documents_ge_100_tokens": 766},
+        "capped_surface_capacity": 213702
+      }
+    },
+    {
+      "key": "hebrew_iahltwiki",
+      "label": "Hebrew — IAHLTWiki",
+      "repository": "https://github.com/UniversalDependencies/UD_Hebrew-IAHLTwiki",
+      "commit": "fece0b2599e504aea329d7424561564a2756a630",
+      "family_profile": "Afro-Asiatic, Semitic; root-and-pattern morphology; Hebrew abjad",
+      "genre": "Wikipedia across biography, law, finance, health, places, events, and miscellaneous topics",
+      "panel_role": "Independent abjad corpus and cross-check on UD clitic segmentation",
+      "license": "CC BY-SA 4.0",
+      "citation": "Israeli Association of Human Language Technology; pinned repository README and references therein",
+      "files": [
+        {"path": "he_iahltwiki-ud-train.conllu", "sha256": "29b143ddbbad01d119c721868de534fbad0a56da3fa0dbbc40d55eac64c71b9e"},
+        {"path": "he_iahltwiki-ud-dev.conllu", "sha256": "88b1182a41a51bb34912782b1568c6f28d5290e41cab2dcf0cb001449c929ed8"},
+        {"path": "he_iahltwiki-ud-test.conllu", "sha256": "57af21391a7e031d1581256fa5dc3fd7b97de81356ff782e613705ae5ac52e07"}
+      ],
+      "audit": {
+        "explicit_documents": 39,
+        "unassigned_syntactic_tokens": 0,
+        "unassigned_surface_tokens": 0,
+        "syntactic": {"tokens": 121996, "within_token_character_pairs": 278361, "single_character_tokens": 38327, "documents_ge_100_tokens": 39},
+        "surface": {"tokens": 84642, "within_token_character_pairs": 315715, "single_character_tokens": 1043, "documents_ge_100_tokens": 39},
+        "capped_surface_capacity": 74447
+      }
+    },
+    {
+      "key": "english_ewt",
+      "label": "English — EWT",
+      "repository": "https://github.com/UniversalDependencies/UD_English-EWT",
+      "commit": "4a4d77f599ea53cc405f85d0cec4b2f14f81d42b",
+      "family_profile": "Indo-European, Germanic; comparatively analytic; Latin script",
+      "genre": "blogs, social media, reviews, email, and web text",
+      "panel_role": "Document-rich Latin-script procedural control against the original non-stratified Latin/Italian comparison",
+      "license": "CC BY-SA 4.0",
+      "citation": "English Web Treebank; Silveira et al. 2014; pinned repository README",
+      "files": [
+        {"path": "en_ewt-ud-train.conllu", "sha256": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143"},
+        {"path": "en_ewt-ud-dev.conllu", "sha256": "39239e0a60db3ae68f4b7036189f11b6692741d10ff8240dd91f74f2760d90f8"},
+        {"path": "en_ewt-ud-test.conllu", "sha256": "fa024f43dc5da3c5ac02563bc9bd0e974f46cbb1560823976a8f342a37dc494a"}
+      ],
+      "audit": {
+        "explicit_documents": 1174,
+        "unassigned_syntactic_tokens": 0,
+        "unassigned_surface_tokens": 0,
+        "syntactic": {"tokens": 219942, "within_token_character_pairs": 756772, "single_character_tokens": 11458, "documents_ge_100_tokens": 460},
+        "surface": {"tokens": 216654, "within_token_character_pairs": 760060, "single_character_tokens": 9144, "documents_ge_100_tokens": 451},
+        "capped_surface_capacity": 213890
+      }
+    }
+  ],
+  "excluded_candidates": [
+    {"repository": "UD_Basque-BDT", "reason": "No explicit newdoc markers despite strong typological value."},
+    {"repository": "UD_Finnish-TDT", "reason": "No explicit newdoc markers."},
+    {"repository": "UD_Turkish-BOUN", "reason": "No explicit newdoc markers."},
+    {"repository": "UD_Korean-Kaist", "reason": "No explicit newdoc markers."},
+    {"repository": "UD_Indonesian-GSD", "reason": "No explicit newdoc markers."},
+    {"repository": "UD_Japanese-GSD", "reason": "Every sentence is marked as a new document, so the markers do not establish independent multi-sentence documents for this test."}
+  ]
+}

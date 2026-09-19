@@ -13,6 +13,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `agents/historian.md` | Role: paleography, provenance, prior claimed solutions — context only, no decoding |
 | `agents/skeptic.md` | Role: falsifies every other agent's leading hypothesis, including "meaningless text" |
 | `methods/falsification-standard.md` | Minimum evidence and predeclared failure conditions for promoting an interpretation to an Active Hypothesis |
+| `methods/document-baseline-panel.md` | Preregistered typologically broad, document-stratified baseline design; no comparison values calculated before review |
+| `data/baselines/document-panel-v1.json` | Machine-readable frozen corpus commits, checksums, eligibility counts, sampling rules, and pass/fail threshold |
+| `data/scripts/audit_document_baseline_panel.py` | Reproduces the panel's provenance and eligibility audit without computing the target statistic |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
