@@ -28,6 +28,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-units-paper-audit.md` | Independent first execution audit of a 2026 paper on learned units, token order, edge-glyph coupling, and separator regimes |
 | `data/scripts/external_edge_crossfit.py` | Held-out-quire prediction and position-preserving null tests for the external paper's edge-glyph result |
 | `data/derived/external-edge-crossfit-summary.json` | Full fold-level edge-prediction and 1,000-shuffle sensitivity results |
+| `data/scripts/external_direct_pixel_audit.py` | Checksum-pinned reproduction and line-matched sensitivity checks for the external paper's archived blind ink-gap audit |
+| `data/derived/external-direct-pixel-report.md` | Direct-pixel verdict, added normalized analysis, robustness boundaries, and raw-pipeline reproducibility gap |
+| `data/derived/external-direct-pixel-summary.json` | Machine-readable direct-pixel reproduction, folio effects, permutation results, and threshold/estimator tables |
+| `docs/assets/external-direct-pixel-threshold.svg` | Public chart of certain-minus-uncertain ink-gap differences across threshold offsets |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
