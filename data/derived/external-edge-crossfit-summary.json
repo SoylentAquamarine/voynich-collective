@@ -1,0 +1,1964 @@
+{
+  "external_commit": "956a7c4fc39981f4d116fa3f4edfccce6d065571",
+  "skipped_lines": 180,
+  "shuffles": 1000,
+  "seed": 20260919,
+  "representations": {
+    "collapsed": {
+      "all_pairs": {
+        "pairs": 28797,
+        "crossfit": [
+          {
+            "alpha": 0.1,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.17986432874434777,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.08878809661691803
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.06716279464959952
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.10308971348667895
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.09131552034082853
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.1815146268545789
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.1033392881674907
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.14409225201487677
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.12024194860738595
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.09743257481528367
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.1388202373591446
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.26137877024727363
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.22903933071014337
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.09194584105376197
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.12076290100894971
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.12929286111490595
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.20714378467851746
+              }
+            ]
+          },
+          {
+            "alpha": 0.5,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.18032724991096422,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.09725358601613206
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.06784746697864052
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.10693995053707818
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.09252754493073714
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.18404128971764705
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.10951097450611781
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.14549898987640375
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.11915512498306649
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.10008876072671852
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.13221815764006067
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.25871905164883546
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.23014515129755278
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.09687591622127362
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.12002389511636621
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.12354034279226696
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.20714688287560776
+              }
+            ]
+          },
+          {
+            "alpha": 1.0,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.17688599945116965,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.09712236097323325
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.06591199779279892
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.10435756699521712
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.08678586426868164
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.18104919857799204
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.10721115280110341
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.14126419375467517
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.11483217980461423
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.09777900739219476
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.125837103677651
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.25443742749087317
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.2281615075487768
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.09577508433194543
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.11748126903985841
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.1184135403435609
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.2034140987430342
+              }
+            ]
+          },
+          {
+            "alpha": 5.0,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.14870694242578264,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.08217654576348916
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.05062310130648524
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.081013656426911
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.04953029280101125
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.15245481262556418
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.08148292889755006
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.10859801493024245
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.08477629466530931
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.07151561259823729
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.09290030191961735
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.22495234046243803
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.20631034528543377
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.07393813456359477
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.09868049527884974
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.09296573696009475
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.1714331134497433
+              }
+            ]
+          },
+          {
+            "alpha": 20.0,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.06768584973777836,
+            "positive_folds": 13,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.028797292158130806
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.0026750611339640263
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.013943427823595611
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": -0.03191709344240585
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.0729254858239641
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.014202350153681789
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.027671784380665403
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.007690595763403423
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": -0.007083670876771254
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.01847743857419412
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.1417125469617752
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.13380254557267746
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": -0.0022629718496440287
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.03768491202664981
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.02581985961496717
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.07618693015031709
+              }
+            ]
+          }
+        ],
+        "position_nulls": [
+          {
+            "scheme": "quire",
+            "pairs": 28797,
+            "strata": 16,
+            "singleton_strata": 0,
+            "observed_mi_bits": 0.21835175464631007,
+            "null_mean_mi_bits": 0.015051886229677524,
+            "null_sd_mi_bits": 0.0009118019599028065,
+            "null_max_mi_bits": 0.01901941373349114,
+            "excess_bits": 0.20329986841663256,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_relative_quintile",
+            "pairs": 28797,
+            "strata": 80,
+            "singleton_strata": 0,
+            "observed_mi_bits": 0.21835175464631007,
+            "null_mean_mi_bits": 0.015241349860826191,
+            "null_sd_mi_bits": 0.000870501394179216,
+            "null_max_mi_bits": 0.017946694239656225,
+            "excess_bits": 0.20311040478548387,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_edge_distance",
+            "pairs": 28797,
+            "strata": 186,
+            "singleton_strata": 5,
+            "observed_mi_bits": 0.21835175464631007,
+            "null_mean_mi_bits": 0.015425168377137193,
+            "null_sd_mi_bits": 0.0009327035659763316,
+            "null_max_mi_bits": 0.01915800913216792,
+            "excess_bits": 0.20292658626917287,
+            "observed_exceeds_all_shuffles": true
+          }
+        ]
+      },
+      "interior_pairs": {
+        "pairs": 20955,
+        "crossfit": [
+          {
+            "alpha": 0.1,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.1825424762338019,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.09588930246386704
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.07534627273305913
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.08012412545608792
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.10361416591754506
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.2099854379443901
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.09560962967753961
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.14314273406004208
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.13799435267836652
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.09267781285049828
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.0616831341121944
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.2462208988590274
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.23220637729875876
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.07366611496559806
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.126289374022748
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.11998778094388958
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.21473068721259633
+              }
+            ]
+          },
+          {
+            "alpha": 0.5,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.1838451320663427,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.11192986470845681
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.07286005757150177
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.08012551906429066
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.10380625791999389
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.21234732651124535
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.09967277397875911
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.14573771421432036
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.13540380359059567
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.11049787976057435
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.05407756452767541
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.2446377582128662
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.23333196118804472
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.08596483943984637
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.12817986580162197
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.11839715139169187
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.21531246265012222
+              }
+            ]
+          },
+          {
+            "alpha": 1.0,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.180411559839835,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.11398843607175374
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.06922823320528339
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.07721760771627172
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.09645892423932666
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.20904979627796394
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.09615676885479796
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.14292748486502
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.1298240630740385
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.11279353410185619
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.04773819663451595
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.2402797064835115
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.23082159407482938
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.08750513796787802
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.12701407801232115
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.1144874381877042
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.21146141559511272
+              }
+            ]
+          },
+          {
+            "alpha": 5.0,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.15024494732861576,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.10167675644492528
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.051256198056547464
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.05697778044212749
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.057044204834997225
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.17793190011828136
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.0681364667110751
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.11518216184488582
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.09384649057022945
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.09063725575570235
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.0201832791265613
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.20806262312955964
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.20541557819100897
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.06889471253306599
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.10944397333996293
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.09020935588526585
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.17629261378759775
+              }
+            ]
+          },
+          {
+            "alpha": 20.0,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.062086948979714555,
+            "positive_folds": 12,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.04583531069825229
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.005849834218217925
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": -0.006000272744109675
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": -0.018968194410333414
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.0901250396252689
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 8.494368169030044e-05
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.03493753404670447
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.006965587375865925
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.0083674451473384
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": -0.03928918618751485
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.11711933549468652
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.12489696727576563
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": -0.011151332412610475
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.040806418872916854
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.0180874470984641
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.07083129212393958
+              }
+            ]
+          }
+        ],
+        "position_nulls": [
+          {
+            "scheme": "quire",
+            "pairs": 20955,
+            "strata": 16,
+            "singleton_strata": 0,
+            "observed_mi_bits": 0.22581454565279735,
+            "null_mean_mi_bits": 0.017333447016203464,
+            "null_sd_mi_bits": 0.0011034354982343419,
+            "null_max_mi_bits": 0.020891541914521028,
+            "excess_bits": 0.2084810986365939,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_relative_quintile",
+            "pairs": 20955,
+            "strata": 79,
+            "singleton_strata": 3,
+            "observed_mi_bits": 0.22581454565279735,
+            "null_mean_mi_bits": 0.017465256184351186,
+            "null_sd_mi_bits": 0.0010515812739537108,
+            "null_max_mi_bits": 0.021091838776154503,
+            "excess_bits": 0.20834928946844616,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_edge_distance",
+            "pairs": 20955,
+            "strata": 95,
+            "singleton_strata": 2,
+            "observed_mi_bits": 0.22581454565279735,
+            "null_mean_mi_bits": 0.01739313693629041,
+            "null_sd_mi_bits": 0.0010551624479859078,
+            "null_max_mi_bits": 0.022019083166471276,
+            "excess_bits": 0.20842140871650694,
+            "observed_exceeds_all_shuffles": true
+          }
+        ]
+      }
+    },
+    "raw": {
+      "all_pairs": {
+        "pairs": 28797,
+        "crossfit": [
+          {
+            "alpha": 0.1,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.1763954526317724,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.10307715287731663
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.06521437903309621
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.11170096033230341
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.10372140933932539
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.18037396842452488
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.10485657970802253
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.13766736728367684
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.11377715934518838
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.07791617287493602
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.13279975159478336
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.25247042497097366
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.22043610882269482
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.06539757807879508
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.10814256109266746
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.12750429539799701
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.20599399039320054
+              }
+            ]
+          },
+          {
+            "alpha": 0.5,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.1765938528260596,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.09654654294219528
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.06567076129567515
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.10746540194699969
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.10253890772926318
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.18114925814932575
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.1090903254405574
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.13984320281797435
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.11306796215441099
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.07730101414099748
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.1297512446996228
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.2516936964716324
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.2232657405412653
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.06549555474491275
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.10856409114864966
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.12292730468538718
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.20763137770029855
+              }
+            ]
+          },
+          {
+            "alpha": 1.0,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.17442099501963726,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.09064425084915657
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.06424678452510028
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.10302849084033314
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.09763445622726166
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.17844149659001649
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.10753215708511535
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.13700620156075924
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.11000725172952551
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.07601735159614953
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.126478876541666
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.2496487115976614
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.22313530923813643
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.06298757703234423
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.10678558848179633
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.11851196015197749
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.20642330784785642
+              }
+            ]
+          },
+          {
+            "alpha": 5.0,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.15625739124342045,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.06277968167426859
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.0507997685928027
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.07930618411969281
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": 0.06655629907969787
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.15615358949687913
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.08698477658247471
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.10995128122016826
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.08847574026708997
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.060788236180216074
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.10670305279132958
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.23423633625201648
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.21295675016434912
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": 0.04011240087102875
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.08950149125288824
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.09477489215124768
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.1915879005098419
+              }
+            ]
+          },
+          {
+            "alpha": 20.0,
+            "pairs": 28797,
+            "quires": 16,
+            "gain_bits_per_pair": 0.10321863501338963,
+            "positive_folds": 14,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 1155,
+                "gain_bits_per_pair": 0.0017681739902762556
+              },
+              {
+                "quire": "B",
+                "pairs": 788,
+                "gain_bits_per_pair": 0.009636081393580255
+              },
+              {
+                "quire": "C",
+                "pairs": 1109,
+                "gain_bits_per_pair": 0.021390260988818147
+              },
+              {
+                "quire": "D",
+                "pairs": 979,
+                "gain_bits_per_pair": -0.0035758086293753754
+              },
+              {
+                "quire": "E",
+                "pairs": 1226,
+                "gain_bits_per_pair": 0.09764186518577732
+              },
+              {
+                "quire": "F",
+                "pairs": 1379,
+                "gain_bits_per_pair": 0.03358456890325572
+              },
+              {
+                "quire": "G",
+                "pairs": 1189,
+                "gain_bits_per_pair": 0.04159441600679009
+              },
+              {
+                "quire": "H",
+                "pairs": 1123,
+                "gain_bits_per_pair": 0.0343717068777681
+              },
+              {
+                "quire": "I",
+                "pairs": 290,
+                "gain_bits_per_pair": 0.005918488653584169
+              },
+              {
+                "quire": "J",
+                "pairs": 119,
+                "gain_bits_per_pair": 0.05646632279653152
+              },
+              {
+                "quire": "M",
+                "pairs": 5821,
+                "gain_bits_per_pair": 0.18761434398880691
+              },
+              {
+                "quire": "N",
+                "pairs": 1442,
+                "gain_bits_per_pair": 0.17145289050335744
+              },
+              {
+                "quire": "O",
+                "pairs": 1137,
+                "gain_bits_per_pair": -0.02946985556980879
+              },
+              {
+                "quire": "Q",
+                "pairs": 715,
+                "gain_bits_per_pair": 0.03511718482904975
+              },
+              {
+                "quire": "S",
+                "pairs": 992,
+                "gain_bits_per_pair": 0.034528815899900374
+              },
+              {
+                "quire": "T",
+                "pairs": 9333,
+                "gain_bits_per_pair": 0.14087914674536145
+              }
+            ]
+          }
+        ],
+        "position_nulls": [
+          {
+            "scheme": "quire",
+            "pairs": 28797,
+            "strata": 16,
+            "singleton_strata": 0,
+            "observed_mi_bits": 0.20344786827643802,
+            "null_mean_mi_bits": 0.009193927863447136,
+            "null_sd_mi_bits": 0.0006994508386272901,
+            "null_max_mi_bits": 0.011786226805404532,
+            "excess_bits": 0.19425394041299088,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_relative_quintile",
+            "pairs": 28797,
+            "strata": 80,
+            "singleton_strata": 0,
+            "observed_mi_bits": 0.20344786827643802,
+            "null_mean_mi_bits": 0.009383777790637652,
+            "null_sd_mi_bits": 0.000727205793042636,
+            "null_max_mi_bits": 0.011954098991746598,
+            "excess_bits": 0.19406409048580037,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_edge_distance",
+            "pairs": 28797,
+            "strata": 186,
+            "singleton_strata": 5,
+            "observed_mi_bits": 0.20344786827643802,
+            "null_mean_mi_bits": 0.009548908984630532,
+            "null_sd_mi_bits": 0.0007564201506645406,
+            "null_max_mi_bits": 0.01267948059453694,
+            "excess_bits": 0.19389895929180748,
+            "observed_exceeds_all_shuffles": true
+          }
+        ]
+      },
+      "interior_pairs": {
+        "pairs": 20955,
+        "crossfit": [
+          {
+            "alpha": 0.1,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.180493083893866,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.1204731422228969
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.07850866662408569
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.08614782638720216
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.11875985814498247
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.20074489582224148
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.09837514611219851
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.15029748967232343
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.12945133577546253
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.08390720527214966
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.07305793619702376
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.23933086341409102
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.22019947077461005
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.0437396248694592
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.11713731918405301
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.1303077925789994
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.2140089779227728
+              }
+            ]
+          },
+          {
+            "alpha": 0.5,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.1811425324364963,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.11471185003607423
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.07518795193107768
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.08246292265776407
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.11249533967174477
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.19783715536899119
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.10108285199237355
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.1549027321147452
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.12762118234013128
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.09353648282102921
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.06928696408538342
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.23968253562084843
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.22348041683711398
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.048909748742686616
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.11963117741740326
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.12547142906268188
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.21618006378021168
+              }
+            ]
+          },
+          {
+            "alpha": 1.0,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.1791501700178458,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.1095718950194912
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.07158734210079329
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.07900307853132368
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.10507958750049425
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.1938688504895867
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.0986669729113711
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.15362117350641302
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.12396412330866416
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.0950259375098615
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.0658572067295095
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.23791010637796348
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.22317708771204248
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.04797821813792741
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.1188061074501186
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.12090725993899876
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.21526974492006545
+              }
+            ]
+          },
+          {
+            "alpha": 5.0,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.1614582963914239,
+            "positive_folds": 16,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.084681894734809
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.05172691657956274
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.0599641799614826
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.0694867920576951
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.1695930664040186
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.07704898920935233
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.13146050631301365
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.10016605422434519
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.08174099536619178
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.04959297866780376
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.2223900365726679
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.21166086513514984
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": 0.026826293302434426
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.10299243071474988
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.09631344763965413
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.20130603407925504
+              }
+            ]
+          },
+          {
+            "alpha": 20.0,
+            "pairs": 20955,
+            "quires": 16,
+            "gain_bits_per_pair": 0.10837291038141104,
+            "positive_folds": 15,
+            "folds": [
+              {
+                "quire": "A",
+                "pairs": 732,
+                "gain_bits_per_pair": 0.028103674621242313
+              },
+              {
+                "quire": "B",
+                "pairs": 509,
+                "gain_bits_per_pair": 0.006537204824452265
+              },
+              {
+                "quire": "C",
+                "pairs": 701,
+                "gain_bits_per_pair": 0.009008347405682685
+              },
+              {
+                "quire": "D",
+                "pairs": 651,
+                "gain_bits_per_pair": 0.0014508557407264353
+              },
+              {
+                "quire": "E",
+                "pairs": 817,
+                "gain_bits_per_pair": 0.10963471450744475
+              },
+              {
+                "quire": "F",
+                "pairs": 988,
+                "gain_bits_per_pair": 0.02690850055706426
+              },
+              {
+                "quire": "G",
+                "pairs": 747,
+                "gain_bits_per_pair": 0.06670223862596075
+              },
+              {
+                "quire": "H",
+                "pairs": 843,
+                "gain_bits_per_pair": 0.04425270307039313
+              },
+              {
+                "quire": "I",
+                "pairs": 169,
+                "gain_bits_per_pair": 0.027374949973288782
+              },
+              {
+                "quire": "J",
+                "pairs": 83,
+                "gain_bits_per_pair": 0.01187523586422802
+              },
+              {
+                "quire": "M",
+                "pairs": 4308,
+                "gain_bits_per_pair": 0.17399446007364544
+              },
+              {
+                "quire": "N",
+                "pairs": 1077,
+                "gain_bits_per_pair": 0.16873322919136224
+              },
+              {
+                "quire": "O",
+                "pairs": 839,
+                "gain_bits_per_pair": -0.041627361201385917
+              },
+              {
+                "quire": "Q",
+                "pairs": 466,
+                "gain_bits_per_pair": 0.048691192323928975
+              },
+              {
+                "quire": "S",
+                "pairs": 757,
+                "gain_bits_per_pair": 0.033247792744460825
+              },
+              {
+                "quire": "T",
+                "pairs": 7268,
+                "gain_bits_per_pair": 0.14951399813696442
+              }
+            ]
+          }
+        ],
+        "position_nulls": [
+          {
+            "scheme": "quire",
+            "pairs": 20955,
+            "strata": 16,
+            "singleton_strata": 0,
+            "observed_mi_bits": 0.20994414913427928,
+            "null_mean_mi_bits": 0.010351233195002528,
+            "null_sd_mi_bits": 0.0008356443225837506,
+            "null_max_mi_bits": 0.013148040676327355,
+            "excess_bits": 0.19959291593927675,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_relative_quintile",
+            "pairs": 20955,
+            "strata": 79,
+            "singleton_strata": 3,
+            "observed_mi_bits": 0.20994414913427928,
+            "null_mean_mi_bits": 0.010481996269184697,
+            "null_sd_mi_bits": 0.0008486907719313218,
+            "null_max_mi_bits": 0.013141702516811904,
+            "excess_bits": 0.19946215286509458,
+            "observed_exceeds_all_shuffles": true
+          },
+          {
+            "scheme": "quire_edge_distance",
+            "pairs": 20955,
+            "strata": 95,
+            "singleton_strata": 2,
+            "observed_mi_bits": 0.20994414913427928,
+            "null_mean_mi_bits": 0.010472188464758224,
+            "null_sd_mi_bits": 0.0008414944729666212,
+            "null_max_mi_bits": 0.013855641408651032,
+            "excess_bits": 0.19947196066952105,
+            "observed_exceeds_all_shuffles": true
+          }
+        ]
+      }
+    }
+  }
+}
