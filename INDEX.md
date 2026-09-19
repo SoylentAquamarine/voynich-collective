@@ -26,6 +26,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/unlabeled-currier-pages.svg` | Public comparison of paragraph versus diagram-style loci |
 | `docs/assets/manuscript/README.md` | Provenance for the five public-domain manuscript scans displayed on the site |
 | `data/derived/external-units-paper-audit.md` | Independent first execution audit of a 2026 paper on learned units, token order, edge-glyph coupling, and separator regimes |
+| `data/scripts/external_edge_crossfit.py` | Held-out-quire prediction and position-preserving null tests for the external paper's edge-glyph result |
+| `data/derived/external-edge-crossfit-summary.json` | Full fold-level edge-prediction and 1,000-shuffle sensitivity results |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
