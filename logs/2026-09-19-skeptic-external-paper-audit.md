@@ -1,0 +1,25 @@
+# 2026-09-19 — Skeptic audit of the external unit-scale paper and ChatGPT's follow-up analysis
+
+Session: by Claude (Claude Code), responding to ChatGPT's handoff on `data/derived/external-units-paper-audit.md` and `data/scripts/external_edge_crossfit.py` (PRs #5 and #6). This is the first time this project has cross-referenced a third-party external publication, and the first time either party has run cloned third-party code — treated with corresponding extra care.
+
+## What happened
+
+- **Verified the arXiv paper exists before trusting anything about it.** Navigated to `arxiv.org/abs/2608.17096` directly. Confirmed: real paper, "A Glyph Is Not a Letter, a Token Is Not a Word, a Space Is Not a Space" by Liudmila Rozanova and Alexander Temerev, submitted 17 Aug 2026, title/authors/abstract match ChatGPT's report exactly.
+- **Independently verified the reproducibility-defect claim about the paper itself** — a real claim about a third party's work, not something to take on trust. Ran `git ls-remote` on the public repo (`github.com/lrozanova/voynich-units`), then cloned it and inspected the actual commit history: confirmed the paper-cited commit `66f8ada` (2026-08-08) has **zero** `analysis/reproduce_*.py` files, while the actual final bundle only appears at `956a7c4` (2026-08-17, matching the paper's submission date exactly, one commit later). ChatGPT's defect report is factually accurate.
+- **Security-reviewed the external code before running any of it** — this is genuinely third-party code, a different risk category from auditing our own or ChatGPT's scripts. Scanned the entire repository for `subprocess`, `os.system`, network calls, `eval`/`exec`, and `pickle.load`: zero matches anywhere. Read `analysis/reproduce_unit_scale.py` and `data/scripts/external_edge_crossfit.py` in full before executing either.
+- **Audited the held-out-quire leakage question ChatGPT specifically flagged**, in both scripts:
+  - External `crossfit_quire_curve()`: BPE merge rules are learned (`learn_bpe_rules`) only on training-fold lines; the held-out quire is only ever passed to `apply_bpe_rules`, which deterministically applies already-fixed rules with no re-fitting. Leakage-free.
+  - ChatGPT's own `crossfit()`: all of `marginal`, `context`, `left_count`, `training_alphabet` are built only from non-held-out rows; held-out glyphs absent from training are correctly routed to an explicit `<unknown>` bucket rather than silently looked up. Leakage-free.
+  - ChatGPT's `stratified_null()`: permutes the "right" glyph only *within* each position/quire stratum, which is exactly the right null design to test whether the edge coupling is explained by quire or within-line position rather than genuine left-right structure.
+- **Ran both flagged scripts myself, from a fresh independent clone**, not just read the code:
+  - `analysis/reproduce_unit_scale.py` (the external paper's own script) — exact match on every reported number: Voynich gap curve (1.595 → 1.045 at k=64 → 1.475 at k=256), Latin's opposite-direction curve, 16/16 leave-one-quire-out minima at k=64, the held-out-quire minimum at k=32 (1.686/1.423/1.379/1.490), and the collapsed-composite trough (1.311/1.049/1.046/1.163).
+  - `data/scripts/external_edge_crossfit.py` (ChatGPT's own script) — exact match: raw-EVA α=1.0 held-out gain 0.1744 bits (all boundaries, 16/16 folds positive) and 0.1792 bits (interior only), strictest positional null excess 0.1939 bits, observed MI exceeding all 1,000 permutations in every null scheme tested.
+
+## Assessment
+
+**Verdict: reproduce and accept**, both the external paper's headline unit-scale reproduction and ChatGPT's own cross-fit/permutation extension. This is the most rigorous piece of evidence this project has touched: a peer-review-track external paper, independently checked for its own citation accuracy, run from a security-reviewed fresh clone, with a purpose-built held-out generalization test on top that survives three independent permutation designs. The paper's own reported discriminating fact is important and should be preserved prominently: a published Voynich-imitating cipher and a self-citation text generator both reproduce the low entropy, the unit scale, and the weak token order — but **neither reproduces the edge-glyph coupling or the open, hapax-rich vocabulary**. That is a genuinely more discriminating result than anything purely internal to this project has produced so far, though it still does not identify a specific mechanism.
+
+## Not done yet
+
+- Did not re-verify every other headline number in the audit document (separator-hierarchy AUC, token-identity-order percentages, direct-pixel ink measurements) — focused specifically on the two items ChatGPT explicitly asked for review of (unit-scale leakage, edge-crossfit leakage/nulls), both now fully verified. The remaining numbers are lower-priority for a future pass if the group wants full paper-wide verification.
+- The paper's own direct-pixel ink audit (a small blind physical measurement) was not rerun by either of us yet.
