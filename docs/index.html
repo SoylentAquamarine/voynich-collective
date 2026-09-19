@@ -101,7 +101,7 @@
           <img src="assets/document-baseline-panel.svg" alt="Range chart comparing document-stratified character-constraint distributions for Turkish, Estonian, Arabic, Hebrew, and English with atomic and literal EVA Voynich reference lines. Every language interval remains well below both Voynich references.">
           <figcaption>Primary analysis reconstructs surface tokens; green controls shuffle characters inside tokens. All samples contain 39,026 tokens from at least eleven explicit documents.</figcaption>
         </figure>
-        <p>This is a representation-level separation, not a decipherment: language, cipher, and generated pseudo-text remain compatible explanations. The panel also lacks syllabic and logographic scripts, and independent numerical reproduction is pending. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/document-baseline-panel-report.md">Read the full preregistered result ↗</a></p>
+        <p>This is a representation-level separation, not a decipherment: language, cipher, and generated pseudo-text remain compatible explanations. The panel also lacks syllabic and logographic scripts. Claude independently reproduced all 2,000 stored replicate values exactly before the result entered the knowledge base. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/document-baseline-panel-report.md">Read the full preregistered result ↗</a></p>
       </section>
 
       <section class="status-panel currier-panel" aria-labelledby="currier-title">
@@ -115,6 +115,26 @@
           <figcaption>Herbal pages contain substantial A and B material; Davis hand 1 is A while hands 2, 3, and 5 are overwhelmingly B.</figcaption>
         </figure>
         <p>Within Herbal pages, B’s lower pooled entropy comes from more uniform transition patterns across pages—not stronger constraint on the average individual page; the result survives Claude’s six-glyph atomic-EVA policy. Image inspection also rejects the apparent hand-3 / “marginal stars” control: f58 is long-block text, while f103 onward uses repeated short star-led entries. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/currier-metadata-report.md">Read the full analysis and sources ↗</a></p>
+      </section>
+
+      <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
+        <div>
+          <p class="kicker">Image + layout audit</p>
+          <h2 id="unlabeled-title">The 30 unlabeled pages are not mainly damaged folios.</h2>
+          <p class="snapshot-caveat">Twenty-six form one continuous hand-4 diagram sequence from f67r1 through f73v. Across all 30 pages, only 12.6% of IVTFF loci are paragraph text, versus 87.1% on pages Currier labeled A or B.</p>
+        </div>
+        <figure class="layout-chart">
+          <img src="assets/unlabeled-currier-pages.svg" alt="Stacked bars comparing paragraph, label, radial, and circular text loci. Currier-labeled pages are dominated by paragraph text; unlabeled pages are dominated by diagram labels and radial or circular text.">
+          <figcaption>Layout, hand, and section are confounded, so the audit does not impute A or B to omitted pages.</figcaption>
+        </figure>
+        <div class="folio-gallery" aria-label="Representative unlabeled Voynich folios">
+          <figure><img src="assets/manuscript/f57v.jpg" alt="Voynich folio 57 verso, a concentric circular diagram with text following rings and radii." loading="lazy"><figcaption>f57v · concentric layout</figcaption></figure>
+          <figure><img src="assets/manuscript/f65r.jpg" alt="Voynich folio 65 recto, an intact herbal illustration with one short label." loading="lazy"><figcaption>f65r · three transcribed tokens</figcaption></figure>
+          <figure><img src="assets/manuscript/f65v.jpg" alt="Voynich folio 65 verso, an intact herbal page with two short text blocks." loading="lazy"><figcaption>f65v · intact herbal counterexample</figcaption></figure>
+          <figure><img src="assets/manuscript/f67r.jpg" alt="Voynich folio 67 recto foldout with two circular astronomical diagrams." loading="lazy"><figcaption>f67r · diagram foldout</figcaption></figure>
+          <figure><img src="assets/manuscript/f70v.jpg" alt="Voynich folio 70 verso, a zodiac roundel with figures and surrounding labels." loading="lazy"><figcaption>f70v · zodiac label layout</figcaption></figure>
+        </div>
+        <p>The earlier “foldouts, rosette, or damage” guess is too broad. The evidence fits a Currier coverage convention centered on body-text-rich pages; f65v shows that layout coverage—not damage alone—is the live issue. Public-domain Beinecke MS 408 scans are reproduced via Wikimedia Commons with exact provenance. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/unlabeled-currier-pages-report.md">Read the inventory and method ↗</a></p>
       </section>
 
       <section class="status-panel ambiguity-panel" aria-labelledby="ambiguity-title">
@@ -158,7 +178,7 @@
         <div><span>4</span><h3>Record</h3><p>Log results, disagreements, and next actions.</p></div>
       </div>
       <p class="snapshot-caveat">Interpretations are promoted only after explicit alternatives, a predeclared failure condition, reproducible evidence, sensitivity checks, and independent adversarial review. Upstream parser or tokenization changes trigger full dependent regeneration plus a repository-wide stale-value scan. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/falsification-standard.md">Read the promotion standard ↗</a></p>
-      <p class="snapshot-caveat"><strong>Latest registered test:</strong> Turkish, Estonian, Arabic, Hebrew, and English corpora with explicit document boundaries tested whether the local-constraint gap survives broader morphology and scripts. Commits, checksums, surface-token rules, 200-sample design, and the failure threshold were frozen before calculation; the test passed and now awaits independent numerical reproduction. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/document-baseline-panel.md">Review the preregistration ↗</a></p>
+      <p class="snapshot-caveat"><strong>Latest completed test:</strong> Turkish, Estonian, Arabic, Hebrew, and English corpora with explicit document boundaries tested whether the local-constraint gap survives broader morphology and scripts. Commits, checksums, surface-token rules, 200-sample design, and the failure threshold were frozen before calculation; the test passed, and Claude independently reproduced all 2,000 stored replicate values exactly. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/document-baseline-panel.md">Review the preregistration ↗</a></p>
     </section>
 
     <section id="logs" class="route document-route" aria-labelledby="logs-title">

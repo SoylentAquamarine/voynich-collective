@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="390" viewBox="0 0 1000 390" role="img" aria-labelledby="title desc">
+  <title id="title">Text-layout loci on Currier-labeled and unlabeled pages</title>
+  <desc id="desc">Currier-labeled pages are 87 percent paragraph loci. Unlabeled pages are only 13 percent paragraph loci and are dominated by labels, radial text, and circular text.</desc>
+  <style>
+    .title { font: 700 22px Georgia, serif; fill: #2d2922; }
+    .subtitle, .note, .legend { font: 13px Arial, sans-serif; fill: #665f53; }
+    .label { font: 15px Arial, sans-serif; fill: #2d2922; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="250" y="32" class="title">Missing Currier labels track diagram-style text layout</text>
+  <text x="250" y="56" class="subtitle">Counts of IVTFF locus descriptors; descriptive, not a language assignment</text>
+  <rect x="250" y="82" width="14" height="14" fill="#496a63"/><text x="270" y="94" class="legend">Paragraph</text><rect x="395" y="82" width="14" height="14" fill="#9b5948"/><text x="415" y="94" class="legend">Label</text><rect x="540" y="82" width="14" height="14" fill="#826b93"/><text x="560" y="94" class="legend">Radial</text><rect x="685" y="82" width="14" height="14" fill="#c8a85b"/><text x="705" y="94" class="legend">Circular</text>
+  <text x="230" y="165" text-anchor="end" class="label">Currier-labeled pages</text><rect x="250.0" y="140" width="592.6" height="36" fill="#496a63"><title>paragraph: 4035 (87.1%)</title></rect><rect x="842.6" y="140" width="84.7" height="36" fill="#9b5948"><title>label: 577 (12.5%)</title></rect><rect x="927.4" y="140" width="0.0" height="36" fill="#826b93"><title>radial: 0 (0.0%)</title></rect><rect x="927.4" y="140" width="2.6" height="36" fill="#c8a85b"><title>circular: 18 (0.4%)</title></rect><text x="250" y="198" class="note">4035/4630 paragraph loci (87.1%)</text><text x="230" y="261" text-anchor="end" class="label">Unlabeled pages</text><rect x="250.0" y="236" width="85.6" height="36" fill="#496a63"><title>paragraph: 95 (12.6%)</title></rect><rect x="335.6" y="236" width="407.1" height="36" fill="#9b5948"><title>label: 452 (59.9%)</title></rect><rect x="742.7" y="236" width="127.9" height="36" fill="#826b93"><title>radial: 142 (18.8%)</title></rect><rect x="870.6" y="236" width="59.4" height="36" fill="#c8a85b"><title>circular: 66 (8.7%)</title></rect><text x="250" y="294" class="note">95/755 paragraph loci (12.6%)</text>
+  <text x="250" y="350" class="note">Source: ZL3b IVTFF headers and locus descriptors. Page clustering means these are not independent observations.</text>
+</svg>

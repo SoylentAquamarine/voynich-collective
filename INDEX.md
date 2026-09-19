@@ -20,6 +20,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/document-baseline-panel-report.md` | Human-readable preregistered panel results and interpretation limits |
 | `data/derived/document-baseline-panel-summary.json` | Full replicate and document-level values for independent reproduction |
 | `docs/assets/document-baseline-panel.svg` | Public chart of the panel distributions and Voynich reference bounds |
+| `data/scripts/unlabeled_currier_pages.py` | Reproducible inventory of the 30 pages without a Currier A/B header and their IVTFF layout loci |
+| `data/derived/unlabeled-currier-pages-report.md` | Text-and-image audit of the missing Currier labels, with all 30 pages listed |
+| `data/derived/unlabeled-currier-pages-summary.json` | Machine-readable page inventory, token counts, locus counts, and aggregate metrics |
+| `docs/assets/unlabeled-currier-pages.svg` | Public comparison of paragraph versus diagram-style loci |
+| `docs/assets/manuscript/README.md` | Provenance for the five public-domain manuscript scans displayed on the site |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |

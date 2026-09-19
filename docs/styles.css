@@ -80,6 +80,14 @@ nav a.active, nav a:hover { color: var(--red); border-color: var(--red); }
 .currier-panel img { display: block; width: 100%; height: auto; }
 .currier-panel figcaption { margin-top: .6rem; color: #6b6252; font-size: .72rem; line-height: 1.45; }
 .currier-panel > p a { color: var(--red); }
+.unlabeled-panel { margin-top: 2rem; background: #e5dcc8; }
+.unlabeled-panel figure { margin: 0; }
+.unlabeled-panel img { display: block; width: 100%; height: auto; }
+.unlabeled-panel figcaption { margin-top: .5rem; color: #6b6252; font-size: .72rem; line-height: 1.4; }
+.unlabeled-panel > p a { color: var(--red); }
+.folio-gallery { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; }
+.folio-gallery figure { padding: .55rem; background: rgba(255,255,255,.35); border: 1px solid var(--line); }
+.folio-gallery img { aspect-ratio: 3 / 4; object-fit: contain; background: #17140f; }
 .ambiguity-panel { margin-top: 2rem; background: #eee6d7; }
 .ambiguity-panel figure { margin: 0; }
 .ambiguity-panel img { display: block; width: 100%; height: auto; }
@@ -159,6 +167,7 @@ footer a { color: #e4a891; }
   .status-panel { margin: 4rem 1rem; padding: 2rem; grid-template-columns: 1fr; }
   .status-grid { grid-template-columns: repeat(3, 1fr); }
   .status-panel > p { grid-column: auto; }
+  .folio-gallery { grid-column: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .document-shell, .reader-layout { grid-template-columns: 1fr; }
   .document-shell aside, .file-list-panel { position: static; max-height: 300px; }
   .role-grid { grid-template-columns: 1fr; }

@@ -1,0 +1,448 @@
+{
+  "unlabeled": {
+    "pages": 30,
+    "tokens": 3336,
+    "constraint_ratio": 0.4059,
+    "loci": {
+      "P": 95,
+      "L": 452,
+      "R": 142,
+      "C": 66
+    },
+    "paragraph_locus_percent": 12.6
+  },
+  "hand4_diagram_sequence": {
+    "pages": 26,
+    "tokens": 3088,
+    "constraint_ratio": 0.399,
+    "loci": {
+      "P": 89,
+      "L": 445,
+      "R": 138,
+      "C": 62
+    },
+    "paragraph_locus_percent": 12.1
+  },
+  "labeled_pages": {
+    "pages": 197,
+    "tokens": 35690,
+    "constraint_ratio": 0.4616,
+    "loci": {
+      "P": 4035,
+      "L": 577,
+      "R": 0,
+      "C": 18
+    },
+    "paragraph_locus_percent": 87.1
+  },
+  "illustration_counts": {
+    "A": 8,
+    "C": 7,
+    "H": 2,
+    "T": 1,
+    "Z": 12
+  },
+  "hand_counts": {
+    "1": 1,
+    "3": 3,
+    "4": 26
+  },
+  "labeled_loci": {
+    "P": 4035,
+    "L": 577,
+    "R": 0,
+    "C": 18
+  },
+  "inventory": [
+    {
+      "page": "f57v",
+      "illustration": "C",
+      "hand": "1",
+      "quire": "H",
+      "tokens": 198,
+      "loci": {
+        "P": 0,
+        "L": 5,
+        "R": 4,
+        "C": 4
+      }
+    },
+    {
+      "page": "f65r",
+      "illustration": "H",
+      "hand": "3",
+      "quire": "H",
+      "tokens": 3,
+      "loci": {
+        "P": 0,
+        "L": 1,
+        "R": 0,
+        "C": 0
+      }
+    },
+    {
+      "page": "f65v",
+      "illustration": "H",
+      "hand": "3",
+      "quire": "H",
+      "tokens": 45,
+      "loci": {
+        "P": 6,
+        "L": 0,
+        "R": 0,
+        "C": 0
+      }
+    },
+    {
+      "page": "f67r1",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 167,
+      "loci": {
+        "P": 4,
+        "L": 0,
+        "R": 12,
+        "C": 3
+      }
+    },
+    {
+      "page": "f67r2",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 190,
+      "loci": {
+        "P": 35,
+        "L": 39,
+        "R": 0,
+        "C": 0
+      }
+    },
+    {
+      "page": "f67v2",
+      "illustration": "C",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 62,
+      "loci": {
+        "P": 8,
+        "L": 6,
+        "R": 8,
+        "C": 0
+      }
+    },
+    {
+      "page": "f67v1",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 73,
+      "loci": {
+        "P": 0,
+        "L": 12,
+        "R": 17,
+        "C": 0
+      }
+    },
+    {
+      "page": "f68r1",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 65,
+      "loci": {
+        "P": 7,
+        "L": 29,
+        "R": 0,
+        "C": 1
+      }
+    },
+    {
+      "page": "f68r2",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 82,
+      "loci": {
+        "P": 5,
+        "L": 24,
+        "R": 0,
+        "C": 2
+      }
+    },
+    {
+      "page": "f68r3",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 106,
+      "loci": {
+        "P": 0,
+        "L": 12,
+        "R": 8,
+        "C": 2
+      }
+    },
+    {
+      "page": "f68v3",
+      "illustration": "C",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 169,
+      "loci": {
+        "P": 7,
+        "L": 2,
+        "R": 8,
+        "C": 2
+      }
+    },
+    {
+      "page": "f68v2",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 103,
+      "loci": {
+        "P": 5,
+        "L": 0,
+        "R": 12,
+        "C": 1
+      }
+    },
+    {
+      "page": "f68v1",
+      "illustration": "A",
+      "hand": "4",
+      "quire": "I",
+      "tokens": 97,
+      "loci": {
+        "P": 0,
+        "L": 0,
+        "R": 8,
+        "C": 2
+      }
+    },
+    {
+      "page": "f69r",
+      "illustration": "C",
+      "hand": "4",
+      "quire": "J",
+      "tokens": 158,
+      "loci": {
+        "P": 4,
+        "L": 22,
+        "R": 22,
+        "C": 1
+      }
+    },
+    {
+      "page": "f69v",
+      "illustration": "C",
+      "hand": "4",
+      "quire": "J",
+      "tokens": 142,
+      "loci": {
+        "P": 0,
+        "L": 0,
+        "R": 28,
+        "C": 3
+      }
+    },
+    {
+      "page": "f70r1",
+      "illustration": "C",
+      "hand": "4",
+      "quire": "J",
+      "tokens": 112,
+      "loci": {
+        "P": 0,
+        "L": 0,
+        "R": 15,
+        "C": 4
+      }
+    },
+    {
+      "page": "f70r2",
+      "illustration": "C",
+      "hand": "4",
+      "quire": "J",
+      "tokens": 246,
+      "loci": {
+        "P": 14,
+        "L": 0,
+        "R": 0,
+        "C": 5
+      }
+    },
+    {
+      "page": "f70v2",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "J",
+      "tokens": 131,
+      "loci": {
+        "P": 0,
+        "L": 30,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f70v1",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "J",
+      "tokens": 86,
+      "loci": {
+        "P": 0,
+        "L": 15,
+        "R": 0,
+        "C": 2
+      }
+    },
+    {
+      "page": "f71r",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 90,
+      "loci": {
+        "P": 0,
+        "L": 15,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f71v",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 100,
+      "loci": {
+        "P": 0,
+        "L": 15,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f72r1",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 105,
+      "loci": {
+        "P": 0,
+        "L": 15,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f72r2",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 113,
+      "loci": {
+        "P": 0,
+        "L": 29,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f72r3",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 165,
+      "loci": {
+        "P": 0,
+        "L": 30,
+        "R": 0,
+        "C": 4
+      }
+    },
+    {
+      "page": "f72v3",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 119,
+      "loci": {
+        "P": 0,
+        "L": 30,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f72v2",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 108,
+      "loci": {
+        "P": 0,
+        "L": 30,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f72v1",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "K",
+      "tokens": 104,
+      "loci": {
+        "P": 0,
+        "L": 30,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f73r",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "L",
+      "tokens": 96,
+      "loci": {
+        "P": 0,
+        "L": 30,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f73v",
+      "illustration": "Z",
+      "hand": "4",
+      "quire": "L",
+      "tokens": 99,
+      "loci": {
+        "P": 0,
+        "L": 30,
+        "R": 0,
+        "C": 3
+      }
+    },
+    {
+      "page": "f116v",
+      "illustration": "T",
+      "hand": "3",
+      "quire": "T",
+      "tokens": 2,
+      "loci": {
+        "P": 0,
+        "L": 1,
+        "R": 0,
+        "C": 0
+      }
+    }
+  ]
+}

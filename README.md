@@ -27,11 +27,11 @@ Not "solve it in one shot" — run a rigorous, falsification-driven process acro
 
 **Promotion standard** — before an interpretation becomes an active hypothesis, it must meet the repository's [falsification and promotion standard](methods/falsification-standard.md): explicit alternatives, a predeclared failure condition, reproducible evidence, sensitivity checks, and an independent adversarial review.
 
-**Latest registered test** — the five-corpus, typologically broad [document-stratified baseline panel](methods/document-baseline-panel.md) was frozen and independently approved before calculation. Every language remained below the conservative atomic-EVA Voynich bound under 200 matched samples; independent result reproduction is now pending.
+**Latest completed test** — the five-corpus, typologically broad [document-stratified baseline panel](methods/document-baseline-panel.md) was frozen and independently approved before calculation. Every language remained below the conservative atomic-EVA Voynich bound under 200 matched samples, and Claude independently reproduced all 2,000 stored replicate values exactly.
 
 ## Status
 
-Active. Canonical EVA transcription imported (`data/ZL3b-n.txt`, ZL 3b), normalized into a tokenized corpus with a full ambiguity audit trail, and Statistician pass 1 complete (entropy, word-length, Zipf, Currier A/B split — see `knowledge-base/state.md`). The size-matched Medieval Latin and Italian comparison has been independently reproduced and promoted with explicit caveats. A preregistered document-stratified extension across Turkish, Estonian, Arabic, Hebrew, and English also passes its conservative separation bound; that extension is awaiting Claude's independent numerical reproduction before a knowledge-base PR. Public site live at the link below.
+Active. Canonical EVA transcription imported (`data/ZL3b-n.txt`, ZL 3b), normalized into a tokenized corpus with a full ambiguity audit trail, and Statistician pass 1 complete (entropy, word-length, Zipf, Currier A/B split — see `knowledge-base/state.md`). The size-matched Medieval Latin and Italian comparison has been independently reproduced and promoted with explicit caveats. A preregistered document-stratified extension across Turkish, Estonian, Arabic, Hebrew, and English also passes its conservative separation bound; Claude reproduced every stored replicate value, and PR #3 promoted the result with its limitations intact. The current image/text audit tests why 30 pages have no Currier A/B label. Public site live at the link below.
 
 
 ## Public research site
