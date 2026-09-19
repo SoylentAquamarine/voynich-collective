@@ -76,7 +76,7 @@
         <div>
           <p class="kicker">New controlled comparison</p>
           <h2 id="baseline-title">More locally constrained than two language baselines.</h2>
-          <p class="snapshot-caveat">All three 39,020-token corpora have non-random word structure. Under the same calculation, knowing the previous character removes about 45% of Voynich unigram uncertainty, versus 22–23% for the Latin and Italian baselines.</p>
+          <p class="snapshot-caveat">All three 39,026-token corpora have non-random word structure. Under the same calculation, knowing the previous character removes about 45% of Voynich unigram uncertainty, versus 22–23% for the Latin and Italian baselines.</p>
         </div>
         <div class="baseline-figures">
           <figure>
@@ -85,7 +85,7 @@
           </figure>
           <figure>
             <img src="assets/baseline-sampling-sensitivity.svg" alt="Range chart showing 200 sentence-randomized Latin samples near 21 percent and Italian samples near 23 percent, compared with Voynich at 45.4 percent.">
-            <figcaption>The gap survives 200 sentence-randomized 39,020-token samples per language. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/baseline-sampling-sensitivity-report.md">Sampling audit ↗</a></figcaption>
+            <figcaption>The gap survives 200 sentence-randomized 39,026-token samples per language. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/baseline-sampling-sensitivity-report.md">Sampling audit ↗</a></figcaption>
           </figure>
         </div>
         <p>This does not identify a language or cipher. Alphabet size, morphology, genre, abbreviation, and transcription conventions remain confounds. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/language-baselines-report.md">Read the baseline report and caveats ↗</a></p>
@@ -108,13 +108,13 @@
         <div>
           <p class="kicker">Transcription stress test</p>
           <h2 id="ambiguity-title">The 817 uncertain readings do not drive the aggregate results.</h2>
-          <p class="snapshot-caveat">IVTFF specifies that the first listed reading is the transcriber’s most likely choice. Replacing every one with its less-preferred last option changes 809 of 39,020 tokens, yet leaves local constraint at 0.4539.</p>
+          <p class="snapshot-caveat">IVTFF specifies that the first listed reading is the transcriber’s most likely choice. Replacing every one with its less-preferred last option changes 809 of 39,026 tokens, yet leaves local constraint at 0.4539.</p>
         </div>
         <figure>
           <img src="assets/alternative-reading-sensitivity.svg" alt="Diverging bars showing that choosing the last option for every uncertain reading changes entropy, local constraint, atomic-glyph constraint, and Zipf slope by less than two tenths of one percent.">
           <figcaption>This is an intentionally adverse correlated perturbation, not a claim that all final options are equally likely.</figcaption>
         </figure>
-        <p>The reconstruction also caught a separate six-token boundary defect on f34r: IVTFF <code>&lt;~&gt;</code> interruptions should imply spaces. Its aggregate effect is negligible, but the derived corpus still needs a separately audited correction. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/alternative-reading-sensitivity-report.md">Read the full sensitivity report ↗</a></p>
+        <p>The reconstruction also caught a separate six-token boundary defect on f34r: IVTFF <code>&lt;~&gt;</code> interruptions should imply spaces. Claude verified and corrected it, regenerated the full analysis chain, and found no material change in any conclusion. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-09-19-tilde-boundary-fix.md">Read the correction audit ↗</a></p>
       </section>
     </section>
 
@@ -144,6 +144,7 @@
         <i aria-hidden="true">→</i>
         <div><span>4</span><h3>Record</h3><p>Log results, disagreements, and next actions.</p></div>
       </div>
+      <p class="snapshot-caveat">Interpretations are promoted only after explicit alternatives, a predeclared failure condition, reproducible evidence, sensitivity checks, and independent adversarial review. Upstream parser or tokenization changes trigger full dependent regeneration plus a repository-wide stale-value scan. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/falsification-standard.md">Read the promotion standard ↗</a></p>
     </section>
 
     <section id="logs" class="route document-route" aria-labelledby="logs-title">

@@ -25,6 +25,8 @@ Not "solve it in one shot" — run a rigorous, falsification-driven process acro
 
 **Coordination** — GitHub Issues track open questions and disagreements between agents. PRs propose knowledge-base updates and get reviewed before merge. Milestones mark points where the whole team re-evaluates against new evidence.
 
+**Promotion standard** — before an interpretation becomes an active hypothesis, it must meet the repository's [falsification and promotion standard](methods/falsification-standard.md): explicit alternatives, a predeclared failure condition, reproducible evidence, sensitivity checks, and an independent adversarial review.
+
 ## Status
 
 Active. Canonical EVA transcription imported (`data/ZL3b-n.txt`, ZL 3b), normalized into a tokenized corpus with a full ambiguity audit trail, and Statistician pass 1 complete (entropy, word-length, Zipf, Currier A/B split — see `knowledge-base/state.md`). The size-matched Medieval Latin and Italian comparison has been independently reproduced and promoted with explicit caveats; a 200-sample-per-corpus sensitivity test also shows that first-N source ordering does not explain the observed local-constraint gap. Public site live at the link below.

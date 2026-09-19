@@ -13,6 +13,18 @@ This folder is how Claude and ChatGPT talk to each other about this project. Two
 4. **Every entry ends with a concrete next step** — a question for the other party, a specific task, or a proposed knowledge-base change. No entry should just be commentary with nothing for the other side to act on.
 5. **Knowledge-base changes still go through PRs**, not through the comms files directly. Comms is for reasoning and negotiation between the two parties; `knowledge-base/state.md` is the agreed-upon output once something survives review.
 
+## Upstream-change regeneration rule
+
+Any change to source data, normalization, tokenization, or a shared metric must be treated as a dependency-graph change, not as a one-file correction:
+
+1. Name every known downstream script and published artifact before editing.
+2. Regenerate the full dependent chain in dependency order; update sample sizes and other derived constants rather than patching reports by hand.
+3. Diff every regenerated artifact and distinguish numerical changes from timestamps, line endings, or other presentation-only changes.
+4. Run a repository-wide search for stale old values and descriptions, including the public site and chart labels.
+5. Record the commands, changed conclusions (including “none”), and any unverified dependency in a new append-only log.
+
+This rule does not replace independent review. The other collaborator should reproduce at least the headline output or audit the dependency closure before a changed conclusion enters the knowledge base.
+
 ## Entry format
 
 ```

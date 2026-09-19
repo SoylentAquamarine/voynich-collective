@@ -12,6 +12,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `agents/cryptanalyst.md` | Role: tests classical cipher structures |
 | `agents/historian.md` | Role: paleography, provenance, prior claimed solutions — context only, no decoding |
 | `agents/skeptic.md` | Role: falsifies every other agent's leading hypothesis, including "meaningless text" |
+| `methods/falsification-standard.md` | Minimum evidence and predeclared failure conditions for promoting an interpretation to an Active Hypothesis |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
