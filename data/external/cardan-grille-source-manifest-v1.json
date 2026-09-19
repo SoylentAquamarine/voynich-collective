@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-awaiting-claude-review",
+  "registered_utc": "2026-09-19T21:54:00Z",
+  "result_blinding": "No upstream generator was executed and no project joint-profile value was calculated before this manifest and the paired method document were committed.",
+  "paper": {
+    "title": "Evidence of Layered Positional and Directional Constraints in the Voynich Manuscript: Implications for Cipher-Like Structure",
+    "author": "Christophe Parisel",
+    "version": "arXiv:2604.19762v2",
+    "version_date": "2026-06-16",
+    "url": "https://arxiv.org/abs/2604.19762v2",
+    "license": "CC BY 4.0"
+  },
+  "upstream_repository": {
+    "url": "https://github.com/labyrinthinesecurity/currier-signatures",
+    "commit": "5d50101b57957bc7feaa002cec01d1ce5b2b11d9",
+    "commit_date": "2026-06-16T14:06:01Z",
+    "license_status": "No LICENSE file or explicit repository license was present at the pinned commit; do not redistribute upstream code or data.",
+    "static_security_audit": "Seven files only; Python uses standard library and NumPy. No subprocess, shell, network, eval, exec, or pickle calls found.",
+    "files": [
+      {"path": "README.md", "sha256": "fb1c32c1ea54d6960373a40934f1e6c02837aab021c7418da04dc35b8ce8418c"},
+      {"path": "RF1b-e.txt", "sha256": "4f8f096eaafb2fa65096e8384ca98599138e9d0b4b57ebc3452a0f45e9544c63"},
+      {"path": "grille.py", "sha256": "7ccb3b0efa65c34e552cc0d70ed0e08eb6c10cd6a0b304643dbc15bd34ab0686"},
+      {"path": "signatures_A.txt", "sha256": "d7e754ad7445a0dec17d231b4bc144b7e8f5b8e44748d1be639fa078e8398ae4"},
+      {"path": "signatures_B.txt", "sha256": "7a16818e6be33ecf20f53a76a06bb73b2b9dd8b3553c4562f0585c148fa0e02f"},
+      {"path": "signatures_v27.py", "sha256": "af580d8de387281853b2d7d48ad23de7ca9b2b821a17ffddd825ca230c3a4f16"},
+      {"path": "verifier.py", "sha256": "cc636403279b6415db440b802027d1973bf0e1fe212a7724dd06aadea9d9a471"}
+    ],
+    "known_reproducibility_defects": [
+      "grille.py imports signatures_v26, but signatures_v26.py is absent and only signatures_v27.py is shipped.",
+      "No repository license file is present.",
+      "The full English source described by the paper is not shipped; the driver otherwise falls back to a tiled short excerpt.",
+      "NumPy bootstrap calls are not explicitly seeded by the upstream CLI, so confidence intervals are not byte-deterministic without a wrapper seed."
+    ],
+    "allowed_repair_after_review": "One-line import replacement: signatures_v26 -> signatures_v27. Record repaired checksum and diff. No other upstream edit is allowed in protocol version 1."
+  },
+  "primary_source_extension": {
+    "label": "English EWT surface-token stream",
+    "repository": "https://github.com/UniversalDependencies/UD_English-EWT",
+    "commit": "4a4d77f599ea53cc405f85d0cec4b2f14f81d42b",
+    "license": "CC BY-SA 4.0",
+    "provenance": "Already frozen in data/baselines/document-panel-v1.json; reuse its three checksums and surface-token policy.",
+    "order": ["train", "dev", "test"],
+    "document_and_sentence_order": "preserve"
+  },
+  "execution_plan": {
+    "replicates_per_configuration": 20,
+    "seeds": "42 + 137*i for i=0..19",
+    "minimum_generated_tokens": 39026,
+    "line_template": "Exact 3,950 collapsed-EVA line-length vector already used by data/scripts/external_naibbe_audit.py",
+    "primary_configurations": [
+      "G_seq English p=0.00",
+      "G_seq English p=0.05",
+      "G_seq English p=0.10",
+      "G_seq English p=0.30"
+    ],
+    "negative_controls": [
+      "G_seq Random p=0.00",
+      "G_seq Random p=1.00",
+      "G10 LEARNED-RANDOM+RANDOM"
+    ],
+    "honest_independent_word_sensitivity": ["G8 LEARNED-ENGLISH+RANDOM"],
+    "target_informed_sensitivities": [
+      "G0 SPLIT+RANDOM",
+      "G1 SPLIT+SHIFT",
+      "G2 SPLIT+ROTATE",
+      "G4 GRADIENT+RANDOM",
+      "G9 LEARNED-VMS+RANDOM"
+    ],
+    "primary_verdict": "At least one primary configuration must pass all six frozen criteria in at least 16 of 20 replicates. Controls and target-informed sensitivities cannot rescue a primary failure."
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.90, "k64_gap_bits_max": 1.20},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "execution_embargo": "Do not run the generator or calculate project outcome metrics until Claude returns an accept, narrow, or challenge verdict on this preregistration."
+}
