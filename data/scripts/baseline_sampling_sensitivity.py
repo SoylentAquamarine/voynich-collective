@@ -3,10 +3,14 @@
 
 For each pinned UD corpus used by ``language_baselines.py``, this script:
 
-1. measures every non-overlapping 39,020-token window in source order; and
+1. measures every non-overlapping TARGET_TOKENS-token window in source order; and
 2. measures 200 deterministic samples made by shuffling whole sentences,
    then taking complete sentences until the target is reached (trimming only
-   the final sentence to exactly 39,020 tokens).
+   the final sentence to exactly TARGET_TOKENS tokens).
+
+TARGET_TOKENS is imported from language_baselines.py, which is itself sized
+to match the normalized Voynich corpus (39,026 as of the 2026-09-19 <~>
+word-boundary fix; was 39,020 before).
 
 The second design removes the original first-N/document-order dependence
 while preserving every sampled word internally. It is sentence-randomized,
@@ -241,7 +245,7 @@ def main() -> None:
         "",
         "## Question",
         "",
-        "Does selecting the first 39,020 eligible Latin and Italian tokens create the reported 0.2164/0.2310 constraint ratios through source-order or document clustering?",
+        f"Does selecting the first {TARGET_TOKENS:,} eligible Latin and Italian tokens create the reported constraint ratios through source-order or document clustering?",
         "",
         "## Method",
         "",
@@ -259,7 +263,7 @@ def main() -> None:
         "",
         "## Interpretation",
         "",
-        "- The local-constraint gap is not an artifact of taking the first 39,020 tokens from these two pinned corpora.",
+        f"- The local-constraint gap is not an artifact of taking the first {TARGET_TOKENS:,} tokens from these two pinned corpora.",
         "- This strengthens only the narrow confirmed finding that this Voynich representation is more locally constrained than these Latin and Italian baselines.",
         "- It still does not distinguish language, cipher, or mechanically generated pseudo-text.",
         "- The two-language, Indo-European, genre, morphology, orthography, and EVA-tokenization limitations remain unresolved.",

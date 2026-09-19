@@ -39,13 +39,13 @@ Herbal is the only large illustration class containing substantial A and B sampl
 | Herbal subset | Pages | Tokens | H1 | H2 | Constraint |
 |---|---:|---:|---:|---:|---:|
 | Currier A | 95 | 8,063 | 3.9254 | 2.1379 | 0.4554 |
-| Currier B | 32 | 3,471 | 3.9274 | 2.0588 | 0.4758 |
+| Currier B | 32 | 3,477 | 3.9274 | 2.0569 | 0.4763 |
 
-The pooled B subset has lower H2 and higher constraint, but that contrast does **not** appear on the average individual page. Mean page constraint is 0.5447 for A and 0.5389 for B (B−A = -0.0058, two-sided permutation p = 0.503175). Mean page H2 is 1.7255 for A and 1.7655 for B (p = 0.220489).
+The pooled B subset has lower H2 and higher constraint, but that contrast does **not** appear on the average individual page. Mean page constraint is 0.5447 for A and 0.5391 for B (B−A = -0.0056, two-sided permutation p = 0.519074). Mean page H2 is 1.7255 for A and 1.7647 for B (p = 0.230388).
 
-A conditional-entropy decomposition explains the reversal. After weighting each page by its within-word transitions, within-page H2 is 1.7441 for A and 1.7816 for B. Pooling pages adds 0.3939 bits of page-to-page transition heterogeneity to A but only 0.2772 to B. B's lower pooled H2 therefore reflects more uniform transition rules across its Herbal pages, not stronger within-page predictability.
+A conditional-entropy decomposition explains the reversal. After weighting each page by its within-word transitions, within-page H2 is 1.7441 for A and 1.7805 for B. Pooling pages adds 0.3939 bits of page-to-page transition heterogeneity to A but only 0.2764 to B. B's lower pooled H2 therefore reflects more uniform transition rules across its Herbal pages, not stronger within-page predictability.
 
-Claude's independently developed atomic-EVA policy (`ch`, `sh`, `ckh`, `cth`, `cph`, and `cfh` as single glyphs) provides a connected sensitivity test. Under that tokenization, pooling adds 0.5032 bits for A and 0.3365 for B. The A-minus-B heterogeneity gap therefore remains 0.1667 bits, closely reproducing the literal-character result (0.1166 bits).
+Claude's independently developed atomic-EVA policy (`ch`, `sh`, `ckh`, `cth`, `cph`, and `cfh` as single glyphs) provides a connected sensitivity test. Under that tokenization, pooling adds 0.5032 bits for A and 0.3356 for B. The A-minus-B heterogeneity gap therefore remains 0.1676 bits, closely reproducing the literal-character result (0.1174 bits).
 
 ## Apparent same-metadata control fails visual inspection
 

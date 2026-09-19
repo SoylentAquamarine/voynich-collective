@@ -13,7 +13,7 @@
   </style>
   <rect width="100%" height="100%" fill="#f6f0e3"/>
   <text x="210" y="30" class="title">First-N ordering does not explain the constraint gap</text>
-  <text x="210" y="52" class="subtitle">200 deterministic sentence-randomized samples per corpus; each sample = 39,020 tokens</text>
+  <text x="210" y="52" class="subtitle">200 deterministic sentence-randomized samples per corpus; each sample = 39,026 tokens</text>
   <line x1="210.0" y1="70" x2="210.0" y2="260" class="grid"/><text x="210.0" y="285" text-anchor="middle" class="tick">0.0</text><line x1="342.0" y1="70" x2="342.0" y2="260" class="grid"/><text x="342.0" y="285" text-anchor="middle" class="tick">0.1</text><line x1="474.0" y1="70" x2="474.0" y2="260" class="grid"/><text x="474.0" y="285" text-anchor="middle" class="tick">0.2</text><line x1="606.0" y1="70" x2="606.0" y2="260" class="grid"/><text x="606.0" y="285" text-anchor="middle" class="tick">0.3</text><line x1="738.0" y1="70" x2="738.0" y2="260" class="grid"/><text x="738.0" y="285" text-anchor="middle" class="tick">0.4</text><line x1="870.0" y1="70" x2="870.0" y2="260" class="grid"/><text x="870.0" y="285" text-anchor="middle" class="tick">0.5</text>
   <line x1="809.1" y1="70" x2="809.1" y2="260" class="voynich"/>
   <text x="801.1" y="86" text-anchor="end" class="legend">Voynich 0.4539</text>

@@ -4,8 +4,9 @@
 The script deliberately reuses the metric implementations from
 ``statistician_pass1.py``. It downloads two pinned Universal Dependencies
 treebanks, verifies every source-file checksum, extracts word tokens using a
-documented policy, and compares exactly 39,020 tokens from each corpus with
-the 39,020-token normalized Voynich corpus.
+documented policy, and compares exactly 39,026 tokens from each corpus with
+the 39,026-token normalized Voynich corpus (39,026 as of the 2026-09-19
+<~> word-boundary fix in normalize_eva.py; was 39,020 before).
 
 No source corpus is vendored into this repository. The derived aggregate
 metrics and full provenance are written to ``data/derived``.
@@ -29,7 +30,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 VOYNICH = REPO_ROOT / "data" / "derived" / "ZL3b-normalized.txt"
 OUT_REPORT = REPO_ROOT / "data" / "derived" / "language-baselines-report.md"
 OUT_SUMMARY = REPO_ROOT / "data" / "derived" / "language-baselines-summary.json"
-TARGET_TOKENS = 39_020
+TARGET_TOKENS = 39_026  # updated 2026-09-19 for the <~> word-boundary fix; was 39_020
 SHUFFLE_SEED = 20260918
 
 CORPORA = [

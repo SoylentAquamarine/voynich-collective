@@ -789,12 +789,12 @@ f33v.11,+P0	tar al keey oram
 f34r.1,@P0	pcheoepchy olar yl yfody okedody shod ololdy dar ytey
 f34r.2,+P0	ytar sheody o lam octhedy otedy chdain oltey kchy ty
 f34r.3,+P0	qotedy chyty chdaly dar chd otedy qotol okedy dody ody kam
-f34r.4,+P0	ytedy daiin chey aiin shy chckhyoltchedy otedy dam checthy
-f34r.5,+P0	qoteedy shedy shedy ol okes arykeed l chedy otey okaiin
-f34r.6,+P0	oteol chekey chetey oll chesydaiin cheky fas aiir amg
-f34r.7,+P0	qokedy dal chdy olchy ykchyykedy qokchdy s as oldam
-f34r.8,+P0	{ch'}otchy qoky olk checkhyys air air chodar tam
-f34r.9,+P0	ykchdy qod ar ch{ct} a{ikh}yor lchey todaly okaiin dardy
+f34r.4,+P0	ytedy daiin chey aiin shy chckhy oltchedy otedy dam checthy
+f34r.5,+P0	qoteedy shedy shedy ol okes ar ykeed l chedy otey okaiin
+f34r.6,+P0	oteol chekey chetey oll chesy daiin cheky fas aiir amg
+f34r.7,+P0	qokedy dal chdy olchy ykchy ykedy qokchdy s as oldam
+f34r.8,+P0	{ch'}otchy qoky olk checkhy ys air air chodar tam
+f34r.9,+P0	ykchdy qod ar ch{ct} a{ikh}y or lchey todaly okaiin dardy
 f34r.10,+P0	tcheo olchckhy oly otchdy chefalchhs
 f34r.11,+P0	qokeey sh kaldaiin cheky cthdaly otchedy chty s aiin
 f34r.12,+P0	char aiin okor ar tol qokar chckhy chdal ked qokar ar daiin dam

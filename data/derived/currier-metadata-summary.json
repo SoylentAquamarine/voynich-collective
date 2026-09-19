@@ -122,26 +122,26 @@
         "constraint_ratio": 0.4554
       },
       "B": {
-        "tokens": 3471,
-        "vocabulary": 1340,
-        "type_token_ratio": 0.3861,
+        "tokens": 3477,
+        "vocabulary": 1339,
+        "type_token_ratio": 0.3851,
         "char_entropy_h1_bits": 3.9274,
-        "char_bigram_conditional_entropy_bits": 2.0588,
-        "word_entropy_h1_bits": 9.1622,
+        "char_bigram_conditional_entropy_bits": 2.0569,
+        "word_entropy_h1_bits": 9.1577,
         "zipf_slope": -0.9466,
-        "word_length_mean": 4.92,
-        "word_length_stdev": 1.85,
+        "word_length_mean": 4.91,
+        "word_length_stdev": 1.84,
         "alphabet_size": 35,
-        "constraint_ratio": 0.4758
+        "constraint_ratio": 0.4763
       }
     },
     "page_level_constraint_permutation": {
       "a_pages": 95,
       "b_pages": 32,
       "a_mean": 0.544744,
-      "b_mean": 0.538909,
-      "observed_b_minus_a": -0.005835,
-      "two_sided_p": 0.503175,
+      "b_mean": 0.539122,
+      "observed_b_minus_a": -0.005622,
+      "two_sided_p": 0.519074,
       "permutations": 20000,
       "seed": 20260919
     },
@@ -149,9 +149,9 @@
       "a_pages": 95,
       "b_pages": 32,
       "a_mean": 1.725491,
-      "b_mean": 1.765519,
-      "observed_b_minus_a": 0.040028,
-      "two_sided_p": 0.220489,
+      "b_mean": 1.764697,
+      "observed_b_minus_a": 0.039206,
+      "two_sided_p": 0.230388,
       "permutations": 20000,
       "seed": 20260919
     },
@@ -165,10 +165,10 @@
       },
       "B": {
         "pages": 32,
-        "transitions": 13604,
-        "pooled_h2": 2.058817,
-        "transition_weighted_within_page_h2": 1.78158,
-        "between_page_conditional_heterogeneity": 0.277237
+        "transitions": 13598,
+        "pooled_h2": 2.0569,
+        "transition_weighted_within_page_h2": 1.780475,
+        "between_page_conditional_heterogeneity": 0.276425
       }
     },
     "conditional_entropy_decomposition_atomic_glyph": {
@@ -181,10 +181,10 @@
       },
       "B": {
         "pages": 32,
-        "transitions": 11893,
-        "pooled_h2": 2.162445,
-        "transition_weighted_within_page_h2": 1.825909,
-        "between_page_conditional_heterogeneity": 0.336536
+        "transitions": 11887,
+        "pooled_h2": 2.160305,
+        "transition_weighted_within_page_h2": 1.824668,
+        "between_page_conditional_heterogeneity": 0.335637
       }
     }
   },

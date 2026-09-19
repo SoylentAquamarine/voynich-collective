@@ -10,15 +10,15 @@ Pages with Currier language label: 114 = A, 83 = B. Pages without a `$L=` label:
 
 ### All loci
 
-- Tokens: 39020
-- Vocabulary (unique word types): 8377
-- Type-token ratio: 0.2147
+- Tokens: 39026
+- Vocabulary (unique word types): 8373
+- Type-token ratio: 0.2145
 - Word length: mean 5.03, stdev 1.89, range 1-23
 - Character-level entropy H1 (unconditional): 3.9429 bits
-- Character bigram conditional entropy H(X_i|X_{i-1}): 2.1534 bits
-- Word-level entropy (unconditional, over word-type distribution): 10.4451 bits
+- Character bigram conditional entropy H(X_i|X_{i-1}): 2.1532 bits
+- Word-level entropy (unconditional, over word-type distribution): 10.4444 bits
 - Zipf log-log slope (top 500 ranks): -0.9266
-- Top 15 words: daiin(847), ol(560), chedy(506), aiin(504), shedy(434), ar(402), chol(395), or(389), chey(351), s(350), dar(323), qokeey(307), qokeedy(307), y(305), qokain(279)
+- Top 15 words: daiin(848), ol(560), chedy(506), aiin(504), shedy(434), ar(403), chol(395), or(390), chey(351), s(350), dar(323), qokeey(307), qokeedy(307), y(305), qokain(279)
 
 ## Currier A vs B
 
@@ -36,15 +36,15 @@ Pages with Currier language label: 114 = A, 83 = B. Pages without a `$L=` label:
 
 ### Currier Language B
 
-- Tokens: 24064
-- Vocabulary (unique word types): 5156
-- Type-token ratio: 0.2143
-- Word length: mean 5.11, stdev 1.83, range 1-21
+- Tokens: 24070
+- Vocabulary (unique word types): 5153
+- Type-token ratio: 0.2141
+- Word length: mean 5.10, stdev 1.83, range 1-21
 - Character-level entropy H1 (unconditional): 3.9138 bits
-- Character bigram conditional entropy H(X_i|X_{i-1}): 1.9803 bits
-- Word-level entropy (unconditional, over word-type distribution): 9.8953 bits
-- Zipf log-log slope (top 500 ranks): -0.9839
-- Top 15 words: chedy(496), ol(438), shedy(424), aiin(375), daiin(312), qokeedy(307), ar(281), or(276), qokedy(275), qokain(275), qokeey(262), chey(247), qokaiin(243), shey(201), al(191)
+- Character bigram conditional entropy H(X_i|X_{i-1}): 1.9800 bits
+- Word-level entropy (unconditional, over word-type distribution): 9.8944 bits
+- Zipf log-log slope (top 500 ranks): -0.9841
+- Top 15 words: chedy(496), ol(438), shedy(424), aiin(375), daiin(313), qokeedy(307), ar(282), or(277), qokedy(275), qokain(275), qokeey(262), chey(247), qokaiin(243), shey(201), al(191)
 
 ## Interpretation notes (Statistician role -- numbers and method only, no meaning claims)
 

@@ -57,7 +57,17 @@ def resolve_alt_readings(text, locus, report):
 def handle_drawing_intrusion(text, locus, report):
     if '<->' in text:
         report['drawing_intrusions'].append(locus)
-    return text.replace('<->', ' ')
+    text = text.replace('<->', ' ')
+    # <~> is IVTFF's other drawing-interruption word-space symbol (used when
+    # the text either side is also poorly vertically aligned) -- same word-
+    # boundary rule as <->, per IVTFF 2.0 section 6.7. Originally missed:
+    # the generic markup-stripping below would have deleted it with no
+    # boundary, silently joining the two adjacent words. Found by ChatGPT
+    # (Statistician role) reconstructing the corpus independently; verified
+    # against the primary IVTFF spec before fixing here.
+    if '<~>' in text:
+        report['misaligned_intrusions'].append(locus)
+    return text.replace('<~>', ' ')
 
 
 def handle_illegible(text, locus, report):
@@ -90,6 +100,7 @@ def main():
         'alt_readings': [],
         'stripped_markup': [],
         'drawing_intrusions': [],
+        'misaligned_intrusions': [],
         'illegible_chars': [],
         'uncertain_spaces': 0,
         'unparsed_lines': [],
@@ -136,6 +147,7 @@ def main():
         f.write(f"- Alternative readings resolved (first option kept): {len(report['alt_readings'])}\n")
         f.write(f"- Uncertain word-spaces (',') treated as word boundaries: {report['uncertain_spaces']}\n")
         f.write(f"- Drawing intrusions ('<->') treated as word boundaries: {len(report['drawing_intrusions'])}\n")
+        f.write(f"- Misaligned drawing intrusions ('<~>') treated as word boundaries: {len(report['misaligned_intrusions'])}\n")
         f.write(f"- Illegible-character loci ('?'): {len(report['illegible_chars'])}\n")
         f.write(f"- Inline markup tokens stripped: {len(report['stripped_markup'])}\n")
         f.write(f"- Unparsed non-comment lines: {len(report['unparsed_lines'])}\n\n")
@@ -144,6 +156,7 @@ def main():
         f.write("- Alternative reading `[x:y]` -> **first option `x` kept**, both logged below. IVTFF 2.0 specifies that the first option is the transcriber's most likely reading, so this is the intended default rather than a neutral coin flip. `alternative_reading_sensitivity.py` generates a deliberately adverse last-option corpus to test whether downstream results depend on that editorial preference.\n")
         f.write("- `,` (uncertain word space) -> treated as a word boundary, same as `.`, but counted separately so analyses can exclude these loci if word-boundary certainty matters.\n")
         f.write("- `<->` (drawing intrusion) -> treated as a word boundary (text on either side was not contiguous in the source manuscript).\n")
+        f.write("- `<~>` (drawing intrusion, poorly aligned) -> same word-boundary treatment as `<->`, per IVTFF 2.0 section 6.7. Fixed 2026-09-19 -- previously fell through to generic markup-stripping with no boundary inserted, silently joining the two adjacent words on all 6 occurrences (all on f34r). Found by ChatGPT reconstructing the corpus independently, verified against the primary spec before this fix.\n")
         f.write("- `?` (illegible character) -> left in place as a literal `?` in the token, not stripped or replaced. This means a word containing `?` will not match its otherwise-identical counterpart elsewhere in frequency counts -- flag for the Statistician before running word-frequency stats.\n")
         f.write("- Inline markup (`<%>`, `<!@NNN;>`, `<$>`, extended-Eva `@NNN;` escape codes, etc.) -> stripped entirely; these are editorial/rendering annotations, not glyphs.\n")
         f.write("- Ligature/grouped glyphs (`{...}`) -> left intact as part of the token, not split into components.\n\n")

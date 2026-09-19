@@ -55,7 +55,7 @@ def resolve(text: str, policy: str, audit: list[dict], locus: str) -> str:
     return ALT_READING.sub(replacement, text)
 
 
-def normalize(policy: str, *, tilde_space: bool = False) -> tuple[list[dict], list[dict]]:
+def normalize(policy: str) -> tuple[list[dict], list[dict]]:
     audit: list[dict] = []
     records = []
     for line in SOURCE.read_text(encoding="utf-8").splitlines():
@@ -64,12 +64,13 @@ def normalize(policy: str, *, tilde_space: bool = False) -> tuple[list[dict], li
             continue
         locus, text = match.groups()
         text = resolve(text, policy, audit, locus)
-        # Match the current canonical normalizer exactly. Its treatment of the
-        # six <~> markers on f34r is a separate, newly identified issue: the
-        # current script strips them as markup rather than inserting a space.
-        text = text.replace("<->", " ")
-        if tilde_space:
-            text = text.replace("<~>", " ")
+        # Both <-> and <~> are IVTFF drawing-interruption word-space symbols
+        # (2026-09-19: normalize_eva.py now treats <~> the same as <->,
+        # fixing the earlier defect where it fell through to generic
+        # markup-stripping with no boundary inserted -- see
+        # logs/2026-09-19-tilde-boundary-fix.md for the fix and full
+        # dependent-artifact regeneration).
+        text = text.replace("<->", " ").replace("<~>", " ")
         text = INLINE_MARKUP.sub("", text)
         # Downstream analyses split the normalized text on whitespace. Flatten
         # here too: drawing interruptions become spaces inside punctuation
@@ -155,7 +156,6 @@ def main() -> None:
     audits = {}
     for policy in ["first", "last", "unknown"]:
         policies[policy], audits[policy] = normalize(policy)
-    tilde_fixed_records, _tilde_audit = normalize("first", tilde_space=True)
 
     first_rendered = render_corpus(policies["first"])
     canonical_rendered = CANONICAL.read_text(encoding="utf-8")
@@ -164,7 +164,6 @@ def main() -> None:
     OUT_CORPUS.write_text(render_corpus(policies["last"]), encoding="utf-8")
 
     metrics_by_policy = {policy: aggregate(records, policy) for policy, records in policies.items()}
-    tilde_fixed_metrics = aggregate(tilde_fixed_records, "first-with-tilde-boundaries")
     section_metrics = {}
     for language in ["A", "B"]:
         section_metrics[language] = {
@@ -229,15 +228,7 @@ def main() -> None:
         "total_words": len(first_words),
         "top_first_to_last_substitutions": option_counts.most_common(20),
         "overall_metrics": metrics_by_policy,
-        "tilde_boundary_correction": {
-            "markers": 6,
-            "page": "f34r",
-            "metrics": tilde_fixed_metrics,
-            "corrected_minus_current": {
-                key: metric_delta(metrics_by_policy["first"], tilde_fixed_metrics, key)
-                for key, _label in delta_keys
-            },
-        },
+        "tilde_boundary_fix_note": "The 6 <~> markers on f34r were previously stripped as markup with no word boundary inserted -- a defect independent of alternative-reading policy. Fixed 2026-09-19 in normalize_eva.py; the 'first' policy above already reflects the fix. See logs/2026-09-19-tilde-boundary-fix.md for the isolated before/after delta.",
         "last_minus_first": {
             key: metric_delta(metrics_by_policy["first"], metrics_by_policy["last"], key)
             for key, _label in delta_keys
@@ -274,18 +265,6 @@ def main() -> None:
             f"| Herbal {language} | Mean page constraint | {first_page:.6f} | {last_page:.6f} | {last_page - first_page:+.6f} |"
         )
 
-    tilde_table = [
-        "| `<~>` check | Current canonical | Correct boundary | Delta |",
-        "|---|---:|---:|---:|",
-    ]
-    for key, label in [("tokens", "Tokens"), *delta_keys]:
-        current = metrics_by_policy["first"][key]
-        corrected = tilde_fixed_metrics[key]
-        if isinstance(current, int):
-            tilde_table.append(f"| {label} | {current:,} | {corrected:,} | {corrected - current:+,} |")
-        else:
-            tilde_table.append(f"| {label} | {current:.6f} | {corrected:.6f} | {corrected - current:+.6f} |")
-
     top_changes = ", ".join(f"`{pair}` ({count})" for pair, count in option_counts.most_common(8))
     report = [
         "# Alternative-Reading Sensitivity",
@@ -313,13 +292,9 @@ def main() -> None:
         "- Selecting every less-likely last option is an intentionally extreme correlated perturbation: real uncertainty resolution would not be expected to choose every final option simultaneously.",
         "- The effect sizes above bound this transcription-choice risk for the tested whole-corpus, Currier, and Herbal-page statistics. Small deltas mean the findings do not depend materially on the preferred reading at these 817 sites.",
         "",
-        "## Separate parser defect found during reconstruction",
+        "## Separate parser defect found during reconstruction (fixed)",
         "",
-        "IVTFF says `<~>` is a drawing interruption that also implies a word space. The current normalizer strips all six occurrences on `f34r` as generic markup, joining the surrounding strings. This is independent of alternative-reading policy. A non-destructive in-memory correction gives:",
-        "",
-        *tilde_table,
-        "",
-        "The aggregate effect is tiny, but the canonical derived corpus should still obey the format. This report does not silently change it because a correction requires regenerating and rechecking every dependent artifact.",
+        "IVTFF says `<~>` is a drawing interruption that also implies a word space, same rule as `<->`. The normalizer used to strip all six `<~>` occurrences (all on `f34r`) as generic markup, joining the two adjacent words with no boundary. This was independent of alternative-reading policy. Fixed 2026-09-19 in `normalize_eva.py`, with every dependent artifact (pass 1, language baselines, atomic-glyph check, Currier metadata analysis, this script) regenerated and diffed -- see `logs/2026-09-19-tilde-boundary-fix.md` for the isolated before/after deltas. The `first` policy numbers in this report already reflect the fix.",
         "",
         "- The alternative-reading result does not validate the normalized corpus against other transcription systems. Word-boundary policy, illegible glyphs, ligatures, and alternative full transcriptions remain separate sensitivities.",
         "- The result is about aggregate statistics, not individual words. Any proposed translation or crib touching an uncertain reading still requires image-level adjudication.",

@@ -10,46 +10,35 @@ The script independently reconstructs the first-option corpus byte-for-byte befo
 
 ## Coverage
 
-There are 817 uncertain-reading occurrences on 206 pages, including 3 with three options. Choosing the last item changes 809 of 39,020 aligned normalized tokens (2.07%). Currier allocation is A=267, B=429, unlabeled=121. The most common changes are `o → a` (100), `s → r` (76), `a → o` (61), `r → s` (42), `y → o` (25), `o → y` (25), `a → y` (19), `ch → ee` (17).
+There are 817 uncertain-reading occurrences on 206 pages, including 3 with three options. Choosing the last item changes 809 of 39,026 aligned normalized tokens (2.07%). Currier allocation is A=267, B=429, unlabeled=121. The most common changes are `o → a` (100), `s → r` (76), `a → o` (61), `r → s` (42), `y → o` (25), `o → y` (25), `a → y` (19), `ch → ee` (17).
 
 ## Results
 
 | Overall metric | Preferred first | Last-option stress | All unknown | Last−first |
 |---|---:|---:|---:|---:|
 | Character H1 | 3.942900 | 3.943100 | 3.956900 | +0.000200 |
-| Character H2 | 2.153400 | 2.153300 | 2.167300 | -0.000100 |
+| Character H2 | 2.153200 | 2.153200 | 2.167100 | +0.000000 |
 | Local constraint | 0.453900 | 0.453900 | 0.452300 | +0.000000 |
-| Atomic-glyph constraint | 0.424669 | 0.424523 | 0.422485 | -0.000146 |
-| Zipf slope | -0.926600 | -0.925400 | -0.927700 | +0.001200 |
+| Atomic-glyph constraint | 0.424711 | 0.424556 | 0.422516 | -0.000155 |
+| Zipf slope | -0.926600 | -0.925400 | -0.927800 | +0.001200 |
 
 | Subset | Metric | Preferred first | Last option | Delta |
 |---|---|---:|---:|---:|
 | Currier A | Pooled constraint | 0.442100 | 0.443000 | +0.000900 |
 | Currier A | Zipf slope | -0.935800 | -0.930700 | +0.005100 |
 | Herbal A | Mean page constraint | 0.544744 | 0.544791 | +0.000047 |
-| Currier B | Pooled constraint | 0.494000 | 0.493800 | -0.000200 |
-| Currier B | Zipf slope | -0.983900 | -0.984000 | -0.000100 |
-| Herbal B | Mean page constraint | 0.538909 | 0.538353 | -0.000556 |
+| Currier B | Pooled constraint | 0.494100 | 0.493900 | -0.000200 |
+| Currier B | Zipf slope | -0.984100 | -0.984200 | -0.000100 |
+| Herbal B | Mean page constraint | 0.539122 | 0.538512 | -0.000610 |
 
 ## Interpretation
 
 - Selecting every less-likely last option is an intentionally extreme correlated perturbation: real uncertainty resolution would not be expected to choose every final option simultaneously.
 - The effect sizes above bound this transcription-choice risk for the tested whole-corpus, Currier, and Herbal-page statistics. Small deltas mean the findings do not depend materially on the preferred reading at these 817 sites.
 
-## Separate parser defect found during reconstruction
+## Separate parser defect found during reconstruction (fixed)
 
-IVTFF says `<~>` is a drawing interruption that also implies a word space. The current normalizer strips all six occurrences on `f34r` as generic markup, joining the surrounding strings. This is independent of alternative-reading policy. A non-destructive in-memory correction gives:
-
-| `<~>` check | Current canonical | Correct boundary | Delta |
-|---|---:|---:|---:|
-| Tokens | 39,020 | 39,026 | +6 |
-| Character H1 | 3.942900 | 3.942900 | +0.000000 |
-| Character H2 | 2.153400 | 2.153200 | -0.000200 |
-| Local constraint | 0.453900 | 0.453900 | +0.000000 |
-| Atomic-glyph constraint | 0.424669 | 0.424711 | +0.000042 |
-| Zipf slope | -0.926600 | -0.926600 | +0.000000 |
-
-The aggregate effect is tiny, but the canonical derived corpus should still obey the format. This report does not silently change it because a correction requires regenerating and rechecking every dependent artifact.
+IVTFF says `<~>` is a drawing interruption that also implies a word space, same rule as `<->`. The normalizer used to strip all six `<~>` occurrences (all on `f34r`) as generic markup, joining the two adjacent words with no boundary. This was independent of alternative-reading policy. Fixed 2026-09-19 in `normalize_eva.py`, with every dependent artifact (pass 1, language baselines, atomic-glyph check, Currier metadata analysis, this script) regenerated and diffed -- see `logs/2026-09-19-tilde-boundary-fix.md` for the isolated before/after deltas. The `first` policy numbers in this report already reflect the fix.
 
 - The alternative-reading result does not validate the normalized corpus against other transcription systems. Word-boundary policy, illegible glyphs, ligatures, and alternative full transcriptions remain separate sensitivities.
 - The result is about aggregate statistics, not individual words. Any proposed translation or crib touching an uncertain reading still requires image-level adjudication.
