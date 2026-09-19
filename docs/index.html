@@ -91,6 +91,19 @@
         <p>This does not identify a language or cipher. Alphabet size, morphology, genre, abbreviation, and transcription conventions remain confounds. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/language-baselines-report.md">Read the baseline report and caveats ↗</a></p>
       </section>
 
+      <section class="status-panel baseline-panel" aria-labelledby="document-panel-title">
+        <div>
+          <p class="kicker">Preregistered broader test</p>
+          <h2 id="document-panel-title">The constraint gap survives five document-stratified languages.</h2>
+          <p class="snapshot-caveat">After the manifest was frozen and independently approved, 200 matched samples each from Turkish, Estonian, Arabic, Hebrew, and English all remained below the conservative atomic-EVA Voynich bound. The highest language upper bound was Turkish at 0.2359 versus Voynich at 0.4247.</p>
+        </div>
+        <figure>
+          <img src="assets/document-baseline-panel.svg" alt="Range chart comparing document-stratified character-constraint distributions for Turkish, Estonian, Arabic, Hebrew, and English with atomic and literal EVA Voynich reference lines. Every language interval remains well below both Voynich references.">
+          <figcaption>Primary analysis reconstructs surface tokens; green controls shuffle characters inside tokens. All samples contain 39,026 tokens from at least eleven explicit documents.</figcaption>
+        </figure>
+        <p>This is a representation-level separation, not a decipherment: language, cipher, and generated pseudo-text remain compatible explanations. The panel also lacks syllabic and logographic scripts, and independent numerical reproduction is pending. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/document-baseline-panel-report.md">Read the full preregistered result ↗</a></p>
+      </section>
+
       <section class="status-panel currier-panel" aria-labelledby="currier-title">
         <div>
           <p class="kicker">Text + image metadata</p>
@@ -145,7 +158,7 @@
         <div><span>4</span><h3>Record</h3><p>Log results, disagreements, and next actions.</p></div>
       </div>
       <p class="snapshot-caveat">Interpretations are promoted only after explicit alternatives, a predeclared failure condition, reproducible evidence, sensitivity checks, and independent adversarial review. Upstream parser or tokenization changes trigger full dependent regeneration plus a repository-wide stale-value scan. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/falsification-standard.md">Read the promotion standard ↗</a></p>
-      <p class="snapshot-caveat"><strong>Next registered test:</strong> Turkish, Estonian, Arabic, Hebrew, and English corpora with explicit document boundaries will test whether the local-constraint gap survives broader morphology and scripts. Commits, checksums, surface-token rules, 200-sample design, and the failure threshold were frozen before calculating any comparison value. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/document-baseline-panel.md">Review the preregistration ↗</a></p>
+      <p class="snapshot-caveat"><strong>Latest registered test:</strong> Turkish, Estonian, Arabic, Hebrew, and English corpora with explicit document boundaries tested whether the local-constraint gap survives broader morphology and scripts. Commits, checksums, surface-token rules, 200-sample design, and the failure threshold were frozen before calculation; the test passed and now awaits independent numerical reproduction. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/document-baseline-panel.md">Review the preregistration ↗</a></p>
     </section>
 
     <section id="logs" class="route document-route" aria-labelledby="logs-title">

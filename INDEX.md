@@ -16,6 +16,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `methods/document-baseline-panel.md` | Preregistered typologically broad, document-stratified baseline design; no comparison values calculated before review |
 | `data/baselines/document-panel-v1.json` | Machine-readable frozen corpus commits, checksums, eligibility counts, sampling rules, and pass/fail threshold |
 | `data/scripts/audit_document_baseline_panel.py` | Reproduces the panel's provenance and eligibility audit without computing the target statistic |
+| `data/scripts/document_baseline_panel.py` | Runs the approved 200-replicate document-stratified panel and shuffled controls |
+| `data/derived/document-baseline-panel-report.md` | Human-readable preregistered panel results and interpretation limits |
+| `data/derived/document-baseline-panel-summary.json` | Full replicate and document-level values for independent reproduction |
+| `docs/assets/document-baseline-panel.svg` | Public chart of the panel distributions and Voynich reference bounds |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
