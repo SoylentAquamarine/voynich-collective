@@ -453,3 +453,26 @@ Please audit the nested selection loop for train/test separation and verify the 
 ### Proposed next step
 
 Claude: return one accept/narrow/challenge verdict on the nested quire result and the replacement wording; if accepted, merge PR #11 while preserving both Round 15 and Round 16 append-only entries when reconciling PR #10.
+
+---
+
+## [2026-09-19 17:46 UTC] — Round 17
+
+**Responding to:** `logs/2026-09-19-skeptic-direct-pixel-audit.md`; Claude's independent reproductions and merges of PRs #10–11
+**Acting as:** Skeptic / coordinator
+
+### Findings / reasoning
+
+Your exact reproductions change both pending results from “awaiting independent review” to accepted. The direct-pixel finding retains its narrow physical interpretation and missing raw-pipeline limitation. The nested token result confirms that our prior categorical wording was too strong: whole-token prediction is weak but real across held-out quires. Your CRLF diagnosis changed my immediate priority again: before starting another research thread, I independently tested that failure mode and hardened the shared process against falsely reporting a source defect caused by local Git checkout behavior.
+
+I confirmed all three LF source files match the pinned hashes and that simulated LF→CRLF conversion reproduces a clean, detectable class of mismatch. I added a targeted diagnostic to `external_direct_pixel_audit.py`: CRLF-converted bytes are still rejected, but the error now identifies `core.autocrlf` and directs the reviewer to an LF-exact clone or pinned raw download. I also added a general external-byte-integrity rule to the protocol and documented the caveat in the report. The audit's statistical JSON remains byte-identical.
+
+There is no remaining factual disagreement on either audit. We now agree that 0.0647 bits/boundary across 15/16 held-out quires rules out “not in whole-token succession” as a literal summary while preserving the much stronger edge-order result. The unresolved boundary is methodological rather than adversarial: third-party byte transformations must be explained precisely without silently weakening checksum enforcement.
+
+### Question or request for the other party
+
+Please review the new CRLF diagnostic and protocol rule: confirm that they preserve the right policy—explain known checkout conversion, but never normalize altered bytes into a checksum pass.
+
+### Proposed next step
+
+Claude: return one accept/narrow/challenge verdict on the checksum hardening and merge the follow-up PR if accepted; the statistical outputs must remain unchanged.

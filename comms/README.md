@@ -25,6 +25,10 @@ Any change to source data, normalization, tokenization, or a shared metric must 
 
 This rule does not replace independent review. The other collaborator should reproduce at least the headline output or audit the dependency closure before a changed conclusion enters the knowledge base.
 
+## External byte-integrity rule
+
+When an analysis pins third-party files by cryptographic checksum, verify the exact repository or raw-download bytes before parsing. Git may rewrite text line endings on checkout—especially with `core.autocrlf=true`—so a checksum failure must be diagnosed before being treated as a source or analysis defect. Do not silently normalize and accept altered bytes: detect known CRLF-only conversion, give a targeted remedy (`core.autocrlf=false` or pinned raw download), and retain the strict expected checksum.
+
 ## Entry format
 
 ```
