@@ -25,6 +25,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/unlabeled-currier-pages-summary.json` | Machine-readable page inventory, token counts, locus counts, and aggregate metrics |
 | `docs/assets/unlabeled-currier-pages.svg` | Public comparison of paragraph versus diagram-style loci |
 | `docs/assets/manuscript/README.md` | Provenance for the five public-domain manuscript scans displayed on the site |
+| `data/scripts/hand4_currier_proximity.py` | Page-held-out character n-gram proximity audit for the unlabeled Davis-hand-4 sequence |
+| `data/derived/hand4-currier-proximity-report.md` | Why hand 4 cannot be imputed wholesale as Currier A or B, with section/layout controls |
+| `data/derived/hand4-currier-proximity-summary.json` | Full source validation, target page scores, layout views, and tokenization sensitivities |
+| `docs/assets/hand4-currier-proximity.svg` | Public page-order chart of the hand-4 A/B proximity gradient |
 | `data/derived/external-units-paper-audit.md` | Independent first execution audit of a 2026 paper on learned units, token order, edge-glyph coupling, and separator regimes |
 | `data/scripts/external_edge_crossfit.py` | Held-out-quire prediction and position-preserving null tests for the external paper's edge-glyph result |
 | `data/derived/external-edge-crossfit-summary.json` | Full fold-level edge-prediction and 1,000-shuffle sensitivity results |
