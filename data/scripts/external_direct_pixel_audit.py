@@ -37,12 +37,16 @@ MISSING_RAW_INPUTS = [
 ]
 
 
-def sha256(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as fh:
-        for chunk in iter(lambda: fh.read(1 << 20), b""):
-            h.update(chunk)
-    return h.hexdigest()
+def checksum_status(data: bytes, expected: str) -> tuple[str, str]:
+    """Classify exact bytes and the common Git CRLF checkout conversion."""
+    actual = hashlib.sha256(data).hexdigest()
+    if actual == expected:
+        return actual, "exact"
+    if b"\r\n" in data:
+        lf_data = data.replace(b"\r\n", b"\n")
+        if hashlib.sha256(lf_data).hexdigest() == expected:
+            return actual, "crlf_checkout_conversion"
+    return actual, "mismatch"
 
 
 def obtain_files(external_root: Path | None, temp_root: Path) -> tuple[dict[str, Path], list[str]]:
@@ -62,8 +66,15 @@ def obtain_files(external_root: Path | None, temp_root: Path) -> tuple[dict[str,
     for name, expected in FILES.items():
         if not paths[name].is_file():
             raise FileNotFoundError(paths[name])
-        actual = sha256(paths[name])
-        if actual != expected:
+        actual, status = checksum_status(paths[name].read_bytes(), expected)
+        if status == "crlf_checkout_conversion":
+            raise RuntimeError(
+                f"checksum mismatch for {name}: {actual} != {expected}; "
+                "the bytes differ only by Git CRLF checkout conversion. "
+                "Keep the strict raw-byte check: clone the external repository with "
+                "core.autocrlf=false or omit --external-root to fetch the pinned raw file."
+            )
+        if status != "exact":
             raise RuntimeError(f"checksum mismatch for {name}: {actual} != {expected}")
     return paths, missing
 

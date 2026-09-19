@@ -11,6 +11,7 @@ The public bundle reproduces the published summaries exactly. An additional loca
 - Paper: Rozanova & Temerev (2026), [*A Glyph Is Not a Letter, a Token Is Not a Word, a Space Is Not a Space*](https://arxiv.org/abs/2608.17096), especially Appendix A.3.
 - Public code/data: [`lrozanova/voynich-units`](https://github.com/lrozanova/voynich-units) at commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`.
 - Archived tables were accepted only after SHA-256 verification; checksums are stored in `external-direct-pixel-summary.json`.
+- Claude's independent reproduction exposed a cross-platform checkout hazard: `core.autocrlf=true` converted the external CSVs from LF to CRLF and initially changed all three hashes. Direct raw downloads matched the pinned bytes exactly. The audit script now detects this specific conversion and gives a targeted remedy while still rejecting the altered bytes; it does not silently normalize evidence to make a checksum pass.
 
 ## Exact reproduction
 
