@@ -25,6 +25,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/unlabeled-currier-pages-summary.json` | Machine-readable page inventory, token counts, locus counts, and aggregate metrics |
 | `docs/assets/unlabeled-currier-pages.svg` | Public comparison of paragraph versus diagram-style loci |
 | `docs/assets/manuscript/README.md` | Provenance for the five public-domain manuscript scans displayed on the site |
+| `data/derived/external-units-paper-audit.md` | Independent first execution audit of a 2026 paper on learned units, token order, edge-glyph coupling, and separator regimes |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
