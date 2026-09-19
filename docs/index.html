@@ -90,6 +90,19 @@
         </div>
         <p>This does not identify a language or cipher. Alphabet size, morphology, genre, abbreviation, and transcription conventions remain confounds. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/language-baselines-report.md">Read the baseline report and caveats ↗</a></p>
       </section>
+
+      <section class="status-panel currier-panel" aria-labelledby="currier-title">
+        <div>
+          <p class="kicker">Text + image metadata</p>
+          <h2 id="currier-title">A/B follows scribal hand more closely than illustration type.</h2>
+          <p class="snapshot-caveat">Across 197 labeled pages, the hand–language association is nearly complete (Cramér’s V 0.980), while illustration class is weaker (V 0.668). This identifies a confound, not its cause.</p>
+        </div>
+        <figure>
+          <img src="assets/currier-metadata.svg" alt="Stacked bars comparing Currier A, Currier B, and unlabeled page counts across illustration classes and Davis scribal hands.">
+          <figcaption>Herbal pages contain substantial A and B material; Davis hand 1 is A while hands 2, 3, and 5 are overwhelmingly B.</figcaption>
+        </figure>
+        <p>Within Herbal pages, B’s lower pooled entropy comes from more uniform transition patterns across pages—not stronger constraint on the average individual page; the result survives Claude’s six-glyph atomic-EVA policy. Image inspection also rejects the apparent hand-3 / “marginal stars” control: f58 is long-block text, while f103 onward uses repeated short star-led entries. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/currier-metadata-report.md">Read the full analysis and sources ↗</a></p>
+      </section>
     </section>
 
     <section id="theories" class="route document-route" aria-labelledby="theories-title">

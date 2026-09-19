@@ -1,0 +1,251 @@
+{
+  "sources": {
+    "page_metadata": "data/ZL3b-n.txt IVTFF page headers",
+    "tokens": "data/derived/ZL3b-normalized.txt",
+    "metric_source": "data/scripts/statistician_pass1.py via language_baselines.metrics"
+  },
+  "page_counts": {
+    "with_normalized_words": 227,
+    "currier_a": 114,
+    "currier_b": 83,
+    "unlabeled": 30
+  },
+  "association": {
+    "pages": 197,
+    "language_entropy": 0.982063,
+    "illustration_cramers_v": 0.667809,
+    "hand_cramers_v": 0.980375,
+    "language_given_illustration_entropy": 0.595844,
+    "language_given_hand_entropy": 0.053811
+  },
+  "by_illustration": [
+    {
+      "key": "H",
+      "A": 95,
+      "B": 32,
+      "unlabeled": 2
+    },
+    {
+      "key": "A",
+      "A": 0,
+      "B": 0,
+      "unlabeled": 8
+    },
+    {
+      "key": "Z",
+      "A": 0,
+      "B": 0,
+      "unlabeled": 12
+    },
+    {
+      "key": "B",
+      "A": 0,
+      "B": 19,
+      "unlabeled": 0
+    },
+    {
+      "key": "C",
+      "A": 0,
+      "B": 4,
+      "unlabeled": 7
+    },
+    {
+      "key": "P",
+      "A": 16,
+      "B": 0,
+      "unlabeled": 0
+    },
+    {
+      "key": "S",
+      "A": 2,
+      "B": 23,
+      "unlabeled": 0
+    },
+    {
+      "key": "T",
+      "A": 1,
+      "B": 5,
+      "unlabeled": 1
+    }
+  ],
+  "by_hand": [
+    {
+      "key": "1",
+      "A": 112,
+      "B": 0,
+      "unlabeled": 1
+    },
+    {
+      "key": "2",
+      "A": 0,
+      "B": 46,
+      "unlabeled": 0
+    },
+    {
+      "key": "3",
+      "A": 2,
+      "B": 28,
+      "unlabeled": 3
+    },
+    {
+      "key": "4",
+      "A": 0,
+      "B": 1,
+      "unlabeled": 26
+    },
+    {
+      "key": "5",
+      "A": 0,
+      "B": 7,
+      "unlabeled": 0
+    },
+    {
+      "key": "@",
+      "A": 0,
+      "B": 1,
+      "unlabeled": 0
+    }
+  ],
+  "herbal_control": {
+    "aggregate_metrics": {
+      "A": {
+        "tokens": 8063,
+        "vocabulary": 2528,
+        "type_token_ratio": 0.3135,
+        "char_entropy_h1_bits": 3.9254,
+        "char_bigram_conditional_entropy_bits": 2.1379,
+        "word_entropy_h1_bits": 9.5077,
+        "zipf_slope": -0.9667,
+        "word_length_mean": 4.8,
+        "word_length_stdev": 1.9,
+        "alphabet_size": 40,
+        "constraint_ratio": 0.4554
+      },
+      "B": {
+        "tokens": 3471,
+        "vocabulary": 1340,
+        "type_token_ratio": 0.3861,
+        "char_entropy_h1_bits": 3.9274,
+        "char_bigram_conditional_entropy_bits": 2.0588,
+        "word_entropy_h1_bits": 9.1622,
+        "zipf_slope": -0.9466,
+        "word_length_mean": 4.92,
+        "word_length_stdev": 1.85,
+        "alphabet_size": 35,
+        "constraint_ratio": 0.4758
+      }
+    },
+    "page_level_constraint_permutation": {
+      "a_pages": 95,
+      "b_pages": 32,
+      "a_mean": 0.544744,
+      "b_mean": 0.538909,
+      "observed_b_minus_a": -0.005835,
+      "two_sided_p": 0.503175,
+      "permutations": 20000,
+      "seed": 20260919
+    },
+    "page_level_h2_permutation": {
+      "a_pages": 95,
+      "b_pages": 32,
+      "a_mean": 1.725491,
+      "b_mean": 1.765519,
+      "observed_b_minus_a": 0.040028,
+      "two_sided_p": 0.220489,
+      "permutations": 20000,
+      "seed": 20260919
+    },
+    "conditional_entropy_decomposition": {
+      "A": {
+        "pages": 95,
+        "transitions": 30605,
+        "pooled_h2": 2.137939,
+        "transition_weighted_within_page_h2": 1.74407,
+        "between_page_conditional_heterogeneity": 0.393869
+      },
+      "B": {
+        "pages": 32,
+        "transitions": 13604,
+        "pooled_h2": 2.058817,
+        "transition_weighted_within_page_h2": 1.78158,
+        "between_page_conditional_heterogeneity": 0.277237
+      }
+    },
+    "conditional_entropy_decomposition_atomic_glyph": {
+      "A": {
+        "pages": 95,
+        "transitions": 24985,
+        "pooled_h2": 2.318816,
+        "transition_weighted_within_page_h2": 1.815628,
+        "between_page_conditional_heterogeneity": 0.503188
+      },
+      "B": {
+        "pages": 32,
+        "transitions": 11893,
+        "pooled_h2": 2.162445,
+        "transition_weighted_within_page_h2": 1.825909,
+        "between_page_conditional_heterogeneity": 0.336536
+      }
+    }
+  },
+  "hand3_marginal_stars_control": {
+    "A": {
+      "pages": 2,
+      "page_ids": [
+        "f58r",
+        "f58v"
+      ],
+      "explicit_entry_starts": 7,
+      "tokens": 753,
+      "vocabulary": 459,
+      "type_token_ratio": 0.6096,
+      "char_entropy_h1_bits": 3.9062,
+      "char_bigram_conditional_entropy_bits": 2.0397,
+      "word_entropy_h1_bits": 8.3574,
+      "zipf_slope": -0.5222,
+      "word_length_mean": 4.99,
+      "word_length_stdev": 1.96,
+      "alphabet_size": 32,
+      "constraint_ratio": 0.4778
+    },
+    "B": {
+      "pages": 22,
+      "page_ids": [
+        "f103r",
+        "f103v",
+        "f104r",
+        "f104v",
+        "f105r",
+        "f105v",
+        "f106r",
+        "f106v",
+        "f107r",
+        "f107v",
+        "f108r",
+        "f108v",
+        "f111r",
+        "f111v",
+        "f112r",
+        "f112v",
+        "f113r",
+        "f113v",
+        "f114r",
+        "f114v",
+        "f115v",
+        "f116r"
+      ],
+      "explicit_entry_starts": 272,
+      "tokens": 10432,
+      "vocabulary": 3023,
+      "type_token_ratio": 0.2898,
+      "char_entropy_h1_bits": 3.8979,
+      "char_bigram_conditional_entropy_bits": 1.9559,
+      "word_entropy_h1_bits": 9.7742,
+      "zipf_slope": -0.9372,
+      "word_length_mean": 5.25,
+      "word_length_stdev": 1.83,
+      "alphabet_size": 37,
+      "constraint_ratio": 0.4982
+    }
+  }
+}
