@@ -135,6 +135,19 @@
         <p>The small direct-pixel cross-check also reproduces: certain gaps average 4.98 pixels versus 3.14 for uncertain gaps, with the same direction on all 5 informative folios. Line-matched and local-height-normalized checks retain the effect. This is corroboration, not an independent study: only 21 uncertain cases survive, and the public bundle omits the frozen manifest, QC file, label key, and Yale scans needed to rerun the raw extraction. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-direct-pixel-report.md">Read the direct-pixel audit ↗</a></p>
       </section>
 
+      <section class="status-panel baseline-panel" aria-labelledby="naibbe-audit-title">
+        <div>
+          <p class="kicker">Published cipher, mechanism control</p>
+          <h2 id="naibbe-audit-title">Naibbe matches Voynich-like word structure—but not edge continuity.</h2>
+          <p class="snapshot-caveat">A checksum-pinned reproduction of a published, hand-executable cipher nearly matches Voynich character entropy, the 64-merge learned-unit minimum, and weak whole-token order. That is strong evidence that those aggregate properties alone do not identify language, cipher, or pseudo-text.</p>
+        </div>
+        <figure>
+          <img src="assets/external-naibbe-edge-crossfit.svg" alt="Line chart comparing held-out last-glyph to next-first-glyph predictive gain for Voynich and two Naibbe cipher samples across sixteen contiguous line blocks. Voynich is positive in every block; both Naibbe samples remain near zero.">
+          <figcaption>Using an identical 3,950-line template, Voynich gains 0.187 bits per held-out boundary (16/16 blocks positive), versus −0.002 for both generated Naibbe/Latin samples. Voynich also has 69.7% singleton types versus 40–42% for Naibbe.</figcaption>
+        </figure>
+        <p>This does not rule out ciphers generally. It narrows one concrete mechanism: published Naibbe needs an additional cross-token state or reuse process and a source of continuing rare forms to reproduce the joint profile. The project extension awaits independent review. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-naibbe-audit-report.md">Read the full mechanism audit ↗</a></p>
+      </section>
+
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
         <div>
           <p class="kicker">Image + layout audit</p>

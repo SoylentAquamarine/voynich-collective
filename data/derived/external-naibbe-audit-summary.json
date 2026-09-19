@@ -1,0 +1,1923 @@
+{
+  "source": {
+    "commit": "956a7c4fc39981f4d116fa3f4edfccce6d065571",
+    "files": {
+      "analysis/reproduce_naibbe_control.py": {
+        "expected": "df9f01ed8f5eefa03830e4e31904d7163e902119988e9138074ac5cb1e9ecd8e",
+        "actual": "df9f01ed8f5eefa03830e4e31904d7163e902119988e9138074ac5cb1e9ecd8e",
+        "matches": true
+      },
+      "data/controls/naibbe/naibbe_tables.json": {
+        "expected": "46c1235ad1dfdcaabd7866895c0557bb0e98c465f3e324fdb10dca150933826a",
+        "actual": "46c1235ad1dfdcaabd7866895c0557bb0e98c465f3e324fdb10dca150933826a",
+        "matches": true
+      },
+      "data/controls/naibbe/greshko_nathist_output_ciphertext.txt": {
+        "expected": "9cdf2de12f371ac7efdb2e78713f229ada508286c1717758184238a59cd64326",
+        "actual": "9cdf2de12f371ac7efdb2e78713f229ada508286c1717758184238a59cd64326",
+        "matches": true
+      },
+      "data/controls/naibbe/greshko_nathist_pre_encryption_respaced_plaintext.txt": {
+        "expected": "4979b6826c75dd47b90d6c95ac212a34cd3735b1151ca2a524e9d13b4112e93b",
+        "actual": "4979b6826c75dd47b90d6c95ac212a34cd3735b1151ca2a524e9d13b4112e93b",
+        "matches": true
+      }
+    }
+  },
+  "driver": {
+    "command_mode": "default published driver with --skip-attack; 100 order shuffles",
+    "deviations_from_greshko": [
+      "Plaintext is the package's Caesar (De bello Gallico I-IV) prepared exactly as validate_synthetics.caesar_lines(): lower-cased, de-accented, v->u and j->i (Greshko's clean_line keeps v distinct); Greshko's k->c and w->uu are applied afterwards (no such letters remain in Caesar after v->u/j->i).",
+      "The whole plaintext is treated as one continuous letter stream: respacing is not restarted at source line breaks (Greshko respaces each source line separately, forcing a unigram at every line end); the deck persists across the whole text as in Greshko's code.",
+      "Ciphertext tokens are wrapped into the Voynich line-length template (the paper's control convention) instead of keeping source-line structure.",
+      "The 52-card deck, respacing probability 17/36 and the naibbe.py (v1) ambiguity rule (redraw only when prefix+suffix equals a unigram string) are used; these are the settings that reproduce the table-usage frequencies of the shipped Pliny ciphertext.  Greshko's optional 3% space-removal post-processing is not applied."
+    ],
+    "shipped_sample_table_check": {
+      "tokens": 34764,
+      "aligned_chunks": 34764,
+      "unigram_tokens_reproduced": 16887,
+      "bigram_tokens_reproduced": 17877,
+      "unreproducible_tokens": 0,
+      "unigram_table_shares": {
+        "alpha": 0.38443773316752533,
+        "beta1": 0.15621483981761117,
+        "beta2": 0.1708414756913602,
+        "beta3": 0.13554805471664594,
+        "gamma1": 0.07496891099662462,
+        "gamma2": 0.07798898561023272
+      }
+    }
+  },
+  "profiles": {
+    "voynich": {
+      "entropy_H1": 3.976250389002254,
+      "entropy_H2": 2.6896920626539456,
+      "bpe_minimum_checkpoint": 64,
+      "bpe_k64_gap_bits": 1.0448183981004666,
+      "bpe_k64_mean_unit_length": 2.386860105913504,
+      "token_order_share": 0.007937281020836807,
+      "vocabulary_types": 7022,
+      "hapax_share_of_types": 0.6968100256337226,
+      "top_50_token_coverage": 0.3320609521482884
+    },
+    "naibbe_caesar": {
+      "entropy_H1": 3.9786665102559,
+      "entropy_H2": 2.7067892815737635,
+      "bpe_minimum_checkpoint": 64,
+      "bpe_k64_gap_bits": 1.027603441152234,
+      "bpe_k64_mean_unit_length": 2.4279321615441805,
+      "token_order_share": 0.012466762702969716,
+      "vocabulary_types": 5234,
+      "hapax_share_of_types": 0.40523500191058465,
+      "top_50_token_coverage": 0.3769200232082328
+    },
+    "greshko_pliny": {
+      "entropy_H1": 3.9854364443736,
+      "entropy_H2": 2.712058078873521,
+      "bpe_minimum_checkpoint": 64,
+      "bpe_k64_gap_bits": 1.0399764770077704,
+      "bpe_k64_mean_unit_length": 2.418625122257929,
+      "token_order_share": 0.010621551096363275,
+      "vocabulary_types": 5463,
+      "hapax_share_of_types": 0.41680395387149916,
+      "top_50_token_coverage": 0.37572907441903075
+    }
+  },
+  "edge_crossfit": {
+    "voynich": [
+      {
+        "alpha": 0.1,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": 0.19066769983414053,
+        "positive_blocks": 16,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": 0.09011012548151459
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.09792228423393834
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": 0.0855913275343779
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.16705598365702984
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.1087392885504755
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.1410937008397473
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.2257259274793357
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.28125636190174513
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": 0.29952004742366645
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.20798619538480978
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": 0.13367401402834525
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": 0.1318179319855673
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": 0.2305277412046748
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": 0.24174689318530157
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": 0.24421039457125118
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": 0.22647434202808522
+          }
+        ]
+      },
+      {
+        "alpha": 0.5,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": 0.19063667174059118,
+        "positive_blocks": 16,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": 0.09717687813853439
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.09834843868808978
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": 0.08704586745110557
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.17152434941530476
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.11058667112872152
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.1417744346700836
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.22479718301312493
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.2785121346015142
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": 0.2972488464613712
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.20743869340750512
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": 0.1369093591050961
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": 0.13080003734719556
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": 0.23189324546260398
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": 0.2373164800160481
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": 0.24083618982983676
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": 0.22609814659697594
+          }
+        ]
+      },
+      {
+        "alpha": 1.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": 0.18712469674035354,
+        "positive_blocks": 16,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": 0.09707703454702152
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.0958170398245528
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": 0.08157206039703893
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.1688188351765776
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.10729310846755885
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.13710117166335345
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.22056445112641804
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.27443016520704894
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": 0.29353708987503935
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.20513119548214534
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": 0.13528231163145765
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": 0.12791146048127394
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": 0.2289131692930878
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": 0.23263803895223342
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": 0.23607175617901544
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": 0.22146276192638062
+          }
+        ]
+      },
+      {
+        "alpha": 5.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": 0.16005842742193388,
+        "positive_blocks": 16,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": 0.08447788769646015
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.07834410967674636
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": 0.04388909041563987
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.14037901175180828
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.0806834700691028
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.10307145622368691
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.18923886206673823
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.24899139263254738
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": 0.2673471685327647
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.18425788299596968
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": 0.11271141335624808
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": 0.10728198902725167
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": 0.2009374991533872
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": 0.20376017272419952
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": 0.2044400700121283
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": 0.18677286842954358
+          }
+        ]
+      },
+      {
+        "alpha": 20.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": 0.0835545197999244,
+        "positive_blocks": 15,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": 0.03498350845990583
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.027426554071651586
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.04257378808143967
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.06251747286219232
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.011198968656009563
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.021102836220704756
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.10504698413411802
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.1788747866660117
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": 0.19009647974589242
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.11533795296364611
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": 0.036817763457933445
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": 0.042667535590469444
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": 0.11644059542600936
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": 0.12252909717746228
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": 0.11818062441477142
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": 0.09166679414065
+          }
+        ]
+      }
+    ],
+    "naibbe_caesar": [
+      {
+        "alpha": 0.1,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.0012527295387038514,
+        "positive_blocks": 5,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.00814277075529358
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": -0.0005451425289258548
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.0012646002125492046
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": -0.001866542565313347
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.004750926621863361
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.0011649547866864585
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.0042415398024339135
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": -0.0007524371433085977
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.0024853894613773454
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.004614301485415155
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.004037106049379008
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": 0.00020772672136154012
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.0021701354523735268
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.0019965887914313147
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.005663000335137445
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.004893747145037251
+          }
+        ]
+      },
+      {
+        "alpha": 0.5,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.001074292341101602,
+        "positive_blocks": 4,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.007930779093390029
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": -0.001050485854152141
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.0020849970572143633
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": -0.003170927611397047
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.004060840968676399
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.0022753571314903824
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.0030197586920365552
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": -0.0013197168745332055
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.002105204277382747
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.005743368215133052
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.004118493027610689
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.0005499660487017177
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.0003587928009668239
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.0027967596512828165
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.004476789756542643
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.002760159903659321
+          }
+        ]
+      },
+      {
+        "alpha": 1.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.0016098368786811872,
+        "positive_blocks": 5,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.008747694727115833
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": -0.0016857261883127226
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.003133585206843999
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": -0.004435123541161539
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": 0.0033126731533078477
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": 0.002399110526510764
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": 0.001787042919892275
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": -0.002035977022146897
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.0025451973691406706
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.005372738113604143
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.005118687010515868
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.0014320830117142969
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": 9.48976061267684e-05
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.003756700496838048
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.0045464966508761495
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.0025246864831530292
+          }
+        ]
+      },
+      {
+        "alpha": 5.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.007272120674876609,
+        "positive_blocks": 0,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.01566084517984383
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": -0.0068557429967143904
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.010917573713864894
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": -0.011454953708602634
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": -0.002284510717519047
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": -0.0012936478854975147
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": -0.005223040478370485
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": -0.007722990257965891
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.007777231352552142
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": -0.0005089126809970176
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.013230226048444697
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.007739539197267742
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.002497331357412164
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.01062390317225304
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.008990122741164295
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.006816088153508511
+          }
+        ]
+      },
+      {
+        "alpha": 20.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.027793154216966848,
+        "positive_blocks": 0,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.03711615999011008
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": -0.026092459550716283
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.03424262767842291
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": -0.03235909101855003
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": -0.02335385720221912
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": -0.020762728860231176
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": -0.025381135244628573
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": -0.027228914204151602
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.02717240907238451
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": -0.02137201488532551
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.036883590691402776
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.029201779558988922
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.020073361129034788
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.032812462732156156
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.028149694960444383
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.027192421324459686
+          }
+        ]
+      }
+    ],
+    "greshko_pliny": [
+      {
+        "alpha": 0.1,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.002210606347886723,
+        "positive_blocks": 4,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.0015032912371998669
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.0034136181068222826
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.001006834129012517
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.006473857905344954
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": -0.003063210273158927
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": -0.01022506106648896
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": -0.0037406681079225146
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.0015258616964808022
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.0028671611556572245
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.0008048168850753017
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.002247234655850723
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.006632015565276108
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.0009972860250000686
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.007327644549932907
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.0027682411356285386
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.001447175959539509
+          }
+        ]
+      },
+      {
+        "alpha": 0.5,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.001596627215340719,
+        "positive_blocks": 5,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.0011365205496565896
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.0027478974611873977
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": 0.000875135722059045
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.005848196422200804
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": -0.0038023387133708274
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": -0.008728635534024223
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": -0.002684591065930589
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.0017682343288507095
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.0007609920394353851
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.0011863462412007597
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.0023533195301006235
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.004418317285211266
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.0005732737708546042
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.006254831227036531
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.0016782246202474487
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.002260038698880013
+          }
+        ]
+      },
+      {
+        "alpha": 1.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.001951193875476833,
+        "positive_blocks": 5,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.001738341774136435
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": 0.0019214193871084717
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": 0.000738193697850057
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 0.005129227895394685
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": -0.0046912367369185935
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": -0.008886488483958179
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": -0.003171996481257126
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": 0.0011354764804612579
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.00023518811076757694
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": 0.0007528249450893465
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.002600768840287819
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.004255352633951163
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.0008404465131301714
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.00643503088078101
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.001890691935413955
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.003111879007706334
+          }
+        ]
+      },
+      {
+        "alpha": 5.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.007120052368380596,
+        "positive_blocks": 1,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.0070941008665201324
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": -0.0042972530113533506
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.005690296807277006
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": 4.476949544112164e-05
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": -0.011269231365332285
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": -0.01465654856370459
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": -0.009448114167594258
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": -0.0053769285998757676
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.0029800445464337054
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": -0.004515427288039769
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.0059914281916623085
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.008429899204178947
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.0053339969185181545
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.010875736659669297
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.007299801617722239
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.008654198161669423
+          }
+        ]
+      },
+      {
+        "alpha": 20.0,
+        "blocks": 16,
+        "pairs": 28797,
+        "gain_bits_per_boundary": -0.027005313267757142,
+        "positive_blocks": 0,
+        "folds": [
+          {
+            "block": 1,
+            "first_line": 1,
+            "last_line": 246,
+            "pairs": 1349,
+            "gain_bits_per_boundary": -0.025002078975622663
+          },
+          {
+            "block": 2,
+            "first_line": 247,
+            "last_line": 493,
+            "pairs": 1359,
+            "gain_bits_per_boundary": -0.02520405842958702
+          },
+          {
+            "block": 3,
+            "first_line": 494,
+            "last_line": 740,
+            "pairs": 1409,
+            "gain_bits_per_boundary": -0.029665050136807886
+          },
+          {
+            "block": 4,
+            "first_line": 741,
+            "last_line": 987,
+            "pairs": 1435,
+            "gain_bits_per_boundary": -0.017817345357122826
+          },
+          {
+            "block": 5,
+            "first_line": 988,
+            "last_line": 1234,
+            "pairs": 1610,
+            "gain_bits_per_boundary": -0.032871052424768586
+          },
+          {
+            "block": 6,
+            "first_line": 1235,
+            "last_line": 1481,
+            "pairs": 1674,
+            "gain_bits_per_boundary": -0.037143448656746514
+          },
+          {
+            "block": 7,
+            "first_line": 1482,
+            "last_line": 1728,
+            "pairs": 1780,
+            "gain_bits_per_boundary": -0.02976937228642793
+          },
+          {
+            "block": 8,
+            "first_line": 1729,
+            "last_line": 1975,
+            "pairs": 1835,
+            "gain_bits_per_boundary": -0.027241979256102132
+          },
+          {
+            "block": 9,
+            "first_line": 1976,
+            "last_line": 2221,
+            "pairs": 1879,
+            "gain_bits_per_boundary": -0.021098584929902124
+          },
+          {
+            "block": 10,
+            "first_line": 2222,
+            "last_line": 2468,
+            "pairs": 1889,
+            "gain_bits_per_boundary": -0.023853552429651308
+          },
+          {
+            "block": 11,
+            "first_line": 2469,
+            "last_line": 2715,
+            "pairs": 1726,
+            "gain_bits_per_boundary": -0.021978370940159274
+          },
+          {
+            "block": 12,
+            "first_line": 2716,
+            "last_line": 2962,
+            "pairs": 1909,
+            "gain_bits_per_boundary": -0.02715198676977564
+          },
+          {
+            "block": 13,
+            "first_line": 2963,
+            "last_line": 3209,
+            "pairs": 2227,
+            "gain_bits_per_boundary": -0.025227746670763718
+          },
+          {
+            "block": 14,
+            "first_line": 3210,
+            "last_line": 3456,
+            "pairs": 2186,
+            "gain_bits_per_boundary": -0.029389118763372954
+          },
+          {
+            "block": 15,
+            "first_line": 3457,
+            "last_line": 3703,
+            "pairs": 2296,
+            "gain_bits_per_boundary": -0.028523640472981164
+          },
+          {
+            "block": 16,
+            "first_line": 3704,
+            "last_line": 3950,
+            "pairs": 2234,
+            "gain_bits_per_boundary": -0.02858478126668847
+          }
+        ]
+      }
+    ]
+  },
+  "paired_edge_comparisons": {
+    "naibbe_caesar": {
+      "voynich_higher_blocks": 16,
+      "blocks": 16,
+      "minimum_paired_difference": 0.08470564560388293,
+      "one_sided_exact_sign_p": 1.52587890625e-05
+    },
+    "greshko_pliny": {
+      "voynich_higher_blocks": 16,
+      "blocks": 16,
+      "minimum_paired_difference": 0.08083386669918888,
+      "one_sided_exact_sign_p": 1.52587890625e-05
+    }
+  }
+}
