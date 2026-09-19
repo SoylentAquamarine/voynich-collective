@@ -141,7 +141,7 @@ def main():
         f.write(f"- Unparsed non-comment lines: {len(report['unparsed_lines'])}\n\n")
 
         f.write("## Policy (read before trusting any downstream statistic)\n\n")
-        f.write("- Alternative reading `[x:y]` -> **first option `x` kept**, both logged below. This is a real editorial choice, not a neutral default -- re-running with `y` kept instead would be an equally legitimate corpus for comparison, not yet built. Any statistical result sensitive to this choice should be re-checked against a `y`-kept variant before being trusted.\n")
+        f.write("- Alternative reading `[x:y]` -> **first option `x` kept**, both logged below. IVTFF 2.0 specifies that the first option is the transcriber's most likely reading, so this is the intended default rather than a neutral coin flip. `alternative_reading_sensitivity.py` generates a deliberately adverse last-option corpus to test whether downstream results depend on that editorial preference.\n")
         f.write("- `,` (uncertain word space) -> treated as a word boundary, same as `.`, but counted separately so analyses can exclude these loci if word-boundary certainty matters.\n")
         f.write("- `<->` (drawing intrusion) -> treated as a word boundary (text on either side was not contiguous in the source manuscript).\n")
         f.write("- `?` (illegible character) -> left in place as a literal `?` in the token, not stripped or replaced. This means a word containing `?` will not match its otherwise-identical counterpart elsewhere in frequency counts -- flag for the Statistician before running word-frequency stats.\n")

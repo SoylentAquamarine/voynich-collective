@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Effect of choosing the least-preferred alternative readings</title>
+  <desc id="desc">Percent changes in five corpus statistics when every IVTFF uncertain reading uses its last rather than first option. All changes are small.</desc>
+  <style>
+    .title { font: 700 22px Georgia, serif; fill: #2d2922; }
+    .subtitle, .value { font: 13px Arial, sans-serif; fill: #665f53; }
+    .label { font: 14px Arial, sans-serif; fill: #2d2922; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="235" y="32" class="title">Last-option stress test barely moves corpus statistics</text>
+  <text x="235" y="55" class="subtitle">Change from IVTFF's preferred first reading; last options are a sensitivity bound, not an equally likely corpus</text>
+  <line x1="582.5" y1="80" x2="582.5" y2="355" stroke="#8f8778" stroke-width="1"/>
+  <text x="217" y="113" text-anchor="end" class="label">Character H1</text><rect x="582.5" y="95" width="13.6" height="24" fill="#9b5948"/><text x="604.1" y="113" text-anchor="start" class="value">+0.005%</text><text x="217" y="169" text-anchor="end" class="label">Character H2</text><rect x="570.0" y="151" width="12.5" height="24" fill="#9b5948"/><text x="562.0" y="169" text-anchor="end" class="value">-0.005%</text><text x="217" y="225" text-anchor="end" class="label">Local constraint</text><rect x="582.5" y="207" width="0.0" height="24" fill="#9b5948"/><text x="590.5" y="225" text-anchor="start" class="value">+0.000%</text><text x="217" y="281" text-anchor="end" class="label">Atomic-glyph constraint</text><rect x="490.2" y="263" width="92.3" height="24" fill="#9b5948"/><text x="482.2" y="281" text-anchor="end" class="value">-0.034%</text><text x="217" y="337" text-anchor="end" class="label">Zipf slope</text><rect x="582.5" y="319" width="347.5" height="24" fill="#9b5948"/><text x="938.0" y="337" text-anchor="start" class="value">+0.130%</text>
+</svg>

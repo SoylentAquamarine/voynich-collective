@@ -1,0 +1,294 @@
+{
+  "source": "data/ZL3b-n.txt",
+  "ivttf_rule": "The most likely option is first in each uncertain-reading list.",
+  "alternative_occurrences": 817,
+  "three_option_occurrences": 3,
+  "affected_pages": 206,
+  "affected_by_currier_language": {
+    "A": 267,
+    "B": 429,
+    "-": 121
+  },
+  "changed_aligned_words_first_to_last": 809,
+  "total_words": 39020,
+  "top_first_to_last_substitutions": [
+    [
+      "o → a",
+      100
+    ],
+    [
+      "s → r",
+      76
+    ],
+    [
+      "a → o",
+      61
+    ],
+    [
+      "r → s",
+      42
+    ],
+    [
+      "y → o",
+      25
+    ],
+    [
+      "o → y",
+      25
+    ],
+    [
+      "a → y",
+      19
+    ],
+    [
+      "ch → ee",
+      17
+    ],
+    [
+      "g → m",
+      14
+    ],
+    [
+      "a → ?",
+      13
+    ],
+    [
+      "y → ?",
+      11
+    ],
+    [
+      "t → k",
+      11
+    ],
+    [
+      "ee → ch",
+      11
+    ],
+    [
+      "k → t",
+      10
+    ],
+    [
+      "o → ?",
+      9
+    ],
+    [
+      "ee → a",
+      9
+    ],
+    [
+      "y → a",
+      8
+    ],
+    [
+      "o → e",
+      8
+    ],
+    [
+      "ch → a",
+      8
+    ],
+    [
+      "? → o",
+      8
+    ]
+  ],
+  "overall_metrics": {
+    "first": {
+      "tokens": 39020,
+      "vocabulary": 8377,
+      "type_token_ratio": 0.2147,
+      "char_entropy_h1_bits": 3.9429,
+      "char_bigram_conditional_entropy_bits": 2.1534,
+      "word_entropy_h1_bits": 10.4451,
+      "zipf_slope": -0.9266,
+      "word_length_mean": 5.03,
+      "word_length_stdev": 1.89,
+      "alphabet_size": 42,
+      "constraint_ratio": 0.4539,
+      "atomic_glyph_constraint_ratio": 0.424669
+    },
+    "last": {
+      "tokens": 39020,
+      "vocabulary": 8388,
+      "type_token_ratio": 0.215,
+      "char_entropy_h1_bits": 3.9431,
+      "char_bigram_conditional_entropy_bits": 2.1533,
+      "word_entropy_h1_bits": 10.4518,
+      "zipf_slope": -0.9254,
+      "word_length_mean": 5.03,
+      "word_length_stdev": 1.89,
+      "alphabet_size": 42,
+      "constraint_ratio": 0.4539,
+      "atomic_glyph_constraint_ratio": 0.424523
+    },
+    "unknown": {
+      "tokens": 39020,
+      "vocabulary": 8578,
+      "type_token_ratio": 0.2198,
+      "char_entropy_h1_bits": 3.9569,
+      "char_bigram_conditional_entropy_bits": 2.1673,
+      "word_entropy_h1_bits": 10.4901,
+      "zipf_slope": -0.9277,
+      "word_length_mean": 5.02,
+      "word_length_stdev": 1.89,
+      "alphabet_size": 42,
+      "constraint_ratio": 0.4523,
+      "atomic_glyph_constraint_ratio": 0.422485
+    }
+  },
+  "tilde_boundary_correction": {
+    "markers": 6,
+    "page": "f34r",
+    "metrics": {
+      "tokens": 39026,
+      "vocabulary": 8373,
+      "type_token_ratio": 0.2145,
+      "char_entropy_h1_bits": 3.9429,
+      "char_bigram_conditional_entropy_bits": 2.1532,
+      "word_entropy_h1_bits": 10.4444,
+      "zipf_slope": -0.9266,
+      "word_length_mean": 5.03,
+      "word_length_stdev": 1.89,
+      "alphabet_size": 42,
+      "constraint_ratio": 0.4539,
+      "atomic_glyph_constraint_ratio": 0.424711
+    },
+    "corrected_minus_current": {
+      "char_entropy_h1_bits": 0.0,
+      "char_bigram_conditional_entropy_bits": -0.0002,
+      "constraint_ratio": 0.0,
+      "atomic_glyph_constraint_ratio": 4.2e-05,
+      "zipf_slope": 0.0
+    }
+  },
+  "last_minus_first": {
+    "char_entropy_h1_bits": 0.0002,
+    "char_bigram_conditional_entropy_bits": -0.0001,
+    "constraint_ratio": 0.0,
+    "atomic_glyph_constraint_ratio": -0.000146,
+    "zipf_slope": 0.0012
+  },
+  "currier_metrics": {
+    "A": {
+      "first": {
+        "tokens": 11620,
+        "vocabulary": 3503,
+        "type_token_ratio": 0.3015,
+        "char_entropy_h1_bits": 3.9449,
+        "char_bigram_conditional_entropy_bits": 2.2009,
+        "word_entropy_h1_bits": 9.8797,
+        "zipf_slope": -0.9358,
+        "word_length_mean": 4.88,
+        "word_length_stdev": 1.92,
+        "alphabet_size": 40,
+        "constraint_ratio": 0.4421,
+        "atomic_glyph_constraint_ratio": 0.415513
+      },
+      "last": {
+        "tokens": 11620,
+        "vocabulary": 3497,
+        "type_token_ratio": 0.3009,
+        "char_entropy_h1_bits": 3.9446,
+        "char_bigram_conditional_entropy_bits": 2.1972,
+        "word_entropy_h1_bits": 9.8749,
+        "zipf_slope": -0.9307,
+        "word_length_mean": 4.88,
+        "word_length_stdev": 1.91,
+        "alphabet_size": 40,
+        "constraint_ratio": 0.443,
+        "atomic_glyph_constraint_ratio": 0.416289
+      },
+      "unknown": {
+        "tokens": 11620,
+        "vocabulary": 3572,
+        "type_token_ratio": 0.3074,
+        "char_entropy_h1_bits": 3.96,
+        "char_bigram_conditional_entropy_bits": 2.2156,
+        "word_entropy_h1_bits": 9.916,
+        "zipf_slope": -0.9344,
+        "word_length_mean": 4.87,
+        "word_length_stdev": 1.91,
+        "alphabet_size": 40,
+        "constraint_ratio": 0.4405,
+        "atomic_glyph_constraint_ratio": 0.413017
+      }
+    },
+    "B": {
+      "first": {
+        "tokens": 24064,
+        "vocabulary": 5156,
+        "type_token_ratio": 0.2143,
+        "char_entropy_h1_bits": 3.9138,
+        "char_bigram_conditional_entropy_bits": 1.9803,
+        "word_entropy_h1_bits": 9.8953,
+        "zipf_slope": -0.9839,
+        "word_length_mean": 5.11,
+        "word_length_stdev": 1.83,
+        "alphabet_size": 40,
+        "constraint_ratio": 0.494,
+        "atomic_glyph_constraint_ratio": 0.466404
+      },
+      "last": {
+        "tokens": 24064,
+        "vocabulary": 5169,
+        "type_token_ratio": 0.2148,
+        "char_entropy_h1_bits": 3.9137,
+        "char_bigram_conditional_entropy_bits": 1.981,
+        "word_entropy_h1_bits": 9.904,
+        "zipf_slope": -0.984,
+        "word_length_mean": 5.1,
+        "word_length_stdev": 1.83,
+        "alphabet_size": 40,
+        "constraint_ratio": 0.4938,
+        "atomic_glyph_constraint_ratio": 0.466125
+      },
+      "unknown": {
+        "tokens": 24064,
+        "vocabulary": 5283,
+        "type_token_ratio": 0.2195,
+        "char_entropy_h1_bits": 3.9267,
+        "char_bigram_conditional_entropy_bits": 1.9928,
+        "word_entropy_h1_bits": 9.9363,
+        "zipf_slope": -0.9845,
+        "word_length_mean": 5.1,
+        "word_length_stdev": 1.83,
+        "alphabet_size": 40,
+        "constraint_ratio": 0.4925,
+        "atomic_glyph_constraint_ratio": 0.464474
+      }
+    }
+  },
+  "herbal_page_level": {
+    "first": {
+      "A": {
+        "pages": 95,
+        "mean_page_constraint": 0.544744
+      },
+      "B": {
+        "pages": 32,
+        "mean_page_constraint": 0.538909
+      }
+    },
+    "last": {
+      "A": {
+        "pages": 95,
+        "mean_page_constraint": 0.544791
+      },
+      "B": {
+        "pages": 32,
+        "mean_page_constraint": 0.538353
+      }
+    },
+    "unknown": {
+      "A": {
+        "pages": 95,
+        "mean_page_constraint": 0.545748
+      },
+      "B": {
+        "pages": 32,
+        "mean_page_constraint": 0.540637
+      }
+    }
+  }
+}

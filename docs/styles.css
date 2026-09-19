@@ -80,6 +80,11 @@ nav a.active, nav a:hover { color: var(--red); border-color: var(--red); }
 .currier-panel img { display: block; width: 100%; height: auto; }
 .currier-panel figcaption { margin-top: .6rem; color: #6b6252; font-size: .72rem; line-height: 1.45; }
 .currier-panel > p a { color: var(--red); }
+.ambiguity-panel { margin-top: 2rem; background: #eee6d7; }
+.ambiguity-panel figure { margin: 0; }
+.ambiguity-panel img { display: block; width: 100%; height: auto; }
+.ambiguity-panel figcaption { margin-top: .6rem; color: #6b6252; font-size: .72rem; line-height: 1.45; }
+.ambiguity-panel > p a { color: var(--red); }
 
 .document-route { padding: clamp(3rem, 7vw, 7rem) clamp(1rem, 6vw, 6rem); }
 .section-intro { max-width: 780px; margin: 0 auto 3.5rem; text-align: center; }

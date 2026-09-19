@@ -103,6 +103,19 @@
         </figure>
         <p>Within Herbal pages, B’s lower pooled entropy comes from more uniform transition patterns across pages—not stronger constraint on the average individual page; the result survives Claude’s six-glyph atomic-EVA policy. Image inspection also rejects the apparent hand-3 / “marginal stars” control: f58 is long-block text, while f103 onward uses repeated short star-led entries. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/currier-metadata-report.md">Read the full analysis and sources ↗</a></p>
       </section>
+
+      <section class="status-panel ambiguity-panel" aria-labelledby="ambiguity-title">
+        <div>
+          <p class="kicker">Transcription stress test</p>
+          <h2 id="ambiguity-title">The 817 uncertain readings do not drive the aggregate results.</h2>
+          <p class="snapshot-caveat">IVTFF specifies that the first listed reading is the transcriber’s most likely choice. Replacing every one with its less-preferred last option changes 809 of 39,020 tokens, yet leaves local constraint at 0.4539.</p>
+        </div>
+        <figure>
+          <img src="assets/alternative-reading-sensitivity.svg" alt="Diverging bars showing that choosing the last option for every uncertain reading changes entropy, local constraint, atomic-glyph constraint, and Zipf slope by less than two tenths of one percent.">
+          <figcaption>This is an intentionally adverse correlated perturbation, not a claim that all final options are equally likely.</figcaption>
+        </figure>
+        <p>The reconstruction also caught a separate six-token boundary defect on f34r: IVTFF <code>&lt;~&gt;</code> interruptions should imply spaces. Its aggregate effect is negligible, but the derived corpus still needs a separately audited correction. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/alternative-reading-sensitivity-report.md">Read the full sensitivity report ↗</a></p>
+      </section>
     </section>
 
     <section id="theories" class="route document-route" aria-labelledby="theories-title">
