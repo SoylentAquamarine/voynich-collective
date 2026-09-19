@@ -12,9 +12,10 @@ Primary source: [Rozanova & Temerev, *A Glyph Is Not a Letter, a Token Is Not a 
 
 1. fixed vocabulary caps from 50 to 8,000 types;
 2. corpus-specific vocabularies chosen to retain the same token coverage (50%, 60%, 70%, 80%, 90%, 95%, and 97.5%); and
-3. ten contiguous held-out blocks in which both the retained vocabulary and smoothed transition probabilities are learned from the other nine blocks.
+3. ten contiguous held-out blocks in which both the retained vocabulary and smoothed transition probabilities are learned from the other nine blocks; and
+4. a nested leave-one-quire-out Voynich test in which vocabulary cap and smoothing strength are selected by inner leave-one-quire-out validation using only the other fifteen quires.
 
-The main equal-coverage comparison was located by a broad 30-shuffle grid and then rerun with 1,000 shuffles. This is a sensitivity analysis, not a preregistered confirmatory test. The held-out blocks preserve manuscript/corpus order but are not document- or quire-stratified for all external controls; they test out-of-block prediction, not complete topic independence.
+The main equal-coverage comparison was located by a broad 30-shuffle grid and then rerun with 1,000 shuffles. This is a sensitivity analysis, not a preregistered confirmatory test. The ten-block comparison preserves manuscript/corpus order but is not document-stratified for all external controls. The Voynich-only nested analysis fixes that limitation on the target side by treating each of the sixteen manuscript quires as an outer test fold.
 
 ## Results
 
@@ -35,7 +36,13 @@ The conclusion is not erased at every coverage. At 84.27% coverage—the amount 
 
 ### Held-out prediction keeps the qualitative ranking
 
-With a fixed 500-type vocabulary and Dirichlet shrinkage strength 500, the previous token improves held-out log likelihood by 0.0675 bits per boundary for observed-separator Voynich, positive in all 10 blocks. The corresponding Latin botanical gain is 0.0940 bits, also positive in all 10 blocks; continuous narrative controls are higher (0.232–0.660 bits among Latin, German, Italian, English, and French narrative). Other smoothing strengths produce the same broad picture but materially different absolute gains.
+With a fixed 500-type vocabulary and Dirichlet shrinkage strength 500, the previous token improves held-out log likelihood by 0.0675 bits per boundary for observed-separator Voynich, positive in all 10 contiguous blocks. The corresponding Latin botanical gain is 0.0940 bits, also positive in all 10 blocks; continuous narrative controls are higher (0.232–0.660 bits among Latin, German, Italian, English, and French narrative). Other smoothing strengths produce the same broad picture but materially different absolute gains.
+
+### True leave-one-quire-out prediction confirms the signal
+
+The fixed 500-type/alpha-500 model gains 0.0551 bits per held-out boundary across complete Voynich quires, positive in 15/16 folds. More importantly, a nested analysis selects among caps 500/2,000/4,000 and alpha 1/5/20/100/500/2,000 entirely inside each outer training set. It gains **0.0647 bits per boundary**, positive in **15/16** held-out quires. The only negative fold is quire J (−0.0143 bits across 119 boundaries); the largest folds M and T remain positive.
+
+The nested model most often selects cap 500/alpha 500, but independently chooses cap 4,000 for the two largest atypical folds. This result is not created by applying one globally selected hyperparameter after inspecting the held-out quires. It is also directly comparable in units to the previously verified edge-glyph cross-fit: whole-token gain is about 0.065 bits/boundary versus about 0.174 bits/boundary at token edges.
 
 This supports a narrower claim than the paper's headline wording: whole-token succession in Voynich is **weak but generalizable**, and generally weaker than the controls tested. It does not support treating the exact 0.79%-versus-2.02% separation as representation-invariant.
 
@@ -43,7 +50,7 @@ This supports a narrower claim than the paper's headline wording: whole-token su
 
 This audit narrows rather than overturns the external result.
 
-- Supported: whole-token identity is a weak source of out-of-sample prediction in Voynich; edge-glyph order remains much stronger and already survives leave-one-quire-out testing.
+- Supported: whole-token identity is a weak but genuine source of out-of-quire prediction in Voynich (0.0647 bits/boundary, 15/16 positive); edge-glyph order remains substantially stronger (about 0.174 bits/boundary, 16/16 positive).
 - Qualified: the numerical distance to the closest control is sensitive to fixed type cap versus equal token coverage.
 - Not established: that weak token order is unique to Voynich, or that it identifies language, cipher, or generated text.
 
@@ -61,5 +68,4 @@ python data/scripts/plot_external_token_order_sensitivity.py \
   docs/assets/external-token-order-sensitivity.svg
 ```
 
-An independent rerun in this round reproduced the 415 KB JSON byte-for-byte (SHA-256 `131411a8a5164cd2f8fa17572fb5a0c75341c7c016603e36691ece57f2f4178b`) and regenerated the SVG byte-for-byte.
-
+The original 415 KB JSON reproduced byte-for-byte before the quire extension. After adding the nested quire analysis, the expanded output was generated twice independently and compared byte-for-byte; the deterministic SVG remained unchanged because it displays only the equal-coverage curve.

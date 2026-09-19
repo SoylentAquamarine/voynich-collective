@@ -10,8 +10,9 @@ It adds three views:
 
 1. a wider fixed-cap curve;
 2. equal retained-token coverage across corpora; and
-3. ten-fold held-out prediction, where vocabularies and probabilities are
-   learned from training folds only.
+3. held-out prediction, including a nested leave-one-quire-out Voynich test
+   where the vocabulary cap, smoothing strength, vocabulary, and transition
+   probabilities are all chosen without the outer held quire.
 
 Usage:
     python data/scripts/external_token_order_sensitivity.py \
@@ -36,6 +37,7 @@ EXPECTED_COMMIT = "956a7c4fc39981f4d116fa3f4edfccce6d065571"
 CAPS = (50, 100, 250, 500, 1000, 2000, 4000, 8000)
 COVERAGES = (0.50, 0.60, 0.70, 0.80, 0.90, 0.95, 0.975)
 ALPHAS = (1.0, 5.0, 20.0, 100.0, 500.0, 2000.0)
+CROSSFIT_CAPS = (500, 2000, 4000)
 SEED = 20260919
 
 
@@ -57,7 +59,15 @@ def load_external(repo: Path):
         for name, lines in corpora.items()
         if "[raw EVA]" not in name
     }
-    return scale, selected, meta
+    _, _, locus_re, collapse, strip_markup = scale.load_modules(bundle)
+    _, _, grouped, _ = scale.load_voynich_lines(
+        bundle, locus_re, collapse, strip_markup
+    )
+    quire_lines = {
+        str(quire): lines
+        for quire, lines in grouped["quire"]["observed"].items()
+    }
+    return scale, selected, meta, quire_lines
 
 
 def frequency_order(lines: list[list[str]]) -> list[tuple[str, int]]:
@@ -143,37 +153,7 @@ def predictive_gain(
             if index != held_out_index
             for line in block
         ]
-        ordered = frequency_order(training)
-        retained = {token for token, _ in ordered[:cap]}
-        train_recoded = recode(training, retained)
-        test_recoded = recode(testing, retained)
-
-        following = Counter()
-        previous = Counter()
-        bigrams = Counter()
-        for line in train_recoded:
-            for left, right in zip(line, line[1:]):
-                previous[left] += 1
-                following[right] += 1
-                bigrams[(left, right)] += 1
-        vocabulary = retained | {"<other>"}
-        beta = 0.5
-        n_following = sum(following.values())
-        base_probability = {
-            token: (following[token] + beta) / (n_following + beta * len(vocabulary))
-            for token in vocabulary
-        }
-
-        gain = 0.0
-        pairs = 0
-        for line in test_recoded:
-            for left, right in zip(line, line[1:]):
-                baseline = base_probability[right]
-                conditional = (
-                    bigrams[(left, right)] + alpha * baseline
-                ) / (previous[left] + alpha)
-                gain += math.log2(conditional / baseline)
-                pairs += 1
+        gain, pairs = predictive_gain_split(training, testing, cap, alpha)
         fold_rows.append(
             {
                 "fold": held_out_index,
@@ -193,6 +173,148 @@ def predictive_gain(
     }
 
 
+def predictive_gain_split(
+    training: list[list[str]], testing: list[list[str]], cap: int, alpha: float
+) -> tuple[float, int]:
+    """Return total conditional-over-unigram log gain for one held-out split."""
+    ordered = frequency_order(training)
+    retained = {token for token, _ in ordered[:cap]}
+    train_recoded = recode(training, retained)
+    test_recoded = recode(testing, retained)
+
+    following = Counter()
+    previous = Counter()
+    bigrams = Counter()
+    for line in train_recoded:
+        for left, right in zip(line, line[1:]):
+            previous[left] += 1
+            following[right] += 1
+            bigrams[(left, right)] += 1
+    vocabulary = retained | {"<other>"}
+    beta = 0.5
+    n_following = sum(following.values())
+    base_probability = {
+        token: (following[token] + beta) / (n_following + beta * len(vocabulary))
+        for token in vocabulary
+    }
+
+    gain = 0.0
+    pairs = 0
+    for line in test_recoded:
+        for left, right in zip(line, line[1:]):
+            baseline = base_probability[right]
+            conditional = (
+                bigrams[(left, right)] + alpha * baseline
+            ) / (previous[left] + alpha)
+            gain += math.log2(conditional / baseline)
+            pairs += 1
+    return gain, pairs
+
+
+def quire_crossfit(
+    quire_lines: dict[str, list[list[str]]], cap: int, alpha: float
+) -> dict:
+    """Leave one complete Voynich quire out of vocabulary/model fitting."""
+    folds = []
+    total_gain = 0.0
+    total_pairs = 0
+    for held_out in sorted(quire_lines):
+        training = [
+            line
+            for quire, lines in quire_lines.items()
+            if quire != held_out
+            for line in lines
+        ]
+        testing = quire_lines[held_out]
+        gain, pairs = predictive_gain_split(training, testing, cap, alpha)
+        folds.append(
+            {
+                "quire": held_out,
+                "pairs": pairs,
+                "gain_bits_per_pair": gain / pairs,
+            }
+        )
+        total_gain += gain
+        total_pairs += pairs
+    return {
+        "cap": cap,
+        "alpha": alpha,
+        "pairs": total_pairs,
+        "gain_bits_per_pair": total_gain / total_pairs,
+        "positive_folds": sum(row["gain_bits_per_pair"] > 0 for row in folds),
+        "folds": folds,
+    }
+
+
+def nested_quire_crossfit(quire_lines: dict[str, list[list[str]]]) -> dict:
+    """Choose cap/alpha inside each outer training set, then score its held quire."""
+    outer_rows = []
+    total_gain = 0.0
+    total_pairs = 0
+    quires = sorted(quire_lines)
+    for held_out in quires:
+        training_quires = [quire for quire in quires if quire != held_out]
+        candidates = []
+        for cap in CROSSFIT_CAPS:
+            for alpha in ALPHAS:
+                inner_gain = 0.0
+                inner_pairs = 0
+                for validation in training_quires:
+                    inner_training = [
+                        line
+                        for quire in training_quires
+                        if quire != validation
+                        for line in quire_lines[quire]
+                    ]
+                    gain, pairs = predictive_gain_split(
+                        inner_training, quire_lines[validation], cap, alpha
+                    )
+                    inner_gain += gain
+                    inner_pairs += pairs
+                candidates.append(
+                    {
+                        "cap": cap,
+                        "alpha": alpha,
+                        "gain_bits_per_pair": inner_gain / inner_pairs,
+                    }
+                )
+        selected = max(
+            candidates,
+            key=lambda row: (row["gain_bits_per_pair"], -row["cap"], -row["alpha"]),
+        )
+        outer_training = [
+            line
+            for quire in training_quires
+            for line in quire_lines[quire]
+        ]
+        gain, pairs = predictive_gain_split(
+            outer_training,
+            quire_lines[held_out],
+            selected["cap"],
+            selected["alpha"],
+        )
+        outer_rows.append(
+            {
+                "quire": held_out,
+                "pairs": pairs,
+                "selected_cap": selected["cap"],
+                "selected_alpha": selected["alpha"],
+                "inner_gain_bits_per_pair": selected["gain_bits_per_pair"],
+                "outer_gain_bits_per_pair": gain / pairs,
+            }
+        )
+        total_gain += gain
+        total_pairs += pairs
+    return {
+        "candidate_caps": list(CROSSFIT_CAPS),
+        "candidate_alphas": list(ALPHAS),
+        "pairs": total_pairs,
+        "gain_bits_per_pair": total_gain / total_pairs,
+        "positive_folds": sum(row["outer_gain_bits_per_pair"] > 0 for row in outer_rows),
+        "folds": outer_rows,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("external_repo", type=Path)
@@ -203,7 +325,7 @@ def main() -> None:
     args = parser.parse_args()
 
     repo = args.external_repo.resolve()
-    scale, corpora, meta = load_external(repo)
+    scale, corpora, meta, quire_lines = load_external(repo)
     voynich = corpora["Voynich observed separators"]
     voynich_cap2000_coverage = coverage_for_cap(voynich, 2000)
 
@@ -242,7 +364,7 @@ def main() -> None:
 
         crossfit = [
             predictive_gain(lines, cap, alpha)
-            for cap in (500, 2000, 4000)
+            for cap in CROSSFIT_CAPS
             for alpha in ALPHAS
         ]
         result["corpora"][name] = {
@@ -288,6 +410,12 @@ def main() -> None:
             - focused["Voynich observed separators"]["share_of_entropy"]
         ),
     }
+    result["voynich_quire_crossfit"] = [
+        quire_crossfit(quire_lines, cap, alpha)
+        for cap in CROSSFIT_CAPS
+        for alpha in ALPHAS
+    ]
+    result["voynich_nested_quire_crossfit"] = nested_quire_crossfit(quire_lines)
 
     rendered = json.dumps(result, indent=2) + "\n"
     if args.output:
