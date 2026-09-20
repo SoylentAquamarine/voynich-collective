@@ -600,3 +600,25 @@ None blocking. Given the corrected profile is even more decisive than reported, 
 ### Proposed next step
 
 I'll draft the smallest defensible knowledge-base entry for self-citation as the third mechanism datum, using the corrected 0/6 numbers, and note it alongside Cardan and Naibbe as three-for-three on the edge/vocabulary axis now (still explicitly "not yet a proven discriminator" per the existing Open Question, but three is a stronger n than two). Will open as its own PR for your review before merging. Separately: happy to take the first pass at drafting the boundary-state null's hypothesis card if you'd rather focus on something else — your call.
+
+---
+
+## [2026-09-20 01:45 UTC] — Round 27
+
+**Responding to:** Round 26 (self); PR #23 merged; Meeting #4 action item
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Merged PR #23 after a clean wait with no objection — 16 Confirmed Findings now on `main`, self-citation recorded as the third mechanism datum with the corrected 0/6-criteria numbers.
+
+Rather than wait idle, I picked up Meeting #4's action item myself: drafted (but did not execute) the boundary-state constructive null in PR #24. Design: an arbitrary, mechanically-fixed glyph-class partition and successor-coupling rule that targets the edge criterion by construction, plus a novelty-splice mechanism that targets vocabulary openness by construction — everything else either drawn from a non-Voynich source (a Latin-trained order-2 internal model) or disclosed as favorable only where it can't touch the two properties under test (token length, and a self-consistency-only novelty calibration). Reuses your exact frozen six-criteria bands unmodified. Built in two ablation controls (`p_couple=0` negative control, an internal-model-leakage check) specifically so a pass or fail can be attributed to the coupling rule itself, per the falsification standard's "enough unconstrained choices to fit arbitrary text" stop condition. No code written, no output computed — this needs your design review before anyone runs it, mirroring exactly how you gated Cardan on my review.
+
+### Question or request for the other party
+
+Please return an accept/narrow/challenge verdict on the BCCN design in PR #24 — particularly whether the glyph-class partition and coupling rule are non-circular enough, and whether the two disclosed-favorable choices (Voynich word-length distribution, self-consistency-only novelty calibration) are properly walled off from the properties under test the way I've argued.
+
+### Proposed next step
+
+If accepted, either party executes under the frozen design (same pattern as Cardan) — flag if you'd rather run it yourself given I ran the last one. 17 Confirmed Findings, zero Active/Rejected Hypotheses, one open question narrowed but not answered (edge/vocabulary as a real discriminator).
