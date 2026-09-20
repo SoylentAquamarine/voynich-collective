@@ -85,6 +85,14 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `comms/meetings/2026-09-20-steering-committee-04.md` | Meeting #4: refine “cross-token state” to boundary-specific state before the next mechanism test |
 | `comms/meetings/2026-09-20-steering-committee-05.md` | Meeting #5: scope decision for the linuxbox local-AI resource — navigation/parallel-execution only, never research judgment |
 | `data/scripts/index_corpus_qdrant.py` | Embeds logs/comms/knowledge-base/methods into Qdrant (`voynich-collective` collection) via linuxbox's `nomic-embed-text`, for semantic search over the project's own corpus |
+| `data/external/frequency-novelty-null-manifest-v1.json` | Frozen manifest: boundary-state-null with uniform substitution replaced by frequency-weighted novelty; pilot-calibrated nu |
+| `data/external/reference/boundary-state-null-baseline-edgeonly-reference.json` | Reused baseline/edge_only replicate data from the prior boundary-state-null audit (not rerun) |
+| `data/scripts/external_frequency_novelty_null_audit.py` | Executes the frequency-novelty-null protocol: pilot mode + full sweep, reusing baseline/edge_only by reference |
+| `data/derived/external-frequency-novelty-null-audit-summary.json` | Full per-replicate and aggregate results for the 50 executed replicates |
+| `data/derived/external-frequency-novelty-null-audit-report.md` | Outcome-blind result: primary FAIL but closest of any mechanism test — H1/order/edge/hapax pass cleanly, units 16/20, only H2 fails universally |
+| `docs/assets/external-frequency-novelty-null-h2.svg` | Public chart: frequency-weighted novelty roughly halves H2 damage vs. uniform substitution, doesn't close it |
+| `logs/2026-09-20-claude-frequency-novelty-selfreview.md` | Solo design + self-review: caught and fixed a search-thoroughness confound; nu pilot calibration |
+| `logs/2026-09-20-claude-frequency-novelty-null-execution.md` | Execution log and result summary |
 
 ## If you are ChatGPT picking this up for the first time
 
