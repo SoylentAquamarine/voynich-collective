@@ -1,8 +1,10 @@
 # Preregistered boundary-coupled constructive null
 
-Status: **frozen design, not executed; no code written and no output computed**
+Status: **frozen design, self-reviewed, cleared for execution**
 Registered: 2026-09-20, drafted by Claude (Statistician) per Steering Committee Meeting #4's action item
-Owner of the run when this is authorized: either party, following the same outcome-blind discipline as `cardan-grille-preregistration.md`
+Owner of the run: Claude, proceeding solo per explicit user authorization after ChatGPT went unresponsive for an extended period (see `logs/2026-09-20-claude-solo-boundary-null-selfreview.md`)
+
+**Note on review process:** this design was intended for ChatGPT's independent design review before execution, exactly as Cardan's preregistration required Claude's review before ChatGPT executed it. ChatGPT did not respond after this document was opened for review. Per the user's explicit instruction to make progress rather than block indefinitely on an unresponsive collaborator, Claude performed its own adversarial self-review instead (documented in the log above) — this is weaker than genuine cross-party review and is disclosed as such. The self-review found and fixed two real defects (see the log): a circularity leak in the internal model's character mapping, and a missing sweep value. Both are corrected below.
 
 ## Why this design
 
@@ -36,21 +38,21 @@ For a token ending in a glyph of class `c`, the next token's **first glyph's cla
 
 Once the class is chosen, the actual first glyph is drawn uniformly from the glyphs in that class. This is the only place in the generator where the previous token's identity influences the next token — it directly targets the last-glyph → next-first-glyph criterion, and nothing else in the design is allowed to also encode this coupling (no other hidden channel of adjacency is permitted; this must be checked in code review before execution).
 
-`p_couple` is swept over `{0.3, 0.5, 0.7, 0.9}` — the same style of parameter sweep used for Cardan's jump probability — so the test asks whether *any* coupling strength in this family passes, not just one arbitrary value.
+`p_couple` is swept over `{0.3, 0.5, 0.7, 0.9, 1.0}` — the same style of parameter sweep used for Cardan's jump probability — so the test asks whether *any* coupling strength in this family passes, not just one arbitrary value. **Self-review correction**: the original draft stopped at 0.9; added 1.0 (fully deterministic class coupling) as the cleanest possible test of the mechanism's maximum potential, at negligible extra cost.
 
 ### 3. Token-internal structure (does not target any criterion by construction)
 
 After the first glyph is fixed by the coupling rule:
 
 1. Draw a token length from Voynich's own observed word-length distribution (disclosed favorable choice, per above — affects entropy/BPE scale only, not edge coupling or vocabulary growth mechanics).
-2. Fill the remaining positions one at a time using an order-2 character Markov model **trained on a non-Voynich reference text** (the already-pinned Latin baseline corpus from `data/derived/language-baselines-report.md`, mapped onto the EVA alphabet by frequency rank — i.e., the Latin model's most frequent character maps to the EVA alphabet's most frequent glyph, and so on). This supplies realistic-looking internal short-range structure without being fit to Voynich at all.
+2. Fill the remaining positions one at a time using an order-2 character Markov model **trained on a non-Voynich reference text** (the already-pinned Latin baseline corpus from `data/derived/language-baselines-report.md`), mapped onto the EVA alphabet **using the same arbitrary alphabetical-by-EVA-string ordering established in step 1** (Latin model's 1st character in that model's own frequency order → EVA alphabet's 1st glyph in alphabetical order, 2nd → 2nd, and so on). **Self-review correction**: the original draft of this document specified mapping "by frequency rank," meaning the Latin model's most frequent character would map to the EVA alphabet's *most frequent* glyph — but the only source of "EVA alphabet's most frequent glyph" is Voynich's own corpus, so that mapping would have silently imported Voynich's real unigram frequency ordering into a step meant to be non-circular. Fixed to use the same Voynich-independent alphabetical ordering already used for the class partition, closing that leak.
 3. At each internal position, instead of the order-2 model, with probability `p_novel` splice in a uniformly random glyph from the full alphabet instead. This is the mechanism intended to sustain an open, growing vocabulary (an analogue of continual rare-form creation) rather than converging to a small closed set of frequent words, which is what caused Naibbe, Cardan, and self-citation to under-shoot the hapax criterion.
 
 `p_novel` is calibrated once via a small pilot **before freezing this document** to target roughly Voynich's aggregate hapax share (~70%) at the corpus's final size — this calibration is disclosed exactly like the self-citation audit's disclosed favorable calibration, and only affects the vocabulary-growth criterion, not edge coupling, entropy, or BPE scale. The specific frozen value will be recorded in the companion manifest once the pilot is run (see Stop Conditions: the pilot may only touch `p_novel`, using only synthetic self-consistency checks — vocabulary growth curve shape — never generated text scored against Voynich's actual joint profile).
 
 ### 4. Sequence assembly
 
-Tokens are generated one at a time, in order, using the coupling rule (step 2) chained to the previous token's actual last glyph, until at least 39,026 tokens exist. The stream is then wrapped onto Voynich's exact line-length template (`scale.wrap_to_lengths`, the same forced-template approach used by Naibbe and Cardan — not the self-citation audit's looser "first N lines," which this preregistration explicitly avoids repeating after the fairness caveat raised in that audit's review).
+Tokens are generated one at a time, in order, using the coupling rule (step 2) chained to the previous token's actual last glyph, until at least 39,026 tokens exist (the same conservative generation-floor figure Cardan's preregistration used; the line-length template's actual requirement is 32,747 tokens, so this floor is a safety margin, not a hard minimum — `scale.wrap_to_lengths` truncates any excess). The stream is then wrapped onto Voynich's exact line-length template (`scale.wrap_to_lengths`, the same forced-template approach used by Naibbe and Cardan — not the self-citation audit's looser "first N lines," which this preregistration explicitly avoids repeating after the fairness caveat raised in that audit's review).
 
 ## Hypothesis card
 
@@ -70,7 +72,7 @@ If passed, at least one `p_couple` value produces joint criteria satisfaction on
 
 ### Failure condition
 
-The claim fails if no `p_couple` in `{0.3, 0.5, 0.7, 0.9}` reaches 16/20 joint passes. As with Cardan, passing only after changing a frozen parameter, band, seed, or the coupling rule itself after seeing output is a failure of version 1 and requires a new preregistration, not a patch.
+The claim fails if no `p_couple` in `{0.3, 0.5, 0.7, 0.9, 1.0}` reaches 16/20 joint passes. As with Cardan, passing only after changing a frozen parameter, band, seed, or the coupling rule itself after seeing output is a failure of version 1 and requires a new preregistration, not a patch.
 
 ### Units, controls, and sensitivity checks
 
@@ -97,4 +99,4 @@ Stop and return to review, without interpreting a result, if:
 
 A pass would show only that this specific constructive process can jointly satisfy the six criteria — it would not show that Voynichese was produced this way, does not identify a historical mechanism, and does not bear on language, cipher, or meaning. A failure would not show the six criteria are unsatisfiable in general — only that this specific, disclosed, non-circular construction does not satisfy them jointly; a different internal-structure model, coupling rule, or novelty mechanism might still succeed and would need its own preregistration.
 
-No code has been written and no output has been computed for this document. Per the project's outcome-blind discipline, execution requires the other party's design review first, exactly as `cardan-grille-preregistration.md` required before its own execution.
+No code was written and no output was computed before this document's design was reviewed. Execution was authorized after Claude's own adversarial self-review (see the note at the top of this document and `logs/2026-09-20-claude-solo-boundary-null-selfreview.md`), not ChatGPT's independent review as originally planned — ChatGPT remains free to audit the design and execution after the fact, exactly as every other mechanism test in this project has been subject to post-hoc independent reproduction.
