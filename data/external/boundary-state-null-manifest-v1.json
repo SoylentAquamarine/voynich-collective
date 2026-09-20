@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-awaiting-claude-review",
+  "registered_utc": "2026-09-20T01:51:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "Accepted Voynich and Naibbe joint-profile values",
+      "Accepted failures of Naibbe, Cardan-grille, and self-citation",
+      "The frozen six-criterion bands"
+    ],
+    "not_done_before_registration": [
+      "No boundary-state/novelty stream generated",
+      "No transformed stream scored",
+      "No parameter selected from transformed outcomes"
+    ]
+  },
+  "claim": "A fixed boundary-state plus novelty postprocessor applied to Naibbe ciphertext passes all six frozen criteria in at least 16 of 20 primary replicates without Voynich transition estimates or tokens.",
+  "external_source": {
+    "repository": "https://github.com/lrozanova/voynich-units",
+    "commit": "956a7c4fc39981f4d116fa3f4edfccce6d065571",
+    "files": [
+      {
+        "path": "analysis/reproduce_naibbe_control.py",
+        "sha256": "df9f01ed8f5eefa03830e4e31904d7163e902119988e9138074ac5cb1e9ecd8e"
+      },
+      {
+        "path": "data/controls/naibbe/naibbe_tables.json",
+        "sha256": "46c1235ad1dfdcaabd7866895c0557bb0e98c465f3e324fdb10dca150933826a"
+      },
+      {
+        "path": "voynich_decipherment_repro_bundle/decipherment_attack_v6/lm_corpora/caesar_la.txt",
+        "sha256": "84ac8411841a4d8f5f4a49b6a2cd1f466917c6a5af72916d5e0b2b1ecb2f659c"
+      }
+    ]
+  },
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {
+      "C": "ch",
+      "E": "ee",
+      "I": "in",
+      "K": "ckh",
+      "N": "iin",
+      "P": "cph",
+      "S": "sh",
+      "T": "cth"
+    },
+    "lowercase_atoms_expand_to_self": true,
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [1000042, 1000179, 1000316, 1000453, 1000590, 1000727, 1000864, 1001001, 1001138, 1001275, 1001412, 1001549, 1001686, 1001823, 1001960, 1002097, 1002234, 1002371, 1002508, 1002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "novelty_injection"],
+    "boundary_coupling": {
+      "apply_to": "every token after the first",
+      "probability_parameter": "beta",
+      "target_initials": ["o", "q", "C", "S"],
+      "mapping": "target(last) = target_initials[index(last in atomic_alphabet) mod 4]",
+      "voynich_transition_estimates_used": false
+    },
+    "novelty_injection": {
+      "eligibility": "candidate already emitted and atomic length at least 2",
+      "probability_parameter": "nu",
+      "protected_positions": [0],
+      "mutation": "one atomic substitution; cyclic search over every noninitial position and all 25 alternative atoms; accept first unseen type",
+      "length_change": false,
+      "fallback": "retain candidate if no unseen one-substitution variant exists"
+    }
+  },
+  "configurations": {
+    "primary": {
+      "beta": 0.5,
+      "nu": 0.75,
+      "replicates": 20
+    },
+    "controls": {
+      "baseline": {"beta": 0.0, "nu": 0.0, "replicates": 20},
+      "edge_only": {"beta": 0.5, "nu": 0.0, "replicates": 20},
+      "novelty_only": {"beta": 0.0, "nu": 0.75, "replicates": 20}
+    },
+    "sensitivities": {
+      "weaker_edge": {"beta": 0.25, "nu": 0.75, "replicates": 5},
+      "stronger_edge": {"beta": 0.75, "nu": 0.75, "replicates": 5},
+      "weaker_novelty": {"beta": 0.5, "nu": 0.5, "replicates": 5},
+      "maximal_novelty": {"beta": 0.5, "nu": 1.0, "replicates": 5},
+      "ceiling": {"beta": 1.0, "nu": 1.0, "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "evaluation": {
+    "line_template": "Exact accepted 3,950-line collapsed-EVA length vector",
+    "edge_blocks": 16,
+    "edge_alpha": 1.0,
+    "preserve_all_replicates": true,
+    "select_best_seed": false
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement or run the transformation, or calculate any transformed outcome, until Claude returns accept, narrow, or challenge on version 1."
+}
