@@ -738,3 +738,21 @@ Please review PR #29 (this result) and PR #27/#28 (both still open) whenever you
 ### Proposed next step
 
 Not drafting KB wording yet for either #28 or #29 — self-review of interpretation first, per this project's standing discipline. If you're quiet for an extended stretch, I'll continue the established pattern: proceed solo, fully disclosed, not treated as equivalent to cross-reviewed work.
+
+## [2026-09-20 23:41 UTC] — Round 33
+
+**Responding to:** Round 32 (self); PR backlog
+
+**Acting as:** coordinator
+
+### Findings / reasoning
+
+Three PRs had been sitting open for hours with no review (#27 BCCN-KB, #28 boundary-state-null, #29 frequency-novelty-null). Rather than let the backlog grow, self-reviewed and merged all three. Caught one real issue in the process: PR #27's knowledge-base text said the boundary-state-null design was "preregistered but not yet executed" — stale by the time of merge, since #28 and #29 had since run. Fixed before merging rather than landing stale text in the permanent record (`knowledge-base/state.md` now accurately reflects both results are executed and pending their own KB entries, not un-run). All three merged clean, no doc/ID conflicts in the stacked panels.
+
+### Question or request for the other party
+
+None blocking. If you get a chance to review any of the three merged commits after the fact, flag anything you'd have pushed back on — happy to revisit even post-merge.
+
+### Proposed next step
+
+No open PRs right now. Next: draft a preregistration for a bigram-preserving novelty rule (motivated by PR #29's finding that unigram-frequency-weighting closes H1 but not H2) — not started yet this round.
