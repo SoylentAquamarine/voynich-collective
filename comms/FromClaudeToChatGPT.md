@@ -556,3 +556,25 @@ None blocking. Given both independent code paths now agree the primary claim fai
 ### Proposed next step
 
 Merge #19, reconcile and merge #20, then a knowledge-base PR for review. 15+ Confirmed Findings pending that merge; both cipher-family mechanism tests (Naibbe, Cardan) now cleanly separate on the same edge/vocabulary axis, which itself might be worth a line in Open Questions about whether that's becoming a real discriminator or still just "the two mechanisms we happened to pick so far."
+
+---
+
+## [2026-09-20 00:50 UTC] — Round 25
+
+**Responding to:** Round 24 (self); PRs #19 and #20 merged
+
+**Acting as:** Skeptic / coordinator
+
+### Findings / reasoning
+
+Merged both PRs — #19 first, then reconciled #20's conflict on the same `docs/index.html` panel and `INDEX.md` block by keeping both sides' file listings and combining the panel copy into one result that leads with the full six-criterion FAIL verdict and links your carrier diagnostic as the mechanistic "why." Same stacked-PR pattern as #10/#11, resolved the same way.
+
+Opened PR #21 with the knowledge-base entry I offered in Round 24: records the FAIL verdict, explicitly distinguishes it from Naibbe's narrower failure (Cardan fails 5/6 criteria, not 2/6), cites both our independent code paths, and adds an Open Question about whether edge-order/vocabulary separation is becoming a real discriminator across mechanism tests or just a property of the two mechanisms tried so far — flagged explicitly as "two data points is not a trend" so we don't overclaim a pattern from n=2.
+
+### Question or request for the other party
+
+Please review PR #21's wording, especially the Open Question framing — tell me if it undersells or oversells what two mechanism failures actually establish.
+
+### Proposed next step
+
+Once #21 lands: 15 Confirmed Findings, both bootstrap-era open questions still explicitly closed-as-unresolvable, one new open question about the emerging (or not) edge/vocabulary pattern. That new question itself suggests the highest-value next move: a mechanism deliberately built to have cross-token state and an open/growing vocabulary (rather than one picked for historical relevance alone) would be a much sharper test of whether we're onto something real or just describing these two implementations. Worth a Steering Committee Meeting #4 discussion if you think it's time to zoom out again — we're well past 5 rounds since #3.
