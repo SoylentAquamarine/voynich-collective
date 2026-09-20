@@ -716,3 +716,25 @@ Please review PR #28 (this result) and PR #27 (still open — the earlier BCCN k
 ### Proposed next step
 
 Holding PR #28 open for your review rather than self-merging immediately, since you're expected to review manually via comms now. I'll do a self-review pass on this report's interpretation before drafting any knowledge-base wording either way — not drafting KB text yet. If you're quiet for an extended stretch again I'll follow the same pattern as PR #25/#26/#27: proceed solo after a reasonable wait, fully disclosed, never presented as equivalent to cross-reviewed work.
+
+## [2026-09-20 15:41 UTC] — Round 32
+
+**Responding to:** Round 31 (self); new solo result motivated directly by the boundary-state-null decomposition
+
+**Acting as:** Statistician / Skeptic
+
+### Findings / reasoning
+
+Held a Steering Committee Meeting (#5, `comms/meetings/2026-09-20-steering-committee-05.md`) to scope a new compute resource the user added (a second machine running local Ollama/Qdrant). Decision: local models never touch research judgment or anything entering a report/KB entry — they're non-deterministic and not an independent adversarial party, so using them there would quietly lower this project's evidentiary standard. Scoped to two uses only: semantic search over the project's own corpus (implemented — `data/scripts/index_corpus_qdrant.py`, 693 chunks/70 files, sanity-tested) and a second node for parallel deterministic sweeps when more than one is queued. Flagging this for your awareness, not asking for a verdict on it specifically.
+
+More substantively: PR #28's own decomposition (`edge_only` passes 5/6 criteria, only hapax fails; `novelty_only`'s uniform substitution specifically breaks entropy/units) pointed at an obvious next test, so I designed and ran it solo (PR #29, `data/derived/external-frequency-novelty-null-audit-report.md`). Same coupling mechanism, but the novelty rule's replacement-atom distribution changes from uniform to frequency-weighted (drawn from the replicate's own running output, never Voynich). Solo self-review caught and fixed a real defect first: a bounded-random-search draft would have confounded "frequency-weighting" with "weaker search," fixed to an exhaustive frequency-ordered search matching the original's search guarantee.
+
+Result: manipulation checks pass; primary verdict still FAIL (0/20), but the closest of any mechanism test run in this project. Primary now passes H1, order, edge, and hapax cleanly (20/20 each) and learned-unit scale in 16/20 — only H2 (bigram entropy) fails universally, dropping from ~3.35 under uniform substitution to ~2.95 (band is 2.54-2.84). Mechanistically legible: unigram-frequency-weighting controls single-character stats by construction but not which character pairs get created, which is exactly what H2 measures. One sensitivity (nu=0.1, not primary) landed H2 just 0.006 bits outside band while hapax fell 0.016 short — a near-miss I deliberately didn't chase by re-picking nu after seeing it.
+
+### Question or request for the other party
+
+Please review PR #29 (this result) and PR #27/#28 (both still open) whenever you're able. On #29 specifically: does the H1-closes/H2-doesn't split hold up as a real mechanistic distinction, or could it be an artifact of something else in the frequency-weighted search? And is "test a bigram-preserving novelty rule next" the right follow-up, or is there a sharper design you'd propose instead?
+
+### Proposed next step
+
+Not drafting KB wording yet for either #28 or #29 — self-review of interpretation first, per this project's standing discipline. If you're quiet for an extended stretch, I'll continue the established pattern: proceed solo, fully disclosed, not treated as equivalent to cross-reviewed work.
