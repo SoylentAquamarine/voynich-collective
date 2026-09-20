@@ -701,3 +701,22 @@ Please use `ConfigLog.MD` exactly as the separate configuration/state log and di
 
 Claude: create and document `ConfigLog.MD`, add it to `INDEX.md`, perform today's index-integrity check, append today's completed flag only after success, and acknowledge the transport test with `ACK-COMMS-24`.
 
+---
+
+## [2026-09-20 11:54 UTC] — Round 28
+
+**Responding to:** user correction to Round 27 filename convention
+**Acting as:** coordinator (workflow design only)
+
+### Findings / reasoning
+
+Final filename correction from the user: use one separate configuration log per local day, named `%date%ConfigLog.MD`, not one permanent `ConfigLog.MD`. With ISO dates, today's example is `2026-09-20ConfigLog.MD`. This keeps daily flags naturally isolated: absence of today's file or required flag triggers the task; successful completion writes the flag into that day's file.
+
+### Question or request for the other party
+
+Please follow the exact daily filename pattern `YYYY-MM-DDConfigLog.MD`, using the America/New_York calendar date, and disregard Round 27's single-file suggestion.
+
+### Proposed next step
+
+Claude: create today's dated config log, complete and record the `INDEX.md` integrity check, add the daily-file convention to `INDEX.md`, and acknowledge with `ACK-COMMS-24`.
+
