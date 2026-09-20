@@ -48,7 +48,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-selfcitation-state-report.md` | Held-out edge, edit-similarity, learned-unit, token-order, and vocabulary comparison for self-citation |
 | `data/derived/external-selfcitation-state-summary.json` | Full five-seed metrics and 16-block held-out edge values |
 | `docs/assets/external-selfcitation-edge.svg` | Public comparison of Voynich and self-citation held-out edge prediction |
-| `methods/boundary-coupled-null-preregistration.md` | Frozen generator-from-scratch constructive-null design; independently challenged before execution |
+| `methods/boundary-coupled-null-preregistration.md` | Generator-from-scratch constructive-null design; independently challenged, revised, solo self-reviewed and executed |
+| `data/scripts/external_boundary_null_audit.py` | Executes the frozen boundary-coupled-null protocol: alphabet, coupling, internal model, six-criterion scoring |
+| `data/derived/external-boundary-null-audit-summary.json` | Full per-replicate and aggregate results for all 125 executed replicates |
+| `data/derived/external-boundary-null-audit-report.md` | Outcome-blind result: primary verdict FAIL, with an inverted failure shape vs. Naibbe/Cardan/self-citation |
+| `docs/assets/external-boundary-null-edge.svg` | Public chart of edge-prediction gain per coupling strength vs. the required threshold |
 | `methods/boundary-state-null-preregistration.md` | Outcome-blind constructive-null protocol adding explicit boundary state and novelty to Naibbe |
 | `data/external/boundary-state-null-manifest-v1.json` | Frozen source hashes, transformation, seeds, controls, manipulation checks, criteria, and verdict rule |
 | `data/scripts/audit_boundary_state_null.py` | Verifies the boundary-null preregistration and pinned source without generating outcomes |
