@@ -46,6 +46,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-naibbe-edge-crossfit.svg` | Public comparison of Voynich and Naibbe cross-token edge prediction |
 | `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the next named mechanism control |
 | `data/external/cardan-grille-source-manifest-v1.json` | Frozen external commit, file hashes, source defects, configurations, seeds, and decision rule |
+| `data/scripts/cardan_carrier_edge_diagnostic.py` | Independent clean-room test of edge-signal transmission through the sequential Cardan carrier |
+| `data/derived/cardan-carrier-edge-diagnostic-report.md` | Mechanism explanation and 20-seed edge-only results for the honest sequential configurations |
+| `data/derived/cardan-carrier-edge-diagnostic.json` | Source checks, replicate arrays, summaries, and hole-count sensitivity |
+| `docs/assets/cardan-carrier-edge-attenuation.svg` | Public chart of cross-word edge-order attenuation through the grille projection |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
