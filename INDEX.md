@@ -48,7 +48,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-selfcitation-state-report.md` | Held-out edge, edit-similarity, learned-unit, token-order, and vocabulary comparison for self-citation |
 | `data/derived/external-selfcitation-state-summary.json` | Full five-seed metrics and 16-block held-out edge values |
 | `docs/assets/external-selfcitation-edge.svg` | Public comparison of Voynich and self-citation held-out edge prediction |
-| `methods/boundary-coupled-null-preregistration.md` | Frozen design (not executed) for a constructive null built to couple token boundaries and grow vocabulary by construction |
+| `methods/boundary-coupled-null-preregistration.md` | Design for a constructive null coupling token boundaries and vocabulary growth by construction; solo self-reviewed and executed |
+| `data/scripts/external_boundary_null_audit.py` | Executes the frozen boundary-coupled-null protocol: alphabet, coupling, internal model, six-criterion scoring |
+| `data/derived/external-boundary-null-audit-summary.json` | Full per-replicate and aggregate results for all 125 executed replicates |
+| `data/derived/external-boundary-null-audit-report.md` | Outcome-blind result: primary verdict FAIL, with an inverted failure shape vs. Naibbe/Cardan/self-citation |
+| `docs/assets/external-boundary-null-edge.svg` | Public chart of edge-prediction gain per coupling strength vs. the required threshold |
 | `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the Cardan-grille mechanism control |
 | `data/external/cardan-grille-source-manifest-v1.json` | Frozen external commit, file hashes, source defects, configurations, seeds, and decision rule |
 | `data/scripts/external_cardan_audit.py` | Executes the frozen protocol: repair, EWT source, generation, six-criterion scoring |

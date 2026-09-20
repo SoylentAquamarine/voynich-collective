@@ -1,0 +1,46 @@
+# Boundary-coupled constructive null: preregistered mechanism-control result
+
+Protocol: `methods/boundary-coupled-null-preregistration.md`, executed solo (see `logs/2026-09-20-claude-solo-boundary-null-selfreview.md` for why, and the design document's own inline correction notes for what changed between design and execution). Primary verdict: **FAIL**.
+
+## Result
+
+| Configuration | N | H1 | H2 | Unit min. | k64 gap | Order share | Hapax | Edge gain | Edge +blocks | Joint pass |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| p_couple=0.30 | 20 | 4.207 | 3.876 | 0 | 0.686 | -0.02% | 71.2% | +0.2250 | 16.0/16 | 0/20 |
+| p_couple=0.50 | 20 | 4.209 | 3.832 | 0 | 0.755 | 0.11% | 70.9% | +0.5889 | 16.0/16 | 0/20 |
+| p_couple=0.70 | 20 | 4.208 | 3.770 | 0 | 0.846 | -0.06% | 70.5% | +1.1143 | 16.0/16 | 0/20 |
+| p_couple=0.90 | 20 | 4.206 | 3.687 | 0 | 0.977 | -0.01% | 69.9% | +1.8462 | 16.0/16 | 0/20 |
+| p_couple=1.00 | 20 | 4.202 | 3.630 | 0 | 1.065 | 0.04% | 69.6% | +2.4091 | 16.0/16 | 0/20 |
+| p_couple=0.00 [negative control] | 20 | 4.203 | 3.905 | 0 | 0.643 | 0.11% | 71.3% | -0.0132 | 0.1/16 | 0/20 |
+| p_couple=1.00 [ablation: uniform internal] | 5 | 4.677 | 4.520 | 0 | 0.398 | 0.07% | 76.5% | +2.5476 | 16.0/16 | 0/5 |
+
+Required bands: H1 3.9763+/-0.15, H2 2.6897+/-0.15, unit-scale minimum at 32 or 64 merges with k64 gap in [0.90, 1.20], token-order share in [0%, 2.0%], edge gain >=0.15 bits/boundary with >=15/16 positive blocks, hapax share >=65%.
+
+## Per-criterion pass counts (primary configurations)
+
+- **p_couple=0.30**: H1 in band: 0/20 | H2 in band: 0/20 | unit scale in band: 0/20 | order share in band: 6/20 | edge criterion: 20/20 | hapax >=65%: 20/20
+- **p_couple=0.50**: H1 in band: 0/20 | H2 in band: 0/20 | unit scale in band: 0/20 | order share in band: 14/20 | edge criterion: 20/20 | hapax >=65%: 20/20
+- **p_couple=0.70**: H1 in band: 0/20 | H2 in band: 0/20 | unit scale in band: 0/20 | order share in band: 5/20 | edge criterion: 20/20 | hapax >=65%: 20/20
+- **p_couple=0.90**: H1 in band: 0/20 | H2 in band: 0/20 | unit scale in band: 0/20 | order share in band: 12/20 | edge criterion: 20/20 | hapax >=65%: 20/20
+- **p_couple=1.00**: H1 in band: 0/20 | H2 in band: 0/20 | unit scale in band: 0/20 | order share in band: 11/20 | edge criterion: 20/20 | hapax >=65%: 20/20
+
+## Interpretation
+
+The coupling rule, built specifically to target the held-out edge-prediction criterion, works decisively and with a clean monotonic dose-response: mean edge gain rises from -0.0132 bits/boundary at `p_couple=0.00` (0.1/16 positive blocks on average — no signal, as expected when coupling is disabled) through +0.2250 at `p_couple=0.30` to +2.4091 at `p_couple=1.00`, and the edge criterion passes all 20/20 seeds at every non-zero `p_couple` value, with the effect size scaling directly with the coupling strength. Every configuration exceeds both the 0.15 threshold and Voynich's own +0.1871 point estimate by a wide margin once coupling is enabled at all. The negative control confirms the effect is attributable to the coupling rule itself, not an accidental side channel: with `p_couple=0`, edge signal collapses to essentially zero. The ablation (uniform-random internal characters instead of the Latin-trained order-2 model, at the best-performing `p_couple=1.00`) still passes the edge criterion 5/5 with an even higher mean gain (+2.5476) — confirming the internal-structure model contributes nothing to the edge signal, positive or negative, exactly as the design intended.
+
+Vocabulary openness is calibrated to land close to Voynich's point estimate (69.6–71.3% across configurations vs. Voynich's 69.7%) and **passes cleanly, 20/20, in every configuration including the negative control** — the `p_reuse` mechanism is fully decoupled from the boundary-coupling rule, as designed. Token-order-share is **not** as uniformly satisfied: it passes in a minority-to-mixed fraction of seeds depending on configuration (6/20 at `p_couple=0.30`, 14/20 at `p_couple=0.50`, 5/20 at `p_couple=0.70`, 12/20 at `p_couple=0.90`, 11/20 at `p_couple=1.00`) — real seed-to-seed variance around the required band's edges, not a clean pass or a clean fail.
+
+**The primary claim still fails on every configuration**, but not on the two criteria this project has repeatedly separated on. Edge prediction and hapax openness — the axis Naibbe, Cardan, and self-citation all failed — are handled easily by a boundary-coupling mechanism built specifically for them, and token-order-share is at least partially satisfiable. What fails universally, in all 125 replicates across every `p_couple` value including the negative control and the ablation, is character entropy (H1/H2) and the learned multi-symbol-unit scale: H1 sits around 4.20–4.68 (required 3.83–4.13), H2 around 3.63–4.52 (required 2.54–2.84), and the BPE dependence-gap minimum lands at **k=0 merges** in every single replicate (required 32 or 64) — the internal-structure model's character-level output has essentially no redundancy that multi-symbol merging can exploit, unlike Voynich's actual glyph-cluster structure. This is a genuinely informative failure shape, the inverse of the three historical mechanisms: Naibbe and Cardan failed primarily on edge/vocabulary while passing some mix of entropy/order; this generator passes edge and vocabulary easily while failing entropy/unit-scale universally. That is a real, if partial, answer to the project's open question: cross-token edge coupling and open vocabulary are **not**, on their own, a hard joint target to construct — a simple, disclosed, non-circular mechanism built specifically for them satisfies both decisively. What resists easy construction is jointly hitting those *and* Voynich's specific character-level entropy and multi-symbol-unit compression profile *at the same time*. The three historical mechanisms and this constructive null therefore fail for different underlying reasons, not the same one — which is itself evidence that the six-criterion joint profile is doing real discriminating work, not just restating one easy-to-fail property five different ways.
+
+**This does not identify a mechanism, prove meaninglessness, or reject any hypothesis about Voynichese.** It narrows what a full joint-profile match would require: a generator would need the internal-structure component tuned toward Voynich's own entropy/compression profile specifically (which this design deliberately avoided doing, to keep the coupling result uncontaminated by circularity) in addition to the boundary-coupling mechanism already shown sufficient for edge/vocabulary/order. Building and testing that combined version would need its own preregistration, not a post-hoc parameter change to this one.
+
+## Provenance and execution
+
+- Design: `methods/boundary-coupled-null-preregistration.md`, drafted 2026-09-20, corrected through solo adversarial self-review and implementation-pilot testing after ChatGPT remained unresponsive for an extended period (user-authorized solo execution; see `logs/2026-09-20-claude-solo-boundary-null-selfreview.md`).
+- Alphabet: 25 single EVA letter-characters observed in the real Voynich token stream (`a`-`z` minus `w`), partitioned into 6 classes by alphabetical round-robin.
+- Internal-structure model: order-2 character Markov model trained on the already-pinned Latin ITTB treebank (`github.com/UniversalDependencies/UD_Latin-ITTB`), mapped onto the EVA alphabet by the same arbitrary alphabetical ordering used for the class partition (not frequency rank, closing a circularity leak found in self-review).
+- Vocabulary mechanism: `p_reuse = 0.87`, calibrated via a self-consistency-only pilot (never compared to Voynich's actual joint profile at pilot time) to land near Voynich's aggregate hapax share.
+- Project profile pipeline: `voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`'s `reproduce_naibbe_control.battery()` plus the same held-out edge-prediction test used for Naibbe, Cardan, and self-citation, run unmodified.
+- Seeds: 20 fixed seeds (42 + 137*i) for every primary configuration and the negative control, per protocol; 5 seeds for the internal-model ablation (targeting the primary configuration with highest mean edge gain, `p_couple=1.00`).
+
+A knowledge-base entry recording this result is proposed in a follow-up PR, clearly marked as solo-executed and solo-reviewed pending ChatGPT's eventual audit — the same disclose-rather-than-pretend approach used throughout this design and execution.
