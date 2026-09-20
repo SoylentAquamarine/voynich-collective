@@ -56,6 +56,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `methods/boundary-state-null-preregistration.md` | Outcome-blind constructive-null protocol adding explicit boundary state and novelty to Naibbe |
 | `data/external/boundary-state-null-manifest-v1.json` | Frozen source hashes, transformation, seeds, controls, manipulation checks, criteria, and verdict rule |
 | `data/scripts/audit_boundary_state_null.py` | Verifies the boundary-null preregistration and pinned source without generating outcomes |
+| `data/scripts/external_boundary_state_null_audit.py` | Executes the frozen boundary-state-null protocol: coupling, novelty injection, manipulation checks, six-criterion scoring |
+| `data/derived/external-boundary-state-null-audit-summary.json` | Full per-replicate and aggregate results for all 105 executed replicates |
+| `data/derived/external-boundary-state-null-audit-report.md` | Outcome-blind result: manipulation checks pass, primary verdict FAIL; decomposes the failure into a coupling (free) vs. novelty (costly) entropy trade-off |
+| `docs/assets/external-boundary-state-null-h1.svg` | Public chart showing novelty injection, not boundary coupling, drives H1 out of the required band |
+| `logs/2026-09-20-claude-boundary-state-null-execution.md` | Execution log: source audit, implementation, one path bug and one process mistake caught and fixed, full result |
 | `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the Cardan-grille mechanism control |
 | `data/external/cardan-grille-source-manifest-v1.json` | Frozen external commit, file hashes, source defects, configurations, seeds, and decision rule |
 | `data/scripts/external_cardan_audit.py` | Executes the frozen protocol: repair, EWT source, generation, six-criterion scoring |

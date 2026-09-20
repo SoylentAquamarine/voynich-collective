@@ -180,11 +180,15 @@
 
       <section class="status-panel ambiguity-panel" aria-labelledby="boundary-state-null-title">
         <div>
-          <p class="kicker">Constructive null · outcome-blind preregistration</p>
-          <h2 id="boundary-state-null-title">Can two transparent operations manufacture the full profile?</h2>
-          <p class="snapshot-caveat">Starting instead from Naibbe — the control that already matches entropy, learned-unit structure, and weak token order — this design adds only an explicit previous-final → next-initial rule and a length-preserving rare-form rule. No transformed output has been generated.</p>
+          <p class="kicker">Constructive null · Naibbe + two transparent operations</p>
+          <h2 id="boundary-state-null-title">Open vocabulary, not boundary coupling, is what costs Voynich's entropy profile.</h2>
+          <p class="snapshot-caveat">Starting from Naibbe — the control that already matches entropy and learned-unit structure — adding a fixed previous-final → next-initial coupling rule and a length-preserving novel-form rule. Both manipulation checks pass (20/20 seeds each); the primary configuration still fails, 0/20.</p>
         </div>
-        <p>A more isolated follow-up to the generator-from-scratch test above: rather than build a whole new internal-structure model, this freezes one primary postprocessor applied to the already-accepted Naibbe control, 20 seeds, three matched controls that must each move their intended metric before the primary result is interpretable, five non-rescuing sensitivities, and all six criteria unchanged from the Cardan protocol. The source-only audit and outcome-blind embargo were independently verified before this design was accepted. No transformed outcome exists yet. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/boundary-state-null-preregistration.md">Read the proposed protocol ↗</a></p>
+        <figure>
+          <img src="assets/external-boundary-state-null-h1.svg" alt="Bar chart of mean H1 character entropy for baseline Naibbe, coupling only, novelty only, and both combined, against the required entropy band. Baseline and coupling-only stay inside the band; novelty-only and the combined primary configuration both land well above it.">
+          <figcaption>Boundary coupling alone barely moves H1 off baseline (3.984 → 3.992, still in band). Novelty injection alone pushes H1 to 4.164 and collapses the learned-unit k64 gap from 1.03 to 0.61 bits — out of the required range either way. Combining both inherits novelty's damage in full.</figcaption>
+        </figure>
+        <p>This isolates something the from-scratch generator above could not: which of two operations, added to a mechanism that already gets entropy and unit-scale right, is responsible for breaking them. The two matched single-operation controls decompose it cleanly — coupling alone (<code>edge_only</code>) keeps H1/H2/units inside band while passing edge prediction, but vocabulary stays closed (51% singleton types, still below the 65% floor); novelty alone (<code>novelty_only</code>) opens vocabulary correctly (90% singleton types) but pushes entropy out of band and collapses the unit-scale gap, with edge prediction unaffected as expected. Five sensitivities at different coupling/novelty strengths confirm this is structural, not a tuning artifact: no tested combination jointly satisfies entropy/units and edge/vocabulary. This does not show no open-vocabulary rule could ever coexist with Voynich-like entropy — only that this specific, disclosed substitution rule cannot. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-boundary-state-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
