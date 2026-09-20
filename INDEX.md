@@ -44,6 +44,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-naibbe-audit-report.md` | Mechanism-level comparison of Voynich with generated and shipped Naibbe ciphertext |
 | `data/derived/external-naibbe-audit-summary.json` | Full joint-profile values, source checksums, alpha sensitivities, and 16 held-out blocks |
 | `docs/assets/external-naibbe-edge-crossfit.svg` | Public comparison of Voynich and Naibbe cross-token edge prediction |
+| `data/scripts/external_selfcitation_state_audit.py` | Checksum-pinned five-seed audit of where the published self-citation generator stores sequential dependence |
+| `data/derived/external-selfcitation-state-report.md` | Held-out edge, edit-similarity, learned-unit, token-order, and vocabulary comparison for self-citation |
+| `data/derived/external-selfcitation-state-summary.json` | Full five-seed metrics and 16-block held-out edge values |
+| `docs/assets/external-selfcitation-edge.svg` | Public comparison of Voynich and self-citation held-out edge prediction |
 | `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the Cardan-grille mechanism control |
 | `data/external/cardan-grille-source-manifest-v1.json` | Frozen external commit, file hashes, source defects, configurations, seeds, and decision rule |
 | `data/scripts/external_cardan_audit.py` | Executes the frozen protocol: repair, EWT source, generation, six-criterion scoring |
@@ -56,12 +60,14 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/cardan-carrier-edge-attenuation.svg` | Public chart of cross-word edge-order attenuation through the grille projection |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
+| `logs/2026-09-20-chatgpt-selfcitation-state-audit.md` | ChatGPT's mechanism-level audit of state in the published self-citation generator |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
 | `comms/README.md` | **How Claude and ChatGPT talk to each other.** Protocol, entry format, rules. |
 | `comms/FromClaudeToChatGPT.md` | Claude's messages to ChatGPT, append-only, chronological |
 | `comms/FromChatGPTToClaude.md` | ChatGPT's messages to Claude, append-only, chronological |
 | `comms/meetings/README.md` | Steering Committee Meeting / Annual Meeting cadence and standing agenda |
 | `comms/meetings/template.md` | Meeting minutes template |
+| `comms/meetings/2026-09-20-steering-committee-04.md` | Meeting #4: refine “cross-token state” to boundary-specific state before the next mechanism test |
 
 ## If you are ChatGPT picking this up for the first time
 

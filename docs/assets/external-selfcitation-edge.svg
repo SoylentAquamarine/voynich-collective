@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title desc">
+  <title id="title">Self-citation state does not reproduce Voynich edge prediction</title>
+  <desc id="desc">Voynich has 0.187 held-out predictive bits per token boundary. Five published self-citation generator seeds and a crude copy-mutate control remain far below the preregistered 0.15 threshold.</desc>
+  <style>.title{font:700 22px Georgia,serif;fill:#2d2922}.subtitle,.tick,.label,.value{font:12px Arial,sans-serif;fill:#665f53}.label{font-size:13px}.value{font-weight:700}</style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="70" y="34" class="title">Local copying state is not the same as boundary-glyph state</text>
+  <text x="70" y="58" class="subtitle">Held-out last-glyph → next-first-glyph gain; 16 contiguous line blocks, alpha=1</text>
+  <line x1="275.4" y1="95" x2="275.4" y2="450" stroke="#d8cdbc" stroke-width="1"/>
+  <text x="275.4" y="476" text-anchor="middle" class="tick">-0.02</text>
+  <line x1="336.2" y1="95" x2="336.2" y2="450" stroke="#d8cdbc" stroke-width="1"/>
+  <text x="336.2" y="476" text-anchor="middle" class="tick">+0.00</text>
+  <line x1="488.3" y1="95" x2="488.3" y2="450" stroke="#d8cdbc" stroke-width="1"/>
+  <text x="488.3" y="476" text-anchor="middle" class="tick">+0.05</text>
+  <line x1="640.4" y1="95" x2="640.4" y2="450" stroke="#d8cdbc" stroke-width="1"/>
+  <text x="640.4" y="476" text-anchor="middle" class="tick">+0.10</text>
+  <line x1="792.5" y1="95" x2="792.5" y2="450" stroke="#d8cdbc" stroke-width="1"/>
+  <text x="792.5" y="476" text-anchor="middle" class="tick">+0.15</text>
+  <line x1="944.6" y1="95" x2="944.6" y2="450" stroke="#d8cdbc" stroke-width="1"/>
+  <text x="944.6" y="476" text-anchor="middle" class="tick">+0.20</text>
+  <line x1="792.5" y1="87" x2="792.5" y2="450" stroke="#2d2922" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="799.5" y="87" class="tick">frozen 0.15 threshold</text>
+  <text x="232" y="125" text-anchor="end" class="label">Voynich</text>
+  <rect x="336.2" y="107" width="569.2" height="22" rx="3" fill="#496a63"/>
+  <text x="912.4" y="124" text-anchor="start" class="value">+0.1871</text>
+  <text x="232" y="172" text-anchor="end" class="label">Self-citation 1</text>
+  <rect x="331.8" y="154" width="4.5" height="22" rx="3" fill="#9b5948"/>
+  <text x="324.8" y="171" text-anchor="end" class="value">-0.0015</text>
+  <text x="232" y="219" text-anchor="end" class="label">Self-citation 2</text>
+  <rect x="336.2" y="201" width="8.4" height="22" rx="3" fill="#9b5948"/>
+  <text x="351.7" y="218" text-anchor="start" class="value">+0.0028</text>
+  <text x="232" y="266" text-anchor="end" class="label">Self-citation 3</text>
+  <rect x="336.2" y="248" width="10.3" height="22" rx="3" fill="#9b5948"/>
+  <text x="353.5" y="265" text-anchor="start" class="value">+0.0034</text>
+  <text x="232" y="313" text-anchor="end" class="label">Self-citation 4</text>
+  <rect x="321.2" y="295" width="15.1" height="22" rx="3" fill="#9b5948"/>
+  <text x="314.2" y="312" text-anchor="end" class="value">-0.0050</text>
+  <text x="232" y="360" text-anchor="end" class="label">Self-citation 5</text>
+  <rect x="336.2" y="342" width="2.0" height="22" rx="3" fill="#9b5948"/>
+  <text x="343.6" y="359" text-anchor="start" class="value">+0.0001</text>
+  <text x="232" y="407" text-anchor="end" class="label">Crude copy/mutate</text>
+  <rect x="284.1" y="389" width="52.2" height="22" rx="3" fill="#826b93"/>
+  <text x="277.1" y="406" text-anchor="end" class="value">-0.0172</text>
+  <text x="610" y="505" text-anchor="middle" class="label">Predictive gain (bits per boundary)</text>
+</svg>
