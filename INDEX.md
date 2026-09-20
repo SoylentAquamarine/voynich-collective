@@ -44,8 +44,12 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-naibbe-audit-report.md` | Mechanism-level comparison of Voynich with generated and shipped Naibbe ciphertext |
 | `data/derived/external-naibbe-audit-summary.json` | Full joint-profile values, source checksums, alpha sensitivities, and 16 held-out blocks |
 | `docs/assets/external-naibbe-edge-crossfit.svg` | Public comparison of Voynich and Naibbe cross-token edge prediction |
-| `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the next named mechanism control |
+| `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the Cardan-grille mechanism control |
 | `data/external/cardan-grille-source-manifest-v1.json` | Frozen external commit, file hashes, source defects, configurations, seeds, and decision rule |
+| `data/scripts/external_cardan_audit.py` | Executes the frozen protocol: repair, EWT source, generation, six-criterion scoring |
+| `data/derived/external-cardan-audit-summary.json` | Full per-replicate and aggregate results for all 95 executed replicates |
+| `data/derived/external-cardan-audit-report.md` | Outcome-blind result: primary verdict FAIL, full joint profile and interpretation |
+| `docs/assets/external-cardan-edge-order.svg` | Public chart of held-out edge-prediction gain per configuration vs. the required threshold |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
