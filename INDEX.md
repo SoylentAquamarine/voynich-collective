@@ -50,6 +50,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-cardan-audit-summary.json` | Full per-replicate and aggregate results for all 95 executed replicates |
 | `data/derived/external-cardan-audit-report.md` | Outcome-blind result: primary verdict FAIL, full joint profile and interpretation |
 | `docs/assets/external-cardan-edge-order.svg` | Public chart of held-out edge-prediction gain per configuration vs. the required threshold |
+| `data/scripts/cardan_carrier_edge_diagnostic.py` | Independent clean-room test of edge-signal transmission through the sequential Cardan carrier |
+| `data/derived/cardan-carrier-edge-diagnostic-report.md` | Mechanism explanation and 20-seed edge-only results for the honest sequential configurations |
+| `data/derived/cardan-carrier-edge-diagnostic.json` | Source checks, replicate arrays, summaries, and hole-count sensitivity |
+| `docs/assets/cardan-carrier-edge-attenuation.svg` | Public chart of cross-word edge-order attenuation through the grille projection |
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |

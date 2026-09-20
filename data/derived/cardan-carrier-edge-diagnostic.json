@@ -1,0 +1,777 @@
+{
+  "analysis": "Cardan sequential-carrier edge attenuation",
+  "scope": "Edge criterion only; not the preregistered six-criterion verdict.",
+  "sources": {
+    "english_ewt": {
+      "commit": "4a4d77f599ea53cc405f85d0cec4b2f14f81d42b",
+      "files": {
+        "en_ewt-ud-train.conllu": "d68e06122a702464c613076523d56740f047e5bbe89dd90ec32737e04d952143",
+        "en_ewt-ud-dev.conllu": "39239e0a60db3ae68f4b7036189f11b6692741d10ff8240dd91f74f2760d90f8",
+        "en_ewt-ud-test.conllu": "fa024f43dc5da3c5ac02563bc9bd0e974f46cbb1560823976a8f342a37dc494a"
+      }
+    },
+    "voynich_units": {
+      "commit": "956a7c4fc39981f4d116fa3f4edfccce6d065571",
+      "lines": 3950,
+      "tokens": 32747
+    }
+  },
+  "carrier": {
+    "documents": 1174,
+    "surface_tokens": 216654,
+    "unassigned_surface_tokens": 0,
+    "direct_source_edge": {
+      "gain_bits_per_boundary": 0.0375184058935342,
+      "positive_blocks": 16,
+      "pairs": 28797
+    }
+  },
+  "parameters": {
+    "holes": 4,
+    "seeds": [
+      42,
+      179,
+      316,
+      453,
+      590,
+      727,
+      864,
+      1001,
+      1138,
+      1275,
+      1412,
+      1549,
+      1686,
+      1823,
+      1960,
+      2097,
+      2234,
+      2371,
+      2508,
+      2645
+    ],
+    "edge_alpha": 1.0,
+    "blocks": 16,
+    "gain_threshold": 0.15,
+    "positive_blocks_threshold": 15
+  },
+  "configurations": {
+    "p=0.00": {
+      "jump_probability": 0.0,
+      "summary": {
+        "replicates": 20,
+        "mean_gain_bits_per_boundary": 0.01411566123151727,
+        "min_gain_bits_per_boundary": 0.0116510467938402,
+        "max_gain_bits_per_boundary": 0.01600069725219814,
+        "mean_positive_blocks": 13.05,
+        "gain_threshold_passes": 0,
+        "joint_edge_criterion_passes": 0
+      },
+      "replicates": [
+        {
+          "seed": 42,
+          "gain_bits_per_boundary": 0.01526352332746041,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 179,
+          "gain_bits_per_boundary": 0.012240572506148097,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 316,
+          "gain_bits_per_boundary": 0.014035213535407473,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 453,
+          "gain_bits_per_boundary": 0.013442809003255545,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 590,
+          "gain_bits_per_boundary": 0.0116510467938402,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 727,
+          "gain_bits_per_boundary": 0.014877850517046773,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 864,
+          "gain_bits_per_boundary": 0.01600069725219814,
+          "positive_blocks": 16,
+          "pairs": 28797
+        },
+        {
+          "seed": 1001,
+          "gain_bits_per_boundary": 0.01327087146779138,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 1138,
+          "gain_bits_per_boundary": 0.014479819402689218,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 1275,
+          "gain_bits_per_boundary": 0.01338286190882063,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 1412,
+          "gain_bits_per_boundary": 0.01326296175812014,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 1549,
+          "gain_bits_per_boundary": 0.013640153253268221,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 1686,
+          "gain_bits_per_boundary": 0.013866893007983999,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 1823,
+          "gain_bits_per_boundary": 0.015933812334655368,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 1960,
+          "gain_bits_per_boundary": 0.014622544900686145,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 2097,
+          "gain_bits_per_boundary": 0.01449892032249295,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 2234,
+          "gain_bits_per_boundary": 0.014097720515846419,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 2371,
+          "gain_bits_per_boundary": 0.015263534209304413,
+          "positive_blocks": 15,
+          "pairs": 28797
+        },
+        {
+          "seed": 2508,
+          "gain_bits_per_boundary": 0.014439847477283644,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 2645,
+          "gain_bits_per_boundary": 0.014041571136046262,
+          "positive_blocks": 13,
+          "pairs": 28797
+        }
+      ]
+    },
+    "p=0.05": {
+      "jump_probability": 0.05,
+      "summary": {
+        "replicates": 20,
+        "mean_gain_bits_per_boundary": 0.00862105202075423,
+        "min_gain_bits_per_boundary": 0.0040686865758529835,
+        "max_gain_bits_per_boundary": 0.011615811548049443,
+        "mean_positive_blocks": 13.5,
+        "gain_threshold_passes": 0,
+        "joint_edge_criterion_passes": 0
+      },
+      "replicates": [
+        {
+          "seed": 42,
+          "gain_bits_per_boundary": 0.011231150067512442,
+          "positive_blocks": 15,
+          "pairs": 28797
+        },
+        {
+          "seed": 179,
+          "gain_bits_per_boundary": 0.0040686865758529835,
+          "positive_blocks": 11,
+          "pairs": 28797
+        },
+        {
+          "seed": 316,
+          "gain_bits_per_boundary": 0.009703761621191628,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 453,
+          "gain_bits_per_boundary": 0.006595457744685014,
+          "positive_blocks": 15,
+          "pairs": 28797
+        },
+        {
+          "seed": 590,
+          "gain_bits_per_boundary": 0.007215483277553257,
+          "positive_blocks": 11,
+          "pairs": 28797
+        },
+        {
+          "seed": 727,
+          "gain_bits_per_boundary": 0.0063251692238438925,
+          "positive_blocks": 11,
+          "pairs": 28797
+        },
+        {
+          "seed": 864,
+          "gain_bits_per_boundary": 0.011357394674009442,
+          "positive_blocks": 16,
+          "pairs": 28797
+        },
+        {
+          "seed": 1001,
+          "gain_bits_per_boundary": 0.011615811548049443,
+          "positive_blocks": 15,
+          "pairs": 28797
+        },
+        {
+          "seed": 1138,
+          "gain_bits_per_boundary": 0.007516525132632629,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 1275,
+          "gain_bits_per_boundary": 0.005828126126073168,
+          "positive_blocks": 10,
+          "pairs": 28797
+        },
+        {
+          "seed": 1412,
+          "gain_bits_per_boundary": 0.008662436667055585,
+          "positive_blocks": 11,
+          "pairs": 28797
+        },
+        {
+          "seed": 1549,
+          "gain_bits_per_boundary": 0.009636686107645214,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 1686,
+          "gain_bits_per_boundary": 0.008029140598170295,
+          "positive_blocks": 15,
+          "pairs": 28797
+        },
+        {
+          "seed": 1823,
+          "gain_bits_per_boundary": 0.011594326442765762,
+          "positive_blocks": 15,
+          "pairs": 28797
+        },
+        {
+          "seed": 1960,
+          "gain_bits_per_boundary": 0.010192471205912386,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 2097,
+          "gain_bits_per_boundary": 0.009022466074956168,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 2234,
+          "gain_bits_per_boundary": 0.008351322368413029,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 2371,
+          "gain_bits_per_boundary": 0.00600769568759908,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 2508,
+          "gain_bits_per_boundary": 0.008577463830079875,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 2645,
+          "gain_bits_per_boundary": 0.010889465441083305,
+          "positive_blocks": 16,
+          "pairs": 28797
+        }
+      ]
+    },
+    "p=0.10": {
+      "jump_probability": 0.1,
+      "summary": {
+        "replicates": 20,
+        "mean_gain_bits_per_boundary": 0.0061819210209131436,
+        "min_gain_bits_per_boundary": 0.002900151764163619,
+        "max_gain_bits_per_boundary": 0.009569676139564316,
+        "mean_positive_blocks": 12.75,
+        "gain_threshold_passes": 0,
+        "joint_edge_criterion_passes": 0
+      },
+      "replicates": [
+        {
+          "seed": 42,
+          "gain_bits_per_boundary": 0.005527517224114271,
+          "positive_blocks": 11,
+          "pairs": 28797
+        },
+        {
+          "seed": 179,
+          "gain_bits_per_boundary": 0.005264538124703704,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 316,
+          "gain_bits_per_boundary": 0.007450036705759557,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 453,
+          "gain_bits_per_boundary": 0.0066549781954330315,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 590,
+          "gain_bits_per_boundary": 0.002900151764163619,
+          "positive_blocks": 11,
+          "pairs": 28797
+        },
+        {
+          "seed": 727,
+          "gain_bits_per_boundary": 0.004384129202017912,
+          "positive_blocks": 10,
+          "pairs": 28797
+        },
+        {
+          "seed": 864,
+          "gain_bits_per_boundary": 0.007293165150605497,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 1001,
+          "gain_bits_per_boundary": 0.005639011213883141,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 1138,
+          "gain_bits_per_boundary": 0.007931439228687304,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 1275,
+          "gain_bits_per_boundary": 0.005050913782453572,
+          "positive_blocks": 11,
+          "pairs": 28797
+        },
+        {
+          "seed": 1412,
+          "gain_bits_per_boundary": 0.0060467866197534085,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 1549,
+          "gain_bits_per_boundary": 0.004753443737018013,
+          "positive_blocks": 12,
+          "pairs": 28797
+        },
+        {
+          "seed": 1686,
+          "gain_bits_per_boundary": 0.007862537018785037,
+          "positive_blocks": 15,
+          "pairs": 28797
+        },
+        {
+          "seed": 1823,
+          "gain_bits_per_boundary": 0.009174928834552003,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 1960,
+          "gain_bits_per_boundary": 0.005413445215432515,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 2097,
+          "gain_bits_per_boundary": 0.006342518326263403,
+          "positive_blocks": 14,
+          "pairs": 28797
+        },
+        {
+          "seed": 2234,
+          "gain_bits_per_boundary": 0.009569676139564316,
+          "positive_blocks": 16,
+          "pairs": 28797
+        },
+        {
+          "seed": 2371,
+          "gain_bits_per_boundary": 0.007361199018539706,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 2508,
+          "gain_bits_per_boundary": 0.00405929310506233,
+          "positive_blocks": 13,
+          "pairs": 28797
+        },
+        {
+          "seed": 2645,
+          "gain_bits_per_boundary": 0.004958711811470538,
+          "positive_blocks": 11,
+          "pairs": 28797
+        }
+      ]
+    },
+    "p=0.30": {
+      "jump_probability": 0.3,
+      "summary": {
+        "replicates": 20,
+        "mean_gain_bits_per_boundary": -0.0016047344657584754,
+        "min_gain_bits_per_boundary": -0.005933960252551852,
+        "max_gain_bits_per_boundary": 0.0012152727598992077,
+        "mean_positive_blocks": 7,
+        "gain_threshold_passes": 0,
+        "joint_edge_criterion_passes": 0
+      },
+      "replicates": [
+        {
+          "seed": 42,
+          "gain_bits_per_boundary": -0.003629152344572978,
+          "positive_blocks": 5,
+          "pairs": 28797
+        },
+        {
+          "seed": 179,
+          "gain_bits_per_boundary": -0.0019212039377480299,
+          "positive_blocks": 6,
+          "pairs": 28797
+        },
+        {
+          "seed": 316,
+          "gain_bits_per_boundary": -0.0008241577926266486,
+          "positive_blocks": 8,
+          "pairs": 28797
+        },
+        {
+          "seed": 453,
+          "gain_bits_per_boundary": 0.0006765491302924321,
+          "positive_blocks": 9,
+          "pairs": 28797
+        },
+        {
+          "seed": 590,
+          "gain_bits_per_boundary": -0.0034371728031170677,
+          "positive_blocks": 4,
+          "pairs": 28797
+        },
+        {
+          "seed": 727,
+          "gain_bits_per_boundary": 0.0001244039739620075,
+          "positive_blocks": 8,
+          "pairs": 28797
+        },
+        {
+          "seed": 864,
+          "gain_bits_per_boundary": 0.0012152727598992077,
+          "positive_blocks": 10,
+          "pairs": 28797
+        },
+        {
+          "seed": 1001,
+          "gain_bits_per_boundary": -0.0010114700333059448,
+          "positive_blocks": 9,
+          "pairs": 28797
+        },
+        {
+          "seed": 1138,
+          "gain_bits_per_boundary": -0.0018951775146756934,
+          "positive_blocks": 6,
+          "pairs": 28797
+        },
+        {
+          "seed": 1275,
+          "gain_bits_per_boundary": -0.002210608989600145,
+          "positive_blocks": 7,
+          "pairs": 28797
+        },
+        {
+          "seed": 1412,
+          "gain_bits_per_boundary": -0.0012902633686925826,
+          "positive_blocks": 7,
+          "pairs": 28797
+        },
+        {
+          "seed": 1549,
+          "gain_bits_per_boundary": -0.0010512546043287094,
+          "positive_blocks": 10,
+          "pairs": 28797
+        },
+        {
+          "seed": 1686,
+          "gain_bits_per_boundary": -0.001813113521566154,
+          "positive_blocks": 7,
+          "pairs": 28797
+        },
+        {
+          "seed": 1823,
+          "gain_bits_per_boundary": -0.001020263727674984,
+          "positive_blocks": 7,
+          "pairs": 28797
+        },
+        {
+          "seed": 1960,
+          "gain_bits_per_boundary": 0.0009289485576415773,
+          "positive_blocks": 8,
+          "pairs": 28797
+        },
+        {
+          "seed": 2097,
+          "gain_bits_per_boundary": -0.0012477692245655258,
+          "positive_blocks": 8,
+          "pairs": 28797
+        },
+        {
+          "seed": 2234,
+          "gain_bits_per_boundary": -0.003412440280404128,
+          "positive_blocks": 4,
+          "pairs": 28797
+        },
+        {
+          "seed": 2371,
+          "gain_bits_per_boundary": 6.984191726184586e-05,
+          "positive_blocks": 9,
+          "pairs": 28797
+        },
+        {
+          "seed": 2508,
+          "gain_bits_per_boundary": -0.004411697258796137,
+          "positive_blocks": 4,
+          "pairs": 28797
+        },
+        {
+          "seed": 2645,
+          "gain_bits_per_boundary": -0.005933960252551852,
+          "positive_blocks": 4,
+          "pairs": 28797
+        }
+      ]
+    },
+    "p=1.00": {
+      "jump_probability": 1.0,
+      "summary": {
+        "replicates": 20,
+        "mean_gain_bits_per_boundary": -0.01522341695428807,
+        "min_gain_bits_per_boundary": -0.016710411037445628,
+        "max_gain_bits_per_boundary": -0.014117851080951673,
+        "mean_positive_blocks": 0,
+        "gain_threshold_passes": 0,
+        "joint_edge_criterion_passes": 0
+      },
+      "replicates": [
+        {
+          "seed": 42,
+          "gain_bits_per_boundary": -0.015295725876620493,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 179,
+          "gain_bits_per_boundary": -0.016710411037445628,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 316,
+          "gain_bits_per_boundary": -0.014117851080951673,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 453,
+          "gain_bits_per_boundary": -0.014357458656600689,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 590,
+          "gain_bits_per_boundary": -0.01566092465981746,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 727,
+          "gain_bits_per_boundary": -0.01464901113427994,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 864,
+          "gain_bits_per_boundary": -0.016154534152753405,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1001,
+          "gain_bits_per_boundary": -0.015739415512205136,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1138,
+          "gain_bits_per_boundary": -0.014804123791333139,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1275,
+          "gain_bits_per_boundary": -0.014816789177155973,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1412,
+          "gain_bits_per_boundary": -0.014838475389692726,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1549,
+          "gain_bits_per_boundary": -0.015037514263208334,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1686,
+          "gain_bits_per_boundary": -0.01530796398663592,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1823,
+          "gain_bits_per_boundary": -0.01613103776179802,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 1960,
+          "gain_bits_per_boundary": -0.01475068707589561,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 2097,
+          "gain_bits_per_boundary": -0.015385101973114825,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 2234,
+          "gain_bits_per_boundary": -0.01587415417543512,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 2371,
+          "gain_bits_per_boundary": -0.015357276142876306,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 2508,
+          "gain_bits_per_boundary": -0.015070005725304949,
+          "positive_blocks": 0,
+          "pairs": 28797
+        },
+        {
+          "seed": 2645,
+          "gain_bits_per_boundary": -0.014409877512636051,
+          "positive_blocks": 0,
+          "pairs": 28797
+        }
+      ]
+    }
+  },
+  "hole_sensitivity_at_p0_five_seeds": {
+    "2": {
+      "replicates": 5,
+      "mean_gain_bits_per_boundary": -0.0007746111616710753,
+      "min_gain_bits_per_boundary": -0.0023572502910345233,
+      "max_gain_bits_per_boundary": 0.000559689180923993,
+      "mean_positive_blocks": 8,
+      "gain_threshold_passes": 0,
+      "joint_edge_criterion_passes": 0
+    },
+    "3": {
+      "replicates": 5,
+      "mean_gain_bits_per_boundary": 0.008586847074293635,
+      "min_gain_bits_per_boundary": 0.005609903820220515,
+      "max_gain_bits_per_boundary": 0.010311177250856805,
+      "mean_positive_blocks": 11.8,
+      "gain_threshold_passes": 0,
+      "joint_edge_criterion_passes": 0
+    },
+    "4": {
+      "replicates": 5,
+      "mean_gain_bits_per_boundary": 0.013326633033222346,
+      "min_gain_bits_per_boundary": 0.0116510467938402,
+      "max_gain_bits_per_boundary": 0.01526352332746041,
+      "mean_positive_blocks": 12.2,
+      "gain_threshold_passes": 0,
+      "joint_edge_criterion_passes": 0
+    },
+    "5": {
+      "replicates": 5,
+      "mean_gain_bits_per_boundary": 0.01965787797951486,
+      "min_gain_bits_per_boundary": 0.01887024674407819,
+      "max_gain_bits_per_boundary": 0.02063815357551215,
+      "mean_positive_blocks": 14.2,
+      "gain_threshold_passes": 0,
+      "joint_edge_criterion_passes": 0
+    },
+    "8": {
+      "replicates": 5,
+      "mean_gain_bits_per_boundary": 0.028390180028890676,
+      "min_gain_bits_per_boundary": 0.027494281032487747,
+      "max_gain_bits_per_boundary": 0.028909672610877235,
+      "mean_positive_blocks": 15,
+      "gain_threshold_passes": 0,
+      "joint_edge_criterion_passes": 0
+    }
+  }
+}
