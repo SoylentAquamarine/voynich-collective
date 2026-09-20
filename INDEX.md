@@ -48,11 +48,14 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-selfcitation-state-report.md` | Held-out edge, edit-similarity, learned-unit, token-order, and vocabulary comparison for self-citation |
 | `data/derived/external-selfcitation-state-summary.json` | Full five-seed metrics and 16-block held-out edge values |
 | `docs/assets/external-selfcitation-edge.svg` | Public comparison of Voynich and self-citation held-out edge prediction |
-| `methods/boundary-coupled-null-preregistration.md` | Design for a constructive null coupling token boundaries and vocabulary growth by construction; solo self-reviewed and executed |
+| `methods/boundary-coupled-null-preregistration.md` | Generator-from-scratch constructive-null design; independently challenged, revised, solo self-reviewed and executed |
 | `data/scripts/external_boundary_null_audit.py` | Executes the frozen boundary-coupled-null protocol: alphabet, coupling, internal model, six-criterion scoring |
 | `data/derived/external-boundary-null-audit-summary.json` | Full per-replicate and aggregate results for all 125 executed replicates |
 | `data/derived/external-boundary-null-audit-report.md` | Outcome-blind result: primary verdict FAIL, with an inverted failure shape vs. Naibbe/Cardan/self-citation |
 | `docs/assets/external-boundary-null-edge.svg` | Public chart of edge-prediction gain per coupling strength vs. the required threshold |
+| `methods/boundary-state-null-preregistration.md` | Outcome-blind constructive-null protocol adding explicit boundary state and novelty to Naibbe |
+| `data/external/boundary-state-null-manifest-v1.json` | Frozen source hashes, transformation, seeds, controls, manipulation checks, criteria, and verdict rule |
+| `data/scripts/audit_boundary_state_null.py` | Verifies the boundary-null preregistration and pinned source without generating outcomes |
 | `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the Cardan-grille mechanism control |
 | `data/external/cardan-grille-source-manifest-v1.json` | Frozen external commit, file hashes, source defects, configurations, seeds, and decision rule |
 | `data/scripts/external_cardan_audit.py` | Executes the frozen protocol: repair, EWT source, generation, six-criterion scoring |
@@ -66,6 +69,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/README.md` | Log conventions — append-only, one file per session |
 | `logs/2026-09-18-bootstrap.md` | First log entry: repo creation |
 | `logs/2026-09-20-chatgpt-selfcitation-state-audit.md` | ChatGPT's mechanism-level audit of state in the published self-citation generator |
+| `logs/2026-09-20-chatgpt-boundary-null-preregistration.md` | Outcome-blind design and source audit for the boundary-state constructive null |
+| `logs/2026-09-20-chatgpt-bccn-design-review.md` | Adversarial review challenging Claude's generator-from-scratch BCCN version 1 before execution |
 | `data/README.md` | What source data is needed and not yet present (EVA transcription) |
 | `comms/README.md` | **How Claude and ChatGPT talk to each other.** Protocol, entry format, rules. |
 | `comms/FromClaudeToChatGPT.md` | Claude's messages to ChatGPT, append-only, chronological |

@@ -30,5 +30,5 @@ The honest limitation: this design deliberately left the internal-structure comp
 
 ## Not done yet
 
-- ChatGPT has not reviewed the design, the implementation corrections, or these results. Per the user's explicit instruction to keep making progress rather than block on an unresponsive collaborator, a knowledge-base entry recording this result is proposed in a follow-up PR anyway, clearly marked as solo-executed and solo-reviewed pending ChatGPT's eventual audit — the same "disclose the limitation, don't quietly treat it as equivalent to real review" approach used throughout this session.
+- **Update, same session**: ChatGPT returned before this PR was reviewed and gave the design a "challenge; pause execution" verdict on three points, posted while this execution was already running. Claude did not see it until after finishing and had already opened this PR — a real process lapse, disclosed in `logs/2026-09-20-skeptic-boundary-state-null-review.md`. All three points were accepted after independent verification (including hand-recomputing ChatGPT's channel-capacity math, which matched exactly), and the report's interpretation was revised accordingly before any knowledge-base proposal.
 - A combined boundary-coupling + Voynich-tuned-internal-model generator was not attempted and would need a new preregistration.
