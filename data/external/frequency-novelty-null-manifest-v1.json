@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-20T14:45:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "boundary-state-null result: edge_only (beta=0.50, nu=0) passes H1/H2/order/edge (20/20 each), units 16/20, hapax 0/20 (mean 51.3%, need >=65%)",
+      "novelty_only (beta=0, nu=0.75, uniform-substitution rule) passes hapax (20/20) but fails H1/H2/units (0/20 each) -- the uniform substitution rule specifically injects the damaging randomness",
+      "baseline Naibbe already passes H1/H2/units/order (20/20 each)"
+    ],
+    "not_done_before_registration": [
+      "No frequency-weighted novelty stream generated or scored",
+      "No parameter selected from any transformed outcome",
+      "nu calibration (if needed) will be done as a self-consistency-only pilot, never compared to Voynich's actual joint profile at calibration time"
+    ]
+  },
+  "claim": "Replacing boundary-state-null's uniform-substitution novelty rule with a frequency-weighted substitution rule (drawn from the replicate's own running atom-unigram distribution, never Voynich's) preserves entropy/unit-scale while still opening vocabulary, passing all six frozen criteria in at least 16 of 20 primary replicates.",
+  "base_mechanism": "identical to methods/boundary-state-null-preregistration.md: Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + identical boundary-coupling rule (beta, target_initials=[o,q,C,S], target(last)=target_initials[index(last) mod 4]). Only the novelty-injection rule changes.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [2000042, 2000179, 2000316, 2000453, 2000590, 2000727, 2000864, 2001001, 2001138, 2001275, 2001412, 2001549, 2001686, 2001823, 2001960, 2002097, 2002234, 2002371, 2002508, 2002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "frequency_novelty_injection"],
+    "boundary_coupling": {
+      "apply_to": "every token after the first",
+      "probability_parameter": "beta",
+      "fixed_value_this_design": 0.5,
+      "note": "unchanged from boundary-state-null; not re-tested as a sensitivity here since it was already validated to preserve entropy/units alone (edge_only result)"
+    },
+    "frequency_novelty_injection": {
+      "eligibility": "candidate already emitted and atomic length at least 2",
+      "probability_parameter": "nu",
+      "protected_positions": [0],
+      "replacement_distribution": "empirical unigram frequency of atoms emitted so far in THIS replicate (running count over the output stream generated up to the current token, not Voynich, not the input plaintext, not a precomputed table)",
+      "mutation": "exhaustive search, identical structure to boundary-state-null's original: iterate every non-initial position in a random-but-seeded order; at each position, iterate all 25 alternative atoms in descending running-frequency order (ties broken by seeded RNG) rather than the original's fixed cyclic order; accept the first unseen type found. This guarantees an unseen variant is found whenever one exists, matching the original design's guarantee exactly, so any difference in outcome vs. the uniform-substitution rule is attributable to which atom is tried, not how hard the search tries (self-review caught and fixed a bounded-random-search confound in the first draft; see logs/2026-09-20-claude-frequency-novelty-selfreview.md).",
+      "cold_start": "before 5 tokens have been emitted, use the original's fixed cyclic order instead of frequency order (no meaningful running distribution exists yet)",
+      "length_change": false,
+      "fallback": "retain the boundary-coupled candidate unmutated if no unseen variant exists across the full search (all non-initial positions x all 25 alternatives) -- same condition as the original design"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu": 0.2, "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, values reused by reference"},
+      "edge_only": {"beta": 0.5, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, values reused by reference"},
+      "frequency_novelty_only": {"beta": 0.0, "nu": 0.2, "replicates": 20}
+    },
+    "sensitivities": {
+      "weaker_novelty": {"beta": 0.5, "nu": 0.1, "replicates": 5},
+      "stronger_novelty": {"beta": 0.5, "nu": 0.3, "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu chosen by a self-consistency-only pilot (3 seeds, frequency_novelty_only config, beta=0) targeting hapax_share_of_types in [0.65, 0.75] -- a band, not Voynich's exact 0.697 point estimate, and never checked against H1/H2/units/edge/order during calibration. Pilot swept nu in {0.05, 0.1, 0.15, 0.2, 0.3, 0.45, 0.6, 0.75}: 0.3+ overshoots (74.6%+), 0.15 undershoots (64.7%, just below floor), 0.2 lands in-band (mean 68.5% across 3 seeds). Frozen: nu=0.2. Full pilot log in logs/2026-09-20-claude-frequency-novelty-selfreview.md."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "expected to replicate edge_only's existing 20/20 pass since the coupling rule is unchanged; verified again here as a matched control anyway, not assumed"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16
+    },
+    "entropy_preservation_diagnostic": {
+      "not_a_manipulation_check": "this is reported for interpretation, not used in the PASS/FAIL/INVALID verdict rule",
+      "compares": "primary configuration's mean H1/H2/bpe_k64_gap against boundary-state-null's old novelty_only and primary values, to quantify whether the frequency-weighted rule actually reduces entropy damage relative to the uniform rule"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete. Solo self-review substitutes for cross-party review here because ChatGPT is not automated; this is disclosed, not treated as equivalent."
+}
