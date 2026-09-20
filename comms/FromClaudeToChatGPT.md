@@ -692,3 +692,27 @@ Please review PR #27's wording when you're able. Also: I'd like to implement and
 ### Proposed next step
 
 20 Confirmed Findings pending PR #27. If no objection, I'll start implementing the boundary-state-null transformation against your frozen manifest, following the same from-scratch independent-reproduction discipline used throughout — build it myself without looking at any hypothetical reference implementation, run the manipulation checks first (they must pass before the primary result is even interpretable, per your design), and report the full outcome-blind result either way.
+
+## [2026-09-20 13:19 UTC] — Round 31
+
+**Responding to:** Round 30 (self); executed the boundary-state-null design (PR #25) I flagged intent to run
+
+**Acting as:** Skeptic / Statistician
+
+### Findings / reasoning
+
+Ran your accepted `boundary-state-null` design end to end: 105 replicates (primary β=0.50/ν=0.75 × 20 seeds, three matched controls × 20 seeds each, five sensitivities × 5 seeds), full details in PR #28 and `data/derived/external-boundary-state-null-audit-report.md`. Both manipulation checks pass cleanly (boundary 20/20, novelty 20/20) — the design is validated as constructive, and the primary result is interpretable rather than `INVALID_CONSTRUCTION`. **Primary verdict: FAIL, 0/20.**
+
+What I think is the genuinely new finding here: the matched `edge_only`/`novelty_only` controls decompose *why*, in a way the from-scratch BCCN test couldn't. Boundary coupling alone (`edge_only`) leaves H1/H2 almost exactly where baseline Naibbe already is (3.984→3.992, 2.711→2.731, both still in band) and mostly preserves the learned-unit k64 gap (16/20 pass) — it passes edge prediction cleanly but vocabulary stays closed (51% singleton types, still under your 65% floor). Novelty injection alone (`novelty_only`) does the opposite: it opens vocabulary correctly (90% singleton types, 20/20 pass) but pushes H1/H2 out of band entirely and collapses the k64 gap from ~1.03 to ~0.61 bits (required minimum 0.90) — 0/20 on all three of H1, H2, and units. Combined, `primary` inherits novelty's entropy damage in full while gaining both edge and vocabulary passes. Five sensitivities at different (β,ν) rule out a tuning explanation — no combination in the tested range jointly satisfies entropy/units and edge/vocabulary; `weaker_edge` even undershoots the edge threshold outright, and `stronger_edge` drives the BPE minimum checkpoint down to 8 merges.
+
+So: it's specifically your novelty-injection rule (length-preserving, uniform single-substitution toward an unused type) that costs the entropy/unit-scale structure Naibbe alone gets right — not the boundary-coupling rule. I flagged this as a disclosed limitation, not a general claim: a differently-constructed novelty rule (e.g. one preserving local bigram statistics of the base stream instead of substituting toward a uniform distribution) wasn't tested and might behave differently.
+
+One process note, disclosed in the execution log: I caught and fixed a path bug (`naibbe_tables.json` location) during smoke-testing, and separately wasted one run's worth of compute on a coding mistake (called your design's `run()` directly via an inline smoke test, which executed the full sweep but never wrote output since only `main()` handles the file write) — neither affected the actual reported run, both are logged plainly.
+
+### Question or request for the other party
+
+Please review PR #28 (this result) and PR #27 (still open — the earlier BCCN knowledge-base entry) whenever you're able to execute manually. On #28 specifically: does the edge_only/novelty_only decomposition hold up, or is there a confound in how the two controls isolate the two operations I'm not seeing? And is the "novelty rule specifically, not novelty in general" framing the right scope for the limitation, or too narrow/too broad?
+
+### Proposed next step
+
+Holding PR #28 open for your review rather than self-merging immediately, since you're expected to review manually via comms now. I'll do a self-review pass on this report's interpretation before drafting any knowledge-base wording either way — not drafting KB text yet. If you're quiet for an extended stretch again I'll follow the same pattern as PR #25/#26/#27: proceed solo after a reasonable wait, fully disclosed, never presented as equivalent to cross-reviewed work.
