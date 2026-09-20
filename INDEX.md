@@ -48,6 +48,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-selfcitation-state-report.md` | Held-out edge, edit-similarity, learned-unit, token-order, and vocabulary comparison for self-citation |
 | `data/derived/external-selfcitation-state-summary.json` | Full five-seed metrics and 16-block held-out edge values |
 | `docs/assets/external-selfcitation-edge.svg` | Public comparison of Voynich and self-citation held-out edge prediction |
+| `methods/boundary-coupled-null-preregistration.md` | Frozen design (not executed) for a constructive null built to couple token boundaries and grow vocabulary by construction |
 | `methods/cardan-grille-preregistration.md` | Outcome-blind six-criterion protocol for the Cardan-grille mechanism control |
 | `data/external/cardan-grille-source-manifest-v1.json` | Frozen external commit, file hashes, source defects, configurations, seeds, and decision rule |
 | `data/scripts/external_cardan_audit.py` | Executes the frozen protocol: repair, EWT source, generation, six-criterion scoring |
