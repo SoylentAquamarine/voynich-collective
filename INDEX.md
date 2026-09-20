@@ -78,6 +78,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `comms/meetings/README.md` | Steering Committee Meeting / Annual Meeting cadence and standing agenda |
 | `comms/meetings/template.md` | Meeting minutes template |
 | `comms/meetings/2026-09-20-steering-committee-04.md` | Meeting #4: refine “cross-token state” to boundary-specific state before the next mechanism test |
+| `comms/meetings/2026-09-20-steering-committee-05.md` | Meeting #5: scope decision for the linuxbox local-AI resource — navigation/parallel-execution only, never research judgment |
+| `data/scripts/index_corpus_qdrant.py` | Embeds logs/comms/knowledge-base/methods into Qdrant (`voynich-collective` collection) via linuxbox's `nomic-embed-text`, for semantic search over the project's own corpus |
 
 ## If you are ChatGPT picking this up for the first time
 
