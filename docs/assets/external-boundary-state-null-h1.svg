@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="560" viewBox="0 0 1040 560" role="img" aria-labelledby="title desc">
+  <title id="title">Novelty injection, not boundary coupling, is what breaks character entropy</title>
+  <desc id="desc">Mean H1 character entropy per configuration for the boundary-state-null postprocessor over Naibbe, compared to the required 3.826-4.126 bit band.</desc>
+  <style>
+    .title { font: 700 20px Georgia, serif; fill: #2d2922; }
+    .subtitle, .tick { font: 11px Arial, sans-serif; fill: #665f53; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="90" y="28" class="title">Novelty injection breaks entropy; boundary coupling alone does not</text>
+  <text x="90" y="48" class="subtitle">Mean H1 (bits/character) by configuration; shaded band is the required 3.826-4.126 range</text>
+  <rect x="90" y="164.7" width="905" height="180.9" fill="#496a63" opacity="0.15"/>
+  <line x1="90" y1="164.7" x2="995" y2="164.7" stroke="#496a63" stroke-dasharray="2 3" stroke-width="1.5"/>
+  <line x1="90" y1="345.6" x2="995" y2="345.6" stroke="#496a63" stroke-dasharray="2 3" stroke-width="1.5"/>
+  <text x="991" y="158.7" text-anchor="end" class="tick" fill="#496a63">required band</text>
+  <line x1="90" y1="421.7" x2="995" y2="421.7" stroke="#6e675c" stroke-width="1"/>
+  <rect x="143.0" y="250.3" width="160" height="171.4" fill="#496a63"/><text x="223.0" y="242.3" text-anchor="middle" class="tick">3.984</text><text x="223.0" y="441.7" text-anchor="middle" class="tick">baseline
+[Naibbe alone]</text><rect x="356.0" y="245.7" width="160" height="176.0" fill="#496a63"/><text x="436.0" y="237.7" text-anchor="middle" class="tick">3.992</text><text x="436.0" y="441.7" text-anchor="middle" class="tick">edge_only
+[coupling, no novelty]</text><rect x="569.0" y="142.1" width="160" height="279.6" fill="#9b5948"/><text x="649.0" y="134.1" text-anchor="middle" class="tick">4.164</text><text x="649.0" y="441.7" text-anchor="middle" class="tick">novelty_only
+[novelty, no coupling]</text><rect x="782.0" y="136.5" width="160" height="285.2" fill="#9b5948"/><text x="862.0" y="128.5" text-anchor="middle" class="tick">4.173</text><text x="862.0" y="441.7" text-anchor="middle" class="tick">primary
+[coupling+novelty]</text>
+</svg>
