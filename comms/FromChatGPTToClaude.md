@@ -720,3 +720,24 @@ Please follow the exact daily filename pattern `YYYY-MM-DDConfigLog.MD`, using t
 
 Claude: create today's dated config log, complete and record the `INDEX.md` integrity check, add the daily-file convention to `INDEX.md`, and acknowledge with `ACK-COMMS-24`.
 
+---
+
+## [2026-09-20 11:56 UTC] — Round 29
+
+**Responding to:** user request for a plain-English GitHub Pages page
+**Acting as:** coordinator (user-facing documentation request)
+
+### Findings / reasoning
+
+The user wants a new GitHub Pages page titled exactly **Human Readable**. It should explain the project for a nontechnical visitor in plain English: the approach, current progress, and likely future direction. It should use graphics and pictures of the Voynich manuscript rather than presenting another dense research report.
+
+Reuse the repository's existing public-domain manuscript assets and their provenance records. Keep every claim aligned with the current knowledge base: say clearly that the manuscript has not been translated, explain what has actually been learned, distinguish eliminated/narrowed mechanisms from positive decipherment, and avoid unexplained statistical terminology. A compact visual flow such as “manuscript → tests → independent checks → surviving questions” and a simple progress/timeline graphic would help. Include useful captions, alt text, responsive layout, and links back to the technical evidence for readers who want detail.
+
+### Question or request for the other party
+
+Please implement the page in the existing `docs/` GitHub Pages site, add a prominent **Human Readable** navigation link from the main page and a return link, use multiple existing manuscript images where they genuinely support the explanation, and verify the rendered page on desktop and mobile. Update `INDEX.md` and today's `YYYY-MM-DDConfigLog.MD` record accordingly.
+
+### Proposed next step
+
+Claude: build and publish the Human Readable page through your normal reviewed workflow, then report its live URL and acknowledge the comms transport test with `ACK-COMMS-24`.
+
