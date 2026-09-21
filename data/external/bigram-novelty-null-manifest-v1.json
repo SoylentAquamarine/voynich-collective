@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-21T00:05:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "frequency-novelty-null result (PR #29): unigram-frequency-weighted substitution fully closes the H1 gap (20/20 pass) and mostly closes learned-unit scale (16/20), but H2 (bigram entropy) fails universally (0/20), mean 2.946 vs required <=2.840",
+      "boundary-state-null's edge_only and frequency-novelty-null's primary both already pass edge/hapax/order cleanly -- those are not being re-tested as free variables here",
+      "mechanistic hypothesis, not yet tested: a unigram-frequency rule controls single-character statistics by construction but not which character PAIRS get created, which is exactly what H2 measures"
+    ],
+    "not_done_before_registration": [
+      "No bigram-conditional novelty stream generated or scored",
+      "No parameter selected from any transformed outcome",
+      "nu calibration (if needed) will be done as a self-consistency-only pilot targeting the same [0.65,0.75] hapax band used for frequency-novelty-null, never compared to Voynich's actual joint profile at calibration time"
+    ]
+  },
+  "claim": "Replacing frequency-novelty-null's unigram-frequency substitution rule with a bigram-conditional substitution rule (drawn from the replicate's own running order-1 atom-transition distribution, never Voynich) closes the H2 gap that unigram-frequency-weighting left open, passing all six frozen criteria in at least 16 of 20 primary replicates.",
+  "base_mechanism": "identical to frequency-novelty-null and boundary-state-null: Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + identical boundary-coupling rule (beta=0.50 fixed, unchanged, not re-tested). Only the novelty-injection rule's replacement-atom distribution changes again.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [3000042, 3000179, 3000316, 3000453, 3000590, 3000727, 3000864, 3001001, 3001138, 3001275, 3001412, 3001549, 3001686, 3001823, 3001960, 3002097, 3002234, 3002371, 3002508, 3002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "bigram_novelty_injection"],
+    "boundary_coupling": {
+      "apply_to": "every token after the first",
+      "probability_parameter": "beta",
+      "fixed_value_this_design": 0.5,
+      "note": "unchanged from boundary-state-null and frequency-novelty-null; not re-tested"
+    },
+    "bigram_novelty_injection": {
+      "eligibility": "candidate already emitted and atomic length at least 2",
+      "probability_parameter": "nu",
+      "protected_positions": [0],
+      "replacement_distribution": "empirical order-1 (bigram) transition frequency P(next_atom | preceding_atom_in_this_candidate), estimated from a running bigram count table over the replicate's own output emitted so far (never Voynich, never the input plaintext). preceding_atom is the candidate's OWN character at position (substitution_position - 1), fixed by the candidate itself, not by the output stream.",
+      "sparse_context_fallback": "if the running bigram count for the specific preceding_atom context has fewer than 20 total observations so far, fall back to frequency-novelty-null's unigram-frequency ordering for that substitution event instead of the bigram-conditional ordering (avoids acting on a near-empty conditional distribution)",
+      "mutation": "exhaustive search, identical structure to frequency-novelty-null: iterate every non-initial position in a random-but-seeded order; at each position, iterate all 25 alternative atoms in descending bigram-conditional-frequency order (or unigram-frequency order under the sparse-context fallback), ties broken by seeded RNG; accept the first unseen type found. Guarantees an unseen variant is found whenever one exists, matching both prior designs' search guarantee, so any difference in outcome vs. frequency-novelty-null is attributable to which statistic (unigram vs. bigram) orders the search, not how hard the search tries.",
+      "cold_start": "before 5 tokens have been emitted, use frequency-novelty-null's unigram-frequency order (which itself falls back to the original design's fixed cyclic order before 5 tokens) -- i.e., cold-start behavior is inherited unchanged from the prior design, only the steady-state behavior changes",
+      "length_change": false,
+      "fallback": "retain the boundary-coupled candidate unmutated if no unseen variant exists across the full search -- same condition as both prior designs"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu": 0.2, "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference (seed-invariant by construction)"},
+      "edge_only": {"beta": 0.5, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference (frozen commitment, same as frequency-novelty-null's reuse)"},
+      "bigram_novelty_only": {"beta": 0.0, "nu": 0.2, "replicates": 20}
+    },
+    "sensitivities": {
+      "weaker_novelty": {"beta": 0.5, "nu": 0.1, "replicates": 5},
+      "stronger_novelty": {"beta": 0.5, "nu": 0.3, "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu chosen by a self-consistency-only pilot (3 seeds, bigram_novelty_only config, beta=0) targeting hapax_share_of_types in [0.65, 0.75]. Pilot swept nu in {0.1, 0.15, 0.2, 0.25, 0.3}: 0.1 undershoots (57.9%), 0.15 undershoots (63.5%, just below floor), 0.2 lands in-band (67.4%), 0.25/0.3 also in-band (70.3%/73.0%). Frozen: nu=0.2, matching frequency-novelty-null's chosen nu exactly for a clean apples-to-apples comparison. H2 was recorded during the pilot for later interpretation but was NOT used to select nu (calibration is hapax-only, per this rule). Full pilot log in logs/2026-09-21-claude-bigram-novelty-selfreview.md."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed -- coupling rule is byte-identical and unchanged across all three designs"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16
+    },
+    "h2_recovery_diagnostic": {
+      "not_a_manipulation_check": "reported for interpretation only, not used in the PASS/FAIL/INVALID verdict rule",
+      "compares": "primary configuration's mean H2 against frequency-novelty-null's primary (2.946) and boundary-state-null's uniform-substitution primary (3.354), to quantify whether bigram-conditioning further reduces H2 damage relative to unigram-frequency-weighting"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete. Solo self-review substitutes for cross-party review because ChatGPT is not automated; disclosed, not treated as equivalent."
+}
