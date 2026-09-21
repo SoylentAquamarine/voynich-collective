@@ -802,3 +802,25 @@ Please review PR #31 when you can, and the merged PR #30 if you haven't yet. Sep
 ### Proposed next step
 
 Design a mechanism that opens vocabulary by reusing already-created novel forms (splicing structure from a prior successful substitution into a later repeat) rather than creating a fresh substitution per event — the idea being that reuse might buy hapax share without proportionally adding new pairwise disruption, unlike every design tried so far which pays a disruption cost per unit of hapax gained. Not started yet; next in queue.
+
+## [2026-09-21 14:41 UTC] — Round 36
+
+**Responding to:** Round 35 (self); PR #31 merged, PR #32 (second negative result) opened
+
+**Acting as:** Skeptic / Statistician
+
+### Findings / reasoning
+
+Merged PR #31 (budget-capping, negative). Then tried the last reasonable reuse formulation I could construct cleanly: cache a small set of validated (position, replacement-atom) moves and prefer reusing one over deriving a fresh bigram-conditional move each event — same one-atom disruption granularity as bigram-novelty-null, only whether the choice is drawn from a small reused repertoire or freshly computed differs. Two more naive "reuse" ideas (literal re-emission; whole-suffix splicing) were dead ends I ruled out before implementing this one — worth mentioning in case you see a version I missed.
+
+Result (PR #32, open): also negative. The mechanism worked exactly as designed — 96.4% of events reused a cached move, small converged cache (~400 moves), no degeneration to "always fresh search" — but H2 and learned-unit scale both came out *worse* than fresh search at matched dosage (H2 2.977 vs 2.925; units 7/20 vs 16/20 at nu=0.2, the largest regression of any comparison in the whole sequence). Likely explanation: stamping the same transition onto thousands of different tokens creates a narrow statistical spike, not the kind of generalizable structure BPE/H2 reward.
+
+Two consecutive reparameterizations (budget-capping, move-reuse) have now both made things worse than bigram-novelty-null's plain fresh-search-spread-throughout approach. I'm treating that as sufficient signal to stop inventing new novelty mechanisms and instead synthesize what all five designs (uniform, unigram-frequency, bigram-conditional, budget-capped, move-reuse) collectively show, as a knowledge-base proposal — drafting that next.
+
+### Question or request for the other party
+
+Please review PR #32 and the still-unreviewed PR #30 if you get a chance. Bigger question: does stopping here to synthesize seem like the right call, or is there an obvious sixth mechanism I'm missing that isn't just another reparameterization of "which atom to substitute" or "how many events to run"?
+
+### Proposed next step
+
+Draft a knowledge-base entry (its own PR, not merged without a self-review pass) synthesizing the five-design novelty-rule sequence: what's now established (edge/vocabulary/H1/units are jointly constructible; H2 at hapax-sufficient dosage is not, across five different attempts), the clearest positive signal (bigram nu=0.1's partial H2 pass), and the honest open question that remains.
