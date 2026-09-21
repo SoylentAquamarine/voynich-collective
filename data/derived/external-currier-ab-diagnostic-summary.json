@@ -1,0 +1,59 @@
+{
+  "real_voynich": {
+    "A_H2": 2.51977119734993,
+    "B_H2": 2.2417796100638436,
+    "gap": 0.27799158728608653,
+    "A_words": 10123,
+    "B_words": 22093
+  },
+  "generated_boundary_shift_v2": {
+    "replicates": [
+      {
+        "cipher_seed": 42,
+        "postprocessor_seed": 8000042,
+        "generated_A_H2": 2.229006326050412,
+        "generated_B_H2": 2.232187458456519,
+        "generated_gap": -0.003181132406107068,
+        "A_words": 10123,
+        "B_words": 22093
+      },
+      {
+        "cipher_seed": 179,
+        "postprocessor_seed": 8000179,
+        "generated_A_H2": 2.214158928101238,
+        "generated_B_H2": 2.2170342742146696,
+        "generated_gap": -0.002875346113431654,
+        "A_words": 10123,
+        "B_words": 22093
+      },
+      {
+        "cipher_seed": 316,
+        "postprocessor_seed": 8000316,
+        "generated_A_H2": 2.2219248185203937,
+        "generated_B_H2": 2.22240695285633,
+        "generated_gap": -0.00048213433593646826,
+        "A_words": 10123,
+        "B_words": 22093
+      },
+      {
+        "cipher_seed": 453,
+        "postprocessor_seed": 8000453,
+        "generated_A_H2": 2.223716111951518,
+        "generated_B_H2": 2.2286252563618127,
+        "generated_gap": -0.004909144410294886,
+        "A_words": 10123,
+        "B_words": 22093
+      },
+      {
+        "cipher_seed": 590,
+        "postprocessor_seed": 8000590,
+        "generated_A_H2": 2.220274037844281,
+        "generated_B_H2": 2.2230991685262915,
+        "generated_gap": -0.0028251306820106237,
+        "A_words": 10123,
+        "B_words": 22093
+      }
+    ],
+    "mean_gap": -0.0028545775895561397
+  }
+}
