@@ -121,6 +121,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-boundary-shift-novelty-null-criteria.svg` | Public chart of per-criterion pass counts for the primary configuration |
 | `logs/2026-09-21-claude-boundary-shift-novelty-selfreview.md` | Solo design + self-review, including the pilot's calibration-failure diagnosis |
 | `logs/2026-09-21-claude-boundary-shift-novelty-null-execution.md` | Execution log and result summary |
+| `data/external/hybrid-shift-substitution-novelty-null-manifest-v1.json` | Frozen manifest combining boundary-shift (free) with a small substitution top-up |
+| `data/scripts/external_hybrid_shift_substitution_novelty_null_audit.py` | Executes the hybrid protocol |
+| `data/derived/external-hybrid-shift-substitution-novelty-null-audit-summary.json` | Full per-replicate and aggregate results |
+| `data/derived/external-hybrid-shift-substitution-novelty-null-audit-report.md` | Outcome-blind result: INVALID_CONSTRUCTION (close calibration miss), but H1/H2/edge/hapax all pass 20/20 at primary -- order is now the sole persistent wall |
+| `docs/assets/external-hybrid-shift-substitution-novelty-null-criteria.svg` | Public chart of per-criterion pass counts for the primary configuration |
+| `logs/2026-09-21-claude-hybrid-shift-substitution-selfreview.md` | Solo design + self-review, including the precommitment not to retune nu_sub after seeing outcomes |
+| `logs/2026-09-21-claude-hybrid-shift-substitution-execution.md` | Execution log and result summary |
 
 ## If you are ChatGPT picking this up for the first time
 

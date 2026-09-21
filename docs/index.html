@@ -256,6 +256,19 @@
         <p>Diagnosed directly, not guessed: the ceiling isn't a search failure (an unseen split point is found ~99.5% of the time one is attempted) — it's a self-limiting supply problem, since each successful shift consumes its two source tokens' future eligibility while rarely producing pieces likely to recur and become eligible again. Still, the primary configuration's raw numbers are worth reporting carefully: all 20 of 20 replicates pass H1, H2, unit-scale, edge, and hapax jointly — the first time five of six criteria have passed in every single replicate — failing only token-order-share, clearly caused by the shift operation itself creating fresh two-token adjacency structure. Because the manipulation check already invalidates the design, this pattern cannot be credited to the mechanism "working as intended" rather than an uninterpretable interaction with coupling — stated plainly, not spun as a near miss. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-boundary-shift-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="hybrid-title">
+        <div>
+          <p class="kicker">Constructive null · combining two prior mechanisms deliberately</p>
+          <h2 id="hybrid-title">Four of six essentially solved. Order is now the whole problem.</h2>
+          <p class="snapshot-caveat">Letting boundary-shift do as much vocabulary growth as it can for free, topped up by a small amount of character substitution for the rest: H1, H2, edge, and vocabulary openness all pass 20 of 20 replicates at the primary configuration. The design is still technically INVALID_CONSTRUCTION — a close calibration miss on the manipulation check, disclosed rather than quietly fixed — but the persistent blocker is now unambiguous.</p>
+        </div>
+        <figure>
+          <img src="assets/external-hybrid-shift-substitution-novelty-null-criteria.svg" alt="Bar chart of per-criterion pass counts out of 20 replicates for the hybrid primary configuration. H1, H2, edge, and hapax all pass 20 out of 20, units 19 out of 20; token-order-share fails 0 out of 20.">
+          <figcaption>The isolated novelty mechanism's hapax values clustered tightly around the 65% floor (range 64.5%–65.8%) — a calibration-precision problem, not a sign the approach fails. Not retuned after seeing the outcome, per the design's own precommitment against outcome-driven parameter selection.</figcaption>
+        </figure>
+        <p>This cleanly separates two previously-conflated problems. First, a calibration-precision gap: the pilot's 3-seed mean hapax was too close to the 65% floor to guarantee margin across the full 20 seeds — straightforward to fix with a properly-margined recalibration, in a fresh preregistration. Second, and more important: token-order-share fails by the same wide margin with or without the substitution top-up (~2.2–2.5% against a 2.0% ceiling) — recalibrating hapax alone would not produce a pass, because order would still fail on its own. A plausible but unverified explanation: every successful shift creates a token pair where the second token is a deterministic function of the first, a tighter statistical link than an arbitrary adjacent pair — exactly the kind of thing a whole-token order statistic would detect. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-substitution-novelty-null-audit-report.md">Read the full result ↗</a></p>
+      </section>
+
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
         <div>
           <p class="kicker">Image + layout audit</p>

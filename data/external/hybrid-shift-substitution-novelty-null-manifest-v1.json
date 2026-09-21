@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-21T18:30:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "boundary-shift-novelty-null (PR #34): boundary-shift alone is provably H1/H2-invariant but structurally capped near 63.8% hapax even at maximum dosage (nu=1.0) -- confirmed a hard supply ceiling, and confirmed multi-pass re-scanning does not raise it (shifted pieces are unseen by construction so essentially never recur to create new eligibility)",
+      "bigram-novelty-null (PR #30): bigram-conditional character substitution easily clears the hapax floor (70%+ at nu=0.2) but costs H2; at LOW dosage (nu=0.1, a non-primary sensitivity) it costs much less H2 and passed in a majority of seeds",
+      "hypothesis under test, not yet verified: applying boundary-shift first (to absorb as much hapax gain as its free capacity allows) and using character substitution only as a small top-up for the remaining gap might combine most of shift's zero-entropy-cost vocabulary growth with only a sliver of substitution's H2 cost"
+    ],
+    "not_done_before_registration": [
+      "No hybrid stream generated or scored",
+      "No parameter selected from any transformed outcome",
+      "nu_sub calibration (self-consistency-only, hapax-only) not yet run -- nu_shift is fixed at 1.0 (boundary-shift's own maximum capacity, already established, not re-tested as a free variable)"
+    ]
+  },
+  "claim": "Applying boundary-shift at its maximum capacity (nu_shift=1.0) first, then a small amount of bigram-conditional character substitution (nu_sub, calibrated to the smallest value that closes the remaining hapax gap) as a top-up on tokens still repeated afterward, passes all six frozen criteria in at least 16 of 20 primary replicates.",
+  "honesty_precommitment": "If this hybrid does not clear the manipulation checks, or does not improve on both prior designs simultaneously, that will be reported plainly. This is not a guaranteed win: it is possible the small substitution top-up still costs enough H2 to fail, or that combining the two operations reintroduces the order-share problem in a way neither did alone, or interacts with boundary-shift's own manipulation-check failure in a way that still invalidates the design.",
+  "base_mechanism": "Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + identical boundary-coupling rule (beta=0.50 fixed, unchanged from every prior design).",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [7000042, 7000179, 7000316, 7000453, 7000590, 7000727, 7000864, 7001001, 7001138, 7001275, 7001412, 7001549, 7001686, 7001823, 7001960, 7002097, 7002234, 7002371, 7002508, 7002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "boundary_shift_at_max_capacity", "bigram_substitution_topup"],
+    "boundary_coupling": {"probability_parameter": "beta", "fixed_value_this_design": 0.5, "note": "unchanged from every prior design"},
+    "boundary_shift_at_max_capacity": {
+      "probability_parameter": "nu_shift",
+      "fixed_value_this_design": 1.0,
+      "note": "identical mechanics to boundary-shift-novelty-null, run at its own established maximum (nu_shift is not re-tested as a free variable here -- its ceiling is already established)"
+    },
+    "bigram_substitution_topup": {
+      "eligibility": "token is still a repeat of something already emitted AFTER the boundary-shift pass has run (i.e., a repeat that boundary-shift did not or could not resolve into novel pieces -- most commonly because it was consumed as the RIGHT member of a shift pair rather than being eligible as a LEFT member, or because no shift fired for it)",
+      "probability_parameter": "nu_sub",
+      "mechanism": "identical single-atom bigram-conditional exhaustive substitution search used in bigram-novelty-null (same statistic, same sparse-context fallback, same cold-start rule, same protected position 0)",
+      "note": "this pass operates on the boundary-shift pass's OUTPUT stream, scanning left to right exactly as bigram-novelty-null does, with its own independent running bigram/unigram frequency tables built fresh over this pass (not shared with any statistics internal to the shift pass, which tracks no character frequency at all)"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.02, "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference"},
+      "edge_only": {"beta": 0.5, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference"},
+      "hybrid_novelty_only": {"beta": 0.0, "nu_shift": 1.0, "nu_sub": 0.02, "replicates": 20}
+    },
+    "sensitivities": {
+      "shift_only_no_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.0, "replicates": 5, "note": "isolates how much of the primary's hapax comes from shift alone at this beta, for interpretation"},
+      "stronger_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.04, "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu_sub chosen by a self-consistency-only pilot (3 seeds, hybrid_novelty_only config, beta=0, nu_shift=1.0 fixed) targeting hapax_share_of_types in [0.65, 0.75], selecting the SMALLEST nu_sub that lands in-band. Swept {0.01,0.02,0.03,0.05,0.08,0.1}: 0.01 undershoots (0.6467), 0.02 is the smallest in-band value (0.6543). Frozen: nu_sub=0.02, chosen on hapax alone -- H1/H2/order were recorded during the pilot (H2 mean 2.735, order mean 0.0220 at nu_sub=0.02) but explicitly NOT used to select nu_sub, even though a slightly higher nu_sub looked more favorable on order in the pilot data. Picking nu_sub post-hoc to make order look better would be exactly the kind of outcome-driven parameter selection this project's discipline forbids. Full pilot log in logs/2026-09-21-claude-hybrid-shift-substitution-selfreview.md."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16,
+      "note": "checked against hybrid_novelty_only (shift+topup together, no coupling) vs baseline -- this is the FULL novelty mechanism for this design, not decomposed further into shift-alone and topup-alone components, since the hybrid is being tested as one combined operation, not as two independently-valid ones (shift alone is already known to fail its own isolated check, per PR #34 -- this design does not re-litigate that, it builds on top of it deliberately)"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete."
+}
