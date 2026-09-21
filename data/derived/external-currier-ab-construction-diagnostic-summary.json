@@ -1,0 +1,48 @@
+{
+  "real_voynich_gap": 0.27799158728608653,
+  "frozen_dosages": {
+    "nu_A": 0.3,
+    "nu_B": 0.1,
+    "nu_default": 0.2,
+    "provenance": "reused unchanged from bigram-novelty-null's own prior sensitivity configs, not chosen to match this target"
+  },
+  "replicates": [
+    {
+      "cipher_seed": 42,
+      "postprocessor_seed": 9000042,
+      "A_H2": 2.3951448268572966,
+      "B_H2": 2.285053951084327,
+      "gap": 0.11009087577296972
+    },
+    {
+      "cipher_seed": 179,
+      "postprocessor_seed": 9000179,
+      "A_H2": 2.3875981726334707,
+      "B_H2": 2.2729789862849117,
+      "gap": 0.11461918634855905
+    },
+    {
+      "cipher_seed": 316,
+      "postprocessor_seed": 9000316,
+      "A_H2": 2.388728966859957,
+      "B_H2": 2.2809554172283386,
+      "gap": 0.10777354963161834
+    },
+    {
+      "cipher_seed": 453,
+      "postprocessor_seed": 9000453,
+      "A_H2": 2.382853585938604,
+      "B_H2": 2.287573027616863,
+      "gap": 0.0952805583217411
+    },
+    {
+      "cipher_seed": 590,
+      "postprocessor_seed": 9000590,
+      "A_H2": 2.378882044897092,
+      "B_H2": 2.2746277626255345,
+      "gap": 0.10425428227155775
+    }
+  ],
+  "mean_gap": 0.10640369046928919,
+  "mean_gap_as_fraction_of_real": 0.3827586708938321
+}
