@@ -1,0 +1,34 @@
+# 2026-09-21 — Solo self-review: boundary-shift novelty null design
+
+Design: `data/external/boundary-shift-novelty-null-manifest-v1.json`. A structurally different mechanism from the five-design substitution sequence just synthesized into the knowledge base — this one never substitutes a character; it only moves where the boundary falls between an adjacent pair of tokens.
+
+## Why this design, and why it took longer to arrive at than the substitution variants
+
+Two earlier formulations were considered and rejected before this one:
+
+1. **Split-only with a "debt" counter**, pairing every split (1 token → 2) with a later merge (2 tokens → 1) elsewhere in the stream to keep total token count matched to the fixed line-length template. Rejected: cross-stream bookkeeping (carrying unpaid "debt" across the whole ~80,000-token stream, deciding what happens to unpaid debt at the end) is bug-prone and hard to reason about cleanly compared to every design tried so far, all of which were strictly local, single-token transformations.
+2. The version actually specified: **boundary-shift on adjacent pairs** — combine two adjacent tokens' characters and choose a different internal split point. This conserves token count exactly *by construction*, with no cross-stream state needed: every shift attempt (successful or not) consumes exactly 2 input tokens and produces exactly 2 output tokens. Far simpler to verify correct.
+
+## Issues checked
+
+**1. Circularity.** No Voynich-derived input anywhere; the search for an unseen split point only checks against this replicate's own running `emitted` set.
+
+**2. Interaction with boundary coupling.** Coupling runs first, as its own complete pass over the *original* token stream (unaware boundary-shift will run afterward), exactly as in all five prior designs — its own `prev_last` bookkeeping never sees post-shift tokens. Boundary-shift then runs as an independent second pass. One thing worth checking precisely: does boundary-shift ever disturb the character coupling placed at position 0 of a token? No — by construction, the *left* piece of any shift always starts with the same character as the original left member of the pair (any split point ≥1 leaves position 0 unchanged), so a coupling-assigned first character is preserved through a shift. The *right* piece's first character can change to something other than the original right token's first character — this is expected and not a bug: it's the only way the operation creates two new types instead of reusing the two originals.
+
+**3. Scan mechanics, precisely specified to avoid ambiguity.** Left-to-right, single pass, advancing by 2 tokens on any attempted shift (successful or fallback) and by 1 otherwise, so no token is ever considered twice and none is silently skipped. Edge case: if the eligible token is the last one in the stream (no partner to pair with), it's simply emitted unmodified — affects at most one token per ~80,000-token replicate, negligible but worth stating for full determinism.
+
+**4. H1 invariance is provable, not just expected — and gives a strong, cheap correctness check.** Because this design never adds, removes, or substitutes any character (only repartitions the *same* multiset of characters across a moved internal boundary), the total character multiset across the whole output stream is **exactly identical** to the input's for `boundary_shift_only` vs. `baseline`. H1 should therefore come out *bit-identical*, not just statistically close — the pilot will check this explicitly before looking at anything else. If it isn't exactly equal, that's an immediate signal of an implementation bug, not a result to interpret.
+
+**5. Honest expectation.** The mechanistic argument for why this might help H2 is real (no new characters, only regrouped existing ones, so *some* bigrams shift from within-word to boundary-crossing and vice versa rather than being replaced by an unrelated character) — but it is not a guarantee, and the manifest's honesty precommitment covers the case where it doesn't help, exactly as the two prior negative results were disclosed plainly rather than reframed.
+
+## Verdict
+
+Accept the design as drafted. Proceeding to implement and pilot-calibrate `nu`.
+
+## Pilot results: H1/H2 exact invariance confirmed, but calibration fails
+
+The H1-invariance check (item 4 above) came back exactly as predicted: `nu=0` and `nu=0.5` give bit-identical H1 across all 3 pilot seeds (`exact_match=[True, True, True]`). **H2 also came back exactly invariant** (2.7110 to four decimal places across every nu from 0.1 to 1.0) — not something the design's rationale guaranteed, but empirically true and mechanistically explicable: this project's entropy pipeline evidently measures H1/H2 over the full character sequence regardless of where token boundaries fall, so an operation that only moves boundaries without touching character content or order leaves both untouched exactly. Both sit inside their required bands already at baseline (H1 in [3.826,4.126], H2 in [2.540,2.840]) — a first across every design in this project's mechanism-test history: entropy simply cannot fail for this design, at any nu.
+
+But hapax growth hit a hard ceiling well short of the required floor. Sweeping nu from 0.1 to 1.0 (the maximum possible value): hapax rises slowly and **plateaus near 0.64 at nu=1.0**, never entering the required [0.65,0.75] band. Diagnosed directly (not guessed): at nu=1.0 only ~2,675 real shift events occur out of an ~80,000-token stream, far fewer than the theoretical eligible-pair count. The reason is structural, not a search-thoroughness bug (a separate check found the "both pieces unseen" search succeeds ~99.5% of the time it's attempted — search failure is not the bottleneck): each successful shift consumes its two source tokens' future eligibility (they're gone, replaced by two new pieces) while rarely producing pieces that will themselves recur later and become eligible for a further shift — so the supply of eligible pairs shrinks as the mechanism runs, independent of how high nu is pushed. This is disclosed as a genuine calibration failure, not patched by relaxing the "both unseen" requirement to "at least one unseen" (a check confirmed this wouldn't help, since search success was never the constraint) or by any other pilot-phase parameter tweak.
+
+**Decision, made before any primary-configuration six-criterion outcome was computed**: freeze nu=1.0 (the ceiling, the best the design can do) as primary anyway, so the frozen verdict rule can still be computed programmatically and the result reported honestly as "cannot reach its own target dosage" rather than silently substituting a different design. This is analogous to the frequency-novelty-null pilot's discipline of not chasing an outcome-driven parameter choice, applied to the opposite situation: here there is no parameter that reaches the target at all, and that fact itself is the finding.

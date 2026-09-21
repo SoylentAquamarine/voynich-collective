@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Boundary-shift: five of six criteria pass in every replicate, order is the sole failure</title>
+  <desc id="desc">Per-criterion pass counts out of 20 replicates for the boundary-shift-novelty-null primary configuration. H1, H2, units, edge, and hapax all pass 20/20; token-order-share fails 0/20.</desc>
+  <style>
+    .title { font: 700 17px Georgia, serif; fill: #2d2922; }
+    .subtitle, .tick { font: 11px Arial, sans-serif; fill: #665f53; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="90" y="26" class="title">Five criteria pass cleanly; order is the new limiting factor</text>
+  <text x="90" y="46" class="subtitle">Replicates passing each criterion (of 20), primary configuration -- but the design is INVALID_CONSTRUCTION (see report)</text>
+  <line x1="90" y1="330" x2="850" y2="330" stroke="#6e675c" stroke-width="1"/>
+  <rect x="121.4" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="166.4" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="166.4" y="350.0" text-anchor="middle" class="tick">H1</text><rect x="242.9" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="287.9" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="287.9" y="350.0" text-anchor="middle" class="tick">H2</text><rect x="364.3" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="409.3" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="409.3" y="350.0" text-anchor="middle" class="tick">units</text><rect x="485.7" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="530.7" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="530.7" y="350.0" text-anchor="middle" class="tick">edge</text><rect x="607.1" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="652.1" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="652.1" y="350.0" text-anchor="middle" class="tick">hapax</text><rect x="728.6" y="330.0" width="90" height="0.0" fill="#9b5948"/><text x="773.6" y="322.0" text-anchor="middle" class="tick">0/20</text><text x="773.6" y="350.0" text-anchor="middle" class="tick">order</text>
+</svg>

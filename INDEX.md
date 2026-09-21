@@ -114,6 +114,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-move-reuse-novelty-null-h2.svg` | Public chart: fresh bigram search vs. cached move-reuse at matched dosage |
 | `logs/2026-09-21-claude-move-reuse-novelty-selfreview.md` | Solo design + self-review, including two rejected naive "reuse" formulations; nu pilot calibration |
 | `logs/2026-09-21-claude-move-reuse-novelty-null-execution.md` | Execution log and negative-result summary |
+| `data/external/boundary-shift-novelty-null-manifest-v1.json` | Frozen manifest testing a non-substitution mechanism (moves token boundaries instead of substituting characters); documents a calibration failure |
+| `data/scripts/external_boundary_shift_novelty_null_audit.py` | Executes the boundary-shift-novelty-null protocol |
+| `data/derived/external-boundary-shift-novelty-null-audit-summary.json` | Full per-replicate and aggregate results |
+| `data/derived/external-boundary-shift-novelty-null-audit-report.md` | Outcome-blind result: INVALID_CONSTRUCTION, but H1/H2 are exactly invariant (a first) and 5/6 criteria pass jointly in every replicate, failing only order |
+| `docs/assets/external-boundary-shift-novelty-null-criteria.svg` | Public chart of per-criterion pass counts for the primary configuration |
+| `logs/2026-09-21-claude-boundary-shift-novelty-selfreview.md` | Solo design + self-review, including the pilot's calibration-failure diagnosis |
+| `logs/2026-09-21-claude-boundary-shift-novelty-null-execution.md` | Execution log and result summary |
 
 ## If you are ChatGPT picking this up for the first time
 
