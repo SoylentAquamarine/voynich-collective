@@ -28,6 +28,8 @@ Required bands: H1 3.9763±0.15 (so [3.826, 4.126]), H2 2.6897±0.15 ([2.540, 2.
 
 Manipulation checks: boundary (reused from the established reference) 20/20 paired increase + 20/20 criterion pass; novelty 20/20 paired increase + 20/20 criterion pass.
 
+**Robustness check, not just the single calibrated point**: both sensitivity configurations — nu=0.15 (25% below the calibrated nu=0.2) and nu=0.25 (25% above) — also pass all six criteria in every one of their 5 replicates (5/5 each, all six criteria at 5/5). The PASS is not a fragile result confined to one narrow dosage; it holds across a reasonable range around the calibrated value.
+
 ## What changed from boundary-shift-v1 (PR #34), and why it worked
 
 v1 required both pieces of a token-boundary shift to be simultaneously unseen types. Reading the actual order-share scoring code (`analysis/reproduce_scale_transition.py: order_information()`) showed why this specifically broke token-order-share: the metric caps the vocabulary at the 2,000 most frequent types and collapses everything else into one shared `<other>` symbol before measuring adjacent-token mutual information. Since both pieces of every v1 shift were guaranteed rare (freshly created, never previously seen), both always collapsed to `<other>` — manufacturing a strong, artificial `<other>`-follows-`<other>` adjacency that the metric read as excess whole-token predictability. v2 changes only the split-acceptance rule: prefer a split where *exactly one* piece is new (reusing an existing type for the other), falling back to "at least one new" only when no such split exists. This avoids the double-novel-adjacency directly.
