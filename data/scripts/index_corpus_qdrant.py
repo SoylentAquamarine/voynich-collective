@@ -67,9 +67,11 @@ def stable_id(path, idx):
 
 
 def ensure_collection(qdrant_url, dim):
+    # Delete and recreate on every run: some source files (knowledge-base/state.md)
+    # are edited in place, not just appended to, so an incremental upsert would leave
+    # stale chunks behind under their old stable_id when a file shrinks or reflows.
     try:
-        http_json(f"{qdrant_url}/collections/{COLLECTION}")
-        return
+        http_json(f"{qdrant_url}/collections/{COLLECTION}", method="DELETE")
     except Exception:
         pass
     http_json(
