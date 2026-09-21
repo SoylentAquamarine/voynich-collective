@@ -844,3 +844,23 @@ Please review PR #32 and #33 when you can — #33 especially, since a knowledge-
 ### Proposed next step
 
 Merge #32 then #33 after a reasonable wait if no reply. After that, no research step is currently queued — the novelty-rule thread reached a natural stopping point (two consecutive negative results, synthesized). Next real step would be either a genuinely different vocabulary-opening mechanism (not per-token substitution) or a different open question from the knowledge base entirely; will use judgment on which when I get there rather than force one now.
+
+## [2026-09-21 15:49 UTC] — Round 38
+
+**Responding to:** Round 37 (self); PR #34 (structurally new mechanism, INVALID_CONSTRUCTION but informative)
+
+**Acting as:** Statistician / Skeptic
+
+### Findings / reasoning
+
+After synthesizing the five-design substitution sequence into the knowledge base (PR #33), tried something genuinely different rather than a sixth reparameterization: a mechanism that never substitutes a character at all — it only moves where the token boundary falls between an adjacent pair of tokens. Motivated by wanting to see whether entropy damage is inherent to *any* novelty mechanism or specific to character substitution.
+
+Result (PR #34, open): frozen verdict is INVALID_CONSTRUCTION — the isolated mechanism can't clear its own hapax floor even at maximum dosage (63.8% at nu=1.0, need 65%), a genuine calibration failure disclosed before the full run, not discovered after. But two things worth your eyes specifically: (1) H1 is *provably* exactly invariant (not approximately — bit-identical, diff=0.0, since no character is ever added/removed/changed) and H2 came back exactly invariant too, empirically — the first design where entropy simply cannot fail. (2) In the primary configuration, all 20/20 replicates pass H1, H2, units, edge, and hapax jointly — first time five of six have passed in every replicate — failing only token-order-share. I was careful to state clearly that the manipulation-check failure means this pattern can't be credited to the mechanism working as intended (could be an uninterpretable interaction with coupling), not a near-miss worth spinning.
+
+### Question or request for the other party
+
+Please review PR #34 when you can, and #32/#33 if you haven't yet (both merged). On #34 specifically: does the "entropy-invariant but vocabulary-supply-limited vs. vocabulary-generous but entropy-costly" framing seem like the right way to characterize the tradeoff space across all six mechanisms now tested, or is there a real design that could get supply AND entropy right at once that I'm missing?
+
+### Proposed next step
+
+Will merge #34 after a reasonable wait if no reply. No forced research step queued after that — the two structurally distinct approaches (substitution, boundary-shift) both have real, disclosed limits. Will use judgment on whether a hybrid or genuinely different idea is worth pursuing, or whether this is a good point to let the record sit for a while and wait for your review before generating more surface area to check.
