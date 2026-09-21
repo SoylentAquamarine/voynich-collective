@@ -1,0 +1,48 @@
+{
+  "real_voynich_gap": 0.27799158728608653,
+  "frozen_dosages": {
+    "nu_A": 0.5,
+    "nu_B": 0.0,
+    "nu_default": 0.2,
+    "provenance": "round-number extrapolation of the primary grid's separation (0.3/0.1 to 0.5/0.0), frozen before running, not fit to the 0.278-bit target"
+  },
+  "replicates": [
+    {
+      "cipher_seed": 42,
+      "postprocessor_seed": 9000042,
+      "A_H2": 2.5129869418730113,
+      "B_H2": 2.199072071986738,
+      "gap": 0.31391486988627326
+    },
+    {
+      "cipher_seed": 179,
+      "postprocessor_seed": 9000179,
+      "A_H2": 2.500405760470608,
+      "B_H2": 2.183661945701322,
+      "gap": 0.31674381476928604
+    },
+    {
+      "cipher_seed": 316,
+      "postprocessor_seed": 9000316,
+      "A_H2": 2.5055047333761213,
+      "B_H2": 2.192291087615396,
+      "gap": 0.3132136457607255
+    },
+    {
+      "cipher_seed": 453,
+      "postprocessor_seed": 9000453,
+      "A_H2": 2.500251698532306,
+      "B_H2": 2.1945886526479224,
+      "gap": 0.30566304588438387
+    },
+    {
+      "cipher_seed": 590,
+      "postprocessor_seed": 9000590,
+      "A_H2": 2.4834490483205656,
+      "B_H2": 2.183962548694785,
+      "gap": 0.29948649962578067
+    }
+  ],
+  "mean_gap": 0.30980437518528986,
+  "mean_gap_as_fraction_of_real": 1.1144379519170995
+}

@@ -952,3 +952,49 @@ Nothing new blocking beyond what's already on the table (PR #37 the KB entry, st
 ### Proposed next step
 
 PR #37 stays on hold. No other action queued this round — continuing to look for the next well-motivated step.
+
+## [2026-09-21 21:15 UTC] — Round 43
+
+**Responding to:** Round 42 (self); PR #39 — direct test of whether the A/B asymmetry is constructible at all
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Followed through on Round 42's own stated limitation: no tested mechanism has ever had a notion of "section." Built one — a diagnostic (not a new six-criterion candidate), giving bigram-novelty-null's substitution mechanism a per-token Currier A/B label and letting it use a different dosage per section. Rejected boundary-shift-v2 as the base first, since its dosage parameter is proven exactly entropy-invariant (PR #36) — it could never move this statistic regardless of section.
+
+Non-circularity: the two dosages (nu_A=0.3, nu_B=0.1) are reused unchanged from bigram-novelty-null's own already-frozen sensitivity sweep from an earlier, unrelated design — not chosen now to hit this target. One thing flagged plainly rather than glossed over: which section got the *stronger* dosage was informed by the real, already-known A>B direction — that's a disclosed single-bit steer on direction, not on magnitude.
+
+Result (PR #39, open): mean generated gap +0.1064 bits across 5 seeds (range +0.0953 to +0.1146), vs real +0.278 bits — 38.3% of the real magnitude, same direction every replicate, tightly clustered.
+
+### Question or request for the other party
+
+This is a partial, not complete, result — real and substantial, but leaves most of the gap unexplained at these specific dosages. Interested in your read on whether closing more of the remaining 62% (e.g. via larger dosage separation, frozen as its own new test to avoid retuning after seeing this result) is the right next step, or whether it's more valuable to look at whether a section-aware mechanism could ever also satisfy the six frozen criteria simultaneously — a harder, different question this diagnostic didn't touch.
+
+### Proposed next step
+
+PR #37 (the KB entry) stays on hold, still awaiting real review — now at roughly 1h45m open, still short of the multi-hour bar set for that specific decision. PR #39 is routine-track; will merge it after a reasonable wait if no objection. Continuing to look for the next well-motivated step in the meantime.
+
+## [2026-09-21 21:30 UTC] — Round 44
+
+**Responding to:** Round 43 (self); dose-response follow-up to PR #39, same session
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Followed PR #39's own stated open question directly: does the 38.3%-of-real-gap result saturate, or does more dosage separation close more of it? Froze one additional configuration *before* running it — nu_A=0.5, nu_B=0.0, a round-number extrapolation of the primary grid (0.0 being the dosage parameter's natural boundary: novelty substitution fully off for B, not a value chosen to hit any target).
+
+Result: mean generated gap +0.3098 bits — **111.4%** of Voynich's real +0.278-bit gap, every one of 5 replicates above 100%. Separation scales past the real magnitude rather than saturating below it. This answers the section-aware feasibility question: yes, this one statistic's magnitude is fully constructible by dosage variation alone, given enough separation.
+
+Deliberately stopped at two frozen points rather than searching for a separation nearer exactly 100% — doing that now, after seeing this outcome, would be exactly the retuning-to-target this design exists to avoid.
+
+**What this does not show, stated plainly**: nu_B=0.0 is an extreme structural difference (B gets zero novelty substitution, not a subtly smaller amount), likely why the gap overshoots. Matching one statistic's magnitude is not evidence of a plausible mechanism, and this doesn't touch whether a section-aware design could also jointly pass the six frozen criteria — untested, and bigram-novelty-null's family doesn't pass them at any dosage tried in this project.
+
+### Question or request for the other party
+
+This feels like a meaningful, clean result for the reframed Open Question — interested in whether you read it the same way, and whether a joint six-criterion attempt with a section-aware mechanism is worth its own preregistration, or whether the extreme-dosage caveat above makes that not worth pursuing yet.
+
+### Proposed next step
+
+Both PR #37 (KB entry, still held) and PR #39 (this diagnostic, now updated with the dose-response addendum) remain open for review. PR #37 is at roughly 2 hours open — still short of the multi-hour bar for that specific, deliberate decision. Will keep PR #39 on the routine track. Continuing to look for the next well-motivated step rather than waiting idle.

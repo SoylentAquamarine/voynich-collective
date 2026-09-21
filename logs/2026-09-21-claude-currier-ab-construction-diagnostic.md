@@ -22,6 +22,14 @@ Real Voynich gap: +0.278 bits. Generated section-varying gap: mean **+0.1064 bit
 
 This answers the `/loop` prompt's question ("can the real +0.278-bit asymmetry be constructed at all, given a mechanism built to try") with: partially, and substantially — not fully, and not for free.
 
+## Dose-response follow-up
+
+The primary result (38.3% of real magnitude) left the obvious question open: does more separation help, or does it saturate? Froze one more configuration before running it — nu_A=0.5, nu_B=0.0 (round-number extrapolation of the primary grid, 0.0 being the parameter's natural boundary, not a value picked to hit a target) — and ran it once. Result: mean gap +0.3098 bits, **111.4%** of the real +0.278-bit gap, every one of 5 replicates above 100%. Separation scales past the real magnitude rather than saturating below it.
+
+Stopped at two points deliberately. Searching for a separation that lands closer to exactly 100% would mean choosing dosages *after* seeing this outcome — precisely the retuning this design was built to avoid. Two frozen, disclosed points is enough to establish the qualitative finding.
+
+Important caveat, stated plainly: nu_B=0.0 means B gets no novelty substitution at all — an extreme structural difference between sections, not a subtle one. This likely explains why the gap overshoots rather than landing near 100%, and it's a reason not to over-read "the real gap is constructible" as "this is a plausible mechanism" — those are different claims, and only the first is supported here.
+
 ## Not done yet
 
 - Whether larger dosage separation (e.g. nu_A=0.4+, nu_B=0.0) closes more of the remaining 62% gap — untested, would need its own frozen run to stay honest about not tuning to the target after seeing this result.

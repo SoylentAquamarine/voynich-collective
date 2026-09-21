@@ -147,12 +147,25 @@ def apply_section_varying_substitution(coupled_tokens, token_labels, nu_by_label
 
 
 def main() -> None:
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("units_repo", type=Path)
+    parser.add_argument("--nu-a", type=float, default=NU_A)
+    parser.add_argument("--nu-b", type=float, default=NU_B)
+    parser.add_argument("--nu-default", type=float, default=NU_DEFAULT)
+    parser.add_argument("--out-suffix", default="")
+    parser.add_argument("--provenance", default="reused unchanged from bigram-novelty-null's own prior sensitivity configs, not chosen to match this target")
+    args = parser.parse_args()
+    nu_a, nu_b, nu_default = args.nu_a, args.nu_b, args.nu_default
+    out_json = ROOT / "data" / "derived" / f"external-currier-ab-construction-diagnostic{args.out_suffix}-summary.json"
+
     started = time.time()
 
     def log(m):
         print(f"[{time.time()-started:7.1f}s] {m}", flush=True)
 
-    units_repo = Path(sys.argv[1]).resolve()
+    units_repo = args.units_repo.resolve()
     sys.path.insert(0, str(units_repo / "analysis"))
     naibbe_module = importlib.import_module("reproduce_naibbe_control")
     from reproduce_space_sensitivity import parse_lines
@@ -180,9 +193,9 @@ def main() -> None:
     words = naibbe_module.caesar_words(_attack_lib)
     letters = "".join(words)
 
-    nu_by_label = {"A": NU_A, "B": NU_B, "?": NU_DEFAULT}
-    log(f"frozen dosages (reused unchanged from bigram-novelty-null's own prior sensitivities): "
-        f"nu_A={NU_A} nu_B={NU_B} nu_default={NU_DEFAULT}")
+    nu_by_label = {"A": nu_a, "B": nu_b, "?": nu_default}
+    log(f"frozen dosages ({args.provenance}): "
+        f"nu_A={nu_a} nu_B={nu_b} nu_default={nu_default}")
 
     cipher_seeds = [42, 179, 316, 453, 590]
     post_seeds = [9000042, 9000179, 9000316, 9000453, 9000590]
@@ -210,14 +223,14 @@ def main() -> None:
     mean_gap = sum(r["gap"] for r in results) / len(results)
     summary = {
         "real_voynich_gap": real_gap,
-        "frozen_dosages": {"nu_A": NU_A, "nu_B": NU_B, "nu_default": NU_DEFAULT,
-                            "provenance": "reused unchanged from bigram-novelty-null's own prior sensitivity configs, not chosen to match this target"},
+        "frozen_dosages": {"nu_A": nu_a, "nu_B": nu_b, "nu_default": nu_default,
+                            "provenance": args.provenance},
         "replicates": results,
         "mean_gap": mean_gap,
         "mean_gap_as_fraction_of_real": mean_gap / real_gap,
     }
-    OUT_JSON.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
-    log(f"wrote {OUT_JSON}")
+    out_json.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    log(f"wrote {out_json}")
     log(f"mean generated gap: {mean_gap:.4f} bits ({100*mean_gap/real_gap:.1f}% of real {real_gap:.4f})")
 
 

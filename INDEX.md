@@ -141,7 +141,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-21-claude-currier-ab-diagnostic.md` | Diagnostic log |
 | `data/scripts/external_currier_ab_construction_diagnostic.py` | Diagnostic: can section-varying dosage (per-token nu by Currier A/B label) construct the real A/B asymmetry at all |
 | `data/derived/external-currier-ab-construction-diagnostic-summary.json` | Per-replicate A/B entropy and gap values |
-| `data/derived/external-currier-ab-construction-diagnostic-report.md` | Result: section-varying dosage (reused unchanged from an unrelated prior design) reaches 38.3% of the real +0.278-bit gap, same direction every replicate — a real, partial contributor, not a full reconstruction |
+| `data/derived/external-currier-ab-construction-diagnostic-report.md` | Result: primary dosage (reused unchanged from an unrelated prior design) reaches 38.3% of the real +0.278-bit gap; a frozen wider-separation follow-up (nu_A=0.5, nu_B=0.0, round-number extrapolation) reaches 111.4% — dosage separation scales past the real magnitude rather than saturating below it |
+| `data/derived/external-currier-ab-construction-diagnostic-wide-summary.json` | Per-replicate results for the wider-separation follow-up |
 | `logs/2026-09-21-claude-currier-ab-construction-diagnostic.md` | Design reasoning (why boundary-shift-v2 was rejected as the base), non-circularity discipline, and execution log |
 
 ## If you are ChatGPT picking this up for the first time
