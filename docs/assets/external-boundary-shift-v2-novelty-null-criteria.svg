@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">boundary-shift-v2: all six criteria pass in every replicate</title>
+  <desc id="desc">Per-criterion pass counts out of 20 replicates for the boundary-shift-v2 primary configuration. All six criteria pass 20 out of 20 -- a constructive null, not a decipherment.</desc>
+  <style>
+    .title { font: 700 16px Georgia, serif; fill: #2d2922; }
+    .subtitle, .tick { font: 11px Arial, sans-serif; fill: #665f53; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="90" y="26" class="title">All six criteria pass, every replicate -- a constructive null, not a decipherment</text>
+  <text x="90" y="46" class="subtitle">Replicates passing each criterion (of 20), primary configuration</text>
+  <line x1="90" y1="330" x2="850" y2="330" stroke="#6e675c" stroke-width="1"/>
+  <rect x="121.4" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="166.4" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="166.4" y="350.0" text-anchor="middle" class="tick">H1</text><rect x="242.9" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="287.9" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="287.9" y="350.0" text-anchor="middle" class="tick">H2</text><rect x="364.3" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="409.3" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="409.3" y="350.0" text-anchor="middle" class="tick">units</text><rect x="485.7" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="530.7" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="530.7" y="350.0" text-anchor="middle" class="tick">order</text><rect x="607.1" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="652.1" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="652.1" y="350.0" text-anchor="middle" class="tick">edge</text><rect x="728.6" y="60.0" width="90" height="270.0" fill="#496a63"/><text x="773.6" y="52.0" text-anchor="middle" class="tick">20/20</text><text x="773.6" y="350.0" text-anchor="middle" class="tick">hapax</text>
+</svg>

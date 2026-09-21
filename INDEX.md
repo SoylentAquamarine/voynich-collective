@@ -128,6 +128,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-hybrid-shift-substitution-novelty-null-criteria.svg` | Public chart of per-criterion pass counts for the primary configuration |
 | `logs/2026-09-21-claude-hybrid-shift-substitution-selfreview.md` | Solo design + self-review, including the precommitment not to retune nu_sub after seeing outcomes |
 | `logs/2026-09-21-claude-hybrid-shift-substitution-execution.md` | Execution log and result summary |
+| `data/external/boundary-shift-v2-novelty-null-manifest-v1.json` | Frozen manifest fixing the order-share problem (exactly-one-new-type split preference), diagnosed by reading the actual scoring code |
+| `data/scripts/external_boundary_shift_v2_novelty_null_audit.py` | Executes the boundary-shift-v2 protocol |
+| `data/derived/external-boundary-shift-v2-novelty-null-audit-summary.json` | Full per-replicate and aggregate results |
+| `data/derived/external-boundary-shift-v2-novelty-null-audit-report.md` | **First joint six-criterion PASS in this project.** A constructive null, not a decipherment — read the interpretation section before drawing conclusions |
+| `docs/assets/external-boundary-shift-v2-novelty-null-criteria.svg` | Public chart: all six criteria pass in every replicate |
+| `logs/2026-09-21-claude-boundary-shift-v2-selfreview.md` | Solo design + self-review, including the diagnosed order-share mechanism and the reuse-feedback dynamic |
+| `logs/2026-09-21-claude-boundary-shift-v2-execution.md` | Execution log, verification steps performed, and careful interpretation |
 
 ## If you are ChatGPT picking this up for the first time
 

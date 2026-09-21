@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-21T19:15:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "boundary-shift-novelty-null (PR #34): H1/H2 exactly invariant; hapax capped near 64% at nu=1.0; order-share fails at 2.2-2.5% (required <=2.0%)",
+      "root cause of the order-share failure IDENTIFIED BY READING THE ACTUAL SCORING CODE (analysis/reproduce_scale_transition.py order_information()), not guessed: the metric recodes the corpus keeping only the top-2000 most frequent token types and collapses everything else into a single <other> symbol, then measures mutual information between adjacent tokens. The original design's requirement that BOTH pieces of a shift be simultaneously unseen means both are guaranteed rare and both collapse to <other>, creating an artificial <other>-follows-<other> adjacency that inflates the measured order-share -- a property of the evaluation metric's interaction with double-novel-adjacency, not evidence of genuine whole-token predictability",
+      "exploratory check (not a frozen preregistered result, informal code-level testing before this design was written): relaxing the requirement to 'exactly one of the two pieces is a new type' (never both, preferring the split that makes exactly one new) reduces double-novel-adjacency; a quick pilot at nu=0.2 (shift-only, no coupling) showed order, hapax, and H2 all landing inside their required bands simultaneously across 3 seeds -- promising, but not yet run as a proper calibrated, preregistered result"
+    ],
+    "not_done_before_registration": [
+      "No full preregistered calibration or six-criterion outcome computed under this frozen manifest",
+      "No parameter selected from a six-criterion outcome -- the informal exploratory check above only looked at order/hapax/H2 for diagnostic purposes, at a hand-picked nu, not a proper pilot calibration procedure",
+      "Manipulation checks not yet computed under the frozen procedure"
+    ]
+  },
+  "claim": "A boundary-shift variant requiring exactly one of the two resulting pieces to be a new type (never both, avoiding the double-novel-adjacency that inflates token-order-share under the cap-2000 evaluation metric) passes all six frozen criteria in at least 16 of 20 primary replicates.",
+  "honesty_precommitment": "The exploratory check above found a promising nu region informally, before this manifest was frozen. The formal pilot calibration below is hapax-only, exactly as in every prior design -- if the properly-calibrated nu does not also satisfy order/H2, that will be reported plainly, not quietly patched by hand-picking a different nu after the fact. The informal exploration is disclosed above precisely so it cannot be mistaken for the frozen calibration procedure.",
+  "base_mechanism": "identical to boundary-shift-novelty-null: Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + identical boundary-coupling rule (beta=0.50 fixed, unchanged). Only the shift's split-acceptance rule changes.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [8000042, 8000179, 8000316, 8000453, 8000590, 8000727, 8000864, 8001001, 8001138, 8001275, 8001412, 8001549, 8001686, 8001823, 8001960, 8002097, 8002234, 8002371, 8002508, 8002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "boundary_shift_v2_novelty_injection"],
+    "boundary_coupling": {"probability_parameter": "beta", "fixed_value_this_design": 0.5, "note": "unchanged from every prior design"},
+    "boundary_shift_v2_novelty_injection": {
+      "scan_order": "identical to boundary-shift-novelty-null: left to right, adjacent pairs, advance by 2 on any attempted shift (successful or fallback), by 1 otherwise",
+      "eligibility": "identical: token i is already in the emitted set (a repeat) and a next token exists",
+      "probability_parameter": "nu",
+      "split_acceptance_rule_CHANGED": "search all L-1 possible split positions (excluding the original) in the same random-but-seeded cyclic order as v1. TWO-PASS acceptance: first pass accepts the first position where EXACTLY ONE of the two pieces is unseen (the other already exists) -- this is preferred and taken immediately if found. Only if no such position exists does a second pass accept the first position where AT LEAST ONE piece is unseen (i.e., falls back to the v1 rule, allowing both-new as a last resort). If no position has any unseen piece at all, fall back to emitting the original pair unmodified, same as v1.",
+      "rationale": "guarantees at most one genuinely new type per successful shift whenever structurally possible, avoiding the double-novel-adjacency that collapses to <other>-follows-<other> under the cap-2000 order metric; only degrades to the old both-new behavior when no single-new split exists, which is expected to be rare",
+      "character_identity_note": "unchanged from v1: no character is ever added, removed, or substituted, only regrouped across a moved boundary -- H1 remains provably exactly invariant"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu": 0.2, "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference"},
+      "edge_only": {"beta": 0.5, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference"},
+      "boundary_shift_v2_only": {"beta": 0.0, "nu": 0.2, "replicates": 20}
+    },
+    "sensitivities": {
+      "weaker_novelty": {"beta": 0.5, "nu": 0.15, "replicates": 5},
+      "stronger_novelty": {"beta": 0.5, "nu": 0.25, "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu chosen by a self-consistency-only pilot (3 seeds, boundary_shift_v2_only config, beta=0) targeting hapax_share_of_types in [0.65, 0.75], hapax-only selection. Swept {0.1,0.15,0.2,0.25,0.3}: 0.1->0.593, 0.15->0.645 (below floor), 0.2->0.688 (in-band, smallest). Frozen: nu=0.2. H2/order were recorded but not used for selection -- at nu=0.2 they happened to also land in band (H2=2.711 exactly baseline-invariant; order mean=0.0174, all 3 pilot seeds under the 0.02 ceiling), matching the earlier informal exploration, but this was not required by the selection rule and is reported as an observation, not engineered. Full pilot log in logs/2026-09-21-claude-boundary-shift-v2-selfreview.md."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16
+    },
+    "order_diagnostic": {
+      "not_a_manipulation_check": "reported for interpretation only, not used in the PASS/FAIL/INVALID verdict rule",
+      "verifies": "whether the exactly-one-new split preference actually reduces order-share relative to boundary-shift-novelty-null's v1 result at a comparable dosage, confirming or refuting the diagnosed cap-2000/<other>-collapse mechanism"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete."
+}
