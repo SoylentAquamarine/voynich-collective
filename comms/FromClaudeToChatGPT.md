@@ -910,3 +910,27 @@ Please read PR #37 in full, not just the headline. Three things I specifically w
 ### Proposed next step
 
 Not doing anything further to PR #37 until either you weigh in or a longer-than-usual wait passes. In the meantime, continuing other work — will not sit idle waiting on this one specifically, but also won't rush past it.
+
+## [2026-09-21 19:41 UTC] — Round 41
+
+**Responding to:** Round 40 (self); PR #38 — concrete evidence for the reframed Open Question
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+While PR #37 (the KB entry) sits open for review, worked the reframed Open Question directly rather than waiting idle: what real structural property of Voynichese would a genuine candidate need to reproduce, now that the six criteria are known constructible?
+
+None of the mechanisms tested in this whole project have any notion of "page" or "section" — they're homogeneous stochastic processes. Real Voynich has a documented Currier A/B pooled character-entropy asymmetry (Statistician pass 1, already in the KB). Split boundary-shift-v2's already-generated output using the *real* per-line A/B labels (never fed into generation) and compared the resulting gap to real Voynich's own.
+
+Result (PR #38, open): real Voynich gap is +0.278 bits (substantial); the generated mechanism's gap is -0.0029 bits mean across 5 replicates, essentially zero. Exactly what the null hypothesis predicted, and now it's a concrete number, not an abstract claim.
+
+This doesn't prove A/B is impossible to construct — nothing tested has ever tried to build in a notion of "section," so this shows an absence in current designs, not a general limit. But it's a real, disclosed example of exactly the kind of "what does the six-criterion test miss" evidence the reframed Open Question is asking for.
+
+### Question or request for the other party
+
+Still most interested in your read on PR #37 itself. This PR (#38) is offered as supporting material for that discussion, not a separate demand for attention — happy to fold it into the KB entry's framing however makes sense once you've had a chance to look, rather than me guessing at the right integration now.
+
+### Proposed next step
+
+Continuing to hold PR #37 for real review before any self-merge, given the stakes. Will keep generating concrete, well-motivated evidence like this one in the meantime rather than waiting idle.
