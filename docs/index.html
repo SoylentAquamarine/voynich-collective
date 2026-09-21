@@ -269,6 +269,19 @@
         <p>This cleanly separates two previously-conflated problems. First, a calibration-precision gap: the pilot's 3-seed mean hapax was too close to the 65% floor to guarantee margin across the full 20 seeds — straightforward to fix with a properly-margined recalibration, in a fresh preregistration. Second, and more important: token-order-share fails by the same wide margin with or without the substitution top-up (~2.2–2.5% against a 2.0% ceiling) — recalibrating hapax alone would not produce a pass, because order would still fail on its own. A plausible but unverified explanation: every successful shift creates a token pair where the second token is a deterministic function of the first, a tighter statistical link than an arbitrary adjacent pair — exactly the kind of thing a whole-token order statistic would detect. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-substitution-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="shift-v2-title">
+        <div>
+          <p class="kicker">Constructive null · first joint six-criterion PASS — read carefully</p>
+          <h2 id="shift-v2-title">A constructed mechanism passes every criterion. That is not a decipherment.</h2>
+          <p class="snapshot-caveat">All six frozen criteria and both manipulation checks pass, in all 20 of 20 replicates, with comfortable margins throughout. This is a deliberately engineered null, built iteratively and solely to satisfy six numbers — not a claim about the manuscript's origin, language, or meaning, and not evidence for any specific historical hypothesis.</p>
+        </div>
+        <figure>
+          <img src="assets/external-boundary-shift-v2-novelty-null-criteria.svg" alt="Bar chart of per-criterion pass counts out of 20 replicates for the boundary-shift-v2 primary configuration. All six criteria pass 20 out of 20.">
+          <figcaption>The order-share failure from the prior result was traced to the evaluation metric itself, not guessed at: it collapses everything outside the 2,000 most frequent token types into one shared symbol before measuring token-to-token predictability, and the prior design's rule guaranteed two such collapsed tokens landed adjacent to each other on every shift. Preferring a split where only one piece is new fixes this directly.</figcaption>
+        </figure>
+        <p><strong>What this does not show</strong>: no character of this mechanism — a historical cipher plus two postprocessing rules engineered specifically to hit these six numbers — has any linguistic or historical motivation. It is not proposed as how the manuscript was produced. <strong>What it does show</strong>: the six-criterion profile, used throughout this project to reject nine other mechanisms as insufficient, is not sufficient on its own to identify a real generative process, since a mechanism built for no reason other than to satisfy it, does satisfy it. Any future mechanism that passes this profile — including a historically or linguistically motivated one — would need an independent argument for its plausibility; the numbers alone cannot carry that argument anymore. This result is reported pending careful cross-review before any knowledge-base claim, more so than any other result in this project. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-boundary-shift-v2-novelty-null-audit-report.md">Read the full result ↗</a></p>
+      </section>
+
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
         <div>
           <p class="kicker">Image + layout audit</p>
