@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-21T14:22:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "bigram-novelty-null (PR #30): nu=0.1 sensitivity (spread, fresh bigram-conditional search each event) passes H2 in 3/5 seeds, primary nu=0.2 fails 0/20",
+      "budget-capped-novelty-null (PR #31): front-loading the same fresh-search mechanism into a total-event budget is WORSE than spreading it -- ruled out as a lever",
+      "hypothesis under test, not yet verified: does reusing a small repertoire of validated (position, replacement-atom) MOVES, instead of independently deriving a fresh locally-optimal move each event, build learnable repeated substructure that BPE/H2 reward, rather than accumulating many locally-plausible-but-structurally-distinct disruptions"
+    ],
+    "not_done_before_registration": [
+      "No move-reuse stream generated or scored",
+      "No parameter selected from any transformed outcome",
+      "nu calibration (self-consistency-only, hapax-only) not yet run"
+    ]
+  },
+  "claim": "Preferring a cached, previously-validated (position, replacement-atom) move over a freshly-derived bigram-conditional one, when a compatible cached move exists for the current token's length, passes all six frozen criteria in at least 16 of 20 primary replicates.",
+  "honesty_precommitment": "If this design does not close the H2 gap materially further than bigram-novelty-null's own nu=0.1 sensitivity already did, or if it turns out mechanically equivalent to bigram-conditioning in practice (e.g. the cache is dominated by a single early move applied everywhere, or cached moves rarely apply and the design silently reduces to bigram-novelty-null), that will be reported plainly. This is the fifth test in the novelty-rule sequence (uniform, unigram-frequency, bigram-conditional, budget-capped, this one); if it does not produce a materially new result, the next step is writing up the whole sequence for the knowledge base rather than inventing a sixth mechanism.",
+  "base_mechanism": "identical base to all four prior designs: Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + identical boundary-coupling rule (beta=0.50 fixed, unchanged). Trigger condition (per-event probability nu, spread throughout the stream) matches bigram-novelty-null exactly -- NOT budget-capped, to isolate the reuse-vs-fresh-search variable from the already-tested spread-vs-front-loaded variable.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [5000042, 5000179, 5000316, 5000453, 5000590, 5000727, 5000864, 5001001, 5001138, 5001275, 5001412, 5001549, 5001686, 5001823, 5001960, 5002097, 5002234, 5002371, 5002508, 5002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "move_reuse_novelty_injection"],
+    "boundary_coupling": {
+      "apply_to": "every token after the first",
+      "probability_parameter": "beta",
+      "fixed_value_this_design": 0.5,
+      "note": "unchanged from all four prior designs"
+    },
+    "move_reuse_novelty_injection": {
+      "eligibility": "candidate already emitted and atomic length at least 2 (same trigger condition as all prior designs)",
+      "probability_parameter": "nu",
+      "protected_positions": [0],
+      "move_cache": "keyed by candidate length n; each entry is (position, replacement_atom, use_count), built ONLY from this replicate's own successful substitutions (never Voynich)",
+      "move_selection": "on a triggered event for a length-n candidate: if cache[n] is non-empty, try its moves in descending use_count order (ties broken by earliest-created); for each (pos, atom), apply if pos != original's already-matching atom at pos AND the resulting string is unseen. First applicable cached move wins, its use_count increments, no fresh search is run.",
+      "fallback_to_fresh_search": "if cache[n] is empty, or no cached move for length n is applicable to this candidate, run the same exhaustive bigram-conditional search used in bigram-novelty-null (identical statistic, identical sparse-context fallback, identical cold-start rule) to find one substitution; on success, add (position, replacement_atom) to cache[n] with use_count=1",
+      "length_change": false,
+      "fallback_if_nothing_found": "retain the boundary-coupled candidate unmutated if neither cached reuse nor fresh search finds an unseen variant -- same condition as all prior designs"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu": 0.2, "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference"},
+      "edge_only": {"beta": 0.5, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference"},
+      "move_reuse_novelty_only": {"beta": 0.0, "nu": 0.2, "replicates": 20}
+    },
+    "sensitivities": {
+      "weaker_novelty": {"beta": 0.5, "nu": 0.1, "replicates": 5},
+      "stronger_novelty": {"beta": 0.5, "nu": 0.3, "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu chosen by a self-consistency-only pilot (3 seeds, move_reuse_novelty_only config, beta=0) targeting hapax_share_of_types in [0.65, 0.75], hapax-only selection. Swept {0.1,0.15,0.2,0.25,0.3}: 0.1->0.589, 0.15->0.646, 0.2->0.693 (in-band, matches bigram-novelty-null's nu for direct comparison), 0.25->0.725, 0.3->0.748. Frozen: nu=0.2. H2 and cache-reuse-rate diagnostics recorded during the pilot but NOT used to select nu -- and the pilot already showed H2 worse than bigram-novelty-null at every nu tested (e.g. nu=0.2: H2=2.977 vs bigram's 2.925), with reuse_share around 96% (cache converges to ~400 distinct moves reused ~10,000+ times each at nu=0.2). Full pilot log in logs/2026-09-21-claude-move-reuse-novelty-selfreview.md."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16
+    },
+    "reuse_rate_diagnostic": {
+      "not_a_manipulation_check": "reported for interpretation only",
+      "compares": "fraction of novelty events satisfied by cache reuse vs. fresh search, and cache size per length, to check the design isn't degenerating to either 'always fresh search' (cache never helps) or 'one move copied everywhere' (cache dominated by a single early entry)"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete."
+}

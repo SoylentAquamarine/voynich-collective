@@ -230,6 +230,19 @@
         <p>This closes off one specific reparameterization — event-count budgeting — as a route to closing the entropy gap, and does so unambiguously: the comparison holds at both the primary dosage and at half dosage. It also sharpens the productive direction: the win in the prior result came from low substitution volume <em>spread throughout</em> the stream, not from using fewer total interventions by any available means. A plausible explanation, offered as a hypothesis and not independently confirmed here: eligible repeats accumulate disproportionately as a stream's vocabulary saturates, so front-loaded interventions concentrate in an already densely-repetitive — and therefore structurally important — stretch, while spread interventions land in more varied context throughout. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-budget-capped-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="move-reuse-novelty-title">
+        <div>
+          <p class="kicker">Constructive null · fifth and final novelty-rule test</p>
+          <h2 id="move-reuse-novelty-title">Reusing a validated move is worse than deriving a fresh one.</h2>
+          <p class="snapshot-caveat">A second frozen precommitment, honored the same way: caching a small set of proven substitution moves and reusing them (96% of events, at the calibrated dosage) instead of always deriving a fresh, locally-optimal one performs worse — not better — on both bigram entropy and multi-symbol-unit scale.</p>
+        </div>
+        <figure>
+          <img src="assets/external-move-reuse-novelty-null-h2.svg" alt="Bar chart comparing mean H2 for fresh bigram-conditional substitution search versus a cached move-reuse mechanism, at matched dosage. The reuse configurations have worse H2 at both dosage levels.">
+          <figcaption>At the primary dosage, reuse also drops learned-unit-scale from 16/20 (fresh search) to 7/20 — the largest single regression across all five novelty-rule designs tested.</figcaption>
+        </figure>
+        <p>Two more naive "reuse" ideas were considered and rejected before this one: literally re-emitting a prior form (a repeat, not a novelty event — contributes nothing to vocabulary openness) and splicing a donor's whole mutated suffix onto a new prefix (a larger disruption than any design tested, not a smaller one). The version actually tested reuses only a single (position, replacement-atom) move — the same disruption granularity as fresh search — yet still costs more, plausibly because stamping the same transition onto thousands of different tokens creates a narrow, artificial statistical spike rather than the smoothly frequency-weighted structure a fresh search produces each time. Two consecutive reparameterizations (this one and event-budget capping) have now both made things worse than simply deriving a fresh, spread-out substitution each time — treated as sufficient signal to synthesize what five designs collectively show rather than test a sixth. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-move-reuse-novelty-null-audit-report.md">Read the full result ↗</a></p>
+      </section>
+
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
         <div>
           <p class="kicker">Image + layout audit</p>
