@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-21T13:55:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "bigram-novelty-null result (PR #30): at nu=0.2 (calibrated primary dosage), H2=2.925, fails; at nu=0.1 (weaker_novelty sensitivity, non-primary), H2=2.836 passes in 3/5 seeds but hapax=0.629 fails",
+      "hypothesis under test, not yet verified: is the constraint substitution VOLUME (total event count), independent of which statistic selects each substitution -- or does volume-capping just relabel the same nu-equivalent tradeoff without revealing a new lever"
+    ],
+    "not_done_before_registration": [
+      "No budget-capped stream generated or scored",
+      "No budget value B selected from any transformed outcome",
+      "B calibration (self-consistency-only, hapax-only pilot) not yet run"
+    ]
+  },
+  "claim": "Capping the TOTAL number of novelty-substitution events per replicate at a fixed budget B (rather than gating each eligible repeat independently by probability nu) passes all six frozen criteria in at least 16 of 20 primary replicates at the smallest B that clears the hapax floor.",
+  "honesty_precommitment": "If the calibrated B, expressed as an implied event rate (B / total eligible-repeat opportunities in the stream), lands close to the nu=0.1-0.2 range already tested in frequency-novelty-null and bigram-novelty-null, this result will be reported as NOT revealing a new lever -- a negative/uninformative finding about this specific reparameterization, not spun as progress. The two designs are mechanistically different (budget-capping front-loads all interventions into the earliest-occurring repeats and leaves the remainder of the stream untouched, versus nu-gating spreading interventions uniformly throughout) and that positional difference, not just the volume, is the actual thing being tested.",
+  "base_mechanism": "identical to bigram-novelty-null: Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + identical boundary-coupling rule (beta=0.50 fixed) + identical bigram-conditional exhaustive substitution search (same ordering statistic, same sparse-context fallback). Only the novelty-triggering rule changes: from independent per-event probability nu to a hard total-event budget B.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [4000042, 4000179, 4000316, 4000453, 4000590, 4000727, 4000864, 4001001, 4001138, 4001275, 4001412, 4001549, 4001686, 4001823, 4001960, 4002097, 4002234, 4002371, 4002508, 4002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "budget_capped_novelty_injection"],
+    "boundary_coupling": {
+      "apply_to": "every token after the first",
+      "probability_parameter": "beta",
+      "fixed_value_this_design": 0.5,
+      "note": "unchanged from all three prior designs; not re-tested"
+    },
+    "budget_capped_novelty_injection": {
+      "eligibility": "candidate already emitted and atomic length at least 2 (same trigger condition as all three prior designs)",
+      "trigger_rule": "deterministic, not probabilistic: if events_used_so_far < B, attempt substitution; otherwise leave the repeat unmutated (behaves as baseline for that token instance)",
+      "events_used_definition": "budget is consumed ONLY on a successful substitution (an unseen variant was actually found and applied) -- an eligible repeat where the search exhausts without finding an unseen variant does not consume budget and is not counted as an event",
+      "protected_positions": [0],
+      "replacement_distribution": "identical to bigram-novelty-null: exhaustive search ordered by running bigram-conditional frequency (sparse-context fallback to unigram frequency below 20 observations), cold-start fallback to fixed cyclic order before 5 tokens emitted",
+      "search_and_fallback": "identical mechanics to bigram-novelty-null -- only the trigger condition (budget vs. probability) differs",
+      "positional_consequence_disclosed": "because eligible repeats are encountered in stream order and the budget is consumed greedily by the first B of them, EVERY substitution event under this design occurs in the earlier portion of the ~80,000-token stream; once the budget is exhausted, the remainder of the stream receives zero novelty injection regardless of how many further repeats occur. This is a real, disclosed structural difference from nu-gating (which spreads events uniformly throughout), not an oversight."
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "B": 5500, "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "B": 0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference"},
+      "edge_only": {"beta": 0.5, "B": 0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference"},
+      "budget_novelty_only": {"beta": 0.0, "B": 5500, "replicates": 20}
+    },
+    "sensitivities": {
+      "half_budget": {"beta": 0.5, "B": 2750, "replicates": 5},
+      "double_budget": {"beta": 0.5, "B": 11000, "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "B chosen by a self-consistency-only pilot (3 seeds, budget_novelty_only config, beta=0) sweeping candidate budgets {500,1000,2000,3000,4000,4500,5000,5500,6000}, targeting hapax_share_of_types in [0.65, 0.75], selecting the SMALLEST B that lands in-band. Coarse sweep: B<=4000 all undershoot (hapax 0.43-0.61); B=6000 overshoots into band from above (0.679). Fine sweep 4500-5500: 4500->0.629, 5000->0.647 (just below floor), 5500->0.663 (in-band). Frozen: B=5500, the smallest tested value that lands in-band. Out of ~74,000 eligible repeat opportunities in the stream, this is roughly a 7.4% intervention rate -- but concentrated entirely among the first 5,500 eligible repeats encountered in stream order, not spread across all ~74,000. H2 recorded during the pilot (not used to select B): notably, H2 rose monotonically with B across the whole coarse sweep (2.735 at B=500 to 2.966 at B=6000) -- i.e., MORE front-loaded volume made H2 WORSE, the opposite of a 'fewer interventions helps' story. Full pilot log in logs/2026-09-21-claude-budget-capped-novelty-selfreview.md."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16
+    },
+    "volume_comparison_diagnostic": {
+      "not_a_manipulation_check": "reported for interpretation only, not used in the PASS/FAIL/INVALID verdict rule",
+      "compares": "the calibrated B expressed as an implied per-repeat-opportunity rate (B / total eligible repeats in the stream) against frequency-novelty-null's and bigram-novelty-null's nu values, to assess the honesty precommitment above"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete. Solo self-review substitutes for cross-party review because ChatGPT is not automated; disclosed, not treated as equivalent."
+}

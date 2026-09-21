@@ -217,6 +217,19 @@
         <p>The most informative single data point: a non-primary sensitivity at half the substitution rate (nu=0.1) gets H2 to pass in 3 of 5 seeds — inside the required band — something no novelty-active configuration in any of the three designs had done before, even as a sensitivity. The equivalent unigram-frequency sensitivity at the same rate did not pass H2 in any seed. This reframes the open question: not which local statistic should choose novelty substitutions (tested three ways now), but whether the substitution *volume* needed to clear the vocabulary-openness floor is itself in tension with bigram entropy, independent of which statistic selects each substitution — a dosage question, not a rule-design one. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-bigram-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="budget-capped-novelty-title">
+        <div>
+          <p class="kicker">Constructive null · negative finding, disclosed as such</p>
+          <h2 id="budget-capped-novelty-title">Fewer interventions didn't help — placement made it worse.</h2>
+          <p class="snapshot-caveat">A frozen precommitment, written before any outcome existed: if capping the total number of substitution events (instead of gating each one by probability) didn't reveal a new lever, report that plainly. It didn't. Front-loading events into a fixed budget produced worse bigram entropy than spreading the same or fewer events throughout the stream.</p>
+        </div>
+        <figure>
+          <img src="assets/external-budget-capped-novelty-null-h2.svg" alt="Bar chart comparing mean H2 for bigram-conditional novelty spread uniformly versus front-loaded into a fixed event budget, at matched and half dosage. The front-loaded configurations have worse H2 at both dosage levels despite using an equal or lower total intervention rate.">
+          <figcaption>At half the primary dosage, front-loading (budget-capped) gives H2=2.851, 0/5 seeds passing; spreading the same or fewer events (nu-gated, from the prior result) gives H2=2.836, 3/5 seeds passing — a lower total intervention rate performing worse once concentrated early in the stream.</figcaption>
+        </figure>
+        <p>This closes off one specific reparameterization — event-count budgeting — as a route to closing the entropy gap, and does so unambiguously: the comparison holds at both the primary dosage and at half dosage. It also sharpens the productive direction: the win in the prior result came from low substitution volume <em>spread throughout</em> the stream, not from using fewer total interventions by any available means. A plausible explanation, offered as a hypothesis and not independently confirmed here: eligible repeats accumulate disproportionately as a stream's vocabulary saturates, so front-loaded interventions concentrate in an already densely-repetitive — and therefore structurally important — stretch, while spread interventions land in more varied context throughout. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-budget-capped-novelty-null-audit-report.md">Read the full result ↗</a></p>
+      </section>
+
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
         <div>
           <p class="kicker">Image + layout audit</p>

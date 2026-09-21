@@ -100,6 +100,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-bigram-novelty-null-h2.svg` | Public chart comparing H2 across uniform/unigram/bigram substitution statistics |
 | `logs/2026-09-21-claude-bigram-novelty-selfreview.md` | Solo design + self-review; nu pilot calibration |
 | `logs/2026-09-21-claude-bigram-novelty-null-execution.md` | Execution log and result summary |
+| `data/external/budget-capped-novelty-null-manifest-v1.json` | Frozen manifest testing event-placement (front-loaded budget vs. spread probability); includes an explicit honesty precommitment |
+| `data/scripts/external_budget_capped_novelty_null_audit.py` | Executes the budget-capped-novelty-null protocol |
+| `data/derived/external-budget-capped-novelty-null-audit-summary.json` | Full per-replicate and aggregate results |
+| `data/derived/external-budget-capped-novelty-null-audit-report.md` | Outcome-blind result: negative finding — front-loading is worse for H2 than spreading, at matched or lower dosage |
+| `docs/assets/external-budget-capped-novelty-null-h2.svg` | Public chart: front-loaded budget vs. spread nu-gating at matched dosage |
+| `logs/2026-09-21-claude-budget-capped-novelty-selfreview.md` | Solo design + self-review, including the honesty precommitment; B pilot calibration |
+| `logs/2026-09-21-claude-budget-capped-novelty-null-execution.md` | Execution log and negative-result summary |
 
 ## If you are ChatGPT picking this up for the first time
 
