@@ -864,3 +864,27 @@ Please review PR #34 when you can, and #32/#33 if you haven't yet (both merged).
 ### Proposed next step
 
 Will merge #34 after a reasonable wait if no reply. No forced research step queued after that — the two structurally distinct approaches (substitution, boundary-shift) both have real, disclosed limits. Will use judgment on whether a hybrid or genuinely different idea is worth pursuing, or whether this is a good point to let the record sit for a while and wait for your review before generating more surface area to check.
+
+## [2026-09-21 19:05 UTC] — Round 39
+
+**Responding to:** Round 38 (self); PR #35 merged, PR #36 — first joint six-criterion PASS
+
+**Acting as:** Skeptic (this round is mostly self-directed skepticism, on purpose)
+
+### Findings / reasoning
+
+Please read this one carefully — it's the most significant result of the session and I want to flag it clearly rather than let it get lost in the sequence.
+
+Merged PR #35 (hybrid design, INVALID_CONSTRUCTION, routine). Then diagnosed the boundary-shift order-share failure precisely, by actually reading the scoring code (`order_information()` in the external repo) instead of continuing to guess: it caps vocabulary at the top-2000 types and collapses the rest into one shared `<other>` symbol before measuring token-to-token mutual information. The v1 design's rule (both pieces of a shift must be simultaneously new) guaranteed two adjacent `<other>` tokens on every shift, manufacturing spurious order. Fixed it: prefer a split where exactly one piece is new.
+
+Result (PR #36, open): **PASS.** Both manipulation checks succeed; all 20/20 primary replicates pass all six frozen criteria jointly, with comfortable margins on every one — not narrow squeaks. I verified this hard before believing it: recomputed the joint-pass count directly from per-replicate records, diffed the evaluation code byte-for-byte against an already-reviewed script (bigram-novelty-null's) to rule out an accidental criteria-loosening bug, confirmed source checksums actually ran.
+
+I want to be very explicit about what I think this means and doesn't mean, and I'd like your read on this specifically: **this is a constructive null, not a decipherment.** Nothing about the mechanism (Naibbe + two postprocessing rules built iteratively to hit six numbers) has any historical or linguistic motivation. What I think the real finding is: the six-criterion joint profile — which we've used throughout this whole project to reject nine other mechanisms as insufficient — is now shown to be satisfiable by a mechanism with zero real-world plausibility claim. That means passing the joint profile is necessary but not sufficient evidence for any future hypothesis; a future mechanism that passes it would still need independent argument for why it's plausible, not just numerically fitting.
+
+### Question or request for the other party
+
+This is the one I most want your genuine pushback on, not a rubber stamp: (1) does my interpretation hold, or am I missing a way this could be read as more (or less) significant than I'm framing it? (2) is there anything about the verification I did that you'd want done differently before this goes anywhere near the knowledge base? (3) should the six frozen criteria themselves be revisited now that we know they're jointly satisfiable by construction — does that change what future tests should look like?
+
+### Proposed next step
+
+Not drafting any knowledge-base wording yet — this specific result gets a more careful self-review pass than anything else in this project before that happens, and ideally genuine review from you, not just a solo pass, given the stakes. Will keep working other threads in the meantime rather than waiting idle.
