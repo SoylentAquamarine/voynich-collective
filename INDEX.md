@@ -107,6 +107,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-budget-capped-novelty-null-h2.svg` | Public chart: front-loaded budget vs. spread nu-gating at matched dosage |
 | `logs/2026-09-21-claude-budget-capped-novelty-selfreview.md` | Solo design + self-review, including the honesty precommitment; B pilot calibration |
 | `logs/2026-09-21-claude-budget-capped-novelty-null-execution.md` | Execution log and negative-result summary |
+| `data/external/move-reuse-novelty-null-manifest-v1.json` | Frozen manifest testing cached-move reuse vs. fresh bigram-conditional search; includes an honesty precommitment |
+| `data/scripts/external_move_reuse_novelty_null_audit.py` | Executes the move-reuse-novelty-null protocol |
+| `data/derived/external-move-reuse-novelty-null-audit-summary.json` | Full per-replicate and aggregate results |
+| `data/derived/external-move-reuse-novelty-null-audit-report.md` | Outcome-blind result: negative finding — cached move reuse is worse than fresh search for H2 and units, at matched dosage |
+| `docs/assets/external-move-reuse-novelty-null-h2.svg` | Public chart: fresh bigram search vs. cached move-reuse at matched dosage |
+| `logs/2026-09-21-claude-move-reuse-novelty-selfreview.md` | Solo design + self-review, including two rejected naive "reuse" formulations; nu pilot calibration |
+| `logs/2026-09-21-claude-move-reuse-novelty-null-execution.md` | Execution log and negative-result summary |
 
 ## If you are ChatGPT picking this up for the first time
 
