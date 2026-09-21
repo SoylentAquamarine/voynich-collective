@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-21T15:20:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "five-design substitution sequence (see knowledge-base/state.md): H1/units/edge/order/hapax are jointly constructible; H2 resists every substitution-based novelty rule tried at sufficient dosage to clear the hapax floor",
+      "hypothesis under test, not yet verified: a mechanism that creates new vocabulary WITHOUT touching character identity at all (only moving where a token boundary falls between two adjacent tokens) might avoid H2 damage entirely, since it never introduces a character that wasn't already exactly where it was in the source stream -- only regroups existing characters across a shifted boundary"
+    ],
+    "not_done_before_registration": [
+      "No boundary-shift stream generated or scored",
+      "No parameter selected from any transformed outcome",
+      "nu calibration (self-consistency-only, hapax-only) not yet run"
+    ]
+  },
+  "claim": "Growing vocabulary by shifting the token boundary between an adjacent pair of tokens (one of which is a repeat), rather than substituting any character, passes all six frozen criteria in at least 16 of 20 primary replicates.",
+  "honesty_precommitment": "This is a structurally different mechanism from the five-design substitution sequence, not a sixth reparameterization of the same idea -- it never changes which characters exist or their order within the combined two-token window, only where the boundary between them falls. If it doesn't help H2 either, or if it breaks a criterion the substitution designs already had solved (edge, order, units), that will be reported plainly, exactly as the two negative results in the substitution sequence were.",
+  "base_mechanism": "boundary coupling only (Naibbe cipher, voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571, beta=0.50 fixed, unchanged from every prior design), applied FIRST to the whole token stream exactly as in all five prior designs. The boundary-shift operation is then a SEPARATE, independent post-processing pass over the boundary-coupled stream -- no character substitution anywhere in this design.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [6000042, 6000179, 6000316, 6000453, 6000590, 6000727, 6000864, 6001001, 6001138, 6001275, 6001412, 6001549, 6001686, 6001823, 6001960, 6002097, 6002234, 6002371, 6002508, 6002645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "boundary_shift_novelty_injection"],
+    "boundary_coupling": {
+      "apply_to": "every token after the first",
+      "probability_parameter": "beta",
+      "fixed_value_this_design": 0.5,
+      "note": "unchanged from all five prior designs; applied to the full stream before boundary-shift runs, so the two mechanisms operate in strict sequence and stay isolable"
+    },
+    "boundary_shift_novelty_injection": {
+      "scan_order": "left to right over the boundary-coupled stream, in adjacent (i, i+1) pairs; a token that gets consumed as the RIGHT half of a shift is never separately considered as the LEFT half of the next pair -- the scan advances by 2 on a successful or attempted shift, by 1 otherwise",
+      "eligibility": "token i (the left member of the pair) is already in the emitted set (a repeat) at the point it is reached in the scan",
+      "probability_parameter": "nu",
+      "conservation_by_construction": "every shift attempt consumes exactly 2 input tokens and produces exactly 2 output tokens (whether or not an unseen split point is found) -- total token count is identical to the input stream's, with no cross-stream bookkeeping needed, unlike a split-only design that would require pairing splits with merges elsewhere",
+      "mutation": "combine token i and token i+1 into one string of length L = len(i) + len(i+1); search all L-1 possible split positions EXCLUDING the original position (the one that reproduces the unmodified pair), in a random-but-seeded order; accept the first split position where BOTH resulting pieces are simultaneously unseen (not in emitted). This guarantees maximal new-type creation (2 new types per successful shift, not 1) when any qualifying split point exists.",
+      "character_identity_note": "no character is ever added, removed, or substituted -- every shift is strictly a repartition of the SAME multiset of characters, in the SAME order, across a different internal boundary. H1 (unigram character frequency over the whole stream) is provably unchanged by this operation; only which bigrams fall inside vs. across a token boundary can change.",
+      "fallback": "if no split position among the L-1 candidates leaves both pieces unseen, emit the original pair unmodified (both tokens exactly as they were) -- same fallback philosophy as all five substitution designs"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu": 1.0, "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference"},
+      "edge_only": {"beta": 0.5, "nu": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference"},
+      "boundary_shift_only": {"beta": 0.0, "nu": 1.0, "replicates": 20}
+    },
+    "sensitivities": {
+      "weaker_novelty": {"beta": 0.5, "nu": 0.5, "replicates": 5},
+      "stronger_novelty": {"beta": 0.5, "nu": 1.0, "replicates": 5, "note": "identical to primary's nu (already at the 1.0 ceiling, per the calibration-failure note below) -- kept for structural consistency with every other design's sensitivity slot rather than skipped"}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu was to be chosen by a self-consistency-only pilot (3 seeds, boundary_shift_only config, beta=0) targeting hapax_share_of_types in [0.65, 0.75], hapax-only selection. CALIBRATION FAILURE, disclosed before any primary outcome was computed: the pilot swept nu from 0.1 to 1.0 (the maximum possible value) and hapax never entered the band -- it plateaus near 0.64 at nu=1.0 and does not rise further, because the design's own eligibility condition is self-limiting (each successful shift consumes its two source tokens' future eligibility while rarely creating tokens likely to recur, so the supply of eligible pairs shrinks as shifts accumulate, independent of nu). nu=1.0 (the ceiling, best achievable) is frozen as primary so the frozen verdict rule can still be computed programmatically, but this is reported as a design that cannot reach its own target dosage, not a successfully calibrated primary. Full pilot log in logs/2026-09-21-claude-boundary-shift-novelty-selfreview.md."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed -- coupling rule is byte-identical and unchanged"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16
+    },
+    "h1_invariance_diagnostic": {
+      "not_a_manipulation_check": "reported for interpretation only, not used in the PASS/FAIL/INVALID verdict rule",
+      "verifies": "H1 for boundary_shift_only should be statistically indistinguishable from baseline's H1, since no character is ever added/removed/substituted -- confirms the mechanism does what its design claims before interpreting H2"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete."
+}

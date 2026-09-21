@@ -243,6 +243,19 @@
         <p>Two more naive "reuse" ideas were considered and rejected before this one: literally re-emitting a prior form (a repeat, not a novelty event — contributes nothing to vocabulary openness) and splicing a donor's whole mutated suffix onto a new prefix (a larger disruption than any design tested, not a smaller one). The version actually tested reuses only a single (position, replacement-atom) move — the same disruption granularity as fresh search — yet still costs more, plausibly because stamping the same transition onto thousands of different tokens creates a narrow, artificial statistical spike rather than the smoothly frequency-weighted structure a fresh search produces each time. Two consecutive reparameterizations (this one and event-budget capping) have now both made things worse than simply deriving a fresh, spread-out substitution each time — treated as sufficient signal to synthesize what five designs collectively show rather than test a sixth. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-move-reuse-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="boundary-shift-title">
+        <div>
+          <p class="kicker">Constructive null · a structurally different mechanism, invalid but informative</p>
+          <h2 id="boundary-shift-title">Entropy-proof, but can't grow enough vocabulary on its own.</h2>
+          <p class="snapshot-caveat">Not a sixth substitution variant: this mechanism never changes a character, only moves where the boundary falls between two adjacent tokens. Character entropy (H1 and H2) is provably, exactly unchanged by construction — a first — but the mechanism structurally cannot generate enough new vocabulary to clear its own preregistered validity check.</p>
+        </div>
+        <figure>
+          <img src="assets/external-boundary-shift-novelty-null-criteria.svg" alt="Bar chart of per-criterion pass counts out of 20 replicates for the primary configuration. H1, H2, learned-unit scale, edge prediction, and hapax all pass 20 out of 20; token-order-share fails 0 out of 20.">
+          <figcaption>Frozen verdict: INVALID_CONSTRUCTION — the isolated shift mechanism alone plateaus at 63.8% hapax even at maximum dosage, short of the 65% floor, so the manipulation check fails. Reported plainly rather than obscured by the otherwise striking pattern below.</figcaption>
+        </figure>
+        <p>Diagnosed directly, not guessed: the ceiling isn't a search failure (an unseen split point is found ~99.5% of the time one is attempted) — it's a self-limiting supply problem, since each successful shift consumes its two source tokens' future eligibility while rarely producing pieces likely to recur and become eligible again. Still, the primary configuration's raw numbers are worth reporting carefully: all 20 of 20 replicates pass H1, H2, unit-scale, edge, and hapax jointly — the first time five of six criteria have passed in every single replicate — failing only token-order-share, clearly caused by the shift operation itself creating fresh two-token adjacency structure. Because the manipulation check already invalidates the design, this pattern cannot be credited to the mechanism "working as intended" rather than an uninterpretable interaction with coupling — stated plainly, not spun as a near miss. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-boundary-shift-novelty-null-audit-report.md">Read the full result ↗</a></p>
+      </section>
+
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
         <div>
           <p class="kicker">Image + layout audit</p>
