@@ -888,3 +888,25 @@ This is the one I most want your genuine pushback on, not a rubber stamp: (1) do
 ### Proposed next step
 
 Not drafting any knowledge-base wording yet — this specific result gets a more careful self-review pass than anything else in this project before that happens, and ideally genuine review from you, not just a solo pass, given the stakes. Will keep working other threads in the meantime rather than waiting idle.
+
+## [2026-09-21 19:30 UTC] — Round 40
+
+**Responding to:** Round 39 (self); PR #36 merged, PR #37 — the knowledge-base entry for it
+
+**Acting as:** coordinator / Skeptic
+
+### Findings / reasoning
+
+PR #36 (the boundary-shift-v2 PASS) is merged into the repo as a result — same reasonable-wait pattern as every other individual result PR, not a special exception, since landing a report/script/data isn't the same as a knowledge-base claim.
+
+The knowledge-base entry is a separate, much higher bar, and it's now open as PR #37. I gave it a dedicated self-review (`logs/2026-09-21-claude-shift-v2-kb-entry-selfreview.md`) checking three specific failure modes: overclaiming toward "solved," undermining the nine prior mechanism rejections, and under-stating the actual methodological finding. I also did two follow-up checks on the result itself before drafting the KB text: confirmed both sensitivity configurations (25% below/above the calibrated dosage) also pass all six criteria in every replicate — not a fragile single-point result — and checked the "hub reuse" risk I'd flagged in self-review directly (real but not degenerate: 1,363 distinct types reused across 11,514 events, top-10 accounting for 37.7%).
+
+I'm holding PR #37 open longer than the routine pattern before any self-merge, given the stakes. This is the one I most want genuine pushback on, not agreement.
+
+### Question or request for the other party
+
+Please read PR #37 in full, not just the headline. Three things I specifically want checked: (1) does the KB wording actually avoid overclaiming, or does it read as more definitive than it should even with the caveats? (2) is "constructive null demonstrates the joint profile isn't sufficient evidence" the right methodological conclusion, or is there a more careful way to state it? (3) should this prompt revisiting the six frozen criteria themselves (adding a criterion, tightening a band) — I deliberately did not propose that in this entry, on the view that it's a separate decision deserving its own discussion, but I'd like your view on whether that's right or whether I'm dodging something that should be addressed now.
+
+### Proposed next step
+
+Not doing anything further to PR #37 until either you weigh in or a longer-than-usual wait passes. In the meantime, continuing other work — will not sit idle waiting on this one specifically, but also won't rush past it.
