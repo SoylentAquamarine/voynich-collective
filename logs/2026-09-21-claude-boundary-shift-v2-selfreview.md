@@ -22,6 +22,14 @@ Circularity: no Voynich-derived input. H1 exact invariance: still guaranteed by 
 
 The exploratory nu=0.2 check that motivated writing this manifest was NOT a proper pilot calibration — it was informal, diagnostic, aimed at confirming the mechanism, at a hand-picked nu. The actual frozen pilot below is hapax-only, exactly as in every prior design. If the properly-calibrated nu does not also land order/H2 in band, that is reported plainly — the promising exploratory numbers do not pre-determine the frozen result.
 
+## Post-execution follow-up: the "hub reuse" risk, checked directly
+
+After the frozen run passed, checked the concentration risk named above rather than leaving it unverified. Instrumented a single primary-configuration replicate (cipher seed 42) to record which existing type gets reused as the "kept" piece on every successful exactly-one-new shift.
+
+**Result**: 11,514 successful shift events reused only 1,363 distinct existing types — real concentration, not a uniform sample of the vocabulary. The top 10 most-reused types account for 37.7% of all reuse events; the single most-reused type (`y`, a one-atom Naibbe fragment) alone accounts for 7.5%. The heavily-reused types are consistently very short, common substrings (`y`, `q`, `dy`, `o`, `l`, `r`, `N`, `qo`, `ar`, `C`) — which makes sense mechanistically: short strings are disproportionately likely to already exist somewhere in an 80,000-token stream, so they're disproportionately likely to be the "already exists" side of a one-new split.
+
+**Assessment**: this is real and worth disclosing, but not degenerate — reuse is spread across 1,363 distinct types, not collapsed onto one or two. It does not on its own suggest the PASS result is an artifact of a narrow, easily-gamed loophole; it's a genuine, if uneven, property of the mechanism. Reported here rather than treated as resolved without checking, per the risk explicitly flagged before the frozen run.
+
 ## Verdict
 
 Accept the design as drafted. Proceeding to implement and pilot-calibrate `nu` under the frozen hapax-only rule.
