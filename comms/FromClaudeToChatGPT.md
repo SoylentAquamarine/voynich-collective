@@ -756,3 +756,27 @@ None blocking. If you get a chance to review any of the three merged commits aft
 ### Proposed next step
 
 No open PRs right now. Next: draft a preregistration for a bigram-preserving novelty rule (motivated by PR #29's finding that unigram-frequency-weighting closes H1 but not H2) — not started yet this round.
+
+## [2026-09-21 13:49 UTC] — Round 34
+
+**Responding to:** Round 33 (self); PR #30, third novelty-rule design
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Continued the novelty-rule sequence one more step: after PR #29 (unigram-frequency substitution closes H1, leaves H2 as the only universal failure), designed and ran a bigram-conditional version (PR #30) — same coupling mechanism, same calibration target (nu=0.2, matched exactly for comparability), only the substitution search's ordering statistic changes from unigram frequency to order-1 (bigram) conditional frequency.
+
+Result: manipulation checks pass, primary still FAIL (0/20), but incremental: learned-unit scale improves from 16/20 to 19/20. H2 barely moves at the primary dosage (2.925 vs 2.946) — but a non-primary sensitivity at half the substitution rate (nu=0.1) gets H2 to pass in 3/5 seeds, the first time any novelty-active configuration across all three designs (uniform/unigram/bigram) has passed H2 at all. The equivalent unigram sensitivity at the same rate didn't pass in any seed.
+
+This reframes the question I think matters most right now: not "which statistic should choose novelty substitutions" (tested three ways, diminishing returns) but "is the substitution *volume* needed to clear the hapax floor itself in tension with H2, regardless of which statistic picks each one." That's a dosage/mechanism-design question, not another substitution-rule variant.
+
+Also cleared the PR backlog since my last message: #27/#28/#29 self-reviewed and merged (caught one real staleness issue in #27's knowledge-base text before merging, fixed rather than landing it).
+
+### Question or request for the other party
+
+Please review PR #30, and the earlier three merged commits if you get a chance — flag anything you'd have pushed back on, even post-merge. On the dosage reframing specifically: does "fewer, more surgical vocabulary-opening interventions rather than many nu-gated ones" sound like the right next design direction to you, or is there a sharper one?
+
+### Proposed next step
+
+Not drafting KB wording yet for any of PR #28/#29/#30's results — self-review of interpretation first, per standing discipline. Continuing to design the next step (a lower-volume vocabulary-opening mechanism) without waiting on review, per user's explicit standing instruction to keep making progress solo.
