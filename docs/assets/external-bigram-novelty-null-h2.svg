@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="560" viewBox="0 0 1140 560" role="img" aria-labelledby="title desc">
+  <title id="title">Three novelty-selection statistics compared on H2</title>
+  <desc id="desc">Mean H2 bigram entropy comparing uniform substitution, unigram-frequency-weighted substitution, and bigram-conditional substitution, with and without boundary coupling.</desc>
+  <style>
+    .title { font: 700 18px Georgia, serif; fill: #2d2922; }
+    .subtitle, .tick { font: 10.5px Arial, sans-serif; fill: #665f53; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="90" y="26" class="title">Rate matters more than which statistic orders the substitution</text>
+  <text x="90" y="46" class="subtitle">Mean H2 (bits) at equal nu=0.2 dosage; shaded band is the required 2.540-2.840 range</text>
+  <rect x="90" y="277.1" width="990" height="98.6" fill="#496a63" opacity="0.15"/>
+  <line x1="90" y1="277.1" x2="1080" y2="277.1" stroke="#496a63" stroke-dasharray="2 3" stroke-width="1.5"/>
+  <line x1="90" y1="375.8" x2="1080" y2="375.8" stroke="#496a63" stroke-dasharray="2 3" stroke-width="1.5"/>
+  <text x="1076" y="271.1" text-anchor="end" class="tick" fill="#496a63">required band</text>
+  <line x1="90" y1="421.7" x2="1080" y2="421.7" stroke="#6e675c" stroke-width="1"/>
+  <rect x="117.5" y="319.5" width="110" height="102.2" fill="#496a63"/><text x="172.5" y="311.5" text-anchor="middle" class="tick">2.711</text><text x="172.5" y="439.7" text-anchor="middle" class="tick">baseline
+[no novelty]</text><rect x="255.0" y="110.0" width="110" height="311.7" fill="#9b5948"/><text x="310.0" y="102.0" text-anchor="middle" class="tick">3.348</text><text x="310.0" y="439.7" text-anchor="middle" class="tick">uniform
+[old novelty_only]</text><rect x="392.5" y="242.5" width="110" height="179.2" fill="#71624a"/><text x="447.5" y="234.5" text-anchor="middle" class="tick">2.945</text><text x="447.5" y="439.7" text-anchor="middle" class="tick">unigram-freq
+[novelty_only, nu=0.2]</text><rect x="530.0" y="250.6" width="110" height="171.1" fill="#496a63"/><text x="585.0" y="242.6" text-anchor="middle" class="tick">2.920</text><text x="585.0" y="439.7" text-anchor="middle" class="tick">bigram
+[novelty_only, nu=0.2]</text><rect x="667.5" y="108.0" width="110" height="313.7" fill="#9b5948"/><text x="722.5" y="100.0" text-anchor="middle" class="tick">3.354</text><text x="722.5" y="439.7" text-anchor="middle" class="tick">uniform+coupling
+[old primary]</text><rect x="805.0" y="242.2" width="110" height="179.5" fill="#71624a"/><text x="860.0" y="234.2" text-anchor="middle" class="tick">2.946</text><text x="860.0" y="439.7" text-anchor="middle" class="tick">unigram+coupling
+[primary, nu=0.2]</text><rect x="942.5" y="249.0" width="110" height="172.7" fill="#496a63"/><text x="997.5" y="241.0" text-anchor="middle" class="tick">2.925</text><text x="997.5" y="439.7" text-anchor="middle" class="tick">bigram+coupling
+[primary, nu=0.2]</text>
+</svg>

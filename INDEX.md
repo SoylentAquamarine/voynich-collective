@@ -93,6 +93,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-frequency-novelty-null-h2.svg` | Public chart: frequency-weighted novelty roughly halves H2 damage vs. uniform substitution, doesn't close it |
 | `logs/2026-09-20-claude-frequency-novelty-selfreview.md` | Solo design + self-review: caught and fixed a search-thoroughness confound; nu pilot calibration |
 | `logs/2026-09-20-claude-frequency-novelty-null-execution.md` | Execution log and result summary |
+| `data/external/bigram-novelty-null-manifest-v1.json` | Frozen manifest: frequency-novelty-null with unigram substitution replaced by bigram-conditional novelty; pilot-calibrated nu |
+| `data/scripts/external_bigram_novelty_null_audit.py` | Executes the bigram-novelty-null protocol: pilot mode + full sweep, reusing baseline/edge_only by reference |
+| `data/derived/external-bigram-novelty-null-audit-summary.json` | Full per-replicate and aggregate results for the 50 executed replicates |
+| `data/derived/external-bigram-novelty-null-audit-report.md` | Outcome-blind result: primary FAIL, units improves to 19/20, H2 closes in a majority of seeds at half dosage — reframes the open question as substitution rate, not rule choice |
+| `docs/assets/external-bigram-novelty-null-h2.svg` | Public chart comparing H2 across uniform/unigram/bigram substitution statistics |
+| `logs/2026-09-21-claude-bigram-novelty-selfreview.md` | Solo design + self-review; nu pilot calibration |
+| `logs/2026-09-21-claude-bigram-novelty-null-execution.md` | Execution log and result summary |
 
 ## If you are ChatGPT picking this up for the first time
 

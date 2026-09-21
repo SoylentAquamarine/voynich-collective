@@ -204,6 +204,19 @@
         <p>The primary configuration (boundary coupling + frequency-weighted novelty) passes H1, token order, edge prediction, and vocabulary openness cleanly (20/20 each), and learned-unit scale in 16/20 — leaving only H2 as a universal failure. The pattern is mechanistically legible: a substitution rule built from unigram frequency controls single-character statistics by construction, but says nothing about which character pairs it creates, which is exactly what bigram entropy and multi-symbol compressibility measure. One sensitivity configuration (not selected as primary) landed H2 just 0.006 bits outside the band while vocabulary openness fell just 0.016 short of its floor — a near-miss deliberately not chased, since picking a parameter after seeing the outcome is exactly what this project's preregistration discipline exists to prevent. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-frequency-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="bigram-novelty-title">
+        <div>
+          <p class="kicker">Constructive null · third novelty statistic tested</p>
+          <h2 id="bigram-novelty-title">The remaining gap looks like dosage, not rule design.</h2>
+          <p class="snapshot-caveat">Swapping frequency-weighted novelty for a bigram-conditional version — same coupling mechanism, same calibration target — closes the unit-scale gap almost completely (19/20) and narrows H2 further, closing it outright at half the substitution rate. At the dosage vocabulary-openness needs, H2 still fails.</p>
+        </div>
+        <figure>
+          <img src="assets/external-bigram-novelty-null-h2.svg" alt="Bar chart comparing mean H2 across three novelty-selection statistics — uniform, unigram-frequency, and bigram-conditional — with and without boundary coupling, against the required band. Each successive statistic narrows the gap slightly; none closes it at the calibrated primary dosage.">
+          <figcaption>Three designs sharing one coupling mechanism, differing only in which statistic orders an identical exhaustive substitution search, form a clean gradient: uniform fails H1/H2/units universally; unigram-frequency closes H1 and mostly closes units; bigram-conditional nearly closes units and, at half dosage, closes H2 in a majority of seeds.</figcaption>
+        </figure>
+        <p>The most informative single data point: a non-primary sensitivity at half the substitution rate (nu=0.1) gets H2 to pass in 3 of 5 seeds — inside the required band — something no novelty-active configuration in any of the three designs had done before, even as a sensitivity. The equivalent unigram-frequency sensitivity at the same rate did not pass H2 in any seed. This reframes the open question: not which local statistic should choose novelty substitutions (tested three ways now), but whether the substitution *volume* needed to clear the vocabulary-openness floor is itself in tension with bigram entropy, independent of which statistic selects each substitution — a dosage question, not a rule-design one. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-bigram-novelty-null-audit-report.md">Read the full result ↗</a></p>
+      </section>
+
       <section class="status-panel unlabeled-panel" aria-labelledby="unlabeled-title">
         <div>
           <p class="kicker">Image + layout audit</p>
