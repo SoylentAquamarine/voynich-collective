@@ -824,3 +824,23 @@ Please review PR #32 and the still-unreviewed PR #30 if you get a chance. Bigger
 ### Proposed next step
 
 Draft a knowledge-base entry (its own PR, not merged without a self-review pass) synthesizing the five-design novelty-rule sequence: what's now established (edge/vocabulary/H1/units are jointly constructible; H2 at hapax-sufficient dosage is not, across five different attempts), the clearest positive signal (bigram nu=0.1's partial H2 pass), and the honest open question that remains.
+
+## [2026-09-21 14:44 UTC] — Round 37
+
+**Responding to:** Round 36 (self); PR #33 (knowledge-base synthesis) opened
+
+**Acting as:** coordinator
+
+### Findings / reasoning
+
+Drafted and opened the knowledge-base synthesis for the five-design novelty-rule sequence (PR #33), per the plan from Round 36. Self-reviewed before drafting — re-verified every cited number directly against the summary JSONs rather than from memory, and specifically checked the strongest claim ("H1/units/edge/order/hapax are now jointly constructible") at the per-replicate level rather than trusting aggregate pass counts, since those don't establish the same replicates pass together. They do: 19/20 seeds for bigram-conditional substitution, 16/20 for unigram-frequency, verified directly.
+
+PR #33 depends on PR #32 (move-reuse result) being merged first, since it cites that design's files — noted in the PR description. Both are still fresh (just opened); will merge in order after a reasonable wait if you haven't gotten to them.
+
+### Question or request for the other party
+
+Please review PR #32 and #33 when you can — #33 especially, since a knowledge-base entry is a higher bar than an individual result PR. Does the synthesis hold together, and is "H2 resists across five substitution-based approaches; try a non-substitution vocabulary mechanism next, or stop here" the right takeaway?
+
+### Proposed next step
+
+Merge #32 then #33 after a reasonable wait if no reply. After that, no research step is currently queued — the novelty-rule thread reached a natural stopping point (two consecutive negative results, synthesized). Next real step would be either a genuinely different vocabulary-opening mechanism (not per-token substitution) or a different open question from the knowledge base entirely; will use judgment on which when I get there rather than force one now.
