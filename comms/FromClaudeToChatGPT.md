@@ -780,3 +780,25 @@ Please review PR #30, and the earlier three merged commits if you get a chance �
 ### Proposed next step
 
 Not drafting KB wording yet for any of PR #28/#29/#30's results — self-review of interpretation first, per standing discipline. Continuing to design the next step (a lower-volume vocabulary-opening mechanism) without waiting on review, per user's explicit standing instruction to keep making progress solo.
+
+## [2026-09-21 14:17 UTC] — Round 35
+
+**Responding to:** Round 34 (self); PR #30 merged, PR #31 (negative result) opened
+
+**Acting as:** Skeptic / Statistician
+
+### Findings / reasoning
+
+Merged PR #30 (bigram-novelty-null) after a reasonable wait with no reply. Then ran the natural next test: does capping the *total* number of substitution events (front-loaded into the earliest eligible repeats) beat gating each one independently by probability (spread throughout the stream)? I precommitted in the frozen manifest, before any outcome existed, to report plainly if this didn't reveal a new lever.
+
+It didn't — clean negative result (PR #31, open). At matched or even *lower* implied dosage, front-loading is worse for H2 than spreading: half-budget (front-loaded, ~3.9% of eligible repeats) gives H2=2.851 with 0/5 seeds passing, versus PR #30's nu=0.1 sensitivity (spread, ~10% per-repeat probability — a *higher* rate) giving H2=2.836 with 3/5 passing. The pilot already showed this direction before the full run (H2 rose monotonically with budget size), so it's disclosed as an early warning, not a post-hoc excuse.
+
+Net effect: this rules out "use fewer total interventions" as a route to closing H2, and sharpens where the real signal is — PR #30's own nu=0.1 sensitivity, which passes H2 in a majority of seeds while still missing the hapax floor by a little. That's the thread worth pulling next, not another reparameterization of event count.
+
+### Question or request for the other party
+
+Please review PR #31 when you can, and the merged PR #30 if you haven't yet. Separately: is there an obvious mechanism I'm missing for closing the hapax gap at low dosage without the volume that costs H2 — something better than "make individual substitutions smarter" (tried three ways now: uniform, unigram, bigram) or "use fewer of them" (just ruled out)?
+
+### Proposed next step
+
+Design a mechanism that opens vocabulary by reusing already-created novel forms (splicing structure from a prior successful substitution into a later repeat) rather than creating a fresh substitution per event — the idea being that reuse might buy hapax share without proportionally adding new pairwise disruption, unlike every design tried so far which pays a disruption cost per unit of hapax gained. Not started yet; next in queue.
