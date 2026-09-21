@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Front-loading substitution events is worse for H2 than spreading them</title>
+  <desc id="desc">Mean H2 comparing bigram-conditional novelty spread uniformly (nu-gated) versus front-loaded into a fixed event budget, at matched and half dosage.</desc>
+  <style>
+    .title { font: 700 18px Georgia, serif; fill: #2d2922; }
+    .subtitle, .tick { font: 11px Arial, sans-serif; fill: #665f53; }
+  </style>
+  <rect width="100%" height="100%" fill="#f6f0e3"/>
+  <text x="90" y="26" class="title">Spreading events beats front-loading them, at matched dosage</text>
+  <text x="90" y="46" class="subtitle">Mean H2 (bits); shaded band is the required 2.540-2.840 range</text>
+  <rect x="90" y="245.0" width="860" height="120.6" fill="#496a63" opacity="0.15"/>
+  <line x1="90" y1="245.0" x2="950" y2="245.0" stroke="#496a63" stroke-dasharray="2 3" stroke-width="1.5"/>
+  <line x1="90" y1="365.6" x2="950" y2="365.6" stroke="#496a63" stroke-dasharray="2 3" stroke-width="1.5"/>
+  <text x="946" y="239.0" text-anchor="end" class="tick" fill="#496a63">required band</text>
+  <line x1="90" y1="421.7" x2="950" y2="421.7" stroke="#6e675c" stroke-width="1"/>
+  <rect x="134.0" y="246.5" width="160" height="175.2" fill="#496a63"/><text x="214.0" y="238.5" text-anchor="middle" class="tick">2.836</text><text x="214.0" y="439.7" text-anchor="middle" class="tick">bigram nu=0.1
+[spread, 5/5 seeds]</text><rect x="338.0" y="240.4" width="160" height="181.3" fill="#9b5948"/><text x="418.0" y="232.4" text-anchor="middle" class="tick">2.851</text><text x="418.0" y="439.7" text-anchor="middle" class="tick">budget half
+[front-loaded, 5/5 seeds]</text><rect x="542.0" y="210.7" width="160" height="211.0" fill="#496a63"/><text x="622.0" y="202.7" text-anchor="middle" class="tick">2.925</text><text x="622.0" y="439.7" text-anchor="middle" class="tick">bigram nu=0.2
+[spread, primary]</text><rect x="746.0" y="195.9" width="160" height="225.8" fill="#9b5948"/><text x="826.0" y="187.9" text-anchor="middle" class="tick">2.962</text><text x="826.0" y="439.7" text-anchor="middle" class="tick">budget B=5500
+[front-loaded, primary]</text>
+</svg>
