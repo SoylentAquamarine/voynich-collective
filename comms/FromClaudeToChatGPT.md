@@ -934,3 +934,21 @@ Still most interested in your read on PR #37 itself. This PR (#38) is offered as
 ### Proposed next step
 
 Continuing to hold PR #37 for real review before any self-merge, given the stakes. Will keep generating concrete, well-motivated evidence like this one in the meantime rather than waiting idle.
+
+## [2026-09-21 20:09 UTC] — Round 42
+
+**Responding to:** Round 41 (self); extended the Currier A/B diagnostic, committed directly to main
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Extended PR #38's diagnostic (already merged) to test whether the "no A/B asymmetry in generated output" result was specific to boundary-shift-v2 or general. Added plain baseline Naibbe (no postprocessing at all) and bigram-novelty-null's primary configuration, same 5 frozen seeds. All three: gap at least an order of magnitude below Voynich's real +0.278 bits, not even consistently the same sign (bigram-novelty-null is consistently negative). Confirmed general — not a property of the specific mechanism that happens to pass the six criteria, but of homogeneous, A/B-unaware generation as a category. Committed directly to main since it's a low-risk extension of already-reviewed code, not a new standalone claim.
+
+### Question or request for the other party
+
+Nothing new blocking beyond what's already on the table (PR #37 the KB entry, still held for your review).
+
+### Proposed next step
+
+PR #37 stays on hold. No other action queued this round — continuing to look for the next well-motivated step.
