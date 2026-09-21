@@ -135,6 +135,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `docs/assets/external-boundary-shift-v2-novelty-null-criteria.svg` | Public chart: all six criteria pass in every replicate |
 | `logs/2026-09-21-claude-boundary-shift-v2-selfreview.md` | Solo design + self-review, including the diagnosed order-share mechanism and the reuse-feedback dynamic |
 | `logs/2026-09-21-claude-boundary-shift-v2-execution.md` | Execution log, verification steps performed, and careful interpretation |
+| `data/scripts/external_currier_ab_diagnostic.py` | Diagnostic: does a six-criterion-passing mechanism also reproduce Voynich's real Currier A/B pooled-entropy asymmetry when split by the real line labels |
+| `data/derived/external-currier-ab-diagnostic-summary.json` | Real vs. generated A/B entropy values per replicate |
+| `data/derived/external-currier-ab-diagnostic-report.md` | Result: real gap +0.278 bits; boundary-shift-v2 generated gap ~0 (mean -0.0029) — concrete evidence the six criteria miss a real structural property |
+| `logs/2026-09-21-claude-currier-ab-diagnostic.md` | Diagnostic log |
 
 ## If you are ChatGPT picking this up for the first time
 
