@@ -178,40 +178,57 @@ def main() -> None:
     letters = "".join(words)
 
     import random
-    cipher_seeds = [42, 179, 316, 453, 590][: args.replicates]
-    post_seeds = [8000042, 8000179, 8000316, 8000453, 8000590][: args.replicates]
+    sys.path.insert(0, str(ROOT / "data" / "scripts"))
+    from external_bigram_novelty_null_audit import transform_replicate as bigram_transform
 
-    results = []
-    for cs, ps in zip(cipher_seeds, post_seeds):
+    cipher_seeds = [42, 179, 316, 453, 590][: args.replicates]
+    shift_post_seeds = [8000042, 8000179, 8000316, 8000453, 8000590][: args.replicates]
+    bigram_post_seeds = [5000042, 5000179, 5000316, 5000453, 5000590][: args.replicates]
+
+    def gap_for(expanded_tokens):
+        gen_lines = scale.wrap_to_lengths(expanded_tokens, line_lengths)
+        a_words = [tok for line, label in zip(gen_lines, currier_labels) if label == "A" for tok in line]
+        b_words = [tok for line, label in zip(gen_lines, currier_labels) if label == "B" for tok in line]
+        a_h2 = char_bigram_conditional_entropy(a_words)
+        b_h2 = char_bigram_conditional_entropy(b_words)
+        return a_h2, b_h2, a_h2 - b_h2, len(a_words), len(b_words)
+
+    mechanisms: dict[str, list] = {"baseline_naibbe": [], "bigram_novelty_null": [], "boundary_shift_v2": []}
+    for cs, sps, bps in zip(cipher_seeds, shift_post_seeds, bigram_post_seeds):
         encrypted = cipher.encrypt(letters, cs)
         atomic = [headlines.collapse(t) for t in encrypted["tokens"]]
-        rng = random.Random(ps)
+
+        a_h2, b_h2, gap, na, nb = gap_for([expand(t) for t in atomic])
+        mechanisms["baseline_naibbe"].append({"cipher_seed": cs, "A_H2": a_h2, "B_H2": b_h2, "gap": gap,
+                                               "A_words": na, "B_words": nb})
+        log(f"baseline_naibbe seed {cs}: A={a_h2:.4f} B={b_h2:.4f} gap={gap:.4f}")
+
+        transformed = bigram_transform(atomic, beta=0.5, nu=0.2, seed=bps)
+        a_h2, b_h2, gap, na, nb = gap_for([expand(t) for t in transformed])
+        mechanisms["bigram_novelty_null"].append({"cipher_seed": cs, "postprocessor_seed": bps,
+                                                    "A_H2": a_h2, "B_H2": b_h2, "gap": gap, "A_words": na, "B_words": nb})
+        log(f"bigram_novelty_null seed {cs}: A={a_h2:.4f} B={b_h2:.4f} gap={gap:.4f}")
+
+        rng = random.Random(sps)
         coupled = apply_coupling(atomic, 0.5, rng)
         shifted = apply_boundary_shift_v2(coupled, 0.2, rng)
-        expanded = [expand(t) for t in shifted]
-        gen_lines = scale.wrap_to_lengths(expanded, line_lengths)
-        gen_a_words = [tok for line, label in zip(gen_lines, currier_labels) if label == "A" for tok in line]
-        gen_b_words = [tok for line, label in zip(gen_lines, currier_labels) if label == "B" for tok in line]
-        gen_a_h2 = char_bigram_conditional_entropy(gen_a_words)
-        gen_b_h2 = char_bigram_conditional_entropy(gen_b_words)
-        gap = gen_a_h2 - gen_b_h2
-        results.append({
-            "cipher_seed": cs, "postprocessor_seed": ps,
-            "generated_A_H2": gen_a_h2, "generated_B_H2": gen_b_h2, "generated_gap": gap,
-            "A_words": len(gen_a_words), "B_words": len(gen_b_words),
-        })
-        log(f"seed {cs}: generated A={gen_a_h2:.4f} B={gen_b_h2:.4f} gap={gap:.4f}")
+        a_h2, b_h2, gap, na, nb = gap_for([expand(t) for t in shifted])
+        mechanisms["boundary_shift_v2"].append({"cipher_seed": cs, "postprocessor_seed": sps,
+                                                  "A_H2": a_h2, "B_H2": b_h2, "gap": gap, "A_words": na, "B_words": nb})
+        log(f"boundary_shift_v2 seed {cs}: A={a_h2:.4f} B={b_h2:.4f} gap={gap:.4f}")
 
-    mean_gap = sum(r["generated_gap"] for r in results) / len(results)
     summary = {
         "real_voynich": {"A_H2": real_a_h2, "B_H2": real_b_h2, "gap": real_a_h2 - real_b_h2,
                           "A_words": len(real_a_words), "B_words": len(real_b_words)},
-        "generated_boundary_shift_v2": {"replicates": results, "mean_gap": mean_gap},
     }
+    for name, results in mechanisms.items():
+        mean_gap = sum(r["gap"] for r in results) / len(results)
+        summary[name] = {"replicates": results, "mean_gap": mean_gap}
+        log(f"{name}: mean gap={mean_gap:.4f} (range {min(r['gap'] for r in results):.4f} to {max(r['gap'] for r in results):.4f})")
+
     OUT_JSON.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     log(f"wrote {OUT_JSON}")
-    log(f"REAL gap: {real_a_h2 - real_b_h2:.4f} bits | GENERATED mean gap: {mean_gap:.4f} bits "
-        f"(range {min(r['generated_gap'] for r in results):.4f} to {max(r['generated_gap'] for r in results):.4f})")
+    log(f"REAL gap: {real_a_h2 - real_b_h2:.4f} bits")
 
 
 if __name__ == "__main__":

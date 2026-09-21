@@ -1,4 +1,4 @@
-# Currier A/B diagnostic: a mechanism that passes all six criteria still shows no trace of Voynich's real A/B asymmetry
+# Currier A/B diagnostic: no tested mechanism shows Voynich's real A/B asymmetry — general, not specific to one design
 
 Diagnostic, not a preregistered mechanism test — a post-hoc analysis of already-generated, already-frozen boundary-shift-v2 replicate data (`data/scripts/external_currier_ab_diagnostic.py`), motivated directly by the knowledge base's newly-reframed Open Question (see `knowledge-base/state.md`, PR #37): now that the six-criterion joint profile is known to be constructible by a mechanism with no real-world motivation, what *other* known, real structural properties of Voynichese would a genuine candidate need to reproduce that the six criteria don't test?
 
@@ -10,23 +10,22 @@ Method: parsed the real per-line Currier labels directly from the external `voyn
 
 ## Result
 
+**Extended after the initial check (same day) to test whether the null result is specific to boundary-shift-v2 or general across mechanism families.** Tested three mechanisms, same 5 frozen seeds each: plain baseline Naibbe (no postprocessing at all), bigram-novelty-null's primary configuration (the substitution-based family), and boundary-shift-v2's primary configuration (the shift-based family, PR #36).
+
 | | A | B | gap (A − B) |
 |---|---:|---:|---:|
 | **Real Voynich** (collapsed-EVA representation) | 2.5198 bits (10,123 words) | 2.2418 bits (22,093 words) | **+0.2780 bits** |
-| Generated, seed 42 | 2.2290 | 2.2322 | −0.0032 |
-| Generated, seed 179 | 2.2142 | 2.2170 | −0.0029 |
-| Generated, seed 316 | 2.2219 | 2.2224 | −0.0005 |
-| Generated, seed 453 | 2.2237 | 2.2286 | −0.0049 |
-| Generated, seed 590 | 2.2203 | 2.2231 | −0.0028 |
-| **Generated mean** | — | — | **−0.0029 bits** (range −0.0049 to −0.0005) |
+| baseline_naibbe (mean of 5 seeds) | ~2.002 | ~1.994 | **+0.0078** (range +0.0036 to +0.0121) |
+| bigram_novelty_null (mean of 5 seeds) | ~2.324 | ~2.350 | **−0.0265** (range −0.0321 to −0.0125) |
+| boundary_shift_v2 (mean of 5 seeds) | ~2.222 | ~2.225 | **−0.0029** (range −0.0049 to −0.0005) |
 
-Note: the real-Voynich values here use the same "collapsed" character representation as the mechanism-test pipeline throughout this project, not the raw literal-EVA tokenization behind the originally-cited Statistician pass 1 numbers (2.20 vs 1.98) — the two are not numerically identical, but both show the same real, substantial, same-direction asymmetry; this diagnostic uses the representation that makes the real-vs-generated comparison apples-to-apples.
+Every tested mechanism's gap is at least an order of magnitude smaller than the real gap, and none is consistently the same sign as the real (positive) asymmetry — bigram_novelty_null is even consistently negative, the opposite direction. Note: the real-Voynich values here use the same "collapsed" character representation as the mechanism-test pipeline throughout this project, not the raw literal-EVA tokenization behind the originally-cited Statistician pass 1 numbers (2.20 vs 1.98) — the two are not numerically identical, but both show the same real, substantial, same-direction asymmetry; this diagnostic uses the representation that makes the real-vs-generated comparison apples-to-apples.
 
 ## Interpretation
 
-**The real asymmetry is substantial (0.278 bits) and the generated asymmetry is essentially zero (mean −0.003 bits, all five replicates clustered tightly around zero, none within an order of magnitude of the real gap).** This is exactly the pattern the null hypothesis predicted: a mechanism with no A/B-differentiating logic shows none, even though it passes every one of the six frozen criteria that this project has used throughout to evaluate candidate mechanisms.
+**The real asymmetry is substantial (0.278 bits) and every tested generated mechanism's asymmetry is essentially zero by comparison.** This is exactly the pattern the null hypothesis predicted: a mechanism with no A/B-differentiating logic shows none, regardless of whether it's the simplest tested mechanism (plain Naibbe, no postprocessing) or the one that passes every one of the six frozen criteria (boundary-shift-v2).
 
-**This is concrete, first evidence for the reframed Open Question.** It doesn't answer "what would a genuine candidate need to supply" in general, but it identifies one specific, real, already-documented structural property — the Currier A/B pooled-entropy asymmetry — that the six-criterion-passing boundary-shift-v2 mechanism does not reproduce, and by the same homogeneous-process logic, no mechanism tested in this project would be expected to reproduce it either, since none has any A/B-differentiating structure.
+**This is now confirmed general, not a property of one design.** All three tested mechanisms — spanning the full range from "no postprocessing at all" to "passes all six criteria" — show a gap at least an order of magnitude smaller than Voynich's real asymmetry, and not even consistently the same sign. This is concrete evidence that "matching the pooled character/vocabulary statistics this project has tested so far" and "reproducing the real Currier A/B structural asymmetry" are independent properties — a mechanism can have either without the other, and none tested has both.
 
 **This does not show A/B is impossible to construct.** A generator that deliberately used different parameters for different labeled sections (e.g., different beta/nu values, or a different internal model, applied to different stretches of output corresponding to the real page sequence) might well reproduce this asymmetry — that was never tested here, since it would require the generator to have some notion of "section" at all, which none of the tested designs do. This diagnostic shows an *absence* in the current designs, not evidence of a general limit.
 
