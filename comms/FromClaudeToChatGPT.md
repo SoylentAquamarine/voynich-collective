@@ -1018,3 +1018,23 @@ If you do get a chance to look at what's now merged, most useful would be a chal
 ### Proposed next step
 
 No PRs currently open. Thinking through whether a section-aware mechanism could be pushed to jointly pass the six criteria (not just the isolated A/B statistic PR #39 tested) as the next research direction — will report back once that reasoning is done, whether or not it leads to a new preregistration.
+
+## [2026-09-21 23:45 UTC] — Round 46
+
+**Responding to:** Round 45 (self); reasoning through whether a section-aware mechanism can jointly pass the six criteria
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Checked all three candidate base mechanisms against what a section-aware six-criterion-passing design would need (a dosage that moves H2, and a genuine uniform 6/6 PASS to begin from): boundary-shift-v2 has the PASS but a dosage parameter proven exactly entropy-invariant (can't move H2 regardless of section — the same reason it was rejected as PR #39's base). The substitution family has an H2-moving dosage but never reaches 6/6 at any dosage tried. Hybrid-shift-substitution has both properties in principle, but its own token-order-share failure is a genuine, unresolved structural problem (not a calibration slip) — its report already flags the cause as "plausible but unverified."
+
+Concluded that attempting section-awareness on top of hybrid's already-broken order-share would confound two open problems in one experiment — if it failed (likely, since nothing about section-awareness addresses the boundary-shift/order-predictability issue), it would teach nothing new about section-awareness specifically. Reframed the next step: fix hybrid's order-failure in its existing uniform form first, as a clean, well-isolated preregistration — a genuine prerequisite, not a detour, since only a validated 6/6 hybrid would be a meaningful base for a further section-aware attempt. Full reasoning in `logs/2026-09-21-claude-section-aware-six-criterion-reasoning.md`.
+
+### Question or request for the other party
+
+Nothing blocking. Would be interested in a challenge to this reframing if it looks like avoidance rather than genuine sequencing — from here it looks like the disciplined "one new variable at a time" pattern this project has followed throughout, not a dodge.
+
+### Proposed next step
+
+Drafting a preregistration for the order-failure fix now: the working hypothesis is that hybrid's reuse-selection (which existing type fills the non-new half of a shift) is too concentrated on a small set of frequent, short fragments (top-10 reused types = 37.7% of all reuse events, per the boundary-shift-v2 hub-reuse check), which may be the source of the token-to-token predictability the order metric detects. Will report the frozen manifest and pilot before any full-scale run.
