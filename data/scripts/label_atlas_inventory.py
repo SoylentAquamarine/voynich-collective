@@ -32,6 +32,7 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "ZL3b-n.txt"
 NORMALIZED = ROOT / "data" / "derived" / "ZL3b-normalized.txt"
 MANUSCRIPT_README = ROOT / "docs" / "assets" / "manuscript" / "README.md"
+YALE_FOLIO_INDEX = ROOT / "data" / "external" / "yale-iiif-folio-index.json"
 OUT_CSV = ROOT / "data" / "derived" / "label-atlas-lz-pilot.csv"
 OUT_MISSING_IMAGES = ROOT / "data" / "derived" / "label-atlas-lz-missing-images.json"
 OUT_SUMMARY = ROOT / "data" / "derived" / "label-atlas-lz-pilot-summary.json"
@@ -42,24 +43,32 @@ LOCUS_LINE = re.compile(r"^<(f[^.,>]+)\.([^,>]+),([^>]+)>\s*(.*)$")
 CLOCK = re.compile(r"^<!(\d{1,2}:\d{2})>")
 UNCERTAIN_RAW = re.compile(r"[?\[]")
 
-# Only f70v has a local scan (docs/assets/manuscript/f70v.jpg). It very likely
-# depicts f70v2 specifically -- the image shows a central animal figure with
-# two concentric rings of labelled nymph figures, matching f70v2's own locus
-# structure (19 outer-ring + 10 inner-ring + 1 central label) -- but this is a
-# visual inference, not an independently confirmed folio-catalog mapping, and
-# is reported as such rather than asserted as fact.
+# f70v.jpg is confirmed (2026-09-22, see yale-iiif-folio-index-report.md) to
+# depict f70v1, not f70v2 as originally hedged -- three independent lines of
+# evidence: voynich.nu's content description (Aries goat, not Pisces fish),
+# an exact label-count match (15, not 30), and a direct pixel comparison
+# against Yale's own official digitization.
 LOCAL_SCAN_CANDIDATE = {
-    "f70v2": {
+    "f70v1": {
         "file": "docs/assets/manuscript/f70v.jpg",
-        "confirmed": False,
-        "note": (
-            "Local scan f70v.jpg plausibly depicts f70v2 (central animal figure, "
-            "two nymph rings matching f70v2's 19 outer + 10 inner + 1 central Lz "
-            "loci), but this is a visual inference, not confirmed against an "
-            "independent folio catalog. f70v1 has no candidate scan at all."
-        ),
+        "confirmed": True,
+        "note": "Confirmed by content description, label count, and direct visual match to Yale canvas 1006201.",
     }
 }
+
+
+def load_yale_images() -> dict[str, dict]:
+    if not YALE_FOLIO_INDEX.exists():
+        return {}
+    index = json.loads(YALE_FOLIO_INDEX.read_text(encoding="utf-8"))
+    by_folio: dict[str, dict] = {}
+    for folio, entries in index.get("by_folio", {}).items():
+        entry = entries[0]
+        by_folio[folio] = {
+            "url": entry["full_jpg"],
+            "composite": entry["composite"],
+        }
+    return by_folio
 
 
 def load_pages() -> dict[str, dict[str, str]]:
@@ -95,6 +104,7 @@ def classify(descriptor: str) -> tuple[str, str, str]:
 def build_inventory() -> tuple[list[dict], dict]:
     pages = load_pages()
     normalized = load_normalized()
+    yale_images = load_yale_images()
 
     rows: list[dict] = []
     prefix_counts: Counter[str] = Counter()
@@ -126,7 +136,8 @@ def build_inventory() -> tuple[list[dict], dict]:
             unmatched_normalized += 1
 
         meta = pages.get(page, {})
-        image = LOCAL_SCAN_CANDIDATE.get(page)
+        local_image = LOCAL_SCAN_CANDIDATE.get(page)
+        yale_image = yale_images.get(page)
 
         prefix_counts[f"{prefix}Lz"] += 1
         rows.append(
@@ -142,8 +153,9 @@ def build_inventory() -> tuple[list[dict], dict]:
                 "quire": meta.get("Q", ""),
                 "hand": meta.get("H", ""),
                 "illustration": meta.get("I", ""),
-                "image_available": bool(image and image["confirmed"]),
-                "image_candidate": image["file"] if image else "",
+                "image_available": bool((local_image and local_image["confirmed"]) or yale_image),
+                "image_candidate": (local_image or {}).get("file", "") or (yale_image or {}).get("url", ""),
+                "image_is_composite": bool(yale_image and yale_image["composite"] and not local_image),
             }
         )
 
@@ -178,18 +190,20 @@ def build_inventory() -> tuple[list[dict], dict]:
 def build_missing_images(rows: list[dict]) -> dict:
     folios = sorted({row["folio"] for row in rows})
     missing = [f for f in folios if not any(r["folio"] == f and r["image_available"] for r in rows)]
-    candidates = {f: LOCAL_SCAN_CANDIDATE[f] for f in folios if f in LOCAL_SCAN_CANDIDATE}
+    composite = sorted({r["folio"] for r in rows if r["image_is_composite"]})
     return {
         "note": (
-            "No Lz folio currently has a CONFIRMED local scan. One (f70v2) has an "
-            "unconfirmed candidate already present in the repo (see "
-            "docs/assets/manuscript/README.md); the remaining 11 folios have no "
-            "local scan at all. Acquiring new scans requires explicit user "
-            "authorization (file downloads) and is out of scope for this pilot."
+            "As of 2026-09-22, all 12 Lz folios have an image available: one "
+            "confirmed local scan (f70v1) plus Yale's official IIIF index "
+            "(data/external/yale-iiif-folio-index.json) for the rest. Folios "
+            "listed under composite_multi_panel_images share one photograph "
+            "with other folios (a foldout spread) and are not yet split into "
+            "per-panel crops -- that is a follow-up image-processing task."
         ),
         "folios_missing_any_image": missing,
-        "candidate_but_unconfirmed": candidates,
+        "composite_multi_panel_images": composite,
         "manuscript_readme": str(MANUSCRIPT_README.relative_to(ROOT)),
+        "yale_folio_index": str(YALE_FOLIO_INDEX.relative_to(ROOT)),
     }
 
 
@@ -203,7 +217,7 @@ def main() -> None:
             fieldnames=[
                 "folio", "locus_id", "descriptor", "prefix", "locus_key", "clock",
                 "normalized_word", "has_uncertain_reading", "quire", "hand",
-                "illustration", "image_available", "image_candidate",
+                "illustration", "image_available", "image_candidate", "image_is_composite",
             ],
         )
         writer.writeheader()
