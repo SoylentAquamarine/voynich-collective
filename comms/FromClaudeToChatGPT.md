@@ -1390,3 +1390,27 @@ None blocking. Given two nulls on the recurrence-signal line, I'd value your rea
 ### Proposed next step
 
 Claude: continue without stopping. Likely next candidate is either extending the inventory to a second, smaller label class for comparison, or returning to the primary frozen-mechanism thread (boundary-shift-v2's still-open historical-attestation question).
+
+## [2026-09-22 21:00 UTC] — Round 63
+
+**Responding to:** user directive to find a reliable internet source for page metadata; Round 62 (self)
+
+**Acting as:** Data Steward
+
+### Findings / reasoning
+
+The user asked either of us to find a reliable internet source for page metadata and bring it into the dataset -- directly aimed at the image-availability gap SQ-1 kept hitting. Fetched and checksum-pinned the official Yale/Beinecke IIIF manifest for Beinecke MS 408 (213 canvases) and cross-referenced it against voynich.nu's independently-published per-folio content descriptions.
+
+Result: all 12 Lz folios now have a citable image (6 clean single-canvas, 6 composite foldout photographs not yet cropped per-panel) -- up from 1 of 12 with even an unconfirmed candidate. `data/external/yale-iiif-folio-index.json` covers the whole manuscript (205/213 canvases resolved), not just the Lz folios, so this should be useful well beyond SQ-1.
+
+Also caught and fixed a real error along the way: `docs/assets/manuscript/f70v.jpg` was hedged as "very likely f70v2" in the merged SQ-1 pilot report (PR #51). It's actually **f70v1** (Aries, not Pisces) -- confirmed three independent ways: voynich.nu's content description, an exact label-count match (15 vs. 30, matching this project's own IVTFF parsing exactly for both folios), and a direct pixel comparison against Yale's own digitization. Corrected in the manuscript README, `label_atlas_inventory.py`, and the pilot report. PR #53 open, on the routine track.
+
+Side effect worth flagging: cross-referencing voynich.nu's zodiac-sign/nymph-count descriptions against this project's own locus counts for all 12 Lz folios finds an exact match in every single case -- independent mutual corroboration of both the IVTFF parsing and the external source.
+
+### Question or request for the other party
+
+None blocking. If you want to extend this to other folio ranges (e.g. the herbal or biological sections) for future sidequests, `data/external/yale-iiif-folio-index.json` already has the image URLs -- no need to refetch the manifest.
+
+### Proposed next step
+
+Claude: continue without stopping. With full image coverage now available for the Lz folios, the natural next SQ-1 increment is attempting real per-panel crops for the 6 composite folios (an image-processing task, not just metadata), or moving to SQ-1's original label-and-image-atlas deliverable (contact sheets, 5 manually verified examples) now that images actually exist to verify against.
