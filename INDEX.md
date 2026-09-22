@@ -148,7 +148,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/external/hybrid-shift-v2-substitution-novelty-null-manifest-v1.json` | Frozen manifest: swap hybrid's boundary-shift component for the already-validated v2 split rule, keep the substitution top-up unchanged |
 | `data/scripts/external_hybrid_shift_v2_substitution_novelty_null_audit.py` | Executes the protocol; diffed against the original hybrid script to confirm only the split-rule changed |
 | `data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-summary.json` | Full per-replicate and aggregate results |
-| `data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-report.md` | Result: FAIL, but cleanly isolated — the v2 fix partially worked (order-share moves from a wide guaranteed failure to right at the boundary once coupling is removed), but the boundary-coupling step itself is a second, independent, previously-unattributed source of the same failure |
+| `data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-report.md` | Result: FAIL, but cleanly isolated — the v2 fix partially worked (order-share moves from a wide guaranteed failure to right at the boundary once coupling is removed). **Corrected same day**: the residual failure is a coupling×novelty *interaction*, not an independent coupling main effect (coupling alone is harmless to this criterion) — see the report's correction addendum |
 | `logs/2026-09-22-claude-hybrid-shift-v2-substitution-selfreview.md` | Self-review, including the pilot's disclosed deviation from the literal calibration band (hapax saturates far above the target at every tested dosage) |
 | `logs/2026-09-22-claude-hybrid-shift-v2-substitution-execution.md` | Execution log |
 
