@@ -1,0 +1,91 @@
+{
+  "real_voynich_reference": {
+    "zipf_slope": -0.9266,
+    "lev_le2_excess": 0.018330034378581106,
+    "provenance": "Zipf: statistician-pass1-summary.json (2026-09-19, unrelated purpose). Lev: external-selfcitation-state-summary.json (2026-09-20, unrelated mechanism)"
+  },
+  "replicates": {
+    "boundary_shift_v2_primary": [
+      {
+        "cipher_seed": 42,
+        "zipf_slope": -0.9226042095400467,
+        "lev_le2_observed": 0.04163628155710664,
+        "lev_le2_shuffled": 0.050274855019620104,
+        "lev_le2_excess": -0.008638573462513462
+      },
+      {
+        "cipher_seed": 179,
+        "zipf_slope": -0.925274674052782,
+        "lev_le2_observed": 0.04389346112442268,
+        "lev_le2_shuffled": 0.050717088585616556,
+        "lev_le2_excess": -0.0068236274611938735
+      },
+      {
+        "cipher_seed": 316,
+        "zipf_slope": -0.9249454456195962,
+        "lev_le2_observed": 0.04427544535889155,
+        "lev_le2_shuffled": 0.051381567524394905,
+        "lev_le2_excess": -0.0071061221655033535
+      },
+      {
+        "cipher_seed": 453,
+        "zipf_slope": -0.9131966198086506,
+        "lev_le2_observed": 0.04264333090252457,
+        "lev_le2_shuffled": 0.05035159912490885,
+        "lev_le2_excess": -0.007708268222384282
+      },
+      {
+        "cipher_seed": 590,
+        "zipf_slope": -0.9300276370427861,
+        "lev_le2_observed": 0.04243497586554155,
+        "lev_le2_shuffled": 0.05094506372191548,
+        "lev_le2_excess": -0.00851008785637393
+      }
+    ],
+    "hybrid_shift_v2_substitution_primary": [
+      {
+        "cipher_seed": 42,
+        "zipf_slope": -1.1216028933773023,
+        "lev_le2_observed": 0.03538563044761607,
+        "lev_le2_shuffled": 0.06809146786123554,
+        "lev_le2_excess": -0.032705837413619473
+      },
+      {
+        "cipher_seed": 179,
+        "zipf_slope": -1.1232207387930633,
+        "lev_le2_observed": 0.032329756571865126,
+        "lev_le2_shuffled": 0.06718616522554433,
+        "lev_le2_excess": -0.0348564086536792
+      },
+      {
+        "cipher_seed": 316,
+        "zipf_slope": -1.125263491168457,
+        "lev_le2_observed": 0.03583706636107928,
+        "lev_le2_shuffled": 0.06821439733305552,
+        "lev_le2_excess": -0.032377330971976245
+      },
+      {
+        "cipher_seed": 453,
+        "zipf_slope": -1.123843837434422,
+        "lev_le2_observed": 0.03274646664583116,
+        "lev_le2_shuffled": 0.06722280098621385,
+        "lev_le2_excess": -0.034476334340382685
+      },
+      {
+        "cipher_seed": 590,
+        "zipf_slope": -1.103855909193926,
+        "lev_le2_observed": 0.03548980796610758,
+        "lev_le2_shuffled": 0.06765218599159635,
+        "lev_le2_excess": -0.03216237802548877
+      }
+    ]
+  },
+  "boundary_shift_v2_primary_summary": {
+    "mean_zipf_slope": -0.9232097172127723,
+    "mean_lev_le2_excess": -0.00775733583359378
+  },
+  "hybrid_shift_v2_substitution_primary_summary": {
+    "mean_zipf_slope": -1.1195573739934341,
+    "mean_lev_le2_excess": -0.033315657881029276
+  }
+}
