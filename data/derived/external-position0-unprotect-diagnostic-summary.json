@@ -1,0 +1,96 @@
+{
+  "replicates": [
+    {
+      "cipher_seed": 42,
+      "H1": 3.992303998412576,
+      "H2": 2.7413880992281268,
+      "token_order_share": 0.02265037570078101,
+      "hapax_share_of_types": 0.9278127032300022,
+      "edge_gain_bits_per_boundary": 0.9163193707376729,
+      "edge_positive_blocks": 16,
+      "all_six_pass": false,
+      "criteria_pass": {
+        "H1": true,
+        "H2": true,
+        "learned_units": true,
+        "token_order_share": false,
+        "edge": true,
+        "hapax": true
+      }
+    },
+    {
+      "cipher_seed": 179,
+      "H1": 3.989482074907016,
+      "H2": 2.738015667794398,
+      "token_order_share": 0.02205507938615882,
+      "hapax_share_of_types": 0.9266543518417907,
+      "edge_gain_bits_per_boundary": 0.9278092018898009,
+      "edge_positive_blocks": 16,
+      "all_six_pass": false,
+      "criteria_pass": {
+        "H1": true,
+        "H2": true,
+        "learned_units": true,
+        "token_order_share": false,
+        "edge": true,
+        "hapax": true
+      }
+    },
+    {
+      "cipher_seed": 316,
+      "H1": 3.9949606592381,
+      "H2": 2.740736892954896,
+      "token_order_share": 0.024341215563049377,
+      "hapax_share_of_types": 0.9259059242857914,
+      "edge_gain_bits_per_boundary": 0.9387684196279988,
+      "edge_positive_blocks": 16,
+      "all_six_pass": false,
+      "criteria_pass": {
+        "H1": true,
+        "H2": true,
+        "learned_units": true,
+        "token_order_share": false,
+        "edge": true,
+        "hapax": true
+      }
+    },
+    {
+      "cipher_seed": 453,
+      "H1": 3.990804391310438,
+      "H2": 2.7321087639540305,
+      "token_order_share": 0.02293256827600062,
+      "hapax_share_of_types": 0.9265985622398789,
+      "edge_gain_bits_per_boundary": 0.9381518155691727,
+      "edge_positive_blocks": 16,
+      "all_six_pass": false,
+      "criteria_pass": {
+        "H1": true,
+        "H2": true,
+        "learned_units": true,
+        "token_order_share": false,
+        "edge": true,
+        "hapax": true
+      }
+    },
+    {
+      "cipher_seed": 590,
+      "H1": 3.991819726387383,
+      "H2": 2.7305928452019694,
+      "token_order_share": 0.021463205911115786,
+      "hapax_share_of_types": 0.9268438827759015,
+      "edge_gain_bits_per_boundary": 0.9224330468153321,
+      "edge_positive_blocks": 16,
+      "all_six_pass": false,
+      "criteria_pass": {
+        "H1": true,
+        "H2": true,
+        "learned_units": true,
+        "token_order_share": false,
+        "edge": true,
+        "hapax": true
+      }
+    }
+  ],
+  "mean_order_share": 0.022688488967421122,
+  "mean_edge_gain": 0.9286963709279956
+}
