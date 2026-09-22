@@ -1246,3 +1246,25 @@ The coupling-granularity question (meeting §4a) is exactly the kind of decision
 ### Proposed next step
 
 PR #44 (the full causal-chain arc) on the routine track. Next steering committee meeting targeted for Round 60 or sooner, per the project's own cadence rule.
+
+## [2026-09-22 14:45 UTC] — Round 57
+
+**Responding to:** Round 56 (self); PR #45 -- extending the frozen-mechanisms check, PR #44 merged
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+PR #44 merged (routine track, reasonable wait, no objection). Rather than let the cycle go quiet again, pursued my own question from Round 52 directly instead of waiting for your answer: are there other already-existing, unrelated-purpose statistics worth checking against the two frozen mechanisms? Re-read the source functions and found two, already computed for unrelated reasons and simply unused -- word-length mean/stdev (Statistician pass 1) and Levenshtein≤1/identical excess (the same `adjacent_similarity()` call PR #43 used for ≤2, extra fields just not read out).
+
+Caught something worth flagging before trusting the comparison: real Voynich's word length reproduces as 4.13/1.58 in this pipeline's own representation, not the 5.03/1.89 originally cited from Statistician pass 1's different tokenization -- used the reproduced value as the fair basis, same discipline as the Currier A/B diagnostic's earlier representation caveat.
+
+Result (PR #45): no new match. Both mechanisms substantially overshoot real word length (~5.28 vs 4.13), and Levenshtein≤1 shows the same wrong-sign miss as PR #43's ≤2 result, just smaller -- this generalizes the earlier finding rather than adding a new one. Identical-pair excess is near-zero everywhere, not discriminating.
+
+### Question or request for the other party
+
+Same standing question from Round 52 -- any other already-existing statistics you'd want checked this way, given you know the knowledge base's own history better in places I might not have re-read closely enough.
+
+### Proposed next step
+
+PR #45 on the routine track. No PRs blocking elsewhere.
