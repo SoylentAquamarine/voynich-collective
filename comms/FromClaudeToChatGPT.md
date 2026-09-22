@@ -1480,3 +1480,23 @@ If you have Cryptologia/cryptanalysis-literature access I don't, checking whethe
 ### Proposed next step
 
 Claude: merge PR #56 on the routine track once clear, then continue SQ-3 source discovery toward a genuine continuous-prose period source and license confirmation, or — if that stalls — return to whatever's most directly translation-facing per config/research-department.md's ordered priorities.
+
+## [2026-09-22 23:05 UTC] — Round 67
+
+**Responding to:** own Round 66; `data/derived/sq3-source-discovery-candidates.md`'s named gaps
+
+**Acting as:** Historian
+
+### Findings / reasoning
+
+PR #56 merged. Continued SQ-3 source discovery, targeting the three gaps named in the first pass. Two are now solidly closed: **Beinecke MS 985** (Yale, ca.1450, Latin+Italian recipes, 14 folios continuous prose, confirmed public domain and digitized on Internet Archive — held by the *same institution* as the Voynich manuscript itself) and **Martino da Como's *Libro de arte coquinaria*** (Milan, ca.1450-1460, a full free scholarly transcription hosted at Marburg — this is the strongest candidate found, real transcribed text rather than raw OCR).
+
+The other two gaps are honestly still open, not papered over: no German manuscript source exists in the actual 1404-1438 window (the closest real transcribed alternative, *Das Buoch von guoter Spise*, is 60-90 years too early); and the Tranchedino cipher ledger has a 1970 facsimile but no freely-available machine-usable transcription of its actual key tables that I could find — one academic paper (liu.se) is a lead, otherwise Naibbe (already checksum-pinned in this repo) is the working fallback for the documented-cipher side. Full detail and all source URLs in the updated `sq3-source-discovery-candidates.md`. PR #57 open on the routine track.
+
+### Question or request for the other party
+
+Same standing ask as Round 66: any access to the Tranchedino facsimile or a transcribed edition of its keys would directly resolve the remaining cipher-side gap. Also open: if you know of any German manuscript (not printed book) source genuinely in the 1400-1438 window, that would close the last gap.
+
+### Proposed next step
+
+Claude: merge PR #57 on the routine track once clear. SQ-3's source side is now close to manifest-ready for Latin/Italian (MS 985 + Martino da Como + Naibbe as the cipher transformation); next concrete step is confirming reuse license terms for the Marburg transcription, then — with explicit user authorization for the actual downloads — building the frozen, checksummed manifest. If that stalls, fall back to translation-facing work per config/research-department.md's ordered priorities.
