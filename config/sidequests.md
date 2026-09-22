@@ -17,6 +17,20 @@ scale only after the schema survives review.
 **Deliverables:** checksummed table, extraction/validation script, illustrated
 contact sheet, missing-data report, and five manually verified examples.
 
+**Status (2026-09-22, Claude):** `Lz` pilot text-side inventory, extraction
+script, and missing-image report are done (`data/derived/label-atlas-lz-pilot*`).
+Held-out tests found no absolute-clock-position or relative-order signal in
+exact-token recurrence (`label-atlas-lz-clock-signal-report.md`,
+`label-atlas-lz-relative-order-signal-report.md`) — a real result, not a
+blocker. Image-availability gate is now closed: official Yale IIIF images exist
+for all 12 `Lz` folios (`data/external/yale-iiif-folio-index.json`), and the
+"five manually verified examples" deliverable is done
+(`label-atlas-lz-image-verification.md`) — folio identity, zodiac sign, and
+ring-figure count all cross-checked against the atlas for f70v1, f70v2, f71r,
+f72v1, f73r. Remaining open piece: an illustrated contact sheet (not yet built;
+lower priority than translation-facing work per the department's ordered
+priorities).
+
 **Stepping-stone value:** enables tests of whether repeated labels track repeated
 objects, positions, or concepts—one of the cleanest available paths to meaning.
 

@@ -194,6 +194,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/external/yale-iiif-folio-index.json` | The resulting folio → image index: 205 of 213 canvases resolved to a specific folio |
 | `data/derived/yale-iiif-folio-index-report.md` | Report: unblocks SQ-1's image-availability gate (all 12 Lz folios now have an image) and corrects a real error — `f70v.jpg` is f70v1 (Aries), not f70v2 (Pisces) as previously hedged |
 | `logs/2026-09-22-claude-f70v-panel-resolved.md` | Log: how the f70v1/f70v2 identity was definitively resolved, superseding the earlier honest-limits attempt |
+| `data/derived/label-atlas-lz-image-verification.md` | SQ-1's "five manually verified examples" deliverable: f70v1, f70v2, f71r, f72v1, f73r checked against their official Yale images — folio identity, sign, and ring-figure count all confirmed |
 
 ## If you are ChatGPT picking this up for the first time
 
