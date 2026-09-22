@@ -1,0 +1,1030 @@
+folio,locus_id,descriptor,prefix,subtype,locus_key,clock,normalized_word,has_uncertain_reading,quire,hand,illustration,currier_language
+f2r,14,@Lp,@,p,"f2r.14,@Lp",,ytoail,False,A,1,H,A
+f2r,15,@L0,@,0,"f2r.15,@L0",,ios an on,False,A,1,H,A
+f11v,5,*L0,*,0,"f11v.5,*L0",,dd,False,B,1,H,A
+f17r,13,@Lx,@,x,"f17r.13,@Lx",,oteeeon oiil,False,C,1,H,A
+f41v,1,@Lp,@,p,"f41v.1,@Lp",,keeredal,True,F,5,H,B
+f49v,1,@L0,@,0,"f49v.1,@L0",,f,False,G,1,H,A
+f49v,3,*L0,*,0,"f49v.3,*L0",,o,False,G,1,H,A
+f49v,5,*L0,*,0,"f49v.5,*L0",,r,False,G,1,H,A
+f49v,7,*L0,*,0,"f49v.7,*L0",,y,False,G,1,H,A
+f49v,9,*L0,*,0,"f49v.9,*L0",,e,False,G,1,H,A
+f49v,11,*L0,*,0,"f49v.11,*L0",,@140;,False,G,1,H,A
+f49v,13,*L0,*,0,"f49v.13,*L0",,k,False,G,1,H,A
+f49v,15,*L0,*,0,"f49v.15,*L0",,s,False,G,1,H,A
+f49v,17,*L0,*,0,"f49v.17,*L0",,p,False,G,1,H,A
+f49v,19,*L0,*,0,"f49v.19,*L0",,o,False,G,1,H,A
+f49v,21,*L0,*,0,"f49v.21,*L0",,@192;,False,G,1,H,A
+f49v,23,*L0,*,0,"f49v.23,*L0",,y,False,G,1,H,A
+f49v,25,*L0,*,0,"f49v.25,*L0",,e,False,G,1,H,A
+f49v,27,*L0,*,0,"f49v.27,*L0",,@140;,False,G,1,H,A
+f49v,29,*L0,*,0,"f49v.29,*L0",,@164;,False,G,1,H,A
+f49v,31,*L0,*,0,"f49v.31,*L0",,p,False,G,1,H,A
+f49v,33,*L0,*,0,"f49v.33,*L0",,o,False,G,1,H,A
+f49v,35,*L0,*,0,"f49v.35,*L0",,@192;,False,G,1,H,A
+f49v,37,*L0,*,0,"f49v.37,*L0",,y,False,G,1,H,A
+f49v,39,*L0,*,0,"f49v.39,*L0",,e,False,G,1,H,A
+f49v,41,*L0,*,0,"f49v.41,*L0",,@140;,False,G,1,H,A
+f49v,43,*L0,*,0,"f49v.43,*L0",,d,False,G,1,H,A
+f49v,45,*L0,*,0,"f49v.45,*L0",,y,False,G,1,H,A
+f49v,47,*L0,*,0,"f49v.47,*L0",,e,False,G,1,H,A
+f49v,49,*L0,*,0,"f49v.49,*L0",,k,False,G,1,H,A
+f49v,51,*L0,*,0,"f49v.51,*L0",,y,False,G,1,H,A
+f57v,1,@L0,@,0,"f57v.1,@L0",10:30,dairal,False,H,1,C,
+f57v,6,@L0,@,0,"f57v.6,@L0",,otodarag,True,H,1,C,
+f57v,7,@L0,@,0,"f57v.7,@L0",,oparairdly,False,H,1,C,
+f57v,8,@L0,@,0,"f57v.8,@L0",,olkeedal,False,H,1,C,
+f57v,9,@L0,@,0,"f57v.9,@L0",,otardaly,False,H,1,C,
+f65r,1,@Lp,@,p,"f65r.1,@Lp",,otaim dam alam,False,H,3,H,
+f66r,1,@L0,@,0,"f66r.1,@L0",,rary,False,H,5,T,B
+f66r,2,+L0,+,0,"f66r.2,+L0",,rals,True,H,5,T,B
+f66r,3,+L0,+,0,"f66r.3,+L0",,qor,True,H,5,T,B
+f66r,4,+L0,+,0,"f66r.4,+L0",,dary,False,H,5,T,B
+f66r,5,+L0,+,0,"f66r.5,+L0",,ykeol,False,H,5,T,B
+f66r,6,+L0,+,0,"f66r.6,+L0",,saly,False,H,5,T,B
+f66r,7,+L0,+,0,"f66r.7,+L0",,salf,False,H,5,T,B
+f66r,8,+L0,+,0,"f66r.8,+L0",,fary,False,H,5,T,B
+f66r,9,+L0,+,0,"f66r.9,+L0",,qotesy,False,H,5,T,B
+f66r,10,+L0,+,0,"f66r.10,+L0",,ykaly,False,H,5,T,B
+f66r,11,+L0,+,0,"f66r.11,+L0",,doly,False,H,5,T,B
+f66r,12,+L0,+,0,"f66r.12,+L0",,saiin,False,H,5,T,B
+f66r,13,+L0,+,0,"f66r.13,+L0",,qokal,False,H,5,T,B
+f66r,14,+L0,+,0,"f66r.14,+L0",,qolsa,False,H,5,T,B
+f66r,15,+L0,+,0,"f66r.15,+L0",,raral,False,H,5,T,B
+f66r,16,@L0,@,0,"f66r.16,@L0",,y,False,H,5,T,B
+f66r,17,+L0,+,0,"f66r.17,+L0",,o,False,H,5,T,B
+f66r,18,+L0,+,0,"f66r.18,+L0",,s,False,H,5,T,B
+f66r,19,+L0,+,0,"f66r.19,+L0",,sh,False,H,5,T,B
+f66r,20,+L0,+,0,"f66r.20,+L0",,y,False,H,5,T,B
+f66r,21,+L0,+,0,"f66r.21,+L0",,d,False,H,5,T,B
+f66r,22,+L0,+,0,"f66r.22,+L0",,o,False,H,5,T,B
+f66r,23,+L0,+,0,"f66r.23,+L0",,f,False,H,5,T,B
+f66r,24,+L0,+,0,"f66r.24,+L0",,@169;,False,H,5,T,B
+f66r,25,+L0,+,0,"f66r.25,+L0",,x,False,H,5,T,B
+f66r,26,+L0,+,0,"f66r.26,+L0",,air,False,H,5,T,B
+f66r,27,+L0,+,0,"f66r.27,+L0",,d,False,H,5,T,B
+f66r,28,+L0,+,0,"f66r.28,+L0",,sh,False,H,5,T,B
+f66r,29,+L0,+,0,"f66r.29,+L0",,y,False,H,5,T,B
+f66r,30,+L0,+,0,"f66r.30,+L0",,f,False,H,5,T,B
+f66r,31,+L0,+,0,"f66r.31,+L0",,f,False,H,5,T,B
+f66r,32,+L0,+,0,"f66r.32,+L0",,y,False,H,5,T,B
+f66r,33,+L0,+,0,"f66r.33,+L0",,o,False,H,5,T,B
+f66r,34,+L0,+,0,"f66r.34,+L0",,d,False,H,5,T,B
+f66r,35,+L0,+,0,"f66r.35,+L0",,s,False,H,5,T,B
+f66r,36,+L0,+,0,"f66r.36,+L0",,f,False,H,5,T,B
+f66r,37,+L0,+,0,"f66r.37,+L0",,c,False,H,5,T,B
+f66r,38,+L0,+,0,"f66r.38,+L0",,@172;,True,H,5,T,B
+f66r,39,+L0,+,0,"f66r.39,+L0",,x,False,H,5,T,B
+f66r,40,+L0,+,0,"f66r.40,+L0",,t,False,H,5,T,B
+f66r,41,+L0,+,0,"f66r.41,+L0",,o,False,H,5,T,B
+f66r,42,+L0,+,0,"f66r.42,+L0",,@195;,False,H,5,T,B
+f66r,43,+L0,+,0,"f66r.43,+L0",,l,False,H,5,T,B
+f66r,44,+L0,+,0,"f66r.44,+L0",,r,False,H,5,T,B
+f66r,45,+L0,+,0,"f66r.45,+L0",,t,False,H,5,T,B
+f66r,46,+L0,+,0,"f66r.46,+L0",,o,False,H,5,T,B
+f66r,47,+L0,+,0,"f66r.47,+L0",,x,False,H,5,T,B
+f66r,48,+L0,+,0,"f66r.48,+L0",,p,False,H,5,T,B
+f66r,49,+L0,+,0,"f66r.49,+L0",,d,False,H,5,T,B
+f66r,82,@Lx,@,x,"f66r.82,@Lx",,otcheo daiin chty ykees cheg,False,H,5,T,B
+f67r2,1,@L0,@,0,"f67r2.1,@L0",,ykshy s aram,False,I,4,A,
+f67r2,2,&L0,&,0,"f67r2.2,&L0",,ykecho ols eesydy,False,I,4,A,
+f67r2,3,&L0,&,0,"f67r2.3,&L0",,{c'}ey shs okar,True,I,4,A,
+f67r2,4,&L0,&,0,"f67r2.4,&L0",,shekchy sykos,False,I,4,A,
+f67r2,5,&L0,&,0,"f67r2.5,&L0",,ykeody okchy,False,I,4,A,
+f67r2,6,&L0,&,0,"f67r2.6,&L0",,dchetay,False,I,4,A,
+f67r2,7,&L0,&,0,"f67r2.7,&L0",,ykchy kchey ykchys,False,I,4,A,
+f67r2,8,&L0,&,0,"f67r2.8,&L0",,chkchdar,False,I,4,A,
+f67r2,9,&L0,&,0,"f67r2.9,&L0",,ykar ykaly,False,I,4,A,
+f67r2,10,&L0,&,0,"f67r2.10,&L0",,lkshy kchy okar,False,I,4,A,
+f67r2,11,&L0,&,0,"f67r2.11,&L0",,chky chykchs chy,False,I,4,A,
+f67r2,12,&L0,&,0,"f67r2.12,&L0",,ykees ykchos,False,I,4,A,
+f67r2,15,+L0,+,0,"f67r2.15,+L0",,dolchsody,False,I,4,A,
+f67r2,22,+L0,+,0,"f67r2.22,+L0",,okal,False,I,4,A,
+f67r2,28,+L0,+,0,"f67r2.28,+L0",,okain am,True,I,4,A,
+f67r2,31,+L0,+,0,"f67r2.31,+L0",,opcholdy,False,I,4,A,
+f67r2,34,+L0,+,0,"f67r2.34,+L0",,ofar oeoldan,False,I,4,A,
+f67r2,37,+L0,+,0,"f67r2.37,+L0",,ytoaiin,False,I,4,A,
+f67r2,47,+L0,+,0,"f67r2.47,+L0",,yfain,False,I,4,A,
+f67r2,52,@Ls,@,s,"f67r2.52,@Ls",,qotoear,False,I,4,A,
+f67r2,53,&Ls,&,s,"f67r2.53,&Ls",,dchdar,False,I,4,A,
+f67r2,54,&Ls,&,s,"f67r2.54,&Ls",,y saldal,False,I,4,A,
+f67r2,55,&Ls,&,s,"f67r2.55,&Ls",,ytodal,False,I,4,A,
+f67r2,56,&Ls,&,s,"f67r2.56,&Ls",,tol daiin,False,I,4,A,
+f67r2,57,&Ls,&,s,"f67r2.57,&Ls",,otar dy,False,I,4,A,
+f67r2,58,&Ls,&,s,"f67r2.58,&Ls",,cho dal g,False,I,4,A,
+f67r2,59,&Ls,&,s,"f67r2.59,&Ls",,ytchodly,False,I,4,A,
+f67r2,60,&Ls,&,s,"f67r2.60,&Ls",,octhys,False,I,4,A,
+f67r2,61,&Ls,&,s,"f67r2.61,&Ls",,ytokar,False,I,4,A,
+f67r2,62,&Ls,&,s,"f67r2.62,&Ls",,otolor,False,I,4,A,
+f67r2,63,&Ls,&,s,"f67r2.63,&Ls",,okodar,False,I,4,A,
+f67r2,64,@L0,@,0,"f67r2.64,@L0",,s air,False,I,4,A,
+f67r2,65,&L0,&,0,"f67r2.65,&L0",,soear,True,I,4,A,
+f67r2,66,&L0,&,0,"f67r2.66,&L0",,cpheey,False,I,4,A,
+f67r2,67,&L0,&,0,"f67r2.67,&L0",,okodar,False,I,4,A,
+f67r2,68,&L0,&,0,"f67r2.68,&L0",,oepchod,False,I,4,A,
+f67r2,69,&L0,&,0,"f67r2.69,&L0",,s a{cthh}y,False,I,4,A,
+f67r2,70,&L0,&,0,"f67r2.70,&L0",,osar,False,I,4,A,
+f67r2,71,&L0,&,0,"f67r2.71,&L0",,oran,False,I,4,A,
+f67v2,1,@La,@,a,"f67v2.1,@La",,otchdy,False,I,4,C,
+f67v2,2,@La,@,a,"f67v2.2,@La",,otararain,False,I,4,C,
+f67v2,19,@La,@,a,"f67v2.19,@La",,soaiin dalam,False,I,4,C,
+f67v2,20,+La,+,a,"f67v2.20,+La",,sary okoral,True,I,4,C,
+f67v2,21,@La,@,a,"f67v2.21,@La",,oko???,True,I,4,C,
+f67v2,22,@La,@,a,"f67v2.22,@La",,okchos am,False,I,4,C,
+f67v1,1,@L0,@,0,"f67v1.1,@L0",,damamm,False,I,4,A,
+f67v1,2,&L0,&,0,"f67v1.2,&L0",,dairkal,False,I,4,A,
+f67v1,3,&L0,&,0,"f67v1.3,&L0",,okal ary,False,I,4,A,
+f67v1,4,&L0,&,0,"f67v1.4,&L0",,dar echkalal,False,I,4,A,
+f67v1,5,&L0,&,0,"f67v1.5,&L0",,okol aldy,False,I,4,A,
+f67v1,6,&L0,&,0,"f67v1.6,&L0",,dchesykchy,False,I,4,A,
+f67v1,7,&L0,&,0,"f67v1.7,&L0",,ykeodar,False,I,4,A,
+f67v1,8,&L0,&,0,"f67v1.8,&L0",,deeeoskol,False,I,4,A,
+f67v1,9,&L0,&,0,"f67v1.9,&L0",,ockhosam,False,I,4,A,
+f67v1,10,&L0,&,0,"f67v1.10,&L0",,kochardy,False,I,4,A,
+f67v1,11,&L0,&,0,"f67v1.11,&L0",,ochodare,False,I,4,A,
+f67v1,12,&L0,&,0,"f67v1.12,&L0",,ols aiiny,False,I,4,A,
+f68r1,8,@Ls,@,s,"f68r1.8,@Ls",,okodaly,False,I,4,A,
+f68r1,9,@Ls,@,s,"f68r1.9,@Ls",,odchecthy,False,I,4,A,
+f68r1,10,@Ls,@,s,"f68r1.10,@Ls",,otcheody,False,I,4,A,
+f68r1,11,@Ls,@,s,"f68r1.11,@Ls",,okoaly,False,I,4,A,
+f68r1,12,@Ls,@,s,"f68r1.12,@Ls",,chocfhy,False,I,4,A,
+f68r1,13,@Ls,@,s,"f68r1.13,@Ls",,octhey,False,I,4,A,
+f68r1,14,@Ls,@,s,"f68r1.14,@Ls",,otshey,False,I,4,A,
+f68r1,15,@Ls,@,s,"f68r1.15,@Ls",,otydy,False,I,4,A,
+f68r1,16,@Ls,@,s,"f68r1.16,@Ls",,okear,False,I,4,A,
+f68r1,17,@Ls,@,s,"f68r1.17,@Ls",,cphocthy,False,I,4,A,
+f68r1,18,@Ls,@,s,"f68r1.18,@Ls",,ytchody,False,I,4,A,
+f68r1,19,@Ls,@,s,"f68r1.19,@Ls",,otys,False,I,4,A,
+f68r1,20,@Ls,@,s,"f68r1.20,@Ls",,olor,False,I,4,A,
+f68r1,21,@Ls,@,s,"f68r1.21,@Ls",,ockhy,False,I,4,A,
+f68r1,22,@Ls,@,s,"f68r1.22,@Ls",,ofcheor,False,I,4,A,
+f68r1,23,@Ls,@,s,"f68r1.23,@Ls",,otchdy,False,I,4,A,
+f68r1,24,@Ls,@,s,"f68r1.24,@Ls",,otykchs,False,I,4,A,
+f68r1,25,@Ls,@,s,"f68r1.25,@Ls",,otol,False,I,4,A,
+f68r1,26,@Ls,@,s,"f68r1.26,@Ls",,otor,False,I,4,A,
+f68r1,27,@Ls,@,s,"f68r1.27,@Ls",,oiinar,False,I,4,A,
+f68r1,28,@Ls,@,s,"f68r1.28,@Ls",,okoldy,False,I,4,A,
+f68r1,29,@Ls,@,s,"f68r1.29,@Ls",,ykchdy,False,I,4,A,
+f68r1,30,@Ls,@,s,"f68r1.30,@Ls",,@167;oeeod{c@196;h}y,False,I,4,A,
+f68r1,31,@Ls,@,s,"f68r1.31,@Ls",,ocphy,False,I,4,A,
+f68r1,32,@Ls,@,s,"f68r1.32,@Ls",,okeeodal,False,I,4,A,
+f68r1,33,@Ls,@,s,"f68r1.33,@Ls",,okshor,False,I,4,A,
+f68r1,34,@Ls,@,s,"f68r1.34,@Ls",,osdaiin,False,I,4,A,
+f68r1,35,@Ls,@,s,"f68r1.35,@Ls",,otochedy,False,I,4,A,
+f68r1,36,@Ls,@,s,"f68r1.36,@Ls",,dolchedy,False,I,4,A,
+f68r2,7,@Ls,@,s,"f68r2.7,@Ls",,o@167;olch{c@133;h}y,False,I,4,A,
+f68r2,8,@Ls,@,s,"f68r2.8,@Ls",,cheorol,False,I,4,A,
+f68r2,9,@Ls,@,s,"f68r2.9,@Ls",,odaiin,False,I,4,A,
+f68r2,10,@Ls,@,s,"f68r2.10,@Ls",,ochory,False,I,4,A,
+f68r2,11,@Ls,@,s,"f68r2.11,@Ls",,shdar,False,I,4,A,
+f68r2,12,@Ls,@,s,"f68r2.12,@Ls",,dchol,False,I,4,A,
+f68r2,13,@Ls,@,s,"f68r2.13,@Ls",,todaraiily,False,I,4,A,
+f68r2,14,@Ls,@,s,"f68r2.14,@Ls",,olcheesey,False,I,4,A,
+f68r2,15,@Ls,@,s,"f68r2.15,@Ls",,okchor,False,I,4,A,
+f68r2,16,@Ls,@,s,"f68r2.16,@Ls",,oteool,False,I,4,A,
+f68r2,17,@Ls,@,s,"f68r2.17,@Ls",,oydchy,False,I,4,A,
+f68r2,18,@Ls,@,s,"f68r2.18,@Ls",,okeeeody,False,I,4,A,
+f68r2,19,@Ls,@,s,"f68r2.19,@Ls",,cholar,False,I,4,A,
+f68r2,20,@Ls,@,s,"f68r2.20,@Ls",,dcheoldy,False,I,4,A,
+f68r2,21,@Ls,@,s,"f68r2.21,@Ls",,oteeear,False,I,4,A,
+f68r2,22,@Ls,@,s,"f68r2.22,@Ls",,otoeeo,False,I,4,A,
+f68r2,23,@Ls,@,s,"f68r2.23,@Ls",,ofcheody,False,I,4,A,
+f68r2,24,@Ls,@,s,"f68r2.24,@Ls",,otcheodar,False,I,4,A,
+f68r2,25,@Ls,@,s,"f68r2.25,@Ls",,odair chol,False,I,4,A,
+f68r2,26,@Ls,@,s,"f68r2.26,@Ls",,opocphor,False,I,4,A,
+f68r2,27,@Ls,@,s,"f68r2.27,@Ls",,otoshol,False,I,4,A,
+f68r2,28,@Ls,@,s,"f68r2.28,@Ls",,chodar,False,I,4,A,
+f68r2,29,@Ls,@,s,"f68r2.29,@Ls",,sheey,False,I,4,A,
+f68r2,30,@Ls,@,s,"f68r2.30,@Ls",,okeeeeor,True,I,4,A,
+f68r3,10,@Ls,@,s,"f68r3.10,@Ls",,dchol day,False,I,4,A,
+f68r3,11,@Ls,@,s,"f68r3.11,@Ls",,doaro,False,I,4,A,
+f68r3,12,@La,@,a,"f68r3.12,@La",,oalcheol,False,I,4,A,
+f68r3,13,@Ls,@,s,"f68r3.13,@Ls",,okos,False,I,4,A,
+f68r3,14,=Ls,=,s,"f68r3.14,=Ls",,otary,False,I,4,A,
+f68r3,15,@Ls,@,s,"f68r3.15,@Ls",,chky oky,False,I,4,A,
+f68r3,16,+Ls,+,s,"f68r3.16,+Ls",,e cphy,False,I,4,A,
+f68r3,17,+Ls,+,s,"f68r3.17,+Ls",,okolchy,False,I,4,A,
+f68r3,18,@Ls,@,s,"f68r3.18,@Ls",,o cthyd,False,I,4,A,
+f68r3,19,+Ls,+,s,"f68r3.19,+Ls",,otydg,False,I,4,A,
+f68r3,20,=Ls,=,s,"f68r3.20,=Ls",,darall,False,I,4,A,
+f68r3,21,*Ls,*,s,"f68r3.21,*Ls",,okchody,False,I,4,A,
+f68v3,15,@L0,@,0,"f68v3.15,@L0",,otodol,False,I,4,C,
+f68v3,16,=L0,=,0,"f68v3.16,=L0",,opcholdg,False,I,4,C,
+f69r,5,@L0,@,0,"f69r.5,@L0",,oteos chop otaike,True,J,4,C,
+f69r,6,&L0,&,0,"f69r.6,&L0",,ar odair chtaly,False,J,4,C,
+f69r,7,&L0,&,0,"f69r.7,&L0",,oto dar archol,False,J,4,C,
+f69r,8,&L0,&,0,"f69r.8,&L0",,okeey chey dy,False,J,4,C,
+f69r,9,&L0,&,0,"f69r.9,&L0",,dcho char ar,False,J,4,C,
+f69r,10,&L0,&,0,"f69r.10,&L0",,ytal air al,False,J,4,C,
+f69r,11,&L0,&,0,"f69r.11,&L0",,shy chtairy,False,J,4,C,
+f69r,12,&L0,&,0,"f69r.12,&L0",,yt oetear,False,J,4,C,
+f69r,13,&L0,&,0,"f69r.13,&L0",,ytey cholam,False,J,4,C,
+f69r,14,&L0,&,0,"f69r.14,&L0",,dair ar yteey chdy,False,J,4,C,
+f69r,15,&L0,&,0,"f69r.15,&L0",,okair os air,False,J,4,C,
+f69r,16,&L0,&,0,"f69r.16,&L0",,chytos oly,True,J,4,C,
+f69r,17,&L0,&,0,"f69r.17,&L0",,chetar araly,False,J,4,C,
+f69r,18,&L0,&,0,"f69r.18,&L0",,dair alody,False,J,4,C,
+f69r,19,&L0,&,0,"f69r.19,&L0",,dal daiin otalam,False,J,4,C,
+f69r,20,&L0,&,0,"f69r.20,&L0",,ytcheodytor,False,J,4,C,
+f69r,44,@L0,@,0,"f69r.44,@L0",,y,False,J,4,C,
+f69r,45,@L0,@,0,"f69r.45,@L0",,d,False,J,4,C,
+f69r,46,@L0,@,0,"f69r.46,@L0",,o,False,J,4,C,
+f69r,47,@L0,@,0,"f69r.47,@L0",,l,False,J,4,C,
+f69r,48,@L0,@,0,"f69r.48,@L0",,s,False,J,4,C,
+f69r,49,@L0,@,0,"f69r.49,@L0",,ed,True,J,4,C,
+f70v2,2,@Lz,@,z,"f70v2.2,@Lz",09:00,otalalg,False,J,4,Z,
+f70v2,3,&Lz,&,z,"f70v2.3,&Lz",10:00,ykary,False,J,4,Z,
+f70v2,4,&Lz,&,z,"f70v2.4,&Lz",10:30,otar?,True,J,4,Z,
+f70v2,5,&Lz,&,z,"f70v2.5,&Lz",11:00,oty,False,J,4,Z,
+f70v2,6,&Lz,&,z,"f70v2.6,&Lz",11:30,oky ody,False,J,4,Z,
+f70v2,7,&Lz,&,z,"f70v2.7,&Lz",00:00,oty ar,False,J,4,Z,
+f70v2,8,&Lz,&,z,"f70v2.8,&Lz",00:30,okala,False,J,4,Z,
+f70v2,9,&Lz,&,z,"f70v2.9,&Lz",01:00,otody,False,J,4,Z,
+f70v2,10,&Lz,&,z,"f70v2.10,&Lz",01:30,otald,False,J,4,Z,
+f70v2,11,&Lz,&,z,"f70v2.11,&Lz",02:00,otaldar,False,J,4,Z,
+f70v2,12,&Lz,&,z,"f70v2.12,&Lz",02:45,okody,False,J,4,Z,
+f70v2,13,&Lz,&,z,"f70v2.13,&Lz",03:15,opysam,False,J,4,Z,
+f70v2,14,&Lz,&,z,"f70v2.14,&Lz",04:00,ch{ckhh}y,False,J,4,Z,
+f70v2,15,&Lz,&,z,"f70v2.15,&Lz",04:30,otaly,False,J,4,Z,
+f70v2,16,&Lz,&,z,"f70v2.16,&Lz",05:30,otal arar,False,J,4,Z,
+f70v2,17,&Lz,&,z,"f70v2.17,&Lz",06:30,otaldy,False,J,4,Z,
+f70v2,18,&Lz,&,z,"f70v2.18,&Lz",07:00,okeoly,False,J,4,Z,
+f70v2,19,&Lz,&,z,"f70v2.19,&Lz",08:00,okydy,False,J,4,Z,
+f70v2,20,&Lz,&,z,"f70v2.20,&Lz",08:30,okees,True,J,4,Z,
+f70v2,22,@Lz,@,z,"f70v2.22,@Lz",10:00,otar am,False,J,4,Z,
+f70v2,23,&Lz,&,z,"f70v2.23,&Lz",11:00,otar al,False,J,4,Z,
+f70v2,24,&Lz,&,z,"f70v2.24,&Lz",00:00,otalar,False,J,4,Z,
+f70v2,25,&Lz,&,z,"f70v2.25,&Lz",01:30,otalam,False,J,4,Z,
+f70v2,26,&Lz,&,z,"f70v2.26,&Lz",03:00,dolaram,False,J,4,Z,
+f70v2,27,&Lz,&,z,"f70v2.27,&Lz",04:00,okaram,False,J,4,Z,
+f70v2,28,&Lz,&,z,"f70v2.28,&Lz",05:00,oteosal,False,J,4,Z,
+f70v2,29,&Lz,&,z,"f70v2.29,&Lz",06:30,salols,False,J,4,Z,
+f70v2,30,&Lz,&,z,"f70v2.30,&Lz",08:00,okaldal,False,J,4,Z,
+f70v2,31,&Lz,&,z,"f70v2.31,&Lz",09:00,ykolaiin,False,J,4,Z,
+f70v2,33,@Lz,@,z,"f70v2.33,@Lz",,otolal,False,J,4,Z,
+f70v1,2,@Lz,@,z,"f70v1.2,@Lz",10:30,otalchy tar am dy,False,J,4,Z,
+f70v1,3,&Lz,&,z,"f70v1.3,&Lz",00:00,opchey sal,False,J,4,Z,
+f70v1,4,&Lz,&,z,"f70v1.4,&Lz",01:00,otakaizan,False,J,4,Z,
+f70v1,5,&Lz,&,z,"f70v1.5,&Lz",02:30,okalal,False,J,4,Z,
+f70v1,6,&Lz,&,z,"f70v1.6,&Lz",03:30,otaly,False,J,4,Z,
+f70v1,7,&Lz,&,z,"f70v1.7,&Lz",04:30,oalcheg,False,J,4,Z,
+f70v1,8,&Lz,&,z,"f70v1.8,&Lz",06:00,otchodals,False,J,4,Z,
+f70v1,9,&Lz,&,z,"f70v1.9,&Lz",07:00,okolshy,False,J,4,Z,
+f70v1,10,&Lz,&,z,"f70v1.10,&Lz",08:00,otshshdy,False,J,4,Z,
+f70v1,11,&Lz,&,z,"f70v1.11,&Lz",09:00,otal ypsharal,False,J,4,Z,
+f70v1,13,@Lz,@,z,"f70v1.13,@Lz",10:30,okoly,False,J,4,Z,
+f70v1,14,&Lz,&,z,"f70v1.14,&Lz",00:00,otalaiin,False,J,4,Z,
+f70v1,15,&Lz,&,z,"f70v1.15,&Lz",02:00,oteo alals araly,False,J,4,Z,
+f70v1,16,&Lz,&,z,"f70v1.16,&Lz",05:00,oteoeey otal okealar,False,J,4,Z,
+f70v1,17,&Lz,&,z,"f70v1.17,&Lz",08:00,otear araydy,False,J,4,Z,
+f71r,2,@Lz,@,z,"f71r.2,@Lz",10:00,oteos arar,False,K,4,Z,
+f71r,3,&Lz,&,z,"f71r.3,&Lz",11:00,okldam,False,K,4,Z,
+f71r,4,&Lz,&,z,"f71r.4,&Lz",00:00,oteoaldy,False,K,4,Z,
+f71r,5,&Lz,&,z,"f71r.5,&Lz",01:00,oteolar,False,K,4,Z,
+f71r,6,&Lz,&,z,"f71r.6,&Lz",02:00,okeoaly,False,K,4,Z,
+f71r,7,&Lz,&,z,"f71r.7,&Lz",03:00,otaleky,False,K,4,Z,
+f71r,8,&Lz,&,z,"f71r.8,&Lz",04:30,otalsar,False,K,4,Z,
+f71r,9,&Lz,&,z,"f71r.9,&Lz",05:30,cheary,False,K,4,Z,
+f71r,10,&Lz,&,z,"f71r.10,&Lz",07:00,oteotey rary,False,K,4,Z,
+f71r,11,&Lz,&,z,"f71r.11,&Lz",08:30,otalaly,False,K,4,Z,
+f71r,13,@Lz,@,z,"f71r.13,@Lz",11:00,otolchdy,False,K,4,Z,
+f71r,14,&Lz,&,z,"f71r.14,&Lz",00:30,otoloaram,False,K,4,Z,
+f71r,15,&Lz,&,z,"f71r.15,&Lz",03:30,oteeol,False,K,4,Z,
+f71r,16,&Lz,&,z,"f71r.16,&Lz",05:30,otolchd,False,K,4,Z,
+f71r,17,&Lz,&,z,"f71r.17,&Lz",08:00,otaldar,False,K,4,Z,
+f71v,2,@Lz,@,z,"f71v.2,@Lz",10:00,char arom,False,K,4,Z,
+f71v,3,&Lz,&,z,"f71v.3,&Lz",11:00,chfaly,False,K,4,Z,
+f71v,4,&Lz,&,z,"f71v.4,&Lz",00:00,okolar,False,K,4,Z,
+f71v,5,&Lz,&,z,"f71v.5,&Lz",01:00,otchody,False,K,4,Z,
+f71v,6,&Lz,&,z,"f71v.6,&Lz",02:00,alcphy,False,K,4,Z,
+f71v,7,&Lz,&,z,"f71v.7,&Lz",03:00,otaiin,False,K,4,Z,
+f71v,8,&Lz,&,z,"f71v.8,&Lz",04:30,okaraiin,False,K,4,Z,
+f71v,9,&Lz,&,z,"f71v.9,&Lz",05:30,otar ar aly,False,K,4,Z,
+f71v,10,&Lz,&,z,"f71v.10,&Lz",07:00,opalar am dan,False,K,4,Z,
+f71v,11,&Lz,&,z,"f71v.11,&Lz",09:00,opalor ar,False,K,4,Z,
+f71v,13,@Lz,@,z,"f71v.13,@Lz",10:00,ofa{if}om,False,K,4,Z,
+f71v,14,&Lz,&,z,"f71v.14,&Lz",00:00,otalody,False,K,4,Z,
+f71v,15,&Lz,&,z,"f71v.15,&Lz",03:00,otalaiin,False,K,4,Z,
+f71v,16,&Lz,&,z,"f71v.16,&Lz",05:30,otar shar,True,K,4,Z,
+f71v,17,&Lz,&,z,"f71v.17,&Lz",08:30,sholshdy,False,K,4,Z,
+f72r1,2,@Lz,@,z,"f72r1.2,@Lz",09:30,oshodady,True,K,4,Z,
+f72r1,3,&Lz,&,z,"f72r1.3,&Lz",10:30,chdaiirdainy,False,K,4,Z,
+f72r1,4,&Lz,&,z,"f72r1.4,&Lz",00:00,oaiin ar ary,False,K,4,Z,
+f72r1,5,&Lz,&,z,"f72r1.5,&Lz",01:00,okalam,False,K,4,Z,
+f72r1,6,&Lz,&,z,"f72r1.6,&Lz",02:00,ytalshdy,False,K,4,Z,
+f72r1,7,&Lz,&,z,"f72r1.7,&Lz",03:00,char alif,False,K,4,Z,
+f72r1,8,&Lz,&,z,"f72r1.8,&Lz",03:30,otaraldy,False,K,4,Z,
+f72r1,9,&Lz,&,z,"f72r1.9,&Lz",05:00,otaiin otain,False,K,4,Z,
+f72r1,10,&Lz,&,z,"f72r1.10,&Lz",07:00,otalef ys ainam,False,K,4,Z,
+f72r1,11,&Lz,&,z,"f72r1.11,&Lz",08:30,ochol sharam,False,K,4,Z,
+f72r1,13,@Lz,@,z,"f72r1.13,@Lz",09:00,ofaralar,False,K,4,Z,
+f72r1,14,&Lz,&,z,"f72r1.14,&Lz",00:00,otchoshy,False,K,4,Z,
+f72r1,15,&Lz,&,z,"f72r1.15,&Lz",02:00,otchdal,False,K,4,Z,
+f72r1,16,&Lz,&,z,"f72r1.16,&Lz",04:00,okeey ary,False,K,4,Z,
+f72r1,17,&Lz,&,z,"f72r1.17,&Lz",07:00,otainy,False,K,4,Z,
+f72r2,1,@Lz,@,z,"f72r2.1,@Lz",10:30,ofchdamy,False,K,4,Z,
+f72r2,2,&Lz,&,z,"f72r2.2,&Lz",11:00,oklairdy,False,K,4,Z,
+f72r2,3,&Lz,&,z,"f72r2.3,&Lz",00:00,okaram,False,K,4,Z,
+f72r2,4,&Lz,&,z,"f72r2.4,&Lz",00:30,okairy,False,K,4,Z,
+f72r2,5,&Lz,&,z,"f72r2.5,&Lz",01:00,okealar,False,K,4,Z,
+f72r2,7,@Lz,@,z,"f72r2.7,@Lz",10:00,otaraldy,False,K,4,Z,
+f72r2,8,&Lz,&,z,"f72r2.8,&Lz",11:00,okalar,False,K,4,Z,
+f72r2,9,&Lz,&,z,"f72r2.9,&Lz",11:45,okal,False,K,4,Z,
+f72r2,10,&Lz,&,z,"f72r2.10,&Lz",00:15,okaly,False,K,4,Z,
+f72r2,11,&Lz,&,z,"f72r2.11,&Lz",01:00,okal,False,K,4,Z,
+f72r2,12,&Lz,&,z,"f72r2.12,&Lz",02:00,okeey ary,False,K,4,Z,
+f72r2,13,&Lz,&,z,"f72r2.13,&Lz",03:00,oteeary,False,K,4,Z,
+f72r2,14,&Lz,&,z,"f72r2.14,&Lz",04:00,otair dy,False,K,4,Z,
+f72r2,15,&Lz,&,z,"f72r2.15,&Lz",05:00,okaircham,False,K,4,Z,
+f72r2,16,&Lz,&,z,"f72r2.16,&Lz",06:00,okeal,False,K,4,Z,
+f72r2,17,&Lz,&,z,"f72r2.17,&Lz",06:30,otar{cr},False,K,4,Z,
+f72r2,18,&Lz,&,z,"f72r2.18,&Lz",07:30,okaly,False,K,4,Z,
+f72r2,19,&Lz,&,z,"f72r2.19,&Lz",08:00,orary,False,K,4,Z,
+f72r2,20,&Lz,&,z,"f72r2.20,&Lz",09:00,okyd,False,K,4,Z,
+f72r2,21,&Lz,&,z,"f72r2.21,&Lz",09:30,otolam,False,K,4,Z,
+f72r2,23,@Lz,@,z,"f72r2.23,@Lz",10:30,otal,False,K,4,Z,
+f72r2,24,&Lz,&,z,"f72r2.24,&Lz",11:30,ralal,False,K,4,Z,
+f72r2,25,&Lz,&,z,"f72r2.25,&Lz",00:30,okam,False,K,4,Z,
+f72r2,26,&Lz,&,z,"f72r2.26,&Lz",02:00,otalshy,False,K,4,Z,
+f72r2,27,&Lz,&,z,"f72r2.27,&Lz",03:30,okaldy,False,K,4,Z,
+f72r2,28,&Lz,&,z,"f72r2.28,&Lz",05:00,chosar,False,K,4,Z,
+f72r2,29,&Lz,&,z,"f72r2.29,&Lz",06:30,otam,False,K,4,Z,
+f72r2,30,&Lz,&,z,"f72r2.30,&Lz",08:00,ainaly,False,K,4,Z,
+f72r2,31,&Lz,&,z,"f72r2.31,&Lz",09:00,okarcham,False,K,4,Z,
+f72r3,2,@Lz,@,z,"f72r3.2,@Lz",10:30,olkalaiin,False,K,4,Z,
+f72r3,3,&Lz,&,z,"f72r3.3,&Lz",11:00,olalsy,False,K,4,Z,
+f72r3,4,&Lz,&,z,"f72r3.4,&Lz",00:00,oraiinam,False,K,4,Z,
+f72r3,5,&Lz,&,z,"f72r3.5,&Lz",01:00,osarsheeeo,False,K,4,Z,
+f72r3,6,&Lz,&,z,"f72r3.6,&Lz",02:00,oto@192;aiin,False,K,4,Z,
+f72r3,7,&Lz,&,z,"f72r3.7,&Lz",02:30,opoiiinoin al ches,True,K,4,Z,
+f72r3,8,&Lz,&,z,"f72r3.8,&Lz",04:00,ypaiin alaly,False,K,4,Z,
+f72r3,9,&Lz,&,z,"f72r3.9,&Lz",05:00,oteey daiin,False,K,4,Z,
+f72r3,10,&Lz,&,z,"f72r3.10,&Lz",06:30,oeeodaiin,False,K,4,Z,
+f72r3,11,&Lz,&,z,"f72r3.11,&Lz",07:00,ofsholdy,False,K,4,Z,
+f72r3,12,&Lz,&,z,"f72r3.12,&Lz",07:00,opoeey okaiin,False,K,4,Z,
+f72r3,13,&Lz,&,z,"f72r3.13,&Lz",10:00,ykolairol,False,K,4,Z,
+f72r3,15,@Lz,@,z,"f72r3.15,@Lz",11:00,oralkam,False,K,4,Z,
+f72r3,16,&Lz,&,z,"f72r3.16,&Lz",00:00,ytairal,False,K,4,Z,
+f72r3,17,&Lz,&,z,"f72r3.17,&Lz",01:00,oeeesaiin,True,K,4,Z,
+f72r3,18,&Lz,&,z,"f72r3.18,&Lz",01:30,ory,False,K,4,Z,
+f72r3,19,&Lz,&,z,"f72r3.19,&Lz",02:30,ochey fydy,False,K,4,Z,
+f72r3,20,&Lz,&,z,"f72r3.20,&Lz",03:30,of??? o eeesaly,True,K,4,Z,
+f72r3,21,&Lz,&,z,"f72r3.21,&Lz",05:00,ykaraiin airal,False,K,4,Z,
+f72r3,22,&Lz,&,z,"f72r3.22,&Lz",06:30,okalar,False,K,4,Z,
+f72r3,23,&Lz,&,z,"f72r3.23,&Lz",08:00,orara,False,K,4,Z,
+f72r3,24,&Lz,&,z,"f72r3.24,&Lz",09:00,olaiin ola{ikh}y,False,K,4,Z,
+f72r3,25,&Lz,&,z,"f72r3.25,&Lz",10:00,olfsheoral,False,K,4,Z,
+f72r3,27,@Lz,@,z,"f72r3.27,@Lz",10:30,opalal,False,K,4,Z,
+f72r3,28,&Lz,&,z,"f72r3.28,&Lz",00:00,yfary,False,K,4,Z,
+f72r3,29,&Lz,&,z,"f72r3.29,&Lz",01:30,oraiiral,False,K,4,Z,
+f72r3,30,&Lz,&,z,"f72r3.30,&Lz",03:00,ytoar shar,False,K,4,Z,
+f72r3,31,&Lz,&,z,"f72r3.31,&Lz",06:00,octho,False,K,4,Z,
+f72r3,32,&Lz,&,z,"f72r3.32,&Lz",07:30,aral,False,K,4,Z,
+f72r3,33,&Lz,&,z,"f72r3.33,&Lz",09:00,oletal,False,K,4,Z,
+f72v3,2,@Lz,@,z,"f72v3.2,@Lz",10:00,ocham,False,K,4,Z,
+f72v3,3,&Lz,&,z,"f72v3.3,&Lz",11:00,orchey,False,K,4,Z,
+f72v3,4,&Lz,&,z,"f72v3.4,&Lz",11:30,okam,False,K,4,Z,
+f72v3,5,&Lz,&,z,"f72v3.5,&Lz",00:00,okey,False,K,4,Z,
+f72v3,6,&Lz,&,z,"f72v3.6,&Lz",00:30,otcheody,False,K,4,Z,
+f72v3,7,&Lz,&,z,"f72v3.7,&Lz",01:00,okyeeshy,False,K,4,Z,
+f72v3,8,&Lz,&,z,"f72v3.8,&Lz",01:30,{c'y}ofaiin,True,K,4,Z,
+f72v3,9,&Lz,&,z,"f72v3.9,&Lz",02:00,okaly,False,K,4,Z,
+f72v3,10,&Lz,&,z,"f72v3.10,&Lz",02:45,otoly,True,K,4,Z,
+f72v3,11,&Lz,&,z,"f72v3.11,&Lz",03:30,ofalals,False,K,4,Z,
+f72v3,12,&Lz,&,z,"f72v3.12,&Lz",04:00,sheeos o{cfhh}y,False,K,4,Z,
+f72v3,13,&Lz,&,z,"f72v3.13,&Lz",05:00,daiin chepy,False,K,4,Z,
+f72v3,14,&Lz,&,z,"f72v3.14,&Lz",06:00,oteey deeal,False,K,4,Z,
+f72v3,15,&Lz,&,z,"f72v3.15,&Lz",07:00,chealpy,False,K,4,Z,
+f72v3,16,&Lz,&,z,"f72v3.16,&Lz",07:30,okeeol,False,K,4,Z,
+f72v3,17,&Lz,&,z,"f72v3.17,&Lz",08:30,okaly,False,K,4,Z,
+f72v3,18,&Lz,&,z,"f72v3.18,&Lz",09:00,okaldy,False,K,4,Z,
+f72v3,19,&Lz,&,z,"f72v3.19,&Lz",09:30,okeolyd,False,K,4,Z,
+f72v3,21,@Lz,@,z,"f72v3.21,@Lz",10:30,choleey,False,K,4,Z,
+f72v3,22,&Lz,&,z,"f72v3.22,&Lz",11:30,oky,False,K,4,Z,
+f72v3,23,&Lz,&,z,"f72v3.23,&Lz",00:30,ch{cthh}y,False,K,4,Z,
+f72v3,24,&Lz,&,z,"f72v3.24,&Lz",01:00,laly,False,K,4,Z,
+f72v3,25,&Lz,&,z,"f72v3.25,&Lz",02:00,oeedy,False,K,4,Z,
+f72v3,26,&Lz,&,z,"f72v3.26,&Lz",03:00,odairan,False,K,4,Z,
+f72v3,27,&Lz,&,z,"f72v3.27,&Lz",04:00,okary,False,K,4,Z,
+f72v3,28,&Lz,&,z,"f72v3.28,&Lz",05:00,oeesaiin,False,K,4,Z,
+f72v3,29,&Lz,&,z,"f72v3.29,&Lz",06:30,oteesed,False,K,4,Z,
+f72v3,30,&Lz,&,z,"f72v3.30,&Lz",07:30,opal,False,K,4,Z,
+f72v3,31,&Lz,&,z,"f72v3.31,&Lz",08:30,otaly,False,K,4,Z,
+f72v3,32,&Lz,&,z,"f72v3.32,&Lz",09:30,otaly yty,False,K,4,Z,
+f72v2,2,@Lz,@,z,"f72v2.2,@Lz",10:00,oeedey,False,K,4,Z,
+f72v2,3,&Lz,&,z,"f72v2.3,&Lz",11:00,oeeodaiin,False,K,4,Z,
+f72v2,4,&Lz,&,z,"f72v2.4,&Lz",11:45,okeoram,False,K,4,Z,
+f72v2,5,&Lz,&,z,"f72v2.5,&Lz",00:30,air aim,False,K,4,Z,
+f72v2,6,&Lz,&,z,"f72v2.6,&Lz",01:00,oshesy,False,K,4,Z,
+f72v2,7,&Lz,&,z,"f72v2.7,&Lz",02:00,okeary,True,K,4,Z,
+f72v2,8,&Lz,&,z,"f72v2.8,&Lz",02:30,cheoetey,False,K,4,Z,
+f72v2,9,&Lz,&,z,"f72v2.9,&Lz",03:00,cheoldy,True,K,4,Z,
+f72v2,10,&Lz,&,z,"f72v2.10,&Lz",04:00,sheoeky,False,K,4,Z,
+f72v2,11,&Lz,&,z,"f72v2.11,&Lz",04:30,oteodar,False,K,4,Z,
+f72v2,12,&Lz,&,z,"f72v2.12,&Lz",05:30,ofchdysd,False,K,4,Z,
+f72v2,13,&Lz,&,z,"f72v2.13,&Lz",06:00,oteoyd,False,K,4,Z,
+f72v2,14,&Lz,&,z,"f72v2.14,&Lz",06:30,yteody,False,K,4,Z,
+f72v2,15,&Lz,&,z,"f72v2.15,&Lz",07:00,okeody,False,K,4,Z,
+f72v2,16,&Lz,&,z,"f72v2.16,&Lz",08:00,okeoldy,False,K,4,Z,
+f72v2,17,&Lz,&,z,"f72v2.17,&Lz",08:30,ykeeor,False,K,4,Z,
+f72v2,18,&Lz,&,z,"f72v2.18,&Lz",09:00,opaiinam,True,K,4,Z,
+f72v2,19,&Lz,&,z,"f72v2.19,&Lz",09:30,cheoldy,False,K,4,Z,
+f72v2,21,@Lz,@,z,"f72v2.21,@Lz",10:30,okaiin,True,K,4,Z,
+f72v2,22,&Lz,&,z,"f72v2.22,&Lz",11:30,ockhol,False,K,4,Z,
+f72v2,23,&Lz,&,z,"f72v2.23,&Lz",00:30,oeedy,False,K,4,Z,
+f72v2,24,&Lz,&,z,"f72v2.24,&Lz",01:00,opalg,False,K,4,Z,
+f72v2,25,&Lz,&,z,"f72v2.25,&Lz",02:00,okeeom,False,K,4,Z,
+f72v2,26,&Lz,&,z,"f72v2.26,&Lz",03:00,olkar,False,K,4,Z,
+f72v2,27,&Lz,&,z,"f72v2.27,&Lz",04:00,oeedaly,False,K,4,Z,
+f72v2,28,&Lz,&,z,"f72v2.28,&Lz",05:00,cheosy,False,K,4,Z,
+f72v2,29,&Lz,&,z,"f72v2.29,&Lz",06:30,ofcheay,False,K,4,Z,
+f72v2,30,&Lz,&,z,"f72v2.30,&Lz",07:30,yteedy,False,K,4,Z,
+f72v2,31,&Lz,&,z,"f72v2.31,&Lz",08:30,onaiin,True,K,4,Z,
+f72v2,32,&Lz,&,z,"f72v2.32,&Lz",09:30,okeorar,False,K,4,Z,
+f72v1,2,@Lz,@,z,"f72v1.2,@Lz",08:45,oeeoty,False,K,4,Z,
+f72v1,3,&Lz,&,z,"f72v1.3,&Lz",09:30,octhy,False,K,4,Z,
+f72v1,4,&Lz,&,z,"f72v1.4,&Lz",10:00,oteoly,False,K,4,Z,
+f72v1,5,&Lz,&,z,"f72v1.5,&Lz",10:30,okeoly,False,K,4,Z,
+f72v1,6,&Lz,&,z,"f72v1.6,&Lz",11:00,oeees,False,K,4,Z,
+f72v1,7,&Lz,&,z,"f72v1.7,&Lz",11:30,o{cfh'h}y,False,K,4,Z,
+f72v1,8,&Lz,&,z,"f72v1.8,&Lz",01:45,oees,False,K,4,Z,
+f72v1,9,&Lz,&,z,"f72v1.9,&Lz",01:00,okeeoly,False,K,4,Z,
+f72v1,10,&Lz,&,z,"f72v1.10,&Lz",01:30,odal,False,K,4,Z,
+f72v1,11,&Lz,&,z,"f72v1.11,&Lz",02:00,aiinod,False,K,4,Z,
+f72v1,12,&Lz,&,z,"f72v1.12,&Lz",02:45,od?dy,True,K,4,Z,
+f72v1,13,&Lz,&,z,"f72v1.13,&Lz",03:15,oteod,False,K,4,Z,
+f72v1,14,&Lz,&,z,"f72v1.14,&Lz",03:45,yteod,False,K,4,Z,
+f72v1,15,&Lz,&,z,"f72v1.15,&Lz",04:30,ok?ody,True,K,4,Z,
+f72v1,16,&Lz,&,z,"f72v1.16,&Lz",05:00,okal,False,K,4,Z,
+f72v1,17,&Lz,&,z,"f72v1.17,&Lz",05:30,ytaly,False,K,4,Z,
+f72v1,18,&Lz,&,z,"f72v1.18,&Lz",06:00,oeeeos,False,K,4,Z,
+f72v1,19,&Lz,&,z,"f72v1.19,&Lz",06:30,oteofy,False,K,4,Z,
+f72v1,20,&Lz,&,z,"f72v1.20,&Lz",07:30,cheoepy,False,K,4,Z,
+f72v1,21,&Lz,&,z,"f72v1.21,&Lz",08:00,ykeedy,False,K,4,Z,
+f72v1,23,@Lz,@,z,"f72v1.23,@Lz",08:45,oeeoly,False,K,4,Z,
+f72v1,24,&Lz,&,z,"f72v1.24,&Lz",10:00,okydy,False,K,4,Z,
+f72v1,25,&Lz,&,z,"f72v1.25,&Lz",11:30,okeey,False,K,4,Z,
+f72v1,26,&Lz,&,z,"f72v1.26,&Lz",00:00,oiiny,False,K,4,Z,
+f72v1,27,&Lz,&,z,"f72v1.27,&Lz",01:00,oeey,False,K,4,Z,
+f72v1,28,&Lz,&,z,"f72v1.28,&Lz",03:00,okedy,False,K,4,Z,
+f72v1,29,&Lz,&,z,"f72v1.29,&Lz",04:30,ypaim,False,K,4,Z,
+f72v1,30,&Lz,&,z,"f72v1.30,&Lz",05:30,okalair,False,K,4,Z,
+f72v1,31,&Lz,&,z,"f72v1.31,&Lz",06:30,oeeody,False,K,4,Z,
+f72v1,32,&Lz,&,z,"f72v1.32,&Lz",07:30,okeol,False,K,4,Z,
+f73r,1,@Lz,@,z,"f73r.1,@Lz",11:15,otaly,False,L,4,Z,
+f73r,2,&Lz,&,z,"f73r.2,&Lz",11:45,chockhy,False,L,4,Z,
+f73r,3,&Lz,&,z,"f73r.3,&Lz",00:30,otedy,False,L,4,Z,
+f73r,4,&Lz,&,z,"f73r.4,&Lz",01:00,yteeody,False,L,4,Z,
+f73r,6,@Lz,@,z,"f73r.6,@Lz",11:00,otaly,False,L,4,Z,
+f73r,7,&Lz,&,z,"f73r.7,&Lz",11:30,okeody,False,L,4,Z,
+f73r,8,&Lz,&,z,"f73r.8,&Lz",00:00,oteedyl,False,L,4,Z,
+f73r,9,&Lz,&,z,"f73r.9,&Lz",00:30,ykeedy,True,L,4,Z,
+f73r,10,&Lz,&,z,"f73r.10,&Lz",01:00,okeey,False,L,4,Z,
+f73r,11,&Lz,&,z,"f73r.11,&Lz",02:00,okeedy,False,L,4,Z,
+f73r,12,&Lz,&,z,"f73r.12,&Lz",02:30,ykeeory,False,L,4,Z,
+f73r,13,&Lz,&,z,"f73r.13,&Lz",03:30,oteeosy,False,L,4,Z,
+f73r,14,&Lz,&,z,"f73r.14,&Lz",04:30,shekal,False,L,4,Z,
+f73r,15,&Lz,&,z,"f73r.15,&Lz",05:30,oteedyy,False,L,4,Z,
+f73r,16,&Lz,&,z,"f73r.16,&Lz",06:30,okedal,True,L,4,Z,
+f73r,17,&Lz,&,z,"f73r.17,&Lz",07:00,chdy,False,L,4,Z,
+f73r,18,&Lz,&,z,"f73r.18,&Lz",08:00,dalshey,False,L,4,Z,
+f73r,19,&Lz,&,z,"f73r.19,&Lz",08:45,opaiin,False,L,4,Z,
+f73r,20,&Lz,&,z,"f73r.20,&Lz",09:30,okeos,False,L,4,Z,
+f73r,21,&Lz,&,z,"f73r.21,&Lz",10:00,otey,False,L,4,Z,
+f73r,23,@Lz,@,z,"f73r.23,@Lz",11:30,okary,False,L,4,Z,
+f73r,24,&Lz,&,z,"f73r.24,&Lz",01:00,okeeody,False,L,4,Z,
+f73r,25,&Lz,&,z,"f73r.25,&Lz",02:00,oyteedy,False,L,4,Z,
+f73r,26,&Lz,&,z,"f73r.26,&Lz",03:00,oky,False,L,4,Z,
+f73r,27,&Lz,&,z,"f73r.27,&Lz",04:30,chefy,False,L,4,Z,
+f73r,28,&Lz,&,z,"f73r.28,&Lz",06:00,otal,False,L,4,Z,
+f73r,29,&Lz,&,z,"f73r.29,&Lz",07:00,chek,False,L,4,Z,
+f73r,30,&Lz,&,z,"f73r.30,&Lz",08:30,ar,False,L,4,Z,
+f73r,31,&Lz,&,z,"f73r.31,&Lz",09:30,kar,False,L,4,Z,
+f73r,32,&Lz,&,z,"f73r.32,&Lz",10:30,okeeos,False,L,4,Z,
+f73v,1,@Lz,@,z,"f73v.1,@Lz",11:00,okol,False,L,4,Z,
+f73v,2,&Lz,&,z,"f73v.2,&Lz",11:45,oteody,False,L,4,Z,
+f73v,3,&Lz,&,z,"f73v.3,&Lz",00:30,oteedy,False,L,4,Z,
+f73v,4,&Lz,&,z,"f73v.4,&Lz",01:00,eeeody,False,L,4,Z,
+f73v,6,@Lz,@,z,"f73v.6,@Lz",10:00,okeody,False,L,4,Z,
+f73v,7,&Lz,&,z,"f73v.7,&Lz",10:30,sheol,False,L,4,Z,
+f73v,8,&Lz,&,z,"f73v.8,&Lz",11:30,odees,False,L,4,Z,
+f73v,9,&Lz,&,z,"f73v.9,&Lz",00:00,eery,True,L,4,Z,
+f73v,10,&Lz,&,z,"f73v.10,&Lz",01:00,okeor,False,L,4,Z,
+f73v,11,&Lz,&,z,"f73v.11,&Lz",01:30,ofals,False,L,4,Z,
+f73v,12,&Lz,&,z,"f73v.12,&Lz",02:00,ykeody,False,L,4,Z,
+f73v,13,&Lz,&,z,"f73v.13,&Lz",03:00,oteody,False,L,4,Z,
+f73v,14,&Lz,&,z,"f73v.14,&Lz",03:30,ypaiin,False,L,4,Z,
+f73v,15,&Lz,&,z,"f73v.15,&Lz",04:00,yfaiin y,False,L,4,Z,
+f73v,16,&Lz,&,z,"f73v.16,&Lz",05:00,ofcheesy,False,L,4,Z,
+f73v,17,&Lz,&,z,"f73v.17,&Lz",06:00,oraiiny,False,L,4,Z,
+f73v,18,&Lz,&,z,"f73v.18,&Lz",07:00,ykeeody,False,L,4,Z,
+f73v,19,&Lz,&,z,"f73v.19,&Lz",07:30,okeos,False,L,4,Z,
+f73v,20,&Lz,&,z,"f73v.20,&Lz",08:30,ykeear,False,L,4,Z,
+f73v,21,&Lz,&,z,"f73v.21,&Lz",09:00,qokeoly,False,L,4,Z,
+f73v,23,@Lz,@,z,"f73v.23,@Lz",09:30,otedy,False,L,4,Z,
+f73v,24,&Lz,&,z,"f73v.24,&Lz",11:00,eeed,False,L,4,Z,
+f73v,25,&Lz,&,z,"f73v.25,&Lz",01:00,oky,False,L,4,Z,
+f73v,26,&Lz,&,z,"f73v.26,&Lz",02:00,oia?,True,L,4,Z,
+f73v,27,&Lz,&,z,"f73v.27,&Lz",02:30,okal,False,L,4,Z,
+f73v,28,&Lz,&,z,"f73v.28,&Lz",03:30,ykey,False,L,4,Z,
+f73v,29,&Lz,&,z,"f73v.29,&Lz",05:00,ykeee,False,L,4,Z,
+f73v,30,&Lz,&,z,"f73v.30,&Lz",06:00,okeod,False,L,4,Z,
+f73v,31,&Lz,&,z,"f73v.31,&Lz",07:30,ykey,False,L,4,Z,
+f73v,32,&Lz,&,z,"f73v.32,&Lz",08:30,ypal,False,L,4,Z,
+f75v,2,=L0,=,0,"f75v.2,=L0",,s,False,M,2,B,B
+f75v,4,=L0,=,0,"f75v.4,=L0",,l,False,M,2,B,B
+f75v,6,=L0,=,0,"f75v.6,=L0",,l,False,M,2,B,B
+f75v,8,~L0,~,0,"f75v.8,~L0",,o,False,M,2,B,B
+f75v,9,+L0,+,0,"f75v.9,+L0",,r,False,M,2,B,B
+f75v,11,=L0,=,0,"f75v.11,=L0",,s,False,M,2,B,B
+f75v,18,@Ln,@,n,"f75v.18,@Ln",,okshy,False,M,2,B,B
+f75v,19,+Ln,+,n,"f75v.19,+Ln",,saral,False,M,2,B,B
+f75v,20,@Ln,@,n,"f75v.20,@Ln",,dokal,False,M,2,B,B
+f75v,21,+Ln,+,n,"f75v.21,+Ln",,darol,False,M,2,B,B
+f75v,22,@Ln,@,n,"f75v.22,@Ln",,daldy,False,M,2,B,B
+f75v,23,+Ln,+,n,"f75v.23,+Ln",,dal shd,False,M,2,B,B
+f75v,24,@Ln,@,n,"f75v.24,@Ln",,dalkar,False,M,2,B,B
+f75v,25,+Ln,+,n,"f75v.25,+Ln",,qokal,False,M,2,B,B
+f75v,26,@Ln,@,n,"f75v.26,@Ln",,dly,False,M,2,B,B
+f75v,27,+Ln,+,n,"f75v.27,+Ln",,ory,False,M,2,B,B
+f75v,28,@Ln,@,n,"f75v.28,@Ln",,oty,False,M,2,B,B
+f75v,29,+Ln,+,n,"f75v.29,+Ln",,lchy,False,M,2,B,B
+f75v,30,@Ln,@,n,"f75v.30,@Ln",,dary,False,M,2,B,B
+f75v,31,+Ln,+,n,"f75v.31,+Ln",,dal,False,M,2,B,B
+f75v,32,@Ln,@,n,"f75v.32,@Ln",,daldy,False,M,2,B,B
+f75v,33,+Ln,+,n,"f75v.33,+Ln",,qoted,False,M,2,B,B
+f75v,34,@Ln,@,n,"f75v.34,@Ln",,rkal,False,M,2,B,B
+f75v,35,+Ln,+,n,"f75v.35,+Ln",,ykedy,False,M,2,B,B
+f75v,36,@Ln,@,n,"f75v.36,@Ln",,olkchy,False,M,2,B,B
+f75v,37,+Ln,+,n,"f75v.37,+Ln",,otoly,False,M,2,B,B
+f75v,50,@Lt,@,t,"f75v.50,@Lt",,otal opal,False,M,2,B,B
+f75v,51,=Lt,=,t,"f75v.51,=Lt",,okeey lol,False,M,2,B,B
+f75v,52,=Lt,=,t,"f75v.52,=Lt",,olol,False,M,2,B,B
+f75v,53,*Lt,*,t,"f75v.53,*Lt",,ytedy,False,M,2,B,B
+f75v,54,+Lt,+,t,"f75v.54,+Lt",,otedy,False,M,2,B,B
+f75v,55,+Lt,+,t,"f75v.55,+Lt",,oteey,False,M,2,B,B
+f75v,56,+Lt,+,t,"f75v.56,+Lt",,qotedy,False,M,2,B,B
+f76r,4,*L0,*,0,"f76r.4,*L0",,s,False,M,2,T,B
+f76r,7,*L0,*,0,"f76r.7,*L0",,d,False,M,2,T,B
+f76r,10,*L0,*,0,"f76r.10,*L0",,q,False,M,2,T,B
+f76r,14,*L0,*,0,"f76r.14,*L0",,s,False,M,2,T,B
+f76r,18,*L0,*,0,"f76r.18,*L0",,o,False,M,2,T,B
+f76r,22,*L0,*,0,"f76r.22,*L0",,l,False,M,2,T,B
+f76r,27,*L0,*,0,"f76r.27,*L0",,k,False,M,2,T,B
+f76r,31,*L0,*,0,"f76r.31,*L0",,r,False,M,2,T,B
+f76r,37,*L0,*,0,"f76r.37,*L0",,s,False,M,2,T,B
+f77r,1,@Ln,@,n,"f77r.1,@Ln",,darchdar,False,M,2,B,B
+f77r,2,+Lt,+,t,"f77r.2,+Lt",,olkchs,False,M,2,B,B
+f77r,3,=Lt,=,t,"f77r.3,=Lt",,otedy,False,M,2,B,B
+f77r,4,~Lt,~,t,"f77r.4,~Lt",,otork,False,M,2,B,B
+f77r,5,=Lt,=,t,"f77r.5,=Lt",,otol,False,M,2,B,B
+f77r,6,~Lt,~,t,"f77r.6,~Lt",,dchdy,False,M,2,B,B
+f77r,7,~Lt,~,t,"f77r.7,~Lt",,soral,False,M,2,B,B
+f77r,8,~Ln,~,n,"f77r.8,~Ln",,dotedy,False,M,2,B,B
+f77r,49,@Ln,@,n,"f77r.49,@Ln",,otchdy,False,M,2,B,B
+f77r,50,@Lt,@,t,"f77r.50,@Lt",,otolaiin o,False,M,2,B,B
+f77v,1,@Lt,@,t,"f77v.1,@Lt",,okain y kal,False,M,2,B,B
+f77v,2,=Lt,=,t,"f77v.2,=Lt",,otol shedy,False,M,2,B,B
+f77v,3,=Lt,=,t,"f77v.3,=Lt",,olkeedal,False,M,2,B,B
+f77v,4,@Lt,@,t,"f77v.4,@Lt",,otolor,False,M,2,B,B
+f77v,5,=Lt,=,t,"f77v.5,=Lt",,orchedal,True,M,2,B,B
+f77v,43,@Ln,@,n,"f77v.43,@Ln",,saroral,False,M,2,B,B
+f77v,44,@Lt,@,t,"f77v.44,@Lt",,okalo,False,M,2,B,B
+f77v,45,@Ln,@,n,"f77v.45,@Ln",,o?eoedu,True,M,2,B,B
+f78r,1,@Lt,@,t,"f78r.1,@Lt",,okchdldlo,False,M,2,B,B
+f78r,2,@Lt,@,t,"f78r.2,@Lt",,okchdy,False,M,2,B,B
+f78r,44,@Lt,@,t,"f78r.44,@Lt",,dar alo{ifh}y,False,M,2,B,B
+f78r,45,@Lt,@,t,"f78r.45,@Lt",,dchedaly,False,M,2,B,B
+f78r,46,@Lt,@,t,"f78r.46,@Lt",,otarodla'y orory,False,M,2,B,B
+f78r,47,@Lt,@,t,"f78r.47,@Lt",,okaral,False,M,2,B,B
+f80r,1,@Ln,@,n,"f80r.1,@Ln",,toroly,False,M,2,B,B
+f80r,2,=Ln,=,n,"f80r.2,=Ln",,olchdy,False,M,2,B,B
+f80r,3,=Ln,=,n,"f80r.3,=Ln",,okaly,False,M,2,B,B
+f80r,4,=Ln,=,n,"f80r.4,=Ln",,okolo,False,M,2,B,B
+f80r,5,=Ln,=,n,"f80r.5,=Ln",,okary,False,M,2,B,B
+f80r,6,=Ln,=,n,"f80r.6,=Ln",,opor,False,M,2,B,B
+f80r,7,~Ln,~,n,"f80r.7,~Ln",,olky,False,M,2,B,B
+f80r,8,=Ln,=,n,"f80r.8,=Ln",,otalshedy,False,M,2,B,B
+f80r,9,~Ln,~,n,"f80r.9,~Ln",,okar,False,M,2,B,B
+f80r,10,+Ln,+,n,"f80r.10,+Ln",,okan,False,M,2,B,B
+f81v,28,@Lt,@,t,"f81v.28,@Lt",,otain olkal,False,M,2,B,B
+f82r,10,@Lt,@,t,"f82r.10,@Lt",,oroldair,True,M,2,B,B
+f82r,34,@Ln,@,n,"f82r.34,@Ln",,okor,False,M,2,B,B
+f82r,35,@Lt,@,t,"f82r.35,@Lt",,darol,False,M,2,B,B
+f82r,36,@Ln,@,n,"f82r.36,@Ln",,okal,False,M,2,B,B
+f82r,37,@Ln,@,n,"f82r.37,@Ln",,okaldy,False,M,2,B,B
+f82r,38,@Lt,@,t,"f82r.38,@Lt",,darary,False,M,2,B,B
+f82r,39,+Ln,+,n,"f82r.39,+Ln",,okairady,True,M,2,B,B
+f82r,40,*Ln,*,n,"f82r.40,*Ln",,sororl,False,M,2,B,B
+f82r,41,=Ln,=,n,"f82r.41,=Ln",,olkoky,True,M,2,B,B
+f82r,42,=Ln,=,n,"f82r.42,=Ln",,sokoly,False,M,2,B,B
+f82r,43,=Ln,=,n,"f82r.43,=Ln",,dolol,False,M,2,B,B
+f82r,44,=Ln,=,n,"f82r.44,=Ln",,olaiin,False,M,2,B,B
+f82r,45,=Ln,=,n,"f82r.45,=Ln",,okeear,False,M,2,B,B
+f82v,1,@Ln,@,n,"f82v.1,@Ln",,otechdy,False,M,2,B,B
+f82v,2,=Ln,=,n,"f82v.2,=Ln",,otedy,False,M,2,B,B
+f82v,3,@Lt,@,t,"f82v.3,@Lt",,daiinoty,False,M,2,B,B
+f82v,4,@Lt,@,t,"f82v.4,@Lt",,otedal,False,M,2,B,B
+f82v,39,@Ln,@,n,"f82v.39,@Ln",,olkeedy,False,M,2,B,B
+f82v,40,@Ln,@,n,"f82v.40,@Ln",,okalchy,False,M,2,B,B
+f82v,41,@Ln,@,n,"f82v.41,@Ln",,okain,False,M,2,B,B
+f82v,42,~Lt,~,t,"f82v.42,~Lt",,okaoky,True,M,2,B,B
+f82v,43,~Lt,~,t,"f82v.43,~Lt",,okedor,False,M,2,B,B
+f82v,44,~Ln,~,n,"f82v.44,~Ln",,okol,False,M,2,B,B
+f82v,45,@Lt,@,t,"f82v.45,@Lt",,okoldy,False,M,2,B,B
+f82v,46,@Lt,@,t,"f82v.46,@Lt",,olkol,False,M,2,B,B
+f82v,47,@Lt,@,t,"f82v.47,@Lt",,otedol,False,M,2,B,B
+f82v,48,+Lt,+,t,"f82v.48,+Lt",,oteedy,False,M,2,B,B
+f83r,45,@Lt,@,t,"f83r.45,@Lt",,chtorol,False,M,2,B,B
+f83r,46,=Lt,=,t,"f83r.46,=Lt",,olsaiin,False,M,2,B,B
+f83r,50,@Lt,@,t,"f83r.50,@Lt",,sasoldal,False,M,2,B,B
+f83r,51,+Lt,+,t,"f83r.51,+Lt",,darolsy,False,M,2,B,B
+f83v,9,@Lt,@,t,"f83v.9,@Lt",,ololary,False,M,2,B,B
+f83v,10,@Lt,@,t,"f83v.10,@Lt",,okarchy,False,M,2,B,B
+f83v,34,@Ln,@,n,"f83v.34,@Ln",,okchdy,False,M,2,B,B
+f83v,35,@Lt,@,t,"f83v.35,@Lt",,okaiin,False,M,2,B,B
+f84r,1,@Lt,@,t,"f84r.1,@Lt",,ololal,False,M,2,B,B
+f84r,2,@Ln,@,n,"f84r.2,@Ln",,or shekar,False,M,2,B,B
+f84r,3,+Ln,+,n,"f84r.3,+Ln",,ydy,False,M,2,B,B
+f84r,4,@Ln,@,n,"f84r.4,@Ln",,okedy,False,M,2,B,B
+f84r,5,=Ln,=,n,"f84r.5,=Ln",,loly,False,M,2,B,B
+f84r,6,@Ln,@,n,"f84r.6,@Ln",,doiir,False,M,2,B,B
+f84r,7,=Ln,=,n,"f84r.7,=Ln",,olshy,False,M,2,B,B
+f84r,8,@Ln,@,n,"f84r.8,@Ln",,otedy,False,M,2,B,B
+f84r,9,=Ln,=,n,"f84r.9,=Ln",,lkol,False,M,2,B,B
+f84r,10,@Ln,@,n,"f84r.10,@Ln",,okolshy,False,M,2,B,B
+f84r,11,@Ln,@,n,"f84r.11,@Ln",,otoly,False,M,2,B,B
+f84r,12,@Ln,@,n,"f84r.12,@Ln",,dshedy,False,M,2,B,B
+f84r,47,@Lt,@,t,"f84r.47,@Lt",,otaly,False,M,2,B,B
+fRos,1,@L0,@,0,"fRos.1,@L0",1:11,saeeasa?,True,N,4,C,B
+fRos,3,@L0,@,0,"fRos.3,@L0",,ofain ain,False,N,4,C,B
+fRos,4,+L0,+,0,"fRos.4,+L0",,ych ?ais,True,N,4,C,B
+fRos,5,+L0,+,0,"fRos.5,+L0",,ydekam,False,N,4,C,B
+fRos,6,+L0,+,0,"fRos.6,+L0",,darchedy,False,N,4,C,B
+fRos,7,+L0,+,0,"fRos.7,+L0",,otochedy sy,False,N,4,C,B
+fRos,8,+L0,+,0,"fRos.8,+L0",,soeedoy olal,False,N,4,C,B
+fRos,9,+L0,+,0,"fRos.9,+L0",,dchor orary,False,N,4,C,B
+fRos,10,+L0,+,0,"fRos.10,+L0",,sairojam,True,N,4,C,B
+fRos,11,@L0,@,0,"fRos.11,@L0",,okchdarar,False,N,4,C,B
+fRos,12,@L0,@,0,"fRos.12,@L0",,soiindy,False,N,4,C,B
+fRos,13,@L0,@,0,"fRos.13,@L0",2:10,ytedar,False,N,4,C,B
+fRos,14,@L0,@,0,"fRos.14,@L0",2:11,ddsschx,True,N,4,C,B
+fRos,15,@L0,@,0,"fRos.15,@L0",2:13,daldar,False,N,4,C,B
+fRos,16,@L0,@,0,"fRos.16,@L0",2:12,ofardy,False,N,4,C,B
+fRos,17,@L0,@,0,"fRos.17,@L0",1:10,orarol,False,N,4,C,B
+fRos,18,@L0,@,0,"fRos.18,@L0",,daldal,False,N,4,C,B
+fRos,19,@L0,@,0,"fRos.19,@L0",,daraldy,True,N,4,C,B
+fRos,21,@L0,@,0,"fRos.21,@L0",,oko,False,N,4,C,B
+fRos,22,@L0,@,0,"fRos.22,@L0",,daiiny,False,N,4,C,B
+fRos,23,@L0,@,0,"fRos.23,@L0",,do{cfhh}y,False,N,4,C,B
+fRos,24,@L0,@,0,"fRos.24,@L0",,okedy,False,N,4,C,B
+fRos,25,@L0,@,0,"fRos.25,@L0",,okary,True,N,4,C,B
+fRos,26,@L0,@,0,"fRos.26,@L0",,opain,False,N,4,C,B
+fRos,27,@L0,@,0,"fRos.27,@L0",,opar,False,N,4,C,B
+fRos,28,@L0,@,0,"fRos.28,@L0",4:10,adairy,False,N,4,C,B
+fRos,29,@L0,@,0,"fRos.29,@L0",4:11,dxar,False,N,4,C,B
+fRos,30,@L0,@,0,"fRos.30,@L0",4:12,okory,False,N,4,C,B
+fRos,31,@L0,@,0,"fRos.31,@L0",4:13,opokchosody,True,N,4,C,B
+fRos,32,@L0,@,0,"fRos.32,@L0",7:12,adashgasain,False,N,4,C,B
+fRos,33,@L0,@,0,"fRos.33,@L0",7:13,cfair o@213;ol{c@133;h}y,False,N,4,C,B
+fRos,34,@L0,@,0,"fRos.34,@L0",,okody,False,N,4,C,B
+fRos,37,@L0,@,0,"fRos.37,@L0",7:10,opoor daly,False,N,4,C,B
+fRos,38,@L0,@,0,"fRos.38,@L0",,okas oedady,False,N,4,C,B
+fRos,41,@L0,@,0,"fRos.41,@L0",,osal,True,N,4,C,B
+fRos,42,@L0,@,0,"fRos.42,@L0",,{cp}eey,False,N,4,C,B
+fRos,43,@L0,@,0,"fRos.43,@L0",,okor,False,N,4,C,B
+fRos,44,@L0,@,0,"fRos.44,@L0",,sarchcphdy,False,N,4,C,B
+fRos,45,@L0,@,0,"fRos.45,@L0",,otchdy otoldy,False,N,4,C,B
+fRos,46,@L0,@,0,"fRos.46,@L0",7:11,ofchedaiin,False,N,4,C,B
+fRos,48,@L0,@,0,"fRos.48,@L0",,otedal,False,N,4,C,B
+fRos,49,@L0,@,0,"fRos.49,@L0",,opaiin o,False,N,4,C,B
+fRos,50,@L0,@,0,"fRos.50,@L0",,otchdy,False,N,4,C,B
+fRos,51,@L0,@,0,"fRos.51,@L0",,okchy,False,N,4,C,B
+fRos,52,@L0,@,0,"fRos.52,@L0",,chkeedy,False,N,4,C,B
+fRos,53,@L0,@,0,"fRos.53,@L0",,opairar,False,N,4,C,B
+fRos,54,@L0,@,0,"fRos.54,@L0",,odee?y,True,N,4,C,B
+fRos,55,@L0,@,0,"fRos.55,@L0",,okody,False,N,4,C,B
+fRos,56,@L0,@,0,"fRos.56,@L0",3:22,depcheky,False,N,4,C,B
+fRos,57,@L0,@,0,"fRos.57,@L0",3:23,otch,True,N,4,C,B
+fRos,58,@L0,@,0,"fRos.58,@L0",3:24,osy,False,N,4,C,B
+fRos,59,@L0,@,0,"fRos.59,@L0",3:25,odl,True,N,4,C,B
+fRos,60,@L0,@,0,"fRos.60,@L0",3:26,d dy,False,N,4,C,B
+fRos,61,@L0,@,0,"fRos.61,@L0",3:27,oteey,False,N,4,C,B
+fRos,63,@L0,@,0,"fRos.63,@L0",,oteedy,False,N,4,C,B
+fRos,64,@L0,@,0,"fRos.64,@L0",,opy,False,N,4,C,B
+fRos,65,@L0,@,0,"fRos.65,@L0",,odal,False,N,4,C,B
+fRos,66,@L0,@,0,"fRos.66,@L0",,shdy,False,N,4,C,B
+fRos,67,@L0,@,0,"fRos.67,@L0",,opchees,False,N,4,C,B
+fRos,68,@L0,@,0,"fRos.68,@L0",,opar,False,N,4,C,B
+fRos,69,@L0,@,0,"fRos.69,@L0",,daral,False,N,4,C,B
+fRos,70,@L0,@,0,"fRos.70,@L0",,otdodar oedy,False,N,4,C,B
+fRos,71,@L0,@,0,"fRos.71,@L0",,soshxor arar,False,N,4,C,B
+fRos,72,@L0,@,0,"fRos.72,@L0",5:10,otedain otedy,False,N,4,C,B
+fRos,73,@L0,@,0,"fRos.73,@L0",5:11,ytedar ary,False,N,4,C,B
+fRos,74,@L0,@,0,"fRos.74,@L0",5:12,opchedaiin,True,N,4,C,B
+fRos,75,@L0,@,0,"fRos.75,@L0",5:13,ols,False,N,4,C,B
+fRos,76,@L0,@,0,"fRos.76,@L0",5:14,ypal,False,N,4,C,B
+fRos,77,@L0,@,0,"fRos.77,@L0",5:15,opydsh,False,N,4,C,B
+fRos,78,@L0,@,0,"fRos.78,@L0",5:16,rshy,False,N,4,C,B
+fRos,79,@L0,@,0,"fRos.79,@L0",5:17,olz,False,N,4,C,B
+fRos,80,@L0,@,0,"fRos.80,@L0",5:18,dtedg,False,N,4,C,B
+fRos,81,@L0,@,0,"fRos.81,@L0",5:19,opy,False,N,4,C,B
+fRos,82,@L0,@,0,"fRos.82,@L0",5:20,ofdaj,False,N,4,C,B
+fRos,83,@L0,@,0,"fRos.83,@L0",5:21,ddary,False,N,4,C,B
+fRos,84,@L0,@,0,"fRos.84,@L0",5:22,otody,True,N,4,C,B
+fRos,85,@L0,@,0,"fRos.85,@L0",5:23,dairdy,False,N,4,C,B
+fRos,86,@L0,@,0,"fRos.86,@L0",5:24,rody,False,N,4,C,B
+fRos,88,@L0,@,0,"fRos.88,@L0",,ofary,False,N,4,C,B
+fRos,89,@L0,@,0,"fRos.89,@L0",,okady,False,N,4,C,B
+fRos,90,@L0,@,0,"fRos.90,@L0",,okchdy kary,False,N,4,C,B
+fRos,91,@L0,@,0,"fRos.91,@L0",,oraiin eey,False,N,4,C,B
+fRos,92,@L0,@,0,"fRos.92,@L0",,opodchdal,True,N,4,C,B
+fRos,93,@L0,@,0,"fRos.93,@L0",,darchdy,True,N,4,C,B
+fRos,95,@L0,@,0,"fRos.95,@L0",,okaramal,False,N,4,C,B
+fRos,96,@L0,@,0,"fRos.96,@L0",,opchdy,False,N,4,C,B
+fRos,97,@L0,@,0,"fRos.97,@L0",,ofdoram,True,N,4,C,B
+fRos,98,@L0,@,0,"fRos.98,@L0",,oda,False,N,4,C,B
+fRos,99,@L0,@,0,"fRos.99,@L0",3:16,ofchdar,False,N,4,C,B
+fRos,100,@L0,@,0,"fRos.100,@L0",,otedam,False,N,4,C,B
+fRos,101,@L0,@,0,"fRos.101,@L0",3:10,lokedshs,False,N,4,C,B
+fRos,102,@L0,@,0,"fRos.102,@L0",3:11,otodar,False,N,4,C,B
+fRos,103,@L0,@,0,"fRos.103,@L0",3:12,otedaiin,False,N,4,C,B
+fRos,104,@L0,@,0,"fRos.104,@L0",3:13,okedy,False,N,4,C,B
+fRos,105,@L0,@,0,"fRos.105,@L0",3:14,xoltedy,False,N,4,C,B
+fRos,106,@L0,@,0,"fRos.106,@L0",3:15,opchdam,True,N,4,C,B
+fRos,107,@L0,@,0,"fRos.107,@L0",3:19,otedy oporam,False,N,4,C,B
+fRos,108,@L0,@,0,"fRos.108,@L0",3:17,otchdy,True,N,4,C,B
+fRos,109,+L0,+,0,"fRos.109,+L0",3:18,otody,False,N,4,C,B
+fRos,110,/L0,/,0,"fRos.110,/L0",3:20,chdain,False,N,4,C,B
+fRos,111,+L0,+,0,"fRos.111,+L0",3:21,otedy,True,N,4,C,B
+fRos,112,@L0,@,0,"fRos.112,@L0",,opa{i'h}efchdy,False,N,4,C,B
+fRos,115,=L0,=,0,"fRos.115,=L0",,oteoly,False,N,4,C,B
+fRos,116,@L0,@,0,"fRos.116,@L0",,ofodady,True,N,4,C,B
+fRos,117,@L0,@,0,"fRos.117,@L0",,opdady,True,N,4,C,B
+fRos,118,@L0,@,0,"fRos.118,@L0",,otodey,False,N,4,C,B
+fRos,119,@L0,@,0,"fRos.119,@L0",,otodedy,False,N,4,C,B
+fRos,120,@L0,@,0,"fRos.120,@L0",,opchdain,False,N,4,C,B
+fRos,121,@L0,@,0,"fRos.121,@L0",,otdar shed,False,N,4,C,B
+fRos,123,@L0,@,0,"fRos.123,@L0",,ofaraiin,False,N,4,C,B
+fRos,124,@L0,@,0,"fRos.124,@L0",,okolar,False,N,4,C,B
+fRos,125,@L0,@,0,"fRos.125,@L0",,okchdy,False,N,4,C,B
+fRos,126,@L0,@,0,"fRos.126,@L0",,ykedy,False,N,4,C,B
+fRos,127,@L0,@,0,"fRos.127,@L0",,oteedy,False,N,4,C,B
+fRos,128,@L0,@,0,"fRos.128,@L0",,otosaiin,False,N,4,C,B
+fRos,129,@L0,@,0,"fRos.129,@L0",,otchdam,False,N,4,C,B
+fRos,130,@L0,@,0,"fRos.130,@L0",6:10,otedy,True,N,4,C,B
+fRos,131,@L0,@,0,"fRos.131,@L0",6:11,okar,False,N,4,C,B
+fRos,132,@L0,@,0,"fRos.132,@L0",6:12,lashalg,False,N,4,C,B
+fRos,134,@L0,@,0,"fRos.134,@L0",,o@214;alda,False,N,4,C,B
+fRos,135,@L0,@,0,"fRos.135,@L0",,osaram,False,N,4,C,B
+fRos,136,@L0,@,0,"fRos.136,@L0",,oparodam,False,N,4,C,B
+fRos,146,@L0,@,0,"fRos.146,@L0",,dor,False,N,4,C,B
+fRos,147,+L0,+,0,"fRos.147,+L0",,oky,False,N,4,C,B
+fRos,148,+L0,+,0,"fRos.148,+L0",,roo,False,N,4,C,B
+fRos,149,@L0,@,0,"fRos.149,@L0",,otol,False,N,4,C,B
+fRos,150,+L0,+,0,"fRos.150,+L0",,ardas,False,N,4,C,B
+fRos,151,+L0,+,0,"fRos.151,+L0",,l chdy,False,N,4,C,B
+fRos,152,@L0,@,0,"fRos.152,@L0",,oparod,False,N,4,C,B
+fRos,153,+L0,+,0,"fRos.153,+L0",,shckhdy,False,N,4,C,B
+fRos,154,+L0,+,0,"fRos.154,+L0",,tshda,False,N,4,C,B
+fRos,155,@L0,@,0,"fRos.155,@L0",,opchd,False,N,4,C,B
+fRos,156,+L0,+,0,"fRos.156,+L0",,opchdy,False,N,4,C,B
+fRos,157,+L0,+,0,"fRos.157,+L0",,qokal,False,N,4,C,B
+fRos,158,@L0,@,0,"fRos.158,@L0",,shet?,True,N,4,C,B
+fRos,159,+L0,+,0,"fRos.159,+L0",,opchsy,False,N,4,C,B
+fRos,160,+L0,+,0,"fRos.160,+L0",,che?ky,True,N,4,C,B
+f88r,1,@Lc,@,c,"f88r.1,@Lc",,otorchety,False,O,1,P,A
+f88r,2,@Lf,@,f,"f88r.2,@Lf",,osal,False,O,1,P,A
+f88r,3,@Lf,@,f,"f88r.3,@Lf",,orald,False,O,1,P,A
+f88r,4,@Lf,@,f,"f88r.4,@Lf",,oldar,False,O,1,P,A
+f88r,5,@Lf,@,f,"f88r.5,@Lf",,otoky,False,O,1,P,A
+f88r,6,@Lf,@,f,"f88r.6,@Lf",,otaly,False,O,1,P,A
+f88r,12,@Lc,@,c,"f88r.12,@Lc",,otaldy,False,O,1,P,A
+f88r,13,@Lf,@,f,"f88r.13,@Lf",,oram,False,O,1,P,A
+f88r,14,@Lf,@,f,"f88r.14,@Lf",,dary,False,O,1,P,A
+f88r,15,@Lf,@,f,"f88r.15,@Lf",,okol,False,O,1,P,A
+f88r,16,@Lf,@,f,"f88r.16,@Lf",,sorory,False,O,1,P,A
+f88r,17,@Lf,@,f,"f88r.17,@Lf",,otyda,False,O,1,P,A
+f88r,23,@Lc,@,c,"f88r.23,@Lc",,ofyskydal,False,O,1,P,A
+f88r,24,@Lf,@,f,"f88r.24,@Lf",,otor am,False,O,1,P,A
+f88r,25,@Lf,@,f,"f88r.25,@Lf",,ofaldo,False,O,1,P,A
+f88v,1,@Lc,@,c,"f88v.1,@Lc",,okalyd,False,O,1,P,A
+f88v,2,@Lf,@,f,"f88v.2,@Lf",,cheocthy,False,O,1,P,A
+f88v,3,@Lf,@,f,"f88v.3,@Lf",,cpheor,False,O,1,P,A
+f88v,4,@Lf,@,f,"f88v.4,@Lf",,otar arody,False,O,1,P,A
+f88v,5,@Lf,@,f,"f88v.5,@Lf",,otokol,False,O,1,P,A
+f88v,11,@Lc,@,c,"f88v.11,@Lc",,otoram,False,O,1,P,A
+f88v,12,@Lf,@,f,"f88v.12,@Lf",,otora,True,O,1,P,A
+f88v,13,@Lf,@,f,"f88v.13,@Lf",,cheosdy,False,O,1,P,A
+f88v,14,@Lf,@,f,"f88v.14,@Lf",,okaiin,False,O,1,P,A
+f88v,27,@Lc,@,c,"f88v.27,@Lc",,daramdal,False,O,1,P,A
+f88v,28,@Lf,@,f,"f88v.28,@Lf",,otydary,False,O,1,P,A
+f88v,29,@Lf,@,f,"f88v.29,@Lf",,otdordy,False,O,1,P,A
+f88v,30,@Lf,@,f,"f88v.30,@Lf",,dararda?,True,O,1,P,A
+f89r1,1,@Lc,@,c,"f89r1.1,@Lc",,okchshy,False,O,1,P,A
+f89r1,2,@Lf,@,f,"f89r1.2,@Lf",,qkol,False,O,1,P,A
+f89r1,3,@Lf,@,f,"f89r1.3,@Lf",,oldam,False,O,1,P,A
+f89r1,4,@Lf,@,f,"f89r1.4,@Lf",,otoldy,False,O,1,P,A
+f89r1,5,@Lf,@,f,"f89r1.5,@Lf",,ararchodaiin,False,O,1,P,A
+f89r1,11,@Lc,@,c,"f89r1.11,@Lc",,ykyd,False,O,1,P,A
+f89r1,12,@Lf,@,f,"f89r1.12,@Lf",,chol ches,False,O,1,P,A
+f89r1,13,@Lf,@,f,"f89r1.13,@Lf",,otorain,False,O,1,P,A
+f89r1,14,@Lf,@,f,"f89r1.14,@Lf",,okaiin dan,False,O,1,P,A
+f89r1,24,@Lc,@,c,"f89r1.24,@Lc",,ykocfhy,False,O,1,P,A
+f89r1,25,@Lf,@,f,"f89r1.25,@Lf",,saldam,False,O,1,P,A
+f89r1,26,@Lf,@,f,"f89r1.26,@Lf",,sydarary,True,O,1,P,A
+f89r1,27,@Lf,@,f,"f89r1.27,@Lf",,yd{cpo}dy,False,O,1,P,A
+f89r2,1,@Lc,@,c,"f89r2.1,@Lc",,odory,False,O,1,P,A
+f89r2,2,@Lf,@,f,"f89r2.2,@Lf",,doly,False,O,1,P,A
+f89r2,3,@Lf,@,f,"f89r2.3,@Lf",,opchosam,False,O,1,P,A
+f89r2,4,@Lf,@,f,"f89r2.4,@Lf",,saloiinsheol,False,O,1,P,A
+f89r2,5,@Lf,@,f,"f89r2.5,@Lf",,opcheor,False,O,1,P,A
+f89r2,9,@Lc,@,c,"f89r2.9,@Lc",,otold,True,O,1,P,A
+f89r2,10,@Lf,@,f,"f89r2.10,@Lf",,okol shol dy,False,O,1,P,A
+f89r2,11,@Lf,@,f,"f89r2.11,@Lf",,opchoroiin,False,O,1,P,A
+f89r2,16,@Lc,@,c,"f89r2.16,@Lc",,korainy,False,O,1,P,A
+f89r2,17,@Lf,@,f,"f89r2.17,@Lf",,sodar,False,O,1,P,A
+f89r2,18,@Lf,@,f,"f89r2.18,@Lf",,cheys,False,O,1,P,A
+f89r2,19,@Lf,@,f,"f89r2.19,@Lf",,cheody,False,O,1,P,A
+f89r2,20,@Lf,@,f,"f89r2.20,@Lf",,oporain,False,O,1,P,A
+f89r2,21,@Lf,@,f,"f89r2.21,@Lf",,okshdchos,False,O,1,P,A
+f89r2,29,@Lc,@,c,"f89r2.29,@Lc",,okain,False,O,1,P,A
+f89r2,30,+Lc,+,c,"f89r2.30,+Lc",,yorain,False,O,1,P,A
+f89r2,31,@Lf,@,f,"f89r2.31,@Lf",,ofakal,False,O,1,P,A
+f89r2,32,@Lf,@,f,"f89r2.32,@Lf",,otalsy,False,O,1,P,A
+f89r2,33,@Lf,@,f,"f89r2.33,@Lf",,ytarem,False,O,1,P,A
+f89r2,34,@Lf,@,f,"f89r2.34,@Lf",,otolarol,False,O,1,P,A
+f89v2,1,@Lc,@,c,"f89v2.1,@Lc",,choeesy,False,O,1,P,A
+f89v2,2,@Lf,@,f,"f89v2.2,@Lf",,okam,False,O,1,P,A
+f89v2,3,@Lf,@,f,"f89v2.3,@Lf",,darcheor,False,O,1,P,A
+f89v2,4,@Lf,@,f,"f89v2.4,@Lf",,chokaro,False,O,1,P,A
+f89v2,5,@Lf,@,f,"f89v2.5,@Lf",,sheol,False,O,1,P,A
+f89v2,6,@Lf,@,f,"f89v2.6,@Lf",,chokam,False,O,1,P,A
+f89v2,11,@Lc,@,c,"f89v2.11,@Lc",,otory,False,O,1,P,A
+f89v2,12,@Lf,@,f,"f89v2.12,@Lf",,otair chody,False,O,1,P,A
+f89v2,13,@Lf,@,f,"f89v2.13,@Lf",,dykaran,False,O,1,P,A
+f89v2,14,@Lf,@,f,"f89v2.14,@Lf",,opcheedey,False,O,1,P,A
+f89v2,23,@Lc,@,c,"f89v2.23,@Lc",,opaloiiry,False,O,1,P,A
+f89v2,24,@Lf,@,f,"f89v2.24,@Lf",,otaram,False,O,1,P,A
+f89v2,25,@Lf,@,f,"f89v2.25,@Lf",,chtchy,False,O,1,P,A
+f89v2,27,@Lf,@,f,"f89v2.27,@Lf",,sada?,True,O,1,P,A
+f89v2,28,@Lf,@,f,"f89v2.28,@Lf",,daseky,False,O,1,P,A
+f89v1,1,@Lc,@,c,"f89v1.1,@Lc",,okoraldy,False,O,1,P,A
+f89v1,2,@Lf,@,f,"f89v1.2,@Lf",,oto{ikh}y,False,O,1,P,A
+f89v1,3,@Lf,@,f,"f89v1.3,@Lf",,otchar,False,O,1,P,A
+f89v1,4,@Lf,@,f,"f89v1.4,@Lf",,darshody,False,O,1,P,A
+f89v1,21,@Lc,@,c,"f89v1.21,@Lc",,koeeorain,False,O,1,P,A
+f89v1,22,@Lf,@,f,"f89v1.22,@Lf",,otorshos,False,O,1,P,A
+f89v1,23,@Lf,@,f,"f89v1.23,@Lf",,opol olaiin,False,O,1,P,A
+f89v1,24,@Lf,@,f,"f89v1.24,@Lf",,opaldaiin,False,O,1,P,A
+f99r,1,@Lc,@,c,"f99r.1,@Lc",,okaradag,False,S,1,P,A
+f99r,2,@Lf,@,f,"f99r.2,@Lf",,okar y,False,S,1,P,A
+f99r,3,@Lf,@,f,"f99r.3,@Lf",,darar,False,S,1,P,A
+f99r,4,@Lf,@,f,"f99r.4,@Lf",,oky,False,S,1,P,A
+f99r,5,@Lf,@,f,"f99r.5,@Lf",,salo,False,S,1,P,A
+f99r,6,@Lf,@,f,"f99r.6,@Lf",,aro,False,S,1,P,A
+f99r,7,+Lf,+,f,"f99r.7,+Lf",,ain,False,S,1,P,A
+f99r,8,@Lf,@,f,"f99r.8,@Lf",,okor,False,S,1,P,A
+f99r,9,@Lf,@,f,"f99r.9,@Lf",,ralol,False,S,1,P,A
+f99r,10,@Lf,@,f,"f99r.10,@Lf",,skeeal,False,S,1,P,A
+f99r,11,@Lf,@,f,"f99r.11,@Lf",,okary,False,S,1,P,A
+f99r,12,@Lf,@,f,"f99r.12,@Lf",,okolo,False,S,1,P,A
+f99r,13,@Lf,@,f,"f99r.13,@Lf",,otalam,False,S,1,P,A
+f99r,14,@Lf,@,f,"f99r.14,@Lf",,otoldy,False,S,1,P,A
+f99r,19,@Lc,@,c,"f99r.19,@Lc",,oparal,False,S,1,P,A
+f99r,20,@Lf,@,f,"f99r.20,@Lf",,oaro,False,S,1,P,A
+f99r,21,@Lf,@,f,"f99r.21,@Lf",,aloly,False,S,1,P,A
+f99r,22,@Lf,@,f,"f99r.22,@Lf",,aora?,True,S,1,P,A
+f99r,23,@Lf,@,f,"f99r.23,@Lf",,choky,False,S,1,P,A
+f99r,24,@Lf,@,f,"f99r.24,@Lf",,oky,False,S,1,P,A
+f99r,25,@Lf,@,f,"f99r.25,@Lf",,okeoly,False,S,1,P,A
+f99r,26,@Lf,@,f,"f99r.26,@Lf",,yteold,False,S,1,P,A
+f99r,27,@Lf,@,f,"f99r.27,@Lf",,cheotchy,False,S,1,P,A
+f99r,32,@Lc,@,c,"f99r.32,@Lc",,tsholdy,False,S,1,P,A
+f99r,33,@Lf,@,f,"f99r.33,@Lf",,okos,False,S,1,P,A
+f99r,34,@Lf,@,f,"f99r.34,@Lf",,oekey,False,S,1,P,A
+f99r,35,@Lf,@,f,"f99r.35,@Lf",,dar,False,S,1,P,A
+f99r,36,@Lf,@,f,"f99r.36,@Lf",,chockhia,True,S,1,P,A
+f99r,37,@Lf,@,f,"f99r.37,@Lf",,r cheyet,False,S,1,P,A
+f99r,38,@Lf,@,f,"f99r.38,@Lf",,saiiny,False,S,1,P,A
+f99r,39,@Lf,@,f,"f99r.39,@Lf",,sory,False,S,1,P,A
+f99r,40,@Lf,@,f,"f99r.40,@Lf",,dam,False,S,1,P,A
+f99r,45,@Lc,@,c,"f99r.45,@Lc",,yteoldy,False,S,1,P,A
+f99r,46,@Lf,@,f,"f99r.46,@Lf",,tolsasy,False,S,1,P,A
+f99v,1,@Lc,@,c,"f99v.1,@Lc",,okaramy,False,S,1,P,A
+f99v,2,@Lf,@,f,"f99v.2,@Lf",,otoldy,False,S,1,P,A
+f99v,3,@Lf,@,f,"f99v.3,@Lf",,otor chy,False,S,1,P,A
+f99v,4,@Lf,@,f,"f99v.4,@Lf",,oldy,False,S,1,P,A
+f99v,5,@Lf,@,f,"f99v.5,@Lf",,dar ary,False,S,1,P,A
+f99v,6,@Lf,@,f,"f99v.6,@Lf",,otaly,False,S,1,P,A
+f99v,7,@Lf,@,f,"f99v.7,@Lf",,olsy,False,S,1,P,A
+f99v,8,@Lf,@,f,"f99v.8,@Lf",,arol,False,S,1,P,A
+f99v,9,@Lf,@,f,"f99v.9,@Lf",,otoky,False,S,1,P,A
+f99v,14,@Lc,@,c,"f99v.14,@Lc",,okoldody,False,S,1,P,A
+f99v,15,@Lf,@,f,"f99v.15,@Lf",,oeeesary,False,S,1,P,A
+f99v,16,@Lf,@,f,"f99v.16,@Lf",,daiiinc,False,S,1,P,A
+f99v,17,@Lf,@,f,"f99v.17,@Lf",,sary,False,S,1,P,A
+f99v,18,@Lf,@,f,"f99v.18,@Lf",,saiino,False,S,1,P,A
+f99v,19,@Lf,@,f,"f99v.19,@Lf",,otolsar,False,S,1,P,A
+f99v,20,@Lf,@,f,"f99v.20,@Lf",,osary,False,S,1,P,A
+f99v,25,@Lc,@,c,"f99v.25,@Lc",,darolaly,False,S,1,P,A
+f99v,26,@Lf,@,f,"f99v.26,@Lf",,okechy,False,S,1,P,A
+f99v,27,@Lf,@,f,"f99v.27,@Lf",,otal,False,S,1,P,A
+f99v,28,@Lf,@,f,"f99v.28,@Lf",,chor olekor,False,S,1,P,A
+f99v,29,@Lf,@,f,"f99v.29,@Lf",,okeodor,False,S,1,P,A
+f99v,30,@Lf,@,f,"f99v.30,@Lf",,olky,False,S,1,P,A
+f99v,31,@Lf,@,f,"f99v.31,@Lf",,doldam,False,S,1,P,A
+f99v,36,@Lc,@,c,"f99v.36,@Lc",,oralas,False,S,1,P,A
+f99v,44,@Lf,@,f,"f99v.44,@Lf",,koleearol,False,S,1,P,A
+f100r,1,@Lf,@,f,"f100r.1,@Lf",,chosaroshol,False,S,1,P,A
+f100r,2,@Lf,@,f,"f100r.2,@Lf",,sochorcfhy,False,S,1,P,A
+f100r,3,@Lf,@,f,"f100r.3,@Lf",,otear,False,S,1,P,A
+f100r,4,@Lf,@,f,"f100r.4,@Lf",,chofary,True,S,1,P,A
+f100r,5,@Lf,@,f,"f100r.5,@Lf",,sar char daiindy,False,S,1,P,A
+f100r,6,@Lf,@,f,"f100r.6,@Lf",,oraro,True,S,1,P,A
+f100r,7,@Lf,@,f,"f100r.7,@Lf",,chalsain,False,S,1,P,A
+f100r,8,@Lf,@,f,"f100r.8,@Lf",,soity,False,S,1,P,A
+f100r,9,@Lf,@,f,"f100r.9,@Lf",,sosam,False,S,1,P,A
+f100r,10,@Lf,@,f,"f100r.10,@Lf",,dakocth,False,S,1,P,A
+f100r,11,@Lf,@,f,"f100r.11,@Lf",,sofam,False,S,1,P,A
+f100r,16,@Lf,@,f,"f100r.16,@Lf",,okeeos,False,S,1,P,A
+f100r,17,@Lf,@,f,"f100r.17,@Lf",,shockhey,False,S,1,P,A
+f100r,18,@Lf,@,f,"f100r.18,@Lf",,orol,False,S,1,P,A
+f100r,19,@Lf,@,f,"f100r.19,@Lf",,olcheom,False,S,1,P,A
+f100r,20,@Lf,@,f,"f100r.20,@Lf",,oteol,False,S,1,P,A
+f100r,21,@Lf,@,f,"f100r.21,@Lf",,okols,False,S,1,P,A
+f100v,1,@Lf,@,f,"f100v.1,@Lf",,tolchd,False,S,1,P,A
+f100v,2,@Lf,@,f,"f100v.2,@Lf",,chols,False,S,1,P,A
+f100v,3,@Lf,@,f,"f100v.3,@Lf",,opchor,False,S,1,P,A
+f100v,4,@Lf,@,f,"f100v.4,@Lf",,solsy,False,S,1,P,A
+f100v,5,@Lf,@,f,"f100v.5,@Lf",,soleesos,False,S,1,P,A
+f100v,6,@Lf,@,f,"f100v.6,@Lf",,ykchochdy,False,S,1,P,A
+f100v,7,@Lf,@,f,"f100v.7,@Lf",,ykchdy,False,S,1,P,A
+f100v,8,@Lf,@,f,"f100v.8,@Lf",,dchdy,False,S,1,P,A
+f100v,9,@Lf,@,f,"f100v.9,@Lf",,dalsy,False,S,1,P,A
+f100v,10,@Lf,@,f,"f100v.10,@Lf",,okcheor,False,S,1,P,A
+f100v,11,@Lf,@,f,"f100v.11,@Lf",,ytchol,False,S,1,P,A
+f100v,12,@Lf,@,f,"f100v.12,@Lf",,dykchal,False,S,1,P,A
+f100v,13,@Lf,@,f,"f100v.13,@Lf",,chos ctharal,False,S,1,P,A
+f101v,1,@Lf,@,f,"f101v.1,@Lf",,sairaly,True,S,1,P,A
+f101v,2,@Lf,@,f,"f101v.2,@Lf",,otaldy,False,S,1,P,A
+f101v,3,@Lf,@,f,"f101v.3,@Lf",,otol,False,S,1,P,A
+f101v,4,@Lf,@,f,"f101v.4,@Lf",,ytal,False,S,1,P,A
+f101v,5,@Lf,@,f,"f101v.5,@Lf",,dokor,False,S,1,P,A
+f101v,6,@Lf,@,f,"f101v.6,@Lf",,orar,False,S,1,P,A
+f101v,7,@Lf,@,f,"f101v.7,@Lf",,otarar,False,S,1,P,A
+f101v,8,@Lf,@,f,"f101v.8,@Lf",,otoly,True,S,1,P,A
+f101v,9,@Lf,@,f,"f101v.9,@Lf",,soraly,False,S,1,P,A
+f101v,10,@Lf,@,f,"f101v.10,@Lf",,okol,False,S,1,P,A
+f101v,11,@Lf,@,f,"f101v.11,@Lf",,arom,False,S,1,P,A
+f101v,12,@Lf,@,f,"f101v.12,@Lf",,oraram,False,S,1,P,A
+f101v,13,@Lf,@,f,"f101v.13,@Lf",,oraeep,False,S,1,P,A
+f101v,14,@Lf,@,f,"f101v.14,@Lf",,dytolg,False,S,1,P,A
+f101v,15,@Lf,@,f,"f101v.15,@Lf",,olkor,False,S,1,P,A
+f101v,16,@Lf,@,f,"f101v.16,@Lf",,dolary,False,S,1,P,A
+f101v,17,@Lf,@,f,"f101v.17,@Lf",,odor,False,S,1,P,A
+f101v,18,@Lf,@,f,"f101v.18,@Lf",,olaran,False,S,1,P,A
+f102r1,1,@Lc,@,c,"f102r1.1,@Lc",,daarod,False,S,1,P,A
+f102r1,2,@Lf,@,f,"f102r1.2,@Lf",,otodeeodor,False,S,1,P,A
+f102r1,7,@Lc,@,c,"f102r1.7,@Lc",,okolaly,False,S,1,P,A
+f102r1,12,@Lc,@,c,"f102r1.12,@Lc",,ddardsh,False,S,1,P,A
+f102r2,1,@Lc,@,c,"f102r2.1,@Lc",,kodaiig,False,S,1,P,A
+f102r2,7,@Lc,@,c,"f102r2.7,@Lc",,ok?rolda,True,S,1,P,A
+f102r2,13,@Lc,@,c,"f102r2.13,@Lc",,loeekadag,False,S,1,P,A
+f102r2,14,+Lc,+,c,"f102r2.14,+Lc",,oshea??l,True,S,1,P,A
+f102r2,15,+Lc,+,c,"f102r2.15,+Lc",,so???dch,True,S,1,P,A
+f102r2,21,@Lf,@,f,"f102r2.21,@Lf",,koldarod,False,S,1,P,A
+f102r2,22,@Lf,@,f,"f102r2.22,@Lf",,odalydary,False,S,1,P,A
+f102v2,1,@Lc,@,c,"f102v2.1,@Lc",,porshols,False,S,1,P,A
+f102v2,2,+Lc,+,c,"f102v2.2,+Lc",,soaimy,False,S,1,P,A
+f102v2,3,@Lf,@,f,"f102v2.3,@Lf",,oror,False,S,1,P,A
+f102v2,4,@Lf,@,f,"f102v2.4,@Lf",,chor,False,S,1,P,A
+f102v2,5,@Lf,@,f,"f102v2.5,@Lf",,sachy,False,S,1,P,A
+f102v2,6,@Lf,@,f,"f102v2.6,@Lf",,okeos,True,S,1,P,A
+f102v2,7,@Lf,@,f,"f102v2.7,@Lf",,okol,False,S,1,P,A
+f102v2,8,@Lf,@,f,"f102v2.8,@Lf",,otory,False,S,1,P,A
+f102v2,9,@Lf,@,f,"f102v2.9,@Lf",,ok?,True,S,1,P,A
+f102v2,10,@Lf,@,f,"f102v2.10,@Lf",,okody,False,S,1,P,A
+f102v2,11,@Lf,@,f,"f102v2.11,@Lf",,cheor,False,S,1,P,A
+f102v2,12,@Lf,@,f,"f102v2.12,@Lf",,okoroeey,False,S,1,P,A
+f102v2,13,@Lf,@,f,"f102v2.13,@Lf",,opchy,False,S,1,P,A
+f102v2,14,@Lf,@,f,"f102v2.14,@Lf",,sarol,False,S,1,P,A
+f102v2,15,@Lf,@,f,"f102v2.15,@Lf",,olrodar,False,S,1,P,A
+f102v2,16,@Lf,@,f,"f102v2.16,@Lf",,tod?,True,S,1,P,A
+f102v2,24,@Lc,@,c,"f102v2.24,@Lc",,okolky,False,S,1,P,A
+f102v2,25,@Lf,@,f,"f102v2.25,@Lf",,osain,False,S,1,P,A
+f102v2,26,@Lf,@,f,"f102v2.26,@Lf",,aiky,False,S,1,P,A
+f102v2,27,@Lf,@,f,"f102v2.27,@Lf",,okeeoraiin,False,S,1,P,A
+f102v2,28,@Lf,@,f,"f102v2.28,@Lf",,okockhy,False,S,1,P,A
+f102v2,29,@Lf,@,f,"f102v2.29,@Lf",,os,False,S,1,P,A
+f102v1,1,@Lc,@,c,"f102v1.1,@Lc",,keoraiiin,False,S,1,P,A
+f102v1,2,@Lf,@,f,"f102v1.2,@Lf",,okeody,False,S,1,P,A
+f102v1,3,@Lf,@,f,"f102v1.3,@Lf",,okeody,False,S,1,P,A
+f102v1,4,@Lf,@,f,"f102v1.4,@Lf",,daiisaly,False,S,1,P,A
+f102v1,5,@Lf,@,f,"f102v1.5,@Lf",,ypary,False,S,1,P,A
+f102v1,6,@Lf,@,f,"f102v1.6,@Lf",,opchyt{cy},False,S,1,P,A
+f102v1,15,@Lc,@,c,"f102v1.15,@Lc",,d?indy,True,S,1,P,A
+f102v1,16,@Lf,@,f,"f102v1.16,@Lf",,ypcholdy,False,S,1,P,A
+f102v1,17,@Lf,@,f,"f102v1.17,@Lf",,loralody,False,S,1,P,A
+f102v1,18,@Lf,@,f,"f102v1.18,@Lf",,opchdard,False,S,1,P,A
+f116v,1,@Lx,@,x,"f116v.1,@Lx",,oror sheey,False,T,3,T,
