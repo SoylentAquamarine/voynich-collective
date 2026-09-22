@@ -85,6 +85,9 @@ nav a.active, nav a:hover { color: var(--red); border-color: var(--red); }
 .status-grid div { padding: 1rem; border-left: 1px solid var(--line); }
 .status-grid strong { display: block; font: 400 2.5rem var(--serif); color: var(--red); }
 .status-grid span { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; }
+.stat-link { display: block; text-decoration: none; }
+.stat-link strong { text-decoration-line: underline; text-decoration-color: transparent; text-underline-offset: 5px; transition: text-decoration-color .15s; }
+.stat-link:hover strong, .stat-link:focus-visible strong { text-decoration-color: var(--red); }
 
 .snapshot-panel { margin-top: 2rem; background: var(--paper-light); }
 .snapshot-caveat { margin: .75rem 0 0; color: #6b6252; font-family: var(--sans); font-size: .85rem; line-height: 1.6; }
@@ -130,7 +133,7 @@ nav a.active, nav a:hover { color: var(--red); border-color: var(--red); }
 .document-shell aside a { color: var(--red); font-weight: 700; }
 .source-label { font-size: .65rem; font-weight: 800; text-transform: uppercase; letter-spacing: .14em; }
 .markdown, .dialogue-paper { min-height: 360px; padding: clamp(1.5rem, 4vw, 3.5rem); background: #fffdf7; border: 1px solid var(--line); box-shadow: var(--shadow); }
-.markdown h1, .markdown h2, .markdown h3 { font-family: var(--serif); font-weight: 400; line-height: 1.18; }
+.markdown h1, .markdown h2, .markdown h3 { font-family: var(--serif); font-weight: 400; line-height: 1.18; scroll-margin-top: 100px; }
 .markdown h1 { margin-top: 0; font-size: 2.5rem; }
 .markdown h2 { margin-top: 2.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); font-size: 1.75rem; }
 .markdown h3 { margin-top: 2rem; font-size: 1.3rem; color: var(--red-dark); }
