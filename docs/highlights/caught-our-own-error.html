@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voynich Collective highlight: catching a mismatch with a cited paper before it could mislead anyone.">
+  <meta name="theme-color" content="#17140f">
+  <title>We caught our own mistake before it went out the door · Voynich Collective</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" style="justify-content:space-between;">
+    <a class="brand" href="../index.html" aria-label="Voynich Collective home">
+      <span class="sigil" aria-hidden="true">V</span>
+      <span>Voynich Collective</span>
+    </a>
+    <a class="repo-link" href="../index.html">← Back to the highlights</a>
+  </header>
+
+  <main class="brag-page">
+    <div class="section-intro">
+      <p class="kicker">Highlight 05 of 5</p>
+      <h1>We caught our own mistake before it went out the door</h1>
+    </div>
+    <article class="markdown">
+      <p>We were checking whether two of our generators matched a specific pattern in the real manuscript — how predictable text gets as you group letters into larger and larger chunks. A paper published by outside researchers had already measured this same pattern for the real Voynich text, so instead of remeasuring it ourselves, we planned to compare our generators directly against the paper's published numbers.</p>
+      <h2>Before trusting an outside number, we checked it ourselves</h2>
+      <p>Before running that comparison, we did something we've made a habit of on this project: we ran the exact same measurement on the real manuscript text ourselves, through our own pipeline, just to make sure our numbers and the paper's numbers actually meant the same thing. They didn't. Our own measurement of the real manuscript came out meaningfully different from the paper's published values — not a rounding error, but a real difference, at every single comparison point.</p>
+      <p>Digging in, the cause was clear: the outside paper had measured this pattern using a different method than our own pipeline uses (holding out different sections of the manuscript for testing). Comparing our generators to the paper's numbers directly would have been comparing two different kinds of measurement and calling it a fair test — a mistake that could have produced a misleading conclusion in either direction.</p>
+      <h2>What we did about it</h2>
+      <p>We didn't quietly swap in whichever number made our result look better. We wrote up the mismatch plainly, in public, as its own finding — and then used only our own consistently-measured numbers as the fair comparison basis for testing our generators, treating the outside paper's numbers as background context only.</p>
+      <p>This wasn't a one-time save. It's a pattern we've built into how this project works: earlier, we also caught a case where a word-length statistic we'd cited from an earlier pass turned out to come from a different way of splitting up the text than our newer scripts use, and — separately — a formatting quirk in the raw manuscript transcription file that was silently shifting where six word boundaries fell on one page. In every case: found, disclosed, fixed, and rechecked — before it could distort a conclusion.</p>
+      <div class="tech-link-box">
+        Read the full write-ups: <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-frozen-mechanisms-bpe-curve-shape-check-report.md">this week's methodology mismatch ↗</a>, the <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-frozen-mechanisms-wordlength-levenshtein-extension-report.md">earlier word-length discrepancy ↗</a>, and the <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-09-19-tilde-boundary-fix.md">transcription boundary fix ↗</a>.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div><span class="sigil small" aria-hidden="true">V</span><p><strong>Voynich Collective</strong><br>An open, falsification-driven investigation.</p></div>
+    <p>Content refreshes from the public repository. <a href="https://github.com/SoylentAquamarine/voynich-collective">Source and history ↗</a></p>
+  </footer>
+</body>
+</html>

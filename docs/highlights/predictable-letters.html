@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voynich Collective highlight: the manuscript's letters are far more predictable than real languages.">
+  <meta name="theme-color" content="#17140f">
+  <title>The letters follow oddly strict rules · Voynich Collective</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" style="justify-content:space-between;">
+    <a class="brand" href="../index.html" aria-label="Voynich Collective home">
+      <span class="sigil" aria-hidden="true">V</span>
+      <span>Voynich Collective</span>
+    </a>
+    <a class="repo-link" href="../index.html">← Back to the highlights</a>
+  </header>
+
+  <main class="brag-page">
+    <div class="section-intro">
+      <p class="kicker">Highlight 01 of 5</p>
+      <h1>The letters follow oddly strict rules</h1>
+    </div>
+    <article class="markdown">
+      <p>Think of the Voynich Manuscript's writing like a game of hangman. Every time you correctly guess the next letter of a word because you already know the letter before it, that's a point for "predictability." Every time you're stuck guessing blind, that's a point for randomness.</p>
+      <p>We ran this test — formally, it measures how much knowing one character narrows down the next one — on the entire transcribed manuscript, and then ran the identical test on real Latin and Italian texts of the same length for comparison. The result: knowing the previous letter in the Voynich Manuscript cuts your uncertainty about the next one by about <strong>45%</strong>. In Latin, it only cuts uncertainty by about <strong>22%</strong>. In Italian, about <strong>23%</strong>. The Voynich text is roughly twice as internally constrained.</p>
+      <figure>
+        <img src="../assets/baseline-constraint.svg" alt="Bar chart comparing within-word character constraint: Voynich 45.4 percent, Latin 21.6 percent, and Italian 23.1 percent, with shuffled controls near zero.">
+        <figcaption>Shuffled controls (which scramble the letters inside each word) drop to near zero, confirming the test is measuring real internal structure, not an artifact of the math.</figcaption>
+      </figure>
+      <h2>We didn't stop at two languages</h2>
+      <p>A gap between Voynich and only two comparison languages could be a coincidence, or a quirk of Latin and Italian specifically. So we built a bigger, pre-planned test: 200 matched samples each from five more languages with very different grammar — Turkish, Estonian, Arabic, Hebrew, and English. We wrote down exactly how the test would work, and what would count as a failure, <em>before</em> running it. Every single language stayed well below the Voynich Manuscript's number. The closest contender, Turkish, still fell short by a wide margin.</p>
+      <figure>
+        <img src="../assets/document-baseline-panel.svg" alt="Range chart comparing document-stratified character-constraint distributions for Turkish, Estonian, Arabic, Hebrew, and English with atomic and literal EVA Voynich reference lines. Every language interval remains well below both Voynich references.">
+        <figcaption>Every one of the five additional languages remains clearly below the Voynich Manuscript's own constraint level.</figcaption>
+      </figure>
+      <h2>What this doesn't prove</h2>
+      <p>This is an important result, but it is not a decoding. It doesn't tell us what language the manuscript is written in, whether it's a cipher, or whether it's meaningful text at all. Alphabet size, grammar style, and even how the original scribe abbreviated words could all still explain part of the gap. What it does show is that whatever produced this text was working under tighter internal rules than ordinary natural-language writing — a real, measurable, and now well-tested fact that any future explanation has to account for.</p>
+      <div class="tech-link-box">
+        Want the full numbers and methodology? Read the <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/language-baselines-report.md">original baseline report ↗</a> and the <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/document-baseline-panel-report.md">five-language follow-up ↗</a>.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div><span class="sigil small" aria-hidden="true">V</span><p><strong>Voynich Collective</strong><br>An open, falsification-driven investigation.</p></div>
+    <p>Content refreshes from the public repository. <a href="https://github.com/SoylentAquamarine/voynich-collective">Source and history ↗</a></p>
+  </footer>
+</body>
+</html>

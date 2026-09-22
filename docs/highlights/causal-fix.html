@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voynich Collective highlight: finding a hidden cause and proving the fix with a prediction made in advance.">
+  <meta name="theme-color" content="#17140f">
+  <title>We tracked down a hidden bug, then proved the fix · Voynich Collective</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" style="justify-content:space-between;">
+    <a class="brand" href="../index.html" aria-label="Voynich Collective home">
+      <span class="sigil" aria-hidden="true">V</span>
+      <span>Voynich Collective</span>
+    </a>
+    <a class="repo-link" href="../index.html">← Back to the highlights</a>
+  </header>
+
+  <main class="brag-page">
+    <div class="section-intro">
+      <p class="kicker">Highlight 03 of 5</p>
+      <h1>We tracked down a hidden bug, then proved the fix</h1>
+    </div>
+    <article class="markdown">
+      <p>One of our generators had two ingredients mixed together: a rule that links the end of one word to the start of the next ("coupling"), and a rule that invents brand-new words to keep the vocabulary growing ("novelty"). Each ingredient worked fine on its own. Combined, something went wrong — a test that measures whether whole words follow each other in suspiciously predictable order kept failing, every single time.</p>
+      <h2>The first guess was wrong — and we said so</h2>
+      <p>Our first idea was simple: maybe the problem shows up whenever the next word happens to start with one of a small handful of letters the coupling rule favors. We tested it directly. It wasn't true — those particular pairs were actually <em>less</em> predictable than average, not more. Rather than quietly dropping the idea, we published that it failed and moved on to a better question.</p>
+      <h2>Finding the real cause</h2>
+      <p>We went back and read the actual code line by line instead of guessing from the outside. The real cause turned out to be narrower and more mechanical than our first guess: whenever the coupling rule fires, it doesn't pick a word's first letter from the whole alphabet — it forces it into one of just <strong>4</strong> possible values. That's an artificial narrowing, and it's exactly the kind of thing that would make word order look more predictable than it should. We measured this directly (not the letter it produced, but whether the narrowing rule had actually fired) and found a clear, consistent jump in predictability exactly where we expected it.</p>
+      <h2>Then we proved it — the hard way</h2>
+      <p>Finding a plausible cause isn't the same as proving it. So we built a small, targeted fix aimed at only that one narrowing effect, and — before running it even once — we wrote down exactly what we expected to happen: the fix should help a lot when the coupling rule is switched off, and barely help at all when it's switched on, because the coupling rule's own narrowing would still be doing its damage regardless of the fix. We ran it. That is exactly what happened.</p>
+      <p>That's the part worth bragging about. It's easy to notice a pattern after the fact and tell a convincing story about it. It's much harder to write down a specific, falsifiable prediction in advance and then watch it come true. That's the difference between a hunch and evidence.</p>
+      <div class="tech-link-box">
+        Read the detective work: <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-coupling-causal-concentration-diagnostic-report.md">how the real cause was found ↗</a> and <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-v2-substitution-position0-priority-audit-report.md">the targeted fix and its confirmed prediction ↗</a>.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div><span class="sigil small" aria-hidden="true">V</span><p><strong>Voynich Collective</strong><br>An open, falsification-driven investigation.</p></div>
+    <p>Content refreshes from the public repository. <a href="https://github.com/SoylentAquamarine/voynich-collective">Source and history ↗</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voynich Collective highlight: building a mechanism that passes every test, and why that's a warning sign, not a solution.">
+  <meta name="theme-color" content="#17140f">
+  <title>We built a "perfect score" fake — on purpose · Voynich Collective</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" style="justify-content:space-between;">
+    <a class="brand" href="../index.html" aria-label="Voynich Collective home">
+      <span class="sigil" aria-hidden="true">V</span>
+      <span>Voynich Collective</span>
+    </a>
+    <a class="repo-link" href="../index.html">← Back to the highlights</a>
+  </header>
+
+  <main class="brag-page">
+    <div class="section-intro">
+      <p class="kicker">Highlight 04 of 5</p>
+      <h1>We built a "perfect score" fake — on purpose</h1>
+    </div>
+    <article class="markdown">
+      <p>After many rounds of narrowing (see the previous highlights), we eventually built a generator that passes <strong>all six</strong> of our numeric targets, every time, with room to spare. That had never happened before in this project — every earlier attempt failed at least one test.</p>
+      <p><strong>Read that headline carefully, because the next part matters more than the result itself: this is not a decoded Voynich Manuscript, and we are not claiming it is.</strong></p>
+      <h2>Why this isn't a solution</h2>
+      <p>The mechanism that passes all six tests was built with one goal only — hit those six specific numbers. It combines a historical cipher with two extra processing steps that were engineered, tweaked, and adjusted specifically to satisfy the test, the same way you could build a key that opens one specific lock without that key having any relationship to how the lock was actually manufactured. It has no historical grounding, no linguistic reasoning, and no argument for why a 15th-century scribe would have used it. Nobody on this project believes it is the answer, and we say so plainly in the technical report.</p>
+      <h2>Why this is still a genuinely important result</h2>
+      <p>Throughout this project, we used those same six tests to reject nine other, more plausible theories as insufficient. This result proves something uncomfortable but valuable: passing all six tests is <em>not enough</em>, by itself, to prove a mechanism is right — because a mechanism built for no reason other than to pass the test, does pass the test. A generator with zero historical merit cleared the exact same bar that ruled out real historical ciphers.</p>
+      <p>That means any future theory — including a much better one, backed by real history or linguistics — now needs more than a good score. It needs an independent reason to take it seriously. We used this discovery to close that loophole in our own rules going forward, rather than letting it sit quietly.</p>
+      <div class="tech-link-box">
+        Read the full, carefully-worded result: <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-boundary-shift-v2-novelty-null-audit-report.md">the passing mechanism, in detail ↗</a>, and how we <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/falsification-standard.md">changed our own promotion rules in response ↗</a>.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div><span class="sigil small" aria-hidden="true">V</span><p><strong>Voynich Collective</strong><br>An open, falsification-driven investigation.</p></div>
+    <p>Content refreshes from the public repository. <a href="https://github.com/SoylentAquamarine/voynich-collective">Source and history ↗</a></p>
+  </footer>
+</body>
+</html>
