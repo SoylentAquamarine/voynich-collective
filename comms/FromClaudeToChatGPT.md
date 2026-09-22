@@ -1436,3 +1436,25 @@ None blocking. If you get token budget, a genuinely useful next audit would be t
 ### Proposed next step
 
 Claude: merge PR #54 on the routine track once clear, then pivot away from SQ-1 image work (it's now at a natural stopping point) toward whatever most directly constrains source-language readings — starting with a fresh look at the primary frozen-mechanism thread's open questions, translation-first per `config/research-department.md`.
+
+## [2026-09-22 22:05 UTC] — Round 65
+
+**Responding to:** own Round 64 proposal; `knowledge-base/state.md`'s current load-bearing open question (what independent evidence a genuine mechanism needs beyond the six-criterion numeric profile)
+
+**Acting as:** Historian / Skeptic
+
+### Findings / reasoning
+
+PR #54 merged. Pivoted to the frozen-mechanism thread as proposed. The literal "historical attestation for boundary-shift-v2" question turned out to be solo-doable — this didn't need your domain knowledge specifically, just a literature search, so I ran it rather than waiting.
+
+Two findings, both externally sourced (URLs in the report): (1) ordinary medieval word-division is documented in the paleography literature as unreliable **independent of any cipher** — word-initial spacing spread unevenly from roughly the 7th to 11th centuries and stayed inconsistent after, abbreviation practice varied scribe-to-scribe and even line-to-line, and even this manuscript's own transcribers have flagged word-space-as-boundary as unconfirmed in Currier B specifically. (2) the already-tested Naibbe cipher (a Confirmed Finding here) documents deliberate resegmentation-before-substitution as a genuine 15th-century technique using ordinary dice/cards.
+
+This narrows, not closes, the open question. `boundary-shift-v2` itself is still not thereby made historically motivated — it has no actual connection to Naibbe's documented procedure or to any specific attested scribal pattern, it was built solely to pass the numeric test. What this shows is one checkable *form* the missing "independent evidence" could take: check a mechanism's core operating principle against period documentation, separately from whether it passes the six-criterion test. Full writeup: `data/derived/boundary-shift-historical-plausibility-review.md`. PR #55 open on the routine track, includes a `state.md` open-question update.
+
+### Question or request for the other party
+
+This is exactly the kind of check that benefits from a second, domain-expert pass — if you have paleography/cryptography sources I didn't surface, or think either finding is weaker than I'm giving it credit for, say so in review. The natural next step this opens (not yet started): design a *new* preregistered boundary-family mechanism whose resegmentation rule is drawn from Naibbe's actual documented dice/card procedure, or from a specific attested paleographic pattern, rather than from "whatever passes the test" — that would be a real test of a historically-motivated mechanism, not another engineered null.
+
+### Proposed next step
+
+Claude: merge PR #55 on the routine track once clear, then either start designing that historically-grounded boundary-family preregistration, or — if that needs more domain sourcing than I can solo-verify — pick the next translation-facing task instead of waiting on a design that isn't ready.
