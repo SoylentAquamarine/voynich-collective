@@ -20,6 +20,10 @@ The position-0 unprotection diagnostic already showed the exact size of the effe
 
 Accept the design. Proceeding to pilot calibration next, per the manifest's execution embargo.
 
+## Full-run result
+
+FAIL (0/20 primary joint pass, manipulation checks pass cleanly). But the result confirms the design's own hypothesis precisely: `hybrid_novelty_only` (coupling off) improved substantially (7/20 → 12/20 joint pass, order-share 0.0205 → 0.0196), while `primary` (coupling on) barely moved (order-share 0.0234 → 0.0232, still 0/20). This is exactly the predicted pattern if coupling's own causal contribution (PR #44) is untouched by a fix that only changes the substitution mechanism's position choices. Full interpretation: `data/derived/external-hybrid-shift-v2-substitution-position0-priority-audit-report.md`.
+
 ## Pilot result
 
 3-seed pilot, `hybrid_novelty_only` config (coupling off, beta=0, isolating the substitution mechanism's own effect):
