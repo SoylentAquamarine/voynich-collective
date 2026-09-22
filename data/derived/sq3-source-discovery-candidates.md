@@ -50,16 +50,24 @@ manuscript.
   any recovery-benchmark use.
 - **Martino da Como (Maestro Martino), *Libro de arte coquinaria*** (Milan,
   ca. 1450-1460, Italian vernacular) — one of the most important and
-  well-studied Renaissance culinary texts, 64 leaves, continuous prose.
-  A full scholarly transcription with hyperlinked table of contents is
-  freely available from the University of Marburg
-  (`staff.uni-marburg.de/~gloning/martino2.htm`); a photographic
-  reproduction + transcription was also published (Terziaria, Milano,
-  1990) and an English translation exists (UC Press, 2005). **This is the
-  strongest continuous-prose candidate found so far** — actual transcribed
-  text, not OCR, from a securely dated, well-provenanced, same-region
-  source. License/reuse terms of the Marburg page itself still need
-  checking before any text is brought into this repo.
+  well-studied Renaissance culinary texts, 64 leaves, continuous prose. A
+  scholarly transcription exists, prepared by Thomas Gloning (originally
+  hosted at Marburg; the personal-page URL no longer resolves — Gloning has
+  since moved to Justus-Liebig-Universität Gießen, `uni-giessen.de`, as part
+  of his *Monumenta Germaniae Culinaria et Diaetetica* project). **License
+  checked this pass and found unclear, not open**: Gloning's project page
+  states texts are made available only "insofar as legal reasons do not
+  stand against it" ("soweit nicht rechtliche Gründe dagegen stehen") — a
+  hedge, not a public-domain or CC license statement; at least one other
+  text on the same project is explicitly noted as used "with kind
+  permission" of a specific publisher, implying reuse is handled case by
+  case rather than freely granted. **Demoted to secondary/reference
+  candidate** — useful for confirming the text's content and scholarly
+  context, but not to be treated as a cleared source for reuse in this
+  repo without directly requesting permission. A photographic reproduction
+  + transcription was also published in print (Terziaria, Milano, 1990)
+  and an English translation exists (UC Press, 2005); either could be a
+  path to a properly licensed edition if pursued.
 - The project's existing Latin baseline (Index Thomisticus Treebank) and
   Italian baseline (ISDT), already used for the language-baseline work in
   `knowledge-base/state.md`, remain available for reuse too, though neither
@@ -122,13 +130,16 @@ manuscript.
 
 1. Confirm digitization/transcription availability and explicit license terms
    for Sloane 4016 (or a substitute) directly from the British Library, not
-   just secondary description. *(Lower priority now that MS 985 and Martino
-   da Como cover the continuous-prose need — Sloane 4016 would add a herbal-
-   genre/label-recovery task, not a blocker.)*
-2. ~~Find at least one genuinely continuous-prose period source~~ — **found**:
-   Beinecke MS 985 (public domain, Yale) and Martino da Como's *Libro de arte
-   coquinaria* (Marburg transcription). Martino da Como's Marburg page license
-   terms still need confirming before reuse.
+   just secondary description. *(Lower priority now that MS 985 covers the
+   continuous-prose need — Sloane 4016 would add a herbal-genre/
+   label-recovery task, not a blocker.)*
+2. ~~Find at least one genuinely continuous-prose period source~~ — **found,
+   with one caveat**: Beinecke MS 985 (confirmed public domain, Yale) is now
+   the primary continuous-prose candidate. Martino da Como's *Libro de arte
+   coquinaria* has a real scholarly transcription but its hosting page's
+   license terms turned out unclear rather than open (checked this pass —
+   see above); it's demoted to a secondary/reference candidate unless
+   permission is requested directly or the print edition is used instead.
 3. German candidate remains imperfect (see above — nothing found in the
    1400-1438 window itself). Decide: accept *Das Buoch von guoter Spise*'s
    older date, or scope SQ-3 to Latin/Italian only and say so explicitly.
