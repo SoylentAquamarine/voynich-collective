@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voynich Collective highlight: a dozen theories for how the manuscript was made, tested and explained.">
+  <meta name="theme-color" content="#17140f">
+  <title>We tried to fake it a dozen different ways · Voynich Collective</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" style="justify-content:space-between;">
+    <a class="brand" href="../index.html" aria-label="Voynich Collective home">
+      <span class="sigil" aria-hidden="true">V</span>
+      <span>Voynich Collective</span>
+    </a>
+    <a class="repo-link" href="../index.html">← Back to the highlights</a>
+  </header>
+
+  <main class="brag-page">
+    <div class="section-intro">
+      <p class="kicker">Highlight 02 of 5</p>
+      <h1>We tried to fake it a dozen different ways</h1>
+    </div>
+    <article class="markdown">
+      <p>Early on, we picked six specific, measurable properties of the real Voynich text — things like how predictable the letters are, how big the vocabulary is, how often brand-new words show up, and how word boundaries relate to each other. Any theory about how the manuscript was made has to reproduce <em>all six</em> at once, not just one or two. That's a genuinely hard bar to clear, and it's the same bar for every idea, including our own.</p>
+      <p>Then we did something most casual Voynich theories skip: instead of just describing an idea, we built a real, working computer version of it, ran it thousands of times, and checked the results against all six targets.</p>
+      <h2>What we actually tried</h2>
+      <ul>
+        <li><strong>Naibbe</strong>, a real, hand-executable cipher published by another researcher. It nailed the word-length patterns and vocabulary shape almost exactly — genuinely impressive — but it couldn't reproduce how one word's ending relates to the next word's beginning.</li>
+        <li><strong>The Cardan grille</strong>, a real 500-year-old code tool (a grid with cut-out holes, used with a source text underneath). Tested honestly with English as the source text, it fell short by more than 13 times on the boundary-relationship test.</li>
+        <li>A family of over a dozen custom-built "generators" that combine ideas — swapping letters based on frequency, coupling word boundaries together, growing vocabulary over time — each one a deliberate, disclosed variation on the last.</li>
+      </ul>
+      <p>Every single honest attempt came up short on at least one of the six targets — and in every case, we could explain <em>exactly which</em> target failed and, usually, <em>why</em>. That's the real payoff: not a pile of failures, but a series of increasingly precise answers to "why doesn't this work?"</p>
+      <figure>
+        <img src="../assets/external-cardan-edge-order.svg" alt="Bar chart of mean held-out edge-prediction gain per configuration. All four primary Cardan configurations and all three controls fall far below the required 0.15 bits/boundary threshold, marked with a dashed line.">
+        <figcaption>The Cardan grille's best configuration reached about 1/13th of the required score on one of the six tests — a clean, wide miss, not a close call.</figcaption>
+      </figure>
+      <h2>The failures got smarter each time</h2>
+      <p>This wasn't random trial and error. Each new attempt was built specifically to fix what the previous one got wrong, and we wrote down our prediction for what would happen before running each new version — so we couldn't quietly move the goalposts after seeing the result. Over more than ten iterations, the list of failing targets narrowed from most of the six down to just one: how a word's ending predicts the shape of the word after it.</p>
+      <div class="tech-link-box">
+        Read the full trail: <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-naibbe-audit-report.md">Naibbe cipher ↗</a>, <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-cardan-audit-report.md">Cardan grille ↗</a>, and the <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/methods/falsification-standard.md">full testing standard ↗</a> every attempt is measured against.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div><span class="sigil small" aria-hidden="true">V</span><p><strong>Voynich Collective</strong><br>An open, falsification-driven investigation.</p></div>
+    <p>Content refreshes from the public repository. <a href="https://github.com/SoylentAquamarine/voynich-collective">Source and history ↗</a></p>
+  </footer>
+</body>
+</html>
