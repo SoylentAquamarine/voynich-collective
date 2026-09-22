@@ -26,6 +26,10 @@ function inlineMarkdown(value) {
   return text;
 }
 
+function slugify(text) {
+  return text.replace(/`([^`]+)`/g, '$1').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
 function markdown(source) {
   const lines = source.replace(/\r/g, '').split('\n');
   const out = [];
@@ -54,7 +58,7 @@ function markdown(source) {
     if (!line.trim()) { closeParagraph(); closeList(); continue; }
     if (/^---+$/.test(line.trim())) { closeParagraph(); closeList(); out.push('<hr>'); continue; }
     const heading = line.match(/^(#{1,4})\s+(.+)$/);
-    if (heading) { closeParagraph(); closeList(); const level = heading[1].length; out.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`); continue; }
+    if (heading) { closeParagraph(); closeList(); const level = heading[1].length; const slug = slugify(heading[2]); out.push(`<h${level} id="${slug}">${inlineMarkdown(heading[2])}</h${level}>`); continue; }
     const bullet = line.match(/^\s*[-*]\s+(.+)$/);
     const ordered = line.match(/^\s*\d+[.)]\s+(.+)$/);
     if (bullet || ordered) {
@@ -146,20 +150,27 @@ async function loadOverviewStats() {
 
 const routes = [...document.querySelectorAll('.route')];
 const links = [...document.querySelectorAll('[data-route]')];
+// Anchors that live inside a route's dynamically-rendered markdown, rather than being
+// a top-level route themselves -- e.g. a heading inside knowledge-base/state.md.
+const subsectionRoutes = { 'confirmed-findings': 'theories' };
 function showRoute() {
   const requested = location.hash.slice(1) || 'overview';
-  const route = routes.some(item => item.id === requested) ? requested : 'overview';
+  const subsectionRoute = subsectionRoutes[requested];
+  const route = routes.some(item => item.id === requested) ? requested : (subsectionRoute || 'overview');
   routes.forEach(item => item.classList.toggle('active', item.id === route));
   links.forEach(item => item.classList.toggle('active', item.dataset.route === route));
   if (route === 'overview') loadOverviewStats();
-  if (route === 'theories') renderFile('knowledge-base/state.md', document.querySelector('#state-content'));
+  if (route === 'theories') {
+    const rendered = renderFile('knowledge-base/state.md', document.querySelector('#state-content'));
+    if (subsectionRoute) rendered.then(() => document.getElementById(requested)?.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+  }
   if (route === 'logs') loadLogs();
   if (route === 'dialogue') loadDialogue(document.querySelector('[data-dialogue].active')?.dataset.dialogue || 'claude');
   document.querySelector('#primary-nav').classList.remove('open');
   document.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-  const anchor = requested !== route ? document.getElementById(requested) : null;
+  const anchor = !subsectionRoute && requested !== route ? document.getElementById(requested) : null;
   if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  else window.scrollTo({ top: 0, behavior: 'instant' });
+  else if (!subsectionRoute) window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
 let logsLoaded = false;
