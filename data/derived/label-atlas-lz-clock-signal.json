@@ -1,0 +1,13 @@
+{
+  "clocked_loci": 298,
+  "eligible_occurrences": 71,
+  "observed_mean_error_minutes": 196.44818298954797,
+  "null_permutations": 10000,
+  "seed": 20260922,
+  "null_mean_error_minutes": 177.6782804260371,
+  "null_95pct_interval": [
+    143.36485616030936,
+    212.05513900821
+  ],
+  "one_sided_p_at_least_as_low": 0.8571
+}

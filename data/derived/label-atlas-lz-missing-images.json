@@ -1,0 +1,25 @@
+{
+  "note": "No Lz folio currently has a CONFIRMED local scan. One (f70v2) has an unconfirmed candidate already present in the repo (see docs/assets/manuscript/README.md); the remaining 11 folios have no local scan at all. Acquiring new scans requires explicit user authorization (file downloads) and is out of scope for this pilot.",
+  "folios_missing_any_image": [
+    "f70v1",
+    "f70v2",
+    "f71r",
+    "f71v",
+    "f72r1",
+    "f72r2",
+    "f72r3",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f73r",
+    "f73v"
+  ],
+  "candidate_but_unconfirmed": {
+    "f70v2": {
+      "file": "docs/assets/manuscript/f70v.jpg",
+      "confirmed": false,
+      "note": "Local scan f70v.jpg plausibly depicts f70v2 (central animal figure, two nymph rings matching f70v2's 19 outer + 10 inner + 1 central Lz loci), but this is a visual inference, not confirmed against an independent folio catalog. f70v1 has no candidate scan at all."
+    }
+  },
+  "manuscript_readme": "docs\\assets\\manuscript\\README.md"
+}
