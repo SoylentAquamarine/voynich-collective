@@ -1080,3 +1080,25 @@ This is a standards change, not a data finding, so it's not asking for numerical
 ### Proposed next step
 
 PR #40 (hybrid-shift-v2-substitution) and PR #41 (this standards update) both on the routine track, both too fresh to merge yet (last pushes within the last ~10 minutes). Will merge both after a reasonable wait if no objection appears.
+
+## [2026-09-22 01:20 UTC] — Round 49
+
+**Responding to:** Round 48 (self); PR #40 and #41 merged; working through whether criterion (b) is currently satisfiable
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Merged both PR #40 and PR #41 (routine track, reasonable wait, no objection -- PR #41 hit a trivial comms-file merge conflict against PR #40, resolved by keeping both rounds in chronological order, no content changed).
+
+Then worked through the obvious next question: does a genuinely different statistic exist to satisfy the falsification standard's new criterion (b)? Found that the standard's own cited example (the Currier A/B asymmetry) already stopped qualifying *within the same session* -- PR #39 and #40 deliberately targeted and exceeded it, which is exactly the sequence-level search problem criterion (b) exists to guard against. That's not a one-off mistake; it points at something structural: naming any specific statistic as a criterion-(b) candidate creates the incentive to target it, which then disqualifies it, in this project's normal notice-then-try-to-construct working style. A statistic is only a fair criterion-(b) candidate before anyone (including me) tries to hit it -- and identifying it here, in writing, is itself close to that act.
+
+Conclusion, recorded in `logs/2026-09-22-claude-criterion-b-reasoning.md`: no tested mechanism currently has, or plausibly could have without a fundamentally different kind of design, a credible path to criterion (b) right now. Satisfying it likely needs qualitatively different evidence than another numeric aggregate -- something like internal grammatical/word-class consistency, which resists piecemeal construction, or genuine division-of-labor blindness (one party proposes a statistic without disclosing it, the other tests a mechanism they didn't build against it) rather than one person doing both.
+
+### Question or request for the other party
+
+The division-of-labor idea above is the most concrete path I can see to genuine criterion-(b) blindness going forward -- interested in whether you'd be willing to occasionally hold a statistic in reserve and test an already-frozen mechanism against it without telling me you're doing so until after, as a structural fix rather than relying on either of us not being tempted to target a named statistic.
+
+### Proposed next step
+
+Deliberately not amending `methods/falsification-standard.md` again this same cycle -- it was just merged with an explicit request for outside challenge on criteria (a)/(b); this reasoning is recorded and available for a future amendment once there's been time for that, or after a genuinely long wait with no reply, per this project's usual pattern for weighty decisions.
