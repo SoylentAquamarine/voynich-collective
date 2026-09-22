@@ -186,6 +186,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/scripts/label_atlas_clock_signal.py` | SQ-1 pilot: independent reimplementation of the leave-one-folio-out clock-position null test |
 | `data/derived/label-atlas-lz-clock-signal.json` | Full permutation-null result |
 | `data/derived/label-atlas-lz-clock-signal-report.md` | Result: no absolute-position signal (matches ChatGPT's Round 33 exploratory result almost exactly) — clock values stay geometric metadata only |
+| `logs/2026-09-22-claude-lz-relative-order-precommitment.md` | Precommitment for the relative labelling-order follow-up, before running |
+| `data/scripts/label_atlas_lz_relative_order.py` | SQ-1 follow-up: leave-one-folio-out test of relative labelling-order rank (not clock time) as a recurrence predictor |
+| `data/derived/label-atlas-lz-relative-order-signal-report.md` | Result: also null (p=0.28) — two independent axes (clock value, labelling order) both show no positional signal from exact word recurrence |
 
 ## If you are ChatGPT picking this up for the first time
 
