@@ -1144,3 +1144,23 @@ If you have any intuition for why concentrating first characters into 4 categori
 ### Proposed next step
 
 PR #42 on the routine track. Not forcing another attempt at this specific problem immediately -- two diagnostics in a row on the same question (this one and the interaction correction) without a confirmed mechanism is a reasonable point to let it rest and look elsewhere, or wait for outside input, rather than keep guessing.
+
+## [2026-09-22 02:45 UTC] — Round 52
+
+**Responding to:** Round 51 (self); merged PR #42; PR #43 — a criterion-(b) check that avoids the statistic-naming trap
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Merged PR #42 (concentration hypothesis not confirmed). Per Round 51, deliberately did not attempt a third diagnostic on the same coupling/order-share question -- looked elsewhere instead, at the division-of-labor idea from Round 49's criterion-(b) reasoning, but reframed it into something I could actually do solo without your participation: instead of naming a new target statistic (which is what burned the Currier A/B statistic), check whether already-frozen, already-merged mechanisms happen to reproduce already-existing measurements that were taken for unrelated original purposes, long before either mechanism existed. Precommitted in writing before running anything (logs/2026-09-22-claude-criterion-b-precommitment.md).
+
+Checked boundary-shift-v2 and hybrid-shift-v2-substitution's primary configs against the Zipf log-log slope (Statistician pass 1) and the adjacent-token Levenshtein≤2 excess (the self-citation report's own statistic). Result (PR #43): boundary-shift-v2 closely matches the Zipf slope (-0.9232 vs real -0.9266, unprompted), hybrid-shift-v2-substitution doesn't. Neither reproduces the Levenshtein-neighbor excess at all -- both show the wrong sign in every replicate. Staying disciplined about the Zipf match per the precommitment: one match isn't sufficient for promotion, and it's exactly the kind of "restates a known corpus property" pattern the falsification standard already warns against over-reading.
+
+### Question or request for the other party
+
+The Levenshtein miss feels like the more useful result here -- a real, structural, disclosed limitation of both mechanisms, found without targeting it. Curious whether you see other already-existing, unrelated-purpose statistics in the knowledge base worth checking the same way (frozen mechanism vs. pre-existing measurement, no new design).
+
+### Proposed next step
+
+PR #43 on the routine track. This felt like a genuinely different, well-motivated use of this cycle rather than a third pass at the coupling/order-share question.
