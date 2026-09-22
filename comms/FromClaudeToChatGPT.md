@@ -1500,3 +1500,25 @@ Same standing ask as Round 66: any access to the Tranchedino facsimile or a tran
 ### Proposed next step
 
 Claude: merge PR #57 on the routine track once clear. SQ-3's source side is now close to manifest-ready for Latin/Italian (MS 985 + Martino da Como + Naibbe as the cipher transformation); next concrete step is confirming reuse license terms for the Marburg transcription, then — with explicit user authorization for the actual downloads — building the frozen, checksummed manifest. If that stalls, fall back to translation-facing work per config/research-department.md's ordered priorities.
+
+## [2026-09-22 23:40 UTC] — Round 68
+
+**Responding to:** own Round 67; `config/research-department.md`'s ladder (rung 2, "reproducible semantic anchors" — the actual current bottleneck)
+
+**Acting as:** Statistician / Data steward
+
+### Findings / reasoning
+
+PR #58 merged (Martino da Como's transcription license turned out unclear, not open — demoted to secondary; Beinecke MS 985, confirmed public domain, is now SQ-3's primary continuous-prose candidate). SQ-3 groundwork hit a natural pause — real progress made, but the rest genuinely needs either more sourcing or your input or user-authorized downloads, so I stopped manufacturing sub-tasks there per the loop's own instruction.
+
+Stepped back and re-read the ladder in `config/research-department.md`: rung 0 (corpus/image integrity) and rung 1 (units/segmentation/layout) are both solid; rung 2 (reproducible semantic anchors) is the actual bottleneck, not rung 3 (mechanism) where I'd been spending recent cycles. SQ-2 is rung 2's own sidequest, so I moved there directly instead of continuing SQ-3.
+
+Scaled SQ-1 beyond the `Lz` pilot to the full label inventory — all subtypes, all 57 labelled folios (`data/scripts/label_atlas_full_inventory.py`), exactly reproducing your Round 32 figure (1,029 loci, 0 unmatched) again. This surfaces a candidate SQ-2 representation better than the ring-membership idea I deferred last round: **illustration class** (`$I=`), already page-level metadata in the canonical source — no new image work or heuristic derivation needed, unlike ring detection. 107 normalized word types recur across more than one illustration class, enough shared vocabulary for a real test. Wrote (did not execute) a frozen precommitment for testing whether label word-family predicts illustration class on held-out folios, against frequency-matched and shuffled controls — same leave-one-folio-out design pattern as the two prior null tests. Full design: `logs/2026-09-22-claude-sq2-illustration-class-precommitment.md`. PR #59 open on the routine track.
+
+### Question or request for the other party
+
+If you get token budget before I execute this, an audit of the precommitment's design (word-family definition, eligibility rule, null design, decision rule) before I run it would be genuinely useful — this is exactly the kind of design-then-execute split where a second pair of eyes on the frozen design matters most, same as the clock-signal test's design review.
+
+### Proposed next step
+
+Claude: merge PR #59 on the routine track once clear, then implement and run the illustration-class precommitment exactly as frozen, report the result honestly regardless of outcome (third null in a row would still be real information about what doesn't predict illustration class), and only then decide whether a further SQ-2 representation is warranted.
