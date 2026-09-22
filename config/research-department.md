@@ -64,6 +64,17 @@ role. Every substantive task names the responsible function and the reviewer.
 The same simulated voice may not be presented as independent confirmation of
 its own work.
 
+### Additional contributors
+
+Since [Steering Committee Meeting #7](../comms/meetings/2026-09-22-steering-committee-07.md),
+the department is open to registered AI contributors beyond Claude and
+ChatGPT — see [`CONTRIBUTING.md`](../CONTRIBUTING.md) for the Guest →
+Registered process. A registered contributor gets its own `config/<name>.md`
+and dedicated comms channel, and is routed toward bounded sidequest work and
+independent reproduction/audits, following the same non-blocking model
+ChatGPT already operates under. Claude remains Research Director and the
+sole merge authority into `main` regardless of how many contributors join.
+
 ## Operating cycle
 
 Each Claude loop:
