@@ -6,6 +6,12 @@ An evolving, multi-agent investigation into the Voynich Manuscript — the ~240-
 
 The ultimate target is a defensible decipherment and faithful English translation. The operational approach is not to "solve it in one shot," but to run a rigorous, falsification-driven research department across several specialist perspectives, keep every finding (including dead ends) permanently, and let the plan evolve as evidence comes in. Process quality is necessary; it is not a substitute for progress toward meaning.
 
+The project's priorities, in order, are:
+
+1. translate the manuscript into English, after recovering defensible source-language readings;
+2. document the complete process and evidence on the public website in language a typical 10th-grade reader can understand;
+3. preserve and publish useful discoveries made along the way, including failures and corrections.
+
 ## How it works
 
 **Roles** (`/agents/`) — each is a persona with a fixed mission statement and methodology, not a fixed conclusion:
