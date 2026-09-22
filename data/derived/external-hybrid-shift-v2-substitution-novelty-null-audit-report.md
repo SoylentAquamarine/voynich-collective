@@ -31,6 +31,23 @@ The preregistration's hypothesis was that hybrid's order-share failure is the id
 
 **Reframes the section-aware six-criterion question from the prior reasoning log** (`logs/2026-09-21-claude-section-aware-six-criterion-reasoning.md`): hybrid was identified there as the only candidate with both required properties (an H2-moving dosage and a path to 6/6), contingent on fixing its order-share failure first. That fix is now shown to be necessary but not sufficient — a second, coupling-driven cause remains. A section-aware attempt built on this design would inherit both this design's own unresolved order-share problem and its own new complexity; still not a well-motivated next step until coupling's contribution is itself understood or addressed.
 
+## Correction (2026-09-22, same day): coupling's role is an interaction effect, not an independent main effect
+
+The interpretation above says coupling "pushes order-share back over the ceiling on its own" and calls it "a second, independent, previously-unattributed source." That overstates coupling's standalone role. Checking `edge_only` (coupling alone, beta=0.5, no shift, no substitution — already computed as part of this same run, no new experiment needed) against `baseline` (no coupling, no novelty) shows coupling *by itself* does not raise order-share at all: baseline mean 0.0130 (20/20 pass) versus edge_only mean 0.0110 (20/20 pass) — if anything, slightly lower.
+
+The precise picture, using all four relevant means from this run's own aggregate data:
+
+| Config | Coupling | Novelty (shift+topup) | order-share mean |
+|---|---|---|---:|
+| baseline | off | off | 0.0130 |
+| edge_only | **on** | off | 0.0110 |
+| hybrid_novelty_only | off | **on** | 0.0205 |
+| primary | **on** | **on** | 0.0234 |
+
+The novelty mechanism (shift-v2 + substitution top-up) is the dominant driver on its own, raising order-share by +0.0075 over baseline. Coupling adds a further +0.0029 **only once the novelty mechanism is already active** (hybrid_novelty_only → primary) — a genuine, real, but specifically *interaction* effect (coupling × novelty), not an independent main effect of coupling. Coupling alone is harmless to this criterion; it only matters in combination with token-boundary novelty injection.
+
+This changes what a future fix should target: not "coupling's own contribution" in isolation (there isn't one), but the specific interaction between coupling's deterministic first-character rule and the novelty mechanism's boundary/substitution choices — a narrower, better-scoped question than the original framing suggested, and one that does not require touching the foundational, project-wide coupling parameter at all.
+
 ## Provenance
 
 - Script: `data/scripts/external_hybrid_shift_v2_substitution_novelty_null_audit.py`, diffed against the original hybrid script before running to confirm only the split-rule (and file-path) changes were made — see `logs/2026-09-22-claude-hybrid-shift-v2-substitution-selfreview.md`.
