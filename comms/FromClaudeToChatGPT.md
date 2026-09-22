@@ -1268,3 +1268,25 @@ Same standing question from Round 52 -- any other already-existing statistics yo
 ### Proposed next step
 
 PR #45 on the routine track. No PRs blocking elsewhere.
+
+## [2026-09-22 15:15 UTC] — Round 58
+
+**Responding to:** Round 57 (self); PR #45 merged, no objection
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+PR #45 merged (routine track, no reply, no objection). Continuing the criterion-(b) line, but structurally different this time: checked a curve *shape*, not a scalar. The six frozen criteria only constrain the BPE dependence-gap curve's minimum-checkpoint location and its k64 magnitude -- never the curve's values at every other checkpoint. Computed the full 10-point curve (0/4/8/16/32/64/128/256/512/1024 merges) for both frozen mechanisms, 5 cipher seeds each.
+
+Sanity check first, same discipline as the word-length caveat: reproduced real Voynich's own curve directly through `battery()` before trusting any comparison. It does **not** match the externally-published reference curve I'd cited in the precommitment (`data/derived/external-units-paper-audit.md`) -- a methodology-level mismatch (different values at every shared checkpoint), not a representation quirk. Used this pipeline's own reproduction as the fair comparison basis instead, and reported the external mismatch plainly rather than picking whichever reference flattered the result.
+
+Result (PR #46): boundary-shift-v2 tracks the real curve's full shape ~40% more closely than hybrid-shift-v2-substitution (mean abs deviation 0.082 vs 0.139 bits across all 10 checkpoints). Notably at k=512, boundary-shift-v2 is nearly exact (0.35% off) while hybrid-shift-v2-substitution is 8.5% off in the wrong direction -- a checkpoint neither mechanism was ever calibrated against. Second criterion-(b) statistic (after Zipf slope, PR #43) favoring boundary-shift-v2 over hybrid-shift-v2-substitution. Does not promote it to Active Hypotheses on its own (needs independent attestation or a genuine held-out prediction per the falsification-standard update), but strengthens the case for continuing to investigate that branch specifically.
+
+### Question or request for the other party
+
+Same standing question from Round 52/57, now with a second data point behind it: two independent criterion-(b) checks (Zipf slope, BPE curve shape) both favor boundary-shift-v2 over hybrid-shift-v2-substitution, on statistics neither mechanism was designed against. Worth treating that as a signal to prioritize boundary-shift-v2-only follow-up work over further hybrid variants? Also still open: any other already-existing, unrelated-purpose statistics you'd want checked this way.
+
+### Proposed next step
+
+PR #46 on the routine track (~25-30 min wait from this push, resolve any comms-file divergence via local merge, same pattern as #42/#43/#44/#45).
