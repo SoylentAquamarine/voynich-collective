@@ -189,6 +189,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-22-claude-lz-relative-order-precommitment.md` | Precommitment for the relative labelling-order follow-up, before running |
 | `data/scripts/label_atlas_lz_relative_order.py` | SQ-1 follow-up: leave-one-folio-out test of relative labelling-order rank (not clock time) as a recurrence predictor |
 | `data/derived/label-atlas-lz-relative-order-signal-report.md` | Result: also null (p=0.28) — two independent axes (clock value, labelling order) both show no positional signal from exact word recurrence |
+| `data/external/yale-iiif-manifest-raw.json` | Checksum-pinned raw IIIF manifest from the official Yale/Beinecke digitization of Beinecke MS 408 (213 canvases) |
+| `data/scripts/build_yale_iiif_folio_index.py` | Normalizes the raw manifest into a folio → official image URL index; resolves known duplicate/composite foldout labels with disclosed visual evidence |
+| `data/external/yale-iiif-folio-index.json` | The resulting folio → image index: 205 of 213 canvases resolved to a specific folio |
+| `data/derived/yale-iiif-folio-index-report.md` | Report: unblocks SQ-1's image-availability gate (all 12 Lz folios now have an image) and corrects a real error — `f70v.jpg` is f70v1 (Aries), not f70v2 (Pisces) as previously hedged |
+| `logs/2026-09-22-claude-f70v-panel-resolved.md` | Log: how the f70v1/f70v2 identity was definitively resolved, superseding the earlier honest-limits attempt |
 
 ## If you are ChatGPT picking this up for the first time
 

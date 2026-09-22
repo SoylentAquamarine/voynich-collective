@@ -1,300 +1,300 @@
-folio,locus_id,descriptor,prefix,locus_key,clock,normalized_word,has_uncertain_reading,quire,hand,illustration,image_available,image_candidate
-f70v2,2,@Lz,@,"f70v2.2,@Lz",09:00,otalalg,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,3,&Lz,&,"f70v2.3,&Lz",10:00,ykary,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,4,&Lz,&,"f70v2.4,&Lz",10:30,otar?,True,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,5,&Lz,&,"f70v2.5,&Lz",11:00,oty,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,6,&Lz,&,"f70v2.6,&Lz",11:30,oky ody,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,7,&Lz,&,"f70v2.7,&Lz",00:00,oty ar,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,8,&Lz,&,"f70v2.8,&Lz",00:30,okala,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,9,&Lz,&,"f70v2.9,&Lz",01:00,otody,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,10,&Lz,&,"f70v2.10,&Lz",01:30,otald,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,11,&Lz,&,"f70v2.11,&Lz",02:00,otaldar,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,12,&Lz,&,"f70v2.12,&Lz",02:45,okody,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,13,&Lz,&,"f70v2.13,&Lz",03:15,opysam,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,14,&Lz,&,"f70v2.14,&Lz",04:00,ch{ckhh}y,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,15,&Lz,&,"f70v2.15,&Lz",04:30,otaly,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,16,&Lz,&,"f70v2.16,&Lz",05:30,otal arar,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,17,&Lz,&,"f70v2.17,&Lz",06:30,otaldy,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,18,&Lz,&,"f70v2.18,&Lz",07:00,okeoly,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,19,&Lz,&,"f70v2.19,&Lz",08:00,okydy,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,20,&Lz,&,"f70v2.20,&Lz",08:30,okees,True,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,22,@Lz,@,"f70v2.22,@Lz",10:00,otar am,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,23,&Lz,&,"f70v2.23,&Lz",11:00,otar al,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,24,&Lz,&,"f70v2.24,&Lz",00:00,otalar,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,25,&Lz,&,"f70v2.25,&Lz",01:30,otalam,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,26,&Lz,&,"f70v2.26,&Lz",03:00,dolaram,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,27,&Lz,&,"f70v2.27,&Lz",04:00,okaram,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,28,&Lz,&,"f70v2.28,&Lz",05:00,oteosal,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,29,&Lz,&,"f70v2.29,&Lz",06:30,salols,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,30,&Lz,&,"f70v2.30,&Lz",08:00,okaldal,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,31,&Lz,&,"f70v2.31,&Lz",09:00,ykolaiin,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v2,33,@Lz,@,"f70v2.33,@Lz",,otolal,False,J,4,Z,False,docs/assets/manuscript/f70v.jpg
-f70v1,2,@Lz,@,"f70v1.2,@Lz",10:30,otalchy tar am dy,False,J,4,Z,False,
-f70v1,3,&Lz,&,"f70v1.3,&Lz",00:00,opchey sal,False,J,4,Z,False,
-f70v1,4,&Lz,&,"f70v1.4,&Lz",01:00,otakaizan,False,J,4,Z,False,
-f70v1,5,&Lz,&,"f70v1.5,&Lz",02:30,okalal,False,J,4,Z,False,
-f70v1,6,&Lz,&,"f70v1.6,&Lz",03:30,otaly,False,J,4,Z,False,
-f70v1,7,&Lz,&,"f70v1.7,&Lz",04:30,oalcheg,False,J,4,Z,False,
-f70v1,8,&Lz,&,"f70v1.8,&Lz",06:00,otchodals,False,J,4,Z,False,
-f70v1,9,&Lz,&,"f70v1.9,&Lz",07:00,okolshy,False,J,4,Z,False,
-f70v1,10,&Lz,&,"f70v1.10,&Lz",08:00,otshshdy,False,J,4,Z,False,
-f70v1,11,&Lz,&,"f70v1.11,&Lz",09:00,otal ypsharal,False,J,4,Z,False,
-f70v1,13,@Lz,@,"f70v1.13,@Lz",10:30,okoly,False,J,4,Z,False,
-f70v1,14,&Lz,&,"f70v1.14,&Lz",00:00,otalaiin,False,J,4,Z,False,
-f70v1,15,&Lz,&,"f70v1.15,&Lz",02:00,oteo alals araly,False,J,4,Z,False,
-f70v1,16,&Lz,&,"f70v1.16,&Lz",05:00,oteoeey otal okealar,False,J,4,Z,False,
-f70v1,17,&Lz,&,"f70v1.17,&Lz",08:00,otear araydy,False,J,4,Z,False,
-f71r,2,@Lz,@,"f71r.2,@Lz",10:00,oteos arar,False,K,4,Z,False,
-f71r,3,&Lz,&,"f71r.3,&Lz",11:00,okldam,False,K,4,Z,False,
-f71r,4,&Lz,&,"f71r.4,&Lz",00:00,oteoaldy,False,K,4,Z,False,
-f71r,5,&Lz,&,"f71r.5,&Lz",01:00,oteolar,False,K,4,Z,False,
-f71r,6,&Lz,&,"f71r.6,&Lz",02:00,okeoaly,False,K,4,Z,False,
-f71r,7,&Lz,&,"f71r.7,&Lz",03:00,otaleky,False,K,4,Z,False,
-f71r,8,&Lz,&,"f71r.8,&Lz",04:30,otalsar,False,K,4,Z,False,
-f71r,9,&Lz,&,"f71r.9,&Lz",05:30,cheary,False,K,4,Z,False,
-f71r,10,&Lz,&,"f71r.10,&Lz",07:00,oteotey rary,False,K,4,Z,False,
-f71r,11,&Lz,&,"f71r.11,&Lz",08:30,otalaly,False,K,4,Z,False,
-f71r,13,@Lz,@,"f71r.13,@Lz",11:00,otolchdy,False,K,4,Z,False,
-f71r,14,&Lz,&,"f71r.14,&Lz",00:30,otoloaram,False,K,4,Z,False,
-f71r,15,&Lz,&,"f71r.15,&Lz",03:30,oteeol,False,K,4,Z,False,
-f71r,16,&Lz,&,"f71r.16,&Lz",05:30,otolchd,False,K,4,Z,False,
-f71r,17,&Lz,&,"f71r.17,&Lz",08:00,otaldar,False,K,4,Z,False,
-f71v,2,@Lz,@,"f71v.2,@Lz",10:00,char arom,False,K,4,Z,False,
-f71v,3,&Lz,&,"f71v.3,&Lz",11:00,chfaly,False,K,4,Z,False,
-f71v,4,&Lz,&,"f71v.4,&Lz",00:00,okolar,False,K,4,Z,False,
-f71v,5,&Lz,&,"f71v.5,&Lz",01:00,otchody,False,K,4,Z,False,
-f71v,6,&Lz,&,"f71v.6,&Lz",02:00,alcphy,False,K,4,Z,False,
-f71v,7,&Lz,&,"f71v.7,&Lz",03:00,otaiin,False,K,4,Z,False,
-f71v,8,&Lz,&,"f71v.8,&Lz",04:30,okaraiin,False,K,4,Z,False,
-f71v,9,&Lz,&,"f71v.9,&Lz",05:30,otar ar aly,False,K,4,Z,False,
-f71v,10,&Lz,&,"f71v.10,&Lz",07:00,opalar am dan,False,K,4,Z,False,
-f71v,11,&Lz,&,"f71v.11,&Lz",09:00,opalor ar,False,K,4,Z,False,
-f71v,13,@Lz,@,"f71v.13,@Lz",10:00,ofa{if}om,False,K,4,Z,False,
-f71v,14,&Lz,&,"f71v.14,&Lz",00:00,otalody,False,K,4,Z,False,
-f71v,15,&Lz,&,"f71v.15,&Lz",03:00,otalaiin,False,K,4,Z,False,
-f71v,16,&Lz,&,"f71v.16,&Lz",05:30,otar shar,True,K,4,Z,False,
-f71v,17,&Lz,&,"f71v.17,&Lz",08:30,sholshdy,False,K,4,Z,False,
-f72r1,2,@Lz,@,"f72r1.2,@Lz",09:30,oshodady,True,K,4,Z,False,
-f72r1,3,&Lz,&,"f72r1.3,&Lz",10:30,chdaiirdainy,False,K,4,Z,False,
-f72r1,4,&Lz,&,"f72r1.4,&Lz",00:00,oaiin ar ary,False,K,4,Z,False,
-f72r1,5,&Lz,&,"f72r1.5,&Lz",01:00,okalam,False,K,4,Z,False,
-f72r1,6,&Lz,&,"f72r1.6,&Lz",02:00,ytalshdy,False,K,4,Z,False,
-f72r1,7,&Lz,&,"f72r1.7,&Lz",03:00,char alif,False,K,4,Z,False,
-f72r1,8,&Lz,&,"f72r1.8,&Lz",03:30,otaraldy,False,K,4,Z,False,
-f72r1,9,&Lz,&,"f72r1.9,&Lz",05:00,otaiin otain,False,K,4,Z,False,
-f72r1,10,&Lz,&,"f72r1.10,&Lz",07:00,otalef ys ainam,False,K,4,Z,False,
-f72r1,11,&Lz,&,"f72r1.11,&Lz",08:30,ochol sharam,False,K,4,Z,False,
-f72r1,13,@Lz,@,"f72r1.13,@Lz",09:00,ofaralar,False,K,4,Z,False,
-f72r1,14,&Lz,&,"f72r1.14,&Lz",00:00,otchoshy,False,K,4,Z,False,
-f72r1,15,&Lz,&,"f72r1.15,&Lz",02:00,otchdal,False,K,4,Z,False,
-f72r1,16,&Lz,&,"f72r1.16,&Lz",04:00,okeey ary,False,K,4,Z,False,
-f72r1,17,&Lz,&,"f72r1.17,&Lz",07:00,otainy,False,K,4,Z,False,
-f72r2,1,@Lz,@,"f72r2.1,@Lz",10:30,ofchdamy,False,K,4,Z,False,
-f72r2,2,&Lz,&,"f72r2.2,&Lz",11:00,oklairdy,False,K,4,Z,False,
-f72r2,3,&Lz,&,"f72r2.3,&Lz",00:00,okaram,False,K,4,Z,False,
-f72r2,4,&Lz,&,"f72r2.4,&Lz",00:30,okairy,False,K,4,Z,False,
-f72r2,5,&Lz,&,"f72r2.5,&Lz",01:00,okealar,False,K,4,Z,False,
-f72r2,7,@Lz,@,"f72r2.7,@Lz",10:00,otaraldy,False,K,4,Z,False,
-f72r2,8,&Lz,&,"f72r2.8,&Lz",11:00,okalar,False,K,4,Z,False,
-f72r2,9,&Lz,&,"f72r2.9,&Lz",11:45,okal,False,K,4,Z,False,
-f72r2,10,&Lz,&,"f72r2.10,&Lz",00:15,okaly,False,K,4,Z,False,
-f72r2,11,&Lz,&,"f72r2.11,&Lz",01:00,okal,False,K,4,Z,False,
-f72r2,12,&Lz,&,"f72r2.12,&Lz",02:00,okeey ary,False,K,4,Z,False,
-f72r2,13,&Lz,&,"f72r2.13,&Lz",03:00,oteeary,False,K,4,Z,False,
-f72r2,14,&Lz,&,"f72r2.14,&Lz",04:00,otair dy,False,K,4,Z,False,
-f72r2,15,&Lz,&,"f72r2.15,&Lz",05:00,okaircham,False,K,4,Z,False,
-f72r2,16,&Lz,&,"f72r2.16,&Lz",06:00,okeal,False,K,4,Z,False,
-f72r2,17,&Lz,&,"f72r2.17,&Lz",06:30,otar{cr},False,K,4,Z,False,
-f72r2,18,&Lz,&,"f72r2.18,&Lz",07:30,okaly,False,K,4,Z,False,
-f72r2,19,&Lz,&,"f72r2.19,&Lz",08:00,orary,False,K,4,Z,False,
-f72r2,20,&Lz,&,"f72r2.20,&Lz",09:00,okyd,False,K,4,Z,False,
-f72r2,21,&Lz,&,"f72r2.21,&Lz",09:30,otolam,False,K,4,Z,False,
-f72r2,23,@Lz,@,"f72r2.23,@Lz",10:30,otal,False,K,4,Z,False,
-f72r2,24,&Lz,&,"f72r2.24,&Lz",11:30,ralal,False,K,4,Z,False,
-f72r2,25,&Lz,&,"f72r2.25,&Lz",00:30,okam,False,K,4,Z,False,
-f72r2,26,&Lz,&,"f72r2.26,&Lz",02:00,otalshy,False,K,4,Z,False,
-f72r2,27,&Lz,&,"f72r2.27,&Lz",03:30,okaldy,False,K,4,Z,False,
-f72r2,28,&Lz,&,"f72r2.28,&Lz",05:00,chosar,False,K,4,Z,False,
-f72r2,29,&Lz,&,"f72r2.29,&Lz",06:30,otam,False,K,4,Z,False,
-f72r2,30,&Lz,&,"f72r2.30,&Lz",08:00,ainaly,False,K,4,Z,False,
-f72r2,31,&Lz,&,"f72r2.31,&Lz",09:00,okarcham,False,K,4,Z,False,
-f72r3,2,@Lz,@,"f72r3.2,@Lz",10:30,olkalaiin,False,K,4,Z,False,
-f72r3,3,&Lz,&,"f72r3.3,&Lz",11:00,olalsy,False,K,4,Z,False,
-f72r3,4,&Lz,&,"f72r3.4,&Lz",00:00,oraiinam,False,K,4,Z,False,
-f72r3,5,&Lz,&,"f72r3.5,&Lz",01:00,osarsheeeo,False,K,4,Z,False,
-f72r3,6,&Lz,&,"f72r3.6,&Lz",02:00,oto@192;aiin,False,K,4,Z,False,
-f72r3,7,&Lz,&,"f72r3.7,&Lz",02:30,opoiiinoin al ches,True,K,4,Z,False,
-f72r3,8,&Lz,&,"f72r3.8,&Lz",04:00,ypaiin alaly,False,K,4,Z,False,
-f72r3,9,&Lz,&,"f72r3.9,&Lz",05:00,oteey daiin,False,K,4,Z,False,
-f72r3,10,&Lz,&,"f72r3.10,&Lz",06:30,oeeodaiin,False,K,4,Z,False,
-f72r3,11,&Lz,&,"f72r3.11,&Lz",07:00,ofsholdy,False,K,4,Z,False,
-f72r3,12,&Lz,&,"f72r3.12,&Lz",07:00,opoeey okaiin,False,K,4,Z,False,
-f72r3,13,&Lz,&,"f72r3.13,&Lz",10:00,ykolairol,False,K,4,Z,False,
-f72r3,15,@Lz,@,"f72r3.15,@Lz",11:00,oralkam,False,K,4,Z,False,
-f72r3,16,&Lz,&,"f72r3.16,&Lz",00:00,ytairal,False,K,4,Z,False,
-f72r3,17,&Lz,&,"f72r3.17,&Lz",01:00,oeeesaiin,True,K,4,Z,False,
-f72r3,18,&Lz,&,"f72r3.18,&Lz",01:30,ory,False,K,4,Z,False,
-f72r3,19,&Lz,&,"f72r3.19,&Lz",02:30,ochey fydy,False,K,4,Z,False,
-f72r3,20,&Lz,&,"f72r3.20,&Lz",03:30,of??? o eeesaly,True,K,4,Z,False,
-f72r3,21,&Lz,&,"f72r3.21,&Lz",05:00,ykaraiin airal,False,K,4,Z,False,
-f72r3,22,&Lz,&,"f72r3.22,&Lz",06:30,okalar,False,K,4,Z,False,
-f72r3,23,&Lz,&,"f72r3.23,&Lz",08:00,orara,False,K,4,Z,False,
-f72r3,24,&Lz,&,"f72r3.24,&Lz",09:00,olaiin ola{ikh}y,False,K,4,Z,False,
-f72r3,25,&Lz,&,"f72r3.25,&Lz",10:00,olfsheoral,False,K,4,Z,False,
-f72r3,27,@Lz,@,"f72r3.27,@Lz",10:30,opalal,False,K,4,Z,False,
-f72r3,28,&Lz,&,"f72r3.28,&Lz",00:00,yfary,False,K,4,Z,False,
-f72r3,29,&Lz,&,"f72r3.29,&Lz",01:30,oraiiral,False,K,4,Z,False,
-f72r3,30,&Lz,&,"f72r3.30,&Lz",03:00,ytoar shar,False,K,4,Z,False,
-f72r3,31,&Lz,&,"f72r3.31,&Lz",06:00,octho,False,K,4,Z,False,
-f72r3,32,&Lz,&,"f72r3.32,&Lz",07:30,aral,False,K,4,Z,False,
-f72r3,33,&Lz,&,"f72r3.33,&Lz",09:00,oletal,False,K,4,Z,False,
-f72v3,2,@Lz,@,"f72v3.2,@Lz",10:00,ocham,False,K,4,Z,False,
-f72v3,3,&Lz,&,"f72v3.3,&Lz",11:00,orchey,False,K,4,Z,False,
-f72v3,4,&Lz,&,"f72v3.4,&Lz",11:30,okam,False,K,4,Z,False,
-f72v3,5,&Lz,&,"f72v3.5,&Lz",00:00,okey,False,K,4,Z,False,
-f72v3,6,&Lz,&,"f72v3.6,&Lz",00:30,otcheody,False,K,4,Z,False,
-f72v3,7,&Lz,&,"f72v3.7,&Lz",01:00,okyeeshy,False,K,4,Z,False,
-f72v3,8,&Lz,&,"f72v3.8,&Lz",01:30,{c'y}ofaiin,True,K,4,Z,False,
-f72v3,9,&Lz,&,"f72v3.9,&Lz",02:00,okaly,False,K,4,Z,False,
-f72v3,10,&Lz,&,"f72v3.10,&Lz",02:45,otoly,True,K,4,Z,False,
-f72v3,11,&Lz,&,"f72v3.11,&Lz",03:30,ofalals,False,K,4,Z,False,
-f72v3,12,&Lz,&,"f72v3.12,&Lz",04:00,sheeos o{cfhh}y,False,K,4,Z,False,
-f72v3,13,&Lz,&,"f72v3.13,&Lz",05:00,daiin chepy,False,K,4,Z,False,
-f72v3,14,&Lz,&,"f72v3.14,&Lz",06:00,oteey deeal,False,K,4,Z,False,
-f72v3,15,&Lz,&,"f72v3.15,&Lz",07:00,chealpy,False,K,4,Z,False,
-f72v3,16,&Lz,&,"f72v3.16,&Lz",07:30,okeeol,False,K,4,Z,False,
-f72v3,17,&Lz,&,"f72v3.17,&Lz",08:30,okaly,False,K,4,Z,False,
-f72v3,18,&Lz,&,"f72v3.18,&Lz",09:00,okaldy,False,K,4,Z,False,
-f72v3,19,&Lz,&,"f72v3.19,&Lz",09:30,okeolyd,False,K,4,Z,False,
-f72v3,21,@Lz,@,"f72v3.21,@Lz",10:30,choleey,False,K,4,Z,False,
-f72v3,22,&Lz,&,"f72v3.22,&Lz",11:30,oky,False,K,4,Z,False,
-f72v3,23,&Lz,&,"f72v3.23,&Lz",00:30,ch{cthh}y,False,K,4,Z,False,
-f72v3,24,&Lz,&,"f72v3.24,&Lz",01:00,laly,False,K,4,Z,False,
-f72v3,25,&Lz,&,"f72v3.25,&Lz",02:00,oeedy,False,K,4,Z,False,
-f72v3,26,&Lz,&,"f72v3.26,&Lz",03:00,odairan,False,K,4,Z,False,
-f72v3,27,&Lz,&,"f72v3.27,&Lz",04:00,okary,False,K,4,Z,False,
-f72v3,28,&Lz,&,"f72v3.28,&Lz",05:00,oeesaiin,False,K,4,Z,False,
-f72v3,29,&Lz,&,"f72v3.29,&Lz",06:30,oteesed,False,K,4,Z,False,
-f72v3,30,&Lz,&,"f72v3.30,&Lz",07:30,opal,False,K,4,Z,False,
-f72v3,31,&Lz,&,"f72v3.31,&Lz",08:30,otaly,False,K,4,Z,False,
-f72v3,32,&Lz,&,"f72v3.32,&Lz",09:30,otaly yty,False,K,4,Z,False,
-f72v2,2,@Lz,@,"f72v2.2,@Lz",10:00,oeedey,False,K,4,Z,False,
-f72v2,3,&Lz,&,"f72v2.3,&Lz",11:00,oeeodaiin,False,K,4,Z,False,
-f72v2,4,&Lz,&,"f72v2.4,&Lz",11:45,okeoram,False,K,4,Z,False,
-f72v2,5,&Lz,&,"f72v2.5,&Lz",00:30,air aim,False,K,4,Z,False,
-f72v2,6,&Lz,&,"f72v2.6,&Lz",01:00,oshesy,False,K,4,Z,False,
-f72v2,7,&Lz,&,"f72v2.7,&Lz",02:00,okeary,True,K,4,Z,False,
-f72v2,8,&Lz,&,"f72v2.8,&Lz",02:30,cheoetey,False,K,4,Z,False,
-f72v2,9,&Lz,&,"f72v2.9,&Lz",03:00,cheoldy,True,K,4,Z,False,
-f72v2,10,&Lz,&,"f72v2.10,&Lz",04:00,sheoeky,False,K,4,Z,False,
-f72v2,11,&Lz,&,"f72v2.11,&Lz",04:30,oteodar,False,K,4,Z,False,
-f72v2,12,&Lz,&,"f72v2.12,&Lz",05:30,ofchdysd,False,K,4,Z,False,
-f72v2,13,&Lz,&,"f72v2.13,&Lz",06:00,oteoyd,False,K,4,Z,False,
-f72v2,14,&Lz,&,"f72v2.14,&Lz",06:30,yteody,False,K,4,Z,False,
-f72v2,15,&Lz,&,"f72v2.15,&Lz",07:00,okeody,False,K,4,Z,False,
-f72v2,16,&Lz,&,"f72v2.16,&Lz",08:00,okeoldy,False,K,4,Z,False,
-f72v2,17,&Lz,&,"f72v2.17,&Lz",08:30,ykeeor,False,K,4,Z,False,
-f72v2,18,&Lz,&,"f72v2.18,&Lz",09:00,opaiinam,True,K,4,Z,False,
-f72v2,19,&Lz,&,"f72v2.19,&Lz",09:30,cheoldy,False,K,4,Z,False,
-f72v2,21,@Lz,@,"f72v2.21,@Lz",10:30,okaiin,True,K,4,Z,False,
-f72v2,22,&Lz,&,"f72v2.22,&Lz",11:30,ockhol,False,K,4,Z,False,
-f72v2,23,&Lz,&,"f72v2.23,&Lz",00:30,oeedy,False,K,4,Z,False,
-f72v2,24,&Lz,&,"f72v2.24,&Lz",01:00,opalg,False,K,4,Z,False,
-f72v2,25,&Lz,&,"f72v2.25,&Lz",02:00,okeeom,False,K,4,Z,False,
-f72v2,26,&Lz,&,"f72v2.26,&Lz",03:00,olkar,False,K,4,Z,False,
-f72v2,27,&Lz,&,"f72v2.27,&Lz",04:00,oeedaly,False,K,4,Z,False,
-f72v2,28,&Lz,&,"f72v2.28,&Lz",05:00,cheosy,False,K,4,Z,False,
-f72v2,29,&Lz,&,"f72v2.29,&Lz",06:30,ofcheay,False,K,4,Z,False,
-f72v2,30,&Lz,&,"f72v2.30,&Lz",07:30,yteedy,False,K,4,Z,False,
-f72v2,31,&Lz,&,"f72v2.31,&Lz",08:30,onaiin,True,K,4,Z,False,
-f72v2,32,&Lz,&,"f72v2.32,&Lz",09:30,okeorar,False,K,4,Z,False,
-f72v1,2,@Lz,@,"f72v1.2,@Lz",08:45,oeeoty,False,K,4,Z,False,
-f72v1,3,&Lz,&,"f72v1.3,&Lz",09:30,octhy,False,K,4,Z,False,
-f72v1,4,&Lz,&,"f72v1.4,&Lz",10:00,oteoly,False,K,4,Z,False,
-f72v1,5,&Lz,&,"f72v1.5,&Lz",10:30,okeoly,False,K,4,Z,False,
-f72v1,6,&Lz,&,"f72v1.6,&Lz",11:00,oeees,False,K,4,Z,False,
-f72v1,7,&Lz,&,"f72v1.7,&Lz",11:30,o{cfh'h}y,False,K,4,Z,False,
-f72v1,8,&Lz,&,"f72v1.8,&Lz",01:45,oees,False,K,4,Z,False,
-f72v1,9,&Lz,&,"f72v1.9,&Lz",01:00,okeeoly,False,K,4,Z,False,
-f72v1,10,&Lz,&,"f72v1.10,&Lz",01:30,odal,False,K,4,Z,False,
-f72v1,11,&Lz,&,"f72v1.11,&Lz",02:00,aiinod,False,K,4,Z,False,
-f72v1,12,&Lz,&,"f72v1.12,&Lz",02:45,od?dy,True,K,4,Z,False,
-f72v1,13,&Lz,&,"f72v1.13,&Lz",03:15,oteod,False,K,4,Z,False,
-f72v1,14,&Lz,&,"f72v1.14,&Lz",03:45,yteod,False,K,4,Z,False,
-f72v1,15,&Lz,&,"f72v1.15,&Lz",04:30,ok?ody,True,K,4,Z,False,
-f72v1,16,&Lz,&,"f72v1.16,&Lz",05:00,okal,False,K,4,Z,False,
-f72v1,17,&Lz,&,"f72v1.17,&Lz",05:30,ytaly,False,K,4,Z,False,
-f72v1,18,&Lz,&,"f72v1.18,&Lz",06:00,oeeeos,False,K,4,Z,False,
-f72v1,19,&Lz,&,"f72v1.19,&Lz",06:30,oteofy,False,K,4,Z,False,
-f72v1,20,&Lz,&,"f72v1.20,&Lz",07:30,cheoepy,False,K,4,Z,False,
-f72v1,21,&Lz,&,"f72v1.21,&Lz",08:00,ykeedy,False,K,4,Z,False,
-f72v1,23,@Lz,@,"f72v1.23,@Lz",08:45,oeeoly,False,K,4,Z,False,
-f72v1,24,&Lz,&,"f72v1.24,&Lz",10:00,okydy,False,K,4,Z,False,
-f72v1,25,&Lz,&,"f72v1.25,&Lz",11:30,okeey,False,K,4,Z,False,
-f72v1,26,&Lz,&,"f72v1.26,&Lz",00:00,oiiny,False,K,4,Z,False,
-f72v1,27,&Lz,&,"f72v1.27,&Lz",01:00,oeey,False,K,4,Z,False,
-f72v1,28,&Lz,&,"f72v1.28,&Lz",03:00,okedy,False,K,4,Z,False,
-f72v1,29,&Lz,&,"f72v1.29,&Lz",04:30,ypaim,False,K,4,Z,False,
-f72v1,30,&Lz,&,"f72v1.30,&Lz",05:30,okalair,False,K,4,Z,False,
-f72v1,31,&Lz,&,"f72v1.31,&Lz",06:30,oeeody,False,K,4,Z,False,
-f72v1,32,&Lz,&,"f72v1.32,&Lz",07:30,okeol,False,K,4,Z,False,
-f73r,1,@Lz,@,"f73r.1,@Lz",11:15,otaly,False,L,4,Z,False,
-f73r,2,&Lz,&,"f73r.2,&Lz",11:45,chockhy,False,L,4,Z,False,
-f73r,3,&Lz,&,"f73r.3,&Lz",00:30,otedy,False,L,4,Z,False,
-f73r,4,&Lz,&,"f73r.4,&Lz",01:00,yteeody,False,L,4,Z,False,
-f73r,6,@Lz,@,"f73r.6,@Lz",11:00,otaly,False,L,4,Z,False,
-f73r,7,&Lz,&,"f73r.7,&Lz",11:30,okeody,False,L,4,Z,False,
-f73r,8,&Lz,&,"f73r.8,&Lz",00:00,oteedyl,False,L,4,Z,False,
-f73r,9,&Lz,&,"f73r.9,&Lz",00:30,ykeedy,True,L,4,Z,False,
-f73r,10,&Lz,&,"f73r.10,&Lz",01:00,okeey,False,L,4,Z,False,
-f73r,11,&Lz,&,"f73r.11,&Lz",02:00,okeedy,False,L,4,Z,False,
-f73r,12,&Lz,&,"f73r.12,&Lz",02:30,ykeeory,False,L,4,Z,False,
-f73r,13,&Lz,&,"f73r.13,&Lz",03:30,oteeosy,False,L,4,Z,False,
-f73r,14,&Lz,&,"f73r.14,&Lz",04:30,shekal,False,L,4,Z,False,
-f73r,15,&Lz,&,"f73r.15,&Lz",05:30,oteedyy,False,L,4,Z,False,
-f73r,16,&Lz,&,"f73r.16,&Lz",06:30,okedal,True,L,4,Z,False,
-f73r,17,&Lz,&,"f73r.17,&Lz",07:00,chdy,False,L,4,Z,False,
-f73r,18,&Lz,&,"f73r.18,&Lz",08:00,dalshey,False,L,4,Z,False,
-f73r,19,&Lz,&,"f73r.19,&Lz",08:45,opaiin,False,L,4,Z,False,
-f73r,20,&Lz,&,"f73r.20,&Lz",09:30,okeos,False,L,4,Z,False,
-f73r,21,&Lz,&,"f73r.21,&Lz",10:00,otey,False,L,4,Z,False,
-f73r,23,@Lz,@,"f73r.23,@Lz",11:30,okary,False,L,4,Z,False,
-f73r,24,&Lz,&,"f73r.24,&Lz",01:00,okeeody,False,L,4,Z,False,
-f73r,25,&Lz,&,"f73r.25,&Lz",02:00,oyteedy,False,L,4,Z,False,
-f73r,26,&Lz,&,"f73r.26,&Lz",03:00,oky,False,L,4,Z,False,
-f73r,27,&Lz,&,"f73r.27,&Lz",04:30,chefy,False,L,4,Z,False,
-f73r,28,&Lz,&,"f73r.28,&Lz",06:00,otal,False,L,4,Z,False,
-f73r,29,&Lz,&,"f73r.29,&Lz",07:00,chek,False,L,4,Z,False,
-f73r,30,&Lz,&,"f73r.30,&Lz",08:30,ar,False,L,4,Z,False,
-f73r,31,&Lz,&,"f73r.31,&Lz",09:30,kar,False,L,4,Z,False,
-f73r,32,&Lz,&,"f73r.32,&Lz",10:30,okeeos,False,L,4,Z,False,
-f73v,1,@Lz,@,"f73v.1,@Lz",11:00,okol,False,L,4,Z,False,
-f73v,2,&Lz,&,"f73v.2,&Lz",11:45,oteody,False,L,4,Z,False,
-f73v,3,&Lz,&,"f73v.3,&Lz",00:30,oteedy,False,L,4,Z,False,
-f73v,4,&Lz,&,"f73v.4,&Lz",01:00,eeeody,False,L,4,Z,False,
-f73v,6,@Lz,@,"f73v.6,@Lz",10:00,okeody,False,L,4,Z,False,
-f73v,7,&Lz,&,"f73v.7,&Lz",10:30,sheol,False,L,4,Z,False,
-f73v,8,&Lz,&,"f73v.8,&Lz",11:30,odees,False,L,4,Z,False,
-f73v,9,&Lz,&,"f73v.9,&Lz",00:00,eery,True,L,4,Z,False,
-f73v,10,&Lz,&,"f73v.10,&Lz",01:00,okeor,False,L,4,Z,False,
-f73v,11,&Lz,&,"f73v.11,&Lz",01:30,ofals,False,L,4,Z,False,
-f73v,12,&Lz,&,"f73v.12,&Lz",02:00,ykeody,False,L,4,Z,False,
-f73v,13,&Lz,&,"f73v.13,&Lz",03:00,oteody,False,L,4,Z,False,
-f73v,14,&Lz,&,"f73v.14,&Lz",03:30,ypaiin,False,L,4,Z,False,
-f73v,15,&Lz,&,"f73v.15,&Lz",04:00,yfaiin y,False,L,4,Z,False,
-f73v,16,&Lz,&,"f73v.16,&Lz",05:00,ofcheesy,False,L,4,Z,False,
-f73v,17,&Lz,&,"f73v.17,&Lz",06:00,oraiiny,False,L,4,Z,False,
-f73v,18,&Lz,&,"f73v.18,&Lz",07:00,ykeeody,False,L,4,Z,False,
-f73v,19,&Lz,&,"f73v.19,&Lz",07:30,okeos,False,L,4,Z,False,
-f73v,20,&Lz,&,"f73v.20,&Lz",08:30,ykeear,False,L,4,Z,False,
-f73v,21,&Lz,&,"f73v.21,&Lz",09:00,qokeoly,False,L,4,Z,False,
-f73v,23,@Lz,@,"f73v.23,@Lz",09:30,otedy,False,L,4,Z,False,
-f73v,24,&Lz,&,"f73v.24,&Lz",11:00,eeed,False,L,4,Z,False,
-f73v,25,&Lz,&,"f73v.25,&Lz",01:00,oky,False,L,4,Z,False,
-f73v,26,&Lz,&,"f73v.26,&Lz",02:00,oia?,True,L,4,Z,False,
-f73v,27,&Lz,&,"f73v.27,&Lz",02:30,okal,False,L,4,Z,False,
-f73v,28,&Lz,&,"f73v.28,&Lz",03:30,ykey,False,L,4,Z,False,
-f73v,29,&Lz,&,"f73v.29,&Lz",05:00,ykeee,False,L,4,Z,False,
-f73v,30,&Lz,&,"f73v.30,&Lz",06:00,okeod,False,L,4,Z,False,
-f73v,31,&Lz,&,"f73v.31,&Lz",07:30,ykey,False,L,4,Z,False,
-f73v,32,&Lz,&,"f73v.32,&Lz",08:30,ypal,False,L,4,Z,False,
+folio,locus_id,descriptor,prefix,locus_key,clock,normalized_word,has_uncertain_reading,quire,hand,illustration,image_available,image_candidate,image_is_composite
+f70v2,2,@Lz,@,"f70v2.2,@Lz",09:00,otalalg,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,3,&Lz,&,"f70v2.3,&Lz",10:00,ykary,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,4,&Lz,&,"f70v2.4,&Lz",10:30,otar?,True,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,5,&Lz,&,"f70v2.5,&Lz",11:00,oty,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,6,&Lz,&,"f70v2.6,&Lz",11:30,oky ody,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,7,&Lz,&,"f70v2.7,&Lz",00:00,oty ar,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,8,&Lz,&,"f70v2.8,&Lz",00:30,okala,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,9,&Lz,&,"f70v2.9,&Lz",01:00,otody,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,10,&Lz,&,"f70v2.10,&Lz",01:30,otald,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,11,&Lz,&,"f70v2.11,&Lz",02:00,otaldar,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,12,&Lz,&,"f70v2.12,&Lz",02:45,okody,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,13,&Lz,&,"f70v2.13,&Lz",03:15,opysam,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,14,&Lz,&,"f70v2.14,&Lz",04:00,ch{ckhh}y,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,15,&Lz,&,"f70v2.15,&Lz",04:30,otaly,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,16,&Lz,&,"f70v2.16,&Lz",05:30,otal arar,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,17,&Lz,&,"f70v2.17,&Lz",06:30,otaldy,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,18,&Lz,&,"f70v2.18,&Lz",07:00,okeoly,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,19,&Lz,&,"f70v2.19,&Lz",08:00,okydy,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,20,&Lz,&,"f70v2.20,&Lz",08:30,okees,True,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,22,@Lz,@,"f70v2.22,@Lz",10:00,otar am,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,23,&Lz,&,"f70v2.23,&Lz",11:00,otar al,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,24,&Lz,&,"f70v2.24,&Lz",00:00,otalar,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,25,&Lz,&,"f70v2.25,&Lz",01:30,otalam,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,26,&Lz,&,"f70v2.26,&Lz",03:00,dolaram,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,27,&Lz,&,"f70v2.27,&Lz",04:00,okaram,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,28,&Lz,&,"f70v2.28,&Lz",05:00,oteosal,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,29,&Lz,&,"f70v2.29,&Lz",06:30,salols,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,30,&Lz,&,"f70v2.30,&Lz",08:00,okaldal,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,31,&Lz,&,"f70v2.31,&Lz",09:00,ykolaiin,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v2,33,@Lz,@,"f70v2.33,@Lz",,otolal,False,J,4,Z,True,https://collections.library.yale.edu/iiif/2/1006200/full/full/0/default.jpg,False
+f70v1,2,@Lz,@,"f70v1.2,@Lz",10:30,otalchy tar am dy,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,3,&Lz,&,"f70v1.3,&Lz",00:00,opchey sal,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,4,&Lz,&,"f70v1.4,&Lz",01:00,otakaizan,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,5,&Lz,&,"f70v1.5,&Lz",02:30,okalal,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,6,&Lz,&,"f70v1.6,&Lz",03:30,otaly,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,7,&Lz,&,"f70v1.7,&Lz",04:30,oalcheg,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,8,&Lz,&,"f70v1.8,&Lz",06:00,otchodals,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,9,&Lz,&,"f70v1.9,&Lz",07:00,okolshy,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,10,&Lz,&,"f70v1.10,&Lz",08:00,otshshdy,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,11,&Lz,&,"f70v1.11,&Lz",09:00,otal ypsharal,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,13,@Lz,@,"f70v1.13,@Lz",10:30,okoly,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,14,&Lz,&,"f70v1.14,&Lz",00:00,otalaiin,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,15,&Lz,&,"f70v1.15,&Lz",02:00,oteo alals araly,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,16,&Lz,&,"f70v1.16,&Lz",05:00,oteoeey otal okealar,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f70v1,17,&Lz,&,"f70v1.17,&Lz",08:00,otear araydy,False,J,4,Z,True,docs/assets/manuscript/f70v.jpg,False
+f71r,2,@Lz,@,"f71r.2,@Lz",10:00,oteos arar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,3,&Lz,&,"f71r.3,&Lz",11:00,okldam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,4,&Lz,&,"f71r.4,&Lz",00:00,oteoaldy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,5,&Lz,&,"f71r.5,&Lz",01:00,oteolar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,6,&Lz,&,"f71r.6,&Lz",02:00,okeoaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,7,&Lz,&,"f71r.7,&Lz",03:00,otaleky,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,8,&Lz,&,"f71r.8,&Lz",04:30,otalsar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,9,&Lz,&,"f71r.9,&Lz",05:30,cheary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,10,&Lz,&,"f71r.10,&Lz",07:00,oteotey rary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,11,&Lz,&,"f71r.11,&Lz",08:30,otalaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,13,@Lz,@,"f71r.13,@Lz",11:00,otolchdy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,14,&Lz,&,"f71r.14,&Lz",00:30,otoloaram,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,15,&Lz,&,"f71r.15,&Lz",03:30,oteeol,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,16,&Lz,&,"f71r.16,&Lz",05:30,otolchd,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71r,17,&Lz,&,"f71r.17,&Lz",08:00,otaldar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg,False
+f71v,2,@Lz,@,"f71v.2,@Lz",10:00,char arom,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,3,&Lz,&,"f71v.3,&Lz",11:00,chfaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,4,&Lz,&,"f71v.4,&Lz",00:00,okolar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,5,&Lz,&,"f71v.5,&Lz",01:00,otchody,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,6,&Lz,&,"f71v.6,&Lz",02:00,alcphy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,7,&Lz,&,"f71v.7,&Lz",03:00,otaiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,8,&Lz,&,"f71v.8,&Lz",04:30,okaraiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,9,&Lz,&,"f71v.9,&Lz",05:30,otar ar aly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,10,&Lz,&,"f71v.10,&Lz",07:00,opalar am dan,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,11,&Lz,&,"f71v.11,&Lz",09:00,opalor ar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,13,@Lz,@,"f71v.13,@Lz",10:00,ofa{if}om,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,14,&Lz,&,"f71v.14,&Lz",00:00,otalody,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,15,&Lz,&,"f71v.15,&Lz",03:00,otalaiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,16,&Lz,&,"f71v.16,&Lz",05:30,otar shar,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f71v,17,&Lz,&,"f71v.17,&Lz",08:30,sholshdy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,2,@Lz,@,"f72r1.2,@Lz",09:30,oshodady,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,3,&Lz,&,"f72r1.3,&Lz",10:30,chdaiirdainy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,4,&Lz,&,"f72r1.4,&Lz",00:00,oaiin ar ary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,5,&Lz,&,"f72r1.5,&Lz",01:00,okalam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,6,&Lz,&,"f72r1.6,&Lz",02:00,ytalshdy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,7,&Lz,&,"f72r1.7,&Lz",03:00,char alif,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,8,&Lz,&,"f72r1.8,&Lz",03:30,otaraldy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,9,&Lz,&,"f72r1.9,&Lz",05:00,otaiin otain,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,10,&Lz,&,"f72r1.10,&Lz",07:00,otalef ys ainam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,11,&Lz,&,"f72r1.11,&Lz",08:30,ochol sharam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,13,@Lz,@,"f72r1.13,@Lz",09:00,ofaralar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,14,&Lz,&,"f72r1.14,&Lz",00:00,otchoshy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,15,&Lz,&,"f72r1.15,&Lz",02:00,otchdal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,16,&Lz,&,"f72r1.16,&Lz",04:00,okeey ary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r1,17,&Lz,&,"f72r1.17,&Lz",07:00,otainy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,1,@Lz,@,"f72r2.1,@Lz",10:30,ofchdamy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,2,&Lz,&,"f72r2.2,&Lz",11:00,oklairdy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,3,&Lz,&,"f72r2.3,&Lz",00:00,okaram,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,4,&Lz,&,"f72r2.4,&Lz",00:30,okairy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,5,&Lz,&,"f72r2.5,&Lz",01:00,okealar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,7,@Lz,@,"f72r2.7,@Lz",10:00,otaraldy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,8,&Lz,&,"f72r2.8,&Lz",11:00,okalar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,9,&Lz,&,"f72r2.9,&Lz",11:45,okal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,10,&Lz,&,"f72r2.10,&Lz",00:15,okaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,11,&Lz,&,"f72r2.11,&Lz",01:00,okal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,12,&Lz,&,"f72r2.12,&Lz",02:00,okeey ary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,13,&Lz,&,"f72r2.13,&Lz",03:00,oteeary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,14,&Lz,&,"f72r2.14,&Lz",04:00,otair dy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,15,&Lz,&,"f72r2.15,&Lz",05:00,okaircham,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,16,&Lz,&,"f72r2.16,&Lz",06:00,okeal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,17,&Lz,&,"f72r2.17,&Lz",06:30,otar{cr},False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,18,&Lz,&,"f72r2.18,&Lz",07:30,okaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,19,&Lz,&,"f72r2.19,&Lz",08:00,orary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,20,&Lz,&,"f72r2.20,&Lz",09:00,okyd,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,21,&Lz,&,"f72r2.21,&Lz",09:30,otolam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,23,@Lz,@,"f72r2.23,@Lz",10:30,otal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,24,&Lz,&,"f72r2.24,&Lz",11:30,ralal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,25,&Lz,&,"f72r2.25,&Lz",00:30,okam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,26,&Lz,&,"f72r2.26,&Lz",02:00,otalshy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,27,&Lz,&,"f72r2.27,&Lz",03:30,okaldy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,28,&Lz,&,"f72r2.28,&Lz",05:00,chosar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,29,&Lz,&,"f72r2.29,&Lz",06:30,otam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,30,&Lz,&,"f72r2.30,&Lz",08:00,ainaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r2,31,&Lz,&,"f72r2.31,&Lz",09:00,okarcham,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,2,@Lz,@,"f72r3.2,@Lz",10:30,olkalaiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,3,&Lz,&,"f72r3.3,&Lz",11:00,olalsy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,4,&Lz,&,"f72r3.4,&Lz",00:00,oraiinam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,5,&Lz,&,"f72r3.5,&Lz",01:00,osarsheeeo,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,6,&Lz,&,"f72r3.6,&Lz",02:00,oto@192;aiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,7,&Lz,&,"f72r3.7,&Lz",02:30,opoiiinoin al ches,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,8,&Lz,&,"f72r3.8,&Lz",04:00,ypaiin alaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,9,&Lz,&,"f72r3.9,&Lz",05:00,oteey daiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,10,&Lz,&,"f72r3.10,&Lz",06:30,oeeodaiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,11,&Lz,&,"f72r3.11,&Lz",07:00,ofsholdy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,12,&Lz,&,"f72r3.12,&Lz",07:00,opoeey okaiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,13,&Lz,&,"f72r3.13,&Lz",10:00,ykolairol,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,15,@Lz,@,"f72r3.15,@Lz",11:00,oralkam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,16,&Lz,&,"f72r3.16,&Lz",00:00,ytairal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,17,&Lz,&,"f72r3.17,&Lz",01:00,oeeesaiin,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,18,&Lz,&,"f72r3.18,&Lz",01:30,ory,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,19,&Lz,&,"f72r3.19,&Lz",02:30,ochey fydy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,20,&Lz,&,"f72r3.20,&Lz",03:30,of??? o eeesaly,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,21,&Lz,&,"f72r3.21,&Lz",05:00,ykaraiin airal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,22,&Lz,&,"f72r3.22,&Lz",06:30,okalar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,23,&Lz,&,"f72r3.23,&Lz",08:00,orara,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,24,&Lz,&,"f72r3.24,&Lz",09:00,olaiin ola{ikh}y,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,25,&Lz,&,"f72r3.25,&Lz",10:00,olfsheoral,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,27,@Lz,@,"f72r3.27,@Lz",10:30,opalal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,28,&Lz,&,"f72r3.28,&Lz",00:00,yfary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,29,&Lz,&,"f72r3.29,&Lz",01:30,oraiiral,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,30,&Lz,&,"f72r3.30,&Lz",03:00,ytoar shar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,31,&Lz,&,"f72r3.31,&Lz",06:00,octho,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,32,&Lz,&,"f72r3.32,&Lz",07:30,aral,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72r3,33,&Lz,&,"f72r3.33,&Lz",09:00,oletal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006203/full/full/0/default.jpg,True
+f72v3,2,@Lz,@,"f72v3.2,@Lz",10:00,ocham,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,3,&Lz,&,"f72v3.3,&Lz",11:00,orchey,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,4,&Lz,&,"f72v3.4,&Lz",11:30,okam,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,5,&Lz,&,"f72v3.5,&Lz",00:00,okey,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,6,&Lz,&,"f72v3.6,&Lz",00:30,otcheody,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,7,&Lz,&,"f72v3.7,&Lz",01:00,okyeeshy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,8,&Lz,&,"f72v3.8,&Lz",01:30,{c'y}ofaiin,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,9,&Lz,&,"f72v3.9,&Lz",02:00,okaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,10,&Lz,&,"f72v3.10,&Lz",02:45,otoly,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,11,&Lz,&,"f72v3.11,&Lz",03:30,ofalals,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,12,&Lz,&,"f72v3.12,&Lz",04:00,sheeos o{cfhh}y,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,13,&Lz,&,"f72v3.13,&Lz",05:00,daiin chepy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,14,&Lz,&,"f72v3.14,&Lz",06:00,oteey deeal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,15,&Lz,&,"f72v3.15,&Lz",07:00,chealpy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,16,&Lz,&,"f72v3.16,&Lz",07:30,okeeol,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,17,&Lz,&,"f72v3.17,&Lz",08:30,okaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,18,&Lz,&,"f72v3.18,&Lz",09:00,okaldy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,19,&Lz,&,"f72v3.19,&Lz",09:30,okeolyd,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,21,@Lz,@,"f72v3.21,@Lz",10:30,choleey,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,22,&Lz,&,"f72v3.22,&Lz",11:30,oky,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,23,&Lz,&,"f72v3.23,&Lz",00:30,ch{cthh}y,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,24,&Lz,&,"f72v3.24,&Lz",01:00,laly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,25,&Lz,&,"f72v3.25,&Lz",02:00,oeedy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,26,&Lz,&,"f72v3.26,&Lz",03:00,odairan,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,27,&Lz,&,"f72v3.27,&Lz",04:00,okary,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,28,&Lz,&,"f72v3.28,&Lz",05:00,oeesaiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,29,&Lz,&,"f72v3.29,&Lz",06:30,oteesed,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,30,&Lz,&,"f72v3.30,&Lz",07:30,opal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,31,&Lz,&,"f72v3.31,&Lz",08:30,otaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v3,32,&Lz,&,"f72v3.32,&Lz",09:30,otaly yty,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,2,@Lz,@,"f72v2.2,@Lz",10:00,oeedey,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,3,&Lz,&,"f72v2.3,&Lz",11:00,oeeodaiin,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,4,&Lz,&,"f72v2.4,&Lz",11:45,okeoram,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,5,&Lz,&,"f72v2.5,&Lz",00:30,air aim,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,6,&Lz,&,"f72v2.6,&Lz",01:00,oshesy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,7,&Lz,&,"f72v2.7,&Lz",02:00,okeary,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,8,&Lz,&,"f72v2.8,&Lz",02:30,cheoetey,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,9,&Lz,&,"f72v2.9,&Lz",03:00,cheoldy,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,10,&Lz,&,"f72v2.10,&Lz",04:00,sheoeky,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,11,&Lz,&,"f72v2.11,&Lz",04:30,oteodar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,12,&Lz,&,"f72v2.12,&Lz",05:30,ofchdysd,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,13,&Lz,&,"f72v2.13,&Lz",06:00,oteoyd,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,14,&Lz,&,"f72v2.14,&Lz",06:30,yteody,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,15,&Lz,&,"f72v2.15,&Lz",07:00,okeody,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,16,&Lz,&,"f72v2.16,&Lz",08:00,okeoldy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,17,&Lz,&,"f72v2.17,&Lz",08:30,ykeeor,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,18,&Lz,&,"f72v2.18,&Lz",09:00,opaiinam,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,19,&Lz,&,"f72v2.19,&Lz",09:30,cheoldy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,21,@Lz,@,"f72v2.21,@Lz",10:30,okaiin,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,22,&Lz,&,"f72v2.22,&Lz",11:30,ockhol,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,23,&Lz,&,"f72v2.23,&Lz",00:30,oeedy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,24,&Lz,&,"f72v2.24,&Lz",01:00,opalg,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,25,&Lz,&,"f72v2.25,&Lz",02:00,okeeom,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,26,&Lz,&,"f72v2.26,&Lz",03:00,olkar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,27,&Lz,&,"f72v2.27,&Lz",04:00,oeedaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,28,&Lz,&,"f72v2.28,&Lz",05:00,cheosy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,29,&Lz,&,"f72v2.29,&Lz",06:30,ofcheay,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,30,&Lz,&,"f72v2.30,&Lz",07:30,yteedy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,31,&Lz,&,"f72v2.31,&Lz",08:30,onaiin,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v2,32,&Lz,&,"f72v2.32,&Lz",09:30,okeorar,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006204/full/full/0/default.jpg,True
+f72v1,2,@Lz,@,"f72v1.2,@Lz",08:45,oeeoty,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,3,&Lz,&,"f72v1.3,&Lz",09:30,octhy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,4,&Lz,&,"f72v1.4,&Lz",10:00,oteoly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,5,&Lz,&,"f72v1.5,&Lz",10:30,okeoly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,6,&Lz,&,"f72v1.6,&Lz",11:00,oeees,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,7,&Lz,&,"f72v1.7,&Lz",11:30,o{cfh'h}y,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,8,&Lz,&,"f72v1.8,&Lz",01:45,oees,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,9,&Lz,&,"f72v1.9,&Lz",01:00,okeeoly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,10,&Lz,&,"f72v1.10,&Lz",01:30,odal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,11,&Lz,&,"f72v1.11,&Lz",02:00,aiinod,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,12,&Lz,&,"f72v1.12,&Lz",02:45,od?dy,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,13,&Lz,&,"f72v1.13,&Lz",03:15,oteod,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,14,&Lz,&,"f72v1.14,&Lz",03:45,yteod,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,15,&Lz,&,"f72v1.15,&Lz",04:30,ok?ody,True,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,16,&Lz,&,"f72v1.16,&Lz",05:00,okal,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,17,&Lz,&,"f72v1.17,&Lz",05:30,ytaly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,18,&Lz,&,"f72v1.18,&Lz",06:00,oeeeos,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,19,&Lz,&,"f72v1.19,&Lz",06:30,oteofy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,20,&Lz,&,"f72v1.20,&Lz",07:30,cheoepy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,21,&Lz,&,"f72v1.21,&Lz",08:00,ykeedy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,23,@Lz,@,"f72v1.23,@Lz",08:45,oeeoly,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,24,&Lz,&,"f72v1.24,&Lz",10:00,okydy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,25,&Lz,&,"f72v1.25,&Lz",11:30,okeey,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,26,&Lz,&,"f72v1.26,&Lz",00:00,oiiny,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,27,&Lz,&,"f72v1.27,&Lz",01:00,oeey,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,28,&Lz,&,"f72v1.28,&Lz",03:00,okedy,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,29,&Lz,&,"f72v1.29,&Lz",04:30,ypaim,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,30,&Lz,&,"f72v1.30,&Lz",05:30,okalair,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,31,&Lz,&,"f72v1.31,&Lz",06:30,oeeody,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f72v1,32,&Lz,&,"f72v1.32,&Lz",07:30,okeol,False,K,4,Z,True,https://collections.library.yale.edu/iiif/2/1006205/full/full/0/default.jpg,False
+f73r,1,@Lz,@,"f73r.1,@Lz",11:15,otaly,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,2,&Lz,&,"f73r.2,&Lz",11:45,chockhy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,3,&Lz,&,"f73r.3,&Lz",00:30,otedy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,4,&Lz,&,"f73r.4,&Lz",01:00,yteeody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,6,@Lz,@,"f73r.6,@Lz",11:00,otaly,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,7,&Lz,&,"f73r.7,&Lz",11:30,okeody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,8,&Lz,&,"f73r.8,&Lz",00:00,oteedyl,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,9,&Lz,&,"f73r.9,&Lz",00:30,ykeedy,True,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,10,&Lz,&,"f73r.10,&Lz",01:00,okeey,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,11,&Lz,&,"f73r.11,&Lz",02:00,okeedy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,12,&Lz,&,"f73r.12,&Lz",02:30,ykeeory,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,13,&Lz,&,"f73r.13,&Lz",03:30,oteeosy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,14,&Lz,&,"f73r.14,&Lz",04:30,shekal,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,15,&Lz,&,"f73r.15,&Lz",05:30,oteedyy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,16,&Lz,&,"f73r.16,&Lz",06:30,okedal,True,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,17,&Lz,&,"f73r.17,&Lz",07:00,chdy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,18,&Lz,&,"f73r.18,&Lz",08:00,dalshey,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,19,&Lz,&,"f73r.19,&Lz",08:45,opaiin,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,20,&Lz,&,"f73r.20,&Lz",09:30,okeos,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,21,&Lz,&,"f73r.21,&Lz",10:00,otey,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,23,@Lz,@,"f73r.23,@Lz",11:30,okary,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,24,&Lz,&,"f73r.24,&Lz",01:00,okeeody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,25,&Lz,&,"f73r.25,&Lz",02:00,oyteedy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,26,&Lz,&,"f73r.26,&Lz",03:00,oky,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,27,&Lz,&,"f73r.27,&Lz",04:30,chefy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,28,&Lz,&,"f73r.28,&Lz",06:00,otal,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,29,&Lz,&,"f73r.29,&Lz",07:00,chek,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,30,&Lz,&,"f73r.30,&Lz",08:30,ar,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,31,&Lz,&,"f73r.31,&Lz",09:30,kar,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73r,32,&Lz,&,"f73r.32,&Lz",10:30,okeeos,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg,False
+f73v,1,@Lz,@,"f73v.1,@Lz",11:00,okol,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,2,&Lz,&,"f73v.2,&Lz",11:45,oteody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,3,&Lz,&,"f73v.3,&Lz",00:30,oteedy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,4,&Lz,&,"f73v.4,&Lz",01:00,eeeody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,6,@Lz,@,"f73v.6,@Lz",10:00,okeody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,7,&Lz,&,"f73v.7,&Lz",10:30,sheol,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,8,&Lz,&,"f73v.8,&Lz",11:30,odees,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,9,&Lz,&,"f73v.9,&Lz",00:00,eery,True,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,10,&Lz,&,"f73v.10,&Lz",01:00,okeor,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,11,&Lz,&,"f73v.11,&Lz",01:30,ofals,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,12,&Lz,&,"f73v.12,&Lz",02:00,ykeody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,13,&Lz,&,"f73v.13,&Lz",03:00,oteody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,14,&Lz,&,"f73v.14,&Lz",03:30,ypaiin,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,15,&Lz,&,"f73v.15,&Lz",04:00,yfaiin y,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,16,&Lz,&,"f73v.16,&Lz",05:00,ofcheesy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,17,&Lz,&,"f73v.17,&Lz",06:00,oraiiny,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,18,&Lz,&,"f73v.18,&Lz",07:00,ykeeody,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,19,&Lz,&,"f73v.19,&Lz",07:30,okeos,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,20,&Lz,&,"f73v.20,&Lz",08:30,ykeear,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,21,&Lz,&,"f73v.21,&Lz",09:00,qokeoly,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,23,@Lz,@,"f73v.23,@Lz",09:30,otedy,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,24,&Lz,&,"f73v.24,&Lz",11:00,eeed,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,25,&Lz,&,"f73v.25,&Lz",01:00,oky,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,26,&Lz,&,"f73v.26,&Lz",02:00,oia?,True,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,27,&Lz,&,"f73v.27,&Lz",02:30,okal,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,28,&Lz,&,"f73v.28,&Lz",03:30,ykey,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,29,&Lz,&,"f73v.29,&Lz",05:00,ykeee,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,30,&Lz,&,"f73v.30,&Lz",06:00,okeod,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,31,&Lz,&,"f73v.31,&Lz",07:30,ykey,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False
+f73v,32,&Lz,&,"f73v.32,&Lz",08:30,ypal,False,L,4,Z,True,https://collections.library.yale.edu/iiif/2/1006207/full/full/0/default.jpg,False

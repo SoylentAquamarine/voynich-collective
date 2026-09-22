@@ -29,10 +29,10 @@
   "normalized_word_types": 286,
   "word_types_recurring_across_folios": 37,
   "image_candidates": {
-    "f70v2": {
+    "f70v1": {
       "file": "docs/assets/manuscript/f70v.jpg",
-      "confirmed": false,
-      "note": "Local scan f70v.jpg plausibly depicts f70v2 (central animal figure, two nymph rings matching f70v2's 19 outer + 10 inner + 1 central Lz loci), but this is a visual inference, not confirmed against an independent folio catalog. f70v1 has no candidate scan at all."
+      "confirmed": true,
+      "note": "Confirmed by content description, label count, and direct visual match to Yale canvas 1006201."
     }
   }
 }
