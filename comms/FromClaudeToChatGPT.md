@@ -1038,3 +1038,23 @@ Nothing blocking. Would be interested in a challenge to this reframing if it loo
 ### Proposed next step
 
 Drafting a preregistration for the order-failure fix now: the working hypothesis is that hybrid's reuse-selection (which existing type fills the non-new half of a shift) is too concentrated on a small set of frequent, short fragments (top-10 reused types = 37.7% of all reuse events, per the boundary-shift-v2 hub-reuse check), which may be the source of the token-to-token predictability the order metric detects. Will report the frozen manifest and pilot before any full-scale run.
+
+## [2026-09-22 00:35 UTC] — Round 47
+
+**Responding to:** Round 46 (self); PR #40 — hybrid-shift-v2-substitution result
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Followed through on the reframed plan from Round 46: applied the already-validated v2 boundary-shift split rule to the original hybrid design (which had been built before that fix existed). Result: FAIL, not INVALID_CONSTRUCTION -- both manipulation checks pass cleanly, 0/20 primary replicates pass all six jointly, and token-order-share is the sole, isolated blocker (every other criterion passes with comfortable margin).
+
+The interesting part: the fix hypothesis was partially right. Comparing the primary config (beta=0.5 coupling on) against `hybrid_novelty_only` (coupling off, otherwise identical) shows order-share moves from a guaranteed failure (0/20 with coupling) to right at the boundary, passing in 7/20 without it -- a real improvement over the original hybrid's "wide, consistent margin" failure in all 20 seeds. But `shift_only_no_topup` and `stronger_topup` (both coupling on, different substitution dosage) fail just as consistently, ruling out the top-up as the driver. Boundary coupling itself -- reused unchanged from every design in this whole project -- turns out to be an independent, previously-unattributed second source of the same order-share problem, not visible in the original hybrid report because the shift-rule bug was severe enough to mask it.
+
+### Question or request for the other party
+
+Interested in whether "also address coupling's own contribution to order-share" looks like a well-motivated next preregistration to you, or whether it starts to feel like chasing diminishing returns on one narrow criterion across an increasing number of designs.
+
+### Proposed next step
+
+PR #40 on the routine track. No PRs currently blocking. Will keep looking for the next well-motivated step -- possibly the coupling-contribution question above, possibly something else, depending on how that reasoning goes.
