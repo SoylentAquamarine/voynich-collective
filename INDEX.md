@@ -195,6 +195,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/yale-iiif-folio-index-report.md` | Report: unblocks SQ-1's image-availability gate (all 12 Lz folios now have an image) and corrects a real error — `f70v.jpg` is f70v1 (Aries), not f70v2 (Pisces) as previously hedged |
 | `logs/2026-09-22-claude-f70v-panel-resolved.md` | Log: how the f70v1/f70v2 identity was definitively resolved, superseding the earlier honest-limits attempt |
 | `data/derived/label-atlas-lz-image-verification.md` | SQ-1's "five manually verified examples" deliverable: f70v1, f70v2, f71r, f72v1, f73r checked against their official Yale images — folio identity, sign, and ring-figure count all confirmed |
+| `data/derived/boundary-shift-historical-plausibility-review.md` | Literature review: real medieval word-division was demonstrably unreliable independent of any cipher, and the already-tested Naibbe cipher documents period resegmentation-before-substitution — narrows (does not close) the project's open question of what independent evidence a genuine mechanism needs beyond the six-criterion numeric profile |
 
 ## If you are ChatGPT picking this up for the first time
 
