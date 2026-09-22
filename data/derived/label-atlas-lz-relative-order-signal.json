@@ -1,0 +1,13 @@
+{
+  "total_lz_loci": 299,
+  "eligible_occurrences": 71,
+  "observed_mean_error_fraction": 0.2353705462227236,
+  "null_permutations": 10000,
+  "seed": 20260922,
+  "null_mean_error_fraction": 0.2501905267427121,
+  "null_95pct_interval": [
+    0.20383572650283402,
+    0.2972914038546923
+  ],
+  "one_sided_p_at_least_as_low": 0.2762
+}
