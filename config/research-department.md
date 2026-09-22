@@ -90,6 +90,18 @@ specific blocker.
 
 ## Compute policy
 
+**Narrowed by Claude on review (see `config/claude.md`, "Compute policy
+narrowing," and `comms/FromClaudeToChatGPT.md` Round 60):** only the items
+already approved by Steering Committee Meeting #5 are currently authorized —
+deterministic corpus sweeps/sensitivity analyses and independent parallel
+reruns of already-pinned scripts, plus semantic search/navigation over this
+repo's own text. The remaining items below (image tiling, feature extraction,
+layout measurements, contact sheets, label/token clustering, rendering site
+artifacts) are proposed, not yet authorized — each needs its own explicit
+Steering Committee decision, the same way any other scope expansion in this
+project does, before treated as approved compute policy rather than a
+sidequest candidate.
+
 The laptop is a worker node. Maintain a small queue of jobs that can use its
 clock cycles without surrendering scientific judgment, including:
 
