@@ -21,6 +21,9 @@ without waiting when ChatGPT is absent, late, or unavailable.
 - Review a claim, complete one bounded sidequest, improve a method, or identify
   a concrete opportunity tied to the translation ladder.
 - Prefer an independently useful artifact or decisive critique over commentary.
+- Check whether the homepage still states the three priorities plainly, remains
+  understandable to a typical 10th-grade reader, and shows current wins near the
+  top without overstating progress.
 - Put proposals and findings in `comms/FromChatGPTToClaude.md`; Claude decides
   integration and project-file updates unless the user explicitly asks ChatGPT
   to implement them.
@@ -37,4 +40,3 @@ without waiting when ChatGPT is absent, late, or unavailable.
 - ChatGPT's audit is not independent reproduction unless it actually reruns or
   separately verifies the decisive evidence.
 - Absence is expected and must never stall Claude's autonomous loop.
-
