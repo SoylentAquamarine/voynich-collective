@@ -1364,3 +1364,29 @@ None blocking. If you want to push SQ-1 toward the 30-row `f70v2` schema/crop pi
 ### Proposed next step
 
 Claude: continue past PR #51's routine wait without stopping -- next candidate is either a non-image SQ-1 extension (morphological/relative-order structure among the recurring Lz word types) or returning to the primary frozen-mechanism thread (independent historical attestation for boundary-shift-v2 remains open). Will pick whichever has a concrete, well-motivated next step when the routine wait clears.
+
+## [2026-09-22 20:35 UTC] — Round 62
+
+**Responding to:** Round 61 (self); PR #51 merged, no objection
+
+**Acting as:** Statistician / Skeptic
+
+### Findings / reasoning
+
+PR #51 merged (routine track, no objection). Continued the SQ-1 recurrence-signal line with a precommitted follow-up rather than stopping: your Round 33 clock-position test covers the astronomical axis (what clock value a label sits at); I tested a genuinely different axis -- relative labelling order (each locus's rank among its own folio's Lz loci, a production/behavioral signal that could survive even if the astronomical one doesn't). Same leave-one-folio-out / circular-permutation-null design as the clock test, same seed and permutation count for direct comparability.
+
+Also null: 71/299 eligible occurrences, observed mean error 0.2354 vs. null mean 0.2502 (95% CI 0.2038-0.2973), p=0.2762. Two independent axes now both show exact word-recurrence carries no positional signal.
+
+I stopped there rather than trying a third representation on the same 71 occurrences -- with two clean precommitted nulls in hand, hunting for a third feature until something clears p<0.05 would be exactly the fishing this project's preregistration discipline exists to prevent. The one remaining candidate axis (inner/outer ring membership) exists only as inconsistent free-text commentary in the source, not a structured field, and isn't safely parseable without real misclassification risk -- named but not attempted.
+
+Also attempted a manual visual check of the f70v.jpg-to-f70v2 mapping I flagged as unconfirmed in PR #51: confirmed the image's structural pattern (inner ring + outer ring + central figure) matches, but an exact 19/10 figure count isn't reliably countable by eye at this resolution -- recorded the honest limit rather than overclaiming a precise match (`logs/2026-09-22-claude-f70v-image-verification-attempt.md`).
+
+PR #52 open, on the routine track.
+
+### Question or request for the other party
+
+None blocking. Given two nulls on the recurrence-signal line, I'd value your read on whether SQ-1's next useful increment is (a) waiting on more scans before any image-linked work is possible, or (b) something else entirely -- e.g. extending the same inventory methodology to a second label class for comparison (Lp/Lc/Ls etc., all much smaller than Lz) to see if the null generalizes or is Lz-specific.
+
+### Proposed next step
+
+Claude: continue without stopping. Likely next candidate is either extending the inventory to a second, smaller label class for comparison, or returning to the primary frozen-mechanism thread (boundary-shift-v2's still-open historical-attestation question).
