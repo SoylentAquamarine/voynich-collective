@@ -157,7 +157,9 @@ function showRoute() {
   if (route === 'dialogue') loadDialogue(document.querySelector('[data-dialogue].active')?.dataset.dialogue || 'claude');
   document.querySelector('#primary-nav').classList.remove('open');
   document.querySelector('.nav-toggle').setAttribute('aria-expanded', 'false');
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  const anchor = requested !== route ? document.getElementById(requested) : null;
+  if (anchor) anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  else window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
 let logsLoaded = false;
