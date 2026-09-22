@@ -1,0 +1,2305 @@
+{
+  "source": {
+    "commit": "956a7c4fc39981f4d116fa3f4edfccce6d065571",
+    "reused_from": "boundary-state-null verified source (identical pin)"
+  },
+  "protocol": "solo design, self-reviewed (logs/2026-09-22-claude-hybrid-shift-v2-substitution-selfreview.md)",
+  "manifest": "data/external/hybrid-shift-v2-substitution-novelty-null-manifest-v1.json",
+  "nu_sub_calibrated": 0.01,
+  "cipher_seeds": [
+    42,
+    179,
+    316,
+    453,
+    590,
+    727,
+    864,
+    1001,
+    1138,
+    1275,
+    1412,
+    1549,
+    1686,
+    1823,
+    1960,
+    2097,
+    2234,
+    2371,
+    2508,
+    2645
+  ],
+  "postprocessor_seeds": [
+    7100042,
+    7100179,
+    7100316,
+    7100453,
+    7100590,
+    7100727,
+    7100864,
+    7101001,
+    7101138,
+    7101275,
+    7101412,
+    7101549,
+    7101686,
+    7101823,
+    7101960,
+    7102097,
+    7102234,
+    7102371,
+    7102508,
+    7102645
+  ],
+  "six_criteria": {
+    "H1_bits": {
+      "center": 3.9763,
+      "tol": 0.15
+    },
+    "H2_bits": {
+      "center": 2.6897,
+      "tol": 0.15
+    },
+    "learned_units": {
+      "checkpoints": [
+        32,
+        64
+      ],
+      "k64_min": 0.9,
+      "k64_max": 1.2
+    },
+    "token_order_share": {
+      "min": 0.0,
+      "max": 0.02
+    },
+    "edge": {
+      "gain_min": 0.15,
+      "positive_min": 15,
+      "blocks": 16
+    },
+    "hapax": {
+      "min": 0.65
+    }
+  },
+  "replicates": {
+    "baseline": {
+      "42": {
+        "n_tokens": 80721,
+        "H1": 3.983339069724879,
+        "H2": 2.7125806188910664,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0195047894037108,
+        "token_order_share": 0.012345674483542452,
+        "hapax_share_of_types": 0.3959400493265035,
+        "vocabulary_types": 5271,
+        "edge_gain_bits_per_boundary": -0.001400515894693717,
+        "edge_positive_blocks": 7,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "179": {
+        "n_tokens": 80827,
+        "H1": 3.97922604300392,
+        "H2": 2.703966338040791,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0359190823725921,
+        "token_order_share": 0.013069220944460547,
+        "hapax_share_of_types": 0.39236177085312557,
+        "vocabulary_types": 5263,
+        "edge_gain_bits_per_boundary": -0.001923455944280909,
+        "edge_positive_blocks": 4,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "316": {
+        "n_tokens": 80756,
+        "H1": 3.985649134580997,
+        "H2": 2.7165592716427582,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0383108164357315,
+        "token_order_share": 0.013560276825416159,
+        "hapax_share_of_types": 0.3959781995865439,
+        "vocabulary_types": 5321,
+        "edge_gain_bits_per_boundary": -0.0019229132541561523,
+        "edge_positive_blocks": 4,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "453": {
+        "n_tokens": 80649,
+        "H1": 3.98216907706265,
+        "H2": 2.7074248412670756,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0422668808010283,
+        "token_order_share": 0.01182888493732254,
+        "hapax_share_of_types": 0.38794084186575656,
+        "vocabulary_types": 5274,
+        "edge_gain_bits_per_boundary": -0.002376764477558541,
+        "edge_positive_blocks": 2,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "590": {
+        "n_tokens": 80852,
+        "H1": 3.983454350511064,
+        "H2": 2.701216479934142,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0116729148107577,
+        "token_order_share": 0.012594194220199702,
+        "hapax_share_of_types": 0.3929461376269887,
+        "vocabulary_types": 5217,
+        "edge_gain_bits_per_boundary": -0.0018632745066820826,
+        "edge_positive_blocks": 3,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "727": {
+        "n_tokens": 80647,
+        "H1": 3.9844686910594302,
+        "H2": 2.7159313379612064,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.034560869294289,
+        "token_order_share": 0.012915816292189656,
+        "hapax_share_of_types": 0.3902624572080639,
+        "vocabulary_types": 5258,
+        "edge_gain_bits_per_boundary": -0.0018729722775337769,
+        "edge_positive_blocks": 6,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "864": {
+        "n_tokens": 80840,
+        "H1": 3.983726659729035,
+        "H2": 2.7114730133584932,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0351545572505332,
+        "token_order_share": 0.012758339659717986,
+        "hapax_share_of_types": 0.39172703011818527,
+        "vocabulary_types": 5246,
+        "edge_gain_bits_per_boundary": -0.0015858422994531813,
+        "edge_positive_blocks": 5,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1001": {
+        "n_tokens": 80717,
+        "H1": 3.9843110741208676,
+        "H2": 2.714248050471669,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0294281638302207,
+        "token_order_share": 0.013500553915317355,
+        "hapax_share_of_types": 0.3969944835457485,
+        "vocabulary_types": 5257,
+        "edge_gain_bits_per_boundary": -0.0008321840633439717,
+        "edge_positive_blocks": 7,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1138": {
+        "n_tokens": 80543,
+        "H1": 3.9895524395045348,
+        "H2": 2.7167081604265126,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0436340559594353,
+        "token_order_share": 0.012813769216880417,
+        "hapax_share_of_types": 0.3911798396334479,
+        "vocabulary_types": 5238,
+        "edge_gain_bits_per_boundary": -0.00209984166328943,
+        "edge_positive_blocks": 2,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1275": {
+        "n_tokens": 80669,
+        "H1": 3.9832341730570278,
+        "H2": 2.7061443522339563,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.047915571226329,
+        "token_order_share": 0.012081836775831316,
+        "hapax_share_of_types": 0.3919847328244275,
+        "vocabulary_types": 5240,
+        "edge_gain_bits_per_boundary": -0.0018653296482083722,
+        "edge_positive_blocks": 4,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1412": {
+        "n_tokens": 80739,
+        "H1": 3.9839187827491727,
+        "H2": 2.719281391574023,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0397805438698633,
+        "token_order_share": 0.012857450943828506,
+        "hapax_share_of_types": 0.3964441081898998,
+        "vocabulary_types": 5287,
+        "edge_gain_bits_per_boundary": -0.002092878788173584,
+        "edge_positive_blocks": 3,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1549": {
+        "n_tokens": 80671,
+        "H1": 3.9828588622342522,
+        "H2": 2.710367131209131,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0367535017996108,
+        "token_order_share": 0.013360923882196025,
+        "hapax_share_of_types": 0.3927629099133057,
+        "vocabulary_types": 5306,
+        "edge_gain_bits_per_boundary": -0.0026200746285727243,
+        "edge_positive_blocks": 2,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1686": {
+        "n_tokens": 80554,
+        "H1": 3.987837277767731,
+        "H2": 2.7145591034125625,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0461018025762847,
+        "token_order_share": 0.01292176962773053,
+        "hapax_share_of_types": 0.3908868386367916,
+        "vocabulary_types": 5311,
+        "edge_gain_bits_per_boundary": -0.0014759803376615801,
+        "edge_positive_blocks": 5,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1823": {
+        "n_tokens": 80876,
+        "H1": 3.982691106169964,
+        "H2": 2.705865267800791,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.009482549191361,
+        "token_order_share": 0.013473791285345154,
+        "hapax_share_of_types": 0.3987718288236423,
+        "vocabulary_types": 5211,
+        "edge_gain_bits_per_boundary": -0.0001596296125227467,
+        "edge_positive_blocks": 7,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1960": {
+        "n_tokens": 80835,
+        "H1": 3.9882059730832604,
+        "H2": 2.7104636860933446,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0409290134895883,
+        "token_order_share": 0.0141080682258675,
+        "hapax_share_of_types": 0.3957390648567119,
+        "vocabulary_types": 5304,
+        "edge_gain_bits_per_boundary": -0.001832094349790182,
+        "edge_positive_blocks": 4,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2097": {
+        "n_tokens": 80775,
+        "H1": 3.9884791758521136,
+        "H2": 2.7087680899673767,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0340922752665218,
+        "token_order_share": 0.013250308563862697,
+        "hapax_share_of_types": 0.3994713989050406,
+        "vocabulary_types": 5297,
+        "edge_gain_bits_per_boundary": -0.002235552847112254,
+        "edge_positive_blocks": 2,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2234": {
+        "n_tokens": 80851,
+        "H1": 3.9819985241919236,
+        "H2": 2.7074857374488346,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0265450741100608,
+        "token_order_share": 0.01253860939895944,
+        "hapax_share_of_types": 0.40082722316224856,
+        "vocabulary_types": 5319,
+        "edge_gain_bits_per_boundary": -0.0008633701249648681,
+        "edge_positive_blocks": 7,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2371": {
+        "n_tokens": 80753,
+        "H1": 3.9854674034774615,
+        "H2": 2.707761777712056,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0441265204375654,
+        "token_order_share": 0.01286162277650594,
+        "hapax_share_of_types": 0.38350634371395614,
+        "vocabulary_types": 5202,
+        "edge_gain_bits_per_boundary": -0.0023139763764801497,
+        "edge_positive_blocks": 5,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2508": {
+        "n_tokens": 80565,
+        "H1": 3.982323372693817,
+        "H2": 2.713646057182469,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0338263248887527,
+        "token_order_share": 0.012010990678543337,
+        "hapax_share_of_types": 0.38828880045480385,
+        "vocabulary_types": 5277,
+        "edge_gain_bits_per_boundary": -0.0028883219037600773,
+        "edge_positive_blocks": 4,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2645": {
+        "n_tokens": 80708,
+        "H1": 3.981971588155731,
+        "H2": 2.7134919387138416,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.022809216875924,
+        "token_order_share": 0.015072004255053308,
+        "hapax_share_of_types": 0.4032258064516129,
+        "vocabulary_types": 5270,
+        "edge_gain_bits_per_boundary": -0.0027375511696457835,
+        "edge_positive_blocks": 4,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": false,
+          "hapax": false
+        },
+        "all_six_pass": false
+      }
+    },
+    "edge_only": {
+      "42": {
+        "n_tokens": 80721,
+        "H1": 3.9922903216675736,
+        "H2": 2.737136852492097,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1932326703906408,
+        "token_order_share": 0.012770047672428784,
+        "hapax_share_of_types": 0.5127918355934573,
+        "vocabulary_types": 7153,
+        "edge_gain_bits_per_boundary": 0.37976191911640345,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "179": {
+        "n_tokens": 80827,
+        "H1": 3.9876506299706764,
+        "H2": 2.7267371205614683,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.166245257225345,
+        "token_order_share": 0.008951148710379277,
+        "hapax_share_of_types": 0.5165599777344837,
+        "vocabulary_types": 7186,
+        "edge_gain_bits_per_boundary": 0.3808659104299124,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "316": {
+        "n_tokens": 80756,
+        "H1": 3.9941703677530964,
+        "H2": 2.7371120601534686,
+        "bpe_minimum_checkpoint": 32,
+        "bpe_k64_gap": 1.1982833533473523,
+        "token_order_share": 0.011680686771537852,
+        "hapax_share_of_types": 0.5222991689750692,
+        "vocabulary_types": 7220,
+        "edge_gain_bits_per_boundary": 0.3793300754917608,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "453": {
+        "n_tokens": 80649,
+        "H1": 3.990557948585339,
+        "H2": 2.727857210975963,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1619902023351711,
+        "token_order_share": 0.01087346730723277,
+        "hapax_share_of_types": 0.5216423103688239,
+        "vocabulary_types": 7185,
+        "edge_gain_bits_per_boundary": 0.3686165609742777,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "590": {
+        "n_tokens": 80852,
+        "H1": 3.9886718884359134,
+        "H2": 2.7240559284523416,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.158720172408886,
+        "token_order_share": 0.011419146463001044,
+        "hapax_share_of_types": 0.5128964059196617,
+        "vocabulary_types": 7095,
+        "edge_gain_bits_per_boundary": 0.37122975568587196,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "727": {
+        "n_tokens": 80647,
+        "H1": 3.993256705755218,
+        "H2": 2.7395169848608707,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.143979937920407,
+        "token_order_share": 0.009693621011272533,
+        "hapax_share_of_types": 0.505193711398091,
+        "vocabulary_types": 7124,
+        "edge_gain_bits_per_boundary": 0.38303511461647216,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "864": {
+        "n_tokens": 80840,
+        "H1": 3.990500832213586,
+        "H2": 2.730082546359847,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1927018777559253,
+        "token_order_share": 0.011671709795352656,
+        "hapax_share_of_types": 0.5142897367309588,
+        "vocabulary_types": 7103,
+        "edge_gain_bits_per_boundary": 0.39051739075752406,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1001": {
+        "n_tokens": 80717,
+        "H1": 3.990297926318923,
+        "H2": 2.7300598043067996,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.19427932924357,
+        "token_order_share": 0.010663199958346132,
+        "hapax_share_of_types": 0.5132059567294184,
+        "vocabulary_types": 7118,
+        "edge_gain_bits_per_boundary": 0.3794036403423631,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1138": {
+        "n_tokens": 80543,
+        "H1": 3.998845735971241,
+        "H2": 2.7366096731702343,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.202508836098029,
+        "token_order_share": 0.010672478340747431,
+        "hapax_share_of_types": 0.508659217877095,
+        "vocabulary_types": 7160,
+        "edge_gain_bits_per_boundary": 0.3779666761689694,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": false,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1275": {
+        "n_tokens": 80669,
+        "H1": 3.9916589227307258,
+        "H2": 2.726267489478777,
+        "bpe_minimum_checkpoint": 32,
+        "bpe_k64_gap": 1.2395135209997985,
+        "token_order_share": 0.010472519911366052,
+        "hapax_share_of_types": 0.5071508693213684,
+        "vocabulary_types": 7132,
+        "edge_gain_bits_per_boundary": 0.3840837846218938,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": false,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1412": {
+        "n_tokens": 80739,
+        "H1": 3.992197215335179,
+        "H2": 2.736376162909439,
+        "bpe_minimum_checkpoint": 32,
+        "bpe_k64_gap": 1.2117320121678619,
+        "token_order_share": 0.01203760226805505,
+        "hapax_share_of_types": 0.5057871984381537,
+        "vocabulary_types": 7171,
+        "edge_gain_bits_per_boundary": 0.3783623430280477,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": false,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1549": {
+        "n_tokens": 80671,
+        "H1": 3.9923543193266835,
+        "H2": 2.7304394247704886,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.177226331281858,
+        "token_order_share": 0.012316586775431848,
+        "hapax_share_of_types": 0.5147304057809894,
+        "vocabulary_types": 7196,
+        "edge_gain_bits_per_boundary": 0.38247450759997315,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1686": {
+        "n_tokens": 80554,
+        "H1": 3.995256309717173,
+        "H2": 2.7373686491009166,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1581982325465097,
+        "token_order_share": 0.010405334525153371,
+        "hapax_share_of_types": 0.5126167572842604,
+        "vocabulary_types": 7173,
+        "edge_gain_bits_per_boundary": 0.37233773143659554,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1823": {
+        "n_tokens": 80876,
+        "H1": 3.9887887355661507,
+        "H2": 2.728656269217099,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1621583498419543,
+        "token_order_share": 0.011282501620893013,
+        "hapax_share_of_types": 0.506,
+        "vocabulary_types": 7000,
+        "edge_gain_bits_per_boundary": 0.38212800352806053,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "1960": {
+        "n_tokens": 80835,
+        "H1": 3.9956232448800018,
+        "H2": 2.730994764667175,
+        "bpe_minimum_checkpoint": 32,
+        "bpe_k64_gap": 1.2276089531444194,
+        "token_order_share": 0.009220607483689428,
+        "hapax_share_of_types": 0.518672775232542,
+        "vocabulary_types": 7203,
+        "edge_gain_bits_per_boundary": 0.37638342258780016,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": false,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2097": {
+        "n_tokens": 80775,
+        "H1": 3.995210058532326,
+        "H2": 2.7296453715255145,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1894944516795531,
+        "token_order_share": 0.01082049375220942,
+        "hapax_share_of_types": 0.5176208385569021,
+        "vocabulary_types": 7179,
+        "edge_gain_bits_per_boundary": 0.3703117983845023,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2234": {
+        "n_tokens": 80851,
+        "H1": 3.9897602379475026,
+        "H2": 2.731446508813811,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1889135154641357,
+        "token_order_share": 0.009677193244885376,
+        "hapax_share_of_types": 0.5111172873818788,
+        "vocabulary_types": 7196,
+        "edge_gain_bits_per_boundary": 0.3789989774075174,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2371": {
+        "n_tokens": 80753,
+        "H1": 3.9930243100168488,
+        "H2": 2.727420703183695,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1819734446040622,
+        "token_order_share": 0.011787243049707566,
+        "hapax_share_of_types": 0.5108267716535433,
+        "vocabulary_types": 7112,
+        "edge_gain_bits_per_boundary": 0.37429415395626936,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2508": {
+        "n_tokens": 80565,
+        "H1": 3.990420746054679,
+        "H2": 2.7331012999558544,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1600504223723442,
+        "token_order_share": 0.010563595369549064,
+        "hapax_share_of_types": 0.5163188121585657,
+        "vocabulary_types": 7139,
+        "edge_gain_bits_per_boundary": 0.3736451722877024,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      },
+      "2645": {
+        "n_tokens": 80708,
+        "H1": 3.990024017346458,
+        "H2": 2.7286876491444683,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1468916391735462,
+        "token_order_share": 0.013204532906910602,
+        "hapax_share_of_types": 0.5174982431482783,
+        "vocabulary_types": 7115,
+        "edge_gain_bits_per_boundary": 0.3876568705592201,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": false
+        },
+        "all_six_pass": false
+      }
+    },
+    "primary": {
+      "42": {
+        "n_tokens": 80721,
+        "H1": 3.9928765777193265,
+        "H2": 2.7421129187673845,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1483176756778164,
+        "token_order_share": 0.022175792780134162,
+        "hapax_share_of_types": 0.9281612309025896,
+        "vocabulary_types": 18458,
+        "edge_gain_bits_per_boundary": 0.9151561667794456,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "179": {
+        "n_tokens": 80827,
+        "H1": 3.9896675767287655,
+        "H2": 2.7376300429924894,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1671714680483385,
+        "token_order_share": 0.022354657269340085,
+        "hapax_share_of_types": 0.9265536723163842,
+        "vocabulary_types": 18408,
+        "edge_gain_bits_per_boundary": 0.9285525152768541,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "316": {
+        "n_tokens": 80756,
+        "H1": 3.9952436807998595,
+        "H2": 2.741079398925019,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1480828254033266,
+        "token_order_share": 0.023965119248989603,
+        "hapax_share_of_types": 0.9254618126822944,
+        "vocabulary_types": 18514,
+        "edge_gain_bits_per_boundary": 0.9382299157008265,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "453": {
+        "n_tokens": 80649,
+        "H1": 3.9911863162060155,
+        "H2": 2.7323116295960226,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1688619433953926,
+        "token_order_share": 0.023078171395785586,
+        "hapax_share_of_types": 0.9266288185996215,
+        "vocabulary_types": 18495,
+        "edge_gain_bits_per_boundary": 0.938105196830512,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "590": {
+        "n_tokens": 80852,
+        "H1": 3.992047190052577,
+        "H2": 2.730769976060192,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1609871658310151,
+        "token_order_share": 0.021207854760288195,
+        "hapax_share_of_types": 0.9266924459452099,
+        "vocabulary_types": 18361,
+        "edge_gain_bits_per_boundary": 0.9224267057084328,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "727": {
+        "n_tokens": 80647,
+        "H1": 3.993105308064379,
+        "H2": 2.745815125316413,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.11955803443563,
+        "token_order_share": 0.02367201306890195,
+        "hapax_share_of_types": 0.9252062527138515,
+        "vocabulary_types": 18424,
+        "edge_gain_bits_per_boundary": 0.9167599926348031,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "864": {
+        "n_tokens": 80840,
+        "H1": 3.9931402572335215,
+        "H2": 2.7384632526713557,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1649563110305774,
+        "token_order_share": 0.023122180952582363,
+        "hapax_share_of_types": 0.9269483160692011,
+        "vocabulary_types": 18439,
+        "edge_gain_bits_per_boundary": 0.9343867801165869,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1001": {
+        "n_tokens": 80717,
+        "H1": 3.9941753039462355,
+        "H2": 2.7417626493035407,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1306235952874886,
+        "token_order_share": 0.02689027684020538,
+        "hapax_share_of_types": 0.9274639488235932,
+        "vocabulary_types": 18446,
+        "edge_gain_bits_per_boundary": 0.9328401965252645,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1138": {
+        "n_tokens": 80543,
+        "H1": 3.9984411738275023,
+        "H2": 2.74122399873625,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1787865514300213,
+        "token_order_share": 0.023856689016277754,
+        "hapax_share_of_types": 0.9266890792755667,
+        "vocabulary_types": 18442,
+        "edge_gain_bits_per_boundary": 0.9370080246666821,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1275": {
+        "n_tokens": 80669,
+        "H1": 3.991947671314939,
+        "H2": 2.7343449596013776,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1724252257405112,
+        "token_order_share": 0.024318544387046524,
+        "hapax_share_of_types": 0.9283237620543937,
+        "vocabulary_types": 18458,
+        "edge_gain_bits_per_boundary": 0.9257002556202242,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1412": {
+        "n_tokens": 80739,
+        "H1": 3.9931676594467183,
+        "H2": 2.743518069084305,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1624520959728706,
+        "token_order_share": 0.02406525352642353,
+        "hapax_share_of_types": 0.9280921978140894,
+        "vocabulary_types": 18482,
+        "edge_gain_bits_per_boundary": 0.9266775956650849,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1549": {
+        "n_tokens": 80671,
+        "H1": 3.9927899644868825,
+        "H2": 2.733231099138567,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1455173427495433,
+        "token_order_share": 0.025127758865232358,
+        "hapax_share_of_types": 0.9280489787072655,
+        "vocabulary_types": 18457,
+        "edge_gain_bits_per_boundary": 0.9369470433573699,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1686": {
+        "n_tokens": 80554,
+        "H1": 3.9967985844554597,
+        "H2": 2.7409608527018845,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1440306074943374,
+        "token_order_share": 0.02146875832609883,
+        "hapax_share_of_types": 0.9261022450635651,
+        "vocabulary_types": 18485,
+        "edge_gain_bits_per_boundary": 0.9264314061347511,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1823": {
+        "n_tokens": 80876,
+        "H1": 3.990578770581316,
+        "H2": 2.7351319175278452,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.15221330398896,
+        "token_order_share": 0.02565060004446651,
+        "hapax_share_of_types": 0.9232023479536932,
+        "vocabulary_types": 18399,
+        "edge_gain_bits_per_boundary": 0.9322827445324243,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1960": {
+        "n_tokens": 80835,
+        "H1": 3.996209223928141,
+        "H2": 2.732777581394954,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1607726068406672,
+        "token_order_share": 0.021549811838621202,
+        "hapax_share_of_types": 0.9258637495938482,
+        "vocabulary_types": 18466,
+        "edge_gain_bits_per_boundary": 0.9373146485565295,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "2097": {
+        "n_tokens": 80775,
+        "H1": 3.9962458266398913,
+        "H2": 2.734905129146973,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0790011390174516,
+        "token_order_share": 0.021642782471993284,
+        "hapax_share_of_types": 0.9288757077379347,
+        "vocabulary_types": 18545,
+        "edge_gain_bits_per_boundary": 0.9440065452857354,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "2234": {
+        "n_tokens": 80851,
+        "H1": 3.9895138821482594,
+        "H2": 2.7401071351942554,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.145483540280015,
+        "token_order_share": 0.022107987462084727,
+        "hapax_share_of_types": 0.9274005950770895,
+        "vocabulary_types": 18485,
+        "edge_gain_bits_per_boundary": 0.9376883889302741,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "2371": {
+        "n_tokens": 80753,
+        "H1": 3.9931945988274107,
+        "H2": 2.734825855639787,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1714938899475378,
+        "token_order_share": 0.022946759156779035,
+        "hapax_share_of_types": 0.9274968772063216,
+        "vocabulary_types": 18413,
+        "edge_gain_bits_per_boundary": 0.928865947481622,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "2508": {
+        "n_tokens": 80565,
+        "H1": 3.9900804042541145,
+        "H2": 2.7403639870547942,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1549400157019392,
+        "token_order_share": 0.026401406025515814,
+        "hapax_share_of_types": 0.9261508431383181,
+        "vocabulary_types": 18443,
+        "edge_gain_bits_per_boundary": 0.9275678772762112,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "2645": {
+        "n_tokens": 80708,
+        "H1": 3.9906192819061586,
+        "H2": 2.7365123922407677,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1264880065322016,
+        "token_order_share": 0.02190465226332765,
+        "hapax_share_of_types": 0.9264442636289666,
+        "vocabulary_types": 18435,
+        "edge_gain_bits_per_boundary": 0.9417745165373373,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      }
+    },
+    "hybrid_novelty_only": {
+      "42": {
+        "n_tokens": 80721,
+        "H1": 3.9836943294634346,
+        "H2": 2.718899015324347,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9907031340141579,
+        "token_order_share": 0.020768552744283776,
+        "hapax_share_of_types": 0.9251294305057746,
+        "vocabulary_types": 17577,
+        "edge_gain_bits_per_boundary": 0.7017205999527801,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "179": {
+        "n_tokens": 80827,
+        "H1": 3.9796743939905017,
+        "H2": 2.70895752028177,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9841289713488388,
+        "token_order_share": 0.020909958259958367,
+        "hapax_share_of_types": 0.9233666191155492,
+        "vocabulary_types": 17525,
+        "edge_gain_bits_per_boundary": 0.722779551488313,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "316": {
+        "n_tokens": 80756,
+        "H1": 3.986140375748297,
+        "H2": 2.722249263096125,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.985900260173163,
+        "token_order_share": 0.019406636388678417,
+        "hapax_share_of_types": 0.9226874502218683,
+        "vocabulary_types": 17578,
+        "edge_gain_bits_per_boundary": 0.7072794845603904,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": true
+      },
+      "453": {
+        "n_tokens": 80649,
+        "H1": 3.982404699467496,
+        "H2": 2.71246148386285,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9746636516596352,
+        "token_order_share": 0.019650502552318903,
+        "hapax_share_of_types": 0.9229630473153789,
+        "vocabulary_types": 17563,
+        "edge_gain_bits_per_boundary": 0.7078637020509216,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": true
+      },
+      "590": {
+        "n_tokens": 80852,
+        "H1": 3.983884019077859,
+        "H2": 2.707011969958265,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9968450888421216,
+        "token_order_share": 0.020266207919151583,
+        "hapax_share_of_types": 0.9229319012797075,
+        "vocabulary_types": 17504,
+        "edge_gain_bits_per_boundary": 0.7143319029910439,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "727": {
+        "n_tokens": 80647,
+        "H1": 3.9850911678701917,
+        "H2": 2.7221472659835526,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9801508701323014,
+        "token_order_share": 0.01905765195763248,
+        "hapax_share_of_types": 0.9230506545247581,
+        "vocabulary_types": 17570,
+        "edge_gain_bits_per_boundary": 0.7116570964982742,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": true
+      },
+      "864": {
+        "n_tokens": 80840,
+        "H1": 3.9841490481930775,
+        "H2": 2.7171861810748053,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0846312074830111,
+        "token_order_share": 0.020634517123623877,
+        "hapax_share_of_types": 0.9253322685528492,
+        "vocabulary_types": 17531,
+        "edge_gain_bits_per_boundary": 0.7084015488452093,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1001": {
+        "n_tokens": 80717,
+        "H1": 3.9845626817798747,
+        "H2": 2.7202082690075007,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9834735118145641,
+        "token_order_share": 0.021468689344680148,
+        "hapax_share_of_types": 0.9248818269833134,
+        "vocabulary_types": 17559,
+        "edge_gain_bits_per_boundary": 0.7105054744927133,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1138": {
+        "n_tokens": 80543,
+        "H1": 3.9898150238558228,
+        "H2": 2.721747540821959,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.994237645531368,
+        "token_order_share": 0.01950447078568874,
+        "hapax_share_of_types": 0.9259996587224845,
+        "vocabulary_types": 17581,
+        "edge_gain_bits_per_boundary": 0.7118588366810871,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": true
+      },
+      "1275": {
+        "n_tokens": 80669,
+        "H1": 3.983972931424988,
+        "H2": 2.7127882221338133,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9845513315574159,
+        "token_order_share": 0.021373955903265778,
+        "hapax_share_of_types": 0.9222082810539524,
+        "vocabulary_types": 17534,
+        "edge_gain_bits_per_boundary": 0.7051112286556579,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1412": {
+        "n_tokens": 80739,
+        "H1": 3.9842992507472004,
+        "H2": 2.724934379206936,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9852504527684474,
+        "token_order_share": 0.022029060954861547,
+        "hapax_share_of_types": 0.9222898072878176,
+        "vocabulary_types": 17591,
+        "edge_gain_bits_per_boundary": 0.69289476869431,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1549": {
+        "n_tokens": 80671,
+        "H1": 3.983368191837593,
+        "H2": 2.7159150896418494,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9973379118777155,
+        "token_order_share": 0.02226453850483732,
+        "hapax_share_of_types": 0.9223814397816444,
+        "vocabulary_types": 17586,
+        "edge_gain_bits_per_boundary": 0.7093733541041013,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1686": {
+        "n_tokens": 80554,
+        "H1": 3.9881949862461044,
+        "H2": 2.7204851786329303,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.079116981479456,
+        "token_order_share": 0.0206820376456848,
+        "hapax_share_of_types": 0.9209151811059385,
+        "vocabulary_types": 17614,
+        "edge_gain_bits_per_boundary": 0.7168507679162308,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1823": {
+        "n_tokens": 80876,
+        "H1": 3.9835746146198963,
+        "H2": 2.7126630461937764,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9726455241160172,
+        "token_order_share": 0.02037068622696671,
+        "hapax_share_of_types": 0.9238367113902369,
+        "vocabulary_types": 17515,
+        "edge_gain_bits_per_boundary": 0.7164696621172757,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "1960": {
+        "n_tokens": 80835,
+        "H1": 3.988681880408372,
+        "H2": 2.716849203708407,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.977442883962067,
+        "token_order_share": 0.023664190601927138,
+        "hapax_share_of_types": 0.923370121743088,
+        "vocabulary_types": 17578,
+        "edge_gain_bits_per_boundary": 0.7058065731321155,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "2097": {
+        "n_tokens": 80775,
+        "H1": 3.988804176907557,
+        "H2": 2.71344861085235,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.006394708023521,
+        "token_order_share": 0.017534021120170742,
+        "hapax_share_of_types": 0.9226126074824896,
+        "vocabulary_types": 17561,
+        "edge_gain_bits_per_boundary": 0.720994308864912,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": true
+      },
+      "2234": {
+        "n_tokens": 80851,
+        "H1": 3.9825511667974247,
+        "H2": 2.713052011536024,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9891523120648289,
+        "token_order_share": 0.01823235572887115,
+        "hapax_share_of_types": 0.9214880748602077,
+        "vocabulary_types": 17526,
+        "edge_gain_bits_per_boundary": 0.7087241269738606,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": true
+      },
+      "2371": {
+        "n_tokens": 80753,
+        "H1": 3.9858764159049143,
+        "H2": 2.713531379551431,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9985974725740476,
+        "token_order_share": 0.02229982602366658,
+        "hapax_share_of_types": 0.9216850276842286,
+        "vocabulary_types": 17519,
+        "edge_gain_bits_per_boundary": 0.718374841092195,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "2508": {
+        "n_tokens": 80565,
+        "H1": 3.9828106810520887,
+        "H2": 2.7189954039349473,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 0.9915799205994347,
+        "token_order_share": 0.019737371718030826,
+        "hapax_share_of_types": 0.9233962693357598,
+        "vocabulary_types": 17584,
+        "edge_gain_bits_per_boundary": 0.7058988273281751,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": true,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": true
+      },
+      "2645": {
+        "n_tokens": 80708,
+        "H1": 3.9822609066044863,
+        "H2": 2.718180462433418,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.0877400371129413,
+        "token_order_share": 0.02008753691056605,
+        "hapax_share_of_types": 0.9228356336260979,
+        "vocabulary_types": 17534,
+        "edge_gain_bits_per_boundary": 0.7089177353823038,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      }
+    },
+    "shift_only_no_topup": {
+      "42": {
+        "n_tokens": 80721,
+        "H1": 3.9921227875993166,
+        "H2": 2.735859550917794,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1550585228427197,
+        "token_order_share": 0.022708763852964987,
+        "hapax_share_of_types": 0.9275449101796407,
+        "vocabulary_types": 18370,
+        "edge_gain_bits_per_boundary": 0.9229945085735141,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "179": {
+        "n_tokens": 80827,
+        "H1": 3.9892247558932397,
+        "H2": 2.7321740046452927,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1733048163142348,
+        "token_order_share": 0.022480149687649394,
+        "hapax_share_of_types": 0.9261561954624782,
+        "vocabulary_types": 18336,
+        "edge_gain_bits_per_boundary": 0.9345457204432434,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "316": {
+        "n_tokens": 80756,
+        "H1": 3.9944902163277356,
+        "H2": 2.7351982603929477,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1536236234638224,
+        "token_order_share": 0.024798034310390668,
+        "hapax_share_of_types": 0.9254921099723442,
+        "vocabulary_types": 18441,
+        "edge_gain_bits_per_boundary": 0.945191761802475,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "453": {
+        "n_tokens": 80649,
+        "H1": 3.9908238463838175,
+        "H2": 2.7279909939893368,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1735959171228139,
+        "token_order_share": 0.02334639657044177,
+        "hapax_share_of_types": 0.9265264071141959,
+        "vocabulary_types": 18442,
+        "edge_gain_bits_per_boundary": 0.9442877349873406,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "590": {
+        "n_tokens": 80852,
+        "H1": 3.9915268040502667,
+        "H2": 2.72543772709916,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1668315282494603,
+        "token_order_share": 0.021793571698465023,
+        "hapax_share_of_types": 0.9263998250218722,
+        "vocabulary_types": 18288,
+        "edge_gain_bits_per_boundary": 0.9283721211934142,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      }
+    },
+    "stronger_topup": {
+      "42": {
+        "n_tokens": 80721,
+        "H1": 3.9933592500200104,
+        "H2": 2.7462451494699103,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1436783042148564,
+        "token_order_share": 0.02171633305655226,
+        "hapax_share_of_types": 0.927710843373494,
+        "vocabulary_types": 18509,
+        "edge_gain_bits_per_boundary": 0.912379022787638,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "179": {
+        "n_tokens": 80827,
+        "H1": 3.99057188894281,
+        "H2": 2.7422630159277963,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1623360626855321,
+        "token_order_share": 0.022305537739477792,
+        "hapax_share_of_types": 0.9265732373789297,
+        "vocabulary_types": 18481,
+        "edge_gain_bits_per_boundary": 0.9221680036608814,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "316": {
+        "n_tokens": 80756,
+        "H1": 3.995868390753308,
+        "H2": 2.7469751257833472,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.1413557242078447,
+        "token_order_share": 0.023667227753747938,
+        "hapax_share_of_types": 0.9257127487896719,
+        "vocabulary_types": 18590,
+        "edge_gain_bits_per_boundary": 0.9322222243917727,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "453": {
+        "n_tokens": 80649,
+        "H1": 3.9916323371890785,
+        "H2": 2.737591326904748,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.16367635951371,
+        "token_order_share": 0.02272989472851204,
+        "hapax_share_of_types": 0.9269632661855004,
+        "vocabulary_types": 18566,
+        "edge_gain_bits_per_boundary": 0.9322722751332086,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      },
+      "590": {
+        "n_tokens": 80852,
+        "H1": 3.992576342514704,
+        "H2": 2.7359450979353452,
+        "bpe_minimum_checkpoint": 64,
+        "bpe_k64_gap": 1.155485975129344,
+        "token_order_share": 0.02131386061564226,
+        "hapax_share_of_types": 0.9270991538294641,
+        "vocabulary_types": 18436,
+        "edge_gain_bits_per_boundary": 0.9183280584884701,
+        "edge_positive_blocks": 16,
+        "criteria_pass": {
+          "H1": true,
+          "H2": true,
+          "learned_units": true,
+          "token_order_share": false,
+          "edge": true,
+          "hapax": true
+        },
+        "all_six_pass": false
+      }
+    }
+  },
+  "aggregate": {
+    "baseline": {
+      "n": 20,
+      "joint_pass": 0,
+      "H1": {
+        "mean": 3.9842441389364915,
+        "min": 3.97922604300392,
+        "max": 3.9895524395045348
+      },
+      "H2": {
+        "mean": 2.710897132267105,
+        "min": 2.701216479934142,
+        "max": 2.719281391574023
+      },
+      "bpe_minimum_checkpoint": {
+        "mean": 64.0,
+        "min": 64,
+        "max": 64
+      },
+      "bpe_k64_gap": {
+        "mean": 1.033640726194508,
+        "min": 1.009482549191361,
+        "max": 1.047915571226329
+      },
+      "token_order_share": {
+        "mean": 0.012996205345438527,
+        "min": 0.01182888493732254,
+        "max": 0.015072004255053308
+      },
+      "hapax_share_of_types": {
+        "mean": 0.39386199328484023,
+        "min": 0.38350634371395614,
+        "max": 0.4032258064516129
+      },
+      "edge_gain_bits_per_boundary": {
+        "mean": -0.0018481262083942043,
+        "min": -0.0028883219037600773,
+        "max": -0.0001596296125227467
+      },
+      "edge_positive_blocks": {
+        "mean": 4.35,
+        "min": 2,
+        "max": 7
+      },
+      "criterion_H1_passes": 20,
+      "criterion_H2_passes": 20,
+      "criterion_learned_units_passes": 20,
+      "criterion_token_order_share_passes": 20,
+      "criterion_edge_passes": 0,
+      "criterion_hapax_passes": 0
+    },
+    "edge_only": {
+      "n": 20,
+      "joint_pass": 0,
+      "H1": {
+        "mean": 3.992028023706265,
+        "min": 3.9876506299706764,
+        "max": 3.998845735971241
+      },
+      "H2": {
+        "mean": 2.7314786237050166,
+        "min": 2.7240559284523416,
+        "max": 2.7395169848608707
+      },
+      "bpe_minimum_checkpoint": {
+        "mean": 57.6,
+        "min": 32,
+        "max": 64
+      },
+      "bpe_k64_gap": {
+        "mean": 1.1827851255000685,
+        "min": 1.143979937920407,
+        "max": 1.2395135209997985
+      },
+      "token_order_share": {
+        "mean": 0.011009185846907462,
+        "min": 0.008951148710379277,
+        "max": 0.013204532906910602
+      },
+      "hapax_share_of_types": {
+        "mean": 0.513293914014177,
+        "min": 0.505193711398091,
+        "max": 0.5222991689750692
+      },
+      "edge_gain_bits_per_boundary": {
+        "mean": 0.3785701904490569,
+        "min": 0.3686165609742777,
+        "max": 0.39051739075752406
+      },
+      "edge_positive_blocks": {
+        "mean": 16.0,
+        "min": 16,
+        "max": 16
+      },
+      "criterion_H1_passes": 20,
+      "criterion_H2_passes": 20,
+      "criterion_learned_units_passes": 16,
+      "criterion_token_order_share_passes": 20,
+      "criterion_edge_passes": 20,
+      "criterion_hapax_passes": 0
+    },
+    "primary": {
+      "n": 20,
+      "joint_pass": 0,
+      "H1": {
+        "mean": 3.9930514626283737,
+        "min": 3.9895138821482594,
+        "max": 3.9984411738275023
+      },
+      "H2": {
+        "mean": 2.737892398554709,
+        "min": 2.730769976060192,
+        "max": 2.745815125316413
+      },
+      "bpe_minimum_checkpoint": {
+        "mean": 64.0,
+        "min": 64,
+        "max": 64
+      },
+      "bpe_k64_gap": {
+        "mean": 1.150108167240282,
+        "min": 1.0790011390174516,
+        "max": 1.1787865514300213
+      },
+      "token_order_share": {
+        "mean": 0.023375353485004725,
+        "min": 0.021207854760288195,
+        "max": 0.02689027684020538
+      },
+      "hapax_share_of_types": {
+        "mean": 0.92679035726519,
+        "min": 0.9232023479536932,
+        "max": 0.9288757077379347
+      },
+      "edge_gain_bits_per_boundary": {
+        "mean": 0.9314361231808486,
+        "min": 0.9151561667794456,
+        "max": 0.9440065452857354
+      },
+      "edge_positive_blocks": {
+        "mean": 16.0,
+        "min": 16,
+        "max": 16
+      },
+      "criterion_H1_passes": 20,
+      "criterion_H2_passes": 20,
+      "criterion_learned_units_passes": 20,
+      "criterion_token_order_share_passes": 0,
+      "criterion_edge_passes": 20,
+      "criterion_hapax_passes": 20
+    },
+    "hybrid_novelty_only": {
+      "n": 20,
+      "joint_pass": 7,
+      "H1": {
+        "mean": 3.9846905470998593,
+        "min": 3.9796743939905017,
+        "max": 3.9898150238558228
+      },
+      "H2": {
+        "mean": 2.716585574861853,
+        "min": 2.707011969958265,
+        "max": 2.724934379206936
+      },
+      "bpe_minimum_checkpoint": {
+        "mean": 64.0,
+        "min": 64,
+        "max": 64
+      },
+      "bpe_k64_gap": {
+        "mean": 1.0022271938567529,
+        "min": 0.9726455241160172,
+        "max": 1.0877400371129413
+      },
+      "token_order_share": {
+        "mean": 0.020497138420743247,
+        "min": 0.017534021120170742,
+        "max": 0.023664190601927138
+      },
+      "hapax_share_of_types": {
+        "mean": 0.9231681006286573,
+        "min": 0.9209151811059385,
+        "max": 0.9259996587224845
+      },
+      "edge_gain_bits_per_boundary": {
+        "mean": 0.7102907195910936,
+        "min": 0.69289476869431,
+        "max": 0.722779551488313
+      },
+      "edge_positive_blocks": {
+        "mean": 16.0,
+        "min": 16,
+        "max": 16
+      },
+      "criterion_H1_passes": 20,
+      "criterion_H2_passes": 20,
+      "criterion_learned_units_passes": 20,
+      "criterion_token_order_share_passes": 7,
+      "criterion_edge_passes": 20,
+      "criterion_hapax_passes": 20
+    },
+    "shift_only_no_topup": {
+      "n": 5,
+      "joint_pass": 0,
+      "H1": {
+        "mean": 3.991637682050875,
+        "min": 3.9892247558932397,
+        "max": 3.9944902163277356
+      },
+      "H2": {
+        "mean": 2.731332107408906,
+        "min": 2.72543772709916,
+        "max": 2.735859550917794
+      },
+      "bpe_minimum_checkpoint": {
+        "mean": 64.0,
+        "min": 64,
+        "max": 64
+      },
+      "bpe_k64_gap": {
+        "mean": 1.1644828815986101,
+        "min": 1.1536236234638224,
+        "max": 1.1735959171228139
+      },
+      "token_order_share": {
+        "mean": 0.023025383223982367,
+        "min": 0.021793571698465023,
+        "max": 0.024798034310390668
+      },
+      "hapax_share_of_types": {
+        "mean": 0.9264238895501062,
+        "min": 0.9254921099723442,
+        "max": 0.9275449101796407
+      },
+      "edge_gain_bits_per_boundary": {
+        "mean": 0.9350783693999973,
+        "min": 0.9229945085735141,
+        "max": 0.945191761802475
+      },
+      "edge_positive_blocks": {
+        "mean": 16.0,
+        "min": 16,
+        "max": 16
+      },
+      "criterion_H1_passes": 5,
+      "criterion_H2_passes": 5,
+      "criterion_learned_units_passes": 5,
+      "criterion_token_order_share_passes": 0,
+      "criterion_edge_passes": 5,
+      "criterion_hapax_passes": 5
+    },
+    "stronger_topup": {
+      "n": 5,
+      "joint_pass": 0,
+      "H1": {
+        "mean": 3.9928016418839825,
+        "min": 3.99057188894281,
+        "max": 3.995868390753308
+      },
+      "H2": {
+        "mean": 2.7418039432042294,
+        "min": 2.7359450979353452,
+        "max": 2.7469751257833472
+      },
+      "bpe_minimum_checkpoint": {
+        "mean": 64.0,
+        "min": 64,
+        "max": 64
+      },
+      "bpe_k64_gap": {
+        "mean": 1.1533064851502575,
+        "min": 1.1413557242078447,
+        "max": 1.16367635951371
+      },
+      "token_order_share": {
+        "mean": 0.022346570778786455,
+        "min": 0.02131386061564226,
+        "max": 0.023667227753747938
+      },
+      "hapax_share_of_types": {
+        "mean": 0.926811849911412,
+        "min": 0.9257127487896719,
+        "max": 0.927710843373494
+      },
+      "edge_gain_bits_per_boundary": {
+        "mean": 0.9234739168923941,
+        "min": 0.912379022787638,
+        "max": 0.9322722751332086
+      },
+      "edge_positive_blocks": {
+        "mean": 16.0,
+        "min": 16,
+        "max": 16
+      },
+      "criterion_H1_passes": 5,
+      "criterion_H2_passes": 5,
+      "criterion_learned_units_passes": 5,
+      "criterion_token_order_share_passes": 0,
+      "criterion_edge_passes": 5,
+      "criterion_hapax_passes": 5
+    }
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase": 20,
+      "edge_criterion_pass": 20,
+      "pass": true,
+      "reused_from": "boundary-state-null reference"
+    },
+    "novelty": {
+      "paired_hapax_increase": 20,
+      "hapax_criterion_pass": 20,
+      "pass": true,
+      "note": "checked against the COMBINED hybrid (shift+topup) vs baseline, not decomposed further -- see manifest"
+    }
+  },
+  "primary_joint_pass": 0,
+  "primary_verdict": "FAIL"
+}

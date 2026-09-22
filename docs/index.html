@@ -269,6 +269,15 @@
         <p>This cleanly separates two previously-conflated problems. First, a calibration-precision gap: the pilot's 3-seed mean hapax was too close to the 65% floor to guarantee margin across the full 20 seeds — straightforward to fix with a properly-margined recalibration, in a fresh preregistration. Second, and more important: token-order-share fails by the same wide margin with or without the substitution top-up (~2.2–2.5% against a 2.0% ceiling) — recalibrating hapax alone would not produce a pass, because order would still fail on its own. A plausible but unverified explanation: every successful shift creates a token pair where the second token is a deterministic function of the first, a tighter statistical link than an arbitrary adjacent pair — exactly the kind of thing a whole-token order statistic would detect. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-substitution-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="hybrid-v2-title">
+        <div>
+          <p class="kicker">Follow-up · applying an already-validated fix reveals a second cause</p>
+          <h2 id="hybrid-v2-title">The order-share fix worked, partway. A second, independent cause was hiding underneath it.</h2>
+          <p class="snapshot-caveat">Swapping the hybrid design's boundary-shift component for the already-validated v2 split rule (the same fix that resolved this identical failure in the standalone boundary-shift design) moves token-order-share from a wide, guaranteed failure to right at the 2.0% boundary — passing in 7 of 20 seeds once the boundary-coupling step is switched off. With coupling on, it still fails all 20 of 20: coupling itself, reused unchanged from every design in this project, is an independent contributor that the shift-rule fix alone doesn't address.</p>
+        </div>
+        <p>Every other criterion — H1, H2, learned units, edge prediction, vocabulary openness — passes with comfortable margin in every configuration. Only token-order-share fails, and only just above its ceiling. This is a clean FAIL, not an INVALID_CONSTRUCTION (both manipulation checks pass cleanly) — informative precisely because only one variable was changed relative to the already-understood original design, isolating a real, if partial, effect and surfacing a smaller one that a less careful comparison would have missed. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-report.md">Read the full result ↗</a></p>
+      </section>
+
       <section class="status-panel ambiguity-panel" aria-labelledby="shift-v2-title">
         <div>
           <p class="kicker">Constructive null · first joint six-criterion PASS — read carefully</p>
