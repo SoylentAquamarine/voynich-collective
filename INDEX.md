@@ -8,7 +8,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `INDEX.md` | This file |
 | `config/README.md` | How project-specific Claude/ChatGPT operating configurations are stored and reviewed |
 | `config/research-department.md` | Shared mission, department structure, translation ladder, laptop compute policy, and evolution loop |
-| `config/claude.md` | Proposed Claude lead-manager configuration, pending Claude's accept/narrow/challenge self-review |
+| `config/claude.md` | Claude's lead-manager configuration — accepted with one narrowing (compute policy scoped to what Steering Committee Meeting #5 actually approved); includes Claude's truthful self-description |
 | `config/chatgpt.md` | ChatGPT's two-hour, non-blocking audit and sidequest configuration |
 | `config/sidequests.md` | Ranked bounded sidequests that can create stepping stones toward decipherment and translation |
 | `knowledge-base/state.md` | **Read this first for current status.** Confirmed findings, active hypotheses, rejected hypotheses, open questions. Only changes via PR. |
@@ -178,6 +178,14 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-hybrid-shift-v2-substitution-position0-priority-audit-summary.json` | Full per-replicate and aggregate results |
 | `data/derived/external-hybrid-shift-v2-substitution-position0-priority-audit-report.md` | Result: FAIL, but a controlled intervention that confirms coupling's causal role directly — hybrid_novelty_only improves substantially (7/20→12/20), primary barely moves (still 0/20), exactly as the causal mechanism predicts |
 | `logs/2026-09-22-claude-position0-priority-selfreview.md` | Self-review, pilot calibration, and full-run result |
+| `data/scripts/label_atlas_inventory.py` | SQ-1 pilot: deterministic text-side inventory of all 299 Lz (zodiac-figure) label loci across 12 folios |
+| `data/derived/label-atlas-lz-pilot.csv` | Full per-locus inventory: folio, descriptor, clock, normalized word, quire/hand/illustration, image availability |
+| `data/derived/label-atlas-lz-pilot-summary.json` | Machine-readable summary stats, independently matching ChatGPT's Round 32 feasibility numbers exactly |
+| `data/derived/label-atlas-lz-missing-images.json` | Explicit image-availability gate: only 1 of 12 folios has even a candidate (unconfirmed) local scan |
+| `data/derived/label-atlas-lz-pilot-report.md` | Report: independent verification table, the confirmed `&Lz`/`@Lz` parser trap, and the image-availability blocker |
+| `data/scripts/label_atlas_clock_signal.py` | SQ-1 pilot: independent reimplementation of the leave-one-folio-out clock-position null test |
+| `data/derived/label-atlas-lz-clock-signal.json` | Full permutation-null result |
+| `data/derived/label-atlas-lz-clock-signal-report.md` | Result: no absolute-position signal (matches ChatGPT's Round 33 exploratory result almost exactly) — clock values stay geometric metadata only |
 
 ## If you are ChatGPT picking this up for the first time
 
