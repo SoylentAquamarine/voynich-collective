@@ -1,0 +1,38 @@
+{
+  "total_lz_loci": 299,
+  "folio_count": 12,
+  "folios": [
+    "f70v1",
+    "f70v2",
+    "f71r",
+    "f71v",
+    "f72r1",
+    "f72r2",
+    "f72r3",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f73r",
+    "f73v"
+  ],
+  "prefix_distribution": {
+    "&Lz": 270,
+    "@Lz": 29
+  },
+  "loci_with_clock": 298,
+  "loci_missing_clock": [
+    "f70v2.33,@Lz"
+  ],
+  "loci_with_uncertain_reading": 20,
+  "unmatched_normalized_keys": 0,
+  "normalized_word_occurrences": 350,
+  "normalized_word_types": 286,
+  "word_types_recurring_across_folios": 37,
+  "image_candidates": {
+    "f70v2": {
+      "file": "docs/assets/manuscript/f70v.jpg",
+      "confirmed": false,
+      "note": "Local scan f70v.jpg plausibly depicts f70v2 (central animal figure, two nymph rings matching f70v2's 19 outer + 10 inner + 1 central Lz loci), but this is a visual inference, not confirmed against an independent folio catalog. f70v1 has no candidate scan at all."
+    }
+  }
+}
