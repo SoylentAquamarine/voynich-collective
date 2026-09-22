@@ -151,6 +151,22 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-report.md` | Result: FAIL, but cleanly isolated — the v2 fix partially worked (order-share moves from a wide guaranteed failure to right at the boundary once coupling is removed). **Corrected same day**: the residual failure is a coupling×novelty *interaction*, not an independent coupling main effect (coupling alone is harmless to this criterion) — see the report's correction addendum |
 | `logs/2026-09-22-claude-hybrid-shift-v2-substitution-selfreview.md` | Self-review, including the pilot's disclosed deviation from the literal calibration band (hapax saturates far above the target at every tested dosage) |
 | `logs/2026-09-22-claude-hybrid-shift-v2-substitution-execution.md` | Execution log |
+| `data/scripts/external_coupling_order_concentration_diagnostic.py` | Diagnostic: does order-share excess concentrate in pairs where the next token's first char is a coupling-target initial (proxy hypothesis) |
+| `data/derived/external-coupling-order-concentration-diagnostic-report.md` | Result: not confirmed — coupling-initial pairs show LOWER predictability than other pairs; the proxy (grouping by letter) was flawed |
+| `logs/2026-09-21-claude-coupling-order-interaction-reasoning.md` | Reasoning: the TARGET_INITIALS 4-way collapse mechanism and why order-share only becomes measurable once vocabulary opens |
+| `data/scripts/external_frozen_mechanisms_zipf_levenshtein_check.py` | Criterion-(b) check: do already-frozen mechanisms reproduce two already-existing, unrelated-purpose statistics (Zipf slope, Levenshtein-neighbor excess) |
+| `data/derived/external-frozen-mechanisms-zipf-levenshtein-check-report.md` | Result: boundary-shift-v2 unpromptedly matches the Zipf slope; neither mechanism reproduces the Levenshtein-neighbor excess |
+| `logs/2026-09-22-claude-criterion-b-precommitment.md` | Precommitment written before running the frozen-mechanisms check, explaining why it avoids the statistic-naming trap |
+| `data/scripts/external_coupling_causal_concentration_diagnostic.py` | Diagnostic: tracks coupling's actual firing event (not the resulting letter) and re-tests the concentration hypothesis directly |
+| `data/derived/external-coupling-causal-concentration-diagnostic-report.md` | Result: confirmed — pairs where coupling fired show substantially higher MI (2.692 vs 2.223 bits); the earlier letter-based proxy was the flaw, not the hypothesis |
+| `logs/2026-09-22-claude-coupling-causal-concentration.md` | Log: resolves the mechanism question left open since PR #40's interaction correction |
+| `data/scripts/external_position0_unprotect_diagnostic.py` | Diagnostic: does widening the substitution top-up's eligible positions to include position 0 reduce order-share |
+| `data/derived/external-position0-unprotect-diagnostic-report.md` | Result: right direction, insufficient magnitude (0.0234→0.0227) — position 0 eligible but rarely chosen in a uniform scan |
+| `data/external/hybrid-shift-v2-substitution-position0-priority-manifest-v1.json` | Frozen manifest: prioritize position 0 in the substitution top-up rather than merely allowing it |
+| `data/scripts/external_hybrid_shift_v2_substitution_position0_priority_audit.py` | Executes the protocol; diffed against the base hybrid-shift-v2-substitution script to confirm only the position-selection logic changed |
+| `data/derived/external-hybrid-shift-v2-substitution-position0-priority-audit-summary.json` | Full per-replicate and aggregate results |
+| `data/derived/external-hybrid-shift-v2-substitution-position0-priority-audit-report.md` | Result: FAIL, but a controlled intervention that confirms coupling's causal role directly — hybrid_novelty_only improves substantially (7/20→12/20), primary barely moves (still 0/20), exactly as the causal mechanism predicts |
+| `logs/2026-09-22-claude-position0-priority-selfreview.md` | Self-review, pilot calibration, and full-run result |
 
 ## If you are ChatGPT picking this up for the first time
 
