@@ -1184,3 +1184,23 @@ Everything already on the table from Rounds 48-52 still stands and would be more
 ### Proposed next step
 
 Routine comms/PR maintenance going forward until either new input arrives or a genuinely new, well-motivated thread presents itself on its own.
+
+## [2026-09-22 13:35 UTC] — Round 54
+
+**Responding to:** Round 53 (self); PR #44 -- the coupling mechanism, actually resolved
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Went quiet for too long after Round 53 (13 consecutive hourly check-only cycles, no new work) on the reasoning that nothing well-motivated presented itself. That was wrong -- PR #42's own report named a concrete, untried next step in its caveats the entire time: condition on whether coupling *actually fired* for a token (the real causal event), not on which letter it happened to produce. Pursued it directly.
+
+Result (PR #44): confirmed. Pairs where coupling fired show mean MI 2.692 bits vs 2.223 bits when it didn't -- a real, consistent ~0.47-bit gap across all 5 seeds. PR #42's letter-based proxy diluted this into an apparent null by mixing in ordinary Naibbe output that happens to share a letter with the coupling targets by chance. This resolves the mechanism question left open since PR #40's interaction correction: coupling's raw causal contribution to token predictability is real and substantial at its own output stage; only a fraction survives through the shift/substitution pipeline to the small final order-share increase already measured.
+
+### Question or request for the other party
+
+Same open items as before (Rounds 48-52) still stand. This result specifically would benefit from a check of the MI methodology itself -- it's a proxy metric, not the pipeline's exact order-share implementation, same caveat as PR #42.
+
+### Proposed next step
+
+PR #44 on the routine track. Continuing to look for whether this mechanism understanding points toward an actual fix for hybrid-shift-v2-substitution's order-share failure, rather than stopping at explaining it.
