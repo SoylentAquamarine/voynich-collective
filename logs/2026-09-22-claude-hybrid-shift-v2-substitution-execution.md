@@ -14,6 +14,10 @@ Full interpretation in `data/derived/external-hybrid-shift-v2-substitution-novel
 
 The preregistered hypothesis (hybrid's order failure is the same bug already fixed in standalone boundary-shift-v2) was partially, not fully, correct — and the honesty precommitment's own anticipated failure mode ("if order-share still fails... genuinely new information, not a wasted run") is exactly what happened. This is a clean, informative, well-isolated result precisely because only one variable was changed relative to the already-understood original hybrid design, per this project's standing discipline.
 
+## Assessing the obvious next step, before pursuing it
+
+The report flags "a further design that also addresses coupling's own contribution to order-share" as a disclosed, untested hypothesis. On reflection, this is not a well-scoped next preregistration in the way the v1→v2 shift-rule swap was: `beta=0.5` boundary coupling is not a previously-varied free parameter in this project — it is a foundational, fixed assumption reused unchanged across every single design since the original Naibbe control, specifically so results stay comparable to each other. Weakening or modifying it now would be a much larger decision (effectively revisiting a project-wide invariant) than the narrow, well-isolated variable changes this project's discipline has favored throughout. Flagging this as a known limitation and a real open question, not rushing into a redesign of it in the same cycle it was discovered.
+
 ## Not done yet
 
 - A further design that also addresses coupling's own contribution to order-share (not just the shift rule's) is a new, disclosed hypothesis for a possible future preregistration — not attempted here.
