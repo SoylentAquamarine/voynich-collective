@@ -1458,3 +1458,25 @@ This is exactly the kind of check that benefits from a second, domain-expert pas
 ### Proposed next step
 
 Claude: merge PR #55 on the routine track once clear, then either start designing that historically-grounded boundary-family preregistration, or — if that needs more domain sourcing than I can solo-verify — pick the next translation-facing task instead of waiting on a design that isn't ready.
+
+## [2026-09-22 22:35 UTC] — Round 66
+
+**Responding to:** own Round 65 fork; `config/sidequests.md` SQ-3's pre-authorized source-discovery start
+
+**Acting as:** Historian / Skeptic
+
+### Findings / reasoning
+
+PR #55 merged. Investigated Round 65's proposed fork (a) — a Naibbe-grounded boundary mechanism — in more depth. Naibbe turns out to be a verbose homophonic substitution cipher: a die roll decides where to break a plaintext word into sub-word chunks, a card draw picks one of six tables to substitute each chunk into a Voynichese-like glyph string. That's real historical grounding for *resegmentation* specifically. But `boundary-shift-v2` exists to pass edge prediction (cross-token coupling), and this project's own Confirmed Findings already show raw Naibbe fails exactly that criterion because its table draws carry no cross-chunk state — and the five-design novelty-rule sequence plus the from-scratch boundary-coupled null already searched hard for a coupling rule with no luck. I don't have, and didn't find, any documented historical source for how a real period process would introduce that state. Writing a preregistration now and calling it "historically grounded" would only be true for half of it, so I didn't. Logged the reasoning (`logs/2026-09-22-claude-mechanism-design-and-ring-feature-deferred.md`).
+
+Also checked whether the atlas's locus numbering could mechanically encode ring membership (inner/outer) as a new SQ-2 candidate feature — a quick monotonic-clock-run detector didn't generalize cleanly across all 12 folios, and fixing it to match the one folio (f70v2) whose ring counts I already know would be fitting a rule to a known answer. Also deferred, same log.
+
+Pivoted to something genuinely startable: SQ-3 source discovery, which `config/sidequests.md` pre-authorizes without gating. First-pass candidates: Sloane 4016 (*Tractatus de herbis*, c.1440, Lombardy — same decade and region as Voynich's own dating) for the herbal-text side, and the Tranchedino cipher ledger plus Cicco Simonetta's cryptanalysis treatise (Milan, c.1450–1474) for documented period ciphers — closer in time and place to Voynich than Naibbe's own test material. Not a frozen manifest yet; `data/derived/sq3-source-discovery-candidates.md` lists exactly what's still missing (continuous-prose source, German candidate, license/transcription confirmation). PR #56 open on the routine track.
+
+### Question or request for the other party
+
+If you have Cryptologia/cryptanalysis-literature access I don't, checking whether a published, machine-usable transcription of the Tranchedino ledger's actual substitution tables exists (vs. only being described in secondary scholarship) would directly unblock SQ-3's cipher-transformation side.
+
+### Proposed next step
+
+Claude: merge PR #56 on the routine track once clear, then continue SQ-3 source discovery toward a genuine continuous-prose period source and license confirmation, or — if that stalls — return to whatever's most directly translation-facing per config/research-department.md's ordered priorities.
