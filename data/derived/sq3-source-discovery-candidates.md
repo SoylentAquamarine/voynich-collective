@@ -34,30 +34,67 @@ manuscript.
   herbis* tradition — reported as digitized via the World Digital Library;
   worth checking directly for a machine-readable transcription, not just
   page images.
-- Still needed: a genuinely **continuous-prose** Latin or Italian medical/
-  recipe text (not primarily a plant-name list) from the same ~1400-1450
-  window, to test recovery on running text rather than isolated labels —
-  not yet identified. The project's existing Latin baseline (Index
-  Thomisticus Treebank) and Italian baseline (ISDT), already used for the
-  language-baseline work in `knowledge-base/state.md`, are candidates for
-  reuse here too, though neither is herbal/recipe genre specifically.
-- **German** candidate not yet identified. *Gart der Gesundheit* (1485,
-  Mainz) is the obvious herbal but postdates Voynich by several decades and
-  is a printed book, not a manuscript — usable as a looser stylistic
-  control, not a close match. Needs more search.
+- **Beinecke MS 985, "Recipes for scribes and painters and a few other
+  recipes"** (Yale, ca. 1450, Italy) — 14 folios of continuous-prose Latin
+  recipes (hand A) and Italian recipes (hand B), mixed Latin/Italian in one
+  manuscript. **Same holding institution as the Voynich manuscript itself**
+  (Beinecke), which is a practical plus for provenance/paleography
+  cross-reference. Digitized and confirmed **public domain** (Public Domain
+  Mark 1.0) on Internet Archive (`archive.org/details/BeineckeMS985_47`),
+  with page images and a Tesseract 5.2.0 OCR pass in Italian+Latin. The OCR
+  text is not a substitute for a real diplomatic transcription (15th-century
+  hands defeat generic OCR badly) but confirms the source is genuinely
+  running prose, not a label list, and is freely accessible. **This closes
+  the "need genuine continuous prose" gap** for a first candidate, with the
+  caveat that its text would need actual transcription, not raw OCR, before
+  any recovery-benchmark use.
+- **Martino da Como (Maestro Martino), *Libro de arte coquinaria*** (Milan,
+  ca. 1450-1460, Italian vernacular) — one of the most important and
+  well-studied Renaissance culinary texts, 64 leaves, continuous prose.
+  A full scholarly transcription with hyperlinked table of contents is
+  freely available from the University of Marburg
+  (`staff.uni-marburg.de/~gloning/martino2.htm`); a photographic
+  reproduction + transcription was also published (Terziaria, Milano,
+  1990) and an English translation exists (UC Press, 2005). **This is the
+  strongest continuous-prose candidate found so far** — actual transcribed
+  text, not OCR, from a securely dated, well-provenanced, same-region
+  source. License/reuse terms of the Marburg page itself still need
+  checking before any text is brought into this repo.
+- The project's existing Latin baseline (Index Thomisticus Treebank) and
+  Italian baseline (ISDT), already used for the language-baseline work in
+  `knowledge-base/state.md`, remain available for reuse too, though neither
+  is herbal/recipe genre specifically.
+- **German** candidate: *Das Buoch von guoter Spise* ("The Book of Good
+  Food"), Middle High German, compiled ca. 1345-1354 (part of the
+  Würzburg-Michelsberg *Kuchenmeisterei* tradition) — a real, transcribed,
+  scholarly-edited medieval German culinary text. Honest caveat: this
+  predates Voynich by roughly 60-90 years, further from the target window
+  than any Latin/Italian candidate above. *Gart der Gesundheit* (1485,
+  Mainz, printed) remains a closer-date but printed/later alternative. No
+  German manuscript source in the actual 1400-1438 window was found this
+  pass; SQ-3 may need to either accept this gap and scope explicitly to
+  Latin/Italian, or accept the older Middle High German text as a looser
+  "same general scribal culture, different half-century" control.
 
 ## Candidate documented period transformations (abbreviation/nomenclator/cipher)
 
-- **The Tranchedino cipher ledger** (Milan, compiled/used c.1450-1455,
-  held in the Milan State Archive) — a real, historically documented
-  nomenclator collection from almost exactly the same time and place as the
-  Voynich manuscript's likely origin. Reported features: homophonic
-  alternatives for vowels, distinct cipher shapes for doubled letters, and
-  built-in shorthand abbreviations, with 80+ nomenclator entries in at least
-  one of its ciphers. This is a strong, well-attested candidate for a
-  reproducible "documented contemporary cipher transformation" — closer in
-  period and geography to Voynich than Naibbe's own Latin/Italian test
-  material.
+- **The Tranchedino cipher ledger** (compiled by Francesco Tranchedino for
+  the Sforza chancellery in Milan, ca. 1475, recording ciphers used
+  1450-1496) — a real, historically documented collection of 287 complete
+  and 4 partial diplomatic cipher keys plus 6 deciphered examples. Reported
+  features: homophonic alternatives for vowels, distinct cipher shapes for
+  doubled letters, and built-in shorthand abbreviations. **Transcription
+  status checked this pass**: a facsimile edition exists (ADEVA, Graz,
+  1970) but is a paid/library facsimile, not freely online; a full machine-
+  usable public transcription of its actual key tables was not found. One
+  academic paper, "Nicodemo Tranchedini's Diplomatic Cipher: New Evidence"
+  (`ep.liu.se/ecp/149/007/ecp18149007.pdf`), reproduces some cipher detail
+  and is worth reading in full before deciding whether it supplies enough
+  to implement the transformation, or whether only a subset of keys would
+  be usable. This is still a strong, well-attested candidate for a
+  "documented contemporary cipher transformation" — closer in period and
+  geography to Voynich than Naibbe's own Latin/Italian test material — but
+  is not yet confirmed implementable without the facsimile itself.
 - **A Milanese cipher key and nomenclator dated 14 March 1448** (cited via
   Aloysius Meister's cryptology scholarship, also Milan State Archive) —
   another concrete, dated, same-decade artifact.
@@ -85,18 +122,24 @@ manuscript.
 
 1. Confirm digitization/transcription availability and explicit license terms
    for Sloane 4016 (or a substitute) directly from the British Library, not
-   just secondary description.
-2. Find at least one genuinely continuous-prose period source in the right
-   genre and date range — the current list is label/name-heavy.
-3. Find a defensible German-language candidate closer to 1404-1438, or
-   consciously scope SQ-3 to Latin/Italian only and say so.
-4. For the Tranchedino ledger and the 1448 Milanese key: confirm whether a
-   published, machine-usable transcription of the actual substitution tables
-   exists (vs. only being described in secondary cryptology scholarship),
-   since SQ-3 needs to implement the transformation, not just cite it.
-5. Only once 1-4 are resolved: download the agreed sources (with explicit
-   user authorization, per this project's standing rule on file downloads),
-   compute checksums, and write the frozen source manifest.
+   just secondary description. *(Lower priority now that MS 985 and Martino
+   da Como cover the continuous-prose need — Sloane 4016 would add a herbal-
+   genre/label-recovery task, not a blocker.)*
+2. ~~Find at least one genuinely continuous-prose period source~~ — **found**:
+   Beinecke MS 985 (public domain, Yale) and Martino da Como's *Libro de arte
+   coquinaria* (Marburg transcription). Martino da Como's Marburg page license
+   terms still need confirming before reuse.
+3. German candidate remains imperfect (see above — nothing found in the
+   1400-1438 window itself). Decide: accept *Das Buoch von guoter Spise*'s
+   older date, or scope SQ-3 to Latin/Italian only and say so explicitly.
+4. Tranchedino ledger: read the liu.se paper in full to determine whether it
+   supplies enough transcribed key material to implement the transformation,
+   or whether a different, more fully-published period cipher should be
+   substituted (the already-established Naibbe cipher remains a fallback,
+   already checksum-pinned in this repo).
+5. Only once the above are resolved: download the agreed sources (with
+   explicit user authorization, per this project's standing rule on file
+   downloads), compute checksums, and write the frozen source manifest.
 
 ## Sources
 
@@ -108,3 +151,12 @@ manuscript.
 - [Cicco Simonetta — Wikipedia](https://en.wikipedia.org/wiki/Cicco_Simonetta)
 - [The Professionalization of Cryptology in Sixteenth Century Venice (Iordanou)](https://radar.brookes.ac.uk/radar/file/d6c33ee2-34c8-4994-b765-959f8ccfb14d/1/Professionalization%20of%20cryptology%20-%202018%20-%20Iordanou.pdf)
 - [The Hidden Hand: Cryptography's Medieval Dawn (1200-1500) — FactSpark](https://factspark.blog/posts/the-hidden-hand-cryptography-s-medieval-dawn-1200-1500)
+- [Beinecke MS 985, Recipes for scribes and painters and a few other recipes — Internet Archive](https://archive.org/details/BeineckeMS985_47)
+- [Recipes for scribes and painters and a few other recipes — Yale catalog](https://collections.library.yale.edu/catalog/10190111)
+- [Manuscript on paper containing Latin and Italian recipes — Beinecke pre-1600 MS description](https://pre1600ms.beinecke.library.yale.edu/docs/pre1600.ms985.htm)
+- [Martino da Como — Wikipedia](https://en.wikipedia.org/wiki/Martino_da_Como)
+- [Libro de arte coquinaria — full transcription, University of Marburg](http://www.staff.uni-marburg.de/~gloning/martino2.htm)
+- [Libro de arte coquinaria — Library of Congress catalog record](https://www.loc.gov/item/2014660856/)
+- [Das Buoch von guoter Spise — Wikipedia](https://en.wikipedia.org/wiki/Das_Buoch_von_guoter_Spise)
+- [Francesco Tranchedino: Diplomatic Secret Documents — Ziereis Facsimiles](https://www.facsimiles.com/facsimiles/francesco-tranchedino-diplomatic-secret-documents)
+- [Nicodemo Tranchedini's Diplomatic Cipher: New Evidence](https://ep.liu.se/ecp/149/007/ecp18149007.pdf)
