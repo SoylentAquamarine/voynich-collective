@@ -144,6 +144,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-currier-ab-construction-diagnostic-report.md` | Result: primary dosage (reused unchanged from an unrelated prior design) reaches 38.3% of the real +0.278-bit gap; a frozen wider-separation follow-up (nu_A=0.5, nu_B=0.0, round-number extrapolation) reaches 111.4% — dosage separation scales past the real magnitude rather than saturating below it |
 | `data/derived/external-currier-ab-construction-diagnostic-wide-summary.json` | Per-replicate results for the wider-separation follow-up |
 | `logs/2026-09-21-claude-currier-ab-construction-diagnostic.md` | Design reasoning (why boundary-shift-v2 was rejected as the base), non-circularity discipline, and execution log |
+| `logs/2026-09-21-claude-section-aware-six-criterion-reasoning.md` | Reasoning: why a section-aware six-criterion attempt wasn't tractable yet, and the corrected insight (reading the actual hybrid code) that its order-share failure could reuse an already-validated fix |
+| `data/external/hybrid-shift-v2-substitution-novelty-null-manifest-v1.json` | Frozen manifest: swap hybrid's boundary-shift component for the already-validated v2 split rule, keep the substitution top-up unchanged |
+| `data/scripts/external_hybrid_shift_v2_substitution_novelty_null_audit.py` | Executes the protocol; diffed against the original hybrid script to confirm only the split-rule changed |
+| `data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-summary.json` | Full per-replicate and aggregate results |
+| `data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-report.md` | Result: FAIL, but cleanly isolated — the v2 fix partially worked (order-share moves from a wide guaranteed failure to right at the boundary once coupling is removed), but the boundary-coupling step itself is a second, independent, previously-unattributed source of the same failure |
+| `logs/2026-09-22-claude-hybrid-shift-v2-substitution-selfreview.md` | Self-review, including the pilot's disclosed deviation from the literal calibration band (hapax saturates far above the target at every tested dosage) |
+| `logs/2026-09-22-claude-hybrid-shift-v2-substitution-execution.md` | Execution log |
 
 ## If you are ChatGPT picking this up for the first time
 

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-22T00:00:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "hybrid-shift-substitution (PR #35): combining boundary-shift (at its own established max capacity, nu_shift=1.0) with a small bigram-conditional substitution top-up (nu_sub) closed H1, H2, edge, and hapax all 20/20 at primary -- but token-order-share failed 0/20, a wide, consistent margin, reported as INVALID_CONSTRUCTION and not retuned, per that design's own precommitment",
+      "boundary-shift-novelty-null v1 vs v2 (PR #34 vs PR #36): v1's identical order-share failure was root-caused by reading the order-share metric's own code directly -- it collapses everything outside the 2,000 most frequent token types into one shared symbol before measuring token-to-token predictability, and v1's split-acceptance rule (both resulting pieces must be new) guaranteed two such collapsed tokens landed adjacent on every shift, manufacturing spurious predictability. v2 fixed this by preferring a split where exactly one piece is new (falling back to at-least-one-new, then to the unmodified pair, only when no such split exists). v2 passes all six criteria in 20/20 replicates.",
+      "checked directly in this design's own preregistration reasoning (not assumed): the hybrid script's boundary-shift component (data/scripts/external_hybrid_shift_substitution_novelty_null_audit.py, apply_boundary_shift) uses the ORIGINAL v1 split rule, not v2's fix -- confirmed by reading the code, and confirmed by commit order that hybrid (6d21635) was built and evaluated before v2 (188c5eb) existed. Hybrid's order-share failure was never re-tested against the v2 fix.",
+      "hypothesis under test, not yet verified: hybrid's order-share failure is the SAME bug already root-caused and fixed once in the standalone boundary-shift design, and swapping hybrid's split rule for the already-validated v2 rule (keeping everything else -- the substitution top-up, nu_shift=1.0, beta=0.5 -- unchanged) resolves it without reintroducing new problems"
+    ],
+    "not_done_before_registration": [
+      "No hybrid-v2 stream generated or scored",
+      "No parameter selected from any transformed outcome",
+      "nu_sub re-calibration (self-consistency-only, hapax-only, same methodology and candidate grid as the original hybrid design) not yet run -- nu_shift stays fixed at 1.0 (unchanged rationale: boundary-shift's own established maximum capacity, not re-tested as a free variable; the v2 split-rule change only affects WHICH split is chosen when a shift fires, not the shift trigger probability, so nu_shift=1.0 remains the right choice for the same reason it was chosen the first time)"
+    ]
+  },
+  "claim": "Swapping hybrid-shift-substitution's boundary-shift component for the already-validated v2 split rule (prefer a split where exactly one piece is new), keeping the substitution top-up, beta, and nu_shift unchanged, passes all six frozen criteria in at least 16 of 20 primary replicates.",
+  "honesty_precommitment": "This is a high-prior-probability fix, not a guaranteed one: the exact bug already fixed once elsewhere may not be the full explanation for hybrid's order-share failure (the substitution top-up's own tokens, absent from the standalone boundary-shift design, could contribute a different or additional source of order predictability). If order-share still fails after this fix, or if fixing order breaks something the v1 hybrid passed (H1, H2, edge, hapax, all 20/20 at primary), that will be reported plainly as a new negative result, not retuned or reframed as a partial success.",
+  "base_mechanism": "Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + identical boundary-coupling rule (beta=0.50 fixed, unchanged from every prior design).",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [7100042, 7100179, 7100316, 7100453, 7100590, 7100727, 7100864, 7101001, 7101138, 7101275, 7101412, 7101549, 7101686, 7101823, 7101960, 7102097, 7102234, 7102371, 7102508, 7102645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "boundary_shift_v2_at_max_capacity", "bigram_substitution_topup"],
+    "boundary_coupling": {"probability_parameter": "beta", "fixed_value_this_design": 0.5, "note": "unchanged from every prior design"},
+    "boundary_shift_v2_at_max_capacity": {
+      "probability_parameter": "nu_shift",
+      "fixed_value_this_design": 1.0,
+      "note": "identical mechanics to boundary-shift-v2-novelty-null (PR #36) -- prefer a split where exactly one piece is new, fall back to at-least-one-new, then to the unmodified pair -- run at boundary-shift's own established maximum trigger rate (nu_shift is not re-tested as a free variable here, same rationale as the original hybrid design)"
+    },
+    "bigram_substitution_topup": {
+      "eligibility": "token is still a repeat of something already emitted AFTER the boundary-shift-v2 pass has run",
+      "probability_parameter": "nu_sub",
+      "mechanism": "identical single-atom bigram-conditional exhaustive substitution search used in bigram-novelty-null and the original hybrid design (same statistic, same sparse-context fallback, same cold-start rule, same protected position 0)",
+      "note": "unchanged from the original hybrid design -- only the boundary-shift component's split rule differs in this preregistration"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.01, "replicates": 20, "note": "frozen from pilot: smallest grid value tested, clears the hapax floor (0.65) by a wide margin (pilot mean 0.9237) since v2's split rule saturates hapax far above the [0.65,0.75] target band the rule anticipated -- see selfreview.md pilot addendum for the disclosed deviation from the literal band"},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference"},
+      "edge_only": {"beta": 0.5, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference"},
+      "hybrid_novelty_only": {"beta": 0.0, "nu_shift": 1.0, "nu_sub": 0.01, "replicates": 20}
+    },
+    "sensitivities": {
+      "shift_only_no_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.0, "replicates": 5, "note": "isolates how much of the primary's hapax comes from shift-v2 alone at this beta, for interpretation"},
+      "stronger_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": "2x calibrated nu_sub, capped at 1.0", "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu_sub chosen by a self-consistency-only pilot (3 seeds, hybrid_novelty_only config, beta=0, nu_shift=1.0 fixed) targeting hapax_share_of_types in [0.65, 0.75], selecting the SMALLEST nu_sub that lands in-band. Same candidate grid as the original hybrid design, reused unchanged rather than chosen fresh for this design: {0.01, 0.02, 0.03, 0.05, 0.08, 0.1}. Order-share is recorded during the pilot for information only and explicitly NOT used to select nu_sub, even if a different value looks more favorable on order in the pilot data -- selecting nu_sub to make order look better would be exactly the outcome-driven parameter selection this project's discipline forbids. This is the same rule as the original hybrid manifest, unchanged."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16,
+      "note": "checked against hybrid_novelty_only (shift-v2+topup together, no coupling) vs baseline -- the full novelty mechanism for this design, not decomposed further, same convention as the original hybrid design"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete."
+}
