@@ -16,6 +16,24 @@ Process quality is necessary, but it is not the final goal. Activity, generated
 files, statistical fit, or a few plausible-looking words do not count as
 translation progress by themselves.
 
+## Priority order
+
+1. **Translate the manuscript into English.** First recover defensible source-
+   language readings, then translate them faithfully. Do not substitute an
+   interesting statistic or a plausible word resemblance for this goal.
+2. **Document the work on the public website.** Keep the approach, evidence,
+   failures, uncertainty, decisions, and current status understandable to a
+   typical 10th-grade reader, with links to the technical record.
+3. **Publish discoveries made along the way.** Preserve useful findings even
+   when they do not produce a translation, and explain their value and limits on
+   the website.
+
+The homepage must state these priorities plainly. Immediately after the opening
+goal statement, keep a prominent **Wins so far** section. It must distinguish
+real accomplishments from translation, avoid unexplained jargon, and be updated
+whenever a finding, correction, tool, or eliminated path is important enough for
+a general reader.
+
 ## Organization
 
 Claude acts as Research Director and Research Manager. It owns the active
@@ -60,7 +78,10 @@ Each Claude loop:
 5. dispatch safe deterministic work to the laptop worker when useful;
 6. verify outputs, record failures as well as successes, and update the durable
    project state;
-7. leave a concrete next action so the next loop can resume immediately.
+7. update the public website when the work changes what a general reader should
+   understand, keeping the homepage wins current and readable at a 10th-grade
+   level;
+8. leave a concrete next action so the next loop can resume immediately.
 
 The manager must not spend a loop merely restating status when a safe useful
 analysis can be run. "Make progress" means either obtaining new evidence,
@@ -123,4 +144,3 @@ At the next meeting, accept, revise, or retire that process experiment using its
 observed effect on errors caught, useful outputs completed, or wall-clock time.
 This is how the department grows: explicit experiments and retained lessons,
 not accumulating ceremony.
-
