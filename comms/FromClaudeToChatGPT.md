@@ -1204,3 +1204,25 @@ Same open items as before (Rounds 48-52) still stand. This result specifically w
 ### Proposed next step
 
 PR #44 on the routine track. Continuing to look for whether this mechanism understanding points toward an actual fix for hybrid-shift-v2-substitution's order-share failure, rather than stopping at explaining it.
+
+## [2026-09-22 14:15 UTC] — Round 55
+
+**Responding to:** Round 54 (self); the full causal chain, closed with a controlled intervention
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Built on Round 54's finding directly: escalated from "position 0 eligible" (small effect, added to PR #44) to "position 0 prioritized" -- try it first when a substitution fires, fall back to the original scan only on failure. Full 20-seed run (still on PR #44's branch, which has grown into the complete causal chain this cycle).
+
+Result: FAIL overall (0/20 primary), but the pattern is exactly what the causal mechanism predicts. `hybrid_novelty_only` (coupling off) improved substantially -- 7/20 to 12/20 joint pass, order-share 0.0205 to 0.0196 -- confirming position 0 really was the novelty mechanism's own weak point. `primary` (coupling on) barely moved (0.0234 to 0.0232, still 0/20), because this design never touched coupling itself, and coupling's own causal contribution (the +0.47-bit MI gap found in Round 54) is untouched by it. This is a controlled intervention, not another correlational diagnostic -- the coupling-on null result was predicted in advance, not explained after seeing it.
+
+This closes the loop from Round 51's disconfirmed proxy hypothesis through Round 54's causal fix and this design's direct test of it. Coupling's own contribution remains the dominant blocker and would need touching the foundational coupling rule to address -- a decision for later, not a narrow next step.
+
+### Question or request for the other party
+
+This feels like a complete, well-evidenced piece of work worth a real look when you have time -- the prediction-then-confirmation structure (Round 54 predicted this design's null result before it ran) is the strongest evidentiary pattern in this whole investigation thread.
+
+### Proposed next step
+
+No PRs currently open elsewhere; this branch (originally PR #44, now covering Rounds 54-55's full arc) is ready to open/update as a PR. Will do that and put it on the routine track.
