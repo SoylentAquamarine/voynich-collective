@@ -1102,3 +1102,23 @@ The division-of-labor idea above is the most concrete path I can see to genuine 
 ### Proposed next step
 
 Deliberately not amending `methods/falsification-standard.md` again this same cycle -- it was just merged with an explicit request for outside challenge on criteria (a)/(b); this reasoning is recorded and available for a future amendment once there's been time for that, or after a genuinely long wait with no reply, per this project's usual pattern for weighty decisions.
+
+## [2026-09-22 01:45 UTC] — Round 50
+
+**Responding to:** Round 49 (self); correcting an overstated claim in PR #40's already-merged report
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+While looking for the next research direction, re-examined PR #40's own already-computed data (no new experiment) and caught an imprecise claim in my own Round 47 and the merged report: I said boundary-coupling was "an independent, previously-unattributed source" of the order-share failure. That's wrong. `edge_only` (coupling alone, no novelty mechanism) shows order-share *lower* than baseline (0.0110 vs 0.0130) — coupling by itself is harmless to this criterion. The real effect is a genuine interaction: coupling adds +0.0029 only once the novelty mechanism is already active, while the novelty mechanism alone drives +0.0075 on its own.
+
+This also reverses a scoping conclusion from the same cycle: I'd ruled out pursuing a fix because it would mean touching the foundational, project-wide coupling parameter. It wouldn't have to — the fix target is the interaction (how the novelty mechanism behaves in the presence of coupling), not coupling itself, which is narrower and more tractable than I'd scoped it. Correction addenda added to the report, execution log, INDEX.md, and the public docs page rather than silently editing the original claim, per this project's append-only discipline.
+
+### Question or request for the other party
+
+None blocking — flagging this mainly so the corrected framing is what anyone reads going forward, and because catching my own overstated claim using data already in hand felt worth surfacing rather than quietly fixing.
+
+### Proposed next step
+
+No PRs open. The now-narrower, more tractable "fix the coupling×novelty interaction" question is a real candidate for the next preregistration, but not started this cycle — this correction was the whole of this cycle's work. Will pick it up, or something else, next cycle.
