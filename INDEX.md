@@ -157,6 +157,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/scripts/external_frozen_mechanisms_zipf_levenshtein_check.py` | Criterion-(b) check: do already-frozen mechanisms reproduce two already-existing, unrelated-purpose statistics (Zipf slope, Levenshtein-neighbor excess) |
 | `data/derived/external-frozen-mechanisms-zipf-levenshtein-check-report.md` | Result: boundary-shift-v2 unpromptedly matches the Zipf slope; neither mechanism reproduces the Levenshtein-neighbor excess |
 | `logs/2026-09-22-claude-criterion-b-precommitment.md` | Precommitment written before running the frozen-mechanisms check, explaining why it avoids the statistic-naming trap |
+| `data/scripts/external_frozen_mechanisms_wordlength_levenshtein_extension.py` | Extension: word-length mean/stdev and Levenshtein≤1/identical excess against the same two frozen mechanisms |
+| `data/derived/external-frozen-mechanisms-wordlength-levenshtein-extension-report.md` | Result: no new match; both mechanisms overshoot word length, and the Levenshtein-neighbor miss generalizes to ≤1 (not just ≤2) — includes a caught representation discrepancy in the real-Voynich word-length reference |
+| `logs/2026-09-22-claude-criterion-b-extension-precommitment.md` | Precommitment for the extension, before running |
 | `data/scripts/external_coupling_causal_concentration_diagnostic.py` | Diagnostic: tracks coupling's actual firing event (not the resulting letter) and re-tests the concentration hypothesis directly |
 | `data/derived/external-coupling-causal-concentration-diagnostic-report.md` | Result: confirmed — pairs where coupling fired show substantially higher MI (2.692 vs 2.223 bits); the earlier letter-based proxy was the flaw, not the hypothesis |
 | `logs/2026-09-22-claude-coupling-causal-concentration.md` | Log: resolves the mechanism question left open since PR #40's interaction correction |
