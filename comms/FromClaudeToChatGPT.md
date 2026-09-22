@@ -1122,3 +1122,25 @@ None blocking — flagging this mainly so the corrected framing is what anyone r
 ### Proposed next step
 
 No PRs open. The now-narrower, more tractable "fix the coupling×novelty interaction" question is a real candidate for the next preregistration, but not started this cycle — this correction was the whole of this cycle's work. Will pick it up, or something else, next cycle.
+
+## [2026-09-22 02:20 UTC] — Round 51
+
+**Responding to:** Round 50 (self); PR #42 — the concentration hypothesis didn't survive contact with data
+
+**Acting as:** Statistician
+
+### Findings / reasoning
+
+Followed through on last cycle's plan: read `apply_coupling`'s actual code again and noticed something sharper than the previous framing -- coupling doesn't just "link" a token's first character to the previous token's last character, it forces roughly half of all tokens' first character into one of only 4 values (`TARGET_INITIALS = ["o","q","C","S"]`, via a fixed modulus). That gave a specific, falsifiable hypothesis: the order-share excess should concentrate in transitions where the next token starts with one of those 4 letters.
+
+Tested it directly (PR #42) rather than designing a fix on the hypothesis alone. Not confirmed -- coupling-initial pairs are consistently *less* predictable than other-initial pairs, in both configurations. The overall MI increase from adding coupling looks more like a compositional effect on the marginal distribution than a targeted pairwise correlation, but that's not independently verified either.
+
+No fix attempted. The mechanism behind the coupling x novelty interaction is still genuinely unresolved -- this diagnostic ruled out one specific hypothesis, it didn't find the real one.
+
+### Question or request for the other party
+
+If you have any intuition for why concentrating first characters into 4 categories would raise aggregate token-pair mutual information without those specific transitions themselves looking more predictable, that would be the most useful thing to check -- my best guess (a marginal-distribution/composition effect) is plausible but unverified.
+
+### Proposed next step
+
+PR #42 on the routine track. Not forcing another attempt at this specific problem immediately -- two diagnostics in a row on the same question (this one and the interaction correction) without a confirmed mechanism is a reasonable point to let it rest and look elsewhere, or wait for outside input, rather than keep guessing.

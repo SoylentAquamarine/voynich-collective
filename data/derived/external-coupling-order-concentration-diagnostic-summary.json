@@ -1,0 +1,137 @@
+{
+  "hypothesis": "excess order-share predictability in 'primary' (coupling on) concentrates in pairs where the next token's first char is a coupling-target initial",
+  "target_initials": [
+    "o",
+    "q",
+    "C",
+    "S"
+  ],
+  "replicates": {
+    "primary": [
+      {
+        "cipher_seed": 42,
+        "beta": 0.5,
+        "mi_all_bits": 0.9617130591806705,
+        "n_all": 80720,
+        "mi_coupling_initial_bits": 0.5533182357812414,
+        "n_coupling_initial": 31620,
+        "mi_other_initial_bits": 0.644935440679971,
+        "n_other_initial": 49100,
+        "coupling_initial_fraction_of_pairs": 0.3917244796828543
+      },
+      {
+        "cipher_seed": 179,
+        "beta": 0.5,
+        "mi_all_bits": 0.9556890880590668,
+        "n_all": 80826,
+        "mi_coupling_initial_bits": 0.555361890002329,
+        "n_coupling_initial": 31890,
+        "mi_other_initial_bits": 0.6260859934506823,
+        "n_other_initial": 48936,
+        "coupling_initial_fraction_of_pairs": 0.3945512582584812
+      },
+      {
+        "cipher_seed": 316,
+        "beta": 0.5,
+        "mi_all_bits": 0.9565622897110957,
+        "n_all": 80755,
+        "mi_coupling_initial_bits": 0.5367523419611375,
+        "n_coupling_initial": 31495,
+        "mi_other_initial_bits": 0.6390894160927898,
+        "n_other_initial": 49260,
+        "coupling_initial_fraction_of_pairs": 0.3900068107237942
+      },
+      {
+        "cipher_seed": 453,
+        "beta": 0.5,
+        "mi_all_bits": 0.9591175719027043,
+        "n_all": 80648,
+        "mi_coupling_initial_bits": 0.5498554051823829,
+        "n_coupling_initial": 31535,
+        "mi_other_initial_bits": 0.6457398765500418,
+        "n_other_initial": 49113,
+        "coupling_initial_fraction_of_pairs": 0.3910202360876897
+      },
+      {
+        "cipher_seed": 590,
+        "beta": 0.5,
+        "mi_all_bits": 0.9627828792358475,
+        "n_all": 80851,
+        "mi_coupling_initial_bits": 0.5305036769397773,
+        "n_coupling_initial": 31758,
+        "mi_other_initial_bits": 0.6488002751315058,
+        "n_other_initial": 49093,
+        "coupling_initial_fraction_of_pairs": 0.3927966258920731
+      }
+    ],
+    "hybrid_novelty_only": [
+      {
+        "cipher_seed": 42,
+        "beta": 0.0,
+        "mi_all_bits": 0.9307091629209632,
+        "n_all": 80720,
+        "mi_coupling_initial_bits": 0.5143037770394974,
+        "n_coupling_initial": 25222,
+        "mi_other_initial_bits": 0.7252413063226592,
+        "n_other_initial": 55498,
+        "coupling_initial_fraction_of_pairs": 0.31246283448959367
+      },
+      {
+        "cipher_seed": 179,
+        "beta": 0.0,
+        "mi_all_bits": 0.9240558938118063,
+        "n_all": 80826,
+        "mi_coupling_initial_bits": 0.5249776072370909,
+        "n_coupling_initial": 25339,
+        "mi_other_initial_bits": 0.719886288365417,
+        "n_other_initial": 55487,
+        "coupling_initial_fraction_of_pairs": 0.31350060624056614
+      },
+      {
+        "cipher_seed": 316,
+        "beta": 0.0,
+        "mi_all_bits": 0.9280195854562231,
+        "n_all": 80755,
+        "mi_coupling_initial_bits": 0.5056624648427255,
+        "n_coupling_initial": 25196,
+        "mi_other_initial_bits": 0.725702258666694,
+        "n_other_initial": 55559,
+        "coupling_initial_fraction_of_pairs": 0.31200544857903534
+      },
+      {
+        "cipher_seed": 453,
+        "beta": 0.0,
+        "mi_all_bits": 0.9414675148117544,
+        "n_all": 80648,
+        "mi_coupling_initial_bits": 0.5073347929174696,
+        "n_coupling_initial": 24986,
+        "mi_other_initial_bits": 0.7291181516204777,
+        "n_other_initial": 55662,
+        "coupling_initial_fraction_of_pairs": 0.3098154944945938
+      },
+      {
+        "cipher_seed": 590,
+        "beta": 0.0,
+        "mi_all_bits": 0.9339887882174129,
+        "n_all": 80851,
+        "mi_coupling_initial_bits": 0.5084209987995473,
+        "n_coupling_initial": 25458,
+        "mi_other_initial_bits": 0.7271049392989511,
+        "n_other_initial": 55393,
+        "coupling_initial_fraction_of_pairs": 0.31487551174382505
+      }
+    ]
+  },
+  "primary_summary": {
+    "mean_mi_all": 0.959172977617877,
+    "mean_mi_coupling_initial": 0.5451583099733737,
+    "mean_mi_other_initial": 0.6409302003809982,
+    "mean_coupling_initial_fraction": 0.3920198821289785
+  },
+  "hybrid_novelty_only_summary": {
+    "mean_mi_all": 0.931648189043632,
+    "mean_mi_coupling_initial": 0.5121399281672662,
+    "mean_mi_other_initial": 0.7254105888548399,
+    "mean_coupling_initial_fraction": 0.3125319791095228
+  }
+}
