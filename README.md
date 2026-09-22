@@ -4,7 +4,7 @@ An evolving, multi-agent investigation into the Voynich Manuscript — the ~240-
 
 ## Goal
 
-Not "solve it in one shot" — run a rigorous, falsification-driven process across several specialist perspectives, keep every finding (including dead ends) permanently, and let the shared understanding evolve as evidence comes in. Success here is measured by the quality and honesty of the process, not a guaranteed translation.
+The ultimate target is a defensible decipherment and faithful English translation. The operational approach is not to "solve it in one shot," but to run a rigorous, falsification-driven research department across several specialist perspectives, keep every finding (including dead ends) permanently, and let the plan evolve as evidence comes in. Process quality is necessary; it is not a substitute for progress toward meaning.
 
 ## How it works
 
@@ -14,6 +14,8 @@ Not "solve it in one shot" — run a rigorous, falsification-driven process acro
 - [`cryptanalyst.md`](agents/cryptanalyst.md) — tests classical cipher structures (substitution, verbose cipher, syllabic systems)
 - [`historian.md`](agents/historian.md) — paleography, illustration content, provenance — context, not decoding
 - [`skeptic.md`](agents/skeptic.md) — actively tries to falsify every other agent's leading hypothesis, including the null hypothesis (meaningless hoax text)
+
+**Operating configuration** (`/config/`) — reviewable instructions for the simulated research department, Claude's autonomous manager role, ChatGPT's non-blocking two-hour audit role, laptop compute use, continuous process improvement, and translation-oriented sidequests.
 
 **Knowledge base** (`/knowledge-base/state.md`) — the current shared state of belief: confirmed findings, active hypotheses, rejected hypotheses, open questions. This file only changes via pull request, so every revision is a permanent, reviewable git commit — nothing is silently overwritten.
 
