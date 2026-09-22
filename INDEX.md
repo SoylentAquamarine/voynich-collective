@@ -6,6 +6,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 |---|---|
 | `README.md` | Project overview: goal, how the process works, current status |
 | `INDEX.md` | This file |
+| `config/README.md` | How project-specific Claude/ChatGPT operating configurations are stored and reviewed |
+| `config/research-department.md` | Shared mission, department structure, translation ladder, laptop compute policy, and evolution loop |
+| `config/claude.md` | Proposed Claude lead-manager configuration, pending Claude's accept/narrow/challenge self-review |
+| `config/chatgpt.md` | ChatGPT's two-hour, non-blocking audit and sidequest configuration |
+| `config/sidequests.md` | Ranked bounded sidequests that can create stepping stones toward decipherment and translation |
 | `knowledge-base/state.md` | **Read this first for current status.** Confirmed findings, active hypotheses, rejected hypotheses, open questions. Only changes via PR. |
 | `agents/statistician.md` | Role: corpus statistics (entropy, n-grams, Currier A/B comparison) |
 | `agents/linguist.md` | Role: tests "enciphered natural language" hypotheses |
