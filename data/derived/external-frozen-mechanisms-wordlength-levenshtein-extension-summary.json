@@ -1,0 +1,97 @@
+{
+  "real_voynich_reference": {
+    "word_length_mean": 4.1329587443124565,
+    "word_length_stdev": 1.5782739675815032,
+    "lev_le1_excess": 0.005849046775705802,
+    "identical_excess": 4.6358995728721514e-05,
+    "provenance": "word-length: Statistician pass 1 (2026-09-19, unrelated purpose). lev_le1/identical: same adjacent_similarity() call as PR #43's lev_le2 check, fields simply not read out there."
+  },
+  "replicates": {
+    "boundary_shift_v2_primary": [
+      {
+        "cipher_seed": 42,
+        "word_length_mean": 5.274254130149327,
+        "word_length_stdev": 2.15014853435642,
+        "lev_le1_excess": -0.002889363475362016,
+        "identical_excess": -0.0003061082751675522
+      },
+      {
+        "cipher_seed": 179,
+        "word_length_mean": 5.290316670229334,
+        "word_length_stdev": 2.1724655725001365,
+        "lev_le1_excess": -0.003264923429523907,
+        "identical_excess": -0.0007615376601729346
+      },
+      {
+        "cipher_seed": 316,
+        "word_length_mean": 5.2748954102665895,
+        "word_length_stdev": 2.1397947228444396,
+        "lev_le1_excess": -0.0036430878216480896,
+        "identical_excess": -0.0007551133798659583
+      },
+      {
+        "cipher_seed": 453,
+        "word_length_mean": 5.2919351390967115,
+        "word_length_stdev": 2.155405329385432,
+        "lev_le1_excess": -0.0032975657186512485,
+        "identical_excess": -0.0008874188283501752
+      },
+      {
+        "cipher_seed": 590,
+        "word_length_mean": 5.284331389134882,
+        "word_length_stdev": 2.146919811910208,
+        "lev_le1_excess": -0.002929645449178734,
+        "identical_excess": -0.0008803000312532555
+      }
+    ],
+    "hybrid_shift_v2_substitution_primary": [
+      {
+        "cipher_seed": 42,
+        "word_length_mean": 5.2706812837817205,
+        "word_length_stdev": 2.961766531270859,
+        "lev_le1_excess": -0.0138417196235719,
+        "identical_excess": -0.0027060110428169604
+      },
+      {
+        "cipher_seed": 179,
+        "word_length_mean": 5.291202247534125,
+        "word_length_stdev": 2.966734138305106,
+        "lev_le1_excess": -0.014587804285168595,
+        "identical_excess": -0.003139563148939125
+      },
+      {
+        "cipher_seed": 316,
+        "word_length_mean": 5.271108803859896,
+        "word_length_stdev": 2.959757451027212,
+        "lev_le1_excess": -0.012691252561030661,
+        "identical_excess": -0.0031534534847379937
+      },
+      {
+        "cipher_seed": 453,
+        "word_length_mean": 5.291690841909182,
+        "word_length_stdev": 2.9686823782101235,
+        "lev_le1_excess": -0.014283779560370871,
+        "identical_excess": -0.0029970135778032434
+      },
+      {
+        "cipher_seed": 590,
+        "word_length_mean": 5.287446178275872,
+        "word_length_stdev": 2.968155152005852,
+        "lev_le1_excess": -0.013116644094870995,
+        "identical_excess": -0.0028912733965343615
+      }
+    ]
+  },
+  "boundary_shift_v2_primary_summary": {
+    "word_length_mean": 5.2831465477753685,
+    "word_length_stdev": 2.152946794199327,
+    "lev_le1_excess": -0.003204917178872799,
+    "identical_excess": -0.0007180956349619752
+  },
+  "hybrid_shift_v2_substitution_primary_summary": {
+    "word_length_mean": 5.282425871072159,
+    "word_length_stdev": 2.9650191301638307,
+    "lev_le1_excess": -0.013704240025002604,
+    "identical_excess": -0.002977462930166337
+  }
+}
