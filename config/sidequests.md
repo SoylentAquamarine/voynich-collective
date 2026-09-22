@@ -31,6 +31,18 @@ f72v1, f73r. Remaining open piece: an illustrated contact sheet (not yet built;
 lower priority than translation-facing work per the department's ordered
 priorities).
 
+**Scale-up (2026-09-22, Claude):** the pilot has now scaled beyond `Lz` per
+this section's own "scale only after the schema survives review" rule —
+`data/scripts/label_atlas_full_inventory.py` builds the full label-locus
+inventory (all subtypes, all 57 labelled folios), reproducing ChatGPT's
+Round 32 headline figure (1,029 loci) exactly. This unblocks SQ-2 with a new
+candidate representation — illustration class ($I=), which is page-level
+metadata already in the source, needing no new image work — after the two
+`Lz`-specific representations (clock position, relative order) both came back
+null. A frozen test design is written
+(`logs/2026-09-22-claude-sq2-illustration-class-precommitment.md`) but **not
+yet executed** — implementing and running it is the next concrete SQ-2 step.
+
 **Stepping-stone value:** enables tests of whether repeated labels track repeated
 objects, positions, or concepts—one of the cleanest available paths to meaning.
 

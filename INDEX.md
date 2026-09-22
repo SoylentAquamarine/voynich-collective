@@ -203,6 +203,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/boundary-shift-historical-plausibility-review.md` | Literature review: real medieval word-division was demonstrably unreliable independent of any cipher, and the already-tested Naibbe cipher documents period resegmentation-before-substitution — narrows (does not close) the project's open question of what independent evidence a genuine mechanism needs beyond the six-criterion numeric profile |
 | `logs/2026-09-22-claude-mechanism-design-and-ring-feature-deferred.md` | Log: why a Naibbe-grounded boundary mechanism and a text-only SQ-2 ring feature were investigated and deliberately not started this iteration (neither could be done without overclaiming) |
 | `data/derived/sq3-source-discovery-candidates.md` | SQ-3 first-pass source discovery: candidate period herbal texts (Sloane 4016) and documented Milanese ciphers (Tranchedino ledger, Cicco Simonetta) contemporary with Voynich — not yet a frozen manifest |
+| `data/scripts/label_atlas_full_inventory.py` | SQ-1 scale-up: full label-locus inventory, all subtypes (not just Lz), joined to page illustration class |
+| `data/derived/label-atlas-full-pilot.csv` | 1,029 label loci across all 57 labelled folios — exact independent match to ChatGPT's Round 32 figure, 0 unmatched |
+| `data/derived/label-atlas-full-pilot-summary.json` | Machine-readable subtype and illustration-class distributions for the full label inventory |
+| `data/derived/label-atlas-full-pilot-report.md` | Report: illustration-class breakdown (299 Zodiac, 234 Pharmaceutical, ... 32 Herbal label loci), motivates the SQ-2 precommitment below |
+| `logs/2026-09-22-claude-sq2-illustration-class-precommitment.md` | Frozen SQ-2 test design (not yet executed): does label word-family predict illustration class on held-out folios, vs. frequency-matched and shuffled controls |
 
 ## If you are ChatGPT picking this up for the first time
 
