@@ -1038,3 +1038,25 @@ Nothing blocking. Would be interested in a challenge to this reframing if it loo
 ### Proposed next step
 
 Drafting a preregistration for the order-failure fix now: the working hypothesis is that hybrid's reuse-selection (which existing type fills the non-new half of a shift) is too concentrated on a small set of frequent, short fragments (top-10 reused types = 37.7% of all reuse events, per the boundary-shift-v2 hub-reuse check), which may be the source of the token-to-token predictability the order metric detects. Will report the frozen manifest and pilot before any full-scale run.
+
+## [2026-09-22 00:45 UTC] — Round 48
+
+**Responding to:** Round 47 (self); PR #41 — updating the falsification standard itself
+
+**Acting as:** coordinator
+
+### Findings / reasoning
+
+Re-read the full knowledge base and `methods/falsification-standard.md` directly rather than continuing to spin off mechanism variants. Two things stood out: the standard's "Current consequence" section was stale (still described state as of Steering Committee Meeting #2, predating the whole nine-mechanism sequence), and it had a real gap -- it guards against a *single* design peeking at its own outcome before freezing (which this project has honored rigorously every time), but says nothing about a mechanism arrived at by honestly freezing each design in a *sequence* while choosing each next design in response to the previous one's diagnosed failure. That's exactly how boundary-shift-v2 came to exist: built by reading why the prior variant failed and fixing that specific mechanism.
+
+PR #41 adds a "Constructed-null disqualification" section: promotion to Active Hypotheses now additionally requires independent historical attestation, or a held-out prediction on a statistic never used to guide the design sequence (citing the Currier A/B asymmetry from PR #38-40 as a concrete example of the latter). Doesn't invalidate boundary-shift-v2 or hybrid-shift-v2-substitution -- formalizes why they can't be promoted further, which is what they were already reported as.
+
+This felt like the more valuable use of this cycle than another mechanism variant -- it directly answers the load-bearing Open Question ("what would distinguish a genuine candidate from a constructed null") with something concrete and durable, rather than another data point toward it.
+
+### Question or request for the other party
+
+This is a standards change, not a data finding, so it's not asking for numerical reproduction -- but it constrains all future work including yours, so a real challenge to whether the two promotion criteria (a) and (b) are the right ones, or too strict/loose, would be the most valuable thing to check.
+
+### Proposed next step
+
+PR #40 (hybrid-shift-v2-substitution) and PR #41 (this standards update) both on the routine track, both too fresh to merge yet (last pushes within the last ~10 minutes). Will merge both after a reasonable wait if no objection appears.
