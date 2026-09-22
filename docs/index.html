@@ -278,6 +278,15 @@
         <p>Every other criterion — H1, H2, learned units, edge prediction, vocabulary openness — passes with comfortable margin in every configuration. Only token-order-share fails, and only just above its ceiling. This is a clean FAIL, not an INVALID_CONSTRUCTION (both manipulation checks pass cleanly) — informative precisely because only one variable was changed relative to the already-understood original design, isolating a real, if partial, effect and, on same-day re-examination of this run's own data, correctly attributing the residual failure to a coupling×novelty interaction rather than an independent coupling effect. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-v2-substitution-novelty-null-audit-report.md">Read the full result ↗</a></p>
       </section>
 
+      <section class="status-panel ambiguity-panel" aria-labelledby="position0-title">
+        <div>
+          <p class="kicker">Follow-up · tracing the interaction to its cause, then testing the cause directly</p>
+          <h2 id="position0-title">Found the mechanism, built a targeted fix, and the fix confirmed the mechanism.</h2>
+          <p class="snapshot-caveat">Coupling forces a token's first character into one of only 4 possible values whenever it fires, rather than the full alphabet — and tracking that real event directly (not the letter it happens to produce) shows a substantial, consistent jump in token-to-token predictability, exactly where the interaction lives. A design built to fix only that — prioritizing position 0 in the vocabulary-opening step, without touching coupling itself — confirms the mechanism precisely: it closes most of the gap when coupling is off (7 of 20 passing seeds became 12 of 20), and barely moves the needle when coupling is on, exactly as the mechanism predicts.</p>
+        </div>
+        <p>Still a FAIL overall — coupling's own contribution remains the dominant blocker, and addressing it would mean revisiting a rule reused, unchanged, across every design in this project, not a narrow next step. But this is a controlled intervention, not just a correlation: the null result under coupling was predicted before the run, not explained after it. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-coupling-causal-concentration-diagnostic-report.md">Read how the mechanism was found ↗</a> <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-v2-substitution-position0-priority-audit-report.md">Read the targeted fix and its result ↗</a></p>
+      </section>
+
       <section class="status-panel ambiguity-panel" aria-labelledby="shift-v2-title">
         <div>
           <p class="kicker">Constructive null · first joint six-criterion PASS — read carefully</p>

@@ -1,0 +1,69 @@
+{
+  "hypothesis": "order predictability concentrates in pairs where coupling ACTUALLY FIRED for the next token (the causal event), not merely pairs where it happens to start with a coupling-target letter",
+  "note": "measured at the coupling-output stage (pre-shift/pre-substitution) where per-token fired provenance is well-defined; a post-shift measurement cannot attribute provenance since shifts merge/resplit tokens",
+  "replicates": [
+    {
+      "cipher_seed": 42,
+      "mi_coupling_stage_all": 2.445489771461082,
+      "n_all": 80720,
+      "mi_coupling_fired_pairs": 2.7020899124863673,
+      "n_fired": 40664,
+      "mi_coupling_not_fired_pairs": 2.200350055948962,
+      "n_not_fired": 40056,
+      "fired_fraction": 0.5037661050545094,
+      "mi_full_pipeline": 0.9606929913993623,
+      "n_full": 80720
+    },
+    {
+      "cipher_seed": 179,
+      "mi_coupling_stage_all": 2.4258241692156397,
+      "n_all": 80826,
+      "mi_coupling_fired_pairs": 2.689966370491797,
+      "n_fired": 40453,
+      "mi_coupling_not_fired_pairs": 2.2177755782638227,
+      "n_not_fired": 40373,
+      "fired_fraction": 0.5004948902580852,
+      "mi_full_pipeline": 0.9556299052992002,
+      "n_full": 80826
+    },
+    {
+      "cipher_seed": 316,
+      "mi_coupling_stage_all": 2.410998991328174,
+      "n_all": 80755,
+      "mi_coupling_fired_pairs": 2.6814048346785455,
+      "n_fired": 40098,
+      "mi_coupling_not_fired_pairs": 2.2352158092707697,
+      "n_not_fired": 40657,
+      "fired_fraction": 0.4965389139991332,
+      "mi_full_pipeline": 0.9576516085984971,
+      "n_full": 80755
+    },
+    {
+      "cipher_seed": 453,
+      "mi_coupling_stage_all": 2.4468375011515375,
+      "n_all": 80648,
+      "mi_coupling_fired_pairs": 2.7108700520981075,
+      "n_fired": 40296,
+      "mi_coupling_not_fired_pairs": 2.2587431517635,
+      "n_not_fired": 40352,
+      "fired_fraction": 0.4996528122210098,
+      "mi_full_pipeline": 0.9604333064811947,
+      "n_full": 80648
+    },
+    {
+      "cipher_seed": 590,
+      "mi_coupling_stage_all": 2.4211037513534177,
+      "n_all": 80851,
+      "mi_coupling_fired_pairs": 2.676779674177376,
+      "n_fired": 40571,
+      "mi_coupling_not_fired_pairs": 2.203421324582016,
+      "n_not_fired": 40280,
+      "fired_fraction": 0.5017996066839,
+      "mi_full_pipeline": 0.9643126276104481,
+      "n_full": 80851
+    }
+  ],
+  "mean_mi_fired": 2.6922221687864387,
+  "mean_mi_not_fired": 2.223101183965814,
+  "mean_fired_fraction": 0.5004504656433275
+}

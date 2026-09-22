@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-22T13:50:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "hybrid-shift-v2-substitution (PR #40): FAIL, 0/20 primary joint pass, token-order-share the sole blocker (mean 0.0234 vs 0.02 ceiling); a same-day correction found this is a coupling x novelty-mechanism interaction, not an independent coupling effect (PR #40 addendum)",
+      "coupling causal concentration diagnostic (PR #44): coupling's causal firing event creates a real, substantial mutual-information gap at the token's position-0 character specifically -- mean MI 2.692 bits when coupling fired for a token vs 2.223 bits when it didn't, a direct, verified mechanism, not a proxy inference",
+      "position-0 unprotection diagnostic (PR #44, same branch): simply WIDENING the substitution top-up's eligible positions to include 0 (previously always excluded, positions range [1,n-1]) reduces order-share in the right direction but insufficiently (0.0234 -> 0.0227, still above the 0.02 ceiling) -- position 0 is eligible but rarely the position actually chosen in a uniform scan, diluting the effect",
+      "hypothesis under test, not yet verified: PRIORITIZING position 0 (trying it first whenever a substitution event fires, falling back to the original full scan only if no valid non-emitted alternative exists there) will touch position 0 far more often per substitution event than uniform eligibility did, and may close enough of the remaining order-share gap to pass -- at some risk to novelty-generation robustness, since restricting to one position first could occasionally fail to find a new token where the original multi-position scan would have succeeded"
+    ],
+    "not_done_before_registration": [
+      "No position-0-priority stream generated or scored",
+      "No parameter selected from any transformed outcome",
+      "nu_sub re-calibration (self-consistency-only, hapax-only, same methodology as prior hybrid designs) not yet run -- nu_shift stays fixed at 1.0, beta stays fixed at 0.5, same rationale as every prior design in this family"
+    ]
+  },
+  "claim": "Prioritizing position 0 in the substitution top-up (try it first when a substitution event fires; fall back to the original [1,n-1] scan only if position 0 has no valid non-emitted alternative) passes all six frozen criteria in at least 16 of 20 primary replicates.",
+  "honesty_precommitment": "This is a reasoned extension of a confirmed mechanism (PR #44), not a guaranteed win: prioritizing one position could reduce the substitution mechanism's novelty-generation efficiency (fewer positions tried before falling back), which could hurt hapax or interact with H1/H2 in a way not yet observed. If this does not clear order-share sufficiently, or costs another criterion to do so, that will be reported plainly -- the position-0 unprotection diagnostic already showed the effect exists but is small at uniform eligibility; if prioritization also proves insufficient, that is real information about the size of this lever, not grounds to escalate to touching coupling itself.",
+  "base_mechanism": "Identical to hybrid-shift-v2-substitution (PR #40): Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + boundary coupling (beta=0.5 fixed) + boundary-shift-v2 (nu_shift=1.0 fixed, its own established maximum). Only the substitution top-up's position-selection rule changes.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [7200042, 7200179, 7200316, 7200453, 7200590, 7200727, 7200864, 7201001, 7201138, 7201275, 7201412, 7201549, 7201686, 7201823, 7201960, 7202097, 7202234, 7202371, 7202508, 7202645]
+  },
+  "transformation": {
+    "order": ["boundary_coupling", "boundary_shift_v2_at_max_capacity", "position0_priority_substitution_topup"],
+    "boundary_coupling": {"probability_parameter": "beta", "fixed_value_this_design": 0.5, "note": "unchanged from every prior design"},
+    "boundary_shift_v2_at_max_capacity": {"probability_parameter": "nu_shift", "fixed_value_this_design": 1.0, "note": "identical mechanics to hybrid-shift-v2-substitution, unchanged"},
+    "position0_priority_substitution_topup": {
+      "eligibility": "token is still a repeat of something already emitted after the boundary-shift-v2 pass has run",
+      "probability_parameter": "nu_sub",
+      "mechanism": "when a substitution event fires, try position 0 FIRST (25 alternatives, same bigram-conditional/sparse-context/cold-start selection logic as before, but with no preceding-character context available for position 0 -- falls back to unigram frequency ordering there). If a valid non-emitted alternative is found at position 0, use it and stop. Only if NO alternative at position 0 succeeds, fall back to the original scan of positions [1, n-1] exactly as in hybrid-shift-v2-substitution.",
+      "note": "this is the only mechanical change from hybrid-shift-v2-substitution's own substitution_topup function"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.01, "replicates": 20, "note": "frozen from pilot: smallest grid value, clears hapax floor with large margin (pilot mean 0.9232); every pilot dosage's order-share was at or under 0.02 in the no-coupling config, encouraging but not decisive since primary has coupling on -- see selfreview.md"},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "identical to boundary-state-null's baseline; not rerun, reused by reference"},
+      "edge_only": {"beta": 0.5, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "identical to boundary-state-null's edge_only; not rerun, reused by reference"},
+      "hybrid_novelty_only": {"beta": 0.0, "nu_shift": 1.0, "nu_sub": 0.01, "replicates": 20}
+    },
+    "sensitivities": {
+      "shift_only_no_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.0, "replicates": 5},
+      "stronger_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": "2x calibrated nu_sub, capped at 1.0", "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu_sub chosen by a self-consistency-only pilot (3 seeds, hybrid_novelty_only config, beta=0, nu_shift=1.0 fixed) targeting hapax_share_of_types in [0.65, 0.75], selecting the SMALLEST nu_sub that lands in-band -- same rule and grid as every prior hybrid design ({0.01, 0.02, 0.03, 0.05, 0.08, 0.1}). If, as in the original hybrid-shift-v2-substitution pilot, every tested value overshoots the band substantially (hapax already saturated from shift-v2 alone), the same disclosed deviation applies: select the smallest grid value, since it already clears the actual six-criteria floor (0.65) with margin, and order-share is explicitly NOT used to select nu_sub even if a different value looks more favorable in the pilot data."
+  },
+  "manipulation_checks": {
+    "boundary": {"paired_edge_increase_min_seeds": 16, "edge_criterion_pass_min_seeds": 16, "note": "reused from boundary-state-null's edge_only vs baseline comparison, not recomputed"},
+    "novelty": {"paired_hapax_increase_min_seeds": 16, "hapax_criterion_pass_min_seeds": 16, "note": "checked against hybrid_novelty_only vs baseline, same convention as every prior hybrid design"},
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65}
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until the self-review pass documented in the accompanying log is complete."
+}
