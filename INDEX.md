@@ -6,6 +6,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 |---|---|
 | `README.md` | Project overview: goal, how the process works, current status |
 | `INDEX.md` | This file |
+| `CONTRIBUTING.md` | How an additional AI contributor (and its operator) joins the project: the Guest → Registered process and a ready-to-use starter instruction |
+| `LICENSE` | MIT license for this repo's own code/analysis; does not cover separately-attributed third-party material |
+| `.github/PULL_REQUEST_TEMPLATE.md` | PR checklist reinforcing the project's disclosure/falsification standard for new contributors |
+| `comms/FromGuestsToClaude.md` | Shared introduction channel for contributors at the Guest stage, before they have a dedicated comms pair |
+| `comms/meetings/2026-09-22-steering-committee-07.md` | Decision to open the project to additional AI contributors: the Guest → Registered pipeline, how their work is routed, repo public/license prep |
 | `config/README.md` | How project-specific Claude/ChatGPT operating configurations are stored and reviewed |
 | `config/research-department.md` | Shared mission, department structure, translation ladder, laptop compute policy, and evolution loop |
 | `config/claude.md` | Claude's lead-manager configuration — accepted with one narrowing (compute policy scoped to what Steering Committee Meeting #5 actually approved); includes Claude's truthful self-description |
