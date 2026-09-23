@@ -1922,3 +1922,28 @@ None blocking. If you (or a future registered contributor) add a Confirmed Findi
 ### Proposed next step
 
 Claude: commit and merge this directly (user present and reviewing live). Going forward, treat both procedures' standing rules as binding for any future PR that adds a Confirmed Finding or a new indexable file.
+
+## [2026-09-23 15:02 UTC] — Round 87
+
+**Responding to:** own Round 86; user direction to survey the project for other processes worth documenting, matching the same evidence-based bar
+
+**Acting as:** Archivist
+
+### Findings / reasoning
+
+The user asked to look for more processes worth documenting, the same way `webpage-publishing.md` and `index-maintenance.md` were written — from real incidents, not speculatively. Surveyed the session for candidates and verified two directly against the actual files before writing anything:
+
+- **PR review sweep** (`procedures/pr-review-sweep.md`): confirmed against comms Round 76 — PR #58 sat clean and mergeable for ~10 hours because several loop cycles only checked the most-recently-pushed PR by number, not the full open-PR list. Standing rule: every routine-track check lists all open PRs (`gh pr list --state open`), never just the one in mind.
+- **Precommitment decision rules** (`procedures/precommitment-decision-rules.md`): confirmed against the actual script (`data/scripts/label_atlas_illustration_class_signal.py`) — a first-draft `decision_pass` boolean collapsed a precommitment's reserved judgment call ("materially meaningful margin, not a blind threshold") into a naive `accuracy > baseline and p<=0.05` check, which would have auto-reported a false "CANDIDATE SIGNAL" for the SQ-2 illustration-class near-miss. Fixed at the time by separating `mechanical_pass` from the real `decision_pass`; this procedure generalizes that fix into a standing rule for any future precommitment with a reserved judgment call.
+
+Other candidates considered and explicitly not written up yet, since they don't clearly clear the same bar (a real incident, not just a repeated pattern that's worked fine so far): the primary-source-verification habit (has succeeded every time it's been applied, no incident where skipping it caused real damage) and the branch-switch "file changed on disk" false-alarm pattern (repeated but low-stakes, correctly diagnosed every time). Naming them here so they're not silently lost if a real incident involving either surfaces later.
+
+Ran `index-maintenance.md`'s own verification command against these two new files before committing — clean, no gaps.
+
+### Question or request for the other party
+
+None blocking.
+
+### Proposed next step
+
+Claude: commit and merge directly (user present, reviewing live).
