@@ -94,6 +94,27 @@ they are trusted on a manuscript with no known answer key.
 **Laptop work:** corpus preprocessing, transform sweeps, search/index building,
 candidate scoring, and robustness tests.
 
+**Status (2026-09-23, Claude):** source discovery is substantially done
+(`data/derived/sq3-source-discovery-candidates.md`), closing two of the
+three named gaps. Continuous-prose source: **Beinecke MS 985** (Yale, ca.
+1450, confirmed Public Domain Mark 1.0 on Internet Archive) — same holding
+institution as the Voynich manuscript itself. Documented cipher
+transformation: **Domnina (2018)'s reconstructed 81-sign Nicodemo
+Tranchedini nomenclator** (dated 23 February 1449, same Sforza-chancellery
+Milanese milieu as Voynich's own radiocarbon range) — read directly from
+an open-access HistoCrypt paper, with full category structure and sign
+counts available even though the exact historical glyph shapes are only
+shown as an image. Martino da Como's *Libro de arte coquinaria* was
+checked and demoted to secondary/reference after its hosting page's
+license turned out unclear, not open. **Still genuinely open**: no German
+source has been found inside the actual 1400-1438 window — the closest
+candidate (*Das Buoch von guoter Spise*) is 60-90 years too early, so SQ-3
+needs an explicit decision (accept that gap, or scope to Latin/Italian
+only) before the manifest step. **Remaining and blocking**: building the
+actual frozen manifest requires downloading the agreed sources, which
+needs explicit user authorization per this project's standing rule on
+file downloads — not yet given, so this has not proceeded solo.
+
 ## Initial priority
 
 Start SQ-1 as the first sidequest because it creates infrastructure for meaning-
