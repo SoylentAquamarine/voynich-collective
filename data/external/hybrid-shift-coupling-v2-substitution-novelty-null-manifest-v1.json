@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-23T09:30:00Z",
+  "result_blinding": {
+    "known_before_registration": [
+      "hybrid-shift-v2-substitution (PR #40): H1, H2, edge, and hapax all pass 20/20 at primary; token-order-share fails 0/20, a wide margin -- reported as INVALID_CONSTRUCTION for a coupling x novelty interaction, not a coupling main effect alone (PR #40's own correction addendum).",
+      "PR #44 causally traced the order-share failure to the coupling mechanism's TARGET_INITIALS lookup (target = TARGET_INITIALS[ATOMIC_ALPHABET.index(prev_last) % 4]), which forces a coupled token's first character into 1-of-4 values whenever coupling fires -- a controlled intervention (position0-priority, PR #46) confirmed this causally but did not fix it.",
+      "Steering Committee Meeting #6 (2026-09-22) formalized widening this mapping as the concrete next decision, named three options, and deferred choosing. Meeting #9 (2026-09-23) decided: adopt a new, separately-labeled coupling-v2 track alongside the existing frozen coupling rule -- additive, not a replacement.",
+      "This design's own reasoning (logs/2026-09-23-claude-coupling-v2-selfreview.md), written before any code was run: coupling-v2 replaces the 4-way TARGET_INITIALS lookup with a full-width identity mapping (target = prev_last, 26 distinct possible targets, zero concentration by construction) -- the maximally decisive single test of PR #44's concentration hypothesis, chosen over an intermediate width (e.g. %8 or %13) specifically to avoid an ambiguous partial result.",
+      "Two correctness points checked directly before registration: the baseline (beta=0.0) control is coupling-rule-independent and safe to reuse by reference (coupling never fires when beta=0.0); the edge_only (beta=0.5, nu_shift=0, nu_sub=0) control is NOT coupling-rule-independent and must be recomputed fresh under coupling-v2, not reused from the v1 hybrid's reference."
+    ],
+    "not_done_before_registration": [
+      "No coupling-v2 stream generated or scored",
+      "No nu_sub pilot run under coupling-v2",
+      "No parameter selected from any transformed outcome",
+      "No edge_only or baseline value computed under coupling-v2"
+    ]
+  },
+  "claim": "Replacing hybrid-shift-v2-substitution's coupling target rule with the maximally-wide identity mapping (target = prev_last, in place of the 4-way TARGET_INITIALS lookup), keeping the boundary-shift-v2 component, the substitution top-up, beta, and nu_shift unchanged, passes all six frozen criteria in at least 16 of 20 primary replicates.",
+  "honesty_precommitment": "This is a targeted test of a specific causal hypothesis (PR #44: concentration into few target values causes the order-share failure), not a guaranteed fix: coupling's target-selection width may not be the only or full explanation (the boundary-shift-v2 and substitution-top-up components' own interaction with coupling, documented in PR #40's correction addendum, could contribute independently of target width). If order-share still fails at maximum width, that will be reported plainly as evidence against the concentration hypothesis being the full explanation, not retuned, reframed, or followed immediately by an intermediate-width retry without a fresh precommitment. If fixing order-share breaks something the v1-coupling hybrid passed (H1, H2, edge, hapax), that will also be reported plainly as a new negative result.",
+  "base_mechanism": "Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + coupling-v2 boundary-coupling rule (beta=0.50 fixed, unchanged trigger probability; target-selection rule changed per above).",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {"C":"ch","E":"ee","I":"in","K":"ckh","N":"iin","P":"cph","S":"sh","T":"cth"},
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "coupling_v2": {
+    "rule": "target = prev_last (the coupled token's first character is set to exactly the previous token's last character when coupling fires)",
+    "distinct_possible_targets": 26,
+    "original_rule_unchanged_for_comparison": "TARGET_INITIALS[ATOMIC_ALPHABET.index(prev_last) % 4], 4 distinct possible targets -- kept as-is in every already-merged result; coupling-v2 is additive, not a replacement",
+    "trigger_probability_beta": "unchanged, 0.5, same as every prior design"
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [7100042, 7100179, 7100316, 7100453, 7100590, 7100727, 7100864, 7101001, 7101138, 7101275, 7101412, 7101549, 7101686, 7101823, 7101960, 7102097, 7102234, 7102371, 7102508, 7102645],
+    "note": "reused unchanged from hybrid-shift-v2-substitution-novelty-null-manifest-v1.json for a clean single-variable comparison against the already-completed v1-coupling result on the same underlying source streams"
+  },
+  "transformation": {
+    "order": ["boundary_coupling_v2", "boundary_shift_v2_at_max_capacity", "bigram_substitution_topup"],
+    "boundary_coupling_v2": {"probability_parameter": "beta", "fixed_value_this_design": 0.5, "note": "trigger probability unchanged; only the target-selection rule differs from every prior design"},
+    "boundary_shift_v2_at_max_capacity": {
+      "probability_parameter": "nu_shift",
+      "fixed_value_this_design": 1.0,
+      "note": "identical mechanics and rationale to hybrid-shift-v2-substitution -- unchanged"
+    },
+    "bigram_substitution_topup": {
+      "eligibility": "token is still a repeat of something already emitted AFTER the boundary-shift-v2 pass has run",
+      "probability_parameter": "nu_sub",
+      "mechanism": "identical single-atom bigram-conditional exhaustive substitution search used in every prior novelty-rule design -- unchanged mechanics, but nu_sub itself is RECALIBRATED under coupling-v2 (see pilot_calibration_rule below), not carried over from the v1-coupling hybrid's 0.01"
+    }
+  },
+  "configurations": {
+    "primary": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": "TBD_from_pilot", "replicates": 20},
+    "controls": {
+      "baseline": {"beta": 0.0, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "coupling-rule-independent (coupling never fires at beta=0.0) -- reused by reference from boundary-state-null, not rerun"},
+      "edge_only": {"beta": 0.5, "nu_shift": 0.0, "nu_sub": 0.0, "replicates": 20, "note": "MUST be recomputed fresh under coupling-v2 -- NOT reused from the v1-coupling hybrid's reference, since edge_only's entire purpose is measuring coupling's own contribution and the coupling rule itself has changed"},
+      "hybrid_novelty_only": {"beta": 0.0, "nu_shift": 1.0, "nu_sub": "TBD_from_pilot", "replicates": 20, "note": "coupling-rule-independent (beta=0.0), included for the novelty manipulation check same as v1"}
+    },
+    "sensitivities": {
+      "shift_only_no_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": 0.0, "replicates": 5},
+      "stronger_topup": {"beta": 0.5, "nu_shift": 1.0, "nu_sub": "2x calibrated nu_sub, capped at 1.0", "replicates": 5}
+    },
+    "sensitivities_cannot_rescue_primary_failure": true,
+    "pilot_calibration_rule": "nu_sub chosen by a self-consistency-only pilot (3 seeds, hybrid_novelty_only config, beta=0, nu_shift=1.0 fixed, coupling-v2's rule in effect though inert at beta=0) targeting hapax_share_of_types in [0.65, 0.75], selecting the SMALLEST nu_sub in-band. Same candidate grid as every prior design, reused unchanged: {0.01, 0.02, 0.03, 0.05, 0.08, 0.1}. Order-share is recorded during the pilot for information only and explicitly NOT used to select nu_sub. RECALIBRATED under coupling-v2 rather than reusing 0.01, per logs/2026-09-23-claude-coupling-v2-selfreview.md's stated reasoning (substitution eligibility depends on coupling-produced token strings, so the right value is checked, not assumed)."
+  },
+  "manipulation_checks": {
+    "boundary": {
+      "paired_edge_increase_min_seeds": 16,
+      "edge_criterion_pass_min_seeds": 16,
+      "note": "computed fresh under coupling-v2 (edge_only vs baseline), NOT reused from the v1-coupling reference"
+    },
+    "novelty": {
+      "paired_hapax_increase_min_seeds": 16,
+      "hapax_criterion_pass_min_seeds": 16,
+      "note": "checked against hybrid_novelty_only (shift-v2+topup together, no coupling) vs baseline -- same convention as every prior design"
+    },
+    "failure_label": "INVALID_CONSTRUCTION"
+  },
+  "six_criteria": {
+    "H1_bits": {"center": 3.9763, "absolute_tolerance": 0.15},
+    "H2_bits": {"center": 2.6897, "absolute_tolerance": 0.15},
+    "learned_units": {"allowed_minimum_checkpoints": [32, 64], "k64_gap_bits_min": 0.9, "k64_gap_bits_max": 1.2},
+    "whole_token_order_share": {"min": 0.0, "max": 0.02},
+    "heldout_edge_prediction": {"alpha": 1.0, "gain_bits_per_boundary_min": 0.15, "positive_blocks_min": 15, "blocks": 16},
+    "hapax_share_of_types": {"min": 0.65},
+    "note": "identical bands to every prior design -- unchanged, since the target is real Voynich's own measured profile, not redefined by this test"
+  },
+  "primary_verdict": {
+    "pass": "Both manipulation checks succeed and at least 16 of 20 primary replicates pass all six criteria",
+    "fail": "Both manipulation checks succeed and fewer than 16 of 20 primary replicates pass all six criteria",
+    "invalid": "Either manipulation check fails"
+  },
+  "comparability_note": "coupling-v2 is an ADDITIVE track. Every existing mechanism result under the original coupling rule (beta=0.5, 4-way TARGET_INITIALS) remains exactly as merged, permanently comparable, and is not reinterpreted or superseded by this design regardless of its outcome. This manifest and its results are labeled coupling-v2 in every filename and report heading to keep the two tracks unambiguous.",
+  "execution_embargo": "Do not implement the transformation beyond the pilot-calibration step, or calculate any primary/control/sensitivity outcome, until this manifest and its accompanying self-review log are committed and reviewed (self-review only, ChatGPT unresponsive -- same standing exception used throughout this project when ChatGPT is absent)."
+}
