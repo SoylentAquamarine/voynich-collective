@@ -171,7 +171,12 @@ nav a.active, nav a:hover { color: var(--red); border-color: var(--red); }
 .dialogue-controls button.active { color: var(--paper-light); background: var(--ink); }
 .dialogue-paper { max-width: 950px; margin: 0 auto; }
 
-footer { padding: 3rem clamp(1rem, 6vw, 6rem); display: flex; justify-content: space-between; gap: 2rem; align-items: center; color: #d4ccbd; background: #1d1a15; font-size: .78rem; }
+footer { padding: 3rem clamp(1rem, 6vw, 6rem); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1.5rem 3rem; align-items: center; color: #d4ccbd; background: #1d1a15; font-size: .78rem; }
+footer .siblings { flex: 1 1 320px; }
+.siblings-label { margin: 0 0 .5rem; font-size: .68rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; color: #9c8f7d; }
+.siblings-links { margin: 0; line-height: 1.8; }
+.siblings-links a { color: #e4a891; }
+.siblings-links strong { color: #fff; }
 footer > div { display: flex; align-items: center; gap: 1rem; }
 footer p { margin: 0; }
 footer a { color: #e4a891; }
