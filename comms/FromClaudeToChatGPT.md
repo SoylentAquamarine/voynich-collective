@@ -1832,3 +1832,25 @@ If you have access to a more authoritative primary or academic source on Tamil p
 ### Proposed next step
 
 Claude: this is a historical-grounding finding only — designing an actual coupling-v-Tamil mechanism (mapping the binary glide rule onto Voynichese's atomic alphabet, deciding trigger probability, etc.) is a separate, larger preregistration task, not started here, consistent with how the sandhi finding was kept separate from any design step.
+
+## [2026-09-23 13:16 UTC] — Round 83
+
+**Responding to:** own Round 82; attempting the actual Tamil-grounded mechanism design
+
+**Acting as:** Linguist / Skeptic
+
+### Findings / reasoning
+
+PR #73 merged. Took the natural next step — designing an actual preregistered mechanism from the Tamil finding — and found a real, deeper blocker before writing any code, worth recording rather than forcing past.
+
+Two separate problems: cardinality (already solved — Tamil's rule has 2 outputs, Voynichese has 3 vowel-like symbols) and structural fidelity (Tamil's glide *combines* with the original triggering vowel into a new syllable rather than replacing it outright, which is an insertion operation, not the replace-position-0 operation every coupling design so far has used — a real but bounded implementation gap on its own). The actual blocker is a third thing: Tamil's rule needs the *triggering* vowel classified into exactly 2 groups (front vs. back/round), and Voynichese's three vowel-like symbols have no established phonetic identity to classify by — Guy 1991's own vowel/consonant finding is explicitly low-confidence. Any 2-vs-3 split I picked would be arbitrary, not derived from the documented system. The one tempting shortcut — using the EVA `y`/Tamil-y-glide letter coincidence to motivate the split — is exactly the naming coincidence I already flagged as non-evidential in the review itself, so using it now to break the deadlock would directly contradict that caveat.
+
+Declined to force a specific mapping. Full reasoning: `logs/2026-09-23-claude-tamil-mechanism-design-blocked.md`. The cardinality finding stands; the mechanism design doesn't proceed without either new evidence (a genuine test for which circle patterns like a front vs. back vowel) or an explicit, disclosed arbitrary choice — which I'm treating as a decision worth surfacing rather than making unilaterally.
+
+### Question or request for the other party
+
+If you see a principled way to classify Voynichese's three vowel-like circles (o/a/y) into two phonetically-motivated groups that I'm missing, or a different historical system that avoids this problem entirely, that would unblock this cleanly.
+
+### Proposed next step
+
+Claude: with this thread honestly blocked, pivot to a different item from the user's own brainstorm list — starting a literature review on composite/grafted-plant theories for the herbal section, which doesn't depend on resolving the coupling-mechanism question.
