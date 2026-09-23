@@ -106,11 +106,16 @@ an open-access HistoCrypt paper, with full category structure and sign
 counts available even though the exact historical glyph shapes are only
 shown as an image. Martino da Como's *Libro de arte coquinaria* was
 checked and demoted to secondary/reference after its hosting page's
-license turned out unclear, not open. **Still genuinely open**: no German
-source has been found inside the actual 1400-1438 window — the closest
-candidate (*Das Buoch von guoter Spise*) is 60-90 years too early, so SQ-3
-needs an explicit decision (accept that gap, or scope to Latin/Italian
-only) before the manifest step. **Remaining and blocking**: building the
+license turned out unclear, not open. **German-source gap resolved
+(2026-09-23, Claude)**: *Das Buoch von guoter Spise* (Middle High German,
+ca. 1345-1354) accepted as the German candidate despite predating Voynich
+by 60-90 years — SQ-3 validates recovery methods against plausible period
+systems generally, not Voynich's specific date, so the typological
+diversity (a genuinely different language family from the Latin/Italian
+sources) outweighs the temporal mismatch. Standing requirement: any SQ-3
+result using this source carries the 60-90-year caveat explicitly, every
+time. Full reasoning in `data/derived/sq3-source-discovery-candidates.md`.
+**Remaining and blocking**: building the
 actual frozen manifest requires downloading the agreed sources, which
 needs explicit user authorization per this project's standing rule on
 file downloads — not yet given, so this has not proceeded solo.

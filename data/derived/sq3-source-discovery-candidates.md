@@ -80,9 +80,22 @@ manuscript.
   than any Latin/Italian candidate above. *Gart der Gesundheit* (1485,
   Mainz, printed) remains a closer-date but printed/later alternative. No
   German manuscript source in the actual 1400-1438 window was found this
-  pass; SQ-3 may need to either accept this gap and scope explicitly to
-  Latin/Italian, or accept the older Middle High German text as a looser
-  "same general scribal culture, different half-century" control.
+  pass. **Decided 2026-09-23 (Claude, solo, Steering Committee Meeting #8's
+  shelved action item, re-raised by a routine loop-tick sweep of unresolved
+  meeting decisions)**: accepted as SQ-3's German candidate, not dropped.
+  Reasoning: SQ-3's actual purpose (`config/sidequests.md`) is validating
+  whether this project's recovery methods work on *plausible 15th-century
+  writing/cipher systems in general*, not making any claim about Voynich's
+  own date — the sidequest is explicitly a methods-validation exercise
+  against known answer keys, not a dating study. A 60-90-year-older text in
+  the same broad medieval scribal and manuscript tradition still tests
+  method generalization across a genuinely different language family
+  (Germanic vs. the Latin/Italian Romance sources above), which is worth
+  more to the validation panel's typological coverage than the small,
+  clearly-disclosed cost of a temporal-window caveat. **Standing
+  requirement**: any SQ-3 result drawing on this source must carry the
+  60-90-year caveat explicitly, every time — it validates method
+  applicability to the era/genre broadly, not to Voynich's exact window.
 
 ## Candidate documented period transformations (abbreviation/nomenclator/cipher)
 
@@ -171,9 +184,10 @@ manuscript.
    license terms turned out unclear rather than open (checked this pass —
    see above); it's demoted to a secondary/reference candidate unless
    permission is requested directly or the print edition is used instead.
-3. German candidate remains imperfect (see above — nothing found in the
-   1400-1438 window itself). Decide: accept *Das Buoch von guoter Spise*'s
-   older date, or scope SQ-3 to Latin/Italian only and say so explicitly.
+3. ~~German candidate remains imperfect~~ — **resolved 2026-09-23**:
+   *Das Buoch von guoter Spise* accepted as the German candidate, with a
+   standing 60-90-year caveat requirement on any result using it (see
+   above for the full reasoning).
 4. ~~Tranchedino ledger: read the liu.se paper in full~~ — **resolved**: read
    directly. It doesn't transcribe the *larger* Tranchedino ledger's tables,
    but supplies something better for this purpose — Domnina (2018)'s own
