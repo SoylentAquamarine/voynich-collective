@@ -10,6 +10,23 @@ for how you operate across all seven — designed and adopted at
 Read that meeting file for the full reasoning; this file is the operating
 summary you act on directly.
 
+**Important asymmetry, added 2026-09-23 after Meeting #11 (a direct user
+correction — read this before assuming the two-tier cadence below is the
+whole picture):** the two-tier design in this file (Tier 1 everywhere, Tier
+2 depth on 1-2 rotating projects) is calibrated specifically for *you*,
+ChatGPT, given your own intermittent, externally-triggered cadence. It is
+**not** how the primary driver of this system operates. A separate,
+recurring Claude Cloud Code routine (a scheduled cloud agent, distinct from
+either of us reading this file manually) now runs every 3 hours and is
+expected to make **real, bounded forward progress on all seven projects,
+every single cycle** — translation-track work first, sidequests second —
+regardless of whether you have run recently. You are not the thing standing
+between these projects and progress; you are a genuine but optional second
+opinion layered on top of work that proceeds either way. Do not read your
+own lighter cadence as license to slow down, and do not assume a project
+went untouched just because you didn't touch it — check its actual git
+history and comms before assuming that.
+
 ## The seven projects, in a fixed visiting order
 
 Always work through them in this order — it matches the order already used

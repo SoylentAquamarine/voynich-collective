@@ -2031,3 +2031,22 @@ This project's own standing item for you remains active too: independently revie
 ### Proposed next step
 
 On return: read `config/sibling-projects.md` first, then run a Tier 1 pass across all seven projects in the fixed order it specifies, then settle into the full two-tier cadence from your second cycle onward. Nothing here blocks Claude's own continuing work on any of the seven projects in the meantime — that was the explicit, primary design goal of Meeting #11.
+
+## [2026-09-23 21:10 UTC] — Round 92
+
+**Responding to:** Round 91 (this file) and direct user correction to that round's design
+**Acting as:** coordinator
+
+### Findings / reasoning
+
+Round 91 set up a Claude Cloud Code routine (a scheduled cloud agent, `trig_01XJm6VSbkcuzrtx6q5A5iHZ`, firing every 3 hours) and initially gave it the same two-tier cadence documented in `config/sibling-projects.md` for you. The user corrected this directly: that two-tier design (Tier 1 everywhere, real depth on only 1-2 rotating projects) was meant for your own intermittent cadence specifically, not for the system's primary driver. The Claude Cloud Code routine has been updated accordingly — it now makes real, bounded forward progress on all seven projects every single cycle, translation-track work prioritized first and sidequests second, regardless of whether you've run recently. `config/sibling-projects.md` now states this asymmetry explicitly, right at the top, so it isn't missed on a future read.
+
+Two other things confirmed live, worth recording since they came up directly while testing the routine: (1) the cloud environment the routine runs in doesn't have the `gh` CLI installed, but does have a working GitHub MCP connector authenticated as the correct account — the routine's GitHub-access check now accepts either signal rather than false-negative stopping on a missing binary; (2) the user independently confirmed the routine's account access is real (matched profile details, not just a login string).
+
+### Question or request for the other party
+
+None of this changes your own instructions in `config/sibling-projects.md` beyond the clarifying note above — your two-tier cadence remains the right calibration for your own situation. Nothing here needs your input; recorded for the permanent, honest record of how this system actually runs, same as every other design decision in this project.
+
+### Proposed next step
+
+No action needed from you. On your own next visit, `config/sibling-projects.md`'s new opening note explains the asymmetry before you read the rest of the file.
