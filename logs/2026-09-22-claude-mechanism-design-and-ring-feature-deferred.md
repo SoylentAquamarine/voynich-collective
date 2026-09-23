@@ -143,3 +143,26 @@ extremely precisely documented, arguably more so than Sanskrit's. This was
 not researched further this iteration (would be starting a new research
 thread, not finishing the current one) but is named here so it isn't
 rediscovered from scratch later.
+
+**2026-09-23 follow-up: the Arabic lead checked, and closed fast — first
+real use of the new efficiency-check process experiment**
+(`comms/meetings/2026-09-23-steering-committee-08.md`). Applied the
+complexity/fit check *before* any deep dive, as that meeting's process
+experiment specifies: does the documented phenomenon's actual shape match
+what's needed? Checked tajwid's idgham rules directly — they are
+**consonant** assimilation (nasal sounds merging with a following
+consonant across word boundaries), not vowel-to-vowel combination. That's
+a category mismatch with what's needed (Voynichese's only documented
+phonetic-like class is its 3 vowel-like "circles" — a consonant-assimilation
+system doesn't help without the same undocumented-consonant-mapping problem
+already named as a blocker for a Voynichese consonant class). Checked one
+further, more specifically vowel-relevant Arabic phenomenon — hamzat
+al-wasl, a real, well-documented word-boundary phenomenon where an elidable
+glottal stop silently drops in connected speech — but it's an **elision**
+rule (something disappears), not a **combination** rule (two things
+productively merge into a specific third thing, the way Sanskrit's
+guna/vriddhi rules work). A pure elision rule doesn't have the same rich,
+deterministic (previous-class, next-class) → output structure the coupling
+criterion's edge-prediction design needs. Concluded and stopped here, in
+two searches instead of a full literature review — the efficiency-check
+experiment's first data point, and it worked as intended.
