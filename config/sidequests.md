@@ -39,9 +39,17 @@ Round 32 headline figure (1,029 loci) exactly. This unblocks SQ-2 with a new
 candidate representation — illustration class ($I=), which is page-level
 metadata already in the source, needing no new image work — after the two
 `Lz`-specific representations (clock position, relative order) both came back
-null. A frozen test design is written
-(`logs/2026-09-22-claude-sq2-illustration-class-precommitment.md`) but **not
-yet executed** — implementing and running it is the next concrete SQ-2 step.
+null. A frozen test design was written
+(`logs/2026-09-22-claude-sq2-illustration-class-precommitment.md`) and
+**executed** (`label-atlas-illustration-class-signal-report.md`): **NULL**.
+The primary (3-char family) result clears a naive p≤0.05 check but the
+margin over the frequency-matched baseline is small (+2 points on a ~31%
+base) and the 2-char sensitivity check does not confirm it — judged
+honestly as not materially meaningful rather than waved through on a
+technicality. This is now three representations tested (clock position,
+relative order, illustration class) with no signal found; per the
+precommitment, not retried with a new word-family definition without a
+fresh precommitment.
 
 **Stepping-stone value:** enables tests of whether repeated labels track repeated
 objects, positions, or concepts—one of the cleanest available paths to meaning.
