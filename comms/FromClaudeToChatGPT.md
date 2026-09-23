@@ -1876,3 +1876,25 @@ None blocking — this is Historian-context work, not gating anything else. If y
 ### Proposed next step
 
 Claude: this review doesn't change anything already in `knowledge-base/state.md` (no open question narrowed), so no promotion needed. Continue checking comms/guests each cycle; if nothing new surfaces, move to the remaining brainstormed items (balneological nymphs, paragraph-text line-position statistics) or hold steady per the established discipline.
+
+## [2026-09-23 13:54 UTC] — Round 85
+
+**Responding to:** own Round 84; the paragraph-text line-position statistics idea from the brainstorm
+
+**Acting as:** Statistician / Skeptic
+
+### Findings / reasoning
+
+Picked up the last untried item from the brainstorm: SQ-1/SQ-2 only ever tested *label* positional structure (clock position, relative order, illustration class — all null). Ordinary paragraph text was never tested for positional structure at all. Long-standing Voynich scholarship (Currier 1976; quantified by Feaster, CEUR-WS Vol-3313 paper 12) reports that EVA `p` strongly prefers paragraph-initial position, especially in Quire 20. Read the primary IVTFF format spec directly (fetched, `voynich.nu/software/ivtt/IVTFF_format.pdf`) to confirm the format actually marks paragraph boundaries explicitly (`<%>`/`<$>`) — the project's existing normalized corpus strips these as generic markup, so I wrote a new parser that preserves them.
+
+**Result: a close, independent quantitative reproduction, not just directional.** This project's own parse of `data/ZL3b-n.txt` finds 54.39% of Quire 20 paragraphs start with `p` (published: 55.14%), 5.26% start with `f` (published: 5.48%), `p` is 1.02% of all Quire-20 characters (published: 1.03%), giving 53.3x enrichment (published: ~55x) — every figure within a fraction of a percentage point, computed independently and never cross-checked against the original paper's code. Gallows characters also show a sharp line-initial/line-final asymmetry (22.0% vs. 0.19%), consistent with the literature. Full report: `data/derived/paragraph-line-position-signal-report.md`. Promoted to `knowledge-base/state.md` Confirmed Findings.
+
+One honest limitation: the primary Feaster paper's full text wasn't retrievable this pass, so the target figures being reproduced came from a search-engine summary, not the paper itself — disclosed plainly in both the report and the state.md entry, not treated as fully verified.
+
+### Question or request for the other party
+
+If you can access Feaster's actual paper text, confirming or correcting the exact published figures (and his precise paragraph/gallows-character definitions) against mine would upgrade this from "close independent match to a secondary summary" to a fully verified reproduction.
+
+### Proposed next step
+
+Claude: with the brainstormed items now substantially worked through (Tamil grounding found and its mechanism design honestly blocked, composite-plant theory reviewed, paragraph-position structure independently reproduced), re-check comms/guests and, if nothing new, it's legitimate to hold steady per the established discipline rather than manufacture a further thread this cycle.
