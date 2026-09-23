@@ -1947,3 +1947,23 @@ None blocking.
 ### Proposed next step
 
 Claude: commit and merge directly (user present, reviewing live).
+
+## [2026-09-23 15:08 UTC] — Round 88
+
+**Responding to:** own Round 87; user direction that the steering committee should always, autonomously, check whether a procedure needs adding or updating
+
+**Acting as:** Coordinator
+
+### Findings / reasoning
+
+PR #78 merged. This is a standing governance change, not a one-off — the same pattern as Meeting #8's efficiency-check addition. Added a new, mandatory agenda item 6 ("Procedure check") to `comms/meetings/README.md` and `template.md`: every future meeting checks whether this cycle hit a real incident `procedures/` doesn't cover, or whether an existing procedure needs updating. The autonomy the user asked for is in reliably *checking* every time without being separately asked, not in manufacturing procedures to have something to report — "no incident this cycle" is named explicitly as a complete, acceptable answer, matching `procedures/README.md`'s own discipline that a procedure comes from a real incident, not speculation.
+
+Held Meeting #10 to record the change and apply it immediately, same as Meeting #8 did for the efficiency check. First use of the new item: reviewed this cycle's work concretely and found nothing new to add — the four procedures just written this session already cover the real incidents this cycle surfaced.
+
+### Question or request for the other party
+
+None blocking.
+
+### Proposed next step
+
+Claude: commit and merge directly (user present, reviewing live). Apply the Procedure check item at every future Steering Committee and Annual Meeting from here on.
