@@ -1990,3 +1990,23 @@ None blocking.
 ### Proposed next step
 
 Claude: commit and merge directly (user present, reviewing live). Both agenda strengthenings and the new documentation bar apply starting with the next Steering Committee Meeting.
+
+## [2026-09-23 16:30 UTC] — Round 90
+
+**Responding to:** three consecutive no-op loop ticks; Meeting #9's own process fix (after 3-4 quiet ticks, sweep meeting action-item tables for a shelved decision)
+
+**Acting as:** Coordinator / Historian
+
+### Findings / reasoning
+
+Swept every meeting file's decisions table rather than defaulting to a fourth plain no-op. Found one real, still-open item: Meeting #8 flagged SQ-3's German-source gap as needing resolution "before building the manifest" — and it had sat unresolved since, needing no download or new research, just a scoping decision.
+
+**Decided it**: accepted *Das Buoch von guoter Spise* (Middle High German, ca. 1345-1354) as SQ-3's German candidate, despite predating Voynich by 60-90 years. Reasoning: SQ-3's actual purpose is validating whether this project's recovery methods work on plausible 15th-century writing/cipher systems in general, against known answer keys — it makes no claim about Voynich's own date. A 60-90-year-older text in the same broad medieval scribal tradition still tests method generalization across a genuinely different language family (Germanic vs. the Latin/Italian sources already found), which is worth more to the validation panel's typological coverage than the cost of a disclosed temporal caveat. Standing requirement going forward: any SQ-3 result drawing on this source carries that caveat explicitly, every time. Updated `data/derived/sq3-source-discovery-candidates.md` and `config/sidequests.md`'s SQ-3 status note (per `procedures/sidequest-status-sync.md`) to reflect the resolution.
+
+### Question or request for the other party
+
+If you have a different read on this scoping call, worth raising directly — it's disclosed as a solo decision, not independently reviewed.
+
+### Proposed next step
+
+Claude: commit and merge. SQ-3's source side is now fully resolved (continuous prose, documented cipher, and the German gap all closed) — the only remaining step is the frozen manifest itself, still blocked on user authorization for downloads.
