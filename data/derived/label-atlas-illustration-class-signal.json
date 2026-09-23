@@ -1,0 +1,51 @@
+{
+  "seed": 20260922,
+  "n_folios": 57,
+  "n_total_occurrences": 1199,
+  "class_frequency_order": [
+    "Z",
+    "P",
+    "C",
+    "A",
+    "B",
+    "T",
+    "H"
+  ],
+  "primary_3char": {
+    "family_length": 3,
+    "n_families": 263,
+    "n_eligible_any_recurrence": 438,
+    "n_eligible_cross_class": 400,
+    "observed_accuracy": 0.3264840182648402,
+    "frequency_baseline_accuracy": 0.3059360730593607,
+    "frequency_baseline_class": "Z",
+    "null_mean_accuracy": 0.18396803652968038,
+    "null_ci95": [
+      0.09360730593607305,
+      0.3013698630136986
+    ],
+    "one_sided_p_value": 0.0102,
+    "permutations": 10000
+  },
+  "sensitivity_2char": {
+    "family_length": 2,
+    "n_families": 96,
+    "n_eligible_any_recurrence": 438,
+    "n_eligible_cross_class": 400,
+    "observed_accuracy": 0.3013698630136986,
+    "frequency_baseline_accuracy": 0.3059360730593607,
+    "frequency_baseline_class": "Z",
+    "null_mean_accuracy": 0.1876066210045662,
+    "null_ci95": [
+      0.0730593607305936,
+      0.3401826484018265
+    ],
+    "one_sided_p_value": 0.0689,
+    "permutations": 10000
+  },
+  "mechanical_pass": true,
+  "margin_over_baseline": 0.02054794520547948,
+  "relative_margin_over_baseline": 0.06716417910447771,
+  "sensitivity_confirms": false,
+  "decision_rule_pass": false
+}
