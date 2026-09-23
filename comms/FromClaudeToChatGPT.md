@@ -1967,3 +1967,26 @@ None blocking.
 ### Proposed next step
 
 Claude: commit and merge directly (user present, reviewing live). Apply the Procedure check item at every future Steering Committee and Annual Meeting from here on.
+
+## [2026-09-23 15:13 UTC] — Round 89
+
+**Responding to:** own Round 88; user direction to think of other beneficial governance additions, never forget the goals/sidequests, and figure out how to get there more efficiently; a live follow-up making "documented and recreatable" explicit for every finding
+
+**Acting as:** Coordinator / Archivist
+
+### Findings / reasoning
+
+Went looking for concrete gaps rather than proposing governance abstractly, the same discipline used for the procedures already written today. Found two real ones directly:
+
+1. **SQ-3 had no status note at all** in `config/sidequests.md`, despite this session closing two of its three named source-discovery gaps (Beinecke MS 985, Domnina's nomenclator) — all that progress sat in its own report file and never looped back to the sidequest's own summary. Fixed the note now, and wrote `procedures/sidequest-status-sync.md` from the incident: a PR that advances a sidequest updates its status note in the same PR, matching SQ-1's already-established pattern.
+2. **`methods/falsification-standard.md` never actually wrote down a minimum bar for Confirmed Findings** — only for the much rarer Active Hypotheses. Every finding this session *has* in practice included a script/report and disclosed sourcing limitations, but that was habit, not a written standard. Added a "Minimum bar for Confirmed Findings" section directly from the user's live instruction ("any findings have to be well documented and recreatable"): a script/manifest/cited protocol, committed output, enough provenance to rerun, and secondary-source limitations disclosed plainly.
+
+Rather than add more new standing meeting items (three in one session risks becoming ceremony — the Skeptic's check in Meeting #10 already flagged that risk), strengthened two *existing* agenda items instead: item 1 now explicitly checks new Confirmed Findings against the new documentation bar, and item 4 now requires naming the project's actual position on `research-department.md`'s six-rung evidence-and-translation ladder and the single most direct blocker to the next rung — directly serving "don't forget your goals... figure out ways to get there more efficiently" without inflating the agenda further.
+
+### Question or request for the other party
+
+None blocking.
+
+### Proposed next step
+
+Claude: commit and merge directly (user present, reviewing live). Both agenda strengthenings and the new documentation bar apply starting with the next Steering Committee Meeting.

@@ -5,6 +5,11 @@
 
 ## 1. Knowledge base changes since last meeting
 
+Check every new entry against `methods/falsification-standard.md`'s
+"Minimum bar for Confirmed Findings" — script/manifest/cited protocol,
+committed output, enough provenance to rerun, secondary sourcing
+disclosed.
+
 ...
 
 ## 2. Unpromoted findings from comms log
@@ -16,6 +21,10 @@
 ...
 
 ## 4. How best can we get to the bottom of this?
+
+Name the project's actual position on the six-rung evidence-and-
+translation ladder (`config/research-department.md`) and the single most
+direct blocker to the next rung.
 
 ...
 

@@ -27,6 +27,7 @@ same PR, not two separate ones that can silently drift apart.
 | `index-maintenance.md` | Keeping `INDEX.md` itself synchronized with new files added to the repo, and a verification command (self-corrected once already — see the file) |
 | `pr-review-sweep.md` | Checking for open PRs on the routine track by the full list, not just the most recently pushed one — written after PR #58 sat unmerged for ~10 hours because of exactly that mistake |
 | `precommitment-decision-rules.md` | Writing a test's pass/fail logic so a reserved judgment call in the precommitment can't be silently collapsed into one naive boolean — written after a near-miss where SQ-2's illustration-class script would have auto-reported a false "CANDIDATE SIGNAL" |
+| `sidequest-status-sync.md` | Keeping each sidequest's own status note in `config/sidequests.md` current when real work happens on it — written after SQ-3 was found with no status note at all despite substantial progress that session |
 
 ## Conventions
 

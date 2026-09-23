@@ -18,6 +18,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `procedures/index-maintenance.md` | Standing rule and a verification command for keeping `INDEX.md` itself synchronized with new files added to the repo — the verification command's first draft (diff-only) was caught missing untracked new files, including this file itself, while writing it |
 | `procedures/pr-review-sweep.md` | Checking for open PRs on the routine track by the full list, not just the most recently pushed one — written after PR #58 sat unmerged for ~10 hours because of exactly that mistake |
 | `procedures/precommitment-decision-rules.md` | Writing a test's pass/fail logic so a reserved judgment call can't be silently collapsed into one naive boolean — written after a near-miss where SQ-2's illustration-class script would have auto-reported a false "CANDIDATE SIGNAL" |
+| `procedures/sidequest-status-sync.md` | Keeping each sidequest's own status note in `config/sidequests.md` current when real work happens on it — written after SQ-3 was found with no status note at all despite substantial progress that session |
 | `config/research-department.md` | Shared mission, department structure, translation ladder, laptop compute policy, and evolution loop |
 | `config/claude.md` | Claude's lead-manager configuration — accepted with one narrowing (compute policy scoped to what Steering Committee Meeting #5 actually approved); includes Claude's truthful self-description |
 | `config/chatgpt.md` | ChatGPT's two-hour, non-blocking audit and sidequest configuration |

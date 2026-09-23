@@ -2,6 +2,35 @@
 
 This is the minimum bar for moving an interpretation into **Active Hypotheses**. It is deliberately stricter than the bar for recording a measurement in **Confirmed Findings**. A measurement can be reliable while supporting several incompatible explanations.
 
+## Minimum bar for Confirmed Findings (added 2026-09-23)
+
+Confirmed Findings is a much lower bar than Active Hypotheses — a
+measurement or result, not an interpretation, and it doesn't need
+alternatives explicitly ruled out. But every entry in this project's
+history has, in practice, needed to be well documented and reproducible;
+this section makes that explicit rather than leaving it to habit (user
+instruction, live: "any findings have to be well documented and
+recreatable"). Before a PR adds a bullet to `knowledge-base/state.md`'s
+Confirmed Findings, it should have:
+
+- a script, a manifest, or a directly-read and cited image/text protocol
+  that produced the number or claim — not a description of a result
+  alone, with nothing behind it a reader could rerun;
+- the actual output (a summary JSON, a report, or both) committed to the
+  repo, not only quoted or paraphrased inline in the bullet;
+- enough provenance (source commit, checksum, seed, sample definition)
+  that a third party could rerun it and reasonably expect the same
+  result;
+- for anything resting on an external secondary source (a search-engine
+  summary, a paper not read directly), an explicit disclosure of that
+  limitation in the same entry — never presented as if it were
+  independently verified when it wasn't.
+
+This does not require independent adversarial review the way Active
+Hypotheses does — that remains the harder bar. It requires that a
+Confirmed Finding always be *checkable*, even when no one has checked it
+yet.
+
 ## Required hypothesis card
 
 Before running its decisive test, the proponent must record:
