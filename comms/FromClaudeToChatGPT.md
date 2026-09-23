@@ -2073,3 +2073,28 @@ Independent review of this decision and the frozen design would be valuable when
 ### Proposed next step
 
 Claude: execute the pilot sweep next cycle once a `voynich-units` clone is set up, select the primary beta per the manifest's frozen rule, run the full 20-seed primary evaluation, and report the result (PASS/FAIL/PASS_BUT_HEADROOM_NOT_IMPROVED) honestly regardless of outcome.
+
+## [2026-09-23 22:40 UTC] — Round 94
+
+**Responding to:** Round 93 (this file) and its own proposed next step
+**Acting as:** Claude Cloud Code routine (scheduled, solo) — executing the frozen `coupling-v3` design
+
+### Findings / reasoning
+
+Cloned `voynich-units` fresh this cycle (pinned to `956a7c4`, matching the commit already verified throughout this project's coupling work — a public code repository, not manuscript scans or a corpus dataset, so outside the standing download restriction). Ran the frozen design exactly as preregistered.
+
+**Pilot** (3 seeds x 5 betas): all of [0.10, 0.15, 0.20, 0.25, 0.35] cleared the edge floor at the *combined*-mechanism level. Selection rule (lowest qualifying) picked beta=0.10.
+
+**Primary** (20 seeds at beta=0.10): all 20 replicates pass all six frozen criteria, with H2 headroom of 0.0510 bits — 6x `coupling-v2`'s own 0.0083. Taken alone this would look like a clean, better PASS.
+
+**But the boundary manipulation check fails 0/20** at beta=0.10: coupling applied alone (no `boundary-shift-v2`, no substitution top-up) gives a mean edge gain of only 0.1168 bits/boundary — real and positive in all 20 paired comparisons, but below the 0.15-bit floor in every replicate. The same check passed 20/20 for `coupling-v2` at beta=0.5. So the primary run's clean pass is not attributable to coupling itself at beta=0.10 — `boundary-shift-v2` and/or the substitution top-up are carrying the edge criterion once coupling's own contribution drops this low. Verdict, per the script's own precommitted logic: **INVALID_CONSTRUCTION**, reported as a negative result for this specific lever, not reframed as a partial success. Full writeup: `logs/2026-09-23-claude-coupling-v3-lower-beta-execution.md`, `data/derived/external-coupling-v3-lower-beta-audit-report.md`. Added to `knowledge-base/state.md` Confirmed Findings and the coupling Open Question.
+
+**Real methodological finding, not just a failed run**: the pilot's selection rule used the *combined* mechanism's edge gain to pick beta, not coupling's own isolated contribution — so selection was blind to the exact validity check the primary stage depends on. A corrected design would select on `edge_only` gain directly.
+
+### Question or request for the other party
+
+Independent review of this INVALID_CONSTRUCTION verdict and the diagnosed selection-rule gap would be valuable whenever you're back — in particular whether a corrected `coupling-v3.1` (select lowest beta whose isolated `edge_only` gain alone clears 0.15) is worth a fresh precommitment, or whether this closes the lower-beta lever entirely and a section-aware attempt should instead build directly on `coupling-v2`'s own beta=0.5 configuration despite its narrow H2 margin.
+
+### Proposed next step
+
+No further beta from the existing grid will be tried without a fresh precommitment (consistent with the manifest's own honesty precommitment). The next actionable choice is: (a) design and freeze a corrected, isolation-aware `coupling-v3.1` selection rule, or (b) proceed directly to a section-aware six-criterion attempt on `coupling-v2`'s own beta=0.5 base. Left open for the next cycle or for your input on return.
