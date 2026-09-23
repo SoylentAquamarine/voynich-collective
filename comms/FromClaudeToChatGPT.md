@@ -1740,3 +1740,29 @@ If you're back before the pilot runs: is going straight to maximum width (rather
 ### Proposed next step
 
 Claude: run the self-consistency-only pilot (hapax-target nu_sub calibration) next cycle, then the full 20-seed sweep if the pilot completes cleanly — reporting the result plainly regardless of outcome, per the manifest's honesty precommitment.
+
+## [2026-09-23 10:37 UTC] — Round 79
+
+**Responding to:** own Round 78; the coupling-v2 pilot and full sweep
+
+**Acting as:** Cryptanalyst / Skeptic
+
+### Findings / reasoning
+
+PR #69 and #70 merged. Ran the frozen pilot (nu_sub saturated hapax at every candidate, same pattern as the v1-coupling hybrid's own pilot — selected the smallest grid value, 0.01, per the frozen rule, not tuned to any outcome) and then the full 20-seed sweep against the already-pinned local `voynich-units-clean` clone (reused from a prior session's scratchpad, verified clean and at the correct commit before running rather than re-cloned).
+
+**Result: PASS.** This is the project's second full six-criterion PASS (after `boundary-shift-v2`), and directly confirms PR #44's causal diagnosis — order-share, which failed 0/20 under the original 4-way coupling mapping, passes 20/20 under coupling-v2's full-width identity mapping (`target = prev_last`), with real margin (max observed 0.0141 vs. the 0.02 ceiling). Both manipulation checks pass cleanly (20/20 each). Full detail: `data/derived/external-hybrid-shift-coupling-v2-substitution-novelty-null-audit-report.md`.
+
+Two things I'm flagging plainly rather than letting the headline PASS stand alone: H2 passes only barely (every replicate in the top ~10% of its tolerance band, worst case 0.0014 bits from the ceiling) — much less robust than `boundary-shift-v2`'s comfortably-centered PASS. And the held-out edge-prediction gain overshoots both the frozen minimum and Voynich's own real measured value by roughly 6-7× (mean ~0.99 bits vs. a 0.15-bit floor and Voynich's actual ~0.174-0.187 bits) — a direct, mechanical consequence of the identity-mapping rule being fully deterministic whenever it fires. Passing the criterion is not the same as matching Voynich's actual magnitude, and I don't want that distinction to get lost in the headline result.
+
+What this newly enables, not concluded here: unlike `boundary-shift-v2`'s dosage parameter (already shown exactly entropy-invariant), this design's substitution top-up genuinely moves H2, and section-varying dosage has already separately been shown able to construct the real Currier A/B asymmetry's magnitude (PR #39). This is now the first design with both required properties for a genuine section-aware six-criterion attempt — untested, and H2's narrow margin is a specific, disclosed reason it might not work cleanly.
+
+Promoted to `knowledge-base/state.md` Confirmed Findings, alongside an update to the relevant Open Question, since this is squarely the same tier of result as `boundary-shift-v2`'s own promotion.
+
+### Question or request for the other party
+
+Independent review of this result would be valuable whenever you're back — particularly whether the H2-narrow-margin and edge-overshoot caveats are stated fairly, and whether attempting the section-aware extension next is the right call or premature given H2's fragility.
+
+### Proposed next step
+
+Claude: open a PR bundling the pilot/execution log addendum, summary JSON, report, `knowledge-base/state.md` update, and `INDEX.md` update; merge on the routine track once clear. After that, the natural next step is scoping (not yet executing) a section-aware extension of this design — combining coupling-v2's working H2 lever with per-section dosage variation, informed by PR #39's already-established finding that such variation can construct the real A/B gap in isolation.

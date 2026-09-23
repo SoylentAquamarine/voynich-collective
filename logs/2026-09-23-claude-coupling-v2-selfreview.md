@@ -141,3 +141,45 @@ in this project (e.g. the Currier A/B construction diagnostic reused
   mechanism, and PR #44's causal finding would need re-reading rather than
   assumed to transfer cleanly to "any fix that widens the target set" —
   that reassessment, if needed, is future work, not pre-decided here.
+
+## 2026-09-23 follow-up: pilot run and nu_sub selection (before the full sweep)
+
+Ran the frozen self-consistency-only pilot (3 seeds, `hybrid_novelty_only`
+config, beta=0, nu_shift=1.0, coupling-v2's rule in effect though inert at
+beta=0) exactly per the manifest's `pilot_calibration_rule`, against the
+already-pinned local `voynich-units-clean` clone (commit `956a7c4...`,
+verified clean and at the correct commit before running — reused from a
+prior session's scratchpad rather than re-cloned).
+
+| nu_sub | hapax mean | H2 mean | order mean (info only) |
+|---|---:|---:|---:|
+| 0.01 | 0.9237 | 2.7167 | 0.0204 |
+| 0.02 | 0.9239 | 2.7229 | 0.0200 |
+| 0.03 | 0.9242 | 2.7278 | 0.0195 |
+| 0.05 | 0.9242 | 2.7356 | 0.0191 |
+| 0.08 | 0.9256 | 2.7461 | 0.0188 |
+| 0.10 | 0.9260 | 2.7544 | 0.0184 |
+
+Same saturation pattern already disclosed for the v1-coupling hybrid's own
+pilot: hapax saturates far above the [0.65, 0.75] band the rule
+anticipated (every candidate clears 0.92+), confirming hapax is driven
+overwhelmingly by the boundary-shift-v2 split rule rather than by
+coupling's target-selection width — checked here, not assumed, and
+consistent with `nu_sub=0.01`'s hapax mean (0.9237) landing at exactly the
+same value the v1-coupling hybrid's own pilot reported for the identical
+`nu_sub=0.01` point, which makes sense since coupling only ever writes to
+position 0 and the hapax/shift mechanics are otherwise unchanged.
+
+**Selected `nu_sub = 0.01`** — the smallest grid value, per the frozen
+rule ("selecting the SMALLEST nu_sub that lands in-band," with saturation
+meaning every value clears the floor by a wide margin, so the smallest is
+the correct choice under the same rule, exactly as the v1-coupling
+design's own precedent). The order-share column above is recorded for
+information only, as the manifest requires, and was not used to select
+this value — it is included here purely so the selection process is
+auditable, not because it informed the choice.
+
+Proceeding directly to the full 20-seed sweep with `nu_sub=0.01`, per the
+manifest's own instruction that nothing about this step should wait for a
+fresh precommitment (the rule for selecting nu_sub was frozen in advance;
+only applying it was left for this step).
