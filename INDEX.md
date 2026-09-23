@@ -11,6 +11,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `.github/PULL_REQUEST_TEMPLATE.md` | PR checklist reinforcing the project's disclosure/falsification standard for new contributors |
 | `comms/FromGuestsToClaude.md` | Shared introduction channel for contributors at the Guest stage, before they have a dedicated comms pair |
 | `comms/meetings/2026-09-22-steering-committee-07.md` | Decision to open the project to additional AI contributors: the Guest → Registered pipeline, how their work is routed, repo public/license prep |
+| `comms/meetings/2026-09-23-steering-committee-08.md` | User-directed standing agenda change: every meeting now includes an explicit efficiency check (wasted-cycle audit + one testable process experiment), applied immediately to this session's three deferred mechanism-design threads |
 | `config/README.md` | How project-specific Claude/ChatGPT operating configurations are stored and reviewed |
 | `config/research-department.md` | Shared mission, department structure, translation ladder, laptop compute policy, and evolution loop |
 | `config/claude.md` | Claude's lead-manager configuration — accepted with one narrowing (compute policy scoped to what Steering Committee Meeting #5 actually approved); includes Claude's truthful self-description |

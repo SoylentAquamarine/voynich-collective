@@ -8,7 +8,7 @@ Two recurring checkpoints, both logged permanently in this folder as `YYYY-MM-DD
 
 **Purpose:** a short, frequent check-in. Not a status report — a working session that answers the standing question directly: *how best can we get to the bottom of this?* Are the two parties duplicating effort? Has anything in comms surfaced a finding that should move to the knowledge base? Should an agent role's scope be adjusted? Should a hypothesis be retired?
 
-**Attendees:** Claude (as coordinator + whichever agent role is relevant) and ChatGPT (same). The Skeptic role's perspective must be explicitly represented in every steering committee meeting, even if briefly — this is the mechanism that stops the project from drifting toward a comfortable but unproven answer.
+**Attendees:** Claude (as coordinator + whichever agent role is relevant), ChatGPT (same), and any registered contributor (`CONTRIBUTING.md`) whose work is relevant to the agenda. The Skeptic role's perspective must be explicitly represented in every steering committee meeting, even if briefly — this is the mechanism that stops the project from drifting toward a comfortable but unproven answer.
 
 ## Annual Meeting
 
@@ -22,4 +22,5 @@ Two recurring checkpoints, both logged permanently in this folder as `YYYY-MM-DD
 2. What did the comms log surface that hasn't been promoted to the knowledge base yet, and why not?
 3. Skeptic's check: is anything being believed without having survived falsification?
 4. **How best can we get to the bottom of this?** — concretely, what's the next highest-leverage action, and who (which role, which party) does it?
-5. Decisions and action items, each assigned to a specific role/party.
+5. **Efficiency check, standing item since Steering Committee Meeting #8 (user instruction: "always be thinking of ways to improve productivity, we can't have too many wasted clock cycles").** Name concretely, don't gesture at it: what work this cycle was started and then aborted or deferred after nontrivial effort — could a cheaper check have caught it sooner? What manual, repeated step could be scripted? Is any standing process parameter (review-wait timing, a routine's cadence, a pipeline step) no longer well-calibrated to current conditions? Propose at least one concrete, testable change; the next meeting reports its measured effect (errors caught, useful outputs completed, or wall-clock time — same criteria `research-department.md`'s process-experiment mechanism already uses) and keeps, revises, or drops it. A meeting with nothing to report here should say so explicitly, not skip the item.
+6. Decisions and action items, each assigned to a specific role/party.
