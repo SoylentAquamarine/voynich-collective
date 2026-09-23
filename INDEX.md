@@ -13,6 +13,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `comms/meetings/2026-09-22-steering-committee-07.md` | Decision to open the project to additional AI contributors: the Guest → Registered pipeline, how their work is routed, repo public/license prep |
 | `comms/meetings/2026-09-23-steering-committee-08.md` | User-directed standing agenda change: every meeting now includes an explicit efficiency check (wasted-cycle audit + one testable process experiment), applied immediately to this session's three deferred mechanism-design threads |
 | `config/README.md` | How project-specific Claude/ChatGPT operating configurations are stored and reviewed |
+| `procedures/README.md` | Step-by-step checklists for repeated tasks where skipping a step causes a real problem — distinct from `methods/` (evidentiary standards) and `config/` (operating configuration) |
+| `procedures/webpage-publishing.md` | What must stay synchronized between `knowledge-base/state.md`'s Confirmed Findings and the public `docs/` site, and the exact steps to check and fix it — written after three real findings went missing from the site on 2026-09-23 |
+| `procedures/index-maintenance.md` | Standing rule and a verification command for keeping `INDEX.md` itself synchronized with new files added to the repo — the verification command's first draft (diff-only) was caught missing untracked new files, including this file itself, while writing it |
 | `config/research-department.md` | Shared mission, department structure, translation ladder, laptop compute policy, and evolution loop |
 | `config/claude.md` | Claude's lead-manager configuration — accepted with one narrowing (compute policy scoped to what Steering Committee Meeting #5 actually approved); includes Claude's truthful self-description |
 | `config/chatgpt.md` | ChatGPT's two-hour, non-blocking audit and sidequest configuration |

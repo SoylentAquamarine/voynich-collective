@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Voynich Collective highlight: catching a real citation mistake in someone else's published research paper, and proving it before relying on their numbers.">
+  <meta name="theme-color" content="#17140f">
+  <title>We found a bug in someone else's published research · Voynich Collective</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="site-header" style="justify-content:space-between;">
+    <a class="brand" href="../index.html" aria-label="Voynich Collective home">
+      <span class="sigil" aria-hidden="true">V</span>
+      <span>Voynich Collective</span>
+    </a>
+    <a class="repo-link" href="../index.html">← Back to the highlights</a>
+  </header>
+
+  <main class="brag-page">
+    <div class="section-intro">
+      <p class="kicker">Highlight 06 of 6</p>
+      <h1>We found a bug in someone else's published research</h1>
+    </div>
+    <article class="markdown">
+      <p>Early on, we found a real academic paper by outside researchers that had already tested some of the same questions we were asking about the manuscript. Rather than start over, we wanted to build on their work — reuse their code, check their numbers, and add our own tests on top. Before we could trust any of it, though, we had to make sure we were actually looking at the same thing they were.</p>
+      <h2>The paper pointed to the wrong version of its own code</h2>
+      <p>The paper named a specific snapshot of its own code and data — like a paper citing "page 42" of a book — so anyone could go find exactly the version they used. We went and got it. It was empty. That exact snapshot didn't contain any of the scripts the paper said it used to produce its results.</p>
+      <p>That's a real problem: if you can't find what a paper says it used, you can't actually check its work, and neither can anyone else.</p>
+      <h2>We didn't guess — we checked</h2>
+      <p>Instead of assuming the paper was simply wrong, or quietly picking whatever version looked close enough, we did the boring, careful thing: we looked at the project's full history of saved versions, one at a time, to see exactly when the missing scripts actually appeared. We found them — in the very next saved version after the one the paper named, saved on the same day the paper itself was submitted. That's about as clear as evidence gets: the authors almost certainly meant to point to that version and cited the wrong one by a single step.</p>
+      <p>We wrote this up plainly as a real defect in the paper's own citation — not a mistake in their science, not a reason to distrust their results, just an easy, fixable error in the paperwork pointing to those results. Then we used the correct version going forward, and said so, so anyone checking our work later would know exactly which version we mean.</p>
+      <h2>Why this matters more than it might sound like</h2>
+      <p>This project's whole approach depends on results being checkable, not just believable. If we had shrugged and used the "close enough" version, or hadn't checked at all, every later comparison we made against that paper's numbers could have been quietly comparing against the wrong thing — and neither we nor anyone reading our work would have known. Catching it early meant every later use of that paper's results (and we used them a lot — see our "tried to fake it a dozen different ways" highlight) is standing on solid ground.</p>
+      <div class="tech-link-box">
+        Read the technical record: <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-09-19-skeptic-external-paper-audit.md">the full verification chain ↗</a>, where the version mismatch and its fix are documented alongside every other check made against this paper's results.
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div><span class="sigil small" aria-hidden="true">V</span><p><strong>Voynich Collective</strong><br>An open, falsification-driven investigation.</p></div>
+    <p>Content refreshes from the public repository. <a href="https://github.com/SoylentAquamarine/voynich-collective">Source and history ↗</a></p>
+  </footer>
+</body>
+</html>

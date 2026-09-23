@@ -82,6 +82,12 @@
             <p>While double-checking a result, we noticed our own measurements didn't match a number from a paper we'd cited. Instead of picking whichever number looked better, we tracked down why, said so plainly, and used only the trustworthy version.</p>
             <a class="read-more" href="highlights/caught-our-own-error.html">Read the full story →</a>
           </article>
+          <article class="highlight-card error-card">
+            <span class="highlight-number">06</span>
+            <h3>We found a bug in someone else's published research</h3>
+            <p>A published paper we wanted to build on pointed to the wrong saved version of its own code — the version it named was empty. We tracked down exactly where the real files actually were, proved it, and only then trusted its numbers.</p>
+            <a class="read-more" href="highlights/found-a-bug-in-published-research.html">Read the full story →</a>
+          </article>
         </div>
       </section>
 
@@ -118,6 +124,12 @@
         </div>
         <div class="currier-compare" id="currier-compare" aria-label="Currier A vs B comparison">Loading Currier A/B comparison…</div>
       </section>
+
+      <div class="highlights-intro" style="margin-top:3rem;padding-top:2.5rem;border-top:1px solid var(--line);">
+        <span class="kicker">Beyond the summary</span>
+        <h2>The full technical evidence, one panel at a time</h2>
+        <p>If you just wanted the wins and the current status, you've seen them above — everything from here down is the detailed proof, written for people who want to check the work step by step. Each panel has its own plain-English summary at the top and a link marked <strong>↗</strong> to the underlying report if you want to go deeper.</p>
+      </div>
 
       <section class="status-panel baseline-panel" aria-labelledby="baseline-title">
         <div>
@@ -378,6 +390,34 @@
           <figure><img src="assets/manuscript/f70v.jpg" alt="Voynich folio 70 verso, a zodiac roundel with figures and surrounding labels." loading="lazy"><figcaption>f70v · zodiac label layout</figcaption></figure>
         </div>
         <p>The earlier “foldouts, rosette, or damage” guess is too broad. The evidence fits a Currier coverage convention centered on body-text-rich pages; f65v shows that layout coverage—not damage alone—is the live issue. A follow-up character n-gram audit finds the hand-4 sequence internally graded rather than uniformly A-like or B-like, but no same-hand/same-topic labeled control exists. Public-domain Beinecke MS 408 scans are reproduced via Wikimedia Commons with exact provenance. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/unlabeled-currier-pages-report.md">Read the inventory and method ↗</a></p>
+      </section>
+
+      <section class="status-panel unlabeled-panel" aria-labelledby="label-recurrence-title">
+        <div>
+          <p class="kicker">Sidequest · three independent tests, one honest answer</p>
+          <h2 id="label-recurrence-title">Do the labels next to drawings hint at meaning? Not in the ways we could test.</h2>
+          <p class="snapshot-caveat">Many pages have short labels next to specific drawings (a zodiac figure, a plant, a container). We tried three different, separately pre-planned ways of asking whether a repeated label word predicts something — its position on the page, its order among the other labels, or what kind of picture it sits next to. All three came back null.</p>
+        </div>
+        <p>Each test was designed and locked in <em>before</em> we looked at the result, exactly like the six-number mechanism tests above — no peeking, no retrying with a different rule after seeing the answer. The closest call was the picture-type test: it looked promising at first glance, but a second, stricter check we had already promised to run did not confirm it, so we reported it honestly as a "no," not a maybe. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/label-atlas-illustration-class-signal-report.md">Read why the near-miss doesn't count ↗</a></p>
+        <p>This doesn't mean the labels are meaningless — folios that reuse the same label words a lot do cluster together in a real, measurable way, we just haven't found the right way to read what that clustering means yet. A genuinely different kind of evidence (matching labels to the exact figures in the actual manuscript images, not just to text patterns) is the most promising next step, but it isn't reliably possible yet at the image resolution we have. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/label-atlas-lz-clock-signal-report.md">Read the position test ↗</a> · <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/label-atlas-lz-relative-order-signal-report.md">Read the order test ↗</a></p>
+      </section>
+
+      <section class="status-panel ambiguity-panel" aria-labelledby="coupling-v2-title">
+        <div>
+          <p class="kicker">Constructive null · second full six-criterion PASS, with real caveats</p>
+          <h2 id="coupling-v2-title">A second engineered mechanism also passes every test — for a precise, previously-diagnosed reason.</h2>
+          <p class="snapshot-caveat">The closest-passing design from earlier work (four of six tests passing) had one specific, already-understood flaw: its "coupling" rule only had 4 possible outcomes to choose from, which is what broke the word-order test. Widening that to the full alphabet — the single most direct fix for exactly that diagnosed cause — makes it pass all six tests, in every one of 20 tries.</p>
+        </div>
+        <p>This is genuinely useful confirmation, not just a repeat of the earlier surprise: it shows the specific cause we found earlier really was the cause. But two things keep this from being cause for excitement about a real answer. First, one of the six numbers (bigram entropy) only barely squeaks by every time, unlike the first passing mechanism which passed everything with room to spare — a much shakier win. Second, the "word-boundary prediction" number this design produces is about six to seven times stronger than the real manuscript's own value — it clears the bar by using far more force than the real text actually shows, which is a sign this mechanism doesn't closely resemble the real thing even though it technically passes. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-hybrid-shift-coupling-v2-substitution-novelty-null-audit-report.md">Read the full result and its caveats ↗</a></p>
+      </section>
+
+      <section class="status-panel unlabeled-panel" aria-labelledby="paragraph-position-title">
+        <div>
+          <p class="kicker">Independent reproduction · confirms 50-year-old scholarship</p>
+          <h2 id="paragraph-position-title">A letter that loves to start paragraphs — and we measured it ourselves.</h2>
+          <p class="snapshot-caveat">Voynich researchers have long noticed that certain letters seem to cluster at the very start of paragraphs, especially in one section of the manuscript. We built our own independent measurement of this directly from the source transcription and compared it to the published numbers.</p>
+        </div>
+        <p>The match is remarkably close: in that section, we found the letter <code>p</code> starts <strong>54.4%</strong> of paragraphs (the published figure is 55.1%), making it roughly <strong>53 times</strong> more common there than its normal, everywhere-else frequency (the published figure is about 55 times). We computed this from scratch, with our own code, and never looked at the original researchers' methods while building it — so this counts as real, independent confirmation, not just repeating someone else's claim. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/paragraph-line-position-signal-report.md">Read the full comparison ↗</a></p>
       </section>
 
       <section class="status-panel ambiguity-panel" aria-labelledby="ambiguity-title">
