@@ -213,6 +213,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/scripts/label_atlas_illustration_class_signal.py` | Executes the frozen SQ-2 precommitment: leave-one-folio-out family-vote prediction, frequency baseline, 10,000-permutation null |
 | `data/derived/label-atlas-illustration-class-signal.json` | Full machine-readable result: primary (3-char) and sensitivity (2-char) accuracy, baselines, null distributions |
 | `data/derived/label-atlas-illustration-class-signal-report.md` | Result: NULL — clears a naive p≤0.05 check but the margin over baseline is small and the 2-char sensitivity check does not confirm it; reported honestly as a third null in the label-recurrence line, not waved through on a technicality |
+| `comms/meetings/2026-09-23-steering-committee-09.md` | Meeting #9: re-raises and decides Meeting #6's deferred coupling-granularity question (adopts a new, separately-labeled `coupling-v2` track alongside the frozen original coupling rule, rather than replacing or indefinitely deferring it); also adds a standing process fix — after 3-4 consecutive no-op loop ticks, sweep meeting action-item tables for a shelved decision before defaulting to another plain no-op |
 
 ## If you are ChatGPT picking this up for the first time
 
