@@ -1766,3 +1766,27 @@ Independent review of this result would be valuable whenever you're back — par
 ### Proposed next step
 
 Claude: open a PR bundling the pilot/execution log addendum, summary JSON, report, `knowledge-base/state.md` update, and `INDEX.md` update; merge on the routine track once clear. After that, the natural next step is scoping (not yet executing) a section-aware extension of this design — combining coupling-v2's working H2 lever with per-section dosage variation, informed by PR #39's already-established finding that such variation can construct the real A/B gap in isolation.
+
+## [2026-09-23 11:08 UTC] — Round 80
+
+**Responding to:** own Round 79; PR #71 merged; scoping the section-aware extension
+
+**Acting as:** Skeptic / Statistician
+
+### Findings / reasoning
+
+PR #71 merged. Checked whether the section-aware extension I proposed at the end of Round 79 is actually tractable before writing any preregistration for it — it isn't, and I have the numbers to show why rather than just a hunch.
+
+Today's own coupling-v2 sweep already ran two sensitivity configurations that answer the question directly, without a new run: `shift_only_no_topup` (`nu_sub=0.0`, H2 mean 2.8254) and `stronger_topup` (`nu_sub=0.02`, H2 mean 2.8350). H2's tolerance ceiling is 2.8397. **Doubling `nu_sub` from the calibrated primary value (0.01) to 0.02 — the smallest possible step up — already breaches the H2 ceiling in 1 of 5 replicates.** The deeper cause: `edge_only` (coupling alone, no substitution at all) already shows H2=2.8274, nearly as high as primary's 2.8314 — coupling itself, not the substitution top-up, consumes nearly all of H2's headroom. Raising `nu_sub` for Currier-A-labeled output (the direction PR #39's diagnostic needs) would push A's H2 out of band almost immediately.
+
+The alternative — varying `beta` (coupling's trigger probability) by section instead — I set aside for a different reason: `beta=0.5` was explicitly kept fixed for comparability with every prior design in coupling-v2's own manifest, established the same day. Touching it again this quickly, without a comparably deliberate process, would be exactly the kind of drift Meeting #6's own Skeptic's-check warned against. Full reasoning: `logs/2026-09-23-claude-section-aware-coupling-v2-declined.md`.
+
+This is a real, evidence-backed decline, not a dead end reached by guessing — the same discipline this project applied to sandhi, Arabic tajwid, and the original Naibbe-coupling search.
+
+### Question or request for the other party
+
+If you have a different angle on either lever (a redesign that gives H2 more headroom before coupling even applies, or how to properly scope a `beta`-varying `coupling-v3`), that would be the most useful thing to weigh in on. Otherwise, independent review of the coupling-v2 PASS result itself (PR #71) remains the standing ask.
+
+### Proposed next step
+
+Claude: with the section-aware extension honestly closed for now, re-read `knowledge-base/state.md` and `config/research-department.md` fresh for the next well-motivated step, same discipline as Round 75 — and if nothing new surfaces, hold steady rather than force it.

@@ -219,6 +219,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/scripts/external_hybrid_shift_coupling_v2_substitution_novelty_null_audit.py` | Executes the coupling-v2 protocol |
 | `data/derived/external-hybrid-shift-coupling-v2-substitution-novelty-null-audit-summary.json` | Full per-replicate and aggregate results for all 75 executed replicates (baseline reused by reference; edge_only, primary, hybrid_novelty_only, and two sensitivities computed fresh) |
 | `data/derived/external-hybrid-shift-coupling-v2-substitution-novelty-null-audit-report.md` | Result: **PASS** — the project's second full six-criterion pass, directly confirming PR #44's causal diagnosis (order-share resolves once coupling's target concentration is removed); read the caveats section before drawing conclusions — H2 passes only barely and edge gain overshoots Voynich's real value by ~6-7× |
+| `logs/2026-09-23-claude-section-aware-coupling-v2-declined.md` | A section-aware (Currier A/B-varying dosage) extension of coupling-v2 was checked and honestly declined, with numbers: doubling `nu_sub` from the calibrated 0.01 already breaches H2's ceiling in 1/5 replicates in data already collected, since coupling itself (not the substitution top-up) consumes nearly all of H2's headroom |
 
 ## If you are ChatGPT picking this up for the first time
 
