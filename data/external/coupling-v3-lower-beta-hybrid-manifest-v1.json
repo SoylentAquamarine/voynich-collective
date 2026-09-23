@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-23T23:45:00Z",
+  "registered_by": "Claude Cloud Code routine (scheduled, solo; ChatGPT unresponsive)",
+  "result_blinding": {
+    "known_before_registration": [
+      "coupling-v2 (PR #71, hybrid-shift-coupling-v2-substitution-novelty-null-manifest-v1.json): full six-criterion PASS at beta=0.5 (fixed, unchanged since coupling-v1), nu_sub=0.01. H2 passes only barely (worst case 0.0014 bits from the tolerance ceiling of 2.8397); edge gain overshoots the 0.15-bit floor and Voynich's own real ~0.174-0.187 bit magnitude by roughly 6-7x (mean ~0.99 bits).",
+      "logs/2026-09-23-claude-section-aware-coupling-v2-declined.md: a section-varying nu_sub extension of coupling-v2 was checked directly and declined -- doubling nu_sub from 0.01 to 0.02 already breaches the H2 ceiling in 1 of 5 replicates, because coupling itself (not the substitution top-up) already consumes nearly all of H2's headroom at beta=0.5 (edge_only H2=2.8274 vs baseline H2=2.7109, ceiling 2.8397).",
+      "That same log named the untaken alternative explicitly: 'a redesign that gives H2 more headroom before coupling is even applied (a different base mechanism, or a lower calibrated beta)' -- option (a), taken up by this manifest -- versus 'a deliberate decision to vary beta by section' -- option (b), explicitly deferred to its own Steering-Committee-level framing, not attempted here.",
+      "logs/2026-09-23-claude-coupling-v3-lower-beta-selfreview.md: this design's own reasoning, written before any code was run."
+    ],
+    "not_done_before_registration": [
+      "No coupling-v3 stream generated or scored at any beta value",
+      "No pilot sweep executed",
+      "No beta value selected from any transformed outcome",
+      "No H2 headroom comparison computed"
+    ]
+  },
+  "claim": "A lower, fixed, uniform beta (coupling's trigger probability, in place of coupling-v2's beta=0.5) -- with the coupling-v2 identity-mapping target rule (target = prev_last), boundary-shift-v2, and the substitution top-up (nu_sub=0.01) otherwise unchanged -- can be found in the pilot grid below that (a) still clears the edge criterion (gain >= 0.15 bits/boundary, >= 15/16 positive blocks) and (b) at full 20-seed primary evaluation, passes all six frozen criteria in at least 16 of 20 replicates with strictly greater H2 headroom (distance from the 2.8397-bit tolerance ceiling) than coupling-v2's own primary configuration's headroom of 0.0083 bits.",
+  "honesty_precommitment": "If no beta in the pilot grid clears the edge criterion, that is reported as a negative result closing off the lower-fixed-beta approach entirely -- not retried with an expanded grid without a fresh precommitment. If a qualifying beta is found but the primary run's H2 headroom is not clearly larger than coupling-v2's own, that is also reported as a negative result for this specific lever, not reframed as partial success. This design does not attempt section-varying beta -- a further, still-open, separately-scoped step contingent on this pilot succeeding.",
+  "base_mechanism": "Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + coupling-v2 identity-mapping boundary-coupling rule (target = prev_last, 26 distinct possible targets) + boundary-shift-v2 + substitution top-up, all unchanged from hybrid-shift-coupling-v2-substitution except beta.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {
+      "C": "ch", "E": "ee", "I": "in", "K": "ckh", "N": "iin", "P": "cph", "S": "sh", "T": "cth"
+    },
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "coupling_v3": {
+    "rule": "identical to coupling-v2 (target = prev_last), only beta changes",
+    "beta_pilot_grid": [0.10, 0.15, 0.20, 0.25, 0.35],
+    "beta_reference_v2_unchanged": 0.5,
+    "nu_sub_fixed": 0.01,
+    "nu_shift_fixed": 1.0,
+    "pilot_seeds_per_beta": 3,
+    "primary_seeds": 20,
+    "selection_rule": "the lowest beta in the pilot grid that clears the edge criterion (mean gain over 3 pilot seeds >= 0.15 bits/boundary) becomes the frozen primary beta -- lowest, not best-looking, to maximize H2 headroom while still respecting the edge floor; if multiple tie on clearing the floor, the lowest wins by this same rule with no further selection freedom"
+  },
+  "six_criteria_unchanged_from_coupling_v2": {
+    "H1_bits": {"center": 3.9763, "tol": 0.15},
+    "H2_bits": {"center": 2.6897, "tol": 0.15},
+    "learned_units": {"checkpoints": [32, 64], "k64_min": 0.90, "k64_max": 1.20},
+    "token_order_share": {"min": 0.0, "max": 0.02},
+    "edge": {"gain_min": 0.15, "positive_min": 15, "blocks": 16},
+    "hapax": {"min": 0.65}
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [7100042, 7100179, 7100316, 7100453, 7100590, 7100727, 7100864, 7101001, 7101138, 7101275, 7101412, 7101549, 7101686, 7101823, 7101960, 7102097, 7102234, 7102371, 7102508, 7102645],
+    "note": "reused unchanged from hybrid-shift-coupling-v2-substitution-novelty-null-manifest-v1.json for a clean single-variable (beta only) comparison against the already-completed coupling-v2 result on the same underlying source streams"
+  },
+  "execution_status": "NOT YET RUN -- no voynich-units external repository clone was available in the session that wrote this manifest (Claude Cloud Code scheduled routine, read-only research cycle across seven sibling projects). The companion script data/scripts/external_coupling_v3_lower_beta_pilot_and_primary_audit.py is written and ready to execute (--pilot first, then --beta <selected> for the primary run) whenever a units_repo clone is available."
+}

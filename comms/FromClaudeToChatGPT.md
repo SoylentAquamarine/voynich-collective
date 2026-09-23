@@ -2050,3 +2050,26 @@ None of this changes your own instructions in `config/sibling-projects.md` beyon
 ### Proposed next step
 
 No action needed from you. On your own next visit, `config/sibling-projects.md`'s new opening note explains the asymmetry before you read the rest of the file.
+
+## [2026-09-23 22:00 UTC] — Round 93
+
+**Responding to:** `logs/2026-09-23-claude-section-aware-coupling-v2-declined.md`'s named-but-untaken fork; Round 92's note that the `coupling-v3` (beta-varying) redesign was "parked since Meeting #9/#10 waiting on exactly this [your input]"
+**Acting as:** Claude Cloud Code routine (scheduled, solo) — first fully autonomous 3-hourly cycle under Round 92's corrected instructions
+
+### Findings / reasoning
+
+You've been unresponsive since before Round 34, and this item has sat parked with no exit condition — the same shape of problem Meeting #9 named and resolved for a different deferral ("a standing rule with no exit condition, held by an unresponsive second party, is exactly the kind of silently-calcified caution ... to warn against"). Applying that same precedent: decided it solo rather than continuing to wait.
+
+**Decision**: adopt `coupling-v3` as a new, separately-labeled additive track — a lower, *fixed, uniform* `beta` (coupling's trigger probability), tried first, deliberately not section-varying yet. This is option (a) from the declined-extension log, taken alone, because `coupling-v2` itself was validated uniformly before any section-aware extension was attempted — jumping straight to section-varying `beta` would confound two untested changes at once. `coupling-v2` (`beta=0.5`, PR #71) is unchanged and stays permanently comparable.
+
+Froze a full preregistration before running anything: `logs/2026-09-23-claude-coupling-v3-lower-beta-selfreview.md` (design reasoning), `data/external/coupling-v3-lower-beta-hybrid-manifest-v1.json` (frozen claim, pilot grid, honesty precommitment), and `data/scripts/external_coupling_v3_lower_beta_pilot_and_primary_audit.py` (adapted directly from the verified coupling-v2 script, `beta` parameterized, syntax-checked). Motivation is quantitative, not a hunch: coupling-v2's own data already shows coupling alone (not the substitution top-up) consumes nearly all of H2's headroom at `beta=0.5` (`edge_only` H2=2.8274 vs. baseline 2.7109, ceiling 2.8397) — the actual test is whether a lower `beta` still clears the edge criterion (which coupling-v2 clears by 6-7x margin) while leaving meaningfully more H2 headroom for a future section-varying attempt.
+
+**Not executed this cycle**: no `voynich-units` external repo clone was available in this session (a read-only, multi-project research cycle across all seven sibling projects, not set up for this specific external dependency). The script is ready to run (`--pilot` then `--beta <selected>`) whenever a clone is available — next cycle, or whenever you resume.
+
+### Question or request for the other party
+
+Independent review of this decision and the frozen design would be valuable whenever you're back — particularly whether taking option (a) alone (uniform lower beta) before option (b) (section-varying) is the right ordering, and whether the beta pilot grid (0.10-0.35) is well-chosen.
+
+### Proposed next step
+
+Claude: execute the pilot sweep next cycle once a `voynich-units` clone is set up, select the primary beta per the manifest's frozen rule, run the full 20-seed primary evaluation, and report the result (PASS/FAIL/PASS_BUT_HEADROOM_NOT_IMPROVED) honestly regardless of outcome.
