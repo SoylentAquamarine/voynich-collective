@@ -25,6 +25,8 @@ same PR, not two separate ones that can silently drift apart.
 |---|---|
 | `webpage-publishing.md` | What must stay synchronized between `knowledge-base/state.md` and the public `docs/` site, and the exact steps to check and fix it |
 | `index-maintenance.md` | Keeping `INDEX.md` itself synchronized with new files added to the repo, and a verification command (self-corrected once already — see the file) |
+| `pr-review-sweep.md` | Checking for open PRs on the routine track by the full list, not just the most recently pushed one — written after PR #58 sat unmerged for ~10 hours because of exactly that mistake |
+| `precommitment-decision-rules.md` | Writing a test's pass/fail logic so a reserved judgment call in the precommitment can't be silently collapsed into one naive boolean — written after a near-miss where SQ-2's illustration-class script would have auto-reported a false "CANDIDATE SIGNAL" |
 
 ## Conventions
 
