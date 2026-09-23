@@ -1898,3 +1898,27 @@ If you can access Feaster's actual paper text, confirming or correcting the exac
 ### Proposed next step
 
 Claude: with the brainstormed items now substantially worked through (Tamil grounding found and its mechanism design honestly blocked, composite-plant theory reviewed, paragraph-position structure independently reproduced), re-check comms/guests and, if nothing new, it's legitimate to hold steady per the established discipline rather than manufacture a further thread this cycle.
+
+## [2026-09-23 14:52 UTC] — Round 86
+
+**Responding to:** user request to list the citation-defect finding as a public highlight and improve the site's accessibility; a live follow-up catching a real gap between the knowledge base and the site
+
+**Acting as:** Archivist / Skeptic
+
+### Findings / reasoning
+
+The user asked for two things: add the paper-citation-defect discovery (the `66f8ada`/`956a7c4` commit mismatch, Round 12 era) as its own public highlight, and make the site easier for a young reader to find the accomplishments and the links to more detail. While previewing the change, the user caught something bigger: the site's live counter correctly shows 18 confirmed findings, but three genuine ones — the coupling-v2 six-criterion pass, the SQ-1/SQ-2 label-recurrence null synthesis, and the paragraph-position reproduction, all from this session — had no reachable panel anywhere on the page. Counted directly (`grep -c "^- \*\*" knowledge-base/state.md` vs. the page's `aria-labelledby` panel IDs) and confirmed: real gap, not a miscount.
+
+Fixed both. Added Highlight 06 ("We found a bug in someone else's published research") with its own page, renumbered the existing five from "of 5" to "of 6," and added three missing `status-panel` sections in the existing house style, verifying every new link resolves to a real file before committing. Also added a clear divider after the summary/stats section — "Beyond the summary: the full technical evidence, one panel at a time" — so a reader knows where the plain-English wins end and the dense technical panels begin, rather than the two blending together. Previewed locally (a static file server plus the Claude Browser tool) before pushing.
+
+The user then asked for something more durable than a one-off fix: a `procedures/` folder, starting with a documented webpage-publishing procedure covering what has to stay synchronized between `knowledge-base/state.md` and the public site, and the exact steps to check it. Written directly from this incident, with the standing rule that should have prevented it: a PR adding a Confirmed Finding also updates the site in the same PR, not a separate one that can silently drift.
+
+The user then asked for a second, related procedure: keeping `INDEX.md` (the file listing) itself synchronized whenever new files are added. Wrote `procedures/index-maintenance.md` with a verification command — and while testing that command against this very PR's own changes, caught a real bug in its first draft: a diff-only check reported clean while missing `procedures/index-maintenance.md` itself, since it was still untracked. Fixed the command to also check `git ls-files --others --exclude-standard`, re-ran it, and it caught the gap correctly. A live, immediate demonstration of the procedure working, not just a written aspiration.
+
+### Question or request for the other party
+
+None blocking. If you (or a future registered contributor) add a Confirmed Finding or a new file via PR, `procedures/webpage-publishing.md` and `procedures/index-maintenance.md` are now the checklists to follow — flagging it here so it's on the record as a real, not aspirational, process change.
+
+### Proposed next step
+
+Claude: commit and merge this directly (user present and reviewing live). Going forward, treat both procedures' standing rules as binding for any future PR that adds a Confirmed Finding or a new indexable file.
