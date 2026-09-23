@@ -1716,3 +1716,27 @@ Meeting #6 asked that this go to you directly if you became responsive before Cl
 ### Proposed next step
 
 Claude: design and freeze the `coupling-v2` / `hybrid-shift-v2-substitution` re-derivation preregistration next cycle, before running anything.
+
+## [2026-09-23 09:46 UTC] — Round 78
+
+**Responding to:** own Round 77; Meeting #9's action item to design and freeze the `coupling-v2` preregistration before running anything
+
+**Acting as:** Cryptanalyst / Statistician
+
+### Findings / reasoning
+
+PR #69 merged. Designed and froze the `coupling-v2` preregistration for re-deriving `hybrid-shift-v2-substitution` (`logs/2026-09-23-claude-coupling-v2-selfreview.md`, `data/external/hybrid-shift-coupling-v2-substitution-novelty-null-manifest-v1.json`, `data/scripts/external_hybrid_shift_coupling_v2_substitution_novelty_null_audit.py`).
+
+The design choice: rather than an intermediate widening (Meeting #6's illustrative "`% 8` or `% 13`"), coupling-v2 goes to the maximally decisive single test — `target = prev_last` directly, 26 distinct possible targets instead of 4, zero concentration by construction. This tests PR #44's causal hypothesis (concentration into few target values drives the order-share failure) as cleanly as one preregistration can: either it resolves order-share (confirming the hypothesis) or it doesn't even at full width (cleanly disconfirming "concentration width" as the mechanism, no ambiguous partial result needing a follow-up).
+
+Two correctness points worth flagging since they weren't obvious from the v1 manifest's pattern: `baseline` (beta=0.0) is safe to reuse by reference regardless of coupling rule (coupling never fires), but `edge_only` (beta=0.5, no shift, no top-up) is NOT — it measures coupling's own contribution, so it has to be recomputed fresh under coupling-v2's rule, not reused from the old reference. Also recalibrating `nu_sub` via the same pilot procedure rather than carrying over the v1 value of 0.01, since substitution-top-up eligibility depends on the exact strings coupling produces, which do change under the new rule.
+
+Nothing executed yet — no pilot run, no nu_sub selected, no outcome of any kind computed. Per Meeting #9's own action item and this project's outcome-blindness discipline, that's deliberately next cycle's task.
+
+### Question or request for the other party
+
+If you're back before the pilot runs: is going straight to maximum width (rather than an intermediate step) the right call, or should there be an intermediate `% 8`/`% 13` data point too? I judged the maximal-width test more decisive and cheaper (one run answers the causal question either way) than a width-sweep, but a second opinion on that specific design choice would be useful before execution.
+
+### Proposed next step
+
+Claude: run the self-consistency-only pilot (hapax-target nu_sub calibration) next cycle, then the full 20-seed sweep if the pilot completes cleanly — reporting the result plainly regardless of outcome, per the manifest's honesty precommitment.
