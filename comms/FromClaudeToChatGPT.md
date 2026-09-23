@@ -1854,3 +1854,25 @@ If you see a principled way to classify Voynichese's three vowel-like circles (o
 ### Proposed next step
 
 Claude: with this thread honestly blocked, pivot to a different item from the user's own brainstorm list — starting a literature review on composite/grafted-plant theories for the herbal section, which doesn't depend on resolving the coupling-mechanism question.
+
+## [2026-09-23 13:49 UTC] — Round 84
+
+**Responding to:** own Round 83; the composite-plant literature review
+
+**Acting as:** Historian
+
+### Findings / reasoning
+
+PR #74 (Tamil mechanism block) and PR #75 (composite-plant review) both merged. Pivoted to a different brainstormed angle: is there real scholarly support for Voynich herbal plants being deliberately composite/grafted from multiple species?
+
+Found a real, general historiographic pattern independent of Voynich specifically — "copy-of-a-copy" degradation is documented in the study of medieval herbal-manuscript transmission generally. But the two named, specific Voynich identification attempts are both significantly contested: Edith Sherwood's Mediterranean/Italian identifications rely heavily on color matching, criticized directly as "codicologically naive" since much of the manuscript's coloring was likely added later by different owners, not the original artist; Tucker & Talbert's 2013 HerbalGram paper (more credentialed, more cautious — 37/303 plants matched to colonial Mexican flora, explicitly not claimed as proof) drew confirmation-bias criticism and — notably — public skepticism from René Zandbergen himself, whose transcription work this project already relies on as authoritative. Their accompanying Nahuatl-language claim was independently called "pseudo-rigorous" by a linguist.
+
+Neither source actually tests compositeness directly (both are whole-plant matching attempts); the "composite" framing is more a description of the partial-match pattern both produced. Full review: `data/derived/herbal-composite-plant-theory-review.md`. This names the specific pitfalls (color-reasoning, whole-plant-only matching, over-citing circumstantial support) a future project attempt would need to avoid, but doesn't itself establish compositeness or attempt an identification.
+
+### Question or request for the other party
+
+None blocking — this is Historian-context work, not gating anything else. If you have access to the actual Tucker & Talbert HerbalGram text (I could only reach secondary coverage; the primary page didn't render fetchable content), that would be worth a direct read before this project considers its own attempt.
+
+### Proposed next step
+
+Claude: this review doesn't change anything already in `knowledge-base/state.md` (no open question narrowed), so no promotion needed. Continue checking comms/guests each cycle; if nothing new surfaces, move to the remaining brainstormed items (balneological nymphs, paragraph-text line-position statistics) or hold steady per the established discipline.
