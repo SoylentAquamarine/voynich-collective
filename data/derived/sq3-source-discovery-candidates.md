@@ -95,6 +95,37 @@ manuscript.
   "documented contemporary cipher transformation" — closer in period and
   geography to Voynich than Naibbe's own Latin/Italian test material — but
   is not yet confirmed implementable without the facsimile itself.
+- **Resolved this pass — a better candidate than the ledger above**:
+  Ekaterina Domnina, "Nicodemo Tranchedini's Diplomatic Cipher: New
+  Evidence," *Proceedings of the 1st Conference on Historical Cryptology*
+  (HistoCrypt 2018), Uppsala, pp. 3-7 (`ep.liu.se/ecp/149/007/ecp18149007.pdf`,
+  open-access conference proceedings, fetched and read directly, not just
+  described secondhand). Reconstructs, from a primary-source 1454 partial
+  decipherment glued over the original ciphertext by Cicco Simonetta
+  himself (Archivio di Stato di Milano, Carteggio Visconteo Sforzesco, 41,
+  no. 106), a complete **81-sign nomenclator** used by Nicodemo Tranchedini
+  (Francesco Sforza's diplomatic agent, and father of the more famous
+  Francesco Tranchedini whose later, larger 253-sign cipher collection is
+  the "Tranchedino ledger" above) for a letter datable to **23 February
+  1449** — within a few decades of, and from the same Sforza-chancellery
+  Milanese milieu as, Voynich's own 1404-1438 radiocarbon range. The paper
+  gives the nomenclator's full category structure directly in its own text
+  and a labeled figure: 36 signs for individual letters, 4 for double
+  letters (`ee`, `LL`, `ss`, `tt`), 1 null, 30 for syllables (`ce ci co de
+  du fa li lo me mi na ne no pi re ri ro si ta te to` plus several more
+  visible in the figure), and 11 for whole words (`conte che con et in
+  Malatesta non per Sforza Venezia Veneziani`). The actual cipher glyph
+  *shapes* are only available as an image (not OCR'd text), but the
+  category structure and sign counts are fully readable from the paper's
+  own prose — enough to implement the nomenclator's substitution *logic*
+  (letter/syllable/word-level homophonic substitution with nulls) even
+  without transcribing the exact historical glyph shapes, the same way
+  this project's existing Naibbe reproduction works from a described
+  procedure rather than needing literal period ink. **This closes the
+  "is a transcribed key available" gap** for a documented contemporary
+  cipher, and is a stronger candidate than the larger ledger above:
+  smaller, simpler, dated to a specific day, and already reconstructed by
+  a named scholar in an open, citable, directly-read publication.
 - **A Milanese cipher key and nomenclator dated 14 March 1448** (cited via
   Aloysius Meister's cryptology scholarship, also Milan State Archive) —
   another concrete, dated, same-decade artifact.
@@ -132,11 +163,13 @@ manuscript.
 3. German candidate remains imperfect (see above — nothing found in the
    1400-1438 window itself). Decide: accept *Das Buoch von guoter Spise*'s
    older date, or scope SQ-3 to Latin/Italian only and say so explicitly.
-4. Tranchedino ledger: read the liu.se paper in full to determine whether it
-   supplies enough transcribed key material to implement the transformation,
-   or whether a different, more fully-published period cipher should be
-   substituted (the already-established Naibbe cipher remains a fallback,
-   already checksum-pinned in this repo).
+4. ~~Tranchedino ledger: read the liu.se paper in full~~ — **resolved**: read
+   directly. It doesn't transcribe the *larger* Tranchedino ledger's tables,
+   but supplies something better for this purpose — Domnina (2018)'s own
+   81-sign Nicodemo Tranchedini nomenclator reconstruction, with full
+   category structure and sign counts readable directly from the paper (see
+   above). Sufficient to implement the substitution logic; the cipher
+   collection's specific document is public-domain conference proceedings.
 5. Only once the above are resolved: download the agreed sources (with
    explicit user authorization, per this project's standing rule on file
    downloads), compute checksums, and write the frozen source manifest.

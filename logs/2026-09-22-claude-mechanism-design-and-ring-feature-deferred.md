@@ -103,3 +103,43 @@ transcription-aligned crop tool, not manual eyeballing), or (b) a real
 image-based feature is proposed that doesn't require per-locus pairing (page-
 level, not locus-level). Pivoting this iteration to the primary
 frozen-mechanism thread instead.
+
+## Third follow-up (same session): a sandhi-grounded coupling design, also deferred
+
+`data/derived/coupling-mechanism-historical-plausibility-review.md` found
+real historical/linguistic grounding for cross-token coupling in general
+(sandhi). The natural next step — scoping an actual preregistered mechanism
+whose coupling rule is drawn from a specific, real, documented sandhi rule
+table — was attempted and **also deferred**, for a reason worth recording
+precisely because it's a different failure mode than the first two.
+
+Pulled a real, specific, well-documented rule table (Classical Sanskrit
+vowel sandhi: dirgha, guna, vriddhi, yana rules — e.g. a+i→e, a+u→o,
+a+e→ai, a+o→au, and the semivowel-formation rules). The problem is not
+that this table doesn't exist — it does, extensively. The problem is fitting
+it onto Voynichese: the only independently-documented "vowel-like" glyph
+class in this script (Jacques Guy's 1991 "circles," o/a/y — three symbols)
+is far smaller than Sanskrit's vowel inventory that the sandhi rules
+actually operate over (a/ā, i/ī, u/ū, ṛ/ṝ, plus the derived diphthongs e,
+ai, o, au that guna/vriddhi rules produce). Squeezing Sanskrit's rule table
+down to fit 3 symbols requires enough invented compression decisions —
+which derived vowel maps to which surviving symbol, how ties are broken —
+that the result would no longer honestly be "drawn from a documented
+system." It would be "loosely inspired by" a documented system, with the
+actual combination outcomes chosen by me. That's a materially weaker claim
+than the preregistration's own design principle requires, and exactly the
+gap this project's disclosure standard exists to catch before it's built,
+not after.
+
+**What would actually close this**: a language whose sandhi/assimilation
+system is documented at least as thoroughly as Sanskrit's but operates over
+a vowel or sound-class inventory close to Voynichese's actual 3-symbol
+circle set, so the rule table transplants with little or no invented
+compression. One concrete, promising, not-yet-researched lead: Classical
+Arabic's vowel system is natively three-way (a/i/u, each long/short) — a
+much closer match — and its boundary-sensitive assimilation rules (tajwid,
+the formalized rules for Quranic recitation, e.g. idgham/ikhfa) are
+extremely precisely documented, arguably more so than Sanskrit's. This was
+not researched further this iteration (would be starting a new research
+thread, not finishing the current one) but is named here so it isn't
+rediscovered from scratch later.
