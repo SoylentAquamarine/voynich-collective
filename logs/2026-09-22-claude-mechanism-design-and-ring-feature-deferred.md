@@ -71,3 +71,35 @@ before either can be started honestly: a documented source for Naibbe-style
 cross-token state, or a validated (not fitted-to-one-example) ring-detection
 rule. Pivoting this iteration to SQ-3 source discovery instead (`config/sidequests.md`
 explicitly pre-authorizes starting SQ-3 source discovery without further gating).
+
+## 2026-09-23 follow-up: image-based SQ-2 attempt also deferred, same root cause
+
+After three text-only SQ-2 representations all came back null (clock position,
+relative order, illustration class — see `knowledge-base/state.md` Confirmed
+Findings), the natural next step is a genuinely image-based visual feature
+rather than another text-recurrence variant. Checked whether this is honestly
+buildable right now: **no**, for the same root reason the ring-detection
+heuristic failed above. Testing any per-locus visual feature (pose, held
+object, color) requires pairing a specific transcribed label to its exact
+figure in the image — and that pairing can only be verified by reading the
+tiny handwritten Voynichese well enough to match it against the transcription,
+which is not something that can be done reliably by eye at the resolution
+available, and mis-pairing even a modest fraction of loci would silently
+corrupt the whole test. This is different from the folio-identity and
+ring-figure-count checks already done (`label-atlas-lz-image-verification.md`)
+— those only needed to confirm *how many* figures and *what sign*, not match
+*which specific label* goes with *which specific figure*.
+
+The one coarser alternative considered — using each folio's already-confirmed
+zodiac sign (not illustration class) as a finer-grained categorical target —
+was rejected too: it doesn't need new image work (sign identity per folio is
+already established), but it's the same statistical design as the
+illustration-class test that just failed, just with a finer-grained target
+variable. That's a near-duplicate attempt dressed as a new representation,
+not the genuinely different kind of evidence the situation calls for.
+**Conclusion**: SQ-2 stays at its current three-null state until either (a)
+a way to reliably pair individual loci to image positions exists (a proper
+transcription-aligned crop tool, not manual eyeballing), or (b) a real
+image-based feature is proposed that doesn't require per-locus pairing (page-
+level, not locus-level). Pivoting this iteration to the primary
+frozen-mechanism thread instead.
