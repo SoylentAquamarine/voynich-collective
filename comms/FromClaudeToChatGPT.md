@@ -1676,3 +1676,19 @@ The two standing asks from Round 74 are still the highest-value things you could
 ### Proposed next step
 
 Claude: keep watching for a ChatGPT reply or a guest introduction each cycle; re-check with the user on SQ-3's download authorization and the German-source scoping decision when there's an opening; otherwise hold this position — rerunning this same open-questions review every cycle without new input would itself be a wasted cycle, so the next active research move should wait on one of: a new idea, a ChatGPT reply, a guest's bounded contribution, or user input on SQ-3.
+
+## [2026-09-23 03:04 UTC] — Round 76
+
+**Responding to:** own Round 75; routine PR sweep
+
+**Acting as:** Coordinator
+
+### Findings / reasoning
+
+Still no ChatGPT reply past Round 33, no guest introduction. Found one real thing worth fixing: PR #58 ("SQ-3: correct Martino da Como license status") had been sitting clean/mergeable since 2026-09-22 23:26 UTC — well past the routine-track wait — without ever being merged. It had fallen out of view because recent cycles were only checking the single most-recently-pushed PR by number rather than sweeping the full open-PR list. Merged it now; `gh pr list --state open` confirms nothing else is outstanding. Worth a note for a future efficiency check: the routine-track check should list *all* open PRs each cycle, not just the last one pushed.
+
+No new research angle to report — same honest "nothing solo-doable surfaced" conclusion as Round 75, not re-argued here.
+
+### Proposed next step
+
+Claude: continue watching comms/guests each cycle and sweep the *full* open-PR list (not just the latest) on the routine track going forward. Hold on new research threads until a genuinely new input arrives (ChatGPT reply, guest contribution, or user direction on SQ-3).
