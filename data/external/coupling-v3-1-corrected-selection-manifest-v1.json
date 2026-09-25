@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "preregistered-before-any-outcome",
+  "registered_utc": "2026-09-25T18:50:00Z",
+  "registered_by": "Claude Cloud Code routine (scheduled, solo; ChatGPT on its own 3-hour cadence, not present this cycle)",
+  "result_blinding": {
+    "known_before_registration": [
+      "coupling-v2 (PR #71): full six-criterion PASS at beta=0.5, nu_sub=0.01. H2 headroom 0.0083 bits. Boundary manipulation check (edge_only, 20 seeds) passed 20/20.",
+      "coupling-v3 (data/external/coupling-v3-lower-beta-hybrid-manifest-v1.json): at beta=0.10, selected via the *combined* mechanism's edge gain, the primary run passed all six criteria in 20/20 replicates but the boundary manipulation check (edge_only) failed 0/20 -- mean edge_only gain 0.1168 bits/boundary, below the 0.15 floor in every replicate. Verdict: INVALID_CONSTRUCTION.",
+      "logs/2026-09-23-claude-coupling-v3-lower-beta-execution.md's own diagnosis: 'a corrected design would select the lowest beta whose edge_only gain alone clears 0.15, not the lowest beta whose combined gain clears 0.15' -- this manifest implements exactly that correction.",
+      "logs/2026-09-25-claude-coupling-v3-1-selfreview.md: this design's own reasoning, written before any code was run this cycle."
+    ],
+    "not_done_before_registration": [
+      "No coupling-v3.1 stream generated or scored at any beta value",
+      "No edge_only pilot sweep executed",
+      "No beta value selected",
+      "No primary/boundary-check run at any beta",
+      "No H2 headroom comparison computed"
+    ]
+  },
+  "claim": "A beta selected by measuring and thresholding coupling's ISOLATED edge_only contribution directly (not the combined-mechanism gain coupling-v3 used) -- with coupling-v2's identity-mapping target rule (target = prev_last), boundary-shift-v2, and the substitution top-up (nu_sub=0.01) otherwise unchanged -- clears the 20-seed boundary manipulation check at that beta AND, with the full combined mechanism, passes all six frozen criteria in at least 16 of 20 replicates, with H2 headroom (distance from the 2.8397-bit tolerance ceiling) strictly greater than coupling-v2's own primary headroom of 0.0083 bits.",
+  "honesty_precommitment": "If no beta in the pilot grid clears the edge_only floor (0.15 bits/boundary, mean over 3 pilot seeds), that is reported as a negative result closing off the lower-fixed-beta lever entirely -- not retried with an expanded grid without a fresh precommitment. If a qualifying beta is found but the 20-seed edge_only re-run at that beta does not itself clear the floor (>=16/20 individually passing), or the primary run's H2 headroom is not clearly larger than coupling-v2's own, that is also reported as a negative result for this specific lever, not reframed as partial success. This design does not attempt section-varying beta -- a further, still-open, separately-scoped step contingent on this result.",
+  "base_mechanism": "Naibbe cipher (voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571) + coupling-v2 identity-mapping boundary-coupling rule (target = prev_last, 26 distinct possible targets) + boundary-shift-v2 + substitution top-up, all unchanged from hybrid-shift-coupling-v2-substitution except beta and the selection procedure below.",
+  "representation": {
+    "atomic_alphabet": "CEIKNPSTadefgiklmnopqrstxy",
+    "expand_map": {
+      "C": "ch", "E": "ee", "I": "in", "K": "ckh", "N": "iin", "P": "cph", "S": "sh", "T": "cth"
+    },
+    "roundtrip_required": "collapse(expand(atom)) == atom for every atomic_alphabet symbol"
+  },
+  "coupling_v3_1": {
+    "rule": "identical to coupling-v2 (target = prev_last), only beta changes",
+    "beta_pilot_grid": [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45],
+    "beta_reference_v2_unchanged": 0.5,
+    "nu_sub_fixed": 0.01,
+    "nu_shift_fixed": 1.0,
+    "pilot_seeds_per_beta": 3,
+    "primary_seeds": 20,
+    "selection_metric": "edge_only (coupling alone: nu_shift=0, nu_sub=0) mean gain over the pilot seeds -- NOT the combined mechanism's gain, which is what coupling-v3 used and what caused its INVALID_CONSTRUCTION verdict",
+    "selection_rule": "the lowest beta in the pilot grid whose mean edge_only gain (3 pilot seeds) clears the edge criterion (>=0.15 bits/boundary) becomes the frozen primary beta -- lowest, not best-looking, to maximize H2 headroom while still respecting the isolated edge floor; if none clears, report a negative result rather than expanding the grid without a fresh precommitment",
+    "grid_note": "widened versus coupling-v3's grid (added 0.30, 0.40, 0.45) because the isolated edge_only signal is expected to be weaker than the combined-mechanism signal coupling-v3 measured, so the qualifying beta may sit closer to 0.5 than 0.10 -- this is a wider search of the SAME already-declared parameter (uniform fixed beta), not a new lever, and is disclosed here before any pilot value is seen"
+  },
+  "six_criteria_unchanged_from_coupling_v2": {
+    "H1_bits": {"center": 3.9763, "tol": 0.15},
+    "H2_bits": {"center": 2.6897, "tol": 0.15},
+    "learned_units": {"checkpoints": [32, 64], "k64_min": 0.90, "k64_max": 1.20},
+    "token_order_share": {"min": 0.0, "max": 0.02},
+    "edge": {"gain_min": 0.15, "positive_min": 15, "blocks": 16},
+    "hapax": {"min": 0.65}
+  },
+  "seeds": {
+    "cipher": [42, 179, 316, 453, 590, 727, 864, 1001, 1138, 1275, 1412, 1549, 1686, 1823, 1960, 2097, 2234, 2371, 2508, 2645],
+    "postprocessor": [7100042, 7100179, 7100316, 7100453, 7100590, 7100727, 7100864, 7101001, 7101138, 7101275, 7101412, 7101549, 7101686, 7101823, 7101960, 7102097, 7102234, 7102371, 7102508, 7102645],
+    "note": "reused unchanged from hybrid-shift-coupling-v2-substitution-novelty-null-manifest-v1.json (and from coupling-v3's manifest) for a clean single-variable (beta + selection rule) comparison against both prior results on the same underlying source streams"
+  },
+  "execution_status": "EXECUTED THIS CYCLE -- see logs/2026-09-25-claude-coupling-v3-1-execution.md for the result."
+}
