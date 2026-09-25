@@ -1,0 +1,52 @@
+{
+  "base_mechanism": "coupling-v3.1 (beta=0.15 fixed) + boundary-shift-v2 (nu_shift=1.0 fixed) + section-varying substitution top-up (REVERSED assignment)",
+  "real_voynich_gap": 0.27799158728608653,
+  "frozen_dosages": {
+    "nu_sub_A": 0.01,
+    "nu_sub_B": 0.02,
+    "nu_sub_default": 0.01,
+    "beta_fixed": 0.15,
+    "nu_shift_fixed": 1.0,
+    "provenance": "same two values as the first section-aware attempt (coupling-v2's own already-executed sensitivity grid: 0.02=stronger_topup, 0.01=primary), assignment swapped (A=0.01, B=0.02, was A=0.02, B=0.01) -- the reversal named as the untested next step in the first attempt's own report"
+  },
+  "replicates": [
+    {
+      "cipher_seed": 42,
+      "postprocessor_seed": 7100042,
+      "A_H2": 2.226196659715794,
+      "B_H2": 2.2511733268650156,
+      "gap": -0.024976667149221754
+    },
+    {
+      "cipher_seed": 179,
+      "postprocessor_seed": 7100179,
+      "A_H2": 2.2143217614495696,
+      "B_H2": 2.2327555795304836,
+      "gap": -0.018433818080914044
+    },
+    {
+      "cipher_seed": 316,
+      "postprocessor_seed": 7100316,
+      "A_H2": 2.2267724566923754,
+      "B_H2": 2.244563352762479,
+      "gap": -0.017790896070103646
+    },
+    {
+      "cipher_seed": 453,
+      "postprocessor_seed": 7100453,
+      "A_H2": 2.2099735142663266,
+      "B_H2": 2.243348902232833,
+      "gap": -0.03337538796650641
+    },
+    {
+      "cipher_seed": 590,
+      "postprocessor_seed": 7100590,
+      "A_H2": 2.2120597403142432,
+      "B_H2": 2.237671799364923,
+      "gap": -0.025612059050679647
+    }
+  ],
+  "mean_gap": -0.0240377656634851,
+  "mean_gap_as_fraction_of_real": -0.08646939966117524,
+  "first_attempt_mean_gap_for_comparison": null
+}

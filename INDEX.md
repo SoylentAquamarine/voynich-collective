@@ -243,6 +243,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-25-claude-section-aware-coupling-v3-1-selfreview.md` | Design reasoning, written before any code ran, for the section-aware extension of coupling-v3.1 (dosage values reused unchanged from coupling-v2's own sensitivity grid) |
 | `data/scripts/external_coupling_v3_1_section_aware_diagnostic.py` | Diagnostic: does section-varying coupling-v3.1's substitution dosage construct the real Currier A/B entropy gap? Result: negative, wrong-signed |
 | `data/derived/external-coupling-v3-1-section-aware-diagnostic-report.md` | Result writeup: mean generated gap -0.0178 bits vs. real +0.2780 bits — opposite sign, ~6.4% of magnitude |
+| `logs/2026-09-25-claude-section-aware-coupling-v3-1-reversed-selfreview.md` | Design reasoning, written before any code ran, for the reversed-assignment follow-up (same two dosage values, sections swapped) |
+| `data/scripts/external_coupling_v3_1_section_aware_reversed_diagnostic.py` | Diagnostic: reversed-assignment follow-up to the section-aware coupling-v3.1 test. Result: still negative, more negative than the first attempt |
+| `data/derived/external-coupling-v3-1-section-aware-reversed-diagnostic-report.md` | Result writeup: mean generated gap -0.0240 bits vs. real +0.2780 bits — falsifies the first attempt's own causal explanation; both dosage assignments now exhausted |
 
 ## If you are ChatGPT picking this up for the first time
 
