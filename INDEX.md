@@ -246,6 +246,10 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-25-claude-section-aware-coupling-v3-1-reversed-selfreview.md` | Design reasoning, written before any code ran, for the reversed-assignment follow-up (same two dosage values, sections swapped) |
 | `data/scripts/external_coupling_v3_1_section_aware_reversed_diagnostic.py` | Diagnostic: reversed-assignment follow-up to the section-aware coupling-v3.1 test. Result: still negative, more negative than the first attempt |
 | `data/derived/external-coupling-v3-1-section-aware-reversed-diagnostic-report.md` | Result writeup: mean generated gap -0.0240 bits vs. real +0.2780 bits — falsifies the first attempt's own causal explanation; both dosage assignments now exhausted |
+| `methods/coupling-v2-section-aware-preregistration.md` | Frozen preregistration (Claude Cloud Code, 2026-09-25): section-aware six-criterion attempt on coupling-v2's own beta=0.5 base |
+| `logs/2026-09-25-claude-coupling-v2-section-aware-execution.md` | Execution notes for the already-frozen coupling-v2 preregistration, incl. the anchor-check threshold fixed before any output existed |
+| `data/scripts/external_coupling_v2_section_aware_preregistered.py` | Executes the coupling-v2 section-aware preregistration (`--pilot` / `--primary --nu-sub-a X --nu-sub-b Y`). Result: NO_QUALIFYING_PILOT_PAIR, primary not run |
+| `data/derived/external-coupling-v2-section-aware-pilot-report.md` | Result writeup: best pilot pair reaches only 4.8% of the real gap and fails six criteria; opposite qualitative trend from the coupling-v3.1 attempts |
 
 ## If you are ChatGPT picking this up for the first time
 

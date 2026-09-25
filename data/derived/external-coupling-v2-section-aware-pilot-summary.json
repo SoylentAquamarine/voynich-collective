@@ -1,0 +1,175 @@
+{
+  "design": "methods/coupling-v2-section-aware-preregistration.md",
+  "real_gap": 0.27799158728608653,
+  "anchor_check": {
+    "mean_gap": -0.017160841590210325,
+    "threshold": 0.05,
+    "pass": true
+  },
+  "pilot_grid_results": [
+    {
+      "nu_sub_a": 0.01,
+      "nu_sub_b": 0.01,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": true,
+          "H2": 2.832117057973535,
+          "gap": -0.017579891502415457
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": true,
+          "H2": 2.829357016493614,
+          "gap": -0.018772900790893665
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": true,
+          "H2": 2.8357078867090117,
+          "gap": -0.015129732477321856
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": true,
+      "mean_gap": -0.017160841590210325,
+      "mean_gap_as_fraction_of_real": -0.061731514099920476
+    },
+    {
+      "nu_sub_a": 0.02,
+      "nu_sub_b": 0.005,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": true,
+          "H2": 2.8317710736706507,
+          "gap": -0.0136020880315737
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": true,
+          "H2": 2.8289968089755275,
+          "gap": -0.015801957993059723
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": true,
+          "H2": 2.8363486753285825,
+          "gap": -0.00930579593047609
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": true,
+      "mean_gap": -0.012903280651703172,
+      "mean_gap_as_fraction_of_real": -0.04641608322637532
+    },
+    {
+      "nu_sub_a": 0.03,
+      "nu_sub_b": 0.003,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": true,
+          "H2": 2.8330127539954373,
+          "gap": -0.010367749224710732
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": true,
+          "H2": 2.8298328949846923,
+          "gap": -0.011837896349774724
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": true,
+          "H2": 2.83557538240747,
+          "gap": -0.00814006121380606
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": true,
+      "mean_gap": -0.010115235596097172,
+      "mean_gap_as_fraction_of_real": -0.03638684067689928
+    },
+    {
+      "nu_sub_a": 0.05,
+      "nu_sub_b": 0.001,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": true,
+          "H2": 2.834991545075065,
+          "gap": -0.006376221930099568
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": true,
+          "H2": 2.831331959782837,
+          "gap": -0.00799683831418152
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": true,
+          "H2": 2.839388914660851,
+          "gap": 0.000283712493504229
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": true,
+      "mean_gap": -0.004696449250258953,
+      "mean_gap_as_fraction_of_real": -0.01689421358433321
+    },
+    {
+      "nu_sub_a": 0.08,
+      "nu_sub_b": 0.0,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": true,
+          "H2": 2.837249017809921,
+          "gap": 0.0017807896470585227
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": true,
+          "H2": 2.834035058138101,
+          "gap": 0.0002508005383723422
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": false,
+          "H2": 2.842138327922421,
+          "gap": 0.010553278436199687
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": false,
+      "mean_gap": 0.004194956207210184,
+      "mean_gap_as_fraction_of_real": 0.01509022718336103
+    },
+    {
+      "nu_sub_a": 0.12,
+      "nu_sub_b": 0.0,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": false,
+          "H2": 2.8404620118147452,
+          "gap": 0.00838737201158768
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": false,
+          "H2": 2.840283124034933,
+          "gap": 0.014912949658560493
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": false,
+          "H2": 2.8462766024551387,
+          "gap": 0.0170117757937307
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": false,
+      "mean_gap": 0.013437365821292957,
+      "mean_gap_as_fraction_of_real": 0.0483373110405111
+    }
+  ],
+  "selected_pair": null,
+  "pilot_verdict": "NO_QUALIFYING_PILOT_PAIR"
+}
