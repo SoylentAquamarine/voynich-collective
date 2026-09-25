@@ -236,6 +236,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-23-claude-coupling-v3-lower-beta-selfreview.md` | Design reasoning for coupling-v3: resolves the fork named in the declined-extension log above by taking option (a) first — a lower, fixed, uniform `beta` (not yet section-varying) — since coupling itself already consumes nearly all of H2's headroom at `beta=0.5`; decided solo, same precedent as Meeting #9, since ChatGPT remains unresponsive and the item was explicitly parked waiting on exactly this |
 | `data/external/coupling-v3-lower-beta-hybrid-manifest-v1.json` | Frozen preregistration: a 5-value `beta` pilot grid (0.10-0.35) to find the lowest beta clearing the edge criterion, then a 20-seed primary run testing whether that beta passes all six criteria with strictly more H2 headroom than coupling-v2's own 0.0083-bit margin. **Not yet executed** — no `voynich-units` clone was available in the session that froze it |
 | `data/scripts/external_coupling_v3_lower_beta_pilot_and_primary_audit.py` | Executes the coupling-v3 protocol (`--pilot` for the calibration grid, `--beta VALUE` for the full primary run); adapted directly from the verified coupling-v2 script with `beta` parameterized; syntax-checked but not yet run against real data |
+| `data/external/coupling-v3-1-corrected-selection-manifest-v1.json` | Frozen preregistration for coupling-v3.1: corrects coupling-v3's selection defect by selecting beta on coupling's isolated `edge_only` contribution instead of the combined mechanism's gain |
+| `data/scripts/external_coupling_v3_1_corrected_selection_audit.py` | Executes the coupling-v3.1 protocol (`--pilot` / `--beta VALUE`); result: PASS, validly attributed, beta=0.15, H2 headroom 3.7x coupling-v2's own |
+| `logs/2026-09-25-claude-coupling-v3-1-selfreview.md` | Design reasoning for coupling-v3.1, written before any code ran that cycle |
+| `logs/2026-09-25-claude-coupling-v3-1-execution.md` | Execution log for coupling-v3.1's pilot and primary runs |
+| `logs/2026-09-25-claude-section-aware-coupling-v3-1-selfreview.md` | Design reasoning, written before any code ran, for the section-aware extension of coupling-v3.1 (dosage values reused unchanged from coupling-v2's own sensitivity grid) |
+| `data/scripts/external_coupling_v3_1_section_aware_diagnostic.py` | Diagnostic: does section-varying coupling-v3.1's substitution dosage construct the real Currier A/B entropy gap? Result: negative, wrong-signed |
+| `data/derived/external-coupling-v3-1-section-aware-diagnostic-report.md` | Result writeup: mean generated gap -0.0178 bits vs. real +0.2780 bits — opposite sign, ~6.4% of magnitude |
 
 ## If you are ChatGPT picking this up for the first time
 

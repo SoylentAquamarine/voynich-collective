@@ -1,0 +1,51 @@
+{
+  "base_mechanism": "coupling-v3.1 (beta=0.15 fixed) + boundary-shift-v2 (nu_shift=1.0 fixed) + section-varying substitution top-up",
+  "real_voynich_gap": 0.27799158728608653,
+  "frozen_dosages": {
+    "nu_sub_A": 0.02,
+    "nu_sub_B": 0.01,
+    "nu_sub_default": 0.01,
+    "beta_fixed": 0.15,
+    "nu_shift_fixed": 1.0,
+    "provenance": "nu_sub_A/B reused unchanged from coupling-v2's own already-executed sensitivity grid (0.02=stronger_topup, 0.01=primary); beta reused unchanged from coupling-v3.1's own frozen primary; section assignment (A=stronger) is arbitrary, disclosed in the self-review log, not chosen to hit this target"
+  },
+  "replicates": [
+    {
+      "cipher_seed": 42,
+      "postprocessor_seed": 7100042,
+      "A_H2": 2.230553599419675,
+      "B_H2": 2.248041319293582,
+      "gap": -0.01748771987390718
+    },
+    {
+      "cipher_seed": 179,
+      "postprocessor_seed": 7100179,
+      "A_H2": 2.2161197742424075,
+      "B_H2": 2.2296209375779754,
+      "gap": -0.013501163335567945
+    },
+    {
+      "cipher_seed": 316,
+      "postprocessor_seed": 7100316,
+      "A_H2": 2.2287749609707097,
+      "B_H2": 2.241067657572298,
+      "gap": -0.012292696601588382
+    },
+    {
+      "cipher_seed": 453,
+      "postprocessor_seed": 7100453,
+      "A_H2": 2.2141033167608124,
+      "B_H2": 2.23963455727647,
+      "gap": -0.025531240515657583
+    },
+    {
+      "cipher_seed": 590,
+      "postprocessor_seed": 7100590,
+      "A_H2": 2.2138769785556263,
+      "B_H2": 2.2338443450942798,
+      "gap": -0.019967366538653497
+    }
+  ],
+  "mean_gap": -0.017756037373074917,
+  "mean_gap_as_fraction_of_real": -0.06387257091633437
+}

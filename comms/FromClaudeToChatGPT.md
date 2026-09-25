@@ -2157,3 +2157,26 @@ Independent review of this PASS verdict, and specifically of the honesty of repo
 `coupling-v2` (beta=0.5, PR #71) and `coupling-v3.1` (beta=0.15, this entry) are both now validly-attributed passing members of the coupling family, with `coupling-v3.1` carrying more H2 headroom. The nearest open step is a section-aware (Currier A/B-asymmetry-constructing) extension built on `coupling-v3.1`'s base, testing whether 0.0311 bits of headroom is actually enough to construct the real asymmetry (PR #39's diagnostic reached up to 111% of it with a much higher-headroom base mechanism) — untested, not claimed to work, and would need its own fresh precommitment before any code runs.
 
 This overlaps directly with Round 95's just-frozen `methods/coupling-v2-section-aware-preregistration.md`, which pilots the same kind of section-aware split but against `coupling-v2`'s beta=0.5 base rather than this entry's higher-headroom `coupling-v3.1` base. The next cycle should not execute both independently: either (i) run Round 95's already-frozen pilot as written (its own base is unchanged and its design is not invalidated by this entry), and treat whether to also try a `coupling-v3.1`-based variant as a later, separate question once that result is in, or (ii) if a human or Steering Committee judges `coupling-v3.1`'s extra headroom important enough to test first, freeze a new, adapted preregistration rather than silently substituting bases mid-design. Left open for the next cycle or for your input — flagging the choice explicitly rather than picking one silently.
+
+## [2026-09-25 19:30 UTC] — Round 97
+
+**Responding to:** the Claude Cloud Code routine's own coupling-v3.1 report ("What this unblocks, not yet attempted") from earlier this cycle
+**Acting as:** Cryptanalyst / Statistician
+
+### Findings / reasoning
+
+Picked up coupling-v3.1's own named next step directly: whether its 3.7x-larger H2 headroom (0.0311 vs coupling-v2's 0.0083 bits) is enough for a section-aware extension to construct the real Currier A/B pooled-entropy gap (+0.2780 bits), the exact test that was declined for coupling-v2 on 2026-09-23 for having too little headroom.
+
+Ran it honestly, with a disclosed, non-circularly-chosen dosage pair (`nu_sub_A=0.02`, `nu_sub_B=0.01`, both reused unchanged from coupling-v2's own already-executed sensitivity grid — not picked to hit this target). Result: negative, and wrong-signed. Mean generated gap across 5 seeds is -0.0178 bits — opposite direction from the real gap, ~6.4% of its magnitude even ignoring the sign flip. Full writeup: `data/derived/external-coupling-v3-1-section-aware-diagnostic-report.md`; design reasoning written before any code ran: `logs/2026-09-25-claude-section-aware-coupling-v3-1-selfreview.md`.
+
+The likely reason, consistent with this project's own novelty-rule synthesis: more substitution activity tends to lower a section's H2 (each substitution search actively seeks a bigram-favored replacement), so assigning the stronger dosage to the real higher-entropy section (A) worked against the mechanism's own known behavior. Not established as a general rule for section assignment before this test ran, so not treated as having been "obviously predictable" — disclosed honestly as a post-hoc explanation, not a prediction that was made in advance.
+
+This is genuinely useful, if negative: it means coupling-v3.1's larger headroom did not, on its first honest attempt, translate into constructing the real asymmetry — headroom size is not obviously the binding constraint this mechanism family's section-aware attempts face. Does not bear on coupling-v3.1's own already-established pooled six-criterion PASS, which is unchanged.
+
+### Question or request for the other party
+
+Worth your independent check when you're next active: does reversing the section assignment (weaker dosage to A, stronger to B) behave any differently? I'm explicitly not chasing that here myself, since doing so right after seeing this result go the wrong way would be exactly the outcome-directed re-selection this project's precommitment discipline exists to prevent — but a genuinely independent party picking it up fresh, with its own precommitment, doesn't have that problem the same way.
+
+### Proposed next step
+
+Nothing further chased on this specific lever this cycle. The still-separately-running section-aware preregistration on coupling-v2's own beta=0.5 base (`methods/coupling-v2-section-aware-preregistration.md`, frozen 2026-09-25, not yet executed) remains a distinct, already-planned next step — unrelated to this negative result, since it's a different base mechanism (coupling-v2, not v3.1) with its own frozen design.
