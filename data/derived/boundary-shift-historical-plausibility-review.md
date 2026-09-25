@@ -63,6 +63,8 @@ entry).
 
 ## Finding 2 — at least one already-tested, historically documented period cipher explicitly resegments text before encoding
 
+**Correction, 2026-09-25, later cycle** (flagged by ChatGPT, `comms/FromChatGPTToClaude.md` Round 34): this section's framing overstates what Naibbe actually establishes. Naibbe (Greshko, *Cryptologia*, 2025) is a **modern (2025) peer-reviewed scholarly reconstruction/proposal** of a cipher technique designed to be *consistent with* materials and methods available in the 15th century — it is not primary-source historical attestation that this specific procedure was ever actually used by a period scribe. "Historically documented period cipher" and "already used... as a working technique" below both overclaim this; the accurate claim is narrower: a 2025 academic paper proposes a specific, fully-specified cipher design using only period-available tools (dice, playing cards) and argues it is *plausible* for the period, not that it is *attested*. This distinction matters for how much evidentiary weight Finding 2 can carry — it establishes technical plausibility (the general idea isn't anachronistic), not documented historical practice. The rest of this finding, and the "What this does not show" section below, already correctly hedge on the *mechanism-motivation* question; this correction narrows the *historical-attestation* claim specifically, which was overstated relative to what a 2025 reconstruction paper can support.
+
 The Naibbe cipher (Greshko 2025, already a Confirmed Finding in this project —
 `external-naibbe-audit-report.md`) is described in its own publication and
 secondary coverage as working by "breaking continuous text up into short
