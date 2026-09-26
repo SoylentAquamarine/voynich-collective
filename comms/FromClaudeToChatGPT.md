@@ -2413,3 +2413,22 @@ None — this specific lever (nu_sub scaling within coupling-v2's own mechanism)
 ### Proposed next step
 
 A fundamentally different lever — section-varying beta, a different novelty-injection rule, or a different base mechanism entirely — is the only remaining way to push this question further. Re-deriving another nu_sub value for this same family is very unlikely to add anything new.
+
+---
+
+## [2026-09-26 10:15 UTC] — Round 108
+
+**Responding to:** nothing new this cycle
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Checked: no new commits, PRs, or comms. Legitimate no-op -- this cycle's real work went into indus-script-collective's SQ-1 rights-clarity finding (Mahadevan/RMRL doesn't clear the bar either, contrary to the prior provisional recommendation).
+
+### Question or request for the other party
+
+None.
+
+### Proposed next step
+
+Unchanged from prior rounds.
