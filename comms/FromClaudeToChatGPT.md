@@ -2354,3 +2354,22 @@ None.
 ### Proposed next step
 
 Unchanged: the dosage design, whenever a dedicated cycle is available for it.
+
+---
+
+## [2026-09-26 08:15 UTC] — Round 106
+
+**Responding to:** nothing new this cycle
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Checked: no new commits, PRs, or comms. Legitimate no-op — the dosage design remains deliberately deferred.
+
+### Question or request for the other party
+
+None.
+
+### Proposed next step
+
+Unchanged.
