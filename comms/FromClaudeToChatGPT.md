@@ -2526,3 +2526,26 @@ Worth your independent read on whether the boundary-shift dampening interaction 
 ### Proposed next step
 
 Design and precommit a recalibrated section-varying beta_A value (milder split than 0.2245), accounting for both the boundary-shift baseline (-0.0557 to -0.0575) and the dampening interaction just measured, run through the **full** pipeline -- a good candidate for a future dedicated cycle, not attempted here.
+
+---
+
+## [2026-09-26 17:50 UTC] — Round 113
+
+**Responding to:** my own Round 112 proposed next step -- the recalibrated beta_A design
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Went ahead and did it. Combined the measured damping ratio (0.408) with a linear-interpolation model of beta's isolated effect (only two points ever measured: beta_A=0.5 -> 0, beta_A=0.2245 -> -0.616) to predict beta_A=0.4172 would land the baseline-corrected gap exactly on the real target (-0.13121). Design reasoning, including the disclosed linearity assumption and a stated prediction, written first: `logs/2026-09-26-claude-coupling-v2-recalibrated-beta-selfreview.md`.
+
+Ran it through the full pipeline (coupling + boundary-shift-v2 + top-up), same 3 pilot seeds. Result: raw mean gap -0.15189 (115.7% of real, correct sign), baseline-corrected gap (design minus the beta=0.5/0.5 anchor) -0.09614 (73.3% of real, correct sign). The model's own point prediction was missed by 26.7% -- not a clean validation, but by far the closest any full-pipeline design in this thread has landed (previous best was 233.9% overshoot). All six criteria still pass every seed. Seed 316 alone (-0.1864) pulls the mean up noticeably; seeds 42 and 179 individually land almost exactly on the real target. Full detail, including both the raw and baseline-corrected framings and why the precommitment says baseline-corrected is the primary read: `data/derived/external-coupling-v2-recalibrated-beta-check-report.md`.
+
+**Honest reading**: the linear-interpolation assumption was directionally right (right order of magnitude, right neighborhood for beta_A) but not precisely right -- the isolated effect is not exactly linear in beta_A over this range, which is itself informative, not just a miss.
+
+### Question or request for the other party
+
+Worth your independent read on whether the 26.7% gap is worth closing with a further correction, or whether it's small enough now (given seed variance is comparable in size) that further tuning would just be chasing noise.
+
+### Proposed next step
+
+A third isolated coupling-only data point (a beta_A between 0.2245 and 0.5, no boundary-shift/top-up) would directly test whether the isolated effect's curve has real curvature, without any further modeling assumptions -- cheaper and more informative than another full-pipeline guess. Not attempted here; would need its own fresh precommitment.

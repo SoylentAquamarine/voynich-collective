@@ -1,0 +1,86 @@
+{
+  "design_log": "logs/2026-09-26-claude-coupling-v2-recalibrated-beta-selfreview.md",
+  "real_edge_gain_gap_a_minus_b": -0.1312115448041664,
+  "predicted_baseline_corrected_gap": -0.13121,
+  "anchor": {
+    "name": "anchor",
+    "beta_a": 0.5,
+    "beta_b": 0.5,
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "all_six_pass": true,
+        "H1": 3.966905100243919,
+        "H2": 2.832117057973535,
+        "pooled_edge_gain": 0.9888971337847047,
+        "a_edge_gain": 0.9536089075172792,
+        "b_edge_gain": 0.9889733004758158,
+        "edge_gain_gap": -0.03536439295853655
+      },
+      {
+        "cipher_seed": 179,
+        "all_six_pass": true,
+        "H1": 3.9649264009934453,
+        "H2": 2.829357016493614,
+        "pooled_edge_gain": 0.9799552696271934,
+        "a_edge_gain": 0.9354938183044762,
+        "b_edge_gain": 0.9841096679099599,
+        "edge_gain_gap": -0.04861584960548371
+      },
+      {
+        "cipher_seed": 316,
+        "all_six_pass": true,
+        "H1": 3.970637752344555,
+        "H2": 2.8357078867090117,
+        "pooled_edge_gain": 0.9909712941217156,
+        "a_edge_gain": 0.925370593726684,
+        "b_edge_gain": 1.0086363822324294,
+        "edge_gain_gap": -0.0832657885057454
+      }
+    ],
+    "mean_edge_gain_gap": -0.05574867702325522,
+    "all_three_seeds_pass_six_criteria": true
+  },
+  "design": {
+    "name": "design",
+    "beta_a": 0.4172,
+    "beta_b": 0.5,
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "all_six_pass": true,
+        "H1": 3.969525949855297,
+        "H2": 2.835099115982331,
+        "pooled_edge_gain": 0.9490055974856471,
+        "a_edge_gain": 0.8424066953980409,
+        "b_edge_gain": 0.9805443783573229,
+        "edge_gain_gap": -0.13813768295928197
+      },
+      {
+        "cipher_seed": 179,
+        "all_six_pass": true,
+        "H1": 3.9672574709849107,
+        "H2": 2.831873434512789,
+        "pooled_edge_gain": 0.9473267065939256,
+        "a_edge_gain": 0.8456902773300595,
+        "b_edge_gain": 0.9767937244584762,
+        "edge_gain_gap": -0.1311034471284167
+      },
+      {
+        "cipher_seed": 316,
+        "all_six_pass": true,
+        "H1": 3.9726854973693437,
+        "H2": 2.837447457210733,
+        "pooled_edge_gain": 0.9615000050154691,
+        "a_edge_gain": 0.8225099826496683,
+        "b_edge_gain": 1.008936626842082,
+        "edge_gain_gap": -0.18642664419241373
+      }
+    ],
+    "mean_edge_gain_gap": -0.1518892580933708,
+    "all_three_seeds_pass_six_criteria": true
+  },
+  "baseline_corrected_design_gap": -0.09614058107011558,
+  "baseline_corrected_pct_of_real": 73.2714344714146,
+  "prediction_error_pct": -26.727702865547148
+}

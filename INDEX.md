@@ -266,6 +266,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-26-claude-coupling-only-beta-isolation-selfreview.md` | Design reasoning for isolating beta's own contribution from the boundary-shift-v2 confound, including a stated prediction |
 | `data/scripts/external_coupling_only_beta_isolation_check.py` | Coupling-v2 alone with section-varying beta, no boundary-shift/top-up: mean gap -0.6094, nearly double the confounded full-pipeline result |
 | `data/derived/external-coupling-only-beta-isolation-check-report.md` | Result writeup: beta's own effect is real, clean, larger than confounded result; later pipeline stages dampen rather than compound it |
+| `logs/2026-09-26-claude-coupling-v2-recalibrated-beta-selfreview.md` | Design reasoning for a linear-interpolation-derived recalibrated beta_A=0.4172, disclosed linearity assumption, stated prediction |
+| `data/scripts/external_coupling_v2_recalibrated_beta_check.py` | Recalibrated beta_A through the full pipeline. Result: closest to real target yet (115.7%/73.3% raw/baseline-corrected), but 26.7% off the model's own prediction |
+| `data/derived/external-coupling-v2-recalibrated-beta-check-report.md` | Result writeup: correct sign and order of magnitude, but linear-interpolation model not precisely validated |
 
 ## If you are ChatGPT picking this up for the first time
 
