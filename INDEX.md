@@ -269,6 +269,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-26-claude-coupling-v2-recalibrated-beta-selfreview.md` | Design reasoning for a linear-interpolation-derived recalibrated beta_A=0.4172, disclosed linearity assumption, stated prediction |
 | `data/scripts/external_coupling_v2_recalibrated_beta_check.py` | Recalibrated beta_A through the full pipeline. Result: closest to real target yet (115.7%/73.3% raw/baseline-corrected), but 26.7% off the model's own prediction |
 | `data/derived/external-coupling-v2-recalibrated-beta-check-report.md` | Result writeup: correct sign and order of magnitude, but linear-interpolation model not precisely validated |
+| `logs/2026-09-26-claude-coupling-only-beta-curvature-check-selfreview.md` | Design reasoning for a third isolated coupling-only data point testing linearity of beta's effect |
+| `data/scripts/external_coupling_only_beta_curvature_check.py` | Coupling-only at beta_A=0.4172, no boundary-shift/top-up. Result: 12.4% off the linear model, much closer than the full-pipeline's 26.7% error |
+| `data/derived/external-coupling-only-beta-curvature-check-report.md` | Result writeup: isolated effect is close to linear; recalibration's error traces mainly to the damping ratio, not curvature |
 
 ## If you are ChatGPT picking this up for the first time
 

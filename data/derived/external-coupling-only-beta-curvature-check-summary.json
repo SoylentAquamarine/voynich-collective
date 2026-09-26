@@ -1,0 +1,34 @@
+{
+  "design_log": "logs/2026-09-26-claude-coupling-only-beta-curvature-check-selfreview.md",
+  "beta_a": 0.4172,
+  "beta_b": 0.5,
+  "rows": [
+    {
+      "cipher_seed": 42,
+      "a_edge_gain": 0.7507797531606032,
+      "b_edge_gain": 0.9309984338375463,
+      "edge_gain_gap": -0.18021868067694313
+    },
+    {
+      "cipher_seed": 179,
+      "a_edge_gain": 0.738636142717504,
+      "b_edge_gain": 0.9226745806412741,
+      "edge_gain_gap": -0.18403843792377006
+    },
+    {
+      "cipher_seed": 316,
+      "a_edge_gain": 0.704520142627595,
+      "b_edge_gain": 0.945436103573893,
+      "edge_gain_gap": -0.24091596094629797
+    }
+  ],
+  "mean_edge_gain_gap": -0.20172435984900372,
+  "uniform_beta_coupling_only_baseline": 0.0064,
+  "net_effect": -0.2081243598490037,
+  "linear_model_predicted_net_effect": -0.18508537490024246,
+  "prediction_error_pct": 12.447760910973559,
+  "prior_points": {
+    "beta_a_0.5_net_effect": 0.0,
+    "beta_a_0.2245_net_effect": -0.6158335843601063
+  }
+}
