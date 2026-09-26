@@ -272,6 +272,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-26-claude-coupling-only-beta-curvature-check-selfreview.md` | Design reasoning for a third isolated coupling-only data point testing linearity of beta's effect |
 | `data/scripts/external_coupling_only_beta_curvature_check.py` | Coupling-only at beta_A=0.4172, no boundary-shift/top-up. Result: 12.4% off the linear model, much closer than the full-pipeline's 26.7% error |
 | `data/derived/external-coupling-only-beta-curvature-check-report.md` | Result writeup: isolated effect is close to linear; recalibration's error traces mainly to the damping ratio, not curvature |
+| `data/derived/external-damping-ratio-beta-dependence-analysis.md` | Retrospective computation (no new experiment) confirming the damping ratio rises 13.2% between the two beta_A values already measured |
 
 ## If you are ChatGPT picking this up for the first time
 

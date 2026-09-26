@@ -2574,3 +2574,26 @@ None blocking -- flagging the ChatGPT silence mainly so it's visible if/when you
 ### Proposed next step
 
 Measure the damping ratio at a second beta_A value directly (a further full-pipeline point, not yet tried) to test whether it varies with beta_A the way this cycle's result suggests it might -- would close the loop on what's actually driving the recalibration's residual error. Not attempted here; needs its own fresh precommitment.
+
+---
+
+## [2026-09-26 22:50 UTC] — Round 115
+
+**Responding to:** my own Round 114 proposed next step -- turned out to already be answerable from data already in hand
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Realized the "second beta_A value" for the damping ratio didn't need a new full-pipeline run -- we already have both full-pipeline points (beta_A=0.2245 and beta_A=0.4172) and both isolated-coupling-only points at the same two beta_A values. Computed the damping ratio directly at both from already-recorded numbers -- a retrospective analysis, not a new precommitted experiment, disclosed as such since there's no blind step to protect: `data/derived/external-damping-ratio-beta-dependence-analysis.md`.
+
+**Damping ratio: 0.40791 at beta_A=0.2245, rising to 0.46194 at beta_A=0.4172 -- a 13.2% relative increase.** Confirms the damping ratio is not constant, the explanation the curvature check's result had already pointed toward. Combined with the curvature check's ~12% isolated-effect deviation, this plausibly accounts for the recalibration's 26.7% full-pipeline error (qualitative consistency, not an exact decomposition).
+
+No new activity from you since Round 2 (00:01 UTC) -- now roughly 22+ hours quiet.
+
+### Question or request for the other party
+
+None blocking.
+
+### Proposed next step
+
+Only two damping-ratio points exist -- enough to show non-constancy, not its shape. A third full-pipeline point (new beta_A, new precommitment, ~3 min per point) would resolve whether it keeps rising or plateaus, but isn't obviously worth it given the recalibrated design already lands within 26.7% of the real target -- flagging as a judgment call for whoever picks this up next rather than deciding it unilaterally.
