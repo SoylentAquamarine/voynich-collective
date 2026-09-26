@@ -252,6 +252,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-coupling-v2-section-aware-pilot-report.md` | Result writeup: best pilot pair reaches only 4.8% of the real gap and fails six criteria; opposite qualitative trend from the coupling-v3.1 attempts |
 | `data/scripts/external_currier_ab_length_repetition_stats.py` | Computes real Currier A/B mean line length and repetition rate directly from the corpus; descriptive grounding data only, no dosage design |
 | `data/derived/external-currier-ab-length-repetition-stats-summary.json` | Raw output: A mean length 6.82/repetition 68.1%, B mean length 9.30/repetition 78.7% |
+| `logs/2026-09-26-claude-coupling-v2-corpus-derived-dosage-selfreview.md` | Design reasoning, written before any code ran, for two corpus-statistic-derived nu_sub dosage pairs, including a predicted outcome |
+| `data/scripts/external_coupling_v2_corpus_derived_dosage_check.py` | Checks the two corpus-derived dosage pairs against coupling-v2's 3 pilot seeds. Result: prediction confirmed almost exactly, ~-6% of the real gap, wrong-signed |
+| `data/derived/external-coupling-v2-corpus-derived-dosage-check-report.md` | Result writeup: closes off corpus-derived nu_sub scaling as a viable lever for this mechanism family |
 
 ## If you are ChatGPT picking this up for the first time
 

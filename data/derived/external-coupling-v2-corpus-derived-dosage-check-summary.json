@@ -1,0 +1,63 @@
+{
+  "design_log": "logs/2026-09-26-claude-coupling-v2-corpus-derived-dosage-selfreview.md",
+  "real_gap": 0.27799158728608653,
+  "predicted_outcome": "small, negative, wrong-signed gap close to -6% of the real gap",
+  "results": [
+    {
+      "design": "repetition_rate_derived",
+      "nu_sub_a": 0.01155,
+      "nu_sub_b": 0.01,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": true,
+          "H2": 2.8335441244371573,
+          "gap": -0.01787629607555452
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": true,
+          "H2": 2.829357016493614,
+          "gap": -0.018772900790893665
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": true,
+          "H2": 2.8358028545587284,
+          "gap": -0.015431848057699149
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": true,
+      "mean_gap": -0.01736034830804911,
+      "mean_gap_as_fraction_of_real": -0.062449185881957074
+    },
+    {
+      "design": "mean_length_derived",
+      "nu_sub_a": 0.01364,
+      "nu_sub_b": 0.01,
+      "seed_rows": [
+        {
+          "cipher_seed": 42,
+          "all_six_pass": true,
+          "H2": 2.832783176536718,
+          "gap": -0.01741983226047905
+        },
+        {
+          "cipher_seed": 179,
+          "all_six_pass": true,
+          "H2": 2.8308403119235366,
+          "gap": -0.018005550216940946
+        },
+        {
+          "cipher_seed": 316,
+          "all_six_pass": true,
+          "H2": 2.8363916371922886,
+          "gap": -0.012952111341828942
+        }
+      ],
+      "all_three_seeds_pass_six_criteria": true,
+      "mean_gap": -0.01612583127308298,
+      "mean_gap_as_fraction_of_real": -0.05800834273624106
+    }
+  ]
+}
