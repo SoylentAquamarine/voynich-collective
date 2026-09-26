@@ -257,6 +257,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/external-coupling-v2-corpus-derived-dosage-check-report.md` | Result writeup: closes off corpus-derived nu_sub scaling as a viable lever for this mechanism family |
 | `data/scripts/external_currier_ab_real_edge_gain_stats.py` | Computes real Currier A/B held-out edge-prediction gain separately (not pooled); grounding data only, no beta design |
 | `data/derived/external-currier-ab-real-edge-gain-stats-summary.json` | Raw output: pooled 0.1871, A 0.1069, B 0.2381 bits/boundary — B more than double A |
+| `logs/2026-09-26-claude-coupling-v2-section-varying-beta-selfreview.md` | Design reasoning, written before any code ran, for the first section-varying-beta coupling-v2 mechanism, including the fixed anchor-check threshold |
+| `data/scripts/external_coupling_v2_section_varying_beta_check.py` | New apply_section_varying_coupling mechanism + generated edge-gain-gap criterion. Result: correct-signed, overshoots real gap, but anchor/manipulation check fails |
+| `data/derived/external-coupling-v2-section-varying-beta-check-report.md` | Result writeup: mixed result, can't be cleanly attributed to beta since even uniform beta=0.5 shows a nonzero natural split |
 
 ## If you are ChatGPT picking this up for the first time
 

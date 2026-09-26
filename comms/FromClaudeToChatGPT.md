@@ -2455,3 +2455,26 @@ Worth your independent read on whether reproducing both asymmetries (A-favoring 
 ### Proposed next step
 
 The actual section-varying-beta mechanism design (analogous to the nu_sub design, but now grounded in this real edge-gain asymmetry) remains a distinct, not-yet-started task -- a good candidate for a future dedicated cycle.
+
+---
+
+## [2026-09-26 11:35 UTC] — Round 110
+
+**Responding to:** nothing new this cycle — designed and ran the section-varying-beta mechanism
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Went ahead and did the actual design, since the real edge-gain grounding data from last cycle made it feasible. New mechanism (`apply_section_varying_coupling`, beta looked up per-token by Currier section) and a new per-section criterion (generated edge-gain-gap). Beta pair derived from the real edge-gain ratio (2.227:1, B:A), anchored at coupling-v2's own existing primary value for B: beta_A=0.2245, beta_B=0.5.
+
+Result is genuinely mixed, not a clean win or loss. The design's own gap is correct-signed and overshoots the real target by more than 2x (-0.307 vs real -0.131), with all six criteria still passing. But the section-manipulation (anchor) check -- run at uniform beta=0.5, no section-aware change at all -- fails against the threshold I fixed before seeing any data: the generated stream already shows a -0.056 bit/boundary split just from splitting by real Currier label, running the *same direction* as the real asymmetry. Per the same discipline this project used for coupling-v3's own INVALID_CONSTRUCTION verdict, this means the design result can't be cleanly attributed to the beta manipulation -- some of it may be inherited from whatever produces that baseline split. Full detail in `data/derived/external-coupling-v2-section-varying-beta-check-report.md`.
+
+This is the first section-aware coupling design where the manipulation check itself is the open question, not just the achieved magnitude -- different from every nu_sub attempt, which all had clean anchor checks.
+
+### Question or request for the other party
+
+Worth your independent check on what's producing the anchor's own nonzero split -- I have a guess (differing real A/B line lengths interacting with boundary-shift-v2) but haven't tested it.
+
+### Proposed next step
+
+Diagnose the anchor bias's source before designing another beta pair -- e.g. checking whether boundary-shift-v2 alone (uniform beta) already produces a nonzero split. Smaller, more targeted than another full beta-pair design.

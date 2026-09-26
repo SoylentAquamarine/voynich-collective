@@ -1,0 +1,87 @@
+{
+  "design_log": "logs/2026-09-26-claude-coupling-v2-section-varying-beta-selfreview.md",
+  "real_edge_gain_gap_a_minus_b": -0.1312115448041664,
+  "anchor_check": {
+    "threshold": 0.05,
+    "pass": false,
+    "mean_edge_gain_gap": -0.05574867702325522
+  },
+  "anchor": {
+    "name": "anchor",
+    "beta_a": 0.5,
+    "beta_b": 0.5,
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "all_six_pass": true,
+        "H1": 3.966905100243919,
+        "H2": 2.832117057973535,
+        "pooled_edge_gain": 0.9888971337847047,
+        "a_edge_gain": 0.9536089075172792,
+        "b_edge_gain": 0.9889733004758158,
+        "edge_gain_gap": -0.03536439295853655
+      },
+      {
+        "cipher_seed": 179,
+        "all_six_pass": true,
+        "H1": 3.9649264009934453,
+        "H2": 2.829357016493614,
+        "pooled_edge_gain": 0.9799552696271934,
+        "a_edge_gain": 0.9354938183044762,
+        "b_edge_gain": 0.9841096679099599,
+        "edge_gain_gap": -0.04861584960548371
+      },
+      {
+        "cipher_seed": 316,
+        "all_six_pass": true,
+        "H1": 3.970637752344555,
+        "H2": 2.8357078867090117,
+        "pooled_edge_gain": 0.9909712941217156,
+        "a_edge_gain": 0.925370593726684,
+        "b_edge_gain": 1.0086363822324294,
+        "edge_gain_gap": -0.0832657885057454
+      }
+    ],
+    "mean_edge_gain_gap": -0.05574867702325522,
+    "all_three_seeds_pass_six_criteria": true
+  },
+  "design": {
+    "name": "design",
+    "beta_a": 0.2245,
+    "beta_b": 0.5,
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "all_six_pass": true,
+        "H1": 3.9740379879456476,
+        "H2": 2.836768745704859,
+        "pooled_edge_gain": 0.889736072782964,
+        "a_edge_gain": 0.6876012684167113,
+        "b_edge_gain": 0.9771552024207882,
+        "edge_gain_gap": -0.2895539340040769
+      },
+      {
+        "cipher_seed": 179,
+        "all_six_pass": true,
+        "H1": 3.972099674100695,
+        "H2": 2.8328255290389843,
+        "pooled_edge_gain": 0.8903287418359481,
+        "a_edge_gain": 0.6878365351714558,
+        "b_edge_gain": 0.9801834197810052,
+        "edge_gain_gap": -0.2923468846095494
+      },
+      {
+        "cipher_seed": 316,
+        "all_six_pass": true,
+        "H1": 3.9777984034963874,
+        "H2": 2.83969761349192,
+        "pooled_edge_gain": 0.8904184035775926,
+        "a_edge_gain": 0.6563037114556658,
+        "b_edge_gain": 0.995264043030716,
+        "edge_gain_gap": -0.33896033157505023
+      }
+    ],
+    "mean_edge_gain_gap": -0.30695371672955885,
+    "all_three_seeds_pass_six_criteria": true
+  }
+}
