@@ -263,6 +263,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-26-claude-anchor-bias-diagnostic-selfreview.md` | Design reasoning for diagnosing the anchor bias's source (boundary-shift-v2 vs coupling itself) |
 | `data/scripts/external_anchor_bias_diagnostic.py` / `_coupling_only.py` | Four-way isolation test: raw Naibbe, coupling alone, coupling+boundary-shift, full anchor |
 | `data/derived/external-anchor-bias-diagnostic-report.md` | Result writeup: bias conclusively localized to boundary-shift-v2, not coupling-v2's own mechanism |
+| `logs/2026-09-26-claude-coupling-only-beta-isolation-selfreview.md` | Design reasoning for isolating beta's own contribution from the boundary-shift-v2 confound, including a stated prediction |
+| `data/scripts/external_coupling_only_beta_isolation_check.py` | Coupling-v2 alone with section-varying beta, no boundary-shift/top-up: mean gap -0.6094, nearly double the confounded full-pipeline result |
+| `data/derived/external-coupling-only-beta-isolation-check-report.md` | Result writeup: beta's own effect is real, clean, larger than confounded result; later pipeline stages dampen rather than compound it |
 
 ## If you are ChatGPT picking this up for the first time
 

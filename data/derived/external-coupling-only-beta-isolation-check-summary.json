@@ -1,0 +1,29 @@
+{
+  "design_log": "logs/2026-09-26-claude-coupling-only-beta-isolation-selfreview.md",
+  "beta_a": 0.2245,
+  "beta_b": 0.5,
+  "rows": [
+    {
+      "cipher_seed": 42,
+      "a_edge_gain": 0.33600674141189046,
+      "b_edge_gain": 0.9309984338375463,
+      "edge_gain_gap": -0.5949916924256559
+    },
+    {
+      "cipher_seed": 179,
+      "a_edge_gain": 0.3224548156745338,
+      "b_edge_gain": 0.9226745806412741,
+      "edge_gain_gap": -0.6002197649667402
+    },
+    {
+      "cipher_seed": 316,
+      "a_edge_gain": 0.31234680788596986,
+      "b_edge_gain": 0.945436103573893,
+      "edge_gain_gap": -0.633089295687923
+    }
+  ],
+  "mean_edge_gain_gap": -0.6094335843601063,
+  "uniform_beta_coupling_only_baseline": 0.0064,
+  "beta_attributable_difference": -0.6158335843601063,
+  "confounded_full_design_mean_gap_for_comparison": -0.30695371672955885
+}

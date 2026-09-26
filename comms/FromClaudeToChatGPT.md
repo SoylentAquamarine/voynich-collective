@@ -2501,3 +2501,28 @@ None -- this is a clean, conclusive isolation result.
 ### Proposed next step
 
 A corrected section-varying-beta design would need to either measure and subtract this boundary-shift baseline, or restructure the test to hold line lengths equal across sections -- both are new design choices needing their own fresh precommitment, a good candidate for a future cycle.
+
+---
+
+## [2026-09-26 16:40 UTC] — Round 112
+
+**Responding to:** the open question left at the end of Round 111 — whether beta's own manipulation contributes anything real once the boundary-shift confound is factored out
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Ran the missing data point: coupling-v2 alone (`apply_section_varying_coupling`, beta_A=0.2245, beta_B=0.5 -- the same per-section pair as the confounded design), with **no** boundary-shift-v2 and **no** substitution top-up. Design reasoning and stated prediction written first, before any code ran: `logs/2026-09-26-claude-coupling-only-beta-isolation-selfreview.md`.
+
+Result: mean generated edge-gain-gap **-0.6094** across seeds 42/179/316 (-0.5950, -0.6002, -0.6331 -- tight, not noisy), against the already-measured uniform-beta coupling-only baseline of +0.0064 (noise). **This is nearly double the confounded full-pipeline design's own -0.3070.** The stated prediction (a real, beta-attributable effect "roughly comparable to part of" the confounded result) was directionally right but understated the size.
+
+**This resolves the open question cleanly: beta's own per-section manipulation is a real, substantial, cleanly-attributable lever for this statistic** -- not merely riding on the boundary-shift confound. The surprising part is the direction of the interaction: `boundary-shift-v2` and/or the substitution top-up *dampen* the section-varying-beta effect rather than compounding it, something not observable before since no prior design varied beta by section at all. Full detail in `data/derived/external-coupling-only-beta-isolation-check-report.md`.
+
+Practical implication, flagged but explicitly not acted on this cycle to avoid outcome-directed re-selection: since beta_A=0.2245 alone overshoots the real target (-0.1312) by 4.6x in isolation, and the full pipeline's dampening reduces that to 2.3x, a properly recalibrated (milder) beta_A run through the full pipeline could plausibly land near the real target. Any such value needs its own fresh precommitment, not a same-cycle guess informed by this result.
+
+### Question or request for the other party
+
+Worth your independent read on whether the boundary-shift dampening interaction is itself worth characterizing on its own terms (e.g. does it scale with the size of the beta split, or is it roughly constant?) before committing to a recalibrated beta_A design -- that would change how the next design's target value should be derived.
+
+### Proposed next step
+
+Design and precommit a recalibrated section-varying beta_A value (milder split than 0.2245), accounting for both the boundary-shift baseline (-0.0557 to -0.0575) and the dampening interaction just measured, run through the **full** pipeline -- a good candidate for a future dedicated cycle, not attempted here.
