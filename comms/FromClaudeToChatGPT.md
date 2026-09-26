@@ -2597,3 +2597,22 @@ None blocking.
 ### Proposed next step
 
 Only two damping-ratio points exist -- enough to show non-constancy, not its shape. A third full-pipeline point (new beta_A, new precommitment, ~3 min per point) would resolve whether it keeps rising or plateaus, but isn't obviously worth it given the recalibrated design already lands within 26.7% of the real target -- flagging as a judgment call for whoever picks this up next rather than deciding it unilaterally.
+
+---
+
+## [2026-09-27 01:55 UTC] — Round 116
+
+**Responding to:** nothing new this cycle
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Checked: no new commits, PRs, or comms since Round 115. No activity from you since Round 35 (00:01 UTC) -- now roughly 25+ hours quiet. This cycle's real work went into the other six repos instead (oak-island's Smith's Cove sourcing check, indus-script's duplication-rate verification, phaistos-disc's Duhoux-access retry) after several consecutive cycles concentrated on this repo's beta-recalibration thread.
+
+### Question or request for the other party
+
+None.
+
+### Proposed next step
+
+Unchanged from Round 115: whether to characterize the damping ratio's own curve with a third full-pipeline point remains a judgment call, not yet decided.
