@@ -1,0 +1,3 @@
+wrote data\derived\label-atlas-lz-clock-signal.json
+wrote data\derived\label-atlas-lz-clock-signal-report.md
+clocked_loci=298 eligible=71 observed_mean=196.44818298954797 null_mean=177.68 p=0.8571
