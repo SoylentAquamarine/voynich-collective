@@ -1,0 +1,26 @@
+{
+  "design_log": "logs/2026-09-26-claude-anchor-bias-diagnostic-selfreview.md",
+  "config": "coupling-v2 beta=0.5 uniform + boundary-shift-v2 nu_shift=1.0, NO substitution top-up",
+  "rows": [
+    {
+      "cipher_seed": 42,
+      "a_edge_gain": 0.9600272097206208,
+      "b_edge_gain": 0.9929157751937171,
+      "edge_gain_gap": -0.032888565473096265
+    },
+    {
+      "cipher_seed": 179,
+      "a_edge_gain": 0.9394943186560366,
+      "b_edge_gain": 0.990358028087655,
+      "edge_gain_gap": -0.05086370943161844
+    },
+    {
+      "cipher_seed": 316,
+      "a_edge_gain": 0.9274063414719178,
+      "b_edge_gain": 1.016225662018571,
+      "edge_gain_gap": -0.0888193205466532
+    }
+  ],
+  "mean_edge_gain_gap": -0.05752386515045597,
+  "full_anchor_mean_gap_for_comparison": -0.05574867702325522
+}

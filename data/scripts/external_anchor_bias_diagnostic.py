@@ -1,0 +1,82 @@
+#!/usr/bin/env python3
+"""Diagnoses the section-varying-beta anchor check's own nonzero bias
+(logs/2026-09-26-claude-anchor-bias-diagnostic-selfreview.md): does
+boundary-shift-v2 alone (uniform beta=0.5, no substitution top-up) already
+produce a nonzero generated edge-gain-gap between Currier A and B?
+
+Usage:
+    python data/scripts/external_anchor_bias_diagnostic.py <units_repo>
+"""
+
+from __future__ import annotations
+
+import json
+import random
+import sys
+import time
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "data" / "scripts"))
+import external_coupling_v2_section_aware_preregistered as base
+import external_coupling_v2_section_varying_beta_check as beta_check
+
+OUT_JSON = ROOT / "data" / "derived" / "external-anchor-bias-diagnostic-summary.json"
+
+BETA_FIXED = 0.5
+NU_SHIFT_FIXED = 1.0
+
+
+def transform_no_topup(atomic_tokens, seed):
+    rng = random.Random(seed)
+    coupled = base.apply_coupling_v2(atomic_tokens, BETA_FIXED, rng)
+    shifted = base.apply_boundary_shift_v2(coupled, NU_SHIFT_FIXED, rng)
+    return shifted  # no substitution top-up at all
+
+
+def main() -> None:
+    units_repo = Path(sys.argv[1]).resolve()
+    started = time.time()
+
+    def log(m):
+        print(f"[{time.time()-started:7.1f}s] {m}", flush=True)
+
+    (source, naibbe_module, headlines, scale, modules, targets, cipher, letters, args,
+     token_labels, line_lengths, currier_labels_by_line, real_gap) = base.setup(units_repo, log)
+
+    manifest = json.loads(base.COUPLING_V2_MANIFEST_PATH.read_text(encoding="utf-8"))
+    pilot_cipher_seeds = manifest["seeds"]["cipher"][:3]
+    pilot_post_seeds = manifest["seeds"]["postprocessor"][:3]
+
+    atomic_cache = {}
+    for i, cs in enumerate(pilot_cipher_seeds):
+        encrypted = cipher.encrypt(letters, cs)
+        atomic_cache[i] = [headlines.collapse(t) for t in encrypted["tokens"]]
+
+    rows = []
+    for i in range(3):
+        transformed = transform_no_topup(atomic_cache[i], pilot_post_seeds[i])
+        expanded = [base.expand(t) for t in transformed]
+        gap, a_edge, b_edge = beta_check.section_edge_gain_gap(expanded, line_lengths, currier_labels_by_line, scale)
+        rows.append({"cipher_seed": pilot_cipher_seeds[i], "a_edge_gain": a_edge["gain_bits_per_boundary"],
+                     "b_edge_gain": b_edge["gain_bits_per_boundary"], "edge_gain_gap": gap})
+        log(f"seed {pilot_cipher_seeds[i]}: A_edge={a_edge['gain_bits_per_boundary']:.4f} "
+            f"B_edge={b_edge['gain_bits_per_boundary']:.4f} gap={gap:.4f}")
+
+    mean_gap = sum(r["edge_gain_gap"] for r in rows) / len(rows)
+    log(f"mean edge_gain_gap (no substitution top-up): {mean_gap:.4f}")
+    log(f"for comparison, full anchor (with nu_sub=0.01 top-up) mean gap was -0.0557")
+
+    summary = {
+        "design_log": "logs/2026-09-26-claude-anchor-bias-diagnostic-selfreview.md",
+        "config": "coupling-v2 beta=0.5 uniform + boundary-shift-v2 nu_shift=1.0, NO substitution top-up",
+        "rows": rows,
+        "mean_edge_gain_gap": mean_gap,
+        "full_anchor_mean_gap_for_comparison": -0.05574867702325522,
+    }
+    OUT_JSON.write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+    log(f"wrote {OUT_JSON}")
+
+
+if __name__ == "__main__":
+    main()

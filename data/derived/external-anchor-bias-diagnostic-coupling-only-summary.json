@@ -1,0 +1,51 @@
+{
+  "design_log": "logs/2026-09-26-claude-anchor-bias-diagnostic-selfreview.md (follow-up, same precommitment)",
+  "coupling_only": {
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "a_edge_gain": 0.9537151908502884,
+        "b_edge_gain": 0.9309984338375463,
+        "edge_gain_gap": 0.022716757012742117
+      },
+      {
+        "cipher_seed": 179,
+        "a_edge_gain": 0.9494269997143595,
+        "b_edge_gain": 0.9226745806412741,
+        "edge_gain_gap": 0.026752419073085454
+      },
+      {
+        "cipher_seed": 316,
+        "a_edge_gain": 0.9153034925079151,
+        "b_edge_gain": 0.945436103573893,
+        "edge_gain_gap": -0.030132611065977866
+      }
+    ],
+    "mean_edge_gain_gap": 0.006445521673283235
+  },
+  "raw_no_postprocessing": {
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "a_edge_gain": -0.006109484900739729,
+        "b_edge_gain": -0.0038788703993225537,
+        "edge_gain_gap": -0.0022306145014171757
+      },
+      {
+        "cipher_seed": 179,
+        "a_edge_gain": -0.01145182731186178,
+        "b_edge_gain": -0.004557154183762473,
+        "edge_gain_gap": -0.006894673128099308
+      },
+      {
+        "cipher_seed": 316,
+        "a_edge_gain": -0.007603774887017898,
+        "b_edge_gain": -0.004357018312349229,
+        "edge_gain_gap": -0.0032467565746686694
+      }
+    ],
+    "mean_edge_gain_gap": -0.0041240147347283845
+  },
+  "boundary_shift_plus_coupling_mean_gap_for_comparison": -0.0575,
+  "full_anchor_mean_gap_for_comparison": -0.05574867702325522
+}

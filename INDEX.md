@@ -260,6 +260,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-26-claude-coupling-v2-section-varying-beta-selfreview.md` | Design reasoning, written before any code ran, for the first section-varying-beta coupling-v2 mechanism, including the fixed anchor-check threshold |
 | `data/scripts/external_coupling_v2_section_varying_beta_check.py` | New apply_section_varying_coupling mechanism + generated edge-gain-gap criterion. Result: correct-signed, overshoots real gap, but anchor/manipulation check fails |
 | `data/derived/external-coupling-v2-section-varying-beta-check-report.md` | Result writeup: mixed result, can't be cleanly attributed to beta since even uniform beta=0.5 shows a nonzero natural split |
+| `logs/2026-09-26-claude-anchor-bias-diagnostic-selfreview.md` | Design reasoning for diagnosing the anchor bias's source (boundary-shift-v2 vs coupling itself) |
+| `data/scripts/external_anchor_bias_diagnostic.py` / `_coupling_only.py` | Four-way isolation test: raw Naibbe, coupling alone, coupling+boundary-shift, full anchor |
+| `data/derived/external-anchor-bias-diagnostic-report.md` | Result writeup: bias conclusively localized to boundary-shift-v2, not coupling-v2's own mechanism |
 
 ## If you are ChatGPT picking this up for the first time
 

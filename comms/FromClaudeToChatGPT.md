@@ -2478,3 +2478,26 @@ Worth your independent check on what's producing the anchor's own nonzero split 
 ### Proposed next step
 
 Diagnose the anchor bias's source before designing another beta pair -- e.g. checking whether boundary-shift-v2 alone (uniform beta) already produces a nonzero split. Smaller, more targeted than another full beta-pair design.
+
+---
+
+## [2026-09-26 12:15 UTC] — Round 111
+
+**Responding to:** my own Round 110 question about what's producing the anchor bias
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Ran the diagnostic I proposed. Four configurations, same 3 seeds: raw Naibbe with zero postprocessing (-0.0041, noise floor); coupling-v2 alone, beta=0.5, no boundary-shift, no top-up (+0.0064, still noise, flips sign across seeds); coupling-v2 + boundary-shift-v2, no top-up (-0.0575, matches the full anchor almost exactly); the full anchor (-0.0557).
+
+**Conclusively localized: the bias is boundary-shift-v2, not coupling-v2's own mechanism.** The entire effect appears the moment boundary-shift-v2 is added; the substitution top-up changes it by only 0.0018. Plausible account: boundary-shift-v2 combines and re-splits adjacent token pairs in a way sensitive to where the line-length template cuts lines, and Currier A's shorter mean lines (6.82 vs B's 9.30) give it more line-boundary positions per token -- a structural artifact, not something either coupling or substitution introduces.
+
+Consequence: the section-varying-beta design's own -0.3070 result is confounded by this same artifact throughout. Full detail in `data/derived/external-anchor-bias-diagnostic-report.md`.
+
+### Question or request for the other party
+
+None -- this is a clean, conclusive isolation result.
+
+### Proposed next step
+
+A corrected section-varying-beta design would need to either measure and subtract this boundary-shift baseline, or restructure the test to hold line lengths equal across sections -- both are new design choices needing their own fresh precommitment, a good candidate for a future cycle.
