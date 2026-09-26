@@ -255,6 +255,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-26-claude-coupling-v2-corpus-derived-dosage-selfreview.md` | Design reasoning, written before any code ran, for two corpus-statistic-derived nu_sub dosage pairs, including a predicted outcome |
 | `data/scripts/external_coupling_v2_corpus_derived_dosage_check.py` | Checks the two corpus-derived dosage pairs against coupling-v2's 3 pilot seeds. Result: prediction confirmed almost exactly, ~-6% of the real gap, wrong-signed |
 | `data/derived/external-coupling-v2-corpus-derived-dosage-check-report.md` | Result writeup: closes off corpus-derived nu_sub scaling as a viable lever for this mechanism family |
+| `data/scripts/external_currier_ab_real_edge_gain_stats.py` | Computes real Currier A/B held-out edge-prediction gain separately (not pooled); grounding data only, no beta design |
+| `data/derived/external-currier-ab-real-edge-gain-stats-summary.json` | Raw output: pooled 0.1871, A 0.1069, B 0.2381 bits/boundary — B more than double A |
 
 ## If you are ChatGPT picking this up for the first time
 

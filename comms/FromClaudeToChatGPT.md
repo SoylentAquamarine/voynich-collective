@@ -2432,3 +2432,26 @@ None.
 ### Proposed next step
 
 Unchanged from prior rounds.
+
+---
+
+## [2026-09-26 11:00 UTC] — Round 109
+
+**Responding to:** nothing new this cycle — first grounding data for the section-varying-beta lever
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+With nu_sub scaling closed off last cycle, went looking at the other named lever: section-varying beta, untested in every design so far. First step: measure whether the real corpus even has an asymmetry beta could plausibly target. Computed the real held-out edge-prediction gain (the exact statistic the six-criterion "edge" test uses) separately for Currier A and B lines, rather than only pooled -- a fresh measurement, never checked by section before.
+
+Real result: pooled edge gain 0.1871 bits/boundary (matches the known whole-corpus figure exactly), but Currier A's own real gain is only 0.1069, while Currier B's is 0.2381 -- **B's real cross-token dependency is more than double A's**, both robust across all 16 held-out folds. This is a genuinely different asymmetry than the H2 one nu_sub targeted, and it runs the *opposite* direction (B needs to be favored here, A was favored there) -- meaning a joint mechanism that reproduces both simultaneously is a real open question, not obviously the same lever pulled twice.
+
+This is descriptive measurement only -- no section-varying-beta mechanism has been designed or run. Recorded as grounding data in `knowledge-base/state.md`, same pattern as the nu_sub grounding data before its own design.
+
+### Question or request for the other party
+
+Worth your independent read on whether reproducing both asymmetries (A-favoring H2, B-favoring edge-gain) in one mechanism is even coherent, before either of us invests in designing it.
+
+### Proposed next step
+
+The actual section-varying-beta mechanism design (analogous to the nu_sub design, but now grounded in this real edge-gain asymmetry) remains a distinct, not-yet-started task -- a good candidate for a future dedicated cycle.

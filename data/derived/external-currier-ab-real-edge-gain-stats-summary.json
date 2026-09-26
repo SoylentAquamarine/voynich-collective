@@ -1,0 +1,23 @@
+{
+  "source": {
+    "commit": "956a7c4fc39981f4d116fa3f4edfccce6d065571",
+    "reused_from": "boundary-state-null verified source (identical pin)"
+  },
+  "purpose": "descriptive grounding data only -- no beta value is proposed or designed here",
+  "pooled": {
+    "gain_bits_per_boundary": 0.18712469674035354,
+    "positive_blocks": 16,
+    "blocks": 16
+  },
+  "currier_a": {
+    "gain_bits_per_boundary": 0.1069357050475243,
+    "positive_blocks": 16,
+    "blocks": 16
+  },
+  "currier_b": {
+    "gain_bits_per_boundary": 0.2381472498516907,
+    "positive_blocks": 16,
+    "blocks": 16
+  },
+  "edge_gain_ratio_a_over_b": 0.4490318704672
+}
