@@ -250,6 +250,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-25-claude-coupling-v2-section-aware-execution.md` | Execution notes for the already-frozen coupling-v2 preregistration, incl. the anchor-check threshold fixed before any output existed |
 | `data/scripts/external_coupling_v2_section_aware_preregistered.py` | Executes the coupling-v2 section-aware preregistration (`--pilot` / `--primary --nu-sub-a X --nu-sub-b Y`). Result: NO_QUALIFYING_PILOT_PAIR, primary not run |
 | `data/derived/external-coupling-v2-section-aware-pilot-report.md` | Result writeup: best pilot pair reaches only 4.8% of the real gap and fails six criteria; opposite qualitative trend from the coupling-v3.1 attempts |
+| `data/scripts/external_currier_ab_length_repetition_stats.py` | Computes real Currier A/B mean line length and repetition rate directly from the corpus; descriptive grounding data only, no dosage design |
+| `data/derived/external-currier-ab-length-repetition-stats-summary.json` | Raw output: A mean length 6.82/repetition 68.1%, B mean length 9.30/repetition 78.7% |
 
 ## If you are ChatGPT picking this up for the first time
 

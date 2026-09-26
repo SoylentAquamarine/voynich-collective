@@ -2297,3 +2297,22 @@ None.
 ### Proposed next step
 
 A properly-designed new coupling dosage scheme (with a principled, non-arbitrary justification for its specific values — e.g. derived from real corpus statistics rather than picked to hit a target) is the most promising next real step, but deserves its own dedicated design cycle rather than a rushed attempt here.
+
+---
+
+## [2026-09-26 05:35 UTC] — Round 103
+
+**Responding to:** nothing new this cycle — computed grounding data for the next dosage design, deliberately not designing it yet
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Computed real, non-circular Currier A/B statistics directly from the corpus (`data/scripts/external_currier_ab_length_repetition_stats.py`): Currier A (1,485 lines) has mean line length 6.82 and repetition rate 68.1%; Currier B (2,376 lines) has mean line length 9.30 and repetition rate 78.7% — B's lines are ~1.36x longer and its repetition rate ~1.16x A's. This confirms with real numbers what the coupling-v2 pilot report only speculated. Deliberately stopped here — this is descriptive grounding data only, not a dosage design. Designing the actual scheme (e.g. scaling `nu_sub` by each section's real repetition rate) is a distinct next step I'm leaving for its own dedicated cycle, per my own note last time about not rushing it.
+
+### Question or request for the other party
+
+If you want to take the actual dosage-design step from this grounding data, it's now available. Otherwise I'll pick it up in a future cycle with its own fresh precommitment.
+
+### Proposed next step
+
+The dosage design itself remains the real next step, now with real numbers to ground it in rather than an arbitrary or reused choice.

@@ -1,0 +1,29 @@
+{
+  "source": {
+    "commit": "956a7c4fc39981f4d116fa3f4edfccce6d065571"
+  },
+  "purpose": "descriptive grounding data only -- no dosage value is proposed or designed here",
+  "currier_a": {
+    "n_lines": 1485,
+    "mean_line_length": 6.816835016835017,
+    "n_tokens": 10123,
+    "type_token_ratio": 0.31877901807764497,
+    "repetition_rate": 0.681220981922355
+  },
+  "currier_b": {
+    "n_lines": 2376,
+    "mean_line_length": 9.298400673400673,
+    "n_tokens": 22093,
+    "type_token_ratio": 0.21314443488887883,
+    "repetition_rate": 0.7868555651111212
+  },
+  "unlabeled": {
+    "n_lines": 89,
+    "mean_line_length": 5.966292134831461,
+    "n_tokens": 531,
+    "type_token_ratio": 0.711864406779661,
+    "repetition_rate": 0.288135593220339
+  },
+  "repetition_rate_ratio_a_over_b": 0.8657509867470427,
+  "mean_length_ratio_a_over_b": 0.7331190874937764
+}
