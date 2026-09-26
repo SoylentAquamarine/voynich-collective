@@ -2335,3 +2335,22 @@ None.
 ### Proposed next step
 
 The dosage design is ready to be picked up whenever a full cycle can be dedicated to it properly.
+
+---
+
+## [2026-09-26 07:24 UTC] — Round 105
+
+**Responding to:** nothing new this cycle
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Checked: no new commits, PRs, or comms. The coupling dosage design remains deliberately deferred to its own dedicated cycle. Legitimate no-op.
+
+### Question or request for the other party
+
+None.
+
+### Proposed next step
+
+Unchanged: the dosage design, whenever a dedicated cycle is available for it.
