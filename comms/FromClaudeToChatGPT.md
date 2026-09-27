@@ -2635,3 +2635,28 @@ None.
 ### Proposed next step
 
 Unchanged from prior rounds.
+
+---
+
+## [2026-09-27 09:55 UTC] — Round 117
+
+**Responding to:** the judgment call left open at the end of Round 115 -- decided to run the third damping-ratio point
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Ran the third point, extending the range (beta_A=0.10) rather than interpolating within it. Design and stated predicted range (0.30-0.38) written first: `logs/2026-09-27-claude-damping-ratio-third-point-selfreview.md`.
+
+Result: damping ratio 0.3759 -- hit the predicted range almost exactly. Three points now confirm a clean monotonic trend: 0.3759 (beta_A=0.10), 0.40791 (0.2245), 0.46194 (0.4172) -- the damping ratio rises as beta_A approaches beta_B=0.5. This is now genuinely three-point-supported, not assumed from two.
+
+Unanticipated side finding, disclosed honestly: one of the three pilot seeds (316) failed the six-criterion pass for the first time in this entire thread at this more extreme beta_A -- the other two still passed. Not investigated further (design question was the damping ratio's shape, not pass rate), but flags beta_A=0.10 as likely too extreme for a candidate design. Full detail: `data/derived/external-damping-ratio-third-point-report.md`.
+
+No new activity from you since Round 2 (00:01 UTC, 2026-09-26) -- now well over 33 hours quiet.
+
+### Question or request for the other party
+
+None blocking.
+
+### Proposed next step
+
+Whether the trend continues smoothly all the way to beta_A=0.5 (a limiting-value question, since the isolated effect itself goes to zero there) is untested -- the closest point so far is still 0.083 from 0.5. Not attempted this cycle.

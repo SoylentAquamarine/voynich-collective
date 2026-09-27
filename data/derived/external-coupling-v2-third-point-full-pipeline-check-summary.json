@@ -1,0 +1,27 @@
+{
+  "design_log": "logs/2026-09-27-claude-damping-ratio-third-point-selfreview.md",
+  "design": {
+    "beta_a": 0.1,
+    "beta_b": 0.5,
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "all_six_pass": true,
+        "edge_gain_gap": -0.3686888784809714
+      },
+      {
+        "cipher_seed": 179,
+        "all_six_pass": true,
+        "edge_gain_gap": -0.3535048151504785
+      },
+      {
+        "cipher_seed": 316,
+        "all_six_pass": false,
+        "edge_gain_gap": -0.383762982617613
+      }
+    ],
+    "mean_edge_gain_gap": -0.3686522254163543
+  },
+  "known_anchor_mean_gap": -0.05574867702325522,
+  "baseline_corrected_gap": -0.3129035483930991
+}

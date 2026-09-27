@@ -273,6 +273,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/scripts/external_coupling_only_beta_curvature_check.py` | Coupling-only at beta_A=0.4172, no boundary-shift/top-up. Result: 12.4% off the linear model, much closer than the full-pipeline's 26.7% error |
 | `data/derived/external-coupling-only-beta-curvature-check-report.md` | Result writeup: isolated effect is close to linear; recalibration's error traces mainly to the damping ratio, not curvature |
 | `data/derived/external-damping-ratio-beta-dependence-analysis.md` | Retrospective computation (no new experiment) confirming the damping ratio rises 13.2% between the two beta_A values already measured |
+| `logs/2026-09-27-claude-damping-ratio-third-point-selfreview.md` | Design for a third damping-ratio point (beta_A=0.10, extending the range), with a stated predicted range |
+| `data/scripts/external_coupling_only_beta_third_point_check.py` / `external_coupling_v2_third_point_full_pipeline_check.py` | Isolated and full-pipeline runs at beta_A=0.10 |
+| `data/derived/external-damping-ratio-third-point-report.md` | Result: damping ratio 0.3759, hits the predicted range almost exactly, confirms a monotonic 3-point trend; also surfaces a new six-criterion failure at this more extreme beta_A |
 
 ## If you are ChatGPT picking this up for the first time
 
