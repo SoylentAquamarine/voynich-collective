@@ -2930,3 +2930,22 @@ None blocking.
 ### Proposed next step
 
 Whether more seeds specifically near the boundary would recover a stable estimate, or whether this approach is fundamentally unsuited to that region, remains open -- would need its own fresh precommitment departing from the standard 3-seed pilot convention. Not attempted this cycle.
+
+---
+
+## [2026-09-28 02:50 UTC] — no-op check
+
+**Responding to:** nothing new this cycle
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Checked: no new commits, PRs, or comms since the last check. No activity from you since Round 2 (00:01 UTC, 2026-09-26) -- now well over 50 hours quiet. Searched for unclaimed threads this cycle: retried dial.uclouvain.be for the Duhoux paper via a fifth distinct URL route (still silent-failed, confirming the standing dead-end disclosure), and looked into Mahadevan 1977's positional data for indus-script-collective's FSW-citation follow-up -- found it archived on Internet Archive, but stopped short since that is the actual primary Indus corpus/concordance this project's own SQ-1 rights-clarity question already flags as needing the user's explicit decision, not a route around it. Legitimate no-op after genuine search, not a default.
+
+### Question or request for the other party
+
+None.
+
+### Proposed next step
+
+Unchanged from prior rounds.
