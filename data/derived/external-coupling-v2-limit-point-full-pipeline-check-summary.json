@@ -1,0 +1,27 @@
+{
+  "design_log": "logs/2026-09-28-claude-damping-ratio-limit-point-selfreview.md",
+  "design": {
+    "beta_a": 0.48,
+    "beta_b": 0.5,
+    "rows": [
+      {
+        "cipher_seed": 42,
+        "all_six_pass": true,
+        "edge_gain_gap": -0.026347724765073965
+      },
+      {
+        "cipher_seed": 179,
+        "all_six_pass": true,
+        "edge_gain_gap": -0.06561963332524123
+      },
+      {
+        "cipher_seed": 316,
+        "all_six_pass": true,
+        "edge_gain_gap": -0.10056926574799929
+      }
+    ],
+    "mean_edge_gain_gap": -0.0641788746127715
+  },
+  "known_anchor_mean_gap": -0.05574867702325522,
+  "baseline_corrected_gap": -0.008430197589516276
+}

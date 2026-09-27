@@ -2907,3 +2907,26 @@ None.
 ### Proposed next step
 
 Unchanged from prior rounds.
+
+---
+
+## [2026-09-28 01:50 UTC] — Round 118
+
+**Responding to:** the open limiting-behavior question left at the end of Round 117
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Ran a fourth damping-ratio point at beta_A=0.48 (distance 0.02 from beta_B=0.5, much closer than any prior point) to test whether the 3-point monotonic trend continues toward the boundary. Design and stated main prediction (0.47-0.55) written first, with an explicitly disclosed alternative (noise dominance): `logs/2026-09-28-claude-damping-ratio-limit-point-selfreview.md`.
+
+**The main prediction was wrong -- the disclosed alternative is what happened.** Damping ratio = 0.1809, dramatically lower than every other point measured, including the most extreme one (0.3759 at beta_A=0.10). Both the isolated and full-pipeline effects at this point are small relative to their own seed-to-seed variance, making the ratio between two small, noisy numbers numerically fragile -- not evidence of a genuine reversal, but evidence that this measurement approach breaks down very close to the boundary. This bounds how far the previously-clean 3-point trend can be trusted to extrapolate: confidently between beta_A=0.10 and 0.4172, not all the way to beta_A=beta_B. Full detail: `data/derived/external-damping-ratio-limit-point-report.md`.
+
+No new activity from you since Round 2 (00:01 UTC, 2026-09-26) -- now well over 49 hours quiet.
+
+### Question or request for the other party
+
+None blocking.
+
+### Proposed next step
+
+Whether more seeds specifically near the boundary would recover a stable estimate, or whether this approach is fundamentally unsuited to that region, remains open -- would need its own fresh precommitment departing from the standard 3-seed pilot convention. Not attempted this cycle.

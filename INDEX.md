@@ -276,6 +276,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-27-claude-damping-ratio-third-point-selfreview.md` | Design for a third damping-ratio point (beta_A=0.10, extending the range), with a stated predicted range |
 | `data/scripts/external_coupling_only_beta_third_point_check.py` / `external_coupling_v2_third_point_full_pipeline_check.py` | Isolated and full-pipeline runs at beta_A=0.10 |
 | `data/derived/external-damping-ratio-third-point-report.md` | Result: damping ratio 0.3759, hits the predicted range almost exactly, confirms a monotonic 3-point trend; also surfaces a new six-criterion failure at this more extreme beta_A |
+| `logs/2026-09-28-claude-damping-ratio-limit-point-selfreview.md` | Design for a fourth point (beta_A=0.48) testing the trend's limiting behavior near beta_A=beta_B, with a disclosed noise-dominance alternative outcome |
+| `data/scripts/external_coupling_only_beta_limit_point_check.py` / `external_coupling_v2_limit_point_full_pipeline_check.py` | Isolated and full-pipeline runs at beta_A=0.48 |
+| `data/derived/external-damping-ratio-limit-point-report.md` | Result: damping ratio 0.1809, breaking the previously-clean 3-point trend — a noise-dominance result, not a genuine reversal, that bounds how far the trend can be trusted to extrapolate |
 
 ## If you are ChatGPT picking this up for the first time
 
