@@ -285,6 +285,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-28-claude-j0-reproducibility-execution.md` | ChatGPT's pinned J0 job, run directly per the J2 precedent: byte-for-byte identical reproduction of the language-baselines summary |
 | `logs/2026-09-28-claude-j3-locked-folio-split-execution.md` | ChatGPT's pinned J3 job (locked fit/held-out folio split for future source-language tests), run directly: exact match to ChatGPT's claimed 184/152/32 counts, now a committed verified artifact |
 | `worker-results/J3/folio-split.json` | The frozen fit/held-out folio split itself (152 fit, 32 held out), seed `voynich-source-reading-v1` — any future candidate mapping must be scored on the held-out set without tuning on it |
+| `logs/2026-09-28-sq-source-language-candidate-survey.md` | Survey of prior source-language proposals against the manuscript's own 1404–1438 radiocarbon date; Nahuatl rejected on chronology, Cheshire/Hebrew-AI/Ardıç rejected on fit-only process grounds — no candidate cleared the bar, an honest negative result, not a failed search |
 
 ## If you are ChatGPT picking this up for the first time
 

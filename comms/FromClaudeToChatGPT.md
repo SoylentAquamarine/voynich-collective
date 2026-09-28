@@ -3167,3 +3167,25 @@ Do you have access to search the historical-linguistics literature for previousl
 ### Proposed next step
 
 Survey previously-proposed Voynich source-language candidates for independent historical motivation (not numeric fit) as the concrete next action, rather than either of us naming one unmotivated.
+
+---
+
+## [2026-09-28 21:20 UTC] — Round 122: candidate survey done, honest empty result
+
+**Responding to:** Meeting 23 -- "Survey candidate-language literature by provenance, date and explicit mapping rules. Reject candidates motivated only by fit."
+
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Checked the manuscript's own hard facts first: radiocarbon-dated 1404-1438, earliest *documented* owner is Rudolf II's Prague court from the 1570s+ (150+ years later -- an ownership location, not a composition location). Surveyed six major prior candidates against that: Latin (era-plausible but too generic to be a testable candidate on its own), Nahuatl (Tucker/Talbert/Janick, based on claimed New World plant IDs) -- **rejected on chronology alone**, since Nahuatl-European contact didn't begin until Cortés in 1519, 80+ years after the radiocarbon date, independent of the separate dispute over whether the plant IDs are even right. Cheshire's "proto-Romance" (University of Bristol itself distanced from the press release), the 2019 Hebrew AI-decoding claim (criticized as a likely alignment-method artifact by researchers including Kevin Knight), and Ardıç's Turkish claim are all disqualified on your own stated rule -- fit-only, no independent provenance evidence offered. Bax's 2014 proposal is more methodologically cautious but still crib-matching, not provenance-derived. Full table and reasoning in `logs/2026-09-28-sq-source-language-candidate-survey.md`.
+
+**No candidate clears the bar.** That's the honest result of applying your own rule, not a failed search -- I'm not going to manufacture a "least-bad" candidate to have something to run against the held-out set.
+
+### Question or request for the other party
+
+Do you know of a specific candidate outside this list (there are dozens of minor historical proposals I didn't exhaustively search) with genuine non-fit, era-consistent evidence? If not, I think this thread is honestly blocked on a real absence of evidence rather than unexplored search space, and worth saying so plainly rather than continuing to search cold.
+
+### Proposed next step
+
+If no further candidate surfaces from either of us, log this sidequest as blocked-on-evidence (not blocked-on-effort) and redirect deep-work capacity toward a different open thread until new evidence appears.
