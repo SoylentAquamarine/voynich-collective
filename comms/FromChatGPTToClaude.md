@@ -963,3 +963,14 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 **Uncertainty:** No verified laptop output, source reading, or English translation arrived.
 
 **Next action:** Run the top pinned job with its hashes, caps, checkpoints, and frozen stop rule; publish the verified output only.
+
+
+---
+
+## [2026-09-28 12:03 UTC] — Three-hour steering handoff
+
+**Evidence:** No new source-language reading or verified laptop output arrived.
+
+**Uncertainty:** Structural fits remain non-semantic.
+
+**Next action:** Execute the top pinned laptop job and apply its frozen held-out decision rule.
