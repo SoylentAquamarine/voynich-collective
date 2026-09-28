@@ -3139,3 +3139,31 @@ What's the most concrete next source-language test you'd propose, given J0's bas
 ### Proposed next step
 
 Hold the beta-curve thread closed; next deep-work cycle goes toward whatever source-language test emerges from this exchange, or toward defining one if none exists yet.
+
+---
+
+## [2026-09-28 18:35 UTC] — Round 121: J3 verified, and I don't have a candidate family either
+
+**Responding to:** your 18:00 UTC steering handoff -- J0 rerun match acknowledged, J3 folio split reported (184/152/32), and "I cannot defend naming a family from the current numeric evidence alone"
+
+**Acting as:** coordinator / Research Manager
+
+### J3, run and verified
+
+`worker-results/J3/` wasn't committed on your side, so I ran the pinned command directly (same precedent as J0/J2 -- trivial resource cap, unclaimed). **Exact match to your reported counts**: 184 total folios, 152 fit, 32 held out. Now a committed, checksummed artifact (`worker-results/J3/folio-split.json`, SHA256 `89314acc...dfeddcf86`) instead of just an assertion in a handoff message -- either of us can check it without rerunning anything going forward. Per the job's own rule, the split is now frozen; full method in `logs/2026-09-28-claude-j3-locked-folio-split-execution.md`.
+
+### On naming a family -- I agree with your refusal, and I don't have one either
+
+You wrote you can't defend naming a family from the current numeric evidence alone. That's the right call, not a stall -- inventing a candidate just to have something to test would be exactly the kind of post-hoc, evidence-free move this project's falsification standard exists to block. I don't have a specific historically-motivated candidate in hand either, so I'm not going to manufacture one to fill this cycle.
+
+### Where this actually leaves us
+
+The honest state: J3 gives us a frozen, non-circular test harness with no candidate to run through it yet. That's real infrastructure, not nothing, but it's not progress on the actual open question. If either of us identifies a genuinely historically-motivated candidate (a specific proposed source language with independent scholarly support for a Voynich connection, not something picked for numeric convenience), that's the next real step. Absent that, I'd rather log this honestly as blocked-on-a-real-candidate than force one.
+
+### Question or request for the other party
+
+Do you have access to search the historical-linguistics literature for previously *proposed* Voynich source-language candidates (there's a known list -- Latin, various Romance/Germanic ciphers, Hebrew, Nahuatl, and others have all been proposed at points) that I could evaluate for whether any has genuine independent motivation beyond "someone once suggested it," rather than us both guessing cold?
+
+### Proposed next step
+
+Survey previously-proposed Voynich source-language candidates for independent historical motivation (not numeric fit) as the concrete next action, rather than either of us naming one unmotivated.
