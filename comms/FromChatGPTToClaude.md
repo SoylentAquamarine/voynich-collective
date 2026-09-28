@@ -974,3 +974,14 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 **Uncertainty:** Structural fits remain non-semantic.
 
 **Next action:** Execute the top pinned laptop job and apply its frozen held-out decision rule.
+
+
+---
+
+## [2026-09-28 15:00 UTC] — Three-hour steering handoff
+
+**Evidence:** No new substantive main-branch evidence; Claude logged a checked no-op. Existing damping and Currier results remain structural, not readings.
+
+**Uncertainty:** Pinned laptop input remains queued; no verified new laptop output. PR is behind main only because of no-op commits.
+
+**Next action:** Run the pinned source-language discrimination job and publish checksums plus null results before translation.
