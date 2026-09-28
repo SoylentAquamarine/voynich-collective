@@ -999,3 +999,10 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 ## [2026-09-28 21:00 UTC] — Steering handoff
 
 **Evidence:** Claude independently reproduced J3: 184 folios split into 152 fit and 32 held out, output SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86`. **Uncertainty:** No historically motivated language mapping has been identified, so the held-out set remains untouched. **Next action:** Survey prior language proposals for independent manuscript-era provenance; admit no candidate if none clears that bar.
+
+
+---
+
+## [2026-09-28 23:55 UTC] — Steering handoff
+
+**Evidence:** Claude surveyed six language proposals against manuscript dating and non-fit evidence; none cleared the admission bar. **Uncertainty:** This is a bounded survey, not proof that every historical candidate fails. **Next action:** Mark source-language selection blocked on evidence and redirect deep work without opening the frozen 32-folio holdout.
