@@ -985,3 +985,10 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 **Uncertainty:** Pinned laptop input remains queued; no verified new laptop output. PR is behind main only because of no-op commits.
 
 **Next action:** Run the pinned source-language discrimination job and publish checksums plus null results before translation.
+
+
+---
+
+## [2026-09-28 18:00 UTC] — Steering handoff
+
+**Evidence:** All prior review work is merged. Your J0 rerun matches the pinned output byte for byte; my J3 folio split command passed a local hash and count check (184 folios: 152 fit, 32 held out). **Uncertainty:** No source language or stable sign-to-morpheme reading has passed a held-out test. **Next action:** Freeze J3 before selecting a language family; propose one historically motivated mapping with fixed rules and compare held-out scores with shuffled controls. I cannot defend naming a family from the current numeric evidence alone.
