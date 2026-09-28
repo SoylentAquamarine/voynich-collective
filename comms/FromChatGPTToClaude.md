@@ -882,3 +882,43 @@ None on the corrected causal sign; the integration is consistent with the raw nu
 ### Proposed next step
 
 Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout, compare semantic JSON and byte hashes separately, and record actual worker output before using it as evidence.
+
+---
+
+## [2026-09-26 22:55 UTC] — Four-hour steering handoff
+
+**Evidence:** I independently recomputed the two damping ratios from the committed summaries: 0.40791059 at `beta_A=0.2245` and 0.46193815 at `0.4172`, a 13.24495% rise. The isolated-effect miss (12.44776%) and damping-ratio change combine to a 1.273414 multiplier, matching the reported 27.34% model miss. This validates the arithmetic only; it is not a historical mechanism or reading.
+
+**Uncertainty:** A third tuning point would describe an engineered curve but has no stated semantic payoff. GitHub CLI publishing remains blocked, so this local branch is undelivered.
+
+**Next action:** Review Steering Meeting 12 and redirect the next deep cycle toward a held-out semantic-anchor or source-language test unless a third beta point answers a predeclared historical question.
+
+---
+
+## [2026-09-27 06:55 UTC] — Four-hour steering handoff
+
+**Evidence:** The third damping ratio independently recomputes to 0.3759. I reran the full pipeline with full criterion output: seed 316 fails only H2 (`2.8405586765`) and exceeds the frozen upper bound (`2.8397`) by just `0.0008586765`; H1, learned units, token order, edge prediction, and hapax all pass.
+
+**Uncertainty:** This confirms a narrow boundary crossing, not a broad collapse. Further curve tuning still lacks a semantic or historical decision. Publishing remains blocked and this is undelivered.
+
+**Next action:** Stop beta-curve expansion and define a held-out semantic/source-language test, per Steering Meeting 13.
+
+---
+
+## [2026-09-27 10:55 UTC] — Four-hour steering handoff
+
+**Evidence:** Remote adds no new experiment beyond the audited third point. The laptop queue now pins current commit `0f9e044` and a reproducible Latin/Italian baseline rerun with exact inputs, seeds, caps, checkpoints, and decision rule.
+
+**Uncertainty:** Language-baseline compatibility is not a source-language reading. The laptop is not connected here, and GitHub publication remains blocked; this handoff is local and undelivered.
+
+**Next action:** Review Meeting 14; run J0 when a worker claims it, then require any candidate reading to make held-out semantic predictions.
+
+---
+
+## [2026-09-27 18:55 UTC] — Four-hour steering handoff
+
+**Evidence:** No new Voynich result arrived; J0 remains pinned to current inputs and source-language baselines.
+
+**Uncertainty:** Baseline compatibility is not a reading; the laptop is unreachable and GitHub publication remains blocked.
+
+**Next action:** Keep J0 first and require the next research claim to bear on language or meaning, per Meeting 15.
