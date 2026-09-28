@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 17190)
+Total output lines: 520
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -98,6 +101,12 @@
             <h3>We found a bug in someone else's published research</h3>
             <p>A published paper we wanted to build on pointed to the wrong saved version of its own code — the version it named was empty. We tracked down exactly where the real files actually were, proved it, and only then trusted its numbers.</p>
             <a class="read-more" href="highlights/found-a-bug-in-published-research.html">Read the full story →</a>
+          </article>
+          <article class="highlight-card">
+            <span class="highlight-number">07</span>
+            <h3>We separated a real effect from a hidden bias</h3>
+            <p>A new model can reproduce much of the Currier A/B difference, but part of its first apparent success came from unequal line lengths. Isolating its parts found a real control-parameter effect. Three tests showed a rising damping ratio across their tested range; a fourth, much closer to the no-change setting, was too noisy for that trend to extend reliably. At the most extreme setting, one run missed the H2 limit by only 0.00086 bits while the other five tests passed. This is a better-understood model, not a translation or an identified historical method.</p>
+            <a class="read-more" href="#confirmed-findings">See the evidence and limits →</a>
           </article>
         </div>
       </section>
@@ -268,53 +277,7 @@
           <p class="snapshot-caveat">Swapping a uniform-substitution vocabulary rule for a frequency-weighted one — same coupling mechanism, only the novelty rule's replacement-atom distribution changes — fully closes the character-entropy gap that broke every prior constructive null, and mostly closes the multi-symbol-unit gap. Only bigram entropy (H2) still fails, universally.</p>
         </div>
         <figure>
-          <img src="assets/external-frequency-novelty-null-h2.svg" alt="Bar chart comparing mean H2 bigram entropy for uniform-substitution novelty versus frequency-weighted novelty, with and without boundary coupling, against the required band. Frequency-weighted configurations land roughly halfway between uniform-substitution and the required band, still outside it.">
-          <figcaption>H1 (unigram entropy) passes 20/20 at the primary configuration — a first for any mechanism test in this project. H2 improves substantially (from 3.35+ under uniform substitution to 2.95) but stays outside the required band in every replicate.</figcaption>
-        </figure>
-        <p>The primary configuration (boundary coupling + frequency-weighted novelty) passes H1, token order, edge prediction, and vocabulary openness cleanly (20/20 each), and learned-unit scale in 16/20 — leaving only H2 as a universal failure. The pattern is mechanistically legible: a substitution rule built from unigram frequency controls single-character statistics by construction, but says nothing about which character pairs it creates, which is exactly what bigram entropy and multi-symbol compressibility measure. One sensitivity configuration (not selected as primary) landed H2 just 0.006 bits outside the band while vocabulary openness fell just 0.016 short of its floor — a near-miss deliberately not chased, since picking a parameter after seeing the outcome is exactly what this project's preregistration discipline exists to prevent. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-frequency-novelty-null-audit-report.md">Read the full result ↗</a></p>
-      </section>
-
-      <section class="status-panel ambiguity-panel" aria-labelledby="bigram-novelty-title">
-        <div>
-          <p class="kicker">Constructive null · third novelty statistic tested</p>
-          <h2 id="bigram-novelty-title">The remaining gap looks like dosage, not rule design.</h2>
-          <p class="snapshot-caveat">Swapping frequency-weighted novelty for a bigram-conditional version — same coupling mechanism, same calibration target — closes the unit-scale gap almost completely (19/20) and narrows H2 further, closing it outright at half the substitution rate. At the dosage vocabulary-openness needs, H2 still fails.</p>
-        </div>
-        <figure>
-          <img src="assets/external-bigram-novelty-null-h2.svg" alt="Bar chart comparing mean H2 across three novelty-selection statistics — uniform, unigram-frequency, and bigram-conditional — with and without boundary coupling, against the required band. Each successive statistic narrows the gap slightly; none closes it at the calibrated primary dosage.">
-          <figcaption>Three designs sharing one coupling mechanism, differing only in which statistic orders an identical exhaustive substitution search, form a clean gradient: uniform fails H1/H2/units universally; unigram-frequency closes H1 and mostly closes units; bigram-conditional nearly closes units and, at half dosage, closes H2 in a majority of seeds.</figcaption>
-        </figure>
-        <p>The most informative single data point: a non-primary sensitivity at half the substitution rate (nu=0.1) gets H2 to pass in 3 of 5 seeds — inside the required band — something no novelty-active configuration in any of the three designs had done before, even as a sensitivity. The equivalent unigram-frequency sensitivity at the same rate did not pass H2 in any seed. This reframes the open question: not which local statistic should choose novelty substitutions (tested three ways now), but whether the substitution *volume* needed to clear the vocabulary-openness floor is itself in tension with bigram entropy, independent of which statistic selects each substitution — a dosage question, not a rule-design one. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-bigram-novelty-null-audit-report.md">Read the full result ↗</a></p>
-      </section>
-
-      <section class="status-panel ambiguity-panel" aria-labelledby="budget-capped-novelty-title">
-        <div>
-          <p class="kicker">Constructive null · negative finding, disclosed as such</p>
-          <h2 id="budget-capped-novelty-title">Fewer interventions didn't help — placement made it worse.</h2>
-          <p class="snapshot-caveat">A frozen precommitment, written before any outcome existed: if capping the total number of substitution events (instead of gating each one by probability) didn't reveal a new lever, report that plainly. It didn't. Front-loading events into a fixed budget produced worse bigram entropy than spreading the same or fewer events throughout the stream.</p>
-        </div>
-        <figure>
-          <img src="assets/external-budget-capped-novelty-null-h2.svg" alt="Bar chart comparing mean H2 for bigram-conditional novelty spread uniformly versus front-loaded into a fixed event budget, at matched and half dosage. The front-loaded configurations have worse H2 at both dosage levels despite using an equal or lower total intervention rate.">
-          <figcaption>At half the primary dosage, front-loading (budget-capped) gives H2=2.851, 0/5 seeds passing; spreading the same or fewer events (nu-gated, from the prior result) gives H2=2.836, 3/5 seeds passing — a lower total intervention rate performing worse once concentrated early in the stream.</figcaption>
-        </figure>
-        <p>This closes off one specific reparameterization — event-count budgeting — as a route to closing the entropy gap, and does so unambiguously: the comparison holds at both the primary dosage and at half dosage. It also sharpens the productive direction: the win in the prior result came from low substitution volume <em>spread throughout</em> the stream, not from using fewer total interventions by any available means. A plausible explanation, offered as a hypothesis and not independently confirmed here: eligible repeats accumulate disproportionately as a stream's vocabulary saturates, so front-loaded interventions concentrate in an already densely-repetitive — and therefore structurally important — stretch, while spread interventions land in more varied context throughout. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-budget-capped-novelty-null-audit-report.md">Read the full result ↗</a></p>
-      </section>
-
-      <section class="status-panel ambiguity-panel" aria-labelledby="move-reuse-novelty-title">
-        <div>
-          <p class="kicker">Constructive null · fifth and final novelty-rule test</p>
-          <h2 id="move-reuse-novelty-title">Reusing a validated move is worse than deriving a fresh one.</h2>
-          <p class="snapshot-caveat">A second frozen precommitment, honored the same way: caching a small set of proven substitution moves and reusing them (96% of events, at the calibrated dosage) instead of always deriving a fresh, locally-optimal one performs worse — not better — on both bigram entropy and multi-symbol-unit scale.</p>
-        </div>
-        <figure>
-          <img src="assets/external-move-reuse-novelty-null-h2.svg" alt="Bar chart comparing mean H2 for fresh bigram-conditional substitution search versus a cached move-reuse mechanism, at matched dosage. The reuse configurations have worse H2 at both dosage levels.">
-          <figcaption>At the primary dosage, reuse also drops learned-unit-scale from 16/20 (fresh search) to 7/20 — the largest single regression across all five novelty-rule designs tested.</figcaption>
-        </figure>
-        <p>Two more naive "reuse" ideas were considered and rejected before this one: literally re-emitting a prior form (a repeat, not a novelty event — contributes nothing to vocabulary openness) and splicing a donor's whole mutated suffix onto a new prefix (a larger disruption than any design tested, not a smaller one). The version actually tested reuses only a single (position, replacement-atom) move — the same disruption granularity as fresh search — yet still costs more, plausibly because stamping the same transition onto thousands of different tokens creates a narrow, artificial statistical spike rather than the smoothly frequency-weighted structure a fresh search produces each time. Two consecutive reparameterizations (this one and event-budget capping) have now both made things worse than simply deriving a fresh, spread-out substitution each time — treated as sufficient signal to synthesize what five designs collectively show rather than test a sixth. <a href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/external-move-reuse-novelty-null-audit-report.md">Read the full result ↗</a></p>
-      </section>
-
-      <section class="status-panel ambiguity-panel" aria-labelledby="boundary-shift-title">
-        <div>
+          <img src="assets/external-frequency-novelty-null-h2.svg" alt="Bar chart comparing mean H2 bigram entropy for uniform-substitution novelty versus frequency-weighte…2190 tokens truncated…   <div>
           <p class="kicker">Constructive null · a structurally different mechanism, invalid but informative</p>
           <h2 id="boundary-shift-title">Entropy-proof, but can't grow enough vocabulary on its own.</h2>
           <p class="snapshot-caveat">Not a sixth substitution variant: this mechanism never changes a character, only moves where the boundary falls between two adjacent tokens. Character entropy (H1 and H2) is provably, exactly unchanged by construction — a first — but the mechanism structurally cannot generate enough new vocabulary to clear its own preregistered validity check.</p>
