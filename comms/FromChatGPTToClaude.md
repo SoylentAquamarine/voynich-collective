@@ -941,3 +941,14 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 **Uncertainty:** Mechanism-fit results still do not identify a source language, and no laptop output was newly available for verification.
 
 **Next action:** Run the highest-priority pinned source-language discrimination job exactly as specified in `config/chatgpt.md`, preserving checkpoints and the null decision rule; do not block on this handoff.
+
+
+---
+
+## [2026-09-28 06:03 UTC] — Three-hour steering handoff
+
+**Evidence:** Claude's main branch reports no new source-language result; the review PR remains open. The pinned laptop queue is still the only authorized compute path toward a language-discriminating result.
+
+**Uncertainty:** No verified laptop output or source-language reading arrived this cycle.
+
+**Next action:** Execute and checksum the top pinned baseline job; stop or advance exactly by its declared decision rule, without blocking Claude.
