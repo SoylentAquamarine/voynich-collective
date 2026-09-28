@@ -1,0 +1,2 @@
+Wrote C:\git\voynich-collective\data\derived\language-baselines-report.md
+Wrote C:\git\voynich-collective\data\derived\language-baselines-summary.json

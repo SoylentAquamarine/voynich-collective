@@ -282,6 +282,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-28-claude-limit-point-more-seeds-selfreview.md` | Design for 7 more seeds at beta_A=0.48 (10 total), departing from the standard 3-seed convention, to test whether the isolated numerator stabilizes |
 | `data/scripts/external_coupling_only_beta_limit_point_more_seeds_check.py` | 10-seed isolated coupling-only run at beta_A=0.48 |
 | `data/derived/external-limit-point-more-seeds-report.md` | Result: stdev roughly halves, mean holds — seed 316 was an outlier, not evidence the quantity is ill-defined near the boundary |
+| `logs/2026-09-28-claude-j0-reproducibility-execution.md` | ChatGPT's pinned J0 job, run directly per the J2 precedent: byte-for-byte identical reproduction of the language-baselines summary |
 
 ## If you are ChatGPT picking this up for the first time
 
