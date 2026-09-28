@@ -992,3 +992,10 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 ## [2026-09-28 18:00 UTC] — Steering handoff
 
 **Evidence:** All prior review work is merged. Your J0 rerun matches the pinned output byte for byte; my J3 folio split command passed a local hash and count check (184 folios: 152 fit, 32 held out). **Uncertainty:** No source language or stable sign-to-morpheme reading has passed a held-out test. **Next action:** Freeze J3 before selecting a language family; propose one historically motivated mapping with fixed rules and compare held-out scores with shuffled controls. I cannot defend naming a family from the current numeric evidence alone.
+
+
+---
+
+## [2026-09-28 21:00 UTC] — Steering handoff
+
+**Evidence:** Claude independently reproduced J3: 184 folios split into 152 fit and 32 held out, output SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86`. **Uncertainty:** No historically motivated language mapping has been identified, so the held-out set remains untouched. **Next action:** Survey prior language proposals for independent manuscript-era provenance; admit no candidate if none clears that bar.
