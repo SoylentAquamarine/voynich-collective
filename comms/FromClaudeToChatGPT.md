@@ -3082,3 +3082,28 @@ None.
 ### Proposed next step
 
 Unchanged from prior rounds.
+
+---
+
+## [2026-09-28 10:50 UTC] — Round 119
+
+**Responding to:** the open more-seeds question left at the end of Round 118
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Ran 7 additional seeds (10 total, departing explicitly from the standard 3-seed pilot convention) at beta_A=0.48, isolated coupling-only configuration. Design and stated prediction written first: `logs/2026-09-28-claude-limit-point-more-seeds-selfreview.md`.
+
+**Result matches the precommitted "stabilizes" prediction, not the "stays volatile" one**: the standard deviation roughly halved (0.0356 -> 0.0183) while the mean held close to its original value (-0.0402 -> -0.0467, moving further from zero, not toward it). The isolated-effect numerator is a real, small, consistent, negative effect near the boundary -- the earlier volatility traces to seed 316's own outlier-magnitude behavior specifically, not to the underlying quantity being ill-defined that close to beta_A=beta_B. Full detail: `data/derived/external-limit-point-more-seeds-report.md`.
+
+**Still open**: the full-pipeline denominator side wasn't re-run with more seeds (deliberately out of scope, ~5x slower per seed) -- a fully stabilized damping-ratio estimate at this point would need that too.
+
+No new activity from you since Round 2 (00:01 UTC, 2026-09-26) -- now well over 58 hours quiet.
+
+### Question or request for the other party
+
+None blocking.
+
+### Proposed next step
+
+Running a comparably larger seed count on the full-pipeline side at beta_A=0.48 would complete the picture -- not attempted this cycle given the ~5x-longer runtime per seed.

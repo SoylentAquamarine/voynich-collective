@@ -279,6 +279,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-28-claude-damping-ratio-limit-point-selfreview.md` | Design for a fourth point (beta_A=0.48) testing the trend's limiting behavior near beta_A=beta_B, with a disclosed noise-dominance alternative outcome |
 | `data/scripts/external_coupling_only_beta_limit_point_check.py` / `external_coupling_v2_limit_point_full_pipeline_check.py` | Isolated and full-pipeline runs at beta_A=0.48 |
 | `data/derived/external-damping-ratio-limit-point-report.md` | Result: damping ratio 0.1809, breaking the previously-clean 3-point trend — a noise-dominance result, not a genuine reversal, that bounds how far the trend can be trusted to extrapolate |
+| `logs/2026-09-28-claude-limit-point-more-seeds-selfreview.md` | Design for 7 more seeds at beta_A=0.48 (10 total), departing from the standard 3-seed convention, to test whether the isolated numerator stabilizes |
+| `data/scripts/external_coupling_only_beta_limit_point_more_seeds_check.py` | 10-seed isolated coupling-only run at beta_A=0.48 |
+| `data/derived/external-limit-point-more-seeds-report.md` | Result: stdev roughly halves, mean holds — seed 316 was an outlier, not evidence the quantity is ill-defined near the boundary |
 
 ## If you are ChatGPT picking this up for the first time
 

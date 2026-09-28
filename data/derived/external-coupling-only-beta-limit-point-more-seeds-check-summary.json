@@ -1,0 +1,97 @@
+{
+  "design_log": "logs/2026-09-28-claude-limit-point-more-seeds-selfreview.md",
+  "beta_a": 0.48,
+  "beta_b": 0.5,
+  "prior_rows": [
+    {
+      "cipher_seed": 42,
+      "edge_gain_gap": -0.0175
+    },
+    {
+      "cipher_seed": 179,
+      "edge_gain_gap": -0.0219
+    },
+    {
+      "cipher_seed": 316,
+      "edge_gain_gap": -0.0812
+    }
+  ],
+  "new_rows": [
+    {
+      "cipher_seed": 453,
+      "edge_gain_gap": -0.048946831388226086
+    },
+    {
+      "cipher_seed": 590,
+      "edge_gain_gap": -0.06284914672819608
+    },
+    {
+      "cipher_seed": 727,
+      "edge_gain_gap": -0.0505117713096217
+    },
+    {
+      "cipher_seed": 864,
+      "edge_gain_gap": -0.0426907857708414
+    },
+    {
+      "cipher_seed": 1001,
+      "edge_gain_gap": -0.04171650491496803
+    },
+    {
+      "cipher_seed": 1138,
+      "edge_gain_gap": -0.04696980413899998
+    },
+    {
+      "cipher_seed": 1275,
+      "edge_gain_gap": -0.052694686254630585
+    }
+  ],
+  "all_rows": [
+    {
+      "cipher_seed": 42,
+      "edge_gain_gap": -0.0175
+    },
+    {
+      "cipher_seed": 179,
+      "edge_gain_gap": -0.0219
+    },
+    {
+      "cipher_seed": 316,
+      "edge_gain_gap": -0.0812
+    },
+    {
+      "cipher_seed": 453,
+      "edge_gain_gap": -0.048946831388226086
+    },
+    {
+      "cipher_seed": 590,
+      "edge_gain_gap": -0.06284914672819608
+    },
+    {
+      "cipher_seed": 727,
+      "edge_gain_gap": -0.0505117713096217
+    },
+    {
+      "cipher_seed": 864,
+      "edge_gain_gap": -0.0426907857708414
+    },
+    {
+      "cipher_seed": 1001,
+      "edge_gain_gap": -0.04171650491496803
+    },
+    {
+      "cipher_seed": 1138,
+      "edge_gain_gap": -0.04696980413899998
+    },
+    {
+      "cipher_seed": 1275,
+      "edge_gain_gap": -0.052694686254630585
+    }
+  ],
+  "mean_gap_3seed": -0.0402,
+  "stdev_3seed": 0.03557513176363511,
+  "mean_gap_10seed": -0.046697953050548385,
+  "stdev_10seed": 0.018303675494633014,
+  "uniform_beta_coupling_only_baseline": 0.0064,
+  "net_effect_10seed": -0.05309795305054839
+}

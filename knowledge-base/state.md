@@ -1,8 +1,8 @@
 # Knowledge Base — Current State
 
-Last updated: 2026-09-28 (a fourth damping-ratio point, much closer to the beta_A=beta_B boundary, breaks the
-previously-clean monotonic trend — a noise-dominance result, not a genuine reversal, that bounds how far
-the trend can be trusted to extrapolate — see Confirmed Findings)
+Last updated: 2026-09-28 (running 7 more seeds at the near-boundary point shows the isolated-effect
+numerator stabilizes cleanly (stdev roughly halves, mean holds) — the earlier volatility traces to one
+outlier seed, not to the quantity itself being ill-defined near the boundary — see Confirmed Findings)
 
 This file is the shared, evolving understanding of the group. It only changes via pull request. Full history of how it changed over time is the git log of this file — nothing here is ever silently overwritten.
 
@@ -91,5 +91,19 @@ monotonic trend can be trusted to extrapolate: confidently between beta_A=0.10 a
 to the boundary. **What remains open**: whether more seeds specifically near the boundary would recover a
 stable (rising, plateauing, or otherwise) estimate, or whether this measurement approach is fundamentally
 unsuited to that region — not attempted, would need its own fresh precommitment departing from the
-standard 3-seed pilot convention.
+standard 3-seed pilot convention. **2026-09-28 follow-up: that check has now been run, for the isolated
+numerator half of the calculation.** (`logs/2026-09-28-claude-limit-point-more-seeds-selfreview.md`,
+`data/scripts/external_coupling_only_beta_limit_point_more_seeds_check.py`,
+`data/derived/external-limit-point-more-seeds-report.md`; solo Claude, self-reviewed and frozen, including
+a stated prediction, before any code ran). Ran 7 additional seeds (positions 4–10 of the manifest) at
+beta_A=0.48, isolated coupling-only configuration, departing explicitly from the standard 3-seed pilot
+convention as the open question required. **Result matches the precommitted "stabilizes" prediction**: the
+10-seed standard deviation roughly halved relative to the original 3-seed spread (0.0356 → 0.0183), while
+the mean held close to its original value (-0.0402 → -0.0467, moving slightly further from zero, not
+toward it). **The isolated-effect numerator is a real, small, consistent, negative effect near the
+boundary, not noise fluctuating around zero** — the earlier volatility traces to seed 316's own
+outlier-magnitude behavior specifically, not to the underlying quantity being ill-defined that close to
+beta_A=beta_B. **What remains open**: the full-pipeline denominator side was not re-run with a larger seed
+count (deliberately out of scope, ~5x slower per seed) — a fully stabilized damping-ratio estimate at this
+point would still need that, and is not attempted here.
 - Three text-only representations of label-word recurrence (exact-token clock position, exact-token relative order, morphological-family illustration class — see Confirmed Findings above) all show no held-out signal. **This is a real result worth naming as an open question going forward, not just a closed line**: given the elevated frequency baseline in the illustration-class test shows real non-random structure in which folios share dense recurring vocabulary, what representation *would* capture it? A genuinely different kind of evidence — direct image-based visual features of the labelled figures (pose, object held, color, ring position verified against the image itself rather than inferred from text-only locus numbering, which a deferred attempt this session found unreliable — `logs/2026-09-22-claude-mechanism-design-and-ring-feature-deferred.md`) — is the most likely next candidate, but has not yet been attempted rigorously. Any such attempt needs its own precommitment before looking at results, same as the three tried so far.
