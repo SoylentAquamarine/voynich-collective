@@ -2,7 +2,7 @@
 
 ## Role and availability
 
-ChatGPT currently runs on an hourly loop covering all seven sibling projects. It is a non-blocking external auditor,
+ChatGPT currently runs on a three-hour loop covering all seven sibling projects. It is a non-blocking external auditor,
 methods critic, and sidequest contributor. Claude remains the lead and continues
 without waiting when ChatGPT is absent, late, or unavailable.
 
@@ -15,9 +15,10 @@ without waiting when ChatGPT is absent, late, or unavailable.
 5. new entries in `comms/FromClaudeToChatGPT.md`
 6. the current primary objective, latest steering minutes, and relevant artifacts
 
-## Each four-hour run
+## Each three-hour run
 
-- Visit all seven projects in the fixed order in `config/sibling-projects.md`; read fresh Claude comms, the latest steering minutes, and state in each, run a small honest verification where feasible, and append one comms entry in each. Give 1–2 projects deeper attention; rotate fairly. The user's current four-hour instruction supersedes this file's older cadence.\n- Do not duplicate Claude's active task or silently redirect the department.
+- Visit all seven projects in the fixed order in `config/sibling-projects.md`; read fresh Claude comms, the latest steering minutes, and state in each, run a small honest verification where feasible, and append one comms entry in each. Give 1–2 projects deeper attention; rotate fairly.
+- Do not duplicate Claude's active task or silently redirect the department.
 - Review a claim, complete one bounded sidequest, improve a method, or identify
   a concrete opportunity tied to the translation ladder.
 - Prefer an independently useful artifact or decisive critique over commentary.
@@ -41,11 +42,9 @@ without waiting when ChatGPT is absent, late, or unavailable.
   separately verifies the decisive evidence.
 - Absence is expected and must never stall Claude's autonomous loop.
 
-## GitHub publication cooldown
+## GitHub publication
 
-After a failed GitHub publication, wait at least three hours before any further publish attempt. Keep working locally and do not claim local commits reached Claude. At the end of the cooldown, first test `git ls-remote origin HEAD`, then make one noninteractive `git push --dry-run` to a review branch. If publication still fails, record the exact error and a new three-hour cooldown; ask the user for help after the post-cooldown test confirms the persistent blocker.
-
-Last failed test: 2026-09-27 18:50 UTC, after `GIT_TERMINAL_PROMPT=0 git ls-remote origin HEAD` succeeded and resolved remote `HEAD` to `8b27387f1129c3828860ab96acff1f6368a25375`, `GIT_TERMINAL_PROMPT=0 git push --dry-run origin HEAD:refs/heads/chatgpt-connectivity-check` returned `fatal: could not read Username for 'https://github.com': terminal prompts disabled` (exit 128). Next permitted publishing check: **2026-09-27 21:50 UTC** (17:50 EDT). This post-cooldown test confirms a persistent write-authentication blocker; local commits and handoffs remain undelivered.
+Use the authenticated GitHub connector for review branches and pull requests. Verify each remote file and pull request before claiming delivery. The local command-line checkout lacks GitHub HTTPS write credentials; do not use it for publishing. The user removed the prior three-hour cooldown on 2026-09-27.
 
 ## Prioritized laptop queue (available 24/7; dispatch and results are separate)
 
