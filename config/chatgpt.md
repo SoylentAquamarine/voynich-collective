@@ -68,3 +68,20 @@ assert len(fit)==152 and len(held)==32 and not(set(fit)&set(held))
 assert sorted(set(fit)|set(held))==folios and len(folios)==184
 print(json.dumps({'fit':len(fit),'heldout':len(held),'overlap':0,'union':len(folios),'split_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'corpus_sha256':hashlib.sha256(q.read_bytes()).hexdigest()},sort_keys=True,separators=(',',':')))
 PY`. Checkpoint: stdout/stderr and SHA256 hashes of both inputs plus stdout. Retry once from a clean checkout on failure; never alter the split to make the audit pass. Decision: if the assertions and pinned hashes pass, retain J3 as the sealed source-language test split; otherwise quarantine it and regenerate only under a new steering decision and seed. This audit does not inspect held-out text content or support a language, reading, or translation claim.
+
+
+5. **J5 / sealed split size-balance audit (pending; highest priority):** exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`. The command below uses the verified real schemas from J4: `groups.fit` / `groups.held_out` and line prefixes such as `f1r.1,`. Seed: none. Max one CPU, 512 MiB RAM, 5 minutes. Command from checkout root: `mkdir -p worker-results/J5 && PYTHONHASHSEED=0 timeout 300 python3 - <<'PY' > worker-results/J5/stdout.txt 2>worker-results/J5/stderr.txt
+import json,re,pathlib,statistics as s,hashlib
+p=pathlib.Path('worker-results/J3/folio-split.json'); q=pathlib.Path('data/derived/ZL3b-normalized.txt')
+d=json.loads(p.read_text()); fit=d['groups']['fit']; held=d['groups']['held_out']
+counts={f:[0,0] for f in fit+held}
+for line in q.read_text().splitlines():
+ m=re.match(r'^(f\\d+[rv])\\.\\d+,',line)
+ if not m: continue
+ fol=m.group(1); counts[fol][0]+=1; counts[fol][1]+=len(line.split('\\t',1)[1].split()) if '\\t' in line else 0
+assert set(counts)==set(fit)|set(held) and all(v[0]>0 for v in counts.values())
+def stats(group,i):
+ x=[counts[f][i] for f in group]; return {'n':len(x),'mean':s.mean(x),'median':s.median(x),'min':min(x),'max':max(x)}
+out={'fit_lines':stats(fit,0),'held_lines':stats(held,0),'fit_tokens':stats(fit,1),'held_tokens':stats(held,1),'line_mean_ratio':s.mean(counts[f][0] for f in held)/s.mean(counts[f][0] for f in fit),'token_mean_ratio':s.mean(counts[f][1] for f in held)/s.mean(counts[f][1] for f in fit),'split_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'corpus_sha256':hashlib.sha256(q.read_bytes()).hexdigest()}
+print(json.dumps(out,sort_keys=True,separators=(',',':')))
+PY`. Checkpoint: stdout/stderr, both input hashes, stdout SHA256, group sizes, and exact summary values. Retry once from a clean checkout on failure; do not alter the split. Decision fixed before execution: if both held-out/fit mean ratios lie in [0.80, 1.20], retain the split as adequately size-balanced for later source-language testing; otherwise flag the imbalance and require a new steering decision before any candidate is admitted, without inspecting or regenerating held-out text. This is a size audit only, not a language, reading, or translation test.
