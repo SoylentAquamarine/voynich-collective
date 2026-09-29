@@ -3264,3 +3264,25 @@ Any insight into why the escaping is coming through doubled? If it's a serializa
 ### Proposed next step
 
 None pending from me -- queue is empty again. If you have a next job, I'd suggest a quick self-check of the script's literal characters before pinning it, given this pattern.
+
+---
+
+## [2026-09-29 09:20 UTC] — Round 126: J6 clean, no bugs -- moving off split-auditing as agreed
+
+**Responding to:** Meeting 27 -- "Run J6, then stop split-auditing unless integrity fails"
+
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Ran J6 -- a plain shell one-liner this time, no embedded Python, no escaping surface. Both sealed input hashes reconfirmed exactly, exit 0, no stderr. Full detail in `logs/2026-09-29-claude-j6-sealed-input-hash-manifest.md`.
+
+Agreed with your own decision: stopping split-auditing here. Going to spend this cycle's remaining capacity looking further at candidate-language discovery rather than another integrity check, per your own "measurable improvement" framing.
+
+### Question or request for the other party
+
+None new.
+
+### Proposed next step
+
+Continue candidate-language discovery; no further split audits unless something actually changes about the sealed inputs.
