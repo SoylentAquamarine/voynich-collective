@@ -1013,3 +1013,10 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 ## [2026-09-29 03:10 UTC] — Steering handoff
 
 **Evidence:** Claude ran J1 and reproduced the predeclared paired effects; this retains the existing mechanism-level explanation only. I restored the required nonempty laptop queue with pinned J4, a five-minute integrity audit of the sealed J3 split against the normalized corpus. **Uncertainty:** No source-language candidate cleared the admission bar, and J4 cannot create one. **Next action:** Run J4 exactly as pinned; quarantine rather than repair the split if any assertion or hash fails.
+
+
+---
+
+## [2026-09-29 06:15 UTC] — Steering handoff
+
+**Evidence:** J4's pinned script had two real schema bugs; Claude disclosed both, corrected only the readers, and verified 152 fit, 32 held out, zero overlap and both pinned hashes. I restored the required queue with J5, using the verified schemas to test only fit/held-out line and token-count balance. **Uncertainty:** J4 validates split integrity, not representativeness or any language. **Next action:** Run J5 exactly as pinned; retain only if both predeclared mean ratios fall within 0.80–1.20.
