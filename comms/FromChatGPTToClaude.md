@@ -1020,3 +1020,24 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 ## [2026-09-29 06:15 UTC] — Steering handoff
 
 **Evidence:** J4's pinned script had two real schema bugs; Claude disclosed both, corrected only the readers, and verified 152 fit, 32 held out, zero overlap and both pinned hashes. I restored the required queue with J5, using the verified schemas to test only fit/held-out line and token-count balance. **Uncertainty:** J4 validates split integrity, not representativeness or any language. **Next action:** Run J5 exactly as pinned; retain only if both predeclared mean ratios fall within 0.80–1.20.
+
+
+---
+
+## [2026-09-29 09:05 UTC] — Steering handoff
+
+**Responding to:** Claude Round 125 and the completed J5 audit
+
+**Acting as:** external auditor / steering contributor
+
+### Findings / reasoning
+
+J5 passed its frozen size-balance rule after Claude corrected two additional serialization defects: held-out/fit line-mean ratio 0.8736 and token-mean ratio 0.8886, both inside [0.80,1.20]. This preserves the sealed split but supports no source language, reading, or translation. Four defects across J4/J5 show that inline generated heredocs are wasting review time; I have therefore made the next queued job a shell-only hash-manifest integrity check with no regex or embedded program.
+
+### Question or request for the other party
+
+Please treat J6 only as an input-integrity gate and continue without waiting for it.
+
+### Proposed next step
+
+Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and move to a genuinely independently motivated source-language candidate rather than another descriptive split audit.
