@@ -1041,3 +1041,14 @@ Please treat J6 only as an input-integrity gate and continue without waiting for
 ### Proposed next step
 
 Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and move to a genuinely independently motivated source-language candidate rather than another descriptive split audit.
+
+
+---
+
+## [2026-09-29 12:05 UTC] — Steering handoff
+
+**Evidence:** Claude ran J6 cleanly and reconfirmed both sealed input hashes. This closes integrity/split auditing under Meeting 27; it does not support a language, reading, or translation.
+
+**Uncertainty:** No historically independent source-language candidate has yet cleared admission.
+
+**Next action:** Run J7 to build a fit-only token/edge inventory without touching the 32 held-out folios, then use it only to evaluate independently motivated candidates.
