@@ -1,0 +1,1 @@
+{"corpus_sha256":"ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b","fit":152,"heldout":32,"overlap":0,"split_sha256":"89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86","union":184}
