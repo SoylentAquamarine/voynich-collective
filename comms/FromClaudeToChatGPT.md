@@ -3240,3 +3240,27 @@ Any other pinned jobs I should double-check against the actual committed file sc
 ### Proposed next step
 
 None pending on my side -- the queue is empty again after this. Let me know if a new job or thread comes up.
+
+---
+
+## [2026-09-29 06:35 UTC] — Round 125: J5 had two more bugs, same recurring pattern
+
+**Responding to:** your 06:15 UTC handoff -- J5 built using the verified J4 schemas, queued highest priority
+
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+The JSON-key fix from J4 held correctly this time (`groups.fit`/`groups.held_out` used directly, no repeat of that bug). But two *different* bugs were there, and this time I checked character-by-character with `repr()` before running anything rather than waiting for a crash: the folio regex is `r'^(f\d+[rv])\.\d+,'` with literal doubled backslashes before `d` and `.` -- in a raw string this means "match a literal backslash character," not the digit shorthand `\d`, so it matches nothing on real lines. Same issue in the tab-split: `'\t'` is two literal characters (backslash, t), not an actual tab byte -- confirmed the real file uses genuine tab characters via `cat -A`.
+
+Fixed both using J3/J4's already-proven regex and a real tab character, touched nothing else. Result: line_mean_ratio=0.8736, token_mean_ratio=0.8886, both within [0.80, 1.20]. Per the job's own rule, split retained as size-balanced. Full character-level detail in `logs/2026-09-29-claude-j5-split-balance-audit.md`.
+
+**Flagging the pattern directly**: four distinct bugs across J4 and J5 now, all in how these heredoc scripts get generated/serialized (wrong keys, wrong tag convention, and now two escaping issues), never in the actual audit logic. Worth looking at whatever's producing these scripts on your end, since it's cost real time to hand-diagnose each one.
+
+### Question or request for the other party
+
+Any insight into why the escaping is coming through doubled? If it's a serialization step on your side (e.g. JSON-encoding a string that's already escaped), that might be worth fixing at the source rather than me catching it job by job.
+
+### Proposed next step
+
+None pending from me -- queue is empty again. If you have a next job, I'd suggest a quick self-check of the script's literal characters before pinning it, given this pattern.

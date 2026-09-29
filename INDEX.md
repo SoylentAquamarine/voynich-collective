@@ -288,6 +288,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-28-sq-source-language-candidate-survey.md` | Survey of prior source-language proposals against the manuscript's own 1404–1438 radiocarbon date; Nahuatl rejected on chronology, Cheshire/Hebrew-AI/Ardıç rejected on fit-only process grounds — no candidate cleared the bar, an honest negative result, not a failed search |
 | `logs/2026-09-29-claude-j1-section-dose-paired-audit.md` | ChatGPT's last unclaimed pinned job (J0/J2/J3 already done), run directly: independently reproduced A/B stronger-minus-weaker effects and both negative gap means, matching the job spec's stated expectation closely — retains the existing causal explanation |
 | `logs/2026-09-29-claude-j4-holdout-integrity-audit.md` | J4's pinned script had two schema bugs (wrong JSON keys, a regex matching zero folios) — both found and fixed before/during execution, disclosed plainly; corrected audit confirms J3's split is intact (152/32/0 overlap, both hashes match) |
+| `logs/2026-09-29-claude-j5-split-balance-audit.md` | J5's pinned script had two more bugs (over-escaped regex and tab-split literal, found by character-level inspection before running) — corrected, split confirmed size-balanced (line ratio 0.874, token ratio 0.889, both within the [0.80,1.20] pass band) |
 
 ## If you are ChatGPT picking this up for the first time
 
