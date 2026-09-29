@@ -88,3 +88,24 @@ PY`. Checkpoint: stdout/stderr, both input hashes, stdout SHA256, group sizes, a
 
 
 6. **J6 / sealed-input hash manifest — COMPLETED 2026-09-29 by Claude (not a laptop worker; run directly, unclaimed at the time):** clean shell one-liner, no bugs this time. Both pinned hashes reconfirmed exactly. See `logs/2026-09-29-claude-j6-sealed-input-hash-manifest.md`. Original job spec, retained for reference: exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`. Checkout commit `3ca159129661d6ece979a2292e0e347bf4eb33c8`; seed none; one CPU, 128 MiB RAM, two minutes. Command from checkout root: `mkdir -p worker-results/J6 && timeout 120 sha256sum worker-results/J3/folio-split.json data/derived/ZL3b-normalized.txt > worker-results/J6/stdout.txt 2>worker-results/J6/stderr.txt && sha256sum worker-results/J6/stdout.txt > worker-results/J6/output.sha256`. Checkpoint stdout, stderr, output hash, exit code, and UTC start/end. Retry once from a clean checkout with identical inputs. Decision: if both emitted hashes match the pinned values, retain the sealed inputs; otherwise quarantine the affected input and do not run source-language tests. This is only an integrity gate and supports no language, reading, or translation claim.
+
+
+7. **J7 / fit-only token and edge inventory (pending; highest priority):** exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`; checkout commit `d0d7d1522d533fc563da9ea6b7b1c4396d9a13e4`; seed none; one CPU, 512 MiB RAM, five minutes. Command from checkout root: `mkdir -p worker-results/J7 && PYTHONHASHSEED=0 timeout 300 python3 - <<'PY' > worker-results/J7/stdout.json 2>worker-results/J7/stderr.txt
+import collections,json,pathlib,hashlib
+sp=pathlib.Path('worker-results/J3/folio-split.json')
+cp=pathlib.Path('data/derived/ZL3b-normalized.txt')
+d=json.loads(sp.read_text())
+fit=set(d['groups']['fit'])
+words=[]
+for line in cp.read_text().splitlines():
+    folio=line.split('.',1)[0]
+    if folio in fit:
+        payload=line.partition(chr(9))[2]
+        words.extend(payload.split())
+freq=collections.Counter(words)
+prefix={n:collections.Counter(w[:n] for w in words if len(w)>=n).most_common(200) for n in (1,2,3)}
+suffix={n:collections.Counter(w[-n:] for w in words if len(w)>=n).most_common(200) for n in (1,2,3)}
+out={'corpus_sha256':hashlib.sha256(cp.read_bytes()).hexdigest(),'split_sha256':hashlib.sha256(sp.read_bytes()).hexdigest(),'fit_folios':len(fit),'tokens':len(words),'types':len(freq),'top_tokens':freq.most_common(500),'top_prefixes':prefix,'top_suffixes':suffix}
+print(json.dumps(out,sort_keys=True,separators=(',',':')))
+PY
+sha256sum worker-results/J7/stdout.json > worker-results/J7/output.sha256`. Checkpoint stdout JSON, stderr, output hash, exit code, UTC start/end, and both input hashes. Retry once from a clean checkout with identical inputs. Decision: retain the inventory only if hashes match, `fit_folios` is 152, and no held-out folio is read; use it solely to test independently motivated source-language mappings. Do not infer a language from frequent tokens or affixes, and do not inspect the 32 held-out folios until a mapping and scoring rule are frozen.
