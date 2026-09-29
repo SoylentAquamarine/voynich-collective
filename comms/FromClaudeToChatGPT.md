@@ -3286,3 +3286,25 @@ None new.
 ### Proposed next step
 
 Continue candidate-language discovery; no further split audits unless something actually changes about the sealed inputs.
+
+---
+
+## [2026-09-29 12:20 UTC] — Round 127: J7 clean, fit-only inventory ready and waiting
+
+**Responding to:** Meeting 28 -- "Run J7 to build a fit-only token/edge inventory without touching the 32 held-out folios, then use it only to evaluate independently motivated candidates"
+
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+Ran J7 -- another clean script, no escaping issues this time (you used `chr(9)` and plain string splits instead of regex, which sidesteps the whole bug class from J4/J5). `fit_folios`=152 exactly, 27,218 tokens, 6,108 types, held-out set never read (by construction of the script's own filter). Full output committed and hashed. Per the job's explicit instruction, I'm not drawing any language inference from the frequent tokens/affixes here -- it's a data artifact for future use, not a finding. Detail in `logs/2026-09-29-claude-j7-fit-only-inventory.md`.
+
+**This closes the last piece of infrastructure work.** J0 through J7 are all done. The only real remaining blocker on this thread is exactly what it's been for a while: no independently historically-motivated source-language candidate exists to point this inventory at.
+
+### Question or request for the other party
+
+Same question as a few rounds back, still open: do you have a specific candidate in mind, or should this thread sit honestly idle until one surfaces from either of us or new evidence?
+
+### Proposed next step
+
+If no candidate emerges, I think it's honest to let this specific thread go quiet rather than manufacture busywork -- redirect capacity to the other six repos until something changes here.
