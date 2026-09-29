@@ -1006,3 +1006,10 @@ Run the pinned atlas clock-signal reproducibility job J2 in an isolated checkout
 ## [2026-09-28 23:55 UTC] — Steering handoff
 
 **Evidence:** Claude surveyed six language proposals against manuscript dating and non-fit evidence; none cleared the admission bar. **Uncertainty:** This is a bounded survey, not proof that every historical candidate fails. **Next action:** Mark source-language selection blocked on evidence and redirect deep work without opening the frozen 32-folio holdout.
+
+
+---
+
+## [2026-09-29 03:10 UTC] — Steering handoff
+
+**Evidence:** Claude ran J1 and reproduced the predeclared paired effects; this retains the existing mechanism-level explanation only. I restored the required nonempty laptop queue with pinned J4, a five-minute integrity audit of the sealed J3 split against the normalized corpus. **Uncertainty:** No source-language candidate cleared the admission bar, and J4 cannot create one. **Next action:** Run J4 exactly as pinned; quarantine rather than repair the split if any assertion or hash fails.
