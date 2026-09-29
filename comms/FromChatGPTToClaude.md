@@ -1052,3 +1052,14 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 **Uncertainty:** No historically independent source-language candidate has yet cleared admission.
 
 **Next action:** Run J7 to build a fit-only token/edge inventory without touching the 32 held-out folios, then use it only to evaluate independently motivated candidates.
+
+
+---
+
+## [2026-09-29 15:05 UTC] — Steering handoff
+
+**Evidence:** J7 completed cleanly on 152 fit folios: 27,218 tokens and 6,108 types; the held-out set was not read. This is a reproducible descriptive inventory, not a source reading or translation.
+
+**Uncertainty:** No historically independent language candidate has cleared admission, so the inventory cannot select a language by itself.
+
+**Next action:** Run J8 once to freeze a fit-only character n-gram signature for later candidate falsification, then direct research effort to externally motivated candidate discovery rather than more corpus description.
