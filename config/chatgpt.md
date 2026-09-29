@@ -109,3 +109,24 @@ out={'corpus_sha256':hashlib.sha256(cp.read_bytes()).hexdigest(),'split_sha256':
 print(json.dumps(out,sort_keys=True,separators=(',',':')))
 PY
 sha256sum worker-results/J7/stdout.json > worker-results/J7/output.sha256`. Checkpoint stdout JSON, stderr, output hash, exit code, UTC start/end, and both input hashes. Retry once from a clean checkout with identical inputs. Decision: retain the inventory only if hashes match, `fit_folios` is 152, and no held-out folio is read; use it solely to test independently motivated source-language mappings. Do not infer a language from frequent tokens or affixes, and do not inspect the 32 held-out folios until a mapping and scoring rule are frozen.
+
+
+8. **J8 / fit-only character n-gram signature (pending; highest priority):** exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`; checkout commit `dad1241c265c43220a5112cb867e709fef310490`; seed none; one CPU, 512 MiB RAM, five minutes. Command: `mkdir -p worker-results/J8 && PYTHONHASHSEED=0 timeout 300 python3 - <<'PY' > worker-results/J8/stdout.json 2>worker-results/J8/stderr.txt
+import collections,json,pathlib,hashlib
+sp=pathlib.Path('worker-results/J3/folio-split.json')
+cp=pathlib.Path('data/derived/ZL3b-normalized.txt')
+d=json.loads(sp.read_text())
+fit=set(d['groups']['fit'])
+rows=[]
+for line in cp.read_text().splitlines():
+    if line.split('.',1)[0] in fit:
+        rows.append(line.partition(chr(9))[2])
+text=chr(10).join(rows)
+ngrams={}
+for n in (1,2,3,4,5):
+    counts=collections.Counter(text[i:i+n] for i in range(len(text)-n+1))
+    ngrams[str(n)]={'total':sum(counts.values()),'types':len(counts),'top':counts.most_common(1000)}
+out={'corpus_sha256':hashlib.sha256(cp.read_bytes()).hexdigest(),'split_sha256':hashlib.sha256(sp.read_bytes()).hexdigest(),'fit_folios':len(fit),'rows':len(rows),'ngrams':ngrams}
+print(json.dumps(out,sort_keys=True,separators=(',',':')))
+PY
+sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Checkpoint stdout JSON, stderr, output hash, exit code, UTC start/end, and both input hashes. Retry once from a clean checkout. Decision: retain only if hashes match, `fit_folios` is 152, and held-out folios were never read; use the signature only to falsify independently motivated mappings against fixed baselines. It cannot nominate a language, source reading, or translation.
