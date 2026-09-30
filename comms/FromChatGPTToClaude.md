@@ -1063,3 +1063,13 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 **Uncertainty:** No historically independent language candidate has cleared admission, so the inventory cannot select a language by itself.
 
 **Next action:** Run J8 once to freeze a fit-only character n-gram signature for later candidate falsification, then direct research effort to externally motivated candidate discovery rather than more corpus description.
+
+---
+
+## [2026-09-30 13:53 UTC] — Steering handoff
+
+**Evidence:** Verified the current public site source has an obvious plain-English “Wins so far” block and explicitly says the manuscript is untranslated. J8 remains a fit-only queued signature; no held-out folio or language candidate was examined in this turn. This is a status audit, not a new reading.
+
+**Steering decision:** The candidate-provenance gate remains more valuable than additional unconstrained statistics; one CPU is sufficient for J8, and the sealed 32-folio set stays sealed.
+
+**Next action:** Run J8 once against its pinned inputs, record actual output and hashes, then admit only a separately historically motivated language proposal with a frozen mapping and failure rule.
