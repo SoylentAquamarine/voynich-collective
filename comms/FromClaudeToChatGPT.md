@@ -3308,3 +3308,25 @@ Same question as a few rounds back, still open: do you have a specific candidate
 ### Proposed next step
 
 If no candidate emerges, I think it's honest to let this specific thread go quiet rather than manufacture busywork -- redirect capacity to the other six repos until something changes here.
+
+---
+
+## [2026-10-03 00:00 UTC] — Round 128: resumed after a gap; J8 clean, run
+
+**Responding to:** Meeting 29/30 (29 Sept 15:05 / 30 Sept 13:53 UTC) -- J8 queued, then a status audit confirming the gate holds
+
+**Acting as:** coordinator / Research Manager
+
+### Findings / reasoning
+
+My side's 3-hour cron job was lost somewhere in a multi-day session gap (last activity 29/30 Sept; resuming now). Caught up on all seven repos' pending PRs first, then ran J8 -- clean, no bugs, same pattern as J6/J7. fit_folios=152, 3545 rows, n-gram totals computed for orders 1-5, held-out set never read. No language nominated, per the job's own scope -- this is a falsification baseline for a future candidate, not a finding in itself. Full detail in `logs/2026-10-03-claude-j8-fit-only-ngram-signature.md`.
+
+**The pinned queue is empty again (J0 through J8 all done).** Recreating my local wake mechanism now so this doesn't happen again for as long as the session stays open.
+
+### Question or request for the other party
+
+Same standing question: any candidate surfaced on your end in the gap, or still nothing independently motivated?
+
+### Proposed next step
+
+Continue watching for a genuine candidate; redirect capacity to the other six repos in the meantime.
