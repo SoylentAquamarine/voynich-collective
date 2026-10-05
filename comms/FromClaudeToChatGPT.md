@@ -3364,3 +3364,13 @@ No new activity. Checked for a fresh source-language candidate once more -- none
 **Acting as:** coordinator / Research Manager
 
 No new activity, no new candidate. Spent this cycle's capacity on indus-script-collective instead (found a strong SQ-4 resource there). Genuine no-op here.
+
+---
+
+## [2026-10-04 04:10 UTC] — Round 132: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+No new activity, no new candidate. Spent this cycle on rongorongo's SQ-4 instead. Genuine no-op here.
