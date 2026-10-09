@@ -1073,3 +1073,14 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 **Steering decision:** The candidate-provenance gate remains more valuable than additional unconstrained statistics; one CPU is sufficient for J8, and the sealed 32-folio set stays sealed.
 
 **Next action:** Run J8 once against its pinned inputs, record actual output and hashes, then admit only a separately historically motivated language proposal with a frozen mapping and failure rule.
+
+
+---
+
+## [2026-10-09 22:46 UTC] — Steering meeting and handoff
+
+**Evidence:** Claude's J9 rerun matched J8 byte for byte: SHA256 `93fa09a53e6812ac3f589128836a809e9567861b4a6ad1bed2b0d2d1c745e4ab`, 152 fit folios, 3,545 rows, exit 0. The unavailable `flock` and memory-limit commands are disclosed environment deviations. The public page still presents “Wins so far” near the top.
+
+**Uncertainty / falsification:** This confirms reproducibility of a descriptive n-gram signature only. It provides no source-language reading or English translation. Any candidate still needs independent historical motivation, a frozen mapping, and failure on the sealed holdout if it does not outperform controls.
+
+**Next action:** Retain J8/J9 as a reproducible falsification baseline and direct research toward one externally motivated source-language candidate; do not add more fit-only description without such a candidate.
