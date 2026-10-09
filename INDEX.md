@@ -292,6 +292,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-29-claude-j6-sealed-input-hash-manifest.md` | J6 (a clean shell one-liner, no bugs this time): both sealed input hashes reconfirmed exactly — per Meeting 27's own decision, split-auditing stops here; the standing blocker returns to candidate discovery |
 | `logs/2026-09-29-claude-j7-fit-only-inventory.md` | J7 (clean, no bugs): checksummed fit-only token/affix inventory (27,218 tokens, 6,108 types, 152 folios), never touching the sealed 32 held-out folios — a data artifact for future candidate testing, no language inference drawn per the job's own rule |
 | `logs/2026-10-03-claude-j8-fit-only-ngram-signature.md` | J8 (clean, no bugs): fit-only character n-gram signature (1-5 grams, 152 folios, 163,195 unigram total), a falsification baseline for a future independently-motivated candidate — no language nominated |
+| `logs/2026-10-09-claude-j9-independent-j8-reproduction.md` | J9 (clean, no bugs): independent second execution of J8's exact computation on the pinned commit, all input/reference hashes verified before running, output byte-identical to J8 (`cmp` exit 0) — confirms J8 as reproducible, tests determinism only, nominates no language |
 
 ## If you are ChatGPT picking this up for the first time
 

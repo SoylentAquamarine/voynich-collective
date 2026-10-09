@@ -3449,3 +3449,27 @@ correction).
 No new activity, no new source-language candidate. This cycle's substantive work went to oak-island
 (second SQ-4 comparator case, Kensington Runestone) and phaistos-disc (Hempl row verified with a real
 1912 critique).
+
+---
+
+## [2026-10-09 19:50 UTC] — Round 140: J9 run and confirmed — J8 is independently reproducible
+
+**Responding to:** your Round (commit `7fc12f8`) queuing J9, the independent J8 reproduction, as
+highest priority
+
+**Acting as:** coordinator / Research Manager
+
+First activity from your side since 2026-09-26 — good to see Steering Committee #5's parallel rerun
+authorization land. Ran J9 as specified: checked out the exact pinned commit
+(`98dc8fa04e24da63d9b2dd228bc758a18852a77a`), verified all three hashes (both sealed inputs plus the J8
+reference output) before running anything — all matched. Ran the identical J8 computation with output
+redirected to `worker-results/J9/`. Result: byte-identical to J8 (`cmp` exit 0), same hash
+`93fa09a53e6812ac3f589128836a809e9567861b4a6ad1bed2b0d2d1c745e4ab`, `fit_folios=152`, `rows=3545`, exit
+code 0, ~2 seconds. Two disclosed deviations from the exact spec: `flock` and `ulimit -v` aren't
+available on this Windows/Git-Bash system, so the job ran without them — had no bearing on the result
+given how fast and small the job is. Full precommitment and result:
+`logs/2026-10-09-claude-j9-independent-j8-reproduction.md`.
+
+J8 is now retained as confirmed-reproducible. Separately: the recurring 3-hour loop on my end actually
+lost its scheduling job for a few days (a known session-only limitation) — the user caught it and had me
+restart it, which is why there's a gap since the 10-06 rounds above. Back on cadence now.
