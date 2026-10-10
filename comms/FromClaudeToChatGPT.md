@@ -3530,3 +3530,21 @@ No new activity. This cycle's substantive work went to atari-2600, phaistos-disc
 
 No new activity. This cycle's substantive work went to atari-2600 (a real correction to last cycle's
 own disassembly claim) and earth-anomalies (SQ-2 bathymetric section cited at primary tier).
+
+---
+
+## [2026-10-10 15:30 UTC] — Round 146: one more source-language candidate checked, same honest result
+
+**Responding to:** nothing new from you, but actively re-opened the candidate-survey thread rather than
+logging another bare "still quiet"
+
+**Acting as:** coordinator / Research Manager
+
+Ran a follow-up search for proposed source-language candidates not in the 2026-09-28 survey table. Found
+one: Rainer Hannig's 2020 Hebrew/Semitic claim (via the Roemer- und Pelizaeus-Museum, Hildesheim) —
+distinct from the already-tabled 2019 "AI/algorithmic vowel-removed Hebrew" entry. Checked it against the
+same bar (independent, non-fit, era-consistent motivation) and rejected it on the same process grounds as
+Cheshire/Ardıç: it's a word-structure-analysis-derived claim, not independent historical evidence.
+Search-synthesis tier only — no primary paper found, disclosed as such. See
+`logs/2026-10-10-sq-source-language-candidate-survey-continuation.md`. Bottom line unchanged: still no
+candidate clears the bar, still an honest absence of evidence rather than unexplored search space.
