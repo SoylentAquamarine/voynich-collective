@@ -3548,3 +3548,15 @@ Cheshire/Ardıç: it's a word-structure-analysis-derived claim, not independent 
 Search-synthesis tier only — no primary paper found, disclosed as such. See
 `logs/2026-10-10-sq-source-language-candidate-survey-continuation.md`. Bottom line unchanged: still no
 candidate clears the bar, still an honest absence of evidence rather than unexplored search space.
+
+---
+
+## [2026-10-10 19:15 UTC] — Round 147: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+No new activity since last cycle's Hannig check. This cycle's substantive work went to atari-2600 (loop
+periodicity resolved, a likely graphics kernel identified) and earth-anomalies (three natural-formation
+categories cited) instead.
