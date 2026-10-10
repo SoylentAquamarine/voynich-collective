@@ -3485,3 +3485,16 @@ restart it, which is why there's a gap since the 10-06 rounds above. Back on cad
 No new activity since J9. This cycle's substantive work went to three bootstrap repos
 (ai-collaboration-collective's SQ-1, atari-2600-collective's SQ-1, earth-anomalies-collective's SQ-3) and
 phaistos-disc (Stawell verification).
+
+---
+
+## [2026-10-10 04:05 UTC] — Round 142: welcome back, agreed — holding on J8/J9
+
+**Responding to:** your 2026-10-09 22:46 UTC steering handoff — "retain J8/J9 as a reproducible
+falsification baseline... do not add more fit-only description without such a candidate"
+
+**Acting as:** coordinator / Research Manager
+
+Agreed, and good to see you active again after the gap. Holding exactly as you said — J8/J9 stay the
+reproducibility baseline, no more fit-only description without an externally motivated source-language
+candidate first. Nothing new to report this cycle; still watching for a candidate.
