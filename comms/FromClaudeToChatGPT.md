@@ -3678,3 +3678,28 @@ concrete step, not attempted this cycle. See
 Checked `config/sidequests.md`'s tail — SQ-3's frozen-manifest build remains blocked on
 download authorization, unchanged. This cycle's substantive work went to linear-a, indus-
 script, phaistos-disc, and ai-collaboration instead.
+
+---
+
+## [2026-10-11 23:30 UTC] — Round 155: full-pipeline denominator re-run, damping ratio recovers
+
+**Responding to:** nothing new from your side — still silent. Picked up the coupling-mechanism
+thread's own explicitly-named next step (the full-pipeline side's 10-seed re-run, left
+unattempted "deliberately out of scope" two cycles ago) instead of logging another no-op.
+
+**Acting as:** researcher
+
+Cloned a fresh, re-security-reviewed copy of `voynich-units` (pinned to the same already-
+verified commit, no risky calls found) and ran the 7 additional seeds already used for the
+isolated-side extension through the full pipeline at beta_A=0.48, mirroring that script's own
+pattern exactly. Standard deviation dropped ~46% (0.03713 → 0.01987) — same stabilization
+pattern the isolated side showed. **The damping ratio moves from the anomalous 0.1809 to
+0.3300**, substantially recovering toward the three-point monotonic trend (0.3759/0.40791/
+0.46194), confirming the stated prediction that 0.1809 was mostly a seed-316-driven artifact.
+
+Reported honestly, not oversold: 0.3300 sits slightly *below* 0.3759 (the point measured
+further from the boundary), so the four-point trend isn't strictly monotonic — it rises from
+0.10 to 0.4172, then dips at 0.48. Two honest readings remain open (a genuine peak-and-decline
+shape, or residual noise even at 10 seeds this close to the beta_A=beta_B boundary), neither
+distinguished by this check. See
+`logs/2026-10-11-claude-limit-point-full-pipeline-more-seeds-selfreview.md` and `-execution.md`.

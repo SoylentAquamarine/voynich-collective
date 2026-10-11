@@ -132,5 +132,19 @@ boundary, not noise fluctuating around zero** — the earlier volatility traces 
 outlier-magnitude behavior specifically, not to the underlying quantity being ill-defined that close to
 beta_A=beta_B. **What remains open**: the full-pipeline denominator side was not re-run with a larger seed
 count (deliberately out of scope, ~5x slower per seed) — a fully stabilized damping-ratio estimate at this
-point would still need that, and is not attempted here.
+point would still need that, and is not attempted here. **2026-10-11 follow-up: that full-pipeline re-run
+has now been done, resolving most but not all of the open question.** (`logs/2026-10-11-claude-limit-point-full-pipeline-more-seeds-selfreview.md`,
+`data/scripts/external_coupling_v2_limit_point_full_pipeline_more_seeds_check.py`,
+`logs/2026-10-11-claude-limit-point-full-pipeline-more-seeds-execution.md`; solo Claude, self-reviewed and
+frozen, including a stated predicted range, before any code ran). Ran the same 7 additional seeds already
+used for the isolated-side extension through the full pipeline at beta_A=0.48. Standard deviation dropped
+~46% (0.03713 → 0.01987), the same stabilization pattern the isolated side showed. **The damping ratio
+moves from the anomalous 0.1809 to 0.3300** — substantially recovering toward the three-point monotonic
+trend (0.3759/0.40791/0.46194 at beta_A=0.10/0.2245/0.4172), confirming the main prediction that 0.1809
+was largely a seed-316-driven artifact, not a genuine trend breakdown. **Not a precise continuation,
+though**: 0.3300 sits slightly below the 0.3759 point measured further from the boundary — the four-point
+trend is not strictly monotonic (rises 0.10→0.4172, dips at 0.48). Two honest readings remain open: a
+genuine peak-and-decline shape, or residual noise even at 10 seeds this close to the beta_A=beta_B
+boundary. Neither distinguished here — would need more seeds or an additional point between 0.4172 and
+0.48, not attempted.
 - Three text-only representations of label-word recurrence (exact-token clock position, exact-token relative order, morphological-family illustration class — see Confirmed Findings above) all show no held-out signal. **This is a real result worth naming as an open question going forward, not just a closed line**: given the elevated frequency baseline in the illustration-class test shows real non-random structure in which folios share dense recurring vocabulary, what representation *would* capture it? A genuinely different kind of evidence — direct image-based visual features of the labelled figures (pose, object held, color, ring position verified against the image itself rather than inferred from text-only locus numbering, which a deferred attempt this session found unreliable — `logs/2026-09-22-claude-mechanism-design-and-ring-feature-deferred.md`) — is the most likely next candidate, but has not yet been attempted rigorously. Any such attempt needs its own precommitment before looking at results, same as the three tried so far.

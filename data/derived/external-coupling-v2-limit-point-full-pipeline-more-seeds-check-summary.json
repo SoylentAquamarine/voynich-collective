@@ -1,0 +1,121 @@
+{
+  "design_log": "logs/2026-10-11-claude-limit-point-full-pipeline-more-seeds-selfreview.md",
+  "beta_a": 0.48,
+  "beta_b": 0.5,
+  "prior_rows": [
+    {
+      "cipher_seed": 42,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.026347724765073965
+    },
+    {
+      "cipher_seed": 179,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.06561963332524123
+    },
+    {
+      "cipher_seed": 316,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.10056926574799929
+    }
+  ],
+  "new_rows": [
+    {
+      "cipher_seed": 453,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07431872983473842
+    },
+    {
+      "cipher_seed": 590,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.06930234545248126
+    },
+    {
+      "cipher_seed": 727,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07267095089709708
+    },
+    {
+      "cipher_seed": 864,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.06200108326424236
+    },
+    {
+      "cipher_seed": 1001,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07476330539594056
+    },
+    {
+      "cipher_seed": 1138,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07166892112980283
+    },
+    {
+      "cipher_seed": 1275,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.09433048618944317
+    }
+  ],
+  "all_rows": [
+    {
+      "cipher_seed": 42,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.026347724765073965
+    },
+    {
+      "cipher_seed": 179,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.06561963332524123
+    },
+    {
+      "cipher_seed": 316,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.10056926574799929
+    },
+    {
+      "cipher_seed": 453,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07431872983473842
+    },
+    {
+      "cipher_seed": 590,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.06930234545248126
+    },
+    {
+      "cipher_seed": 727,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07267095089709708
+    },
+    {
+      "cipher_seed": 864,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.06200108326424236
+    },
+    {
+      "cipher_seed": 1001,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07476330539594056
+    },
+    {
+      "cipher_seed": 1138,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.07166892112980283
+    },
+    {
+      "cipher_seed": 1275,
+      "all_six_pass": true,
+      "edge_gain_gap": -0.09433048618944317
+    }
+  ],
+  "mean_gap_3seed": -0.0641788746127715,
+  "stdev_3seed": 0.03713174013860223,
+  "mean_gap_10seed": -0.07115924460020602,
+  "stdev_10seed": 0.019870279326092394,
+  "known_anchor_mean_gap": -0.05574867702325522,
+  "baseline_corrected_gap_3seed": -0.008430197589516276,
+  "baseline_corrected_gap_10seed": -0.0154105675769508,
+  "isolated_mean_10seed": -0.0467,
+  "damping_ratio_3seed_fullpipeline_over_10seed_isolated": 0.18051814966844276,
+  "damping_ratio_10seed_fullpipeline_over_10seed_isolated": 0.32999074040579873
+}
