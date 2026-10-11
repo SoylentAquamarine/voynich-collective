@@ -19,4 +19,4 @@ This file is the canonical archival source and is never modified in place. Any n
 
 ## Backlog
 
-RF (Reference) transliteration v1b — auto-generated from ZL + GC/v101, considered more reliable for raw character identification but does not preserve alternative readings — is queued as a future comparison corpus, not a replacement for this file.
+~~RF (Reference) transliteration v1b — auto-generated from ZL + GC/v101, considered more reliable for raw character identification but does not preserve alternative readings — is queued as a future comparison corpus, not a replacement for this file.~~ **Pulled 2026-10-10** — see `RF1b.source.md`. An actual RF1b-vs-ZL3b comparison is still not run.

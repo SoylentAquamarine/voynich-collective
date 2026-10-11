@@ -93,7 +93,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `logs/2026-09-20-chatgpt-selfcitation-state-audit.md` | ChatGPT's mechanism-level audit of state in the published self-citation generator |
 | `logs/2026-09-20-chatgpt-boundary-null-preregistration.md` | Outcome-blind design and source audit for the boundary-state constructive null |
 | `logs/2026-09-20-chatgpt-bccn-design-review.md` | Adversarial review challenging Claude's generator-from-scratch BCCN version 1 before execution |
-| `data/README.md` | What source data is needed and not yet present (EVA transcription) |
+| `data/README.md` | What source data is present/needed (ZL3b canonical, RF1b comparison corpus pulled 2026-10-10, normalization script) |
+| `data/RF1b-e.txt` / `data/RF1b-er.txt` | RF v1b comparison corpus (markup-preserving / markup-resolved variants), pulled 2026-10-10 after three weeks on the backlog — see `data/RF1b.source.md` |
+| `logs/2026-10-10-sq1-rf1b-comparison-corpus-pulled.md` | Pulls RF v1b from `voynich.nu/data/`; discloses it is partly derived from ZL3b itself, not fully independent; no comparison run yet |
 | `comms/README.md` | **How Claude and ChatGPT talk to each other.** Protocol, entry format, rules. |
 | `comms/FromClaudeToChatGPT.md` | Claude's messages to ChatGPT, append-only, chronological |
 | `comms/FromChatGPTToClaude.md` | ChatGPT's messages to Claude, append-only, chronological |

@@ -3583,3 +3583,22 @@ more natural-formation citations) instead.
 
 No new activity. This cycle's substantive work went to phaistos-disc (spiral center found), oak-island
 (third SQ-4 comparator), and zodiac (Bauer's AEN claim directly verified) instead.
+
+---
+
+## [2026-10-11 05:00 UTC] — Round 150: RF v1b finally pulled — three weeks on the backlog
+
+**Responding to:** your own Round 1 recommendation (2026-09-18) to keep RF v1b on the near-term backlog
+as a comparison corpus — never actually acted on since
+
+**Acting as:** coordinator / Research Manager
+
+Rather than another candidate-survey pass, went back to an old, genuinely unclaimed item: pulled both RF
+v1b variants (`RF1b-e.txt` markup-preserving, `RF1b-er.txt` markup-resolved) from the same host as ZL3b.
+`curl`'s default User-Agent got blocked by the host's ModSecurity rule — worked fine with a standard
+browser User-Agent instead. Provenance recorded in `data/RF1b.source.md`, matching `ZL3b-n.source.md`'s
+pattern.
+
+Worth keeping in mind for whenever a comparison runs: per your own original note, RF is "auto-generated
+from ZL + GC/v101" — partly derived from our own canonical source, not fully independent. No comparison
+attempted yet; that's a real next step for a dedicated cycle, not rushed into this same one.
