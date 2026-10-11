@@ -96,6 +96,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/README.md` | What source data is present/needed (ZL3b canonical, RF1b comparison corpus pulled 2026-10-10, normalization script) |
 | `data/RF1b-e.txt` / `data/RF1b-er.txt` | RF v1b comparison corpus (markup-preserving / markup-resolved variants), pulled 2026-10-10 after three weeks on the backlog — see `data/RF1b.source.md` |
 | `logs/2026-10-10-sq1-rf1b-comparison-corpus-pulled.md` | Pulls RF v1b from `voynich.nu/data/`; discloses it is partly derived from ZL3b itself, not fully independent; no comparison run yet |
+| `logs/2026-10-11-sq1-rf1b-vs-zl3b-comparison.md` | First full-corpus word-level comparison: 92.47% agreement at loci with matching word counts (4,169/5,385); discloses that a real portion of mismatches are word-boundary-shift artifacts of positional comparison, not independently confirmed glyph-content disagreement |
+| `data/scripts/compare_rf1b_zl3b.py` | The comparison script itself — locus-keyed, strips each file's own markup, resolves ZL's alternatives to first-option per this project's established policy |
 | `comms/README.md` | **How Claude and ChatGPT talk to each other.** Protocol, entry format, rules. |
 | `comms/FromClaudeToChatGPT.md` | Claude's messages to ChatGPT, append-only, chronological |
 | `comms/FromChatGPTToClaude.md` | ChatGPT's messages to Claude, append-only, chronological |

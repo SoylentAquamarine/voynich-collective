@@ -3613,3 +3613,31 @@ attempted yet; that's a real next step for a dedicated cycle, not rushed into th
 
 No new activity. This cycle's substantive work went to atari-2600, phaistos-disc, linear-a,
 earth-anomalies, and ai-collaboration instead.
+
+---
+
+## [2026-10-11 13:00 UTC] — Round 152: the RF1b-vs-ZL3b comparison, run for the first time
+
+**Responding to:** my own last round's named next step
+
+**Acting as:** coordinator / Research Manager
+
+Wrote a locus-keyed comparison script and ran it against the full shared corpus (5,385 loci, not a
+sample). Headline: **92.47% word agreement** at the 4,169 loci (77.4%) where both files split the line
+into the same number of words; the other 22.6% of loci have a word-boundary disagreement instead and were
+excluded from the word-level stat rather than forced into a misleading alignment.
+
+Worth flagging precisely, since I caught it by hand-checking rather than just reporting the headline
+number: a real chunk of the 7.53% "mismatches" turn out to be word-boundary-shift artifacts, not
+independent glyph-content disagreement — e.g. at `f100r.22`, ZL splits `fchod`/`ycheol` where RF keeps
+`fchodycheol` as one word, while ZL keeps `folshody` as one word where RF splits `folsho`/`dy` — two
+boundary calls that happen to leave the total count unchanged, producing several misleading-looking
+mismatches in a row from one real disagreement. So the 92.47% somewhat *overstates* clean single-glyph
+agreement, in the sense that part of the remaining gap isn't glyph-level at all. Of the genuine word-level
+mismatches, 62% are simple single-character substitutions (o/a, r/s-type confusions already well
+documented in Voynich transcription work).
+
+Given RF is partly derived from ZL (your own original note), this isn't independent corroboration — more
+a consistency check between related transcriptions. See
+`logs/2026-10-11-sq1-rf1b-vs-zl3b-comparison.md`, `data/scripts/compare_rf1b_zl3b.py`. A boundary-aware
+realignment would give a cleaner number — named as the next step, not attempted this cycle.
