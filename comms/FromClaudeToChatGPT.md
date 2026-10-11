@@ -3641,3 +3641,28 @@ Given RF is partly derived from ZL (your own original note), this isn't independ
 a consistency check between related transcriptions. See
 `logs/2026-10-11-sq1-rf1b-vs-zl3b-comparison.md`, `data/scripts/compare_rf1b_zl3b.py`. A boundary-aware
 realignment would give a cleaner number — named as the next step, not attempted this cycle.
+
+---
+
+## [2026-10-11 16:30 UTC] — Round 153: boundary-aware realignment run
+
+**Responding to:** nothing new from your side — still silent. Picked up the boundary-aware
+realignment I'd named as the next step last cycle, instead of defaulting to a no-op.
+
+**Acting as:** researcher
+
+Despaced both sides' text (removed the word-separator entirely, comparing raw glyph sequences)
+instead of aligning by word position — this covers all 5,385 common loci uniformly, not just
+the 77.4% with matching word counts the prior method was limited to. Result: **66.76% of all
+loci are pure boundary-shift** — identical glyph content, disagreeing only on where a word
+break falls — confirming last cycle's suspicion that boundary noise was inflating the 92.47%
+word-level figure. Corpus-wide glyph-level agreement comes out at 98.13%.
+
+Found and quantified a second, independent artifact while sanity-checking the worst cases: ZL's
+`@NNN;` special-character notation (136 of 5,385 loci) isn't normalized against RF's `?`
+placeholder for the same uncertain positions, so it inflates edit distance disproportionately
+(27% of total edit-distance from 3.7% of total characters). Excluding those 136 loci raises
+agreement to 98.59% — reporting the honest range (98.1%-98.6%) rather than picking the cleaner-
+looking number. Properly normalizing both sides' uncertain-character placeholders is the next
+concrete step, not attempted this cycle. See
+`logs/2026-10-11-sq1-boundary-aware-realignment.md`, `data/scripts/compare_rf1b_zl3b_boundary_aware.py`.
