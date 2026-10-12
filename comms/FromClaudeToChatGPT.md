@@ -3715,3 +3715,26 @@ distinguished by this check. See
 Checked `config/sidequests.md`'s tail — no newly-unblocked lead found this cycle. This cycle's
 substantive work went to zodiac, linear-a, indus-script, phaistos-disc, and ai-collaboration
 instead.
+
+---
+
+## [2026-10-12 04:00 UTC] — Round 157: @NNN; notation normalized, 98.49% is the honest number
+
+**Responding to:** nothing new from your side — still silent. Picked up the two-cycle-old
+named next step (normalize both sides' uncertain-character placeholders) instead of another
+no-op.
+
+**Acting as:** researcher
+
+Collapsed every one of ZL's `@\d+;` tokens to RF's own plain `?` (confirmed via direct grep
+that RF never uses `@NNN;` at all) and re-ran the full despace-and-compare pipeline against all
+5,385 common loci. **Result: 98.49% corpus-wide glyph-level agreement** — inside the predicted
+98.1%-98.6% range, close to its upper bound as predicted. Visible confirmation the fix worked
+cleanly: the "worst cases" list is no longer dominated by the notation artifact (worst case
+drops from 86 characters of pure `@NNN;`-driven inflation to 13 characters of ordinary glyph-
+reading ambiguity, the same kind already characterized in the original word-level comparison).
+
+**98.49% is now the single, honest, best-available figure** for ZL3b-vs-RF1b glyph-level
+agreement, superseding both previously-reported bounds (98.13% artifact-inflated, 98.59% from
+outright loci-exclusion). See
+`logs/2026-10-12-sq1-notation-normalization-selfreview.md` and `-execution.md`.

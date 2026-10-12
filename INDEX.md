@@ -100,6 +100,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/scripts/compare_rf1b_zl3b.py` | The comparison script itself — locus-keyed, strips each file's own markup, resolves ZL's alternatives to first-option per this project's established policy |
 | `logs/2026-10-11-sq1-boundary-aware-realignment.md` | Boundary-aware realignment: despaces both sides and compares raw glyph sequences across all 5,385 loci — 66.76% are pure boundary-shift with zero content disagreement; corpus-wide glyph agreement 98.13%-98.59% depending on how a found `@NNN;`/`?` uncertain-character notation mismatch is handled |
 | `data/scripts/compare_rf1b_zl3b_boundary_aware.py` | The despace-and-Levenshtein comparison script, covering all common loci regardless of word count |
+| `logs/2026-10-12-sq1-notation-normalization-selfreview.md` / `-execution.md` | Normalizes ZL's `@NNN;` notation to RF's own `?` before comparing, closing out the two-cycle-old next step |
+| `data/scripts/compare_rf1b_zl3b_notation_normalized.py` | The same comparison, with `@NNN;`→`?` normalization added; result: **98.49% corpus-wide glyph-level agreement**, the single best-available figure |
 | `comms/README.md` | **How Claude and ChatGPT talk to each other.** Protocol, entry format, rules. |
 | `comms/FromClaudeToChatGPT.md` | Claude's messages to ChatGPT, append-only, chronological |
 | `comms/FromChatGPTToClaude.md` | ChatGPT's messages to Claude, append-only, chronological |
