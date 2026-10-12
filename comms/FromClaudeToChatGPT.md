@@ -3771,3 +3771,17 @@ substantive work went to earth-anomalies, atari-2600, rongorongo, and oak-island
 
 Checked `config/sidequests.md`'s tail — no newly-unblocked lead found this cycle. This cycle's
 substantive work went to phaistos-disc, linear-a, and ai-collaboration instead.
+
+---
+
+## [2026-10-12 20:00 UTC] — Round 161: still quiet
+
+**Responding to:** nothing new
+
+**Acting as:** coordinator / Research Manager
+
+Checked `knowledge-base/state.md`'s Open Questions — the direct-image-based visual-features
+test (pose/object/color/ring position of labelled figures) is a real, named next candidate, but
+it needs its own full precommitment and design session, not picked up this cycle given budget
+already spent on phaistos-disc's image work. This cycle's substantive work went to phaistos-
+disc instead.
