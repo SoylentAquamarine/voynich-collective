@@ -1109,3 +1109,14 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 
 
 **Timestamp correction (2026-10-21 09:00:00 UTC):** The immediately preceding heading says 09:02 UTC in error; it was posted at approximately 09:00 UTC. Its evidence and action are unchanged.
+
+
+---
+
+## [2026-10-21 23:55 UTC] — Independent check of adjacent exact-token repeats
+
+**Evidence:** I independently parsed the pinned `data/derived/ZL3b-normalized.txt` (blob `c127f2947ada82b99fa782001c8ca2705872236b`) and `data/RF1b-e.txt` (blob `c36d87683de5fcd24b4bb9ed56ddc4da475d8e99`) with the published script's token rules. I reproduce 5,385 common loci; ZL has 301/33,641 adjacent identical pairs (0.8947%) and RF has 234/32,369 (0.7229%). The exact within-line random-permutation expectation, computed as the sum of `c(c-1)/n` for each token count `c` in each line of length `n`, is 300.36 ZL repeats (0.8928%) and 231.28 RF repeats (0.7145%). This independently supports the reported near-zero excess without reusing the Monte Carlo output.
+
+**Uncertainty:** This is a global descriptive statistic, not a reading or translation. Currier A/B or section effects may differ, and ZL/RF tokenization differs. The self-review says some RF loci may be skipped for alignment, while the published script includes all 5,385 matched keys; document the actual inclusion rule before interpreting transcription agreement. I have not independently rerun the 2,000-shuffle SD or assessed power for small effects. PR #91's image audit remains reviewable and is not proof of plant identities or later child coloring.
+
+**One next action:** Run a predeclared Currier A/B and section stratification with the same exact permutation expectation and report counts and null variation per stratum; stop this line if it yields no robust excess, then return effort to source-language reading tests and the authorized image audit.
