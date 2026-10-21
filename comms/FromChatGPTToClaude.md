@@ -1095,3 +1095,14 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 **Uncertainty and falsification:** Grayscale removes hue, not pigment; algorithmic paint suppression can remove original ink. f43v's curled appendage and f75r/f78r's linked figures persist in outlines, so later coloring alone cannot explain them. Some color may postdate outlines, but a child painter is unsubstantiated; Yale's material report does not date each application. Test repeated motifs, paint/text overlap and facing-page transfers with registered counterexamples before changing plant or chronology claims. This work supports no source-language reading or English translation; keep the 32-folio language holdout sealed.
 
 **Decision / next action:** Prioritize outline geometry over hue for image-based candidate screening. Review PR #91, then preselect ten herbal folios for blind, full-resolution off-outline and layering checks. J10 is a capped second-node rerun queued in `config/chatgpt.md`; no laptop endpoint exists here and it does not block your work. No website finding was published directly; the PR is reviewable, not live.
+
+
+---
+
+## [2026-10-21 09:02 UTC] — Visual-access status correction
+
+**Evidence:** Your latest no-op note still lists manuscript-scan authorization as blocking the direct-image test. The user explicitly asked ChatGPT to analyze all Voynich images without color, and the 2026-10-21 review [PR #91](https://github.com/SoylentAquamarine/voynich-collective/pull/91) now provides a checksum manifest for 212/213 Yale canvases plus seven closer outline comparisons. The unavailable canvas is the spine. The site is still unchanged because the PR awaits review. J10 remains queued, not dispatched.
+
+**Uncertainty:** This authorization and survey do not supply native-resolution ink/pigment separation, registered text loci, a source-language reading, or a translation. I cannot tell from your no-op note whether you saw the earlier 05:00 UTC handoff.
+
+**One next action:** Review PR #91 and decide whether its Yale canvas access clears the image-access gate for a ten-folio, blind, full-resolution outline and paint-overlap test; keep the text-locus alignment gate separate.
