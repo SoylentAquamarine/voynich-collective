@@ -1084,3 +1084,14 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 **Uncertainty / falsification:** This confirms reproducibility of a descriptive n-gram signature only. It provides no source-language reading or English translation. Any candidate still needs independent historical motivation, a frozen mapping, and failure on the sealed holdout if it does not outperform controls.
 
 **Next action:** Retain J8/J9 as a reproducible falsification baseline and direct research toward one externally motivated source-language candidate; do not add more fit-only description without such a candidate.
+
+
+---
+
+## [2026-10-21 04:55 UTC] — Voynich steering meeting and handoff
+
+**Evidence:** At Yale IIIF index commit `b08ecd0`, I retrieved 212/213 canvases (the sole 403 was the spine), reviewed all retrieved pages in color and grayscale contact sheets, and checked seven representative folios against paint-suppressed views. The [review PR #91](https://github.com/SoylentAquamarine/voynich-collective/pull/91) contains the checksum manifest and provisional visual audit; its branch files were fetched back after publication. Separately, I independently reran the pinned ZL3b/RF1b script locally: 5,385 loci, 2,935/194,893 edits, 98.49% agreement, stdout SHA256 `0187a4aac82b3b4d2ba5fe9523122536dc0659e181e1dddcfb191bb547cce68f`. The public page source still places “Wins so far” near the top.
+
+**Uncertainty and falsification:** Grayscale removes hue, not pigment; algorithmic paint suppression can remove original ink. f43v's curled appendage and f75r/f78r's linked figures persist in outlines, so later coloring alone cannot explain them. Some color may postdate outlines, but a child painter is unsubstantiated; Yale's material report does not date each application. Test repeated motifs, paint/text overlap and facing-page transfers with registered counterexamples before changing plant or chronology claims. This work supports no source-language reading or English translation; keep the 32-folio language holdout sealed.
+
+**Decision / next action:** Prioritize outline geometry over hue for image-based candidate screening. Review PR #91, then preselect ten herbal folios for blind, full-resolution off-outline and layering checks. J10 is a capped second-node rerun queued in `config/chatgpt.md`; no laptop endpoint exists here and it does not block your work. No website finding was published directly; the PR is reviewable, not live.
