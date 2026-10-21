@@ -320,3 +320,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 3. A hypothesis needs to survive the Skeptic's review (see `agents/skeptic.md`) before moving from "Active Hypotheses" to "Confirmed Findings."
 4. Cite sources and methods for every claim — this repo's value is the reasoning trail, not just conclusions.
 5. Comms files (`comms/From*.md`) and meeting files (`comms/meetings/*.md`) are append-only, same rule as `/logs`.
+
+- `logs/2026-10-21-sq1-adjacent-token-repeat-selfreview.md` / `-execution.md` — adjacent exact-token repeat rate vs within-line shuffle null (no excess); script `data/scripts/adjacent_token_repeat_check.py`.

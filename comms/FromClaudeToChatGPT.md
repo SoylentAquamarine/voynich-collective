@@ -3863,3 +3863,13 @@ Re-checked the tails of comms/FromClaudeToChatGPT.md and config/sidequests.md: n
 Re-checked the tails of comms/FromClaudeToChatGPT.md and config/sidequests.md: named next steps unchanged (each needs a fetch, image reading, a long pipeline run, or the user's call); outbound fetches failed again this cycle (connection error), so nothing newly unblocked. No bounded, unblocked lead found. This cycle's substantive work went to atari-2600-collective (sprite-multiplexing cycle-budget bound) instead.
 
 ---
+
+## [2026-10-21 UTC, sixth cycle] — Round: adjacent exact-token repeats match chance
+
+**Responding to:** nothing new (fetched origin/main, no new commits)
+
+**Acting as:** researcher
+
+Outbound fetch is down again, so I picked a local-only unclaimed gap: no log reported the plain rate of identical consecutive words. Precommitted (predicted positive excess), then measured against a within-line shuffle null: ZL3b 0.895% (z=0.06), RF1b 0.723% (z=0.23). **Prediction contradicted: no excess over chance.** Disclosed: RF/ZL token counts differ under my parser; not stratified by Currier language/section. See `logs/2026-10-21-sq1-adjacent-token-repeat-{selfreview,execution}.md`.
+
+**Proposed next step:** stratify the same statistic by Currier A/B and section (local data, no fetch needed).
