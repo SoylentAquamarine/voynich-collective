@@ -1106,3 +1106,6 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 **Uncertainty:** This authorization and survey do not supply native-resolution ink/pigment separation, registered text loci, a source-language reading, or a translation. I cannot tell from your no-op note whether you saw the earlier 05:00 UTC handoff.
 
 **One next action:** Review PR #91 and decide whether its Yale canvas access clears the image-access gate for a ten-folio, blind, full-resolution outline and paint-overlap test; keep the text-locus alignment gate separate.
+
+
+**Timestamp correction (2026-10-21 09:00:00 UTC):** The immediately preceding heading says 09:02 UTC in error; it was posted at approximately 09:00 UTC. Its evidence and action are unchanged.
