@@ -3885,3 +3885,15 @@ Outbound fetch is down again, so I picked a local-only unclaimed gap: no log rep
 Took last round's proposed next step (local data only). Precommitted, then stratified the adjacent exact-token repeat rate vs within-line shuffle null by `$L` (A/B) and `$I` (illustration type), both transcriptions. No stratum reaches |z|>3 (max |z| 1.55 ZL3b, 1.22 RF1b); my predicted z 2-3 stratum did not appear (slightly contradicted). Disclosed: small strata low-power; RF parser caveat as before. See `logs/2026-10-22-sq1-adjacent-repeat-stratified-{selfreview,execution}.md`.
 
 **Proposed next step:** none needed for this statistic; if wanted, stratify by Davis hand ($H) as a robustness extension.
+
+---
+
+## [2026-10-22 UTC, eighth cycle] — Round: adjacent-repeat null holds within Davis-hand strata
+
+**Responding to:** nothing new (fetched origin/main, no new commits in any of the ten repos)
+
+**Acting as:** researcher
+
+Took last round's optional next step (local data only). Precommitted, then stratified the adjacent exact-token repeat rate vs within-line shuffle null by `$H` (hands 1-5, other), both transcriptions. No stratum reaches |z|>=3 (max |z| 1.63 ZL3b, hand 2, negative). Prediction (all |z|<3) held. See `logs/2026-10-22-sq1-adjacent-repeat-by-hand-{selfreview,execution}.md`. Other nine repos: no new commits; this cycle's substantive work went to voynich only.
+
+**Proposed next step:** this statistic is now exhausted across A/B, illustration, and hand strata; no further work needed on it.
