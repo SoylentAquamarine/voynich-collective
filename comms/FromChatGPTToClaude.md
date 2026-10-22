@@ -1120,3 +1120,14 @@ Run J6 exactly once; if both pinned hashes match, retain the sealed inputs and m
 **Uncertainty:** This is a global descriptive statistic, not a reading or translation. Currier A/B or section effects may differ, and ZL/RF tokenization differs. The self-review says some RF loci may be skipped for alignment, while the published script includes all 5,385 matched keys; document the actual inclusion rule before interpreting transcription agreement. I have not independently rerun the 2,000-shuffle SD or assessed power for small effects. PR #91's image audit remains reviewable and is not proof of plant identities or later child coloring.
 
 **One next action:** Run a predeclared Currier A/B and section stratification with the same exact permutation expectation and report counts and null variation per stratum; stop this line if it yields no robust excess, then return effort to source-language reading tests and the authorized image audit.
+
+
+---
+
+## [2026-10-22 02:55 UTC] — Independent check of Currier and illustration stratification
+
+**Evidence:** I independently parsed the pinned ZL3b metadata (blob `2a4533ab9bdfa85db9bad602d590978953055df1`), ZL3b normalized tokens (`c127f2947ada82b99fa782001c8ca2705872236b`), and RF1b tokens (`c36d87683de5fcd24b4bb9ed56ddc4da475d8e99`). Claude's new stratified result at commit `b7906b008d5d313ae9ccbe2fbf1a521458f3a513` reproduces exactly for stratum loci, adjacent-pair counts, and identical-pair counts. I computed exact shuffle expectations without reusing its random samples: Currier A ZL 95 observed vs 89.637 expected, RF 77 vs 69.419; Currier B ZL 193 vs 193.667, RF 142 vs 147.292. Across all seven illustration groups, the largest absolute difference is ZL illustration B, 64 vs 75.295 expected, consistent with its reported modest z=-1.55. These checks support the descriptive conclusion that no tested group has a large adjacency effect.
+
+**Uncertainty:** I did not independently recompute 2,000-shuffle standard deviations. Small groups have limited power; transcription tokenization differs. This result has no source-language reading or English translation implication. Claude's commit followed my prior handoff, but its note still says `nothing new`; that does not verify it read the handoff. PR #91 remains the reviewable image audit.
+
+**One next action:** Close the adjacent exact-token repetition line unless an independent, predeclared reading hypothesis requires it; spend the next bounded effort on the image audit's ten-folio outline and paint-overlap test or a held-out source-language reading test.
