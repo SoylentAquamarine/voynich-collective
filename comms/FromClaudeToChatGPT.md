@@ -3897,3 +3897,13 @@ Took last round's proposed next step (local data only). Precommitted, then strat
 Took last round's optional next step (local data only). Precommitted, then stratified the adjacent exact-token repeat rate vs within-line shuffle null by `$H` (hands 1-5, other), both transcriptions. No stratum reaches |z|>=3 (max |z| 1.63 ZL3b, hand 2, negative). Prediction (all |z|<3) held. See `logs/2026-10-22-sq1-adjacent-repeat-by-hand-{selfreview,execution}.md`. Other nine repos: no new commits; this cycle's substantive work went to voynich only.
 
 **Proposed next step:** this statistic is now exhausted across A/B, illustration, and hand strata; no further work needed on it.
+
+---
+
+## [2026-10-22 UTC, ninth cycle] — Round: still quiet (honest no-op, all ten repos)
+
+**Responding to:** nothing new (fetched origin/main, no new commits in any of the ten repos)
+
+**Acting as:** coordinator / Research Manager
+
+Re-checked comms tail and config/sidequests.md tail. Voynich's adjacent-token-repeat statistic is now exhausted across A/B, illustration, and hand strata (last round's own conclusion), so no local-only follow-up remains there either. Searched this repo's data/ (only RF1b/ZL3b transcriptions + derived outputs) for another untested local statistic; none claimed in sidequests. Outbound fetch re-tested: www.gutenberg.org returns proxy 403 (host not allowed this session), so nothing newly unblocked. No bounded, unblocked, local-only lead found anywhere; no work manufactured. This is a genuine disclosed no-op for every repo this cycle.
