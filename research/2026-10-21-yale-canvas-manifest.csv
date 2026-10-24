@@ -1,0 +1,214 @@
+canvas_index,yale_label,folio_ids,iiif_1200px_url,status,sha256,width,height
+0,[Front cover],,"https://collections.library.yale.edu/iiif/2/1006074/full/1200,/0/default.jpg",ok,f4762d671aa18550ac404630ee0effba581b6adc6490f9e85ed78e1846825ff7,1200,1583
+1,[Inside front cover],,"https://collections.library.yale.edu/iiif/2/1006075/full/1200,/0/default.jpg",ok,6f7a0978228641c33b54cfc476f4507f7e63fb4394be1d413a543161433965b3,1200,1620
+2,1r,f1r,"https://collections.library.yale.edu/iiif/2/1006076/full/1200,/0/default.jpg",ok,31fa8bfd9f8e57eaba4f52ac0d7b8d75d4aaacd4b4256a6a93773d0167d8c58c,1200,1521
+3,1v,f1v,"https://collections.library.yale.edu/iiif/2/1006077/full/1200,/0/default.jpg",ok,ba6da0e440f11973af1c3b6f7a5367ee42ec73f0069788da1c5c139d4b2750cc,1200,1625
+4,2r,f2r,"https://collections.library.yale.edu/iiif/2/1006078/full/1200,/0/default.jpg",ok,93db7025661112c0d002b03ffa0531a025252ec75197c3429d3b477e06591ba9,1200,1682
+5,2v,f2v,"https://collections.library.yale.edu/iiif/2/1006079/full/1200,/0/default.jpg",ok,27419411034cfb4bae9a70a836a83631309749b07d8dd952a8947ad835413468,1200,1644
+6,3r,f3r,"https://collections.library.yale.edu/iiif/2/1006080/full/1200,/0/default.jpg",ok,13d4ece73b50bb64068701179d01c3b9d2cb1eb3937cabf3d03e431dbb032566,1200,1682
+7,3v,f3v,"https://collections.library.yale.edu/iiif/2/1006081/full/1200,/0/default.jpg",ok,fba9b62233476eac924e8176eb98c3e50b40ae01b49f7e867768e1b0c1d44534,1200,1649
+8,4r,f4r,"https://collections.library.yale.edu/iiif/2/1006082/full/1200,/0/default.jpg",ok,0d17adc59704a64a5bc70fc262c3685becc814148eb6d2d746fd7aa8f50694fe,1200,1673
+9,4v,f4v,"https://collections.library.yale.edu/iiif/2/1006083/full/1200,/0/default.jpg",ok,4ce8e5975e787925255f1899c25250e6a3edc6d8378c3c22e263a705dcb7a874,1200,1646
+10,5r,f5r,"https://collections.library.yale.edu/iiif/2/1006084/full/1200,/0/default.jpg",ok,dc73bd86ae1462ed99d388bb7d9c282b7864fe32dfe6caa401c4cf474cf1d055,1200,1694
+11,5v,f5v,"https://collections.library.yale.edu/iiif/2/1006085/full/1200,/0/default.jpg",ok,d6b043ea81d5f0acb935ab6ca7b56acbe139a46839c230ae4179a99ae635d8be,1200,1652
+12,6r,f6r,"https://collections.library.yale.edu/iiif/2/1006086/full/1200,/0/default.jpg",ok,702a327b8d4061da9e7d1616b1f88e4269cb2ade34ec116b70009fe57c691763,1200,1680
+13,6v,f6v,"https://collections.library.yale.edu/iiif/2/1006087/full/1200,/0/default.jpg",ok,a9204cf28c38ca90b684a1b5208385fe0b77997d3eb1491f341176a8ce87f09f,1200,1655
+14,7r,f7r,"https://collections.library.yale.edu/iiif/2/1006088/full/1200,/0/default.jpg",ok,602021b3dba0729ca150b56b5cb81910b2fae9785dbea2246c94cbe25098e6e0,1200,1681
+15,7v,f7v,"https://collections.library.yale.edu/iiif/2/1006089/full/1200,/0/default.jpg",ok,ea3ca00cf00995bbd72354af122a7eca2897c77529fba43cd79f7c65ca16cd9d,1200,1623
+16,8r,f8r,"https://collections.library.yale.edu/iiif/2/1006090/full/1200,/0/default.jpg",ok,bab57c9dcebcbf4a69a943dc10621e305d6370bcc1f29f3ffb176e5d55d5de73,1200,1677
+17,8v,f8v,"https://collections.library.yale.edu/iiif/2/1006091/full/1200,/0/default.jpg",ok,efdec80324b65230e9899f5db81abb2d0834e9459ee29c91dc77bc2cb76ec789,1200,1633
+18,9r,f9r,"https://collections.library.yale.edu/iiif/2/1006092/full/1200,/0/default.jpg",ok,83d6c3258c98d955c3b7825a3a17273674406ff40d48a6288fa9864545125780,1200,1667
+19,9v,f9v,"https://collections.library.yale.edu/iiif/2/1006093/full/1200,/0/default.jpg",ok,21b22270c54375edcf2663a39ec8776d7aafed4e4853070844ebba1b8062a09a,1200,1620
+20,10r,f10r,"https://collections.library.yale.edu/iiif/2/1006094/full/1200,/0/default.jpg",ok,5da5df7e04d87f5047bb8f0ea718e5f25b6f3e4c1776b16b362420d63309784b,1200,1668
+21,10v,f10v,"https://collections.library.yale.edu/iiif/2/1006095/full/1200,/0/default.jpg",ok,3a1039ed6ebada9653c03880b8a8fdb5a75480cb4168fd983dc9afa903b51b70,1200,1605
+22,11r,f11r,"https://collections.library.yale.edu/iiif/2/1006096/full/1200,/0/default.jpg",ok,237e58b622a8f601aee60793dba42230a720bb003eb6c871c472f9073847dc6d,1200,1681
+23,11v,f11v,"https://collections.library.yale.edu/iiif/2/1006097/full/1200,/0/default.jpg",ok,aee12ba83ab8a64b6242db3d3ab05f2cddf048bdb798a919225181e29f6c62b0,1200,1604
+24,13r,f13r,"https://collections.library.yale.edu/iiif/2/1006098/full/1200,/0/default.jpg",ok,8333dd7e82f1afc122d59e03fd8259923b017585903f5e83f8eb9cc41daa8e36,1200,1718
+25,13v,f13v,"https://collections.library.yale.edu/iiif/2/1006099/full/1200,/0/default.jpg",ok,ee78f23edb5b12c1d8636a5eb53d8c04ba44fb13a7091e06aaa85492833500f1,1200,1609
+26,14r,f14r,"https://collections.library.yale.edu/iiif/2/1006100/full/1200,/0/default.jpg",ok,95f09e1ab2fe1fac070e6b6ef4012d39625787f8216b73e187aa65d5d3227c9b,1200,1685
+27,14v,f14v,"https://collections.library.yale.edu/iiif/2/1006101/full/1200,/0/default.jpg",ok,65fe82f3fc105851610d14262c0f34b8a6a739e6e3843729283bef9193c328a3,1200,1610
+28,15r,f15r,"https://collections.library.yale.edu/iiif/2/1006102/full/1200,/0/default.jpg",ok,9cf18db26d70b9239b21029eba9f162f7128bd577250cdd6a0bf13ba670a858c,1200,1689
+29,15v,f15v,"https://collections.library.yale.edu/iiif/2/1006103/full/1200,/0/default.jpg",ok,1e0e73e2dbb5059b05d9fc01baff36175cdcac24ed0eeb6fe606caab5bbb3f7e,1200,1599
+30,16r,f16r,"https://collections.library.yale.edu/iiif/2/1006104/full/1200,/0/default.jpg",ok,315419c23275ad8d29e22e291eced80e4fb613de4f37e0edefc0fd558ccdf40f,1200,1697
+31,16v,f16v,"https://collections.library.yale.edu/iiif/2/1006105/full/1200,/0/default.jpg",ok,0569b6940efd66f678d2eaf052bc0855c17d732c6ba641cd89086603c646dd3b,1200,1602
+32,17r,f17r,"https://collections.library.yale.edu/iiif/2/1006106/full/1200,/0/default.jpg",ok,a667e10c9601e8c949886af95de6c764a27c6d92735f2f6b0a5ad0143d570677,1200,1696
+33,17v,f17v,"https://collections.library.yale.edu/iiif/2/1006107/full/1200,/0/default.jpg",ok,67e081b2d36b1c3f50e6b4086d42e9289077ca55f89ebfe8fd6728c191ee8332,1200,1594
+34,18r,f18r,"https://collections.library.yale.edu/iiif/2/1006108/full/1200,/0/default.jpg",ok,0f1ffb581236fe68e05cc32aa05dbab3313ee62594ec1610716171539368558a,1200,1696
+35,18v,f18v,"https://collections.library.yale.edu/iiif/2/1006109/full/1200,/0/default.jpg",ok,f4ef645c556e30d5d7f36bf841df529acd03f360e47c6a3fe9a3e92ca92a2e96,1200,1594
+36,19r,f19r,"https://collections.library.yale.edu/iiif/2/1006110/full/1200,/0/default.jpg",ok,e0ea17748563314e4a28703bb8f049045093fe295087a3388c01a7727a887e6e,1200,1696
+37,19v,f19v,"https://collections.library.yale.edu/iiif/2/1006111/full/1200,/0/default.jpg",ok,2693106472e6b7341307b578f4aa38ea4615e99b720a079d17701af2ba9dbb84,1200,1588
+38,20r,f20r,"https://collections.library.yale.edu/iiif/2/1006112/full/1200,/0/default.jpg",ok,6dee6fb932d4f759a27a48199da859a296d003b6b205284b8388aeebaad2b9df,1200,1696
+39,20v,f20v,"https://collections.library.yale.edu/iiif/2/1006113/full/1200,/0/default.jpg",ok,be61451c225c6e83bb62e99ce59ebf97fe393113f9002e36677e98933e5ce4fc,1200,1588
+40,21r,f21r,"https://collections.library.yale.edu/iiif/2/1006114/full/1200,/0/default.jpg",ok,c8d07e4a76bb8c219b24458c3c684819ecd3ac4290d5b1e8bcd4e135a201b9ce,1200,1696
+41,21v,f21v,"https://collections.library.yale.edu/iiif/2/1006115/full/1200,/0/default.jpg",ok,5f80314ae99cdc6502ad1a280ec1fd94497640c7e7819d66142b1e119f282519,1200,1588
+42,22r,f22r,"https://collections.library.yale.edu/iiif/2/1006116/full/1200,/0/default.jpg",ok,00e1285952cd1669c42ffaff49ad94c59664d908be7fed6726586cabc74619db,1200,1696
+43,22v,f22v,"https://collections.library.yale.edu/iiif/2/1006117/full/1200,/0/default.jpg",ok,832064c56d39cd273be0286bd95a5e90687b14270d3499db351cc5c06cdcc9de,1200,1599
+44,23r,f23r,"https://collections.library.yale.edu/iiif/2/1006118/full/1200,/0/default.jpg",ok,cf85cce48baf77625fceaa3e6839a82b55859b1611fccd6f7942c8cc03f4b9db,1200,1677
+45,23v,f23v,"https://collections.library.yale.edu/iiif/2/1006119/full/1200,/0/default.jpg",ok,ef6f8e82982a2aa70c3761716f153d51ce0719d2c79598a3cfd082485d933489,1200,1593
+46,24r,f24r,"https://collections.library.yale.edu/iiif/2/1006120/full/1200,/0/default.jpg",ok,8f7fb24e6bf9ebdeb1127856de3a7ffc859ed4ac326dbb4eef0291fbc74994fb,1200,1660
+47,24v,f24v,"https://collections.library.yale.edu/iiif/2/1006121/full/1200,/0/default.jpg",ok,7945b58ed7693878814fb237369dd53e459ace09fa140725b4ec5dabbb7ca62e,1200,1580
+48,25r,f25r,"https://collections.library.yale.edu/iiif/2/1006122/full/1200,/0/default.jpg",ok,cb6cd40c1f983cb2be6c17969fcbee5a6b94500e8404626452527aca70f117a5,1200,1658
+49,25v,f25v,"https://collections.library.yale.edu/iiif/2/1006123/full/1200,/0/default.jpg",ok,eee369ce0163b7cc9bb0e9f8fa0281a52f9a5c975fffc979cadacd52e473804b,1200,1580
+50,26r,f26r,"https://collections.library.yale.edu/iiif/2/1006124/full/1200,/0/default.jpg",ok,a23caff1e92f28296bd1eaa68042bac74a2faf13f59563e4e6d1e8faebdbb098,1200,1647
+51,26v,f26v,"https://collections.library.yale.edu/iiif/2/1006125/full/1200,/0/default.jpg",ok,a5b982ef0cbad2a1b350025765709c309f2cbfdc3b3d2e826840aa099f35e07d,1200,1588
+52,27r,f27r,"https://collections.library.yale.edu/iiif/2/1006126/full/1200,/0/default.jpg",ok,779edad81b724938f8169690e40f6417cd93311e6673b21aed7b1ea3f787a476,1200,1658
+53,27v,f27v,"https://collections.library.yale.edu/iiif/2/1006127/full/1200,/0/default.jpg",ok,bb3948fdaedb9f7504905ac8a6510a2b890d8ef77f66b2ca8f0cc76128f35385,1200,1588
+54,28r,f28r,"https://collections.library.yale.edu/iiif/2/1006128/full/1200,/0/default.jpg",ok,5671af592d415546dc2d86eb10da1449147f5b2bdfc61371d49f58fe7f94bd03,1200,1647
+55,28v,f28v,"https://collections.library.yale.edu/iiif/2/1006129/full/1200,/0/default.jpg",ok,b6a10dce42437510d908451b33850e750982f867aed83bc0c741f808eb267e92,1200,1573
+56,29r,f29r,"https://collections.library.yale.edu/iiif/2/1006130/full/1200,/0/default.jpg",ok,32337e958e91559580c048a146bafe3b2df7f0a5390d1e89bacba07b1db4a2cf,1200,1652
+57,29v,f29v,"https://collections.library.yale.edu/iiif/2/1006131/full/1200,/0/default.jpg",ok,5983660609d0f41e44f1a6cc55f75e1468d58039dfe01a1b5fe5be64c5fe966d,1200,1576
+58,30r,f30r,"https://collections.library.yale.edu/iiif/2/1006132/full/1200,/0/default.jpg",ok,688792adbf4d4e889b821dd796f901151586922f6014d44eeee5663ed13d009b,1200,1638
+59,30v,f30v,"https://collections.library.yale.edu/iiif/2/1006133/full/1200,/0/default.jpg",ok,80abce62c94a293431acee11c27b4028ff4f8eb7b689440933fb4c198616ba71,1200,1588
+60,31r,f31r,"https://collections.library.yale.edu/iiif/2/1006134/full/1200,/0/default.jpg",ok,ce9c222683818dfaa9a516c4f43b30cf51fcdeb739118e5d2135491ada6fef1e,1200,1653
+61,31v,f31v,"https://collections.library.yale.edu/iiif/2/1006135/full/1200,/0/default.jpg",ok,d001124969a8b4487530348bf9c20b101786fe314e65560f3a729e1b4a1511f6,1200,1588
+62,32r,f32r,"https://collections.library.yale.edu/iiif/2/1006136/full/1200,/0/default.jpg",ok,89c940d9b99c58437af8f5cd81c531b2e1db1b41cbda209906f178b8a1db5823,1200,1637
+63,32v,f32v,"https://collections.library.yale.edu/iiif/2/1006137/full/1200,/0/default.jpg",ok,9d6f332075a829d700afe799a7c1e39c6dcdf19110ec2180b2cf781368ae049c,1200,1588
+64,33r,f33r,"https://collections.library.yale.edu/iiif/2/1006138/full/1200,/0/default.jpg",ok,c6cdfb837ceba04b1d46ea611156624cf3c96bbcb55cd38dc4316be8aab4959d,1200,1623
+65,33v,f33v,"https://collections.library.yale.edu/iiif/2/1006139/full/1200,/0/default.jpg",ok,711b67dcc195ab2203250b5bed0583a9d32f7f388b9399c03cd58b148c1e2f24,1200,1575
+66,34r,f34r,"https://collections.library.yale.edu/iiif/2/1006140/full/1200,/0/default.jpg",ok,c96f1801fc7b60a4d3c0524b0d405a5b20f2c05e2b07738f3687741277073dc1,1200,1618
+67,34v,f34v,"https://collections.library.yale.edu/iiif/2/1006141/full/1200,/0/default.jpg",ok,4288a0915bbb3525cdf5f9564ec8f34b533a8abc9e09aa0b38c06a91c58bb050,1200,1577
+68,35r,f35r,"https://collections.library.yale.edu/iiif/2/1006142/full/1200,/0/default.jpg",ok,b12712172f9e9067c328f035343bc01afd9a595a493c639bf4ca6794c8b46535,1200,1608
+69,35v,f35v,"https://collections.library.yale.edu/iiif/2/1006143/full/1200,/0/default.jpg",ok,dc071a57d363d40276764298a447b0f6bd49a15cf87fa13fdd00a8f4456aa564,1200,1585
+70,36r,f36r,"https://collections.library.yale.edu/iiif/2/1006144/full/1200,/0/default.jpg",ok,c64dd87aa593d7f6561518529743a0dd95dbb546e312c5603008693b929b39d7,1200,1608
+71,36v,f36v,"https://collections.library.yale.edu/iiif/2/1006145/full/1200,/0/default.jpg",ok,5917657986f6971f5652d92040c8c1b2a40dea24cb05fffa3b5d48c9c47821ad,1200,1588
+72,37r,f37r,"https://collections.library.yale.edu/iiif/2/1006146/full/1200,/0/default.jpg",ok,a08affafda6daf2207185c959ca9382327b7e2edc5e111c7c83557aad18df0b3,1200,1608
+73,37v,f37v,"https://collections.library.yale.edu/iiif/2/1006147/full/1200,/0/default.jpg",ok,47dbff1531863c09085b44f879ae857c62e42ab4fe2e3a4de9166d7bb766a16e,1200,1569
+74,38r,f38r,"https://collections.library.yale.edu/iiif/2/1006148/full/1200,/0/default.jpg",ok,f33afdad97f6f3221ee3ec17c591138ae5f26629d4a0ec538e50737d13b800bd,1200,1608
+75,38v,f38v,"https://collections.library.yale.edu/iiif/2/1006149/full/1200,/0/default.jpg",ok,6881a626d6221157e9b5961d6de6ff9fc9dfaca7e96c1e7634a3d225fc1ed9bd,1200,1569
+76,39r,f39r,"https://collections.library.yale.edu/iiif/2/1006150/full/1200,/0/default.jpg",ok,185d14ef98662ca94ec7eca0e49800a16fe1640e63f908587642baabf9fdd36e,1200,1608
+77,39v,f39v,"https://collections.library.yale.edu/iiif/2/1006151/full/1200,/0/default.jpg",ok,abcbd2e6a0b40cda323215d97bbb7ed53c36701208d46aaf2a035905a2492463,1200,1569
+78,40r,f40r,"https://collections.library.yale.edu/iiif/2/1006152/full/1200,/0/default.jpg",ok,4aad3a5eadd77eb25768be7327b45267c10d71ecb3d1cf7a8f7bc08ce296923a,1200,1605
+79,40v,f40v,"https://collections.library.yale.edu/iiif/2/1006153/full/1200,/0/default.jpg",ok,5e2d70b20d59acee0d2e60168379015917b2f786739a75b43cd8a4feb8bf31f8,1200,1569
+80,41r,f41r,"https://collections.library.yale.edu/iiif/2/1006154/full/1200,/0/default.jpg",ok,c38f6366339a9bc24b1a63c9c0e5c8a33304e1dc400ed4354be817b8156e91f4,1200,1581
+81,41v,f41v,"https://collections.library.yale.edu/iiif/2/1006155/full/1200,/0/default.jpg",ok,f3080c5c5c82784a12ac2fd988f370eebf5aa9c4bf8204628d71c16a3734bad5,1200,1569
+82,42r,f42r,"https://collections.library.yale.edu/iiif/2/1006156/full/1200,/0/default.jpg",ok,7c6da3badfd7d08242ae811f3a9accede00f5176f8ae12df99c3788fbc01ffd4,1200,1580
+83,42v,f42v,"https://collections.library.yale.edu/iiif/2/1006157/full/1200,/0/default.jpg",ok,86721aa265d26d042037acb8a570a47e701b130213ee6bd3eac2665ad4b88305,1200,1569
+84,43r,f43r,"https://collections.library.yale.edu/iiif/2/1006158/full/1200,/0/default.jpg",ok,bb7772227a3933475a7237aca9aa7956c8844b3fd227f4d08f647ed7988deb6f,1200,1587
+85,43v,f43v,"https://collections.library.yale.edu/iiif/2/1006159/full/1200,/0/default.jpg",ok,c3b71e21cc8617c97a71fae35dcc4dfaf668fbb07cd380d3b76ecf050f9edf78,1200,1569
+86,44r,f44r,"https://collections.library.yale.edu/iiif/2/1006160/full/1200,/0/default.jpg",ok,dba3a7e0733212a770f73333eeff61e6e955589bc85e0182e8ba3921e795966d,1200,1599
+87,44v,f44v,"https://collections.library.yale.edu/iiif/2/1006161/full/1200,/0/default.jpg",ok,bf3ae49ff1da6147871fe7b2f73f180f1979849124bcc4cc587b290bb3838040,1200,1569
+88,45r,f45r,"https://collections.library.yale.edu/iiif/2/1006162/full/1200,/0/default.jpg",ok,8ece89830adec5ff47fc971d59589c4f7c251ab6f30eb551a35044302b72fd59,1200,1576
+89,45v,f45v,"https://collections.library.yale.edu/iiif/2/1006163/full/1200,/0/default.jpg",ok,4c56761c5344b3ec328f13fcbd3a9ec324935474e61d47dca5574bee41b857cb,1200,1559
+90,46r,f46r,"https://collections.library.yale.edu/iiif/2/1006164/full/1200,/0/default.jpg",ok,946d2b63cd4f7273657eeaf015309419421db9025db8798cb70df1b77c3a3590,1200,1558
+91,46v,f46v,"https://collections.library.yale.edu/iiif/2/1006165/full/1200,/0/default.jpg",ok,e36c964f6d741cbe4ad599e387dd339f5899d2208b1ba5b193f14e1d6e33b9ff,1200,1539
+92,47r,f47r,"https://collections.library.yale.edu/iiif/2/1006166/full/1200,/0/default.jpg",ok,6eaa10e69511674976087ea903866826e1424e7c8c4eeafbf33dc4287bce0d9b,1200,1578
+93,47v,f47v,"https://collections.library.yale.edu/iiif/2/1006167/full/1200,/0/default.jpg",ok,7b0af3eda13112e1bbb6d875d2dfb5cb357aa4c189af115aac158fef6a6a38f4,1200,1542
+94,48r,f48r,"https://collections.library.yale.edu/iiif/2/1006168/full/1200,/0/default.jpg",ok,676b66c2e00841922596a972769d1efda4b669f7fff6035adba6a54dbeb45c56,1200,1561
+95,48v,f48v,"https://collections.library.yale.edu/iiif/2/1006169/full/1200,/0/default.jpg",ok,55f27fd516110e4592c87ce0596cbb900e0a3d6bee1ac60a7de953dfa0d855b9,1200,1533
+96,49r,f49r,"https://collections.library.yale.edu/iiif/2/1006170/full/1200,/0/default.jpg",ok,a9a21d5578e2698251e45b90530a5a556a32c906e1a0177e838acf186a126e33,1200,1592
+97,49v,f49v,"https://collections.library.yale.edu/iiif/2/1006171/full/1200,/0/default.jpg",ok,014d5af8910915aeefec98b462af36edcbbd9a6d8764140ec04eecbd702e3830,1200,1541
+98,50r,f50r,"https://collections.library.yale.edu/iiif/2/1006172/full/1200,/0/default.jpg",ok,64d0590e4df1c33c68db580e2bfddc92c0e05888bf8910a64e8453849d830697,1200,1585
+99,50v,f50v,"https://collections.library.yale.edu/iiif/2/1006173/full/1200,/0/default.jpg",ok,6c6aa0f82e3714b031d740120e2b1137840faa90c9d52235194e18f334b27516,1200,1537
+100,51r,f51r,"https://collections.library.yale.edu/iiif/2/1006174/full/1200,/0/default.jpg",ok,48ca23b3b6f0597fcce9ebc6afa3b99b77e6bbbc42584e85a6513d14afe915d0,1200,1594
+101,51v,f51v,"https://collections.library.yale.edu/iiif/2/1006175/full/1200,/0/default.jpg",ok,c54ed703a3e1f14c2d2d30738b37804d69fd7ff939e36e05acf88c6977e96a03,1200,1545
+102,52r,f52r,"https://collections.library.yale.edu/iiif/2/1006176/full/1200,/0/default.jpg",ok,a7d82759700e03c37e3045f1a19681507ffefe89ab310fcc19ddef88907001e8,1200,1595
+103,52v,f52v,"https://collections.library.yale.edu/iiif/2/1006177/full/1200,/0/default.jpg",ok,219aa1580feae0fa69227569f40b8e5f533397041d9d32bd81b70871dd485113,1200,1541
+104,53r,f53r,"https://collections.library.yale.edu/iiif/2/1006178/full/1200,/0/default.jpg",ok,95e574b335765a8d645a5cd48907f36a01c910033d0675d8dae290f27b0d2e2e,1200,1593
+105,53v,f53v,"https://collections.library.yale.edu/iiif/2/1006179/full/1200,/0/default.jpg",ok,3be9154b5b65b528b5650751587d720bc6a953a81a4f9bc06a77eeccc4c6d2c2,1200,1538
+106,54r,f54r,"https://collections.library.yale.edu/iiif/2/1006180/full/1200,/0/default.jpg",ok,cdd3b09ddca3431e2b8633399d410f176e013cff58e3feccbe5b6567f09190f5,1200,1598
+107,54v,f54v,"https://collections.library.yale.edu/iiif/2/1006181/full/1200,/0/default.jpg",ok,ef3569011d392d1a0b8454637967cd401f1d2025f83437b8859743764d6d97d2,1200,1508
+108,55r,f55r,"https://collections.library.yale.edu/iiif/2/1006182/full/1200,/0/default.jpg",ok,9b1c388a8177f89165455a3e3e44343a49694686bc771cceec14ab5f3be63364,1200,1607
+109,55v,f55v,"https://collections.library.yale.edu/iiif/2/1006183/full/1200,/0/default.jpg",ok,559ac8894af91de224d7b39ff9b17fae954d6dab27ef528e6507ceadffb90347,1200,1518
+110,56r,f56r,"https://collections.library.yale.edu/iiif/2/1006184/full/1200,/0/default.jpg",ok,c379e2e2211aacdf1e2609164ddb035b1da625702806203dbc0ef755c024f7d9,1200,1593
+111,56v,f56v,"https://collections.library.yale.edu/iiif/2/1006185/full/1200,/0/default.jpg",ok,b3935b2474167a2ae5dfb4348522926117b32274b60f9b87e4e0687a4fad0bbd,1200,1518
+112,57r,f57r,"https://collections.library.yale.edu/iiif/2/1006186/full/1200,/0/default.jpg",ok,4c083cb9401f2b150c2e6d29719f4549f11182ba30f655a3b27534d7989798ae,1200,1587
+113,57v,f57v,"https://collections.library.yale.edu/iiif/2/1006187/full/1200,/0/default.jpg",ok,2936b35fae3a604768c427b3fafab0fe205ac295a4ba6116037367ff4d42d762,1200,1493
+114,58r,f58r,"https://collections.library.yale.edu/iiif/2/1006188/full/1200,/0/default.jpg",ok,cb7045c62c24677c43e207d8f7038ca213cf8233e6bb2589d3a6d0ce9c89e752,1200,1611
+115,58v,f58v,"https://collections.library.yale.edu/iiif/2/1006189/full/1200,/0/default.jpg",ok,ac45c0fb6c7bfb3680d7d379d615d5fc4b484f1fe4aeaf3725bd327096d3746c,1200,1514
+116,65r,f65r,"https://collections.library.yale.edu/iiif/2/1006190/full/1200,/0/default.jpg",ok,02b9f7d943459d0b6687adb35bdd20087b51a7de7dfe3feccdaac1291bc044c1,1200,1593
+117,65v,f65v,"https://collections.library.yale.edu/iiif/2/1006191/full/1200,/0/default.jpg",ok,a341a2fdd8d22a2a9eb9f75e87323d82a1a00f2f91e7efa1ad2f097cb3465858,1200,1502
+118,66r,f66r,"https://collections.library.yale.edu/iiif/2/1006192/full/1200,/0/default.jpg",ok,572907ccc3143988e8d999f744d06ade668852e449b8045e4f47b6f271672590,1200,1593
+119,66v,f66v,"https://collections.library.yale.edu/iiif/2/1006193/full/1200,/0/default.jpg",ok,5397f2eccac42e583ae8000eac6abaeb2354ccd99e970acf5c4fddf0d73a65f9,1200,1509
+120,67r,f67r,"https://collections.library.yale.edu/iiif/2/1006194/full/1200,/0/default.jpg",ok,606c6debbc15b9dc67c5cc8dc86586c3b61ede5aeaa3bf1f5e629ca85f89625e,1200,902
+121,67v,f67v,"https://collections.library.yale.edu/iiif/2/1006195/full/1200,/0/default.jpg",ok,c98e0d744746d9f89f39cae23a95ba869c52d32c5efec518ff3a57da37afa898,1200,891
+122,68r,f68r,"https://collections.library.yale.edu/iiif/2/1006196/full/1200,/0/default.jpg",ok,206c86cbe1b001d74f03b1522a05f592d924cb7e08e3939776d31185902e18ed,1200,575
+123,68v,f68v,"https://collections.library.yale.edu/iiif/2/1006197/full/1200,/0/default.jpg",ok,2bb9d98ce3e7438bf0a237c520c6690ef0c24ee327fcaccddc107be513ec6885,1200,567
+124,69r,f69r,"https://collections.library.yale.edu/iiif/2/1006198/full/1200,/0/default.jpg",ok,72c5805bc83c3b5268231747f6b054684c47d0c4721a0d16554eca7c5bfeb885,1200,1617
+125,69v and 70r,f69v|f70r,"https://collections.library.yale.edu/iiif/2/1006199/full/1200,/0/default.jpg",ok,a50d6794a10d59244b3fc207b9c45506f21ae925f30eb31c9958274a94224024,1200,524
+126,70v (part),f70v2,"https://collections.library.yale.edu/iiif/2/1006200/full/1200,/0/default.jpg",ok,16a9d81a9db154a01a002da6793ec96d4d6b97f98d585457b3553436a3d635f6,1200,1148
+127,70v (part),f70v1,"https://collections.library.yale.edu/iiif/2/1006201/full/1200,/0/default.jpg",ok,3c5fadc8023271a72b4a5437edf426ff5bec25a85f42de100b5bc1580954f8e6,1200,1491
+128,71r,f71r,"https://collections.library.yale.edu/iiif/2/1006202/full/1200,/0/default.jpg",ok,707b9e37b5b0cbb937eea6438179521ce513d9f786f5d8ec4534cc8d292165be,1200,1617
+129,71v and 72r,f71v|f72r1|f72r2|f72r3,"https://collections.library.yale.edu/iiif/2/1006203/full/1200,/0/default.jpg",ok,830a4aec1ffb630a322bec2e0d586e28716107a68a60b28ec77ddec8459cbb18,1200,408
+130,72v (part),f72v3|f72v2,"https://collections.library.yale.edu/iiif/2/1006204/full/1200,/0/default.jpg",ok,a1ecc149237ad7f032713e8f1e953fbb55fd9d48f69bed100fa6cbb00f4aa2ff,1200,761
+131,72v (part),f72v1,"https://collections.library.yale.edu/iiif/2/1006205/full/1200,/0/default.jpg",ok,b13ee0cb473d2766a8c6099dea061717e16f320ec151c72d7d8f09f4aca02fba,1200,1496
+132,73r,f73r,"https://collections.library.yale.edu/iiif/2/1006206/full/1200,/0/default.jpg",ok,a2b40422863a36bfe0add680f8a8284c86111932862e7264b2aab29116e14a8e,1200,1592
+133,73v,f73v,"https://collections.library.yale.edu/iiif/2/1006207/full/1200,/0/default.jpg",ok,b55b6b2a9b47c2433447a644374d08ade026c09b296cf4b34609ccbdc60a8466,1200,1501
+134,75r,f75r,"https://collections.library.yale.edu/iiif/2/1006208/full/1200,/0/default.jpg",ok,25e5d00be226549283ba053b06fbe0385a49f9ea66ddd4b2d400a2acf1cdbe63,1200,1581
+135,75v,f75v,"https://collections.library.yale.edu/iiif/2/1006209/full/1200,/0/default.jpg",ok,2f142e8b1db6fbf5f4beecc62b24cac12f6b25afddf0a15dd9b9c6145a55c16f,1200,1562
+136,76r,f76r,"https://collections.library.yale.edu/iiif/2/1006210/full/1200,/0/default.jpg",ok,78aee62f9f53028bcdbd805976377d3a3aade41bf050c3adb2821f0d270855f5,1200,1619
+137,76v,f76v,"https://collections.library.yale.edu/iiif/2/1006211/full/1200,/0/default.jpg",ok,b570a63064d0a77232d51d523347d6a43ff7b35963d58f6a27342bac4bb55449,1200,1578
+138,77r,f77r,"https://collections.library.yale.edu/iiif/2/1006212/full/1200,/0/default.jpg",ok,312f970bfc4f369c9884a493de7603794c7c6d466f826a2aeda0d89558bfc1f0,1200,1613
+139,77v,f77v,"https://collections.library.yale.edu/iiif/2/1006213/full/1200,/0/default.jpg",ok,bc7ff9b4d391e8581b2b5519d1d00dbe1f3622f92f4187cfd6eac0e2fa02c91e,1200,1551
+140,78r,f78r,"https://collections.library.yale.edu/iiif/2/1006214/full/1200,/0/default.jpg",ok,59185e9ddee46770be9c5cd4563a603ca28bc4c3f48f550722a1600b2e9e13f0,1200,1616
+141,78v,f78v,"https://collections.library.yale.edu/iiif/2/1006215/full/1200,/0/default.jpg",ok,33e7c5a36d986edc7f936bd08beaa48690701eb42f1bc46d6964b4f11cfa0fdf,1200,1566
+142,79r,f79r,"https://collections.library.yale.edu/iiif/2/1006216/full/1200,/0/default.jpg",ok,1de5d22a1cad4ee78ceea637853fd483ceeba17098828575420f05c817fb0ad2,1200,1618
+143,79v,f79v,"https://collections.library.yale.edu/iiif/2/1006217/full/1200,/0/default.jpg",ok,e5d903c3d528220561b8c7f2a886141392d18924db0c78c259be559e440259a9,1200,1586
+144,80r,f80r,"https://collections.library.yale.edu/iiif/2/1006218/full/1200,/0/default.jpg",ok,f1ba2d60fb009215cd5f8c8a177213ee812f6d84ff4d2301ebf2e15831e35259,1200,1604
+145,80v,f80v,"https://collections.library.yale.edu/iiif/2/1006219/full/1200,/0/default.jpg",ok,5e70b13301f2959124d1b6c2baf1c3e2a92bb2e52b5bcd5698f9eda653436ab2,1200,1571
+146,81r,f81r,"https://collections.library.yale.edu/iiif/2/1006220/full/1200,/0/default.jpg",ok,9756008c15fe1b298674ef49d24a7c9e32f4f484575888b08f6604e5421ff1ef,1200,1615
+147,81v,f81v,"https://collections.library.yale.edu/iiif/2/1006221/full/1200,/0/default.jpg",ok,767f5111036024004f4ab945566d0ee2b80cad4f89e1b5a58d26b83825aad125,1200,1568
+148,82r,f82r,"https://collections.library.yale.edu/iiif/2/1006222/full/1200,/0/default.jpg",ok,be1e5a213a60e137f04878af82758b7c0c3fcf26b33f8216d8c3ab4311feaf2e,1200,1633
+149,82v,f82v,"https://collections.library.yale.edu/iiif/2/1006223/full/1200,/0/default.jpg",ok,0d14783ce8081e52fdbb907c8a8d6d984edd5d959fc4480b9a65c5d697a5a1f4,1200,1578
+150,83r,f83r,"https://collections.library.yale.edu/iiif/2/1006224/full/1200,/0/default.jpg",ok,11b4a2072b3e5bb69bc8e08c07797a23bcf9e18a7dc425d2e191c55dab661cfb,1200,1633
+151,83v,f83v,"https://collections.library.yale.edu/iiif/2/1006225/full/1200,/0/default.jpg",ok,44bee731d41bde7a7c76899ea0d42f790c07538634fe1b4a45b68e52dfdef2a7,1200,1550
+152,84r,f84r,"https://collections.library.yale.edu/iiif/2/1006226/full/1200,/0/default.jpg",ok,b5736432fa3b80d0d27ca6b0b359fe1bfe2c3bff8d3084c45ba76d2b459a1d65,1200,1633
+153,84v,f84v,"https://collections.library.yale.edu/iiif/2/1006227/full/1200,/0/default.jpg",ok,1448a13b70b03d3db1b4a113983ed089b6b2d73330217471068a231eca1cd433,1200,1563
+154,85r (part) (part of 85-86 foldout),,"https://collections.library.yale.edu/iiif/2/1006228/full/1200,/0/default.jpg",ok,fca0331a99fb69c6c917fd1608dee9d81bf16ff1fa8f06b9b16502c2e3515f23,1200,1620
+155,85r (part) 86v (part) (part of 85-86 foldout),,"https://collections.library.yale.edu/iiif/2/1006229/full/1200,/0/default.jpg",ok,4f505e7989fff1c127f50312ba96a03c640c7d8d368362751e76136e70760c4d,1200,602
+156,86v (part) (part of 85-86 foldout),,"https://collections.library.yale.edu/iiif/2/1006230/full/1200,/0/default.jpg",ok,5aa411b8e7f4454aa3409d8075e2768dc46258742983cb6cc00b39a7b2b85731,1200,928
+157,85v and 86r (foldout),f85v|86r (foldout),"https://collections.library.yale.edu/iiif/2/1006231/full/1200,/0/default.jpg",ok,b91639a41298a4bdba069f795b72b1b8dfaaa71b2efa00bb9ded10af93b101ba,1200,1101
+158,87r,f87r,"https://collections.library.yale.edu/iiif/2/1006232/full/1200,/0/default.jpg",ok,04443d9681cdd7ec0ff831191d55b067c2e0ea5487b2a7a536b4dfc6018ebccb,1200,1633
+159,87v,f87v,"https://collections.library.yale.edu/iiif/2/1043429/full/1200,/0/default.jpg",ok,f0b92214bd18e1585605abcad84481c63bf91577465fb444df1600d50e9901e2,1200,1534
+160,88r,f88r,"https://collections.library.yale.edu/iiif/2/1037112/full/1200,/0/default.jpg",ok,27d48eb6faa9685f7390ae1f598399a3a6ecd621763f7f1aae0902e84a2c0665,1200,1651
+161,88v and 89r,f88v|f89r,"https://collections.library.yale.edu/iiif/2/1006233/full/1200,/0/default.jpg",ok,367eeb6e8bce3389993fd20523081771af686121f20b1ab22876d56a135987df,1200,499
+162,89v (part),,"https://collections.library.yale.edu/iiif/2/1006234/full/1200,/0/default.jpg",ok,a67c3e0063fabd9f95984d5e0a1ec2aab7ea51204ef7c5a4024a5d41acfbf6d6,1200,1087
+163,89v (part) and 90r,89v (part)|f90r,"https://collections.library.yale.edu/iiif/2/1006235/full/1200,/0/default.jpg",ok,cbb315bde7751a348fb50e100488959ec661eb7be6110c82bc4d50f7e235cbc4,1200,579
+164,90r,f90r,"https://collections.library.yale.edu/iiif/2/1006236/full/1200,/0/default.jpg",ok,8dd14b8ebb4c78c75c938d59f7e2cce6eec755138d74f7d52c95b97c7d043ab9,1200,1646
+165,90v (part),,"https://collections.library.yale.edu/iiif/2/1006237/full/1200,/0/default.jpg",ok,7abcbaa9b4fb55a12d841e957fcd4ed8eec6950ba1a2e3ff6c0d19951959c57c,1200,1563
+166,93r,f93r,"https://collections.library.yale.edu/iiif/2/1006238/full/1200,/0/default.jpg",ok,471914562d4aa51aa4c261cdb062b44ba34a89995c1e98e9fdc5dc8e018ba185,1200,1659
+167,93v,f93v,"https://collections.library.yale.edu/iiif/2/1006239/full/1200,/0/default.jpg",ok,b96c83b37e102804a33c9a8bc122f76b4a59b86208a656bcfb25644af1570ac3,1200,1563
+168,94r,f94r,"https://collections.library.yale.edu/iiif/2/1006240/full/1200,/0/default.jpg",ok,4281c8bf884624b76af2871f1ead4f6195c915c88bee321ae42b0eb3a92bea07,1200,1651
+169,94v and 95r,f94v|f95r,"https://collections.library.yale.edu/iiif/2/1006241/full/1200,/0/default.jpg",ok,505184114d14a0c846457a34a6c2e85e1118a81f45daa51169fb1214f326b14e,1200,597
+170,95v (part),,"https://collections.library.yale.edu/iiif/2/1006242/full/1200,/0/default.jpg",ok,488445b10499be56d2bd70b2fd0ef08d93f69d0063a3f0dd338f88e6511dfa6c,1200,1648
+171,95v,f95v,"https://collections.library.yale.edu/iiif/2/1006243/full/1200,/0/default.jpg",ok,77b4f102152f0c6ca6f9de5748ce216260685b94a1d820b9349898e8ee03fc58,1200,1563
+172,96r,f96r,"https://collections.library.yale.edu/iiif/2/1006244/full/1200,/0/default.jpg",ok,0a20cc424c14070b267aa8c8f4d69ccceec5c2598a3d014ac025963aeac41935,1200,1665
+173,96v,f96v,"https://collections.library.yale.edu/iiif/2/1006245/full/1200,/0/default.jpg",ok,252f3bc2f9b2f10ce2c369a50b4700757a72ec22e7fef5280d87b72dd23feaa5,1200,1552
+174,99r,f99r,"https://collections.library.yale.edu/iiif/2/1006246/full/1200,/0/default.jpg",ok,70fe822f7141642843e46d675e47785fcec0bc89f34d8c3b9f39f285ceb72358,1200,1672
+175,99v,f99v,"https://collections.library.yale.edu/iiif/2/1006247/full/1200,/0/default.jpg",ok,2a4c48eb9b59a51a3daaca58da73d00579b9b17a9cb23cc109b05dbf8280ac8b,1200,1583
+176,100r,f100r,"https://collections.library.yale.edu/iiif/2/1006248/full/1200,/0/default.jpg",ok,22c3f21139d880e31d8a64d8f8400ae9f43d9d680f325b84c31e95df58d73438,1200,1684
+177,100v and 101r,f100v|f101r,"https://collections.library.yale.edu/iiif/2/1006249/full/1200,/0/default.jpg",ok,89eac459029888abcb16164c7f996ab0633b6ff2b85f49a79856e3100802fe24,1200,595
+178,101v (part),,"https://collections.library.yale.edu/iiif/2/1006250/full/1200,/0/default.jpg",ok,9a71e7cd92c9fa2454ecf3036d8276cc67254f717e84f8eb35401581dac26491,1200,1680
+179,101v (part) and 102r,101v (part)|f102r,"https://collections.library.yale.edu/iiif/2/1006251/full/1200,/0/default.jpg",ok,c6f4a72474b2896e597e3472c377931aa8d32f260fc406acc86259f4404af6e2,1200,567
+180,102v (part),,"https://collections.library.yale.edu/iiif/2/1006252/full/1200,/0/default.jpg",ok,c38e689022e6bbc2ab7e7693b6ea7b1cf0bc460c9ae1a11aadaf7731017edcea,1200,1528
+181,102v (part),,"https://collections.library.yale.edu/iiif/2/1006253/full/1200,/0/default.jpg",ok,3d30db92afef12f429a21df717e63361ead5422f61e8aea47d3de617a2b1025d,1200,1563
+182,103r,f103r,"https://collections.library.yale.edu/iiif/2/1006254/full/1200,/0/default.jpg",ok,2f528d9e1f5a1bec6bcdaba3da54f9054cf7dc21bd1432e4e5535b480d860754,1200,1698
+183,103v,f103v,"https://collections.library.yale.edu/iiif/2/1006255/full/1200,/0/default.jpg",ok,ff5e81b75865e9a242c60047aeb5a04db91eef62cb0092481982b11217caeef4,1200,1606
+184,104r,f104r,"https://collections.library.yale.edu/iiif/2/1006256/full/1200,/0/default.jpg",ok,35d5919d7622a4b2774394d1f3d76e279298a4152bfae9ad509482ef66b9205f,1200,1709
+185,104v,f104v,"https://collections.library.yale.edu/iiif/2/1006257/full/1200,/0/default.jpg",ok,3fe5b37c68338adf7c4e323877eb67a91b7794af4d0d1b2e7ea5e173b5cb12e2,1200,1620
+186,105r,f105r,"https://collections.library.yale.edu/iiif/2/1006258/full/1200,/0/default.jpg",ok,770d8926f84b299df12c89cb414766ea076a05b87b1bcdced811d35543090ab0,1200,1699
+187,105v,f105v,"https://collections.library.yale.edu/iiif/2/1006259/full/1200,/0/default.jpg",ok,27daeac316a7c2180325dc23a0e9243dbb6b327b7abf2cd91496a818e85401f3,1200,1668
+188,106r,f106r,"https://collections.library.yale.edu/iiif/2/1006260/full/1200,/0/default.jpg",ok,c1671670c38b43a0d2ba0269c5464b357ad46b44fbe2b197ae85b720272bed5f,1200,1725
+189,106v,f106v,"https://collections.library.yale.edu/iiif/2/1006261/full/1200,/0/default.jpg",ok,6229ec79a6f2288fbf39cc8b540546707c57d052cba9ffdc81c134987f3de8e5,1200,1661
+190,107r,f107r,"https://collections.library.yale.edu/iiif/2/1006262/full/1200,/0/default.jpg",ok,036cddda34097e09e0aedafd82cfada1e4013f0330cda41e4bde8da3256db28c,1200,1721
+191,107v,f107v,"https://collections.library.yale.edu/iiif/2/1006263/full/1200,/0/default.jpg",ok,52ed4126d2d715e75f3b17372b61b8aedf97490edfa6fbf05c3099dc68b50d4d,1200,1650
+192,108r,f108r,"https://collections.library.yale.edu/iiif/2/1006264/full/1200,/0/default.jpg",ok,8b420023e559280f19aa72aed0b273f76db77888b9fb801eae9b5123210d7ae1,1200,1721
+193,108v,f108v,"https://collections.library.yale.edu/iiif/2/1006265/full/1200,/0/default.jpg",ok,6af9e0c01039972f6f469df2bff882dd4aee7fc9a91558cd7c1b7fd255b8883c,1200,1679
+194,111r,f111r,"https://collections.library.yale.edu/iiif/2/1006266/full/1200,/0/default.jpg",ok,859baaba36b15dace96af19d59e3a09f97944dc07b9fd4ffc6ee0abc66be0002,1200,1731
+195,111v,f111v,"https://collections.library.yale.edu/iiif/2/1006267/full/1200,/0/default.jpg",ok,479f778f81ddcdbf824775e78656a2863e3652018c9fcdf80d2a07bd0f526409,1200,1664
+196,112r,f112r,"https://collections.library.yale.edu/iiif/2/1006268/full/1200,/0/default.jpg",ok,3b4c6e045ddb4af34159972235c11f8db14a1aaaf38bafc477f0cbfb6b44eb26,1200,1746
+197,112v,f112v,"https://collections.library.yale.edu/iiif/2/1006269/full/1200,/0/default.jpg",ok,af995244241e0699e8c164ec21e979e7c63ef0198481c076ee9e1dc1a7cb8879,1200,1665
+198,113r,f113r,"https://collections.library.yale.edu/iiif/2/1006270/full/1200,/0/default.jpg",ok,c0887f5cb803f1bd67406987456bda51d4145bb464906146a1f699b2c8741134,1200,1760
+199,113v,f113v,"https://collections.library.yale.edu/iiif/2/1006271/full/1200,/0/default.jpg",ok,e8cffcfe7c1ae5d3582b1a2f21a99e2bd234906727e58ac8a4265fd535d9e51f,1200,1664
+200,114r,f114r,"https://collections.library.yale.edu/iiif/2/1006272/full/1200,/0/default.jpg",ok,ce7761786a856c0a4921fe0115cbdfdb102f8c84cc1c2c7fbb00ea76f8c53ebe,1200,1749
+201,114v,f114v,"https://collections.library.yale.edu/iiif/2/1006273/full/1200,/0/default.jpg",ok,5275e6b2b775de02280a51fef7a695faf6e8fb73afb5283494840eaa0b54d0ad,1200,1661
+202,115r,f115r,"https://collections.library.yale.edu/iiif/2/1006274/full/1200,/0/default.jpg",ok,45828d4525f7b84134902e6f223974b5509081c105ca5543c6e66557b4c78374,1200,1758
+203,115v,f115v,"https://collections.library.yale.edu/iiif/2/1006275/full/1200,/0/default.jpg",ok,65eec7a771d551ea3e4a21fb0d387ad86764287413c97e0d578cf467fcb75e40,1200,1657
+204,116r,f116r,"https://collections.library.yale.edu/iiif/2/1006276/full/1200,/0/default.jpg",ok,b036f29b695f819c2a8c7d055ced1f59b0f29712c038152f2115745b839820c7,1200,1776
+205,116v,f116v,"https://collections.library.yale.edu/iiif/2/1006277/full/1200,/0/default.jpg",ok,e4a11d104d4cf955d221c692d705e7cbef6d5c6a8568eda01fc706da15de832b,1200,1651
+206,[Back flyleaf recto],,"https://collections.library.yale.edu/iiif/2/1037113/full/1200,/0/default.jpg",ok,7297d14b3575e535aa3031a4426c106ee2eca06f89ba506fd35b24f310a3bab1,1200,1768
+207,[Back flyleaf verso-inside back cover],,"https://collections.library.yale.edu/iiif/2/1006278/full/1200,/0/default.jpg",ok,95c16137905ad19d7ca8de33340c16a42c22efb18c6c6384f21aa7151fc20a07,1200,858
+208,[Head],,"https://collections.library.yale.edu/iiif/2/11868207/full/1200,/0/default.jpg",ok,b3109ccb6a01bb4adf1f4308b80929d30599f3ba35cccfc5b6df5f154cc48e2e,1200,518
+209,[Tail],,"https://collections.library.yale.edu/iiif/2/11868208/full/1200,/0/default.jpg",ok,6e78cbbef2db6f5f0a7e4ca4a27303e06e793d0d1938d3b848877ff669ba6254,1200,516
+210,[Fore-edge],,"https://collections.library.yale.edu/iiif/2/11868209/full/1200,/0/default.jpg",ok,e08460f5c00b1f280f9255cee33cb5ffb541251421ab1a2cd651f5c6fccaeecf,1200,3670
+211,[Spine],,"https://collections.library.yale.edu/iiif/2/11868210/full/1200,/0/default.jpg",HTTP 403 (spine),,,
+212,[Back cover],,"https://collections.library.yale.edu/iiif/2/1006279/full/1200,/0/default.jpg",ok,99562e8368ddc0ef57ce849c4070210e20f3836e50b332d3c8b710f4d7a3e501,1200,1604
