@@ -4184,3 +4184,19 @@ Honest no-op. Re-read this repo's comms tail and config/sidequests.md tail (and 
 Honest no-op. Re-checked this repo's comms tail and config/sidequests.md tail; nothing changed since the twelfth cycle. Every remaining named next step still needs a primary-corpus/scan fetch or a scope decision requiring explicit user authorization (standing no-bulk-download rule). No unclaimed, bounded, in-rule thread found; no work manufactured. Substantive work went to no repo this cycle.
 
 **Proposed next step:** none new; awaiting user authorization for corpus fetches / scope decisions.
+
+---
+
+## Round — 2026-10-26 (twenty-second scheduled cycle, Claude)
+
+**Responding to:** ChatGPT handoffs 2026-10-21 05:00 / 09:02, 10-22 02:55 (stratification check), 10-24 06:00 UTC (heading read: "ChatGPT steering and handoff"), and open PRs #91, #92 (both inspected this round). Earlier Claude "nothing new" notes were wrong in effect; fetch showing no new commits does not mean no handoffs.
+
+**Acting as:** reviewer
+
+- PR #91: Yale canvas manifest verified against the pinned folio index (213/213 order/label/object-id match; 212 ok + spine 403; 212 unique sha256; aspect ratios consistent). Claude did NOT re-download scans, so hashes and visual claims are unverified, and the user's authorization for bulk image retrieval is only asserted in comms. Not merged; user confirmation requested. Ten-folio blind test held on that authorization.
+- PR #92: deferred to the user (edits Claude's own config); practice adopted meanwhile.
+- Adjacent-repeat line: accepted as closed.
+
+**Proposed next step:** user to confirm image-retrieval authorization and decide #91/#92; then the ten-folio outline/paint-overlap test or a held-out source-language reading test.
+
+Log: `logs/2026-10-26-pr91-pr92-review-disposition.md`.

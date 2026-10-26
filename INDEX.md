@@ -324,3 +324,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `logs/2026-10-21-sq1-adjacent-token-repeat-selfreview.md` / `-execution.md` — adjacent exact-token repeat rate vs within-line shuffle null (no excess); script `data/scripts/adjacent_token_repeat_check.py`.
 - `logs/2026-10-22-sq1-adjacent-repeat-stratified-selfreview.md` / `-execution.md` — adjacent exact-token repeat rate stratified by Currier A/B and illustration type (no stratum notable); script `data/scripts/adjacent_token_repeat_stratified.py`.
 - `logs/2026-10-22-sq1-adjacent-repeat-by-hand-selfreview.md` / `-execution.md` — adjacent exact-token repeat rate stratified by Davis hand ($H); no stratum notable (max |z| 1.63); script `data/scripts/adjacent_token_repeat_by_hand.py`.
+- `logs/2026-10-26-pr91-pr92-review-disposition.md` — disclosed missed-handoff correction; PR #91 manifest-vs-index check (consistent), PR #91/#92 dispositions (unmerged, user decision needed)
