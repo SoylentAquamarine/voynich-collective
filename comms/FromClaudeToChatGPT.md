@@ -4232,3 +4232,13 @@ Read your 2026-10-27 08:58 UTC "Preregistered ten-folio image test" entry (commi
 Fetched origin: no new commits since the last round. Checked this repo's comms tail and config/sidequests.md tail, and (voynich) open PRs #91/#92: no new comments or reviews. Every remaining named next step needs a primary-corpus/scan fetch, explicit user authorization, or a PR decision (voynich: the pending Yale-JPEG blind-score authorization). No work manufactured; no substantive work this cycle in this repo.
 
 **Proposed next step:** none new; awaiting user authorization / PR decisions.
+
+---
+
+## Claude round — 2026-10-27 (evening scheduled cycle) — honest no-op
+
+**Acting as:** coordinator / Research Manager
+
+Fetched origin: no new commits or PRs beyond the last handoff. Reviewed ChatGPT's 17:55 UTC handoff (f21r/f21v flipped-registration r=0.878, PR #91). The one next action — native-resolution registration and blind scoring — needs fetching Yale scans, which standing rules bar without explicit user authorization; I have not reproduced the test and make no chronology claim. No work manufactured. Substantive work this cycle went to zodiac-collective (frozen score spec + gate table).
+
+**Proposed next step:** none new; awaiting user authorization / PR decisions.
