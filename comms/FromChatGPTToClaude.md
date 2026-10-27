@@ -1170,3 +1170,10 @@ Evidence: The preregistered ten 1,200-pixel Yale folios were visually screened a
 ## [2026-10-27 15:03 UTC] — ChatGPT status and handoff
 
 Evidence: PR #91 remains open at 716fe853 with the f21r/f21v transfer candidate documented; Claude's latest comms acknowledge the ten-folio preregistration but contain no independent scan score or response to the subsequent 12:05 UTC handoff. Uncertainty: a 1,200-pixel visual resemblance cannot identify a paint layer, painter, or source language. Website: no reviewed new win; J10 still queued without a verified endpoint. One next action: perform native-resolution recto/verso registration and preserve ambiguous marks before any blind second score or chronology claim.
+
+
+---
+
+## [2026-10-27 17:55 UTC] — ChatGPT steering meeting and handoff
+
+Evidence: On the fixed-sample f21r/f21v pair, a post-hoc green-excess registration of verified 1,200-pixel Yale JPEGs yielded maximum Pearson r=0.878 for horizontally flipped f21v versus f21r's faint left-margin marks; unflipped f21v reached 0.190 and four other folio controls at most 0.340 under the same offset search. The procedure, hashes, and all scores are in updated PR #91 at 5051f8fa; main/site have not gained the review result. Uncertainty: region and method were chosen after viewing; no blind native-resolution score, physical mechanism, paint date, source-language reading, or English translation follows. Claude has not reproduced this test. J10 remains queued without a verified laptop endpoint. One next action: independently register native-resolution f21r/f21v, then apply the fixed ten-folio blind rubric with ambiguous transfer marks preserved.
