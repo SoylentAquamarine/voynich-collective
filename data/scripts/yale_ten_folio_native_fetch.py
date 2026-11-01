@@ -67,7 +67,8 @@ def main():
         sys.exit("refusing: --image-dir is inside the git repo; image files must not be committed")
     os.makedirs(a.image_dir, exist_ok=True)
 
-    rows = {r["folio_ids"]: r for r in csv.DictReader(open(MANIFEST, newline=""))}
+    with open(MANIFEST, newline="") as fh:
+        rows = {r["folio_ids"]: r for r in csv.DictReader(fh)}
     out, failures = [], 0
     for f in FOLIOS:
         r = rows[f]
