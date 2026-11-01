@@ -81,6 +81,25 @@ class ValidationGateTest(unittest.TestCase):
     def test_non_jpeg_blocks_template(self):
         self.run_case("native_jpeg_ok")
 
+    def test_prior_template_blocks_rerun_before_receipt_overwrite(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp)
+            repo = root / "repo"
+            (repo / "research").mkdir(parents=True)
+            receipt = repo / "research" / "receipt.csv"
+            template = repo / "research" / "template.csv"
+            receipt.write_text("old receipt\n")
+            template.write_text("old scoring work\n")
+            with mock.patch.multiple(kit, REPO=str(repo), RECEIPT=str(receipt),
+                                     TEMPLATE=str(template)), \
+                 mock.patch.object(sys, "argv", ["kit", "--image-dir", str(root / "images")]), \
+                 mock.patch.object(kit, "get", side_effect=AssertionError("fetch must not start")):
+                with self.assertRaises(SystemExit) as result:
+                    kit.main()
+            self.assertNotEqual(result.exception.code, 0)
+            self.assertEqual(receipt.read_text(), "old receipt\n")
+            self.assertEqual(template.read_text(), "old scoring work\n")
+
 
 if __name__ == "__main__":
     unittest.main()
