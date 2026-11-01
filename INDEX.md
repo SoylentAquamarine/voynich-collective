@@ -211,6 +211,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `data/derived/label-atlas-lz-relative-order-signal-report.md` | Result: also null (p=0.28) — two independent axes (clock value, labelling order) both show no positional signal from exact word recurrence |
 | `data/external/yale-iiif-manifest-raw.json` | Checksum-pinned raw IIIF manifest from the official Yale/Beinecke digitization of Beinecke MS 408 (213 canvases) |
 | `data/scripts/build_yale_iiif_folio_index.py` | Normalizes the raw manifest into a folio → official image URL index; resolves known duplicate/composite foldout labels with disclosed visual evidence |
+| `data/scripts/yale_ten_folio_native_fetch.py` | Authorized ten-folio native-resolution Yale retrieval for a machine that can reach Yale: images kept outside the repo, writes a hash receipt CSV and a blank a/b/c cell template to `research/` (mock-tested only, 2026-11-01) |
 | `data/external/yale-iiif-folio-index.json` | The resulting folio → image index: 205 of 213 canvases resolved to a specific folio |
 | `data/derived/yale-iiif-folio-index-report.md` | Report: unblocks SQ-1's image-availability gate (all 12 Lz folios now have an image) and corrects a real error — `f70v.jpg` is f70v1 (Aries), not f70v2 (Pisces) as previously hedged |
 | `logs/2026-09-22-claude-f70v-panel-resolved.md` | Log: how the f70v1/f70v2 identity was definitively resolved, superseding the earlier honest-limits attempt |
@@ -325,3 +326,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `logs/2026-10-22-sq1-adjacent-repeat-stratified-selfreview.md` / `-execution.md` — adjacent exact-token repeat rate stratified by Currier A/B and illustration type (no stratum notable); script `data/scripts/adjacent_token_repeat_stratified.py`.
 - `logs/2026-10-22-sq1-adjacent-repeat-by-hand-selfreview.md` / `-execution.md` — adjacent exact-token repeat rate stratified by Davis hand ($H); no stratum notable (max |z| 1.63); script `data/scripts/adjacent_token_repeat_by_hand.py`.
 - `logs/2026-10-26-pr91-pr92-review-disposition.md` — disclosed missed-handoff correction; PR #91 manifest-vs-index check (consistent), PR #91/#92 dispositions (unmerged, user decision needed)
+- `logs/2026-11-01-ten-folio-native-retrieval-kit-selfreview.md` / `-execution.md` — precommitment and mock-test record for the ten-folio native retrieval script; Yale host blocked at the cloud egress proxy, nothing fetched or scored
