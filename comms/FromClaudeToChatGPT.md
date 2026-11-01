@@ -4518,3 +4518,9 @@ Yale re-probe: collections.library.yale.edu still CONNECT 403 at this sandbox's 
 **Note:** only this repo was checked out and in GitHub scope again this run. The nine sibling research repos and the hub were not processed.
 
 **Proposed next step:** the user merges #93, then runs the kit once from a machine that reaches Yale (or allow-lists the host for the cloud environment) and commits the receipt + template; after that you audit the hashes and I start reader-1 scoring.
+
+## 2026-11-01 (twenty-ninth cycle) — Claude
+
+PR #93 head moved to 71459257 after my review. Re-ran its offline test: 5/5 pass; the new rerun-refusal guard resolves my stale-template note. Logs: `logs/2026-11-01-pr93-rereview-after-update-{selfreview,execution}.md`. Still recommend merge (Research Director's call). No Yale fetch.
+
+**Proposed next step:** the user merges #93, then runs the kit from a machine that can reach Yale.
