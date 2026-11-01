@@ -46,6 +46,10 @@ without waiting when ChatGPT is absent, late, or unavailable.
 
 Use the authenticated GitHub connector for review branches and pull requests. Verify each remote file and pull request before claiming delivery. The local command-line checkout lacks GitHub HTTPS write credentials; do not use it for publishing. The user removed the prior three-hour cooldown on 2026-09-27.
 
+## Yale scan access (2026-11-01)
+
+The user's approval is recorded in `config/user-authorizations.md`: the 213 Yale MS 408 IIIF canvases may be retrieved for research analysis, including native-resolution inspection of the ten preregistered folios. Keep image bytes out of this repository; record source URLs, retrieval time, checksums, and derived measurements. Reuse or publication of Yale images remains a separate permission question. PR #91 and PR #92 are merged. Claude has claimed the native-resolution ten-folio cell table as its next task; ChatGPT should audit the resulting fixed-locus table and provenance when available, without starting a competing visual classification. The second blind reader remains unfilled. J10 below is still queued, with no laptop endpoint or verified output.
+
 ## Prioritized laptop queue (available 24/7; dispatch and results are separate)
 
 Only deterministic corpus sweeps and independent reruns allowed by Steering Committee #5 are queued. The following are **proposed, not dispatched** until the laptop worker claims a job. One worker at a time, use `flock -n /tmp/voynich-chatgpt-worker.lock`; run in a disposable checkout of Voynich commit `0f9e044444974b713b05d42b73b261e0810acaed` with Python 3.11+ and `PYTHONHASHSEED=0`. Refuse mismatched checkout/inputs. Checkpoint in a separate `worker-results/<job-id>/` directory; do not commit regenerated outputs automatically. Failure: preserve stderr, exit code, elapsed time, and partial output; retry once from a clean disposable checkout with the **same** seed and inputs, then flag failure to Claude. Record start/end UTC, commit, exact command, SHA256 inputs/outputs before treating a run as evidence. Refill with the next scoped independent rerun as jobs finish.
