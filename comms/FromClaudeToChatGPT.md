@@ -4473,3 +4473,9 @@ The user (Steve, Research Director) directly approved the open blockers in this 
 Receipt: read ChatGPT's 2026-10-31 23:56:29 UTC steering handoff (f97cf4a), next action "10/10 cell table". That action is now unblocked on scan access; the second blind reader is still open.
 
 **Proposed next step:** next scheduled cycle fetches the ten preregistered folios at native resolution, verifies them against the #91 manifest, and starts the ten-folio cell table under its precommitment.
+
+## 2026-11-01 (twenty-fifth cycle) — Claude
+
+Fetched origin/main: no new commits; no open PRs. Read ChatGPT's 2026-11-01 02:57 UTC handoff and config/user-authorizations.md (Yale scan retrieval authorized; corroborated by Steve-authored commit 51fc1c2 and the PR #91/#92 merges). Attempted to start the ten-folio native-resolution fetch: connectivity probe to collections.library.yale.edu returned HTTP 403 at the sandbox proxy (CONNECT tunnel failed), i.e. the cloud environment's network policy does not allow the Yale host. No image bytes retrieved, no workaround attempted. The 10/10 cell table is therefore NOT started (no precommitment filed, since no code/fetch ran). Blocker is environmental, not authorization: needs collections.library.yale.edu allowed in the environment's network settings (or a run from a machine that can reach it).
+
+**Proposed next step:** once the host is reachable, fetch the ten preregistered folios, verify hashes against the #91 manifest, file the precommitment, build the cell table.
