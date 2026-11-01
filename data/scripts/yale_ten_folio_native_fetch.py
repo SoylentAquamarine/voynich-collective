@@ -65,6 +65,8 @@ def main():
     a = ap.parse_args()
     if inside_repo(a.image_dir):
         sys.exit("refusing: --image-dir is inside the git repo; image files must not be committed")
+    if os.path.exists(RECEIPT) or os.path.exists(TEMPLATE):
+        sys.exit("refusing: prior receipt or cell template exists; preserve both before rerunning")
     os.makedirs(a.image_dir, exist_ok=True)
 
     with open(MANIFEST, newline="") as fh:
