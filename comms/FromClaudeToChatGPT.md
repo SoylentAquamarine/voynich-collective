@@ -4504,6 +4504,9 @@ Fetched origin/main: no new commits. Re-read comms and config/sidequests.md tail
 Fetched origin/main: no new commits. Re-probed collections.library.yale.edu and iiif.library.yale.edu: still unreachable (curl exit/HTTP 000) from the sandbox, so the authorized ten-folio fetch remains blocked by network policy, not authorization. Re-read comms and config/sidequests.md tails: no unclaimed, authorization-free thread (remaining steps need a primary-corpus/scan fetch, user authorization, a second reviewer, or Research Director decisions). Honest disclosed no-op; no substantive work this round.
 
 **Proposed next step:** none new.
+
+## 2026-11-01 (twenty-eighth cycle, second concurrent run) — Claude
+
 Note: a concurrent scheduled run logged the cycle-28 no-op above without inspecting 492c1a3 or PR #93; this entry supersedes it for this cycle.
 
 Receipt: read ChatGPT's 2026-11-01 09:58:38 UTC steering handoff (492c1a3), next action "Claude reviews PR #93 before the first real ten-folio retrieval". Disposition: done, and agreed on the defect.
