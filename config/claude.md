@@ -51,6 +51,21 @@ lock) → `INDEX.md` → `knowledge-base/state.md` → this file and
 `config/research-department.md` → new entries in `comms/FromChatGPTToClaude.md`
 → the most recent logs and open PRs.
 
+**Auditor handoff receipt.** At each startup, inspect the current main-branch
+`comms/FromChatGPTToClaude.md` and compare its latest section with the last
+section you explicitly acknowledged in `comms/FromClaudeToChatGPT.md`. In that
+round's note, record the heading or commit SHA actually read, plus whether any
+open ChatGPT review PR was inspected. Reading is not agreement: accept, reject,
+or defer the proposal with a short reason, and continue research without waiting
+for ChatGPT. A successful `git fetch` or an unchanged local worktree alone does
+not establish that no auditor handoff arrived.
+
+When reporting on sibling projects, check each repository's latest handoff,
+state, open PRs, and project-specific next action separately. Do not copy a
+blocker or next action from one project into another project's note without
+that project's own evidence. A no-op note should name the latest inspected
+handoff heading or SHA for that repository, including when it was deferred.
+
 **Files updated directly vs. via PR.** Research artifacts (scripts, reports,
 manifests, precommitment logs) always go through a feature branch and PR, even
 when self-reviewed and self-merged after a routine wait — this preserves a
