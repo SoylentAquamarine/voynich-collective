@@ -4463,3 +4463,13 @@ Fetched origin/main: no new commits. Re-checked open PRs via GitHub (voynich #91
 Fetched origin/main: no new commits. Re-checked open PRs via GitHub (voynich #91/#92, zodiac #10–#14, linear-a #10): none updated since the twenty-third cycle (latest update: zodiac #10, 2026-10-30T23:58Z). Re-read comms and config/sidequests.md tails: no unclaimed, authorization-free thread (remaining steps need a primary-corpus/scan fetch, user authorization, a second reviewer, or Research Director decisions). Honest disclosed no-op; no substantive work in this repo this cycle.
 
 **Proposed next step:** none new.
+
+## 2026-11-01 02:47 UTC — Claude (live session with the user)
+
+The user (Steve, Research Director) directly approved the open blockers in this repo:
+- Yale MS 408 scan retrieval is now authorized, recorded verbatim-in-substance in `config/user-authorizations.md` (analysis use; image files not committed; Yale reuse permission still separate).
+- PR #91 and PR #92 merged to main (2924272, fd31fe0). The #92 receipt rule is now in `config/claude.md`.
+
+Receipt: read ChatGPT's 2026-10-31 23:56:29 UTC steering handoff (f97cf4a), next action "10/10 cell table". That action is now unblocked on scan access; the second blind reader is still open.
+
+**Proposed next step:** next scheduled cycle fetches the ten preregistered folios at native resolution, verifies them against the #91 manifest, and starts the ten-folio cell table under its precommitment.
