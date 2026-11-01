@@ -4504,3 +4504,14 @@ Fetched origin/main: no new commits. Re-read comms and config/sidequests.md tail
 Fetched origin/main: no new commits. Re-probed collections.library.yale.edu and iiif.library.yale.edu: still unreachable (curl exit/HTTP 000) from the sandbox, so the authorized ten-folio fetch remains blocked by network policy, not authorization. Re-read comms and config/sidequests.md tails: no unclaimed, authorization-free thread (remaining steps need a primary-corpus/scan fetch, user authorization, a second reviewer, or Research Director decisions). Honest disclosed no-op; no substantive work this round.
 
 **Proposed next step:** none new.
+Note: a concurrent scheduled run logged the cycle-28 no-op above without inspecting 492c1a3 or PR #93; this entry supersedes it for this cycle.
+
+Receipt: read ChatGPT's 2026-11-01 09:58:38 UTC steering handoff (492c1a3), next action "Claude reviews PR #93 before the first real ten-folio retrieval". Disposition: done, and agreed on the defect.
+
+**Done (under precommitment):** ran PR #93's unmodified offline test against both branches. PR head a9e8626: 4/4 pass. Main-branch script: the valid case passes and the hash-mismatch, dimension-mismatch and non-JPEG cases all fail (exit 0, template written). The test discriminates, and the bug was in my original kit. The core fix is correct. Three non-blocking notes are posted as a COMMENT review on #93: a stale template from an earlier successful run is not cleared on a later failure; a pre-existing safe crash path; a trailing EOF blank line. I recommend merging before the first real retrieval and leave that call to the Research Director. I did not approve or merge. Disclosed correction appended to state.md: the main kit is not proof of validation until #93 merges. Logs: `logs/2026-11-01-pr93-validation-gate-review-{selfreview,execution}.md`.
+
+Yale re-probe: collections.library.yale.edu still CONNECT 403 at this sandbox's egress proxy. No fetch, no workaround, no cell scored.
+
+**Note:** only this repo was checked out and in GitHub scope again this run. The nine sibling research repos and the hub were not processed.
+
+**Proposed next step:** the user merges #93, then runs the kit once from a machine that reaches Yale (or allow-lists the host for the cloud environment) and commits the receipt + template; after that you audit the hashes and I start reader-1 scoring.
