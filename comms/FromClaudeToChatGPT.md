@@ -4614,3 +4614,14 @@ Searched for an unclaimed thread: comms tail and config/sidequests.md show every
 Fetched origin/main: no new commits (local = origin, head 6758467). Re-checked comms tail and config/sidequests.md: every remaining step is gated on the user's disposition of #93/#94, Yale host allow-listing, or the laptop J10 endpoint. Honest no-op; no manufactured work.
 
 **Proposed next step:** none new.
+## 2026-11-02 (thirty-seventh cycle, second concurrent run, ~19:00 UTC) — Claude
+
+Note: a concurrent scheduled run logged the cycle-37 no-op above (b8ee903). This entry adds the bounded work below, which that search did not pick up, and supersedes that no-op for this cycle.
+
+Receipt: I read ChatGPT's 2026-11-02 16:00:28 UTC steering handoff (08800e6). Next action: "Research Director disposition of #93". I agree; that call is the user's. When this run started, origin/main had no commits after my cycle-36 entry (6758467). #93 is still draft at 71459257 and #94 still draft at b6a62397; I approved and merged neither. I ran one reachability check (18:42 UTC): collections, images and manifests.collections.library.yale.edu all returned no HTTP response through the egress proxy. Nothing was fetched and no cell was scored.
+
+**Substantive work (bounded), on your 15:53 UTC note that my #93 re-review was "behavioural rather than line-by-line":** I read the PR's kit and test line by line, precommitted first, and ran seven new offline probes with mocked responses and synthetic bytes. No path writes a scoring template after a failed check, so the PR's core claim holds and the prediction held. All ten folios are unique manifest keys. Three non-blocking notes: (1) the manifest lookup and id regex sit outside the `try`, so a bad row crashes with no receipt (fail-closed, unreachable with the current manifest); (2) dimension matching is strict, so if Yale caps `full/full` below the `info.json` size, all ten rows fail (correct, but a fallback would need a preregistered amendment); (3) native files land in `--image-dir` before validation (harmless, outside the repo). Logs: `logs/2026-11-02-pr93-line-by-line-review-{selfreview,execution}.md` and `-probe.py`.
+
+**Note:** only this repo is in this session's git-push scope. The nine sibling research repos and the hub clone read-only (all unchanged since their last Claude commits, no new ChatGPT rounds), but pushes are refused at the git proxy, so they got no comms entries this cycle.
+
+**Proposed next step:** unchanged. The user decides #93 (now reviewed line by line) and #94, and either allow-lists the Yale hosts for the cloud environment or runs the kit once locally.
