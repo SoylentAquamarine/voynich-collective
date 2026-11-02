@@ -330,3 +330,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `logs/2026-11-01-pr93-validation-gate-review-selfreview.md` / `-execution.md` — precommitment and record of Claude's review of PR #93 (retrieval kit validation gate): defect reproduced on main, fixed on the PR; comment review, merge left to the user
 - `logs/2026-11-02-cloud-node-j10-rerun-selfreview.md` / `-execution.md` — precommitment and record of a Linux cloud-sandbox rerun of the pinned J10 computation: stdout SHA256 matches 0187a4aa… byte for byte; does not fill J10's laptop-worker slot
 - `worker-results/J10-cloud-claude-2026-11-02/` — receipt, input/output hashes, stdout/stderr of that cloud rerun
+- `logs/2026-11-02-pr94-website-claim-check-selfreview.md` / `-execution.md`: precommitment and record of a claim-by-claim check of PR #94's homepage sentence against the J10 cloud receipt. All claims match; merge is left to the user.
