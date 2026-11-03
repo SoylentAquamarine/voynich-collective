@@ -1,0 +1,38 @@
+# reader 1 = Claude (not naive: had read ChatGPT's nonblind 1200px notes); rubric from 2026-10-27 08:58 UTC preregistration; native-pixel boxes; 'absent' rows give the checked region in the note
+reader_id,folio,canvas_index,native_sha256,item,x0,y0,x1,y1,score,note
+claude-opus-5.5,f14r,26,1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c,a,1322,797,1402,1207,present,green fill overruns ink outline on left edge of leftmost upper leaf
+claude-opus-5.5,f14r,26,1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c,a,1982,757,2082,1207,present,green fill overruns ink outline of right upper leaf toward damaged edge
+claude-opus-5.5,f14r,26,1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c,a,160,1122,1229,2297,ambiguous,"pale green plant-shaped wash with no ink; offset/show-through from facing page, not paint applied to this page"
+claude-opus-5.5,f14r,26,1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c,b,1442,3152,1709,3285,present,rootlets under the tube drawn in ink with no hue
+claude-opus-5.5,f14r,26,1c2b3a255fc01cb6db6f1c2e971ee93e6911ef1acc2ef0800a6a7eae2572945c,c,,,,,absent,"checked right-hand text block vs leaf tips at native res (1709,2350)-(2190,2804): no paint crosses text"
+claude-opus-5.5,f17r,32,9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f,a,214,267,1497,2086,ambiguous,green leaf/branch shapes without ink across left half; offset from facing page
+claude-opus-5.5,f17r,32,9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f,b,1872,1150,2166,1257,present,pale petal tips of right flower head in ink outline without hue
+claude-opus-5.5,f17r,32,9ed091881b24f31504a5daa064c131f06b0bce10e8346f3dbe20de6cdaf2452f,c,,,,,absent,"top flower abuts but does not cross adjacent text (checked 1257,749-2192,1257)"
+claude-opus-5.5,f17v,33,61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec,a,810,202,920,347,present,green wash beside top berry cluster with no ink boundary
+claude-opus-5.5,f17v,33,61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec,a,1132,809,1402,1618,ambiguous,bluish streaks behind text block; likely offset
+claude-opus-5.5,f17v,33,61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec,b,2035,2292,2170,2669,present,stem tube above root drawn in outline without hue
+claude-opus-5.5,f17v,33,61070cc9fb18d90711adcab577dee66e7e7958b6733dcddb0b484d01388979ec,c,,,,,absent,"leaf-tip ink stroke touches text glyph near (1640,1110) but green paint stops short (checked 1564,890-2103,1267)"
+claude-opus-5.5,f19v,37,7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3,a,1615,673,2046,1131,ambiguous,hatched green strokes run up to/over toothed ink edge; cannot separate overrun from intended texture
+claude-opus-5.5,f19v,37,7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3,b,2046,242,2692,538,present,seed pods and flower stalks at top drawn in outline; only tiny blue flower tips painted
+claude-opus-5.5,f19v,37,7a64b4d65a273b4974ba51828e697f4053862975f826c13308421a1fcce0bcd3,c,,,,,absent,"green mass approaches text line ends but does not cross (checked 1615,673-2046,1131)"
+claude-opus-5.5,f21r,40,0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88,a,1069,2353,1658,2754,ambiguous,some leaflets appear as paint without clear ink and blue-grey haze overlaps; offset confound
+claude-opus-5.5,f21r,40,0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88,a,107,2032,695,2888,ambiguous,"left-margin green hook/arc shapes without ink; offset/show-through candidate (same region ChatGPT flagged at 1200 px), not resolved here"
+claude-opus-5.5,f21r,40,0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88,b,1150,2834,1497,3476,present,root system drawn in ink without hue
+claude-opus-5.5,f21r,40,0d28a9ed56ad63a46a0fa8be769600b635ea6cd703989016f1d07308cc067c88,c,321,882,1203,1658,ambiguous,"blue flower-shaped marks overlap text lines; appear to be offset from facing page, not paint applied over this text"
+claude-opus-5.5,f23v,45,4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3,a,2446,1611,2486,1681,present,isolated green fill spot right of the plant with no ink boundary
+claude-opus-5.5,f23v,45,4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3,a,1762,913,1862,983,present,blue streaks on sepal/stalk zone below top flower outside any ink-bounded shape
+claude-opus-5.5,f23v,45,4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3,b,1809,1944,1944,2700,present,main stem drawn in outline with at most a trace of hue
+claude-opus-5.5,f23v,45,4ce0750cd5118df63ca35fe955dcf3add4160d2ddb5e2770e47bb9930e992fc3,c,1652,983,1692,1043,ambiguous,lower-left blue petal tip meets the final glyph of an adjacent text word; contact vs overlap not decidable at native res
+claude-opus-5.5,f37v,73,56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649,a,1880,2667,1946,2745,present,olive-green wash outside the left contour of the root
+claude-opus-5.5,f37v,73,56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649,b,1669,1454,1884,1561,present,curled leaflet/hook shapes and unpainted lobes in ink outline without hue
+claude-opus-5.5,f37v,73,56d2086b7ce7a126a494d472276b0f5fe025775604a9afd55e5bd8e2ef6f8649,c,,,,,absent,"leaf scallops approach text line ends; no paint crosses (checked 1292,1508-1723,2423)"
+claude-opus-5.5,f43v,85,13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133,a,,,,,absent,"left plant leaves: fill stays within ink apart from hairline edge variation (checked 431,1104-915,1615)"
+claude-opus-5.5,f43v,85,13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133,b,1158,2369,2692,3500,present,large root system of right plant in ink outline with only faint streaking
+claude-opus-5.5,f43v,85,13c816595b0ec2ae3ed702ff1b17fe1b3756faec0dbc51ca95ca04873206c133,c,,,,,absent,"flower ink outline touches a text descender; no paint crosses text (checked 700,1077-1238,1400)"
+claude-opus-5.5,f50r,98,a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d,a,2009,1634,2143,1741,ambiguous,pale green spot right of flower; not examined at native res; grey wash in the eye stays inside the eye's outline
+claude-opus-5.5,f50r,98,a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d,b,402,964,1715,1822,present,frilled outer petals of the flower head in ink outline without hue
+claude-opus-5.5,f50r,98,a48565bbb583e5b9564f7ad0754d1cbe5802a9d8af48e64825434ad1b05ad70d,c,1043,1413,1103,1553,ambiguous,glyph-like marks inside the eye oval sit under the oval's tint; whether paint crosses them is not decidable
+claude-opus-5.5,f65r,116,dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f,a,768,821,1244,1218,ambiguous,leaf fill mostly within serrated ink with local edge variation; adjacent blue-green blotches are offset
+claude-opus-5.5,f65r,116,dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f,a,106,688,794,1112,ambiguous,"blue-green rosette marks without ink, upper left; offset from facing page"
+claude-opus-5.5,f65r,116,dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f,b,371,79,2118,741,present,umbel flower stars and branch tips drawn in ink outline without hue
+claude-opus-5.5,f65r,116,dc7a0c45454665f33287804ec56f8eaa952a691540fc6fd434e79d75c7ce597f,c,,,,,absent,only text on the folio is a short label; no paint crosses it

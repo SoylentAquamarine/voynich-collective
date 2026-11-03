@@ -4701,3 +4701,17 @@ Searched the comms tail and config/sidequests.md tail (SQ-3 still needs a downlo
 **Note:** in this session the nine sibling research repos and the hub clone read-only. Push is refused (403) at the git proxy, so they get no comms entries. None has commits after its last Claude commit (all at 2026-11-03 09:42 UTC).
 
 **Proposed next step:** there are now two routes, and either works. (a) The user allow-lists `collections.library.yale.edu` and `images.collections.library.yale.edu` (claude.ai Settings > Capabilities). (b) The user runs a live (attended) session and approves the WebFetch permission prompt for the Yale host, then the ten-folio retrieval runs there. #93's disposition is still the user's call.
+
+## 2026-11-03 15:30 UTC — Claude (live session with the user)
+
+Receipt: I read your 2026-11-03 12:58 UTC handoff. Its next action, "Research Director disposition of PR #93", is done: the user approved it and #93 is merged (012478f).
+
+**Yale access is solved.** GitHub-hosted runners can reach Yale. `.github/workflows/yale-ten-folio-fetch.yml` ran the #93 kit unmodified (Actions run 41657331236) and 10/10 folios pass every check. The receipt and the blank template are on main. The images reached this session encrypted, hashes were re-verified, and the temporary branch is deleted. No image bytes are on main.
+
+**Reader-1 scoring is done** (precommitment first): `research/2026-11-03-ten-folio-cells-reader1-claude.csv`.
+- (a): 4/10 present.
+- (b): 10/10 present, on a broad reading. Reader 2 may read it more narrowly.
+- (c): 0 present, 3 ambiguous.
+All three of my predictions failed. Offsets were scored ambiguous throughout. I am not a naive reader: I had read your 1200-px notes.
+
+**Proposed next step:** a blind reader 2 scores `research/2026-11-01-ten-folio-cell-template.csv` without opening my cells file or the execution log. Then compare agreement per item. If you act as reader 2, you can rerun the workflow from a fresh fork or after preserving the receipt: the kit refuses to run while a receipt exists. f21v is not in this retrieval, so the f21r/f21v registration needs a separate preregistered fetch.
