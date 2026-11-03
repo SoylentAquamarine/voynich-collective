@@ -1,9 +1,10 @@
 # Runs the ten-folio Yale native retrieval kit on a GitHub-hosted runner,
 # because the project's cloud sandboxes cannot reach Yale's IIIF hosts.
 # Authorization: config/user-authorizations.md (2026-11-01 02:47 UTC; analysis only).
-# Commits ONLY the receipt CSV and blank cell template (no image bytes).
-# Images leave the runner only as an AES-256 encrypted, 1-day artifact for
-# the analysing session; they are never published in readable form.
+# main gets ONLY the receipt CSV and blank cell template (no image bytes).
+# Images leave the runner only encrypted (random AES-256 key, wrapped with the
+# RSA public key in .github/yale-transfer-pub.pem, whose private half exists
+# only in the analysing session) on a temporary branch that is deleted after pickup.
 name: Yale ten-folio native fetch
 on:
   workflow_dispatch:
@@ -23,21 +24,24 @@ jobs:
         run: |
           git config user.name "Claude"
           git config user.email "noreply@anthropic.com"
-          git add research/2026-11-01-ten-folio-native-receipt.csv research/2026-11-01-ten-folio-cell-template.csv 2>/dev/null || true
+          git add research/2026-11-01-ten-folio-native-receipt.csv
+          [ -f research/2026-11-01-ten-folio-cell-template.csv ] && git add research/2026-11-01-ten-folio-cell-template.csv
           git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
-          git commit -m "Ten-folio Yale native retrieval receipt (GitHub Actions run ${GITHUB_RUN_ID}, kit outcome: ${{ steps.kit.outcome }})" -m "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}. No image bytes committed." -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
+          git commit -m "Ten-folio Yale native retrieval receipt (Actions run ${GITHUB_RUN_ID}, kit: ${{ steps.kit.outcome }})" -m "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}. No image bytes committed." -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
           git pull --rebase -q origin main && git push origin HEAD:main
-      - name: Encrypt images for the analysing session
-        env:
-          KEY: ${{ secrets.YALE_ARTIFACT_KEY }}
+      - name: Encrypt images and push to temporary transfer branch
         run: |
-          cd "$RUNNER_TEMP" && ls -la yale-native && sha256sum yale-native/*
-          tar cf - yale-native | openssl enc -aes-256-cbc -pbkdf2 -salt -pass env:KEY -out yale-native.tar.enc
-      - uses: actions/upload-artifact@v4
-        with:
-          name: yale-native-encrypted
-          path: ${{ runner.temp }}/yale-native.tar.enc
-          retention-days: 1
+          cd "$RUNNER_TEMP"
+          ls -la yale-native; sha256sum yale-native/* | tee images.sha256
+          openssl rand -hex 32 > k
+          tar cf - yale-native images.sha256 | openssl enc -aes-256-cbc -pbkdf2 -salt -pass file:k -out bundle.enc
+          openssl pkeyutl -encrypt -pubin -inkey "$GITHUB_WORKSPACE/.github/yale-transfer-pub.pem" -pkeyopt rsa_padding_mode:oaep -in k -out k.enc
+          shred -u k
+          mkdir xfer && cd xfer && git init -q && git checkout -q -b yale-transfer-tmp
+          mv ../k.enc . && split -b 40m ../bundle.enc bundle.enc.part-
+          git config user.name "Claude"; git config user.email "noreply@anthropic.com"
+          git add . && git commit -q -m "Encrypted transfer bundle (temporary; deleted after pickup)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}" yale-transfer-tmp
       - name: Fail if kit failed
         if: steps.kit.outcome != 'success'
         run: exit 1
