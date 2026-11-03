@@ -8,4 +8,4 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
-      - run: git push "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}" --delete yale-transfer-tmp || echo "branch already gone"
+      - run: git init -q . && git push "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}" --delete yale-transfer-tmp || echo "branch already gone"
