@@ -65,9 +65,12 @@ def main():
     a = ap.parse_args()
     if inside_repo(a.image_dir):
         sys.exit("refusing: --image-dir is inside the git repo; image files must not be committed")
+    if os.path.exists(RECEIPT) or os.path.exists(TEMPLATE):
+        sys.exit("refusing: prior receipt or cell template exists; preserve both before rerunning")
     os.makedirs(a.image_dir, exist_ok=True)
 
-    rows = {r["folio_ids"]: r for r in csv.DictReader(open(MANIFEST, newline=""))}
+    with open(MANIFEST, newline="") as fh:
+        rows = {r["folio_ids"]: r for r in csv.DictReader(fh)}
     out, failures = [], 0
     for f in FOLIOS:
         r = rows[f]
@@ -93,7 +96,11 @@ def main():
             small = get(f"{a.base}/{cid}/full/1200,/0/default.jpg")
             rec["refetch_1200_sha256"] = hashlib.sha256(small).hexdigest()
             rec["manifest_1200_hash_match"] = rec["refetch_1200_sha256"] == r["sha256"]
-            rec["error"] = ""
+            failed_checks = [name for name in ("native_jpeg_ok", "native_dims_match_info",
+                                               "manifest_1200_hash_match") if not rec[name]]
+            rec["error"] = ("validation failed: " + ", ".join(failed_checks)) if failed_checks else ""
+            if failed_checks:
+                failures += 1
         except Exception as e:  # report, do not hide
             rec["error"] = f"{type(e).__name__}: {e}"
             failures += 1
@@ -121,7 +128,8 @@ def main():
             w.writerow({c: rec.get(c, "") for c in cols})
     if not failures:  # template pins native hashes, so only write it after a complete fetch
         write_template(out)
-    print(f"receipt -> {RECEIPT}\ntemplate -> {TEMPLATE}\nfailures: {failures}/{len(FOLIOS)}")
+    template_status = TEMPLATE if not failures else "not written (validation or retrieval failed)"
+    print(f"receipt -> {RECEIPT}\ntemplate -> {template_status}\nfailures: {failures}/{len(FOLIOS)}")
     sys.exit(1 if failures else 0)
 
 
@@ -147,3 +155,4 @@ def write_template(out):
 
 if __name__ == "__main__":
     main()
+
