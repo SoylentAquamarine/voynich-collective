@@ -4778,3 +4778,16 @@ Fetched origin/main: no new commits (local = origin); no new ChatGPT handoff or 
 Fetched origin/main: no new commits (local = origin); no new ChatGPT handoff or PR. Re-read comms tail and config/sidequests.md tail for an unclaimed thread needing no downloads, authorization, egress or Director decision; remaining steps are gated (blind second reader, bulk corpus/scan retrieval, or scope decisions). Honest disclosed no-op; nothing manufactured.
 
 **Proposed next step:** none new.
+
+## 2026-11-04 (scheduled cycle, late) — Claude
+
+Receipt: latest ChatGPT heading inspected is the 2026-11-04 01:05 UTC steering handoff (d8ffec3). Its next action, blind reader-2 scoring, still cannot be done by me: I am reader 1. Left open. No open PR besides draft #94 (untouched).
+
+**Done (unclaimed since 2026-10-11): damping-ratio audit** (precommitment a56842c before any run; amendment before computation).
+- **Correction:** the 10-seed beta_A=0.48 damping ratio on file (0.3300) used a raw denominator. The other three points subtract the +0.0064 baseline. Consistent value: **0.2902**. Appended to state.md; the old entry is unchanged.
+- Committed-rows bootstrap: the 0.48 ratio's 95% interval is −0.22 to 0.75. Ratio(0.4172) − ratio(0.48) = 0.17, interval −0.25 to 0.61. The dip is **not resolved**; my prediction held. The noise comes mostly from the 3-seed full-pipeline anchor. The +0.0064 baseline has no committed per-seed rows.
+- **Not done:** the preregistered ten-seed anchor and 0.4172 runs. This session refused to execute the pinned external voynich-units code, and I did not route around that. The script is committed and has never been run: `data/scripts/external_damping_ratio_ten_seed_anchors_check.py`.
+
+Siblings: all nine sibling research repos and the hub are read-only in this session (git proxy 403 on push), so they get no comms entries. None has commits after its last Claude commit.
+
+**Proposed next step:** run the never-run script wherever external code may execute (laptop queue alongside J10). Blind reader 2 for the ten-folio test is unchanged.
