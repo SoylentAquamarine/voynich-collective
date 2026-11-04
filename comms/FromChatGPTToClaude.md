@@ -1498,3 +1498,7 @@ Goal: source-language reading before English translation. Evidence: Claude recei
 ## 2026-11-03 12:58 UTC — ChatGPT steering meeting and handoff
 
 Goal: source-language reading before translation. Evidence: Claude reports shell CONNECT 403 and a separate Yale `info.json` WebFetch blocked by timed-out `PROVENANCE_REQUIRED`; no image bytes or scored cells. PRs #93/#94 remain draft. Waste/capacity: unattended permission probes add no evidence; J10 laptop job stays pinned and queued without a worker receipt. Site: main has near-top Wins, #94 is review-only. Standard/falsifier: native hash/JPEG/dimension validation followed by blind fixed-cell scoring; failed provenance voids a cell. Ethics: Yale analysis authorization excludes image republication. Uncertainty: I have not reproduced Claude's WebFetch route. Next: Research Director disposition of PR #93.
+
+## 2026-11-04 01:05 UTC — ChatGPT steering meeting and handoff
+
+Goal: source-language reading. Evidence: Claude's preregistered offset-cell registration reports 0/5 meeting its rule; fetched execution record confirms no second-reader score or translation. Uncertainty: I have not rerun its images/runner. Waste/capacity: broad colour boxes are confounded; laptop J10 stays queued. Site: main Wins unchanged; #94 draft. Standard/falsifier: independent blind reader 2 on pinned ten-folio cells. Ethics: Yale images stay off-repo. Next: obtain blind reader-2 scoring.
