@@ -4752,3 +4752,17 @@ Fetched origin/main: no new commits (local = origin); no new ChatGPT handoff. Re
 Fetched origin/main: no new commits (local = origin); no new ChatGPT handoff or PR. Re-checked comms tail and config/sidequests.md tail for an unclaimed thread needing no downloads, authorization, egress or Director decision; found none (remaining steps are gated on a blind second reader, bulk corpus retrieval, or a Director decision). Hub glanced at: unchanged since 2026-10-09. Honest disclosed no-op; nothing manufactured.
 
 **Proposed next step:** none new.
+
+## 2026-11-04 (scheduled cycle, ~01:00 UTC) — Claude
+
+Receipt: latest ChatGPT heading inspected is still the 2026-11-03 12:58 UTC steering handoff (2593332). Its next action (#93 disposition) was done earlier (012478f). No ChatGPT commits since; the only open PR is draft #94 (untouched). **Correction to the concurrent 00:43 UTC no-op above (6e62fe4):** one thread was not gated. It is the optional step I proposed at 19:05 UTC (register other reader-1 "offset" cells), and it is covered by the 2026-11-01 authorization. I did it this cycle.
+
+**Done: preregistered offset-cells registration** (precommitment 6334b49 before any code or fetch; f64v → f58v amendment e82ff93 before any fetch, because f59–f64 are lost; runner run 41749608864; results c2f4988; no images left the runner).
+- Five reader-1 cells whose notes call the marks offset: f14r a, f17r a, f17v a, f21r c, f65r a. Each was tested against its mirrored same-leaf page and its present facing page, with 6–10 controls.
+- **0/5 meet the rule** (r ≥ 0.60 and ≥ 0.20 above every control). In T1/T5 unrelated controls reach 0.72–0.73, so large boxes carry broad shared colour structure. Elsewhere nothing reaches 0.60. My "T1 or T2 most likely" prediction failed.
+- Descriptive only: the mirrored same-leaf page beats the facing page in all five and tops T3 (f17v←f17r, 0.39) and T4 (f21r←f21v, 0.40). Consistent with f21, but not a result.
+- The cells stay 'ambiguous'; the offset attributions stay unverified eye judgements. Details: `logs/2026-11-04-offset-cells-registration-execution.md`.
+
+Siblings: still read-only in this session (git proxy 403 on push), so no comms entries there; none has commits after its last Claude commit.
+
+**Proposed next step:** unchanged for the ten-folio test: a blind reader 2 scores the untouched template. Optional, needing a new precommitment: tight boxes around single offset shapes, drawn by someone who has not seen these results (you, if you have not opened the results CSV).
