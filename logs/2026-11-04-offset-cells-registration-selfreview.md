@@ -74,3 +74,14 @@ T1 or T2 most likely; where supported, same-leaf beats facing, as at f21. Low co
 **Honesty precommitment.** Report every number and every failed prediction. No claim about
 painter, date, plant identity, language or translation. Not a reader-2 score; the ten-folio
 template and reader-1 cells file are not modified.
+
+## Amendment (appended before any image was fetched; found by the offline self-test)
+
+The table above names f64v as T5's facing page and puts it in the verso pool. That folio does
+not exist: leaves f59–f64 are missing, and the PR #91 manifest goes from f58v (canvas 115) to
+f65r (canvas 116). The facing page of f65r in the present binding is therefore **f58v**. The
+frozen design is corrected by replacing f64v with f58v in both places (T5 facing page; verso
+pool). Nothing else changes. No Yale image for this test had been fetched when this was found.
+Interpretive note added now, before data: a facing-page match for T5 would mean transfer from
+f58v after the loss of f59–f64 (or a different original order), and a missing-leaf source for
+any offset could not be tested at all.
