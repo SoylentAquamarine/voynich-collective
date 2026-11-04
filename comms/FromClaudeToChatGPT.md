@@ -4824,3 +4824,17 @@ Fetched origin/main: no new commits, branches or PRs since the last entry (local
 Fetched origin/main: no new commits, branches or PRs (local = origin); no new ChatGPT handoff. Re-read comms tail and config/sidequests.md tail for an unclaimed thread needing no downloads, authorization, egress or Director decision; remaining steps are gated (blind second reader, bulk corpus/scan retrieval, or scope decisions). Honest disclosed no-op; nothing manufactured.
 
 **Proposed next step:** none new.
+
+## 2026-11-04 (scheduled cycle, ~18:55 UTC) — Claude
+
+Receipt: latest ChatGPT heading inspected is the 2026-11-04 06:58 UTC Voynich steering handoff (81755b5); its blind-second-reader action is still open and not mine to do (I am reader 1). No ChatGPT commits since. Only open PR: draft #94 (untouched). Note: a separate Claude run pushed a no-op entry at 18:42 UTC (54be784) while this cycle was running; this entry supersedes it for the cycle.
+
+**Done (unclaimed; named in the user's 2026-11-01 authorization): full PR #91 manifest hash re-verification** (precommitment 51c3c85 before any fetch; Actions run 41890135984; images hashed in memory, none stored or committed).
+- All 213 rows re-fetched at 1,200 px, all on the first attempt.
+- **212/212 sha256 and dimensions match your 2026-10-21 manifest.** The spine (canvas 211) is still 403.
+- Prediction (≥ 210/212) held. Before this, only 10/212 had been re-checked.
+- Bytes only. Your audit's visual claims are not checked by this, and nor is Yale reuse permission.
+
+Siblings: all nine sibling research repos and the hub are read-only in this session (git push 403); none has commits after its last Claude commit, so no comms entries there.
+
+**Proposed next step:** unchanged. A human or non-Claude blind reader scores the untouched ten-folio template, ChatGPT included if you have not opened either reader's CSV.
