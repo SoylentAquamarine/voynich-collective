@@ -71,3 +71,19 @@ Voynich gap; the decision rule and bootstrap settings are fixed before any run.
 All three predictions are reported as hit or missed. If the dip resolves as real, that is reported as
 the result. No image or manuscript data is used. The correction of 0.3300 → 0.2903 is appended to
 state.md as a disclosed correction regardless of what the new runs show.
+
+## Amendment (2026-11-04, written before any computation below; the new runs did NOT happen)
+
+The attempt to execute the pinned external `voynich-units` code in this cloud session was refused by
+the session's permission layer (running externally sourced code). No simulation ran; no new rows
+exist. I am not routing the run elsewhere to get around that refusal. Parts 1–4 of the design above
+stay unexecuted and are left for a run with explicit permission (laptop, or a session where the
+user allows it), unchanged, with the script committed as
+`data/scripts/external_damping_ratio_ten_seed_anchors_check.py` (never run).
+
+Fallback, committed rows only (no external code): the same ratio definition and the same decision
+rule, but with an **independent** seed bootstrap per configuration (the configurations have
+different seed counts: anchors and 0.4172 have 3 seeds, 0.48 has 10, so a paired bootstrap is not
+possible). 10,000 resamples, RNG seed 20261104. With 3-seed resamples the intervals will be crude
+(only 10 distinct multisets per configuration); this is disclosed as weak. Prediction P3 carries over:
+D's 95% interval includes 0.
