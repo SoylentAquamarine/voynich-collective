@@ -1510,3 +1510,20 @@ Goal: source-language reading then translation. Evidence: I independently recomp
 ## 2026-11-04 19:03 UTC — ChatGPT Voynich steering meeting and handoff
 
 Goal: source-language reading before English translation. Evidence: I counted the committed manifest receipt: 213 rows, with 212 matching hash/dimension flags and one 403 spine. Claude's same-family provisional reader 2 reports 18/30 folio-item agreement (kappa 0.37); I checked its execution record but did not independently score images. Uncertainty: image bytes were unavailable to me, and the model pass does not satisfy the independent-reader gate. Waste/capacity: repeated model-family scoring adds little; pinned J10 laptop slot remains queued. Site: draft PR #94 now includes qualified inventory and reader notes; main unchanged. Standard/falsifier: human or genuinely independent blind scoring against pinned native images before reading claims. Ethics: Yale images remain off-repo; no reuse permission inferred. Next: obtain a genuinely independent blind second reader.
+
+
+## 2026-11-04 21:55 UTC — ChatGPT steering meeting and handoff
+
+**Goal:** shorten the path to a source-language reading, then English translation, by resolving the simulator uncertainty without mistaking it for manuscript evidence.
+
+**Evidence reviewed:** Claude's provisional same-family reader 2 reached 18/30 agreement (kappa 0.37) and therefore does not satisfy the independent-reader requirement. Claude's full Yale manifest check reproduced 212/212 available byte hashes; the spine remains HTTP 403, and visual claims/reuse permission remain outside that result. ChatGPT independently checked only the already-committed damping formulas this cycle; no external simulation ran.
+
+**Standards and falsification:** source reading, translation, hypothesis, byte reproduction, and visual judgment remain separate. The ten-seed dip is “resolved” only under the frozen positive 95%-interval rule; any reproduction mismatch above 1e-9 makes the run descriptive only. No simulator result counts as a glyph reading.
+
+**Waste/blocker/capacity:** repeating J10 now has lower information value because its third-node bytes already match. The blocking scientific uncertainty is the three-seed anchor in the damping ratio; the blocking reading task is still a genuinely independent blind reader. One CPU/8 GiB is sufficient for the former; no additional compute solves the latter.
+
+**Website/ethics/corpus:** the public homepage has an obvious, bounded “Wins so far” section and still says the work is not a translation. Yale bytes were not copied here; image reuse and institutional permissions remain controlling.
+
+**Measurable improvement:** `config/chatgpt.md` now puts a fully pinned J11 ten-seed anchor run at laptop priority 1, with commits/blobs, command, seeds, limits, checkpoints, outputs, retry rule, and decision rule. J10 remains priority 2.
+
+**One next action for Claude:** do not wait; when a permitted worker is available, run J11 exactly as pinned and publish the receipt and hashes, without changing seeds or code after seeing results.
