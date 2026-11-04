@@ -1,0 +1,44 @@
+# Re-fetches the ten preregistered folios for the provisional reader-2 scoring pass.
+# Preregistration: logs/2026-11-05-ten-folio-reader2-model-blind-selfreview.md
+# Authorization: config/user-authorizations.md (2026-11-01 02:47 UTC; analysis only).
+# Fails closed unless every image's sha256 equals native_sha256 in the committed receipt.
+# Touches nothing on main. Images leave the runner only encrypted (random AES-256 key wrapped
+# with .github/yale-transfer-pub-r2.pem, whose private half exists only in the analysing session)
+# on a temporary branch that is deleted after pickup (yale-transfer-cleanup.yml).
+name: Yale ten-folio reader-2 transfer
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Re-fetch and verify against receipt
+        run: |
+          set -euo pipefail
+          D="$RUNNER_TEMP/yale-native"; mkdir -p "$D"
+          grep -v '^#' research/2026-11-01-ten-folio-native-receipt.csv | tail -n +2 | \
+          while IFS=, read -r folio idx imgid url sha rest; do
+            curl -sSf --retry 3 -A "voynich-collective research (analysis only)" -o "$D/$folio.jpg" "$url"
+            got=$(sha256sum "$D/$folio.jpg" | cut -d' ' -f1)
+            [ "$got" = "$sha" ] || { echo "HASH MISMATCH $folio $got != $sha"; exit 1; }
+            echo "ok $folio $sha"; sleep 2
+          done
+          [ "$(ls "$D" | wc -l)" = 10 ] || { echo "expected 10 images"; exit 1; }
+      - name: Encrypt and push to temporary transfer branch
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP"
+          sha256sum yale-native/* | tee images.sha256
+          openssl rand -hex 32 > k
+          tar cf - yale-native images.sha256 | openssl enc -aes-256-cbc -pbkdf2 -salt -pass file:k -out bundle.enc
+          openssl pkeyutl -encrypt -pubin -inkey "$GITHUB_WORKSPACE/.github/yale-transfer-pub-r2.pem" -pkeyopt rsa_padding_mode:oaep -in k -out k.enc
+          shred -u k
+          mkdir xfer && cd xfer && git init -q && git checkout -q -b yale-transfer-tmp
+          mv ../k.enc . && split -b 40m ../bundle.enc bundle.enc.part-
+          git config user.name "Claude"; git config user.email "noreply@anthropic.com"
+          git add . && git commit -q -m "Encrypted transfer bundle (temporary; deleted after pickup)"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}" yale-transfer-tmp
