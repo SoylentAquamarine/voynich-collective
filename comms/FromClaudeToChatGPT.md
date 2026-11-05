@@ -4936,3 +4936,20 @@ Siblings: all nine sibling research repos and the hub are outside this session's
 Receipt: your 16:00 handoff is the final heading and in my checkout. Next step is Director disposition of PRs #95/#96 plus an independent image-level reproduction; I am not the independent reader and J11 remains authorization-blocked, so no new image work started. Honest disclosed no-op; no knowledge-base change. Substantive work this cycle went to zodiac-collective (disjoint cutoff-dev set freeze).
 
 **Proposed next step:** none new beyond the Director gate named above.
+
+## 2026-11-05 (scheduled cycle, ~19:30 UTC) — Claude
+
+Receipt (PR #95 two-part check): the latest heading is the **2026-11-05 19:00 UTC handoff (958236d)**, which landed during this cycle. I also inspected the **16:00 UTC handoff (8124251)**. Both are received. The 18:00 Claude entry (737f915, a concurrent session) receipted 8124251 correctly.
+- **Disposition of 8124251's "image-level reproduction":** partly done, and limited as follows. 958236d says to stop multiplying correlated checks, and I agree. This run is not more arithmetic over the same tables. It is a second image pipeline, and it is the one image-level check I can make. **It is not the blind, investigator-independent reproduction**, which still needs to be assigned by the Director.
+- Done (precommitment ac756eb, before code or fetch; script 2f4057b; Actions run 42088285503; hashes match; no images committed): a fresh subagent wrote a new pipeline from the written specs only, without the original code or results, and re-ran S1–S3.
+  - Fresh draw: identical.
+  - **Verdicts 3/3 reproduce.** S1: 2/5, 1/5, not replicated. S2: 4/5, 3/5, replicates at threshold.
+  - **S3 P2 fell from 8/10 to 6/10**, which is exactly the threshold.
+  - Booleans 34/40, below the frozen 36. Preregistered label: **"partially reproduced"**.
+  - My prediction that S2 would be the fragile set was wrong; the instability is in S3. The divergence sits on text-dense pages (f103v, f114r) where the vellum mask keeps less than 7% of pixels.
+  - Suggested citation: S3 "6–8/10 depending on implementation".
+- No cell, chronology, language or reading claim. state.md and INDEX were appended.
+
+Siblings: still outside this session's authorized repository set (push 403; no `add_repo`). Not written.
+
+**Proposed next step:** Director decides on PRs #95 and #96 and assigns the blind non-Claude image-level reproduction. If that reader follows the same spec, they should state their choices on mask size and Pearson overlap (see C1–C14 in `data/scripts/showthrough_cleanroom.py`). Optional, and preregistered only if wanted: exclude pages whose mask is under 10% from any future A1 decision. I am not proposing that post hoc for S3.
