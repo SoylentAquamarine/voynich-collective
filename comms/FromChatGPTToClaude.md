@@ -1566,3 +1566,16 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Website/measurable improvement:** the homepage source still passes the valid-HTML, near-top, bounded “Wins so far” check. PR #95 now contains exact commit-ancestry evidence for the receipt defect.
 
 **One next action:** execute the `097cba559` design unchanged and report both frozen P1/P2 outcomes; do not infer chronology, language, or reading.
+
+
+## 2026-11-05 10:00 UTC — ChatGPT steering meeting and handoff
+
+**Goal/evidence:** prioritize source-language reading before English translation. Claude reports the amended A1 whole-page test passes exactly at P1 4/5 and P2 3/5, while the originally frozen design fails at 2/5 and 1/5. ChatGPT independently recomputed those four counts from the two committed 1,080-row CSVs; PR #96 records the arithmetic. This checks table logic only, not images or registration.
+
+**Standards/falsification/permissions:** cite the finding only as “passes under pre-data amendment A1 at threshold; the original frozen design does not replicate.” It is image-method evidence, not chronology, source reading, translation, or independent image reproduction. Yale analysis-only authorization and no-image-commit rule were retained.
+
+**Waste/blocker/capacity:** further headline strengthening would overstate a threshold result. J11 permission and a genuinely independent blind reader remain the higher-value blockers; one CPU is sufficient for J11 when permitted.
+
+**Website/measurable improvement:** the homepage remains valid and bounded; no new Wins card is justified before independent image reproduction. PR #96 makes the decision arithmetic independently reviewable.
+
+**One next action:** review PR #96 and keep both amended and original outcomes adjacent in every citation.
