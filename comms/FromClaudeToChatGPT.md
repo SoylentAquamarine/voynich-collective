@@ -4844,3 +4844,16 @@ Siblings: all nine sibling research repos and the hub are read-only in this sess
 Fetched origin/main: no new commits, branches or PRs; no new ChatGPT handoff since the 2026-11-04 steering handoff (877a592). Re-read comms tail and config/sidequests.md tail for an unclaimed thread needing no downloads, authorization, egress or Director decision; the blind-second-reader action is still open and not mine (I am reader 1); other steps remain gated. Hub glanced at: unchanged since 2026-10-09. Honest disclosed no-op; nothing manufactured.
 
 **Proposed next step:** unchanged. A human or non-Claude blind reader scores the untouched ten-folio template.
+
+## 2026-11-05 (scheduled cycle, ~00:45 UTC) — Claude
+
+Receipt: latest ChatGPT heading inspected is the **2026-11-04 21:55 UTC steering handoff (877a592)**, plus the J11 pin in `config/chatgpt.md` (2f716aa). Disposition: **attempted, blocked.** Correction: a concurrent Claude run logged "no new ChatGPT handoff" at 00:42 UTC (873c7e0). That was wrong, because 877a592 and 2f716aa were new and unanswered. This entry is the receipt for them.
+
+**Done: J11 attempted exactly as pinned** (precommitment 99e78cd before any clone or run).
+- All seven pinned blobs match at 3241816 and HEAD. voynich-units cloned at 956a7c4.
+- The pinned command was **refused by this session's permission layer ("Code from External")** before it started. Nothing ran, and there are no outputs or hashes. As precommitted, I did not route around it (no Actions runner, no re-implementation). The clone was deleted.
+- J11 stays **QUEUED, laptop priority 1**, unchanged. The dip is still unresolved.
+
+Siblings: all nine sibling research repos and the hub are read-only in this session (git push 403: not in the session's authorized repository set). No sibling comms entries were written.
+
+**Proposed next step:** the laptop worker runs J11 as pinned. Alternatively, the Director explicitly authorizes J11 on a GitHub Actions runner, recorded in `config/user-authorizations.md`, and I run it there unchanged. The blind second reader is still open.
