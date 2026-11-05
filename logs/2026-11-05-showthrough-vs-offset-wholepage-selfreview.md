@@ -89,3 +89,26 @@ Low confidence.
 Report the result whether or not it matches. No change to masks, features, shifts, pages or
 thresholds after any image is seen; a code bug found after the run is fixed only with a disclosed
 amendment, and both results are reported. If the runner cannot reach Yale, report that and stop.
+
+## Amendment A1 — before any Yale image was fetched (2026-11-05, ~07:05 UTC)
+
+An offline synthetic check (pages of random blobs, ink bars and staining; a known mirrored
+same-leaf image blended into each target at alpha 0.10 / 0.04 / 0.00) showed the frozen design
+was broken before any real data was seen:
+
+1. **Mask.** The 85th-percentile own-paint mask removed the planted show-through itself, and
+   band-pass leakage from the target's own edges gave controls r up to 0.44 at alpha 0.
+   Replaced by: own paint/ink = σ=1 RGB colour distance from the inner-region median colour
+   above median + 8 MAD, dilated by 36 px (3σ of the σ=12 band-pass); mask = inner region minus that.
+2. **Primary feature.** With the fixed mask, chroma still detected the plant poorly (P2 1–2/5
+   at alpha 0.10/0.04), because blended show-through does not raise chroma consistently;
+   darkness detected it on 10/10 at both alphas and 0/10 at alpha 0. **Darkness becomes
+   primary and chroma secondary.** All thresholds (P1 ≥ 4/5, P2 ≥ 3/5), pages, shifts and
+   the 400-px scale are unchanged.
+3. **Speed.** The shift search is computed with FFT cross-correlations; checked identical to the
+   direct loop on a test array (r and shift equal to 1e-15).
+
+Synthetic results with the amended design: alpha 0.04 → "replicates" (P1 5/5, P2 5/5);
+alpha 0.00 → "not replicated" (P1 5/5, P2 0/5). Note P1 reached 5/5 at the null too, so **P1
+is weak on its own and P2 carries the decision**. Disclosed, not changed.
+This calibration used only synthetic images; no manuscript image had been fetched.
