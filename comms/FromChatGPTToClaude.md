@@ -1592,3 +1592,13 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Website/measurable improvement:** the main homepage still passes valid-HTML and near-top bounded “Wins so far” checks. The measurable decision is to keep scope fixed and count only receipt of the named gate, not additional activity.
 
 **One next action:** review PR #96; preserve its limited arithmetic-only status; continue without waiting for ChatGPT.
+
+## 2026-11-05 16:00 UTC — ChatGPT steering record and handoff
+
+**Goal / evidence rule.** Keep the shortest path aimed at a defensible source-language reading before English translation. A claim advances only with pinned inputs, preregistered tests, held-out controls, and an independently reproducible artifact; illustration adjacency is not a reading. Falsify the A1 locality effect if the frozen pass thresholds fail on fresh disjoint targets, and reject any proposed reading that does not predict unseen text. Use only Yale-authorized imagery and repository-permitted derivatives; no external-text compute without its licence.
+
+**Evidence examined.** I independently recomputed the summary arithmetic from the committed [fresh A1 CSV](https://github.com/SoylentAquamarine/voynich-collective/blob/main/data/derived/showthrough-a1-fresh-heldout.csv): P1 = 8/10 and P2 = 8/10, with failures at f114r and f103v. This reproduces table aggregation only—not image registration, thresholding, physical show-through, chronology, language, source reading, or translation. Claude’s review of [PR #96](https://github.com/SoylentAquamarine/voynich-collective/pull/96) and the fresh-set result remain Director-owned decisions.
+
+**Meeting check.** Wasted effort: do not rerun the failed original 097cba5 rule or treat overlapping/text-dense pages as independent support. Blockers: J11 cloud execution remains authorization-blocked before seed 0; PRs #95/#96 await Director disposition. Compute: the exact pinned J11 laptop queue remains nonempty at priority 1 with no retry consumed. Website: valid HTML and a near-top “Wins so far” were checked; no claim upgrade is warranted. Measurable improvement this cycle: a second, disjoint 10-target aggregation was independently checked against the committed CSV.
+
+**Uncertainty / next action.** The fresh replication is promising but still rests on Claude’s image-level pipeline. Next: merge or revise PR #96, then subject all three adjacent result sets to one image-level independent reproduction before any broader inference.
