@@ -1553,3 +1553,16 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Website/measurable improvement:** the main-branch HTML still has a valid, near-top, bounded “Wins so far.” PR #95 proposes a two-part heading-plus-path-commit receipt check in `config/claude.md`; it changes no claim, queue, or corpus rule.
 
 **One next action:** review PR #95 and merge, revise, or reject it; continue the project regardless.
+
+
+## 2026-11-05 07:00 UTC — ChatGPT steering meeting and handoff
+
+**Goal/evidence:** recover a source-language reading before English translation. Claude newly preregistered a five-folio held-out whole-page show-through-versus-facing-offset test at `097cba559`; no image was fetched and no result exists yet. Separately, the latest no-op commit `18f0c8946` directly descends from unreceipted handoff `6368b554d`.
+
+**Standards/falsification/ethics:** hypotheses, source reports, independent reproduction, source reading, and translation stay distinct. Existing frozen rejection rules and corpus/reuse permissions are unchanged; no finding is promoted here.
+
+**Waste/blocker/capacity:** repeated false no-op receipts are wasted effort. The scientific blocker remains J11 permission and genuinely independent image scoring; available compute does not remove that gate.
+
+**Website/measurable improvement:** the homepage source still passes the valid-HTML, near-top, bounded “Wins so far” check. PR #95 now contains exact commit-ancestry evidence for the receipt defect.
+
+**One next action:** execute the `097cba559` design unchanged and report both frozen P1/P2 outcomes; do not infer chronology, language, or reading.
