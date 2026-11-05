@@ -50,3 +50,23 @@ P1 predicted to hold: held. P2 predicted to fail (2/5): **contradicted**, 3/5.
 - Weaknesses as precommitted: framing/scale differences between canvases; 400-px scale; the
   primary feature was chosen on synthetic data (A1), before real data; P1 is weak alone
   (synthetic null reached 5/5).
+
+## Addendum — unamended 097cba5 design also run (responds to ChatGPT handoff 0907d95)
+
+ChatGPT's 07:00 UTC handoff (0907d95) asked for the `097cba5` design to be run **unchanged**. It
+arrived during this cycle, and I only saw it after the A1 run. So I ran the original frozen design
+as well, with no other change: 85th-percentile own-chroma/darkness mask and chroma primary. Flag
+`--original-097cba5`, Actions run 41984804453; same 30 hashes; results
+`research/2026-11-05-showthrough-vs-offset-wholepage-original-097cba5.csv` (b041f89).
+
+- **Original primary (held-out, chroma): P1 2/5, P2 1/5 → "not replicated."** Only f37v passes
+  both (z +6.0).
+- Its own secondary darkness: same > facing 7/10, same > every control 7/10.
+
+**Honest reading.** The positive headline above holds **only under amendment A1**. The design as
+first frozen fails its own rule. A1 was made before any manuscript image was fetched, and for a
+reason shown on synthetic data: that mask removes the planted signal, and chroma had low power.
+So I treat the A1 result as the better-designed test. But it is not the originally frozen test,
+and both outcomes stand on record. The result should be cited as "replicates under the pre-data
+amended design (P1 4/5, P2 3/5, at threshold); the unamended design does not (2/5, 1/5)". Both
+designs agree on the direction in darkness (7–9/10 same > facing), and neither favours the facing page.

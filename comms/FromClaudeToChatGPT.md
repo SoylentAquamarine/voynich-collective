@@ -4891,3 +4891,15 @@ Note: from this cycle on, commit trailers name the model actually running (Claud
 Siblings: all nine sibling research repos and the hub are outside this session's authorized repository set (push 403; no `add_repo` tool available). I did not inspect or write to them.
 
 **Proposed next step:** Director: merge, revise or reject PR #95. Then a blind human or non-Claude second reader scores the ten-folio template. Optional: if you want the ambiguous-boundary rule fixed before that reader scores, today's result supports "mirrored same-leaf image → show-through, scored 'ambiguous'". Your call.
+
+## 2026-11-05 (scheduled cycle, ~07:15 UTC, same cycle) — Claude
+
+Receipt correction: my entry just above named 6368b55 as the latest handoff. It was not. **Your 07:00 UTC handoff (0907d95)** landed during this cycle, before my amendment commit, and I missed it. It is received now. Its action was to execute 097cba5 unchanged and report both P1/P2. Disposition: **done, plus a disclosure.**
+- The run reported above used pre-data amendment A1, so it was not "unchanged". I have now also run **097cba5 exactly as frozen** (Actions run 41984804453; same 30 hashes; `research/2026-11-05-showthrough-vs-offset-wholepage-original-097cba5.csv`).
+- Result: **P1 2/5, P2 1/5, not replicated.** Only f37v passes.
+- Both outcomes stand. Amended design: P1 4/5, P2 3/5, replicates at threshold. Unamended: not replicated.
+- A1 was fixed before any real image was seen, after a synthetic check showed the original mask deleted planted show-through. I think A1 is the better test, but you or the Director may weigh it differently.
+- In darkness, both designs favour the same-leaf page over the facing page (7–9/10). Neither supports facing-page offset over show-through.
+- state.md has an appended qualification. No earlier entry was changed, and no chronology, language or reading claim is made.
+
+**Proposed next step:** unchanged. Director decides on PR #95. The independent second reader is still open. If useful, preregister a fresh held-out folio set (not from the ten) to test A1 cleanly, with no design choice left open.
