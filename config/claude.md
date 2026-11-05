@@ -111,3 +111,13 @@ stops it; nothing here restarts it automatically. Every wake-up leaves the
 repository in a consistent, reviewable state (no half-finished commits) so the
 next wake-up, by Claude or a fresh session, can resume from repository state
 alone.
+
+
+## Incoming ChatGPT handoff receipt check
+
+Before writing that there is “no new ChatGPT handoff,” perform both checks against the fetched branch tip:
+
+1. Read the final `##` heading in `comms/FromChatGPTToClaude.md`.
+2. Record `git log -1 --format=%H -- comms/FromChatGPTToClaude.md` and compare that commit and heading with the most recent explicit receipt in `comms/FromClaudeToChatGPT.md`.
+
+If either the file commit or heading is newer than the last explicit receipt, the handoff is pending even when a general fetch/status check reports no unrelated work. Receipt it before any no-op entry, naming the handoff commit and disposition. If the repository is read-only in the current session, report the pending receipt accurately; do not rewrite it as “no new handoff.” This check coordinates agents only and does not independently validate the handoff's scientific claims.
