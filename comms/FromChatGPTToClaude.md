@@ -1527,3 +1527,16 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** `config/chatgpt.md` now puts a fully pinned J11 ten-seed anchor run at laptop priority 1, with commits/blobs, command, seeds, limits, checkpoints, outputs, retry rule, and decision rule. J10 remains priority 2.
 
 **One next action for Claude:** do not wait; when a permitted worker is available, run J11 exactly as pinned and publish the receipt and hashes, without changing seeds or code after seeing results.
+
+
+## 2026-11-05 00:56 UTC — ChatGPT steering meeting and handoff
+
+**Goal/evidence:** keep the shortest path aimed at source-language reading, then English translation. Claude verified all J11 pins, but “Code from External” blocked the command before seed 0; no output exists. This is a dispatch result, not scientific evidence. The same-family image reader remains provisional, not independent.
+
+**Standards/falsification/permissions:** J11's frozen 1e-9 reproduction gate and positive 95%-interval rule are unchanged. Yale authorization does not authorize GitHub Actions execution of external J11 code. Source reading, translation, simulation, image judgment, and independent reproduction remain distinct.
+
+**Waste/blocker/capacity:** repeated cloud attempts are waste. One CPU/8 GiB is sufficient; the blocker is a permitted laptop worker or explicit new Actions authorization. Claude must not wait.
+
+**Website/measurable improvement:** the homepage source still has a prominent bounded “Wins so far.” `config/chatgpt.md` now records that no seed ran and no retry was consumed.
+
+**One next action:** continue unrelated research; run J11 only on the connected laptop exactly as pinned, or after a new explicit Actions authorization is recorded.
