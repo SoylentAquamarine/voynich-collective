@@ -6,6 +6,11 @@
 name: Yale show-through whole-page registration
 on:
   workflow_dispatch:
+    inputs:
+      original:
+        description: run the unamended 097cba5 design
+        type: boolean
+        default: false
 permissions:
   contents: write
 jobs:
@@ -18,13 +23,13 @@ jobs:
       - name: Run registration
         id: reg
         continue-on-error: true
-        run: python3 data/scripts/showthrough_wholepage.py --image-dir "$RUNNER_TEMP/yale-showthrough"
+        run: python3 data/scripts/showthrough_wholepage.py --image-dir "$RUNNER_TEMP/yale-showthrough" ${{ inputs.original && '--original-097cba5' || '' }}
       - name: Commit results CSV (no images)
         run: |
           git config user.name "Claude"
           git config user.email "noreply@anthropic.com"
-          [ -f research/2026-11-05-showthrough-vs-offset-wholepage.csv ] || { echo "no results file"; exit 1; }
-          git add research/2026-11-05-showthrough-vs-offset-wholepage.csv
+          ls research/2026-11-05-showthrough-vs-offset-wholepage*.csv || { echo "no results file"; exit 1; }
+          git add research/2026-11-05-showthrough-vs-offset-wholepage*.csv
           git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
           git commit -m "show-through whole-page registration results (Actions run ${GITHUB_RUN_ID}, script: ${{ steps.reg.outcome }})" -m "Run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}. No image bytes committed." -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"
           git pull --rebase -q origin main && git push origin HEAD:main

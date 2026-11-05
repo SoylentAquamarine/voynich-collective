@@ -108,6 +108,19 @@ def target_mask(a):
     return inner & ~own
 
 
+def target_mask_original(a):
+    """Frozen 097cba5 mask (pre-amendment): inner region minus own chroma/darkness > 85th pct."""
+    f = raw_features(a)
+    h, w = a.shape[:2]
+    m = np.zeros((h, w), bool)
+    my, mx = int(round(MARGIN * h)), int(round(MARGIN * w))
+    m[my:h - my, mx:w - mx] = True
+    for v in f.values():
+        sm = gaussian_filter(v, S_LO)
+        m &= sm <= np.percentile(sm[m], 85)
+    return m
+
+
 def best_r(t, m, c):
     """Max Pearson r over shifts of partner c (target t fixed) within mask m.
 
@@ -164,7 +177,15 @@ def main():
     ap.add_argument("--image-dir", default=os.path.expanduser("~/voynich-showthrough"))
     ap.add_argument("--local-dir")
     ap.add_argument("--out", default=OUT)
+    ap.add_argument("--original-097cba5", action="store_true",
+                    help="run the unamended frozen design (85th-pct mask, chroma primary)")
     a = ap.parse_args()
+    global PRIMARY_FEATURE, SECONDARY_FEATURE
+    mask_fn = target_mask
+    if a.original_097cba5:
+        PRIMARY_FEATURE, SECONDARY_FEATURE, mask_fn = "chroma", "darkness", target_mask_original
+        if os.path.realpath(a.out) == os.path.realpath(OUT):
+            a.out = OUT.replace(".csv", "-original-097cba5.csv")
     if a.local_dir and os.path.realpath(a.out) == os.path.realpath(OUT):
         sys.exit("refusing: --local-dir runs must write elsewhere (--out)")
     if os.path.realpath(a.image_dir).startswith(REPO + os.sep):
@@ -188,7 +209,7 @@ def main():
     for t in sorted(PARTNERS):
         ta = rgb(raw[t])
         h, w = ta.shape[:2]
-        m = target_mask(ta)
+        m = mask_fn(ta)
         tf = {k: bandpass(v) for k, v in raw_features(ta).items()}
         same, facing = PARTNERS[t]
         cands = [(same, "test-same-leaf"), (facing, "test-facing")] + [(c, "control") for c in controls(t)]
@@ -229,7 +250,8 @@ def main():
     head = [f"# generated {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')} by "
             f"data/scripts/showthrough_wholepage.py; run={os.environ.get('GITHUB_RUN_ID', 'local')}; "
             f"local_test={bool(a.local_dir)}",
-            "# preregistration: logs/2026-11-05-showthrough-vs-offset-wholepage-selfreview.md (097cba5); no image bytes in repo",
+            "# preregistration: logs/2026-11-05-showthrough-vs-offset-wholepage-selfreview.md (097cba5); "
+            f"design={'original 097cba5 (unamended)' if a.original_097cba5 else 'amendment A1'}; no image bytes in repo",
             f"# PRIMARY (held-out, {PRIMARY_FEATURE}, mirrored): P1 same>facing {P1}/5 (need >=4); P2 same>max control {P2}/5 (need >=3); decision: {dec}",
             f"# secondary: all ten {PRIMARY_FEATURE}: same>facing {all1}/10; same>maxctl {all2}/10. all ten {SECONDARY_FEATURE}: same>facing "
             f"{sum(v[0] for v in dk.values())}/10; same>maxctl {sum(v[1] for v in dk.values())}/10"] + lines + \
