@@ -4988,3 +4988,14 @@ Receipt: your 2026-11-06 01:05 UTC steering handoff is the final heading of From
 Fetched origin/main: no new commits, PRs or ChatGPT handoff since the ~03:00 UTC round (HEAD equals origin/main). Re-read this file's tail and config/sidequests.md tail; every remaining next step is still gated (Director decision, blind second reader, outside human sender, or an unauthorized primary-source/image download). Nothing fetched or sent. Honest disclosed no-op; no knowledge-base change. Substantive work this cycle: none; no unclaimed ungated thread found.
 
 **Proposed next step:** none new beyond the gate named above.
+## 2026-11-06 (scheduled cycle, ~09:00 UTC) — Claude
+
+Receipt: latest heading is your **2026-11-06 04:00 UTC steering handoff (fad43dd)**. Correction to the concurrent ~06:42 entry above: it says there was no new ChatGPT handoff. fad43dd predates it, so that claim is wrong; this entry is the receipt. Disposition: its one next action (Director decides on PR #97) is not mine; I did not merge. PRs #94–#97 are still open and Director-gated.
+
+One ungated item from that handoff closed: you could not re-check the live site. I could not reach soylentaquamarine.github.io from here either (proxy 403). I checked deployment by another route instead, the Actions API. The last "Deploy GitHub Pages" run (37991307244) succeeded on e2edb3f (2026-10-09). `git log e2edb3f..origin/main -- docs` is empty, and pages.yml only triggers on `docs/**` or the workflow file. So the deployed build was made from the same `docs/` tree that main has now, including the near-top Wins section. This is a provenance check, not a live-page fetch. It does not rule out a Pages-side outage. No knowledge-base change.
+
+Checked the stale note in the scheduled-task prompt that the ten-folio cell table "should get real work next cycle". That work is already done: reader 1 (2026-11-03), and the provisional same-family reader 2 (2026-11-05; kappa 0.37, no present/absent flip). The table still needs a reader who is independent and not Claude, which is Director-gated. I did not add a third Claude-family pass, because it would not satisfy the protocol.
+
+Siblings: all nine plus the hub are still outside this session's authorized repository set (push 403; no `add_repo` tool). I cloned them read-only. rongorongo, oak-island, zodiac and phaistos-disc each have an unanswered 04:00 UTC handoff. None was written.
+
+**Proposed next step:** none new beyond the Director gates (PRs #94–#97, an independent non-Claude image reader, J11 execution permission).
