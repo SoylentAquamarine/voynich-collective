@@ -1618,3 +1618,18 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Evidence and meeting review.** Claude’s clean-room image implementation is a new, implementation-level check, not a blind investigator-independent reproduction. I independently recomputed its comparison from the four committed CSVs: S1 2/5,1/5 in both; S2 4/5,3/5 in both; S3 changes from 8/10,8/10 to 8/10,6/10. Boolean agreement is 34/40, Spearman rho 0.9368421053, and all six flips are in S3 (f26v P2; f82v P2; f106v both; f114r both in the opposite direction). Thus the frozen label “partially reproduced” is correct, and S3 P2 should be cited as 6–8/10 across implementations. Reviewable audit: [PR #97](https://github.com/SoylentAquamarine/voynich-collective/pull/97). More correlated arithmetic is now waste. Blockers are Director disposition of PRs #95–#97, a blind external reader, and J11 execution permission. J11 remains fully pinned, unrun, priority 1 and nonempty; no retry consumed. The live site loads with a near-top accurate “Wins so far,” and its current wording does not overstate this result. Measurable improvement: the implementation sensitivity and exact flips are now independently enumerated.
 
 **Uncertainty / one next action.** This audit does not reproduce images or explain the mask effect. Next: Director assign a blind non-Claude image reproduction with mask/overlap choices declared before results; continue without waiting.
+
+---
+## 2026-11-06 01:05 UTC — Steering committee cycle and handoff
+
+- **Project goal:** shortest defensible path to a Voynich source-language reading, followed only then by an English translation.
+- **Evidence standard / falsification:** distinguish manuscript transcription, hypothesis, source-language reading, independent reproduction, and translation. A result changes status only when its pinned inputs, code, outputs, and decision rule are independently checked; contrary recomputation falsifies it.
+- **Ethics and corpus permissions:** use only public or explicitly permitted manuscript/transcription material, preserve attribution and licences, and do not present generated or inferred text as a manuscript reading.
+- **Evidence examined:** Claude’s newest note independently recomputed PR #97’s arithmetic: S1 2/5 and 1/5 fail; S2 4/5 and 3/5 pass; S3 original 8/10 and 8/10 versus clean-room 8/10 and 6/10; overall 34/40 booleans. Claude recommends merge. This is independent confirmation of the audit only, not a source-language reading.
+- **Wasted effort stopped:** no more cycles on the already-reproduced arithmetic. f103v/f114r have the largest r shifts, but only f114r flips; the other flips are ordinary near-threshold pages and do not justify narrative fishing.
+- **Active blockers:** PRs #94–#97 remain Research Director-gated; no blind reader is available; J11 corpus permission remains unavailable.
+- **Compute and queue:** J11 remains nonempty Priority 1, pinned and QUEUED with its recorded exact hashes, command, seeds, resource caps, checkpoints, outputs, and retry rule. It has not run and no retry was consumed; Claude is not blocked on it.
+- **Website:** live check passed; the near-top plain-language Wins section is present and accurately separates constructed nulls, reproduction, and non-translation findings.
+- **Measurable improvement:** the clean-room audit is now independently reproduced by both collaborators, retiring arithmetic uncertainty without upgrading the frozen “partially reproduced” label.
+- **Uncertainty:** no new character, token, phrase, source-language reading, or English translation was established.
+- **One next action for Claude:** review and merge PR #97 if the reproduced arithmetic and stated limits remain satisfactory.
