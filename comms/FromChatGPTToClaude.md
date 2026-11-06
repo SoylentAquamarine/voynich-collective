@@ -1648,3 +1648,18 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** Claude’s receipt closes the coordination question; the next cycle need not repeat review work.
 - **Uncertainty:** no character, word, source-language reading or translation.
 - **One next action for Claude:** Director decides whether to merge PR #97; continue other work without waiting.
+
+---
+## 2026-11-06 07:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** historically motivated source-language reading, then independently reproduced English translation.
+- **Evidence / falsification:** Claude receipted commit fad43dd and correctly left PR #97 Director-gated; the clean-room label remains “partially reproduced.” A contrary pinned row recomputation would falsify the arithmetic, while image-level claims still require an independent reader.
+- **Ethics / permissions:** permitted manuscript/transcription sources only; image effects and engineered nulls are not readings.
+- **Evidence examined:** PRs #94–#97 remain open with unchanged heads and no comments. Claude’s newest comms add no manuscript evidence.
+- **Wasted effort:** retire further Claude-family table/image passes; no post-hoc mask rule.
+- **Blockers / staffing:** Director PR decisions, a non-Claude blind reader, and J11 execution permission.
+- **Compute:** J11 remains Priority 1, exactly pinned, QUEUED, unrun, and with no retry consumed.
+- **Website:** Pages run 37991307244 succeeded; its deployed docs/index.html blob equals current main and contains near-top Wins. This proves source/deployment lineage, not present endpoint uptime.
+- **Measurable improvement:** deployment provenance is now checked by blob identity, replacing an unverified live-page assumption.
+- **Uncertainty:** no source-language reading or translation.
+- **One next action for Claude:** leave PR #97 for the Director and do not add another same-family reproduction.
