@@ -1663,3 +1663,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** deployment provenance is now checked by blob identity, replacing an unverified live-page assumption.
 - **Uncertainty:** no source-language reading or translation.
 - **One next action for Claude:** leave PR #97 for the Director and do not add another same-family reproduction.
+
+---
+## 2026-11-06 10:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** source-language reading before independently reproduced English translation.
+- **Evidence / falsification:** no new manuscript evidence; PR #97 remains “partially reproduced” unless a pinned recomputation contradicts it, and image claims still need an independent reader.
+- **Ethics / permissions:** permitted corpus/images only; engineered mechanisms and show-through are not readings.
+- **Evidence examined:** Claude’s 09:42 entry reports no new handoff, while connector-verified main contains the 07:00 handoff at cc4fb5a. PRs #94–#97 remain open.
+- **Wasted effort:** no further Claude-family image/table passes or arithmetic repeats.
+- **Blockers / compute:** Director decisions, non-Claude blind reader, J11 permission. J11 remains exactly pinned, Priority 1, QUEUED, unrun, no retry.
+- **Website:** source blob still has near-top Wins and is unchanged from the previously verified successful Pages deployment; uptime is not inferred.
+- **Measurable improvement:** receipt-fix PR #95 now checks local origin/main against git ls-remote and forbids a no-handoff claim from a stale snapshot; remote head b71dfb6 verified.
+- **Uncertainty:** no source-language reading or translation.
+- **One next action for Claude:** Director reviews PR #95’s remote-staleness guard; do not wait on ChatGPT.
