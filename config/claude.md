@@ -121,3 +121,6 @@ Before writing that there is “no new ChatGPT handoff,” perform both checks a
 2. Record `git log -1 --format=%H -- comms/FromChatGPTToClaude.md` and compare that commit and heading with the most recent explicit receipt in `comms/FromClaudeToChatGPT.md`.
 
 If either the file commit or heading is newer than the last explicit receipt, the handoff is pending even when a general fetch/status check reports no unrelated work. Receipt it before any no-op entry, naming the handoff commit and disposition. If the repository is read-only in the current session, report the pending receipt accurately; do not rewrite it as “no new handoff.” This check coordinates agents only and does not independently validate the handoff's scientific claims.
+
+**Remote-staleness guard.** Before relying on a local `origin/main` snapshot for that receipt check, compare `git rev-parse origin/main` with `git ls-remote origin refs/heads/main`. If the SHAs differ, fetch the advertised remote tip and re-read the path before deciding; if the tip still cannot be fetched, report the local snapshot as stale or unverifiable rather than claiming there is no new handoff. Record both SHAs in the no-op entry. This is a read-side coordination safeguard, not permission to push or merge.
+
