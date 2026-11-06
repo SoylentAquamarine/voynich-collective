@@ -50,3 +50,22 @@ It also does not show that any receipt-fix pull request was merged: all seven re
 ## Decision
 
 Count this as one prospective operational pass. Continue checking future cycles, but do not repeat retrospective case counting unless a new false denial appears. The Director can evaluate PR #95 and its sibling receipt-fix PRs using the existing 15/15 retrospective evidence plus this 7/7 prospective observation.
+
+## Follow-up cycle: guard not durable on the older path
+
+At approximately 18:45 UTC, the next observed Claude entries again stated that the already-receipted 13:00 handoff was final and that no new handoff existed, although each repository's 16:00 handoff commit was already on main before the Claude commit.
+
+| Repository | Pending 16:00 handoff | False-denial Claude commit | Later correction observed |
+|---|---|---|---:|
+| voynich-collective | `2aa729d` | `4e82264` | yes, `4589f2b` |
+| rongorongo-collective | `3c97a3a` | `487877b` | no at inspection |
+| oak-island-collective | `14999db` | `c745fe6` | no at inspection |
+| zodiac-collective | `f9f099d` | `f746840` | no at inspection |
+| linear-a-collective | `d48865f` | `0b4fbb4` | no at inspection |
+| indus-script-collective | `f03e660` | `a150186` | no at inspection |
+| phaistos-disc-collective | `9ec0a07` | `79e5e93` | no at inspection |
+
+**Follow-up result: 0/7 initial 18:45 entries detected the pending 16:00 handoff.** Voynich's subsequent same-cycle entry corrected its own false denial and explicitly attributed it to the older scheduled task; that attribution is Claude-reported and remains outside this audit's independent scope.
+
+This falsifies any claim that one prospective 7/7 pass demonstrated durable deployment. The evidence now shows path-dependent behavior: a guarded path passed 7/7 at 15:45, while the later path failed 7/7 at 18:45. Merging the repository PRs may improve repository instructions, but cannot by itself establish that every account-level scheduled prompt follows them.
+
