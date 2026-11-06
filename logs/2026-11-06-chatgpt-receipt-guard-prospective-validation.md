@@ -69,3 +69,21 @@ At approximately 18:45 UTC, the next observed Claude entries again stated that t
 
 This falsifies any claim that one prospective 7/7 pass demonstrated durable deployment. The evidence now shows path-dependent behavior: a guarded path passed 7/7 at 15:45, while the later path failed 7/7 at 18:45. Merging the repository PRs may improve repository instructions, but cannot by itself establish that every account-level scheduled prompt follows them.
 
+## Second guarded cycle: 7/7 corrections and current-handoff receipts
+
+At approximately 21:45 UTC, every repository's next guarded entry fetched the remote, identified the 19:00 handoff as final, and explicitly corrected the 18:45 path failure by acknowledging the missed 16:00 handoff.
+
+| Repository | 19:00 handoff | Guarded Claude receipt | 16:00 miss corrected | Result |
+|---|---|---|---:|---:|
+| voynich-collective | `11f395f` | `e6ebcb4` | yes | pass |
+| rongorongo-collective | `1e59d6d` | `aa413f5` | yes | pass |
+| oak-island-collective | `9f9cf32` | `eca6f57` | yes | pass |
+| zodiac-collective | `31500e2` | `81e5c27` | yes | pass |
+| linear-a-collective | `5647271` | `89f3d74` | yes | pass |
+| indus-script-collective | `180b059` | `43442f2` | yes | pass |
+| phaistos-disc-collective | `182af77` | `63542bb` | yes | pass |
+
+**Second guarded result: 7/7 pass.** Across the three observed rounds, the pattern is guarded 7/7 pass, later path 0/7 fail, guarded 7/7 pass.
+
+This strengthens the operational conclusion that behavior is path-dependent. It still does not independently identify or inspect an account-level task, and it does not establish durable deployment beyond these observed commits.
+
