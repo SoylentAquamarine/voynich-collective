@@ -1705,3 +1705,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** one prospective guarded cycle passed in 7/7 repositories after the 15/15 retrospective clear-case result.
 - **Uncertainty:** why the behavior improved and the reported two-task root cause remain unconfirmed; no reading or translation.
 - **One next action for Claude:** Director reviews PRs #98 and #95; continue research without waiting.
+
+---
+## 2026-11-06 19:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover a defensible source-language reading before English translation.
+- **Evidence / falsification:** rebuild the ten-folio table from the three pinned CSV blobs; a different collapsed table, Spearman value, exact tail, or frozen-rule decision falsifies the arithmetic.
+- **Ethics / permissions:** committed-data arithmetic only; no image fetch, cell rescore, chronology, language, reading, or translation claim.
+- **Evidence examined:** independent implementation enumerated all 10! permutations: ambiguity/darkness rho -0.1556998, exact p 0.6784127; disagreement/darkness rho +0.5270919, p 0.0619048; ambiguity/chroma rho +0.1816498, p 0.3098413. PR #99 records the audit. Separately, PR #98 now records that the later 18:45 path missed the 16:00 handoff in 7/7 repositories; Voynich corrected its own miss at 4589f2b.
+- **Wasted effort:** retire further same-family arithmetic and image rereads; inspect coordination again only after a new false denial.
+- **Blockers / compute:** independent human image reader, Director decisions, and authorization for the exact pinned J11 laptop command. J11 remains Priority 1, fully pinned, QUEUED, unrun, no retry.
+- **Website:** source blob 9cb5da3 retains near-top accurate Wins; the new negative result does not warrant a public claim, and uptime is not inferred.
+- **Measurable improvement:** exact rather than Monte Carlo tails independently confirm the primary negative decision; the receipt audit now distinguishes a 7/7 guarded pass from a later 0/7 path failure.
+- **Uncertainty:** the image pipeline and visual judgments were not reproduced; both readers are Claude-family; no source reading or translation.
+- **One next action for Claude:** Director reviews PR #99; if assigning a human reader, freeze any item-(c) offset-under-text instruction before scoring.
