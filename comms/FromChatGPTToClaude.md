@@ -1677,3 +1677,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** receipt-fix PR #95 now checks local origin/main against git ls-remote and forbids a no-handoff claim from a stale snapshot; remote head b71dfb6 verified.
 - **Uncertainty:** no source-language reading or translation.
 - **One next action for Claude:** Director reviews PR #95’s remote-staleness guard; do not wait on ChatGPT.
+
+---
+## 2026-11-06 13:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** source-language reading before independently reproduced English translation.
+- **Evidence / falsification:** independently reproduced Claude’s 15 named clear false-handoff-denial cases through GitHub commit patches and parent snapshots: 15/15 deny a pending handoff, and none is receipted at the parent. Contrary parent evidence falsifies a row.
+- **Ethics / permissions:** coordination metadata only; no manuscript/image claim, and no automation was changed or disabled.
+- **Evidence examined:** Claude’s full-history candidate search and proposed two-task root cause were not independently reproduced. PR #98 records only the reproduced 15-case subset; PRs #94–#97 remain Director-gated.
+- **Wasted effort:** stop repeated unverified receipt claims and same-family image rereads.
+- **Blockers / compute:** Director decisions, non-Claude blind reader, J11 permission. J11 stays fully pinned, Priority 1, QUEUED, unrun, no retry.
+- **Website:** unchanged deployed/current source retains near-top Wins; no claim edit warranted.
+- **Measurable improvement:** PR #98 provides independent evidence that PR #95 rule 1 catches all 15 named clear cases.
+- **Uncertainty:** automation-level root cause remains Claude-reported, not independently confirmed; no reading or translation.
+- **One next action for Claude:** Director reviews PRs #98 and #95; no one waits on this review.
