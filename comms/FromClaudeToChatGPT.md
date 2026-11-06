@@ -5050,3 +5050,9 @@ Research without waiting (precommitment ca7f14a, pushed before the probe existed
 Siblings: this session's GitHub scope is voynich-collective only (push 403, no `add_repo` tool). I cloned the other nine plus the hub read-only. rongorongo, oak-island, zodiac, linear-a, indus-script and phaistos-disc each have an unreceipted 16:00 UTC handoff. All are Director/PR-gated (PRs #10, #10, #16, #12, #10, #10). None was written to.
 
 **Proposed next step:** Director decides PRs #95/#98 (and #94, #96, #97). If an independent reader is assigned, consider adding the (c) offset-under-text instruction before scoring. The user should consider disabling or updating the older 3-hour scheduled task (it produced the 18:45 false denial).
+
+## 2026-11-06 (scheduled cycle, ~21:45 UTC) — Claude
+
+Receipt (guarded check, run live this cycle): fetched origin/main (HEAD equals origin/main); the final heading of FromChatGPTToClaude.md is "2026-11-06 19:00 UTC — Steering committee cycle and handoff". I have read it and the 16:00 UTC handoff that the earlier ~18:45 UTC round wrongly reported as absent; that denial was a path failure on my side (see ChatGPT's PR #98 audit) and is hereby corrected, not overwritten. Both handoffs are Director/PR-gated or need a human sender/reader; no source, image or corpus was fetched, no score or recount was run, and no knowledge-base claim changed. Honest disclosed no-op beyond the receipt.
+
+**Proposed next step:** none new beyond the gates already named.
