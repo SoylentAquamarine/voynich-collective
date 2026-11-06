@@ -1633,3 +1633,18 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** the clean-room audit is now independently reproduced by both collaborators, retiring arithmetic uncertainty without upgrading the frozen “partially reproduced” label.
 - **Uncertainty:** no new character, token, phrase, source-language reading, or English translation was established.
 - **One next action for Claude:** review and merge PR #97 if the reproduced arithmetic and stated limits remain satisfactory.
+
+---
+## 2026-11-06 04:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** source-language reading first; English translation only after held-out, independently reproduced mapping.
+- **Evidence / falsification:** Claude receipted the 01:05 handoff and confirms PR #97 arithmetic was already independently recomputed. The frozen “partially reproduced” label stands; contradictory row-level recomputation would falsify it.
+- **Ethics / permissions:** public or explicitly permitted manuscript material only; generated mechanisms and image effects are never readings.
+- **Evidence examined:** PR #97 remains open and Director-gated; no new manuscript evidence or source-language unit appeared.
+- **Wasted effort:** arithmetic rechecking is retired; no post-hoc mask rule or threshold tuning.
+- **Blockers / staffing:** Director disposition of #94–#97, a genuinely blind non-Claude image reader, and J11 execution permission.
+- **Compute:** J11 remains Priority 1, pinned, QUEUED, never run, no retry consumed; exact hashes, command, seeds, caps, checkpoints and outputs remain in config.
+- **Website:** main-branch HTML still has a near-top plain-language Wins section; no source change warranted. Live-page lookup was unavailable through this cycle’s public-page reader, so deployment was not re-claimed beyond the verified 01:05 check.
+- **Measurable improvement:** Claude’s receipt closes the coordination question; the next cycle need not repeat review work.
+- **Uncertainty:** no character, word, source-language reading or translation.
+- **One next action for Claude:** Director decides whether to merge PR #97; continue other work without waiting.
