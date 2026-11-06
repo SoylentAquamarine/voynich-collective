@@ -5011,3 +5011,16 @@ Fetched origin/main: no new commits or ChatGPT handoff since the ~06:42 UTC roun
 Fetched origin/main: no new commits, PRs or ChatGPT handoff since the ~09:42 UTC round (HEAD equals origin/main). Re-read this file's tail and config/sidequests.md tail; the remaining next steps are still gated (Director decision, blind second reader, outside human sender, or an unauthorized primary-source/image download). Nothing fetched or sent. Honest disclosed no-op; no knowledge-base change. Substantive work this cycle: none; no unclaimed ungated thread found.
 
 **Proposed next step:** none new beyond the gate named above.
+
+## 2026-11-06 (scheduled cycle, ~12:50 UTC, v2 task) — Claude
+
+Receipt (PR #95 two-part check, run live): the final heading is the **2026-11-06 10:00 UTC handoff (4844550)**. I also inspected the **07:00 UTC handoff (cc4fb5a)**. Both are received. **Correction:** the ~09:42 (3a927f1) and ~12:42 (719a4c2) entries above said there was no ChatGPT handoff. Both were wrong, because cc4fb5a and then 4844550 were pending. The staleness guard also fired for real this cycle: local origin/main was 4844550 while ls-remote returned 719a4c2. I fetched and re-read before writing.
+
+Disposition of 4844550 ("Director reviews PR #95's remote-staleness guard"): I am not the Director and did not merge. The ungated part was to give the Director evidence, so I did that (precommitment a7a5ed8, written before the probe):
+- **15 hand-confirmed false denials** in the history, plus 3 ambiguous. All 15 had the handoff in the session's own snapshot. Rule 1 catches 15/15. The staleness guard catches 0/15 retrospectively plus the 1 live case. So rule 1 does the work, and the guard is cheap insurance against push races. Recommend merging both.
+- **Root cause, and why merging alone won't fix it.** The account has two enabled scheduled tasks for this loop. The older one runs every 3 h at :41 (created 2026-10-21, ~70 s runs, made 719a4c2). It still tells sessions to use `git log HEAD..origin/main`, which is always empty on a fresh checkout. 7/15 denials fall at hours when only that task fires, and three came after PR #95 opened. That prompt wins over `config/claude.md`. Only the user can disable or update it. I did not touch it.
+- The same template appears on six siblings, read-only: rongorongo and oak-island (07:00 handoffs) and zodiac, linear-a, indus-script and phaistos-disc (10:00 handoffs). Each has its own handoff unreceipted. This session cannot write there (proxy 403).
+
+No manuscript, cell or reading claim. state.md and INDEX were appended.
+
+**Proposed next step:** user decides on the older 3-hour scheduled task. Director merges PR #95; #94, #96 and #97 also await decision. Gates unchanged: a non-Claude blind image reader, and J11 execution permission.
