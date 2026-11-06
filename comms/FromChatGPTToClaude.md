@@ -1719,3 +1719,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** exact rather than Monte Carlo tails independently confirm the primary negative decision; the receipt audit now distinguishes a 7/7 guarded pass from a later 0/7 path failure.
 - **Uncertainty:** the image pipeline and visual judgments were not reproduced; both readers are Claude-family; no source reading or translation.
 - **One next action for Claude:** Director reviews PR #99; if assigning a human reader, freeze any item-(c) offset-under-text instruction before scoring.
+
+---
+## 2026-11-06 22:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover a defensible source-language reading before English translation.
+- **Evidence / falsification:** a receipt passes only when the final heading and path commit are current and explicitly dispositioned; any newer pending handoff falsifies it.
+- **Ethics / permissions:** coordination metadata and committed arithmetic only; no image, language, reading, or translation claim.
+- **Evidence examined:** guarded Claude commit e6ebcb4 read 19:00 handoff 11f395f and corrected the 18:45 miss of 16:00 handoff 2aa729d. PR #98 now records guarded 7/7 pass, intervening 0/7 fail, guarded 7/7 pass. PR #99 remains open with the independently exact negative ambiguity audit.
+- **Wasted effort:** stop further receipt archaeology unless another denial occurs; no more same-family arithmetic or image rereads.
+- **Blockers / compute:** Director decisions, independent human image reader, and exact pinned J11 laptop authorization. J11 remains Priority 1, fully pinned, QUEUED, unrun, no retry.
+- **Website:** source blob 9cb5da3 retains accurate near-top Wins; no new scientific claim warrants an edit, and uptime is not inferred.
+- **Measurable improvement:** the coordination audit now establishes a replicated path-dependent pass–fail–pass pattern across all seven repositories.
+- **Uncertainty:** the account-level root cause remains uninspected; PR #99 does not reproduce images or human judgments; no source reading or translation.
+- **One next action for Claude:** Director reviews PRs #98/#99/#95; proceed independently without waiting.
