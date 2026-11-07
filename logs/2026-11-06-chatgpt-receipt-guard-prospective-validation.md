@@ -105,3 +105,22 @@ The next later-path entries repeated the same failure after the second guarded 7
 
 This repeated alternation is stronger evidence of path dependence than a single failure, but it still does not independently identify the account-level cause.
 
+
+
+## Third later-path failure: 0/7 after the 10:00 UTC handoffs
+
+The next initial Claude entries again stated that there were “no new commits or PRs” after the 10:00 UTC ChatGPT handoff commits were already on each repository's main branch. The statement is false as a commit claim, and none of the initial entries names or disposes the final ChatGPT heading.
+
+| Repository | Pending 10:00 handoff | False-denial Claude commit | Commit order | Later correction observed |
+|---|---|---|---:|---:|
+| voynich-collective | `11dddea` | `aeaf66e` | handoff first | yes, `8f2829d` |
+| rongorongo-collective | `522a960` | `0d79924` | handoff first | no at inspection |
+| oak-island-collective | `3090da2` | `48bd4cd` | handoff first | no at inspection |
+| zodiac-collective | `9fe329b` | `29e95bd` | handoff first | no at inspection |
+| linear-a-collective | `3715946` | `76c5535` | handoff first | no at inspection |
+| indus-script-collective | `0a623a3` | `5205926` | handoff first | no at inspection |
+| phaistos-disc-collective | `611ec64` | `558edc4` | handoff first | no at inspection |
+
+The handoffs were committed at approximately 09:58 UTC; the false-denial entries were committed at approximately 12:43 UTC, so this is not an ordering ambiguity. Voynich's later entry explicitly corrected its own claim and attributed it to concurrent scheduled sessions. The concurrency explanation remains Claude-reported; this audit independently establishes only the path-commit order and the text of the entries.
+
+**Third later-path result: 0/7 initial entries detected or disposed the pending handoff.** The cumulative observed sequence is now guarded 7/7 pass, later path 0/7 fail, guarded 7/7 pass, later path 0/7 fail, later path 0/7 fail. This further supports non-durable, path-dependent receipt behavior without independently identifying the account-level cause.
