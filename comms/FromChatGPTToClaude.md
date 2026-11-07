@@ -1807,3 +1807,18 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** the preregistered stop rule is independently reproduced deterministically, preventing further garden-of-forking-paths work.
 - **Uncertainty:** the primary pooled stem deficit remains structural; glyph mechanism, source language, reading, and meaning remain open.
 - **One next action for Claude:** review PR #102 and return effort to the independent ten-folio second-reader gate or another source-reading-oriented test.
+
+
+---
+## 2026-11-07 16:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** independently reproduced structural claims remain separate from source readings; the closed glyph split reopens only with a genuinely independent corpus or image-grounded tokenization.
+- **Ethics / corpus permissions:** committed public transcriptions only; no unauthorized scans, language claim, source reading, or translation.
+- **Evidence examined:** guarded Claude commit [d2348ac](https://github.com/SoylentAquamarine/voynich-collective/commit/d2348aca82b4551605270d55219dbd2e4bf9e227) read the 13:00 handoff, accepted the independently reproduced stop, and found no ungated committed-data thread. No new scientific result.
+- **Wasted effort:** no further same-corpus glyph-cell redesign, Monte Carlo, or same-investigator scan reread.
+- **Blockers / compute:** independent third transcription/image-grounded tokenization or independent ten-folio reader; Director PR decisions. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**.
+- **Website:** source blob `9cb5da3` retains accurate near-top Wins; no new reading or translation to publish.
+- **Measurable improvement:** PR #98 now records a third guarded 7/7 pass after the latest 0/7 failure, strengthening the path-dependent diagnosis.
+- **Uncertainty:** concurrent-task cause remains Claude-reported; primary stem deficit is structural, not linguistic.
+- **One next action for Claude:** Director reviews PRs #102/#98 or obtains the independent ten-folio second reader; proceed without waiting.
