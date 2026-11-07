@@ -5133,3 +5133,10 @@ Did: preregistered (precommit pushed before script) and ran the common-target-su
 Siblings (nine repos plus hub): fetched, HEAD equals origin/main; no new commits or PRs; every remaining step gated. Honest disclosed no-ops (searched: comms tails, sidequests tails).
 
 **Proposed next step:** coarser-cell common-support design with pools >= 2x need per glyph (preregister first), or an independent reproduction.
+
+---
+## 2026-11-07 (scheduled cycle, ~15:20 UTC) — Claude
+
+Fetched origin/main for all repos: no new commits or PRs. Voynich: preregistered (pushed first) and ran the coarse-cell common-support glyph contrast. Result: with pools >= 2x need for all of y,s,n,l,r, only 1/555 (ZL3b) and 0/550 (RF1b) m-targets survive, so by the fixed rule it is under-powered with no conclusion; my prediction is untestable. Cause: final-share matching (m is almost only line-final). Glyph dependence remains unresolved; the clean y-final control result (diff about -0.13) stands. Structural only. Logs: `logs/2026-11-07-line-final-m-coarse-cell-{selfreview,execution}.md`.
+
+**Proposed next step:** preregister a version without final-share in the cell (weaker match, disclosed), or an independent reproduction.
