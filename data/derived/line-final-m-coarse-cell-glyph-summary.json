@@ -1,0 +1,268 @@
+{
+ "zl": {
+  "targets": 555,
+  "kept": 0,
+  "coverage": 0.0,
+  "cells": {
+   "(0, 1, 0)": {
+    "need": 17,
+    "eligible": false,
+    "y": "29tok/29typ",
+    "n": "4tok/4typ",
+    "l": "3tok/3typ",
+    "r": "7tok/7typ",
+    "s": "9tok/9typ"
+   },
+   "(0, 1, 1)": {
+    "need": 74,
+    "eligible": false,
+    "y": "120tok/120typ",
+    "n": "21tok/21typ",
+    "l": "34tok/34typ",
+    "r": "40tok/40typ",
+    "s": "29tok/29typ"
+   },
+   "(0, 1, 2)": {
+    "need": 75,
+    "eligible": false,
+    "y": "159tok/159typ",
+    "n": "70tok/70typ",
+    "l": "47tok/47typ",
+    "r": "29tok/29typ",
+    "s": "23tok/23typ"
+   },
+   "(1, 0, 0)": {
+    "need": 1,
+    "eligible": false,
+    "y": "11tok/11typ",
+    "n": "0tok/0typ",
+    "l": "0tok/0typ",
+    "r": "2tok/2typ",
+    "s": "2tok/2typ"
+   },
+   "(1, 0, 1)": {
+    "need": 3,
+    "eligible": false,
+    "y": "19tok/19typ",
+    "n": "6tok/6typ",
+    "l": "8tok/8typ",
+    "r": "12tok/12typ",
+    "s": "2tok/2typ"
+   },
+   "(1, 1, 0)": {
+    "need": 21,
+    "eligible": false,
+    "y": "27tok/17typ",
+    "n": "3tok/2typ",
+    "l": "5tok/4typ",
+    "r": "3tok/2typ",
+    "s": "6tok/3typ"
+   },
+   "(1, 1, 1)": {
+    "need": 65,
+    "eligible": false,
+    "y": "69tok/43typ",
+    "n": "12tok/8typ",
+    "l": "21tok/17typ",
+    "r": "8tok/8typ",
+    "s": "2tok/2typ"
+   },
+   "(1, 1, 2)": {
+    "need": 13,
+    "eligible": false,
+    "y": "32tok/24typ",
+    "n": "22tok/16typ",
+    "l": "4tok/3typ",
+    "r": "6tok/5typ",
+    "s": "0tok/0typ"
+   },
+   "(2, 0, 0)": {
+    "need": 9,
+    "eligible": false,
+    "y": "29tok/19typ",
+    "n": "4tok/2typ",
+    "l": "34tok/14typ",
+    "r": "18tok/10typ",
+    "s": "7tok/4typ"
+   },
+   "(2, 0, 1)": {
+    "need": 4,
+    "eligible": false,
+    "y": "90tok/55typ",
+    "n": "22tok/14typ",
+    "l": "16tok/12typ",
+    "r": "15tok/11typ",
+    "s": "1tok/1typ"
+   },
+   "(2, 1, 0)": {
+    "need": 95,
+    "eligible": false,
+    "y": "53tok/9typ",
+    "n": "15tok/2typ",
+    "l": "0tok/0typ",
+    "r": "11tok/3typ",
+    "s": "0tok/0typ"
+   },
+   "(2, 1, 1)": {
+    "need": 44,
+    "eligible": false,
+    "y": "31tok/6typ",
+    "n": "0tok/0typ",
+    "l": "0tok/0typ",
+    "r": "0tok/0typ",
+    "s": "0tok/0typ"
+   },
+   "(3, 1, 0)": {
+    "need": 113,
+    "eligible": false,
+    "y": "102tok/5typ",
+    "n": "0tok/0typ",
+    "l": "0tok/0typ",
+    "r": "0tok/0typ",
+    "s": "0tok/0typ"
+   },
+   "(3, 1, 1)": {
+    "need": 21,
+    "eligible": false,
+    "y": "9tok/1typ",
+    "n": "0tok/0typ",
+    "l": "0tok/0typ",
+    "r": "0tok/0typ",
+    "s": "0tok/0typ"
+   }
+  },
+  "S_m_all": 0.3783783783783784,
+  "verdict": "NOT EVALUABLE (coverage < 0.50; stop rule)"
+ },
+ "rf": {
+  "targets": 550,
+  "kept": 0,
+  "coverage": 0.0,
+  "cells": {
+   "(0, 1, 0)": {
+    "need": 20,
+    "eligible": false,
+    "y": "45tok/45typ",
+    "n": "5tok/5typ",
+    "l": "8tok/8typ",
+    "r": "13tok/13typ",
+    "s": "10tok/10typ"
+   },
+   "(0, 1, 1)": {
+    "need": 91,
+    "eligible": false,
+    "y": "143tok/143typ",
+    "n": "24tok/24typ",
+    "l": "29tok/29typ",
+    "r": "38tok/38typ",
+    "s": "24tok/24typ"
+   },
+   "(0, 1, 2)": {
+    "need": 90,
+    "eligible": false,
+    "y": "182tok/182typ",
+    "n": "102tok/102typ",
+    "l": "50tok/50typ",
+    "r": "33tok/33typ",
+    "s": "26tok/26typ"
+   },
+   "(1, 0, 1)": {
+    "need": 3,
+    "eligible": false,
+    "y": "26tok/26typ",
+    "n": "5tok/5typ",
+    "l": "7tok/7typ",
+    "r": "8tok/8typ",
+    "s": "2tok/2typ"
+   },
+   "(1, 1, 0)": {
+    "need": 36,
+    "eligible": false,
+    "y": "37tok/21typ",
+    "n": "4tok/3typ",
+    "l": "2tok/2typ",
+    "r": "4tok/3typ",
+    "s": "8tok/5typ"
+   },
+   "(1, 1, 1)": {
+    "need": 59,
+    "eligible": false,
+    "y": "73tok/47typ",
+    "n": "19tok/12typ",
+    "l": "23tok/17typ",
+    "r": "18tok/16typ",
+    "s": "3tok/3typ"
+   },
+   "(1, 1, 2)": {
+    "need": 6,
+    "eligible": false,
+    "y": "29tok/22typ",
+    "n": "19tok/15typ",
+    "l": "1tok/1typ",
+    "r": "6tok/5typ",
+    "s": "2tok/1typ"
+   },
+   "(2, 0, 0)": {
+    "need": 6,
+    "eligible": false,
+    "y": "34tok/21typ",
+    "n": "9tok/4typ",
+    "l": "33tok/15typ",
+    "r": "26tok/13typ",
+    "s": "9tok/3typ"
+   },
+   "(2, 0, 1)": {
+    "need": 5,
+    "eligible": false,
+    "y": "110tok/64typ",
+    "n": "29tok/16typ",
+    "l": "13tok/9typ",
+    "r": "15tok/11typ",
+    "s": "1tok/1typ"
+   },
+   "(2, 1, 0)": {
+    "need": 77,
+    "eligible": false,
+    "y": "42tok/10typ",
+    "n": "9tok/1typ",
+    "l": "0tok/0typ",
+    "r": "8tok/2typ",
+    "s": "3tok/1typ"
+   },
+   "(2, 1, 1)": {
+    "need": 33,
+    "eligible": false,
+    "y": "26tok/5typ",
+    "n": "0tok/0typ",
+    "l": "0tok/0typ",
+    "r": "0tok/0typ",
+    "s": "0tok/0typ"
+   },
+   "(3, 1, 0)": {
+    "need": 104,
+    "eligible": false,
+    "y": "99tok/6typ",
+    "n": "0tok/0typ",
+    "l": "0tok/0typ",
+    "r": "0tok/0typ",
+    "s": "0tok/0typ"
+   },
+   "(3, 1, 1)": {
+    "need": 20,
+    "eligible": false,
+    "y": "0tok/0typ",
+    "n": "0tok/0typ",
+    "l": "0tok/0typ",
+    "r": "0tok/0typ",
+    "s": "0tok/0typ"
+   }
+  },
+  "S_m_all": 0.3418181818181818,
+  "verdict": "NOT EVALUABLE (coverage < 0.50; stop rule)"
+ },
+ "_meta": {
+  "seed": 20261107,
+  "draws": 5000,
+  "precommit": "logs/2026-11-07-line-final-m-coarse-cell-glyph-selfreview.md"
+ }
+}
