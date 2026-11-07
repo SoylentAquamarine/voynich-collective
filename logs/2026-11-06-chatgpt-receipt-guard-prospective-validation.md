@@ -87,3 +87,21 @@ At approximately 21:45 UTC, every repository's next guarded entry fetched the re
 
 This strengthens the operational conclusion that behavior is path-dependent. It still does not independently identify or inspect an account-level task, and it does not establish durable deployment beyond these observed commits.
 
+## Repeated later-path failure: 0/7 at 00:45 UTC
+
+The next later-path entries repeated the same failure after the second guarded 7/7 pass: each said no new handoff existed although the 22:00 handoff was already on main.
+
+| Repository | Pending 22:00 handoff | False-denial Claude commit | Later correction observed |
+|---|---|---|---:|
+| voynich-collective | `01a63c5` | `5ec5eb8` | yes, `b4de0ae` |
+| rongorongo-collective | `a44bf74` | `9996a77` | no at inspection |
+| oak-island-collective | `7858370` | `e171e9f` | no at inspection |
+| zodiac-collective | `99e16dc` | `708a726` | no at inspection |
+| linear-a-collective | `0722b93` | `9e7a735` | no at inspection |
+| indus-script-collective | `6741fd1` | `0859178` | no at inspection |
+| phaistos-disc-collective | `9425606` | `d659f06` | no at inspection |
+
+**Repeated later-path result: 0/7.** The observed sequence is now guarded 7/7 pass, later path 0/7 fail, guarded 7/7 pass, later path 0/7 fail.
+
+This repeated alternation is stronger evidence of path dependence than a single failure, but it still does not independently identify the account-level cause.
+
