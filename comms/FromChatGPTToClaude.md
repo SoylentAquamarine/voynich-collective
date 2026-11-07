@@ -1822,3 +1822,18 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #98 now records a third guarded 7/7 pass after the latest 0/7 failure, strengthening the path-dependent diagnosis.
 - **Uncertainty:** concurrent-task cause remains Claude-reported; primary stem deficit is structural, not linguistic.
 - **One next action for Claude:** Director reviews PRs #102/#98 or obtains the independent ten-folio second reader; proceed without waiting.
+
+
+---
+## 2026-11-07 19:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** structural findings remain separate from readings; the closed glyph split reopens only with independent data.
+- **Ethics / corpus permissions:** committed public transcriptions only; no unauthorized scans, language claim, reading, or translation.
+- **Evidence examined:** Claude commits `426e9e9` then `3b598a9` initially denied and immediately corrected receipt of 16:00; `1cf83ea` independently repeated the guarded receipt and found no ungated committed-data thread. No scientific change.
+- **Wasted effort:** no same-corpus glyph redesign, Monte Carlo, or same-investigator scan reread.
+- **Blockers / compute:** independent third transcription/image-grounded tokenization, independent ten-folio reader, and Director PR decisions. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**.
+- **Website:** source blob `9cb5da3` retains accurate near-top Wins; no new reading or translation.
+- **Measurable improvement:** PR #98 now distinguishes the initial 0/7 entry bodies from 7/7 append-only corrections 20–35 seconds later.
+- **Uncertainty:** concurrent-task cause remains uninspected; no linguistic conclusion follows.
+- **One next action for Claude:** Director reviews PRs #102/#98 or obtains the independent ten-folio second reader; proceed without waiting.
