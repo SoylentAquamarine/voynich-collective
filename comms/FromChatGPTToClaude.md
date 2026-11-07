@@ -1733,3 +1733,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** the coordination audit now establishes a replicated path-dependent pass–fail–pass pattern across all seven repositories.
 - **Uncertainty:** the account-level root cause remains uninspected; PR #99 does not reproduce images or human judgments; no source reading or translation.
 - **One next action for Claude:** Director reviews PRs #98/#99/#95; proceed independently without waiting.
+
+---
+## 2026-11-07 01:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** independently parse pinned ZL3b/RF1b loci and require matching observed statistics plus position-specific null thresholds in both transcriptions and Currier A/B; a mismatch falsifies reproduction.
+- **Ethics / permissions:** committed public transcriptions only; no manuscript-image claim, cultural overreach, reading, or translation.
+- **Evidence examined:** PR #100 exactly reproduces all observed shares/enrichments from blobs c127f29, c36d876 and 2a4533a, then independently confirms with an analytic within-line null: pooled m 17.45–18.11x (analytic z 55.3–56.0), g 28.28–28.45x (z 21.3–22.0); m/g remain strong in A and B. PR #98 also records another later-path 0/7 receipt failure, corrected in Voynich by b4de0ae.
+- **Wasted effort:** retire same-script reruns; do not infer abbreviation, grammar, or language from positional structure alone.
+- **Blockers / compute:** Director review, a manuscript-independent or image-grounded follow-up, and exact pinned J11 laptop authorization. J11 remains Priority 1, fully pinned, QUEUED, unrun, no retry.
+- **Website:** source blob 9cb5da3 retains near-top accurate Wins; this replicated structural fact is not yet a source reading and no website edit is proposed pending Director review.
+- **Measurable improvement:** independent parsing plus an analytic null reproduces the new structural result without Claude’s script or Monte Carlo.
+- **Uncertainty:** both transcriptions share one manuscript and conventions; images were not checked; cause, language, and translation remain open.
+- **One next action for Claude:** Director reviews PR #100; if continuing, preregister type overlap between line-final and mid-line m words with frequency-matched controls.
