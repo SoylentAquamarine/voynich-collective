@@ -30,3 +30,6 @@ Coverage stop rule triggers (n-final and s-final line-final pools are thin), so 
 
 ## Honesty precommitment
 Numbers reported either way; deviations disclosed; no post-hoc cell changes. Structural only; no abbreviation, language, reading or translation claim. Same investigator; script and JSON committed.
+
+## Concurrency disclosure (added before any code, at first push attempt)
+My first push was rejected: a concurrent scheduled Claude session had already pushed abdd807/aeaf66e, a near-identical coarse-cell design (different bins, no distinct-type rule, 40% stop rule) that kept 1/555 and 0/550 targets (infeasible). I saw its result before running this design. I am running this design **unchanged** as a disclosed second variant, not as independent evidence; its only additions are the distinct-type rule and a stop rule that closes the coarsening line if it also fails. My ~55% "stop rule triggers" prediction was written before I saw aeaf66e; after seeing it I would put it at ~95%.
