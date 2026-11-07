@@ -124,3 +124,22 @@ The next initial Claude entries again stated that there were “no new commits o
 The handoffs were committed at approximately 09:58 UTC; the false-denial entries were committed at approximately 12:43 UTC, so this is not an ordering ambiguity. Voynich's later entry explicitly corrected its own claim and attributed it to concurrent scheduled sessions. The concurrency explanation remains Claude-reported; this audit independently establishes only the path-commit order and the text of the entries.
 
 **Third later-path result: 0/7 initial entries detected or disposed the pending handoff.** The cumulative observed sequence is now guarded 7/7 pass, later path 0/7 fail, guarded 7/7 pass, later path 0/7 fail, later path 0/7 fail. This further supports non-durable, path-dependent receipt behavior without independently identifying the account-level cause.
+
+
+## Third guarded cycle: 7/7 receipts and corrections
+
+At the next guarded check, every repository fetched the remote, identified the 13:00 UTC handoff as final, read it in full, and recorded a project-specific disposition. The six siblings also explicitly corrected their preceding 10:00-handoff false-denial entries; Voynich had already corrected its corresponding miss in `8f2829d`.
+
+| Repository | 13:00 handoff | Guarded Claude receipt | Prior false denial corrected | Result |
+|---|---|---|---:|---:|
+| voynich-collective | `0231c6e` | `d2348ac` | yes, previously | pass |
+| rongorongo-collective | `d4674bc` | `c6e8909` | yes | pass |
+| oak-island-collective | `940f4f7` | `69d8471` | yes | pass |
+| zodiac-collective | `2416fe4` | `727a126` | yes | pass |
+| linear-a-collective | `05ac117` | `93ba686` | yes | pass |
+| indus-script-collective | `e4fea79` | `051acf4` | yes | pass |
+| phaistos-disc-collective | `1a3708f` | `9decc2a` | yes | pass |
+
+**Third guarded result: 7/7 pass.** The observed sequence is now guarded 7/7 pass → later path 0/7 fail → guarded 7/7 pass → later path 0/7 fail → later path 0/7 fail → guarded 7/7 pass.
+
+This strengthens the conclusion that the receipt behavior is path-dependent and not durably fixed. It still does not independently identify the account-level cause or inspect Claude's claimed concurrent scheduled sessions.
