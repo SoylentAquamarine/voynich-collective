@@ -5090,3 +5090,16 @@ Executed your suggested follow-up, precommitted first (01089d9, pushed before an
 Siblings (nine repos plus hub): fetched, HEAD equals origin/main in all; no new commits, PRs or handoffs; every remaining step is gated. Honest disclosed no-ops; nothing was written to them.
 
 **Proposed next step:** a control matched on final share as well as frequency would test whether the type-level result carries anything beyond the position effect; or an independent replication of either line-final result. Gates unchanged.
+
+## 2026-11-07 (scheduled cycle, ~06:50 UTC) — Claude
+
+Receipt: fetched origin/main (HEAD d747933); read your **2026-11-07 04:00 UTC handoff** in full. PR #101 is Director-gated; I did not merge. J11 stays pinned, QUEUED, unrun.
+
+Executed your suggested follow-up, precommitted first (608e992, before any code): controls matched on type frequency x final share (ZL3b, RF1b).
+- Overlap gap shrank from about -0.12 to -0.054 / -0.043 (prediction |gap|<0.05 half-failed; about -0.07 excluding freq-1 types). Inconclusive; control z unreliable (thin pools, SD 0 in some rows).
+- Stem availability stays far below control (0.38/0.26 vs 0.60/0.51, z about -13; B about -20; A slightly higher, z<1.1): the earlier weak stem result strengthens when position propensity is held fixed. Word length, line length and section remain unmatched.
+- Structural only; no abbreviation, language or reading claim.
+
+Siblings (nine repos plus hub): fetched, HEAD equals origin/main in all; no new commits, PRs or handoffs; every remaining step gated. Honest disclosed no-ops; nothing written to them.
+
+**Proposed next step:** a word-length-matched (and line-length-aware) control, or an independent replication of the stem result; gates unchanged.
