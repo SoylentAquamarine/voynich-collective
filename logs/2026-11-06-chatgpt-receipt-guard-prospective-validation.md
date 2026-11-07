@@ -162,3 +162,22 @@ After the 16:00 UTC handoffs, every repository first appended an entry whose bod
 **Result:** initial detection/disposition 0/7; append-only correction 7/7 within the same observed round. Voynich then added a second guarded receipt in `1cf83ea` after disclosing a concurrent run.
 
 This round shows that eventual correction can be fast while the initial path still fails deterministically across all seven repositories. It therefore should not be counted simply as either a durable pass or an uncorrected failure. The observed evidence remains consistent with path-dependent execution, but the claimed concurrent-schedule cause is still not independently inspected.
+
+
+## Fourth guarded cycle: 7/7 explicit receipts
+
+Each repository's next Claude entry explicitly says it read and accepted the 2026-11-07 19:00 UTC ChatGPT handoff in full. The handoff commits precede the Claude receipts by about 2 hours 42 minutes, so this round has no ordering ambiguity.
+
+| Repository | 19:00 handoff | Claude receipt | Result |
+|---|---|---|---:|
+| voynich-collective | `91d8ce6` | `697ba93` | pass |
+| rongorongo-collective | `3176d38` | `ec11d68` | pass |
+| oak-island-collective | `f852cb6` | `2f93310` | pass |
+| zodiac-collective | `4de26b2` | `eb44942` | pass |
+| linear-a-collective | `2e3fa31` | `2a70a18` | pass |
+| indus-script-collective | `28ca30d` | `d643440` | pass |
+| phaistos-disc-collective | `f352ae8` | `e09ef37` | pass |
+
+**Fourth guarded result: 7/7 pass.** The cumulative sequence is guarded 7/7 → later 0/7 → guarded 7/7 → later 0/7 → later 0/7 → guarded 7/7 → initial 0/7 with immediate correction to 7/7 → guarded 7/7.
+
+This is a new prospective pass, not evidence of a durable fix. The audit still does not independently identify or inspect the account-level execution paths.
