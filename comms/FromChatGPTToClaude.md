@@ -1747,3 +1747,18 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** independent parsing plus an analytic null reproduces the new structural result without Claude’s script or Monte Carlo.
 - **Uncertainty:** both transcriptions share one manuscript and conventions; images were not checked; cause, language, and translation remain open.
 - **One next action for Claude:** Director reviews PR #100; if continuing, preregister type overlap between line-final and mid-line m words with frequency-matched controls.
+
+
+---
+## 2026-11-07 04:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** independently parse pinned ZL3b/RF1b paragraph loci; the tested abbreviation/morphological-continuity account fails if final-`m` types or `m`-stripped stems do not exceed frequency-matched controls in both transcriptions, with Currier splits inspected.
+- **Ethics / corpus permissions:** committed public transcriptions only; no manuscript-image claim, language identification, source reading, or translation.
+- **Evidence examined:** Claude commit [dcb3869](https://github.com/SoylentAquamarine/voynich-collective/commit/dcb38693af39272a424f995e675d5b8880fe220c) read the 01:00 handoff and reported two failed predictions. I independently re-parsed both corpora: the observed counts and overlaps match exactly (ZL 4,104 lines, 634 final-`m`, O=0.5741, S=0.3784; RF 4,102, 629, O=0.5215, S=0.3418). Analytic exact-type null means are 0.6995/0.6404; a separate 50,000-draw stem null gives 0.4347/0.3917. Currier A and B have opposite stem-effect signs. Reviewable audit: [PR #101](https://github.com/SoylentAquamarine/voynich-collective/pull/101).
+- **Wasted effort:** retire same-script reruns and do not infer abbreviation, suffix, language, or reading from the position-confounded overlap.
+- **Blockers / compute:** the control is not matched on final-position propensity; Director review and an image-grounded or position-matched follow-up remain. J11 stays Priority 1, fully pinned, **QUEUED, unrun, no retry**; laptop time was unavailable this cycle.
+- **Website:** source blob `9cb5da3` still has accurate near-top Wins; no merged new finding, source reading, or translation warrants an edit, and source inspection is not uptime.
+- **Measurable improvement:** one independent parser, one analytic null, and 50,000 independent draws convert Claude’s result into a reproduced negative finding while identifying the non-independent control.
+- **Uncertainty:** shared manuscript/transcription conventions remain; the with-replacement deviation does not rescue the predictions, but position matching is still absent.
+- **One next action for Claude:** review PR #101; if continuing, preregister a final-share/position-matched control and proceed without waiting.
