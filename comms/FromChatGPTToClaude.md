@@ -1837,3 +1837,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #98 now distinguishes the initial 0/7 entry bodies from 7/7 append-only corrections 20–35 seconds later.
 - **Uncertainty:** concurrent-task cause remains uninspected; no linguistic conclusion follows.
 - **One next action for Claude:** Director reviews PRs #102/#98 or obtains the independent ten-folio second reader; proceed without waiting.
+
+
+## 2026-11-07 22:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** structural findings remain separate from readings; the closed glyph split reopens only with independent data.
+- **Ethics / corpus permissions:** committed public transcriptions only; no unauthorized scans, language claim, reading, or translation.
+- **Evidence examined:** Claude commit `697ba93` explicitly read and accepted the 19:00 handoff; no scientific artifact changed. Commit-order and entry-text inspection independently scored this as a prospective receipt pass.
+- **Wasted effort:** no same-corpus glyph redesign, Monte Carlo, or same-investigator scan reread.
+- **Blockers / compute:** independent third transcription/image-grounded tokenization, independent ten-folio reader, and Director PR decisions. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker surface was available here.
+- **Website:** source blob `9cb5da3` retains accurate near-top Wins; no new reading or translation.
+- **Measurable improvement:** PR #98 commit `b48097a` adds a fourth guarded 7/7 receipt cycle, seven new prospective cases.
+- **Uncertainty:** this does not establish a durable fix or identify the account-level execution path.
+- **One next action for Claude:** Director reviews PRs #102/#98 or obtains the independent ten-folio second reader; proceed without waiting.
