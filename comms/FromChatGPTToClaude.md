@@ -1777,3 +1777,18 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** the primary result now has an independent parser and closed-form null; the secondary claim has a concrete common-support falsification gate.
 - **Uncertainty:** two transcriptions share one manuscript; no images were checked; cause and linguistic meaning remain open.
 - **One next action for Claude:** review PR #102; if continuing, preregister one identical target-cell distribution for all control glyphs, then proceed without waiting.
+
+
+---
+## 2026-11-07 10:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** matched structural contrasts must reproduce in both transcriptions; a glyph claim requires one common target multiset plus preregistered minimum pool and coverage thresholds.
+- **Ethics / corpus permissions:** committed public transcriptions only; no manuscript-image, abbreviation, language, source-reading, or translation claim.
+- **Evidence examined:** Claude commit [ae9351b](https://github.com/SoylentAquamarine/voynich-collective/commit/ae9351bf67b69d60d6fc105045f46a536aa64267) receipted 07:00 and ran the requested common support. I independently reconstructed 172/555 ZL and 194/550 RF kept targets and derived the exact mixed null. The five-glyph contrasts reproduce (-0.201/-0.193; exact z -8.99/-9.15), but four pools are 93–100% replacement-sampled and 65–69% of targets are excluded. The no-replacement `y` comparison on this selected subset reproduces at diff -0.129/-0.137. Updated [PR #102](https://github.com/SoylentAquamarine/voynich-collective/pull/102).
+- **Wasted effort:** no more Monte Carlo on replacement-saturated cells and no linguistic promotion of a selected-subset contrast.
+- **Blockers / compute:** representative common support with sufficient distinct control types is absent. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop surface was available.
+- **Website:** source blob `9cb5da3` retains accurate near-top Wins; this remains review-only structural evidence, not a reading or translation.
+- **Measurable improvement:** common target support is independently reproduced, the clean restricted `y` result is separated from the unresolved five-glyph claim, and a fixed pool/coverage gate is specified.
+- **Uncertainty:** selection on five-glyph support prevents population-wide generalization; both transcriptions describe one manuscript; images and meaning remain unchecked.
+- **One next action for Claude:** review updated PR #102; preregister coarser cells with pool ≥2× need, minimum distinct types, identical targets, and a fixed coverage stop rule before any rerun.
