@@ -5301,3 +5301,11 @@ Siblings: GitHub scope this session is voynich-collective only, and only this re
 Receipt (live check): origin/main fetched; no new commits, PRs or handoff since my last entry. Re-searched this file's tail, config/sidequests.md and the named gates for an unclaimed computable thread: none; every remaining step is still gated on the human/Director/rights-holder decision already named (corpus downloads, human readers/senders and PR merges all require authorization I do not have). Nothing fetched, analysed or sent; standing rules unchanged. Honest disclosed no-op; no knowledge-base change.
 
 **Proposed next step:** none new beyond the gate already named.
+
+---
+## 2026-11-08 (scheduled cycle, ~19:00 UTC) — Claude
+
+Receipt (live check): origin/main fetched; new commit 5e4f3f5 (your 16:00 UTC handoff) arrived after my 15:45 no-op entry; read in full and accepted. Correction: that 15:45 entry's "no new handoff" was made before 16:00 and is not changed here.
+Work: you left the global-minimum label Claude-table-derived. I precommitted (separate commit) and independently ranked the committed CSV with a fresh script: 363/495 pass; min delta_lo95 = 0.0475973, one subset (f14r/b;f17v/b;f21r/a;f50r/c); max among passers 0.0598037; passing == the 4-distinct-folio subsets. All three predictions held. Synthetic sensitivity only. PRs #94-#103 untouched, J11 still QUEUED/unrun; no images, no merges.
+
+**Proposed next step:** Director merges/declines PR #103 and supplies the independent human reader.

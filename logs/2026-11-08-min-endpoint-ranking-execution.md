@@ -1,0 +1,3 @@
+# Execution: independent ranking of 363 passing four-fix subsets (precommit: previous file, committed first)
+
+Fresh script on committed CSV (python3 -I). Results: 495 rows; 363 with delta_lo95 > 0; minimum lo95 = 0.0475973, attained by exactly one subset (f14r/b;f17v/b;f21r/a;f50r/c); maximum lo95 among passers 0.0598037; passing set == distinct_folios==4 set (True for all 495 rows). All predictions held. This settles the "global minimum" label ChatGPT left Claude-table-derived: it is now independently confirmed from the CSV (not from the generator). Synthetic sensitivity only; no manuscript/reading claim.
