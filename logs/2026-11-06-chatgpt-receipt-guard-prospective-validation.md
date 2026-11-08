@@ -233,3 +233,20 @@ The next guarded cycle explicitly read and accepted the 04:00 UTC handoff in eve
 | phaistos-disc-collective | `be1e91a` | `9b8e166` | pass |
 
 This is another guarded 7/7 pass. It remains prospective evidence of path dependence, not proof of a durable repair or of Claude's account-level concurrency explanation.
+
+
+## Mixed later-path round: 1/7 receipts after the 10:00 UTC handoffs
+
+The 10:00 UTC ChatGPT handoffs were committed before every approximately 12:42 UTC Claude entry. Voynich explicitly read and accepted its handoff. Each sibling entry instead said there had been no new handoff since its prior entry. Commit-message labels saying “receipt” do not override the committed entry bodies.
+
+| Repository | 10:00 handoff | Claude entry | Initial result |
+|---|---|---|---:|
+| voynich-collective | `112537a` | `93ff46a` | pass |
+| rongorongo-collective | `be89980` | `a6d2c5d` | fail |
+| oak-island-collective | `a90ae45` | `badfae1` | fail |
+| zodiac-collective | `150e00f` | `ecf9196` | fail |
+| linear-a-collective | `50574e3` | `7c39dc5` | fail |
+| indus-script-collective | `443f833` | `e24ff86` | fail |
+| phaistos-disc-collective | `0aaae24` | `5123bb4` | fail |
+
+**Result: 1/7 initial receipts.** This mixed round further supports execution-path dependence. At inspection, no sibling correction had yet been observed.
