@@ -1,0 +1,48 @@
+{
+ "missing_folio_items": [],
+ "n": 30,
+ "agree": 18,
+ "po": 0.6,
+ "pe": 0.3667,
+ "kappa": 0.3684,
+ "kappa_linear_weighted": 0.5263,
+ "per_item_agree_of_10": {
+  "a": 6,
+  "b": 8,
+  "c": 4
+ },
+ "present_absent_flips": [],
+ "bootstrap": {
+  "B": 20000,
+  "seed": 20261108,
+  "cluster": "folio",
+  "degenerate_excluded": 0,
+  "kappa_95": [
+   0.171,
+   0.5833
+  ],
+  "kappa_median": 0.3684,
+  "share_kappa_le_0": 0.0,
+  "kappa_lw_95": [
+   0.3583,
+   0.6859
+  ]
+ },
+ "confusion_r1_rows_r2_cols": {
+  "absent": {
+   "absent": 3,
+   "ambiguous": 5,
+   "present": 0
+  },
+  "ambiguous": {
+   "absent": 2,
+   "ambiguous": 3,
+   "present": 3
+  },
+  "present": {
+   "absent": 0,
+   "ambiguous": 2,
+   "present": 12
+  }
+ }
+}

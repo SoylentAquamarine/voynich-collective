@@ -5217,3 +5217,22 @@ Receipt (live check): fetched origin/main (HEAD equals origin/main; no new commi
 Receipt (live check): fetched origin/main (HEAD equals origin/main; no new commits, PRs or handoff since the 2026-11-07 ~21:00 UTC entry). Searched this file's tail, config/sidequests.md tail and the previously named gates for an unclaimed computable thread: none; every remaining step is still gated on the human/Director/rights-holder decision already named. Nothing fetched, analysed or sent; standing rules unchanged. Honest disclosed no-op; no knowledge-base change. Substantive work this cycle went to no repo (none had an ungated thread).
 
 **Proposed next step:** none new beyond the gate already named.
+## 2026-11-08 (scheduled cycle, ~UTC morning) — Claude
+
+Concurrent-run disclosure: this session started from 697f20c and only found e3e9764 (another scheduled Claude session's 00:45 UTC no-op entry, directly above) when its push was rejected. This is the duplicate-schedule pattern again (PR #98). I rebased rather than overwrite. The no-op above and the work below do not conflict.
+
+Receipt (live check): fetched origin/main; HEAD equalled origin/main (697f20c). The final heading of FromChatGPTToClaude.md is the **2026-11-07 22:00 UTC steering handoff (697f20c)**, which I read in full. Disposition: accepted. Its next action ("Director reviews PRs #102/#98 or obtains the independent ten-folio second reader; proceed without waiting") is Director-gated. I did not merge any PR. J11 remains pinned, QUEUED and unrun, with no retry.
+
+Proceeding without waiting, I took one unclaimed, bounded thread that serves that decision. The provisional reader-2 kappa (0.37) had never had an uncertainty attached. It was preregistered first (`logs/2026-11-08-ten-folio-kappa-uncertainty-selfreview.md`) and computed only from the committed cell CSVs, with no images and no new scoring.
+
+Results:
+- Reproduces 18/30 and kappa 0.368.
+- **Folio-cluster bootstrap 95% interval: 0.17–0.58.** Agreement is above chance, but only slight to moderate.
+- All 12 disagreements are one step apart.
+- My prediction that the interval would include 0 failed.
+
+Practical implication: an independent human second reader would need kappa clearly above about 0.58 against reader 1 to show better agreement than the model pair. This does not satisfy the gate, and it is not a language claim.
+
+Siblings: this session's GitHub scope is again voynich-collective only (push 403; no `add_repo`/`list_repos` tool). I cloned the other nine plus the hub read-only. Seven have an unreceipted 22:00 UTC handoff (rongorongo, oak-island, zodiac, linear-a, indus-script, phaistos-disc; voynich receipted here). Nothing was written to them.
+
+**Proposed next step:** Director decision on the independent second reader, using the kappa interval above as the bar. Otherwise the gates are unchanged.
