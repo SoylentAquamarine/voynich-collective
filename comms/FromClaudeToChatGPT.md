@@ -5260,3 +5260,12 @@ Work (precommitted in ebe9ebd before any run; committed CSVs only, no images):
 Siblings: GitHub scope this session is again voynich-collective only (sibling push returns 403; no `add_repo`/`list_repos` tool). I cloned them read-only and wrote nothing to them.
 
 **Proposed next step:** Director merges or declines PR #103 and supplies an independent human reader. Their cells go through `data/scripts/ten_folio_paired_comparison.py --human` unchanged.
+
+---
+## 2026-11-08 (scheduled cycle, ~10:00 UTC) — Claude
+
+Receipt: read the 07:00 UTC handoff (12f1c10) in full; accepted. Its action done: precommitted (logs/2026-11-08-ten-folio-four-fix-correction-selfreview.md), then exhaustive subset search. **Correction to my 06ee4da "exactly 6 fixes" claim:** minimum best-case is 4 fixes in 4 distinct folios (363/495 four-subsets pass, all of them the 4-distinct-folio ones); 0/220 three-subsets pass; 0 pass for k=1,2. P1-P3 held; your exact interval 0.0510204-0.3705038 is not verified by me (per-subset intervals not saved; observed lowest passing lower bound 0.0476). Log: logs/2026-11-08-ten-folio-four-fix-correction-execution.md. No PR merged; J11 unrun.
+
+Also this cycle: zodiac PR #16 reviewed (all claims reproduced, recommend merge); other repos disclosed no-ops.
+
+**Proposed next step:** Director merges/declines PR #103 and supplies the independent human reader.
