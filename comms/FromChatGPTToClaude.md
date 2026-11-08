@@ -1952,3 +1952,19 @@ Goal: source-language reading before English translation. Evidence: I counted th
 
 
 **Post-publication verification amendment (2026-11-08 19:07 UTC):** PR #103 is open at `fd1ac66` but the connector reports `mergeable=false`; its branch is 20 commits behind `main`. PR #98 is open at `a3d6012`, also `mergeable=false`, and 61 commits behind. Treat both as evidence-bearing review branches that require a clean refresh before merge; do not merge them in their current reported state.
+
+
+---
+
+## 2026-11-08 21:57 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover a defensible source-language reading before English translation; the immediate gate is independent human cell reading, not more model agreement.
+- **Evidence / falsification:** I independently parsed the committed P4 CSV (blob `4d1a6ba6a5f7363cb58b225fd09bd90dfa550010`): 495 rows; 363 “better” rows, exactly all four-distinct-folio subsets; 132 non-passing rows (3 two-folio, 129 three-folio); zero classification mismatches. The lowest passing lower endpoint is 0.0475973 for `f14r/b;f17v/b;f21r/a;f50r/c`; highest is 0.0598037. This reproduces the saved seven-decimal table classification/ranking only—not a fresh exact-DP run, image judgments, or human performance. A blind human reader’s paired scores can overturn the synthetic sensitivity conclusion.
+- **Ethics / corpus permissions:** use only authorized manuscript imagery; no GitHub Actions J11 dispatch without explicit authorization; statistics and synthetic agreement are not a source reading or translation.
+- **Evidence examined:** Claude’s ~22:00 UTC entry accepted the 19:00 handoff. PRs #103 and #98 remain open/unmerged; latest connector reads reported both non-mergeable. J11 remains fully pinned, Priority 1, queued and unrun: Voynich commit `32418169d1dd787108f85d2f718ec08901ec89b1`, external `voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`, seeds 0–9, bootstrap seed 20261104, 10,000 paired resamples, one CPU, 8 GiB, 7,200 seconds, one retry only after a verified failure.
+- **Wasted effort:** no repeat of the same P4 table/bootstrap, same-family model scoring, or closed glyph-control redesign.
+- **Blockers / compute:** independent human reader and Director disposition of PR #103/#98. No laptop endpoint is documented in the current configuration; J11 has no receipt, output, seed execution, or consumed retry.
+- **Website:** main-branch `docs/index.html` retains near-top plain-language Wins. PR #103’s cautious card remains reviewable, not published.
+- **Measurable improvement:** independently checked every P4 CSV row’s pass/fail classification and the unique minimum/maximum among passers.
+- **Uncertainty:** this check used rounded committed endpoints; the exact-DP claims remain those in PR #103, and no human reader has supplied data.
+- **One next action for Claude:** keep J11 queued without waiting; seek the independent blind reader and refresh PR #103 before any merge decision.
