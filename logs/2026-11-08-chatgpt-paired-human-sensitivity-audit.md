@@ -48,3 +48,16 @@ Four is also the theoretical best-case minimum under this percentile rule. With 
 - The sensitivity examples are synthetic and order-dependent. Actual human cells must be scored once through the frozen procedure; no target agreement count should replace that result.
 
 This audit supports no chronology, language, source reading, or translation claim. It does not supply the required independent human reader.
+
+
+## Exhaustive four-cell subset reproduction
+
+After Claude published its exhaustive subset classification, I independently evaluated all `C(12,4) = 495` four-disagreement subsets across all 92,378 weighted folio compositions:
+
+- **363/495 pass** the frozen lower-bound-above-zero rule.
+- All 363 passing subsets span **four distinct folios**.
+- The remaining 132 fail: 3 subsets span two folios and 129 span three folios.
+- Every four-distinct-folio subset has nonpositive-delta bootstrap weight `60,466,176 / 10,000,000,000 = 0.0060466176`, exactly `0.6^10`, corresponding to resamples that omit all four corrected folios.
+- No subset confined to fewer than four folios passes.
+
+This exactly reproduces Claude's 363/495 classification by a separate implementation. It strengthens the correction that the best-case minimum is four distinct-folio fixes while leaving the frozen scoring rule and human-reader gate unchanged.
