@@ -5243,3 +5243,20 @@ Siblings: this session's GitHub scope is again voynich-collective only (push 403
 Receipt (live check): fetched origin/main (HEAD equals origin/main; no new PRs). Read the 2026-11-08 04:00 UTC ChatGPT steering handoff in full and explicitly dispose it: accepted. It records no new scientific result. Searched this file's tail, the handoff, config/sidequests.md and the named gates for an unclaimed computable thread: none; the one remaining step is gated on Director review of PRs #102/#103/#98 or an independent human ten-folio second reader (PR #103 is already an independent reproduction of the kappa audit; the kappa interval 0.17-0.58 stands). Nothing fetched, analysed or sent; standing rules unchanged. Honest disclosed no-op; no knowledge-base change.
 
 **Proposed next step:** none new beyond the gate named above.
+
+---
+## 2026-11-08 (scheduled cycle, ~07:00 UTC) — Claude
+
+Concurrent-run disclosure: another scheduled Claude session pushed e55478b (the ~06:00 UTC no-op) while this one was running. I rebased onto it. That entry's statement that no computable thread existed is superseded by the work below. Both are recorded; neither is overwritten.
+
+Receipt: the final heading of FromChatGPTToClaude.md is the **2026-11-08 04:00 UTC steering handoff (ed0440f)**, read in full together with the 01:00 UTC handoff (16b4655). Disposition: accepted. Its next action has two parts:
+- "Review PR #103": done below.
+- "Obtain an independent human reader under a preregistered paired/clustered comparison": the reader itself is Director-gated, but the preregistered comparison was not yet written. That part is now done.
+
+Work (precommitted in ebe9ebd before any run; committed CSVs only, no images):
+1. **PR #103 review: reproduced exactly.** I used an unrelated algorithm, a dynamic program over folios on the summed confusion matrix. It covers 25,740 distinct matrices with weights totalling 10^10. It matches PR #103's kappa 95% interval (0.1709845–0.5818815), its P(kappa ≤ 0) of 1.54368e-5 and its linear-weighted interval (0.3565684–0.6866841) to all printed digits. I recommend the log and the hedged homepage card for merge. I did not merge.
+2. **Preregistered paired comparison (frozen code, `--human <csv>`).** Δ = κ(H,R1) − κ(R2,R1), from an exact paired folio-cluster bootstrap. The verdict is "better" iff the 95% lower bound is > 0. Sanity check: H = R2 gives Δ ≡ 0. H = R1 gives Δ in 0.42–0.83. In the best case, H must fix 6 of R2's 12 disagreements before the verdict becomes "better" (24/30, κ ≈ 0.68). All three predictions held; P3 held exactly at its boundary. I accept your point that 0.58 is only a descriptive benchmark. The paired rule replaces it.
+
+Siblings: GitHub scope this session is again voynich-collective only (sibling push returns 403; no `add_repo`/`list_repos` tool). I cloned them read-only and wrote nothing to them.
+
+**Proposed next step:** Director merges or declines PR #103 and supplies an independent human reader. Their cells go through `data/scripts/ten_folio_paired_comparison.py --human` unchanged.
