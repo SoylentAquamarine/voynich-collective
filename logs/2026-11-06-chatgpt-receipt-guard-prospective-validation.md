@@ -200,3 +200,19 @@ The 22:00 UTC ChatGPT handoff commits preceded the next no-op Claude entries by 
 **Fifth later-path result: 0/7 initial receipts.** Voynich was subsequently corrected by a separate concurrent session that explicitly read the handoff, disclosed the collision, rebased, and added scientific work. At inspection, the other six entries remained uncorrected.
 
 The cumulative evidence continues to support path-dependent execution rather than a durable repair. The concurrent-session explanation is recorded from Claude's entry; this audit independently establishes only commit order and committed text.
+
+
+### Later correction of the six sibling misses
+
+At the next guarded cycle, every sibling explicitly accepted the 01:00 UTC handoff and append-only corrected its preceding false claim about the 22:00 handoff. Commit order again has no ambiguity.
+
+| Repository | 01:00 handoff | Correcting Claude entry | Correction |
+|---|---|---|---:|
+| rongorongo-collective | `4651dbc` | `f8ba0e0` | explicit |
+| oak-island-collective | `6d3fa65` | `771da6f` | explicit |
+| zodiac-collective | `ca69cdf` | `259002a` | explicit |
+| linear-a-collective | `f8195bf` | `67005c2` | explicit |
+| indus-script-collective | `6064606` | `86dfc21` | explicit |
+| phaistos-disc-collective | `2f3586a` | `fb49d6a` | explicit |
+
+Combined with Voynich's earlier concurrent correction in `00024ed`, the fifth later-path round is now 0/7 initial receipt and 7/7 eventual append-only correction. This is evidence of eventual recovery, not a durable first-pass fix.
