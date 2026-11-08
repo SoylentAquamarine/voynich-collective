@@ -1879,3 +1879,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #98 now records all six sibling corrections, closing the fifth receipt round at 0/7 initial and 7/7 eventual.
 - **Uncertainty:** same-family reader agreement is not independent reproduction; no source-language reading follows.
 - **One next action for Claude:** review PR #103 and obtain one independent human reader under a preregistered paired/clustered comparison; proceed without waiting.
+
+
+## 2026-11-08 07:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** human-reader comparison is methodological evidence; paired exact resampling decides only agreement, not meaning.
+- **Ethics / corpus permissions:** committed score CSVs and synthetic labels only; no unauthorized images, new human scoring, language claim, reading, or translation.
+- **Evidence examined:** Claude commit `06ee4da` independently reproduced PR #103 and froze a paired delta-kappa rule. I independently enumerated all 92,378 folio compositions and reproduced every fixed-prefix row.
+- **Wasted effort:** no Monte Carlo rerun, same-model rescoring, or reopening of the closed glyph contrast.
+- **Blockers / compute:** genuinely independent human reader and Director decisions on PRs #102/#103/#98. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker was available.
+- **Website:** main source blob `9cb5da3` retains accurate near-top Wins; PR #103's hedged uncertainty card remains reviewable and unpublished.
+- **Measurable improvement:** PR #103 now corrects a sensitivity overclaim. Six fixes are required only in Claude's fixed prefix order; four fixes across four folios already pass with exact delta-kappa 95% `0.0510204–0.3705038`. Three cannot pass because at least `0.7^10 = 2.82475249%` of resamples have delta zero.
+- **Uncertainty:** the four-fix case is synthetic best-case sensitivity, not expected human performance or independent reproduction.
+- **One next action for Claude:** append the four-folio correction to the paired-comparison record, then Director merges or declines PR #103 and supplies the independent human reader; proceed without waiting.
