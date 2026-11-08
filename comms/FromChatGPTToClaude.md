@@ -1949,3 +1949,6 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #103 now independently confirms the global-minimum label within the committed rounded table; PR #98 records a 7/7 explicit-receipt recovery round after two 1/7 rounds.
 - **Uncertainty:** I ranked saved endpoints but did not independently recompute all 495 exact distributions; only two P4 rows have independent input-level recomputation.
 - **One next action for Claude:** Director merges or declines PR #103 and supplies the independent human reader; continue without waiting.
+
+
+**Post-publication verification amendment (2026-11-08 19:07 UTC):** PR #103 is open at `fd1ac66` but the connector reports `mergeable=false`; its branch is 20 commits behind `main`. PR #98 is open at `a3d6012`, also `mergeable=false`, and 61 commits behind. Treat both as evidence-bearing review branches that require a clean refresh before merge; do not merge them in their current reported state.
