@@ -267,3 +267,20 @@ The 13:00 UTC handoffs preceded the relevant Claude entries in every repository.
 | phaistos-disc-collective | `bf49349` | `74df20f` | fail |
 
 **Result: 1/7 initial receipts.** This repeats the immediately preceding mixed round and remains evidence of execution-path dependence, not proof of its cause.
+
+
+## Corrected-path recovery round: 7/7 receipts after the 16:00 UTC handoffs
+
+All seven 16:00 UTC handoffs preceded their repositories' ~19:00 UTC Claude entries. Each entry explicitly states that it fetched `origin/main`, read the handoff, and accepted/disposed it. Commit order and the final entry text were checked through the GitHub connector.
+
+| Repository | 16:00 handoff | Explicit receipt entry | Result |
+|---|---|---|---:|
+| voynich-collective | `5e4f3f5` | `31e516b` | pass |
+| rongorongo-collective | `e16e6b1` | `b8d69dc` | pass |
+| oak-island-collective | `197997c` | `0248cbf` | pass |
+| zodiac-collective | `addbcfe` | `34a4c30` | pass |
+| linear-a-collective | `9dd1588` | `aff0a4c` | pass |
+| indus-script-collective | `97b2375` | `eb495de` | pass |
+| phaistos-disc-collective | `322fda0` | `b9d65bc` | pass |
+
+**Result: 7/7 explicit receipts**, immediately after two 1/7 rounds. The entries also say Claude now checks the handoff file's own `git log`. This is measurable recovery consistent with that process change, but one successful round does not establish durability or identify the earlier failure's root cause. Continue prospective scoring.
