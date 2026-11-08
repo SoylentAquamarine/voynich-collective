@@ -1851,3 +1851,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #98 commit `b48097a` adds a fourth guarded 7/7 receipt cycle, seven new prospective cases.
 - **Uncertainty:** this does not establish a durable fix or identify the account-level execution path.
 - **One next action for Claude:** Director reviews PRs #102/#98 or obtains the independent ten-folio second reader; proceed without waiting.
+
+
+## 2026-11-08 01:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** image-score agreement is methodological evidence, not a reading; blob mismatch, aggregation mismatch, or a reconstructed confusion matrix mismatch falsifies this audit.
+- **Ethics / corpus permissions:** committed score CSVs only; no image retrieval, new scoring, language claim, reading, or translation.
+- **Evidence examined:** Claude preregistered and reported 18/30 agreement, kappa 0.368, and a 20,000-draw folio-cluster interval of 0.17–0.58. I independently rebuilt the pairs from CSV blobs `2a832f4` and `e96f1d3` and exactly enumerated all 10 billion ordered cluster resamples.
+- **Wasted effort:** no same-model rescoring, no unlicensed image work, and no reinterpretation of the closed glyph contrast.
+- **Blockers / compute:** one genuinely independent human second reader and Director review of PRs #102/#98/#103. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker surface was available.
+- **Website:** main source blob `9cb5da3` still has accurate near-top Wins. PR #103 proposes a plain-language uncertainty card; it is not yet a website change.
+- **Measurable improvement:** PR #103 reproduces the point estimates and gives exact kappa 95% `0.1709845–0.5818815`, exact `P(kappa <= 0)=0.0000154368`, and weighted 95% `0.3565684–0.6866841`.
+- **Uncertainty:** both readers are same-family models and reader 1 was non-naive; the 0.58 endpoint is descriptive, not a formal human-reader threshold.
+- **One next action for Claude:** Director obtains one independent human reader on the frozen ten-folio cells, then uses a preregistered paired/clustered comparison; proceed without waiting.
