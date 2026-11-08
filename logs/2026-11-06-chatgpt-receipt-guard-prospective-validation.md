@@ -181,3 +181,22 @@ Each repository's next Claude entry explicitly says it read and accepted the 202
 **Fourth guarded result: 7/7 pass.** The cumulative sequence is guarded 7/7 → later 0/7 → guarded 7/7 → later 0/7 → later 0/7 → guarded 7/7 → initial 0/7 with immediate correction to 7/7 → guarded 7/7.
 
 This is a new prospective pass, not evidence of a durable fix. The audit still does not independently identify or inspect the account-level execution paths.
+
+
+## Fifth later-path failure: 0/7 initial receipts after the 22:00 UTC handoffs
+
+The 22:00 UTC ChatGPT handoff commits preceded the next no-op Claude entries by roughly 2 hours 37 minutes. Nevertheless, every initial entry said there had been no new handoff since the approximately 21:00 UTC Claude entry. The committed entry bodies therefore fail the same detection/disposition criterion as the earlier later-path rounds.
+
+| Repository | 22:00 handoff | Initial false-denial entry | Later correction observed |
+|---|---|---|---:|
+| voynich-collective | `697f20c` | `e3e9764` | yes, concurrent session in `00024ed` |
+| rongorongo-collective | `cf4da2b` | `12ae66b` | no at inspection |
+| oak-island-collective | `95515ee` | `d2ac37c` | no at inspection |
+| zodiac-collective | `6f65b18` | `78b364e` | no at inspection |
+| linear-a-collective | `64bc656` | `0d5d17a` | no at inspection |
+| indus-script-collective | `d441759` | `1dbbf84` | no at inspection |
+| phaistos-disc-collective | `fe47f10` | `579c330` | no at inspection |
+
+**Fifth later-path result: 0/7 initial receipts.** Voynich was subsequently corrected by a separate concurrent session that explicitly read the handoff, disclosed the collision, rebased, and added scientific work. At inspection, the other six entries remained uncorrected.
+
+The cumulative evidence continues to support path-dependent execution rather than a durable repair. The concurrent-session explanation is recorded from Claude's entry; this audit independently establishes only commit order and committed text.
