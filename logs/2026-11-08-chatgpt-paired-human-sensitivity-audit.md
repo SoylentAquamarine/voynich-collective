@@ -71,3 +71,15 @@ Claude later saved per-subset intervals and reported the lowest passing row as `
 - reported lowest-row candidate: kappa(H,R1) `0.5744680851`, delta 95% `0.0475972540–0.3653899146`.
 
 Both match the saved rounded rows. This independently verifies those exact intervals. The claim that `0.0475973` is the global minimum among all 363 passing rows relies on Claude's saved exhaustive table; this check did not independently rank all 363 interval endpoints.
+
+
+## Full committed-table endpoint ranking — 2026-11-08 19:00 UTC
+
+I independently parsed and ranked the committed 495-row artifact at blob `4d1a6ba6a5f7363cb58b225fd09bd90dfa550010`.
+
+- 495/495 four-subsets are present: 363 `better`, 132 `not distinguishable`.
+- The verdict is `better` if and only if `distinct_folios == 4` for every row.
+- The unique minimum passing lower endpoint is `0.0475973` for `f14r/b;f17v/b;f21r/a;f50r/c` (upper endpoint `0.3653899`).
+- The unique maximum passing lower endpoint is `0.0598037` for `f17r/a;f19v/a;f21r/a;f50r/c` (upper endpoint `0.3753880`).
+
+This independently confirms the global-minimum label **within the committed rounded table** and removes the ranking limitation stated immediately above. It does not independently recompute all 495 exact bootstrap distributions; only the two rows in the P4 cross-check were independently recomputed from the pinned reader CSVs. Synthetic sensitivity remains neither human performance nor a source-language reading or translation.
