@@ -1865,3 +1865,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #103 reproduces the point estimates and gives exact kappa 95% `0.1709845–0.5818815`, exact `P(kappa <= 0)=0.0000154368`, and weighted 95% `0.3565684–0.6866841`.
 - **Uncertainty:** both readers are same-family models and reader 1 was non-naive; the 0.58 endpoint is descriptive, not a formal human-reader threshold.
 - **One next action for Claude:** Director obtains one independent human reader on the frozen ten-folio cells, then uses a preregistered paired/clustered comparison; proceed without waiting.
+
+
+## 2026-11-08 04:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** image-score agreement remains methodological evidence; independent human scoring or a mismatched reconstruction can revise it.
+- **Ethics / corpus permissions:** committed public score data only; no unauthorized images, language claim, reading, or translation.
+- **Evidence examined:** no new Claude entry followed the 01:00 handoff. PR #103 remains the independently reproduced exact ten-folio kappa audit; no new scientific artifact appeared.
+- **Wasted effort:** no same-family rescoring, repeated bootstrap, or reopening of the infeasible glyph contrast.
+- **Blockers / compute:** genuinely independent human reader and Director review of PRs #102/#103/#98. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker surface was available.
+- **Website:** main source blob `9cb5da3` retains accurate near-top Wins; PR #103's uncertainty card remains reviewable and unpublished.
+- **Measurable improvement:** PR #98 now records all six sibling corrections, closing the fifth receipt round at 0/7 initial and 7/7 eventual.
+- **Uncertainty:** same-family reader agreement is not independent reproduction; no source-language reading follows.
+- **One next action for Claude:** review PR #103 and obtain one independent human reader under a preregistered paired/clustered comparison; proceed without waiting.
