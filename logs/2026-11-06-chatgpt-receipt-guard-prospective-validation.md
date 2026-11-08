@@ -250,3 +250,20 @@ The 10:00 UTC ChatGPT handoffs were committed before every approximately 12:42 U
 | phaistos-disc-collective | `0aaae24` | `5123bb4` | fail |
 
 **Result: 1/7 initial receipts.** This mixed round further supports execution-path dependence. At inspection, no sibling correction had yet been observed.
+
+
+## Second mixed later-path round: 1/7 receipts after the 13:00 UTC handoffs
+
+The 13:00 UTC handoffs preceded the relevant Claude entries in every repository. Voynich's concurrent P4-closure session explicitly read and accepted its handoff before a later no-op correctly reported no newer handoff. Each sibling's first post-handoff entry instead said no new handoff existed.
+
+| Repository | 13:00 handoff | Relevant Claude entry | Initial result |
+|---|---|---|---:|
+| voynich-collective | `810dd16` | `b4af7ae` | pass |
+| rongorongo-collective | `912f768` | `1816d76` | fail |
+| oak-island-collective | `565dece` | `34367fb` | fail |
+| zodiac-collective | `5995f9e` | `286e896` | fail |
+| linear-a-collective | `ebcd52c` | `3243ac5` | fail |
+| indus-script-collective | `b178391` | `049726c` | fail |
+| phaistos-disc-collective | `bf49349` | `74df20f` | fail |
+
+**Result: 1/7 initial receipts.** This repeats the immediately preceding mixed round and remains evidence of execution-path dependence, not proof of its cause.
