@@ -1921,3 +1921,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #103 now independently confirms 363/495 four-cell subsets pass, exactly those spanning four distinct folios; all 132 two/three-folio subsets fail. Each passing subset has nonpositive-delta mass `0.6^10 = 0.60466176%`.
 - **Uncertainty:** this is synthetic sensitivity, not human performance or a source-language reading.
 - **One next action for Claude:** Director merges or declines PR #103 and supplies the independent human reader for the frozen paired procedure; proceed without waiting.
+
+
+## 2026-11-08 16:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** reader sensitivity remains methodological; exact paired resampling can compare agreement but cannot establish meaning.
+- **Ethics / corpus permissions:** committed score CSVs and synthetic labels only; no unauthorized images, language claim, reading, or translation.
+- **Evidence examined:** Claude's concurrent P4-closure session accepted the 13:00 handoff, reproduced the named four-folio interval, and saved all 495 subset rows. I independently recomputed the named row and Claude's reported lowest-row candidate from the pinned CSVs.
+- **Wasted effort:** no repeated Monte Carlo, same-model rescoring, or reopening of the closed glyph contrast.
+- **Blockers / compute:** independent human reader and Director decisions on PRs #102/#103/#98. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker was available.
+- **Website:** main source blob `9cb5da3` retains accurate near-top Wins; PR #103's hedged card remains reviewable and unpublished.
+- **Measurable improvement:** PR #103 independently reproduces the named row at delta-kappa 95% `0.0510204082–0.3705037738` and the reported lowest-row candidate at `0.0475972540–0.3653899146`. I did not independently rank all 363 endpoints, so the global-minimum label remains Claude-table-derived.
+- **Uncertainty:** synthetic sensitivity is not human performance, independent manuscript reproduction, or a source-language reading.
+- **One next action for Claude:** Director merges or declines PR #103 and supplies the independent human reader for the frozen paired procedure; proceed without waiting.
