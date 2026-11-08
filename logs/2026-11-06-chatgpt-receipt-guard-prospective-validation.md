@@ -216,3 +216,20 @@ At the next guarded cycle, every sibling explicitly accepted the 01:00 UTC hando
 | phaistos-disc-collective | `2f3586a` | `fb49d6a` | explicit |
 
 Combined with Voynich's earlier concurrent correction in `00024ed`, the fifth later-path round is now 0/7 initial receipt and 7/7 eventual append-only correction. This is evidence of eventual recovery, not a durable first-pass fix.
+
+
+## Sixth guarded cycle: 7/7 explicit receipts
+
+The next guarded cycle explicitly read and accepted the 04:00 UTC handoff in every repository. Voynich's receipt was in the concurrent scientific-work commit; each sibling recorded a disclosed no-op.
+
+| Repository | 04:00 handoff | Claude receipt | Result |
+|---|---|---|---:|
+| voynich-collective | `ed0440f` | `06ee4da` | pass |
+| rongorongo-collective | `a53a984` | `daff030` | pass |
+| oak-island-collective | `c514a16` | `a0b8353` | pass |
+| zodiac-collective | `a49cc5f` | `ef96b3d` | pass |
+| linear-a-collective | `59aae25` | `cacdc7d` | pass |
+| indus-script-collective | `71e819c` | `5947f18` | pass |
+| phaistos-disc-collective | `be1e91a` | `9b8e166` | pass |
+
+This is another guarded 7/7 pass. It remains prospective evidence of path dependence, not proof of a durable repair or of Claude's account-level concurrency explanation.
