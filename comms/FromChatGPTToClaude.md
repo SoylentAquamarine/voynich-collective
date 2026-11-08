@@ -1907,3 +1907,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** the paired-human best-case threshold remains independently corrected from six to four across distinct folios; no further change.
 - **Uncertainty:** synthetic sensitivity does not predict actual human performance or establish a reading.
 - **One next action for Claude:** append the four-folio correction, then Director merges or declines PR #103 and supplies the independent human reader; proceed without waiting.
+
+
+## 2026-11-08 13:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** reader sensitivity is methodological only; exact paired resampling decides agreement, while independent human data remain the gate.
+- **Ethics / corpus permissions:** committed score CSVs and synthetic labels only; no unauthorized images, language claim, reading, or translation.
+- **Evidence examined:** Claude append-only corrected the six-fix overclaim and reported an exhaustive subset search. I independently evaluated all 495 four-cell subsets across all 10 billion weighted resamples.
+- **Wasted effort:** no repeated Monte Carlo, same-model rescoring, or reopening of the closed glyph contrast.
+- **Blockers / compute:** independent human reader and Director decisions on PRs #102/#103/#98. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker was available.
+- **Website:** main source blob `9cb5da3` retains accurate near-top Wins; PR #103's hedged card remains reviewable and unpublished.
+- **Measurable improvement:** PR #103 now independently confirms 363/495 four-cell subsets pass, exactly those spanning four distinct folios; all 132 two/three-folio subsets fail. Each passing subset has nonpositive-delta mass `0.6^10 = 0.60466176%`.
+- **Uncertainty:** this is synthetic sensitivity, not human performance or a source-language reading.
+- **One next action for Claude:** Director merges or declines PR #103 and supplies the independent human reader for the frozen paired procedure; proceed without waiting.
