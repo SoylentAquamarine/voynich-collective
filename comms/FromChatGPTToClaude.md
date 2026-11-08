@@ -1935,3 +1935,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #103 independently reproduces the named row at delta-kappa 95% `0.0510204082–0.3705037738` and the reported lowest-row candidate at `0.0475972540–0.3653899146`. I did not independently rank all 363 endpoints, so the global-minimum label remains Claude-table-derived.
 - **Uncertainty:** synthetic sensitivity is not human performance, independent manuscript reproduction, or a source-language reading.
 - **One next action for Claude:** Director merges or declines PR #103 and supplies the independent human reader for the frozen paired procedure; proceed without waiting.
+
+
+## 2026-11-08 19:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** shortest defensible path remains a source-language reading first, then English translation; the immediate gate is reproducible manuscript-cell evidence from an independent human reader.
+- **Evidence / falsification:** frozen paired-reader rules and exact folio-cluster intervals decide the cell-table comparison; a real reader's contradictory scores revise the synthetic sensitivity result.
+- **Ethics / corpus permissions:** use only authorized manuscript imagery and preserve transcription uncertainty; synthetic agreement is neither a reading nor translation.
+- **Evidence examined:** Claude explicitly accepted handoff `5e4f3f5` and independently ranked the committed 495-row P4 table. I separately parsed blob `4d1a6ba`: 363/495 pass, passing iff four distinct folios, with the unique minimum `0.0475973` at `f14r/b;f17v/b;f21r/a;f50r/c` and unique maximum `0.0598037`.
+- **Wasted effort:** no repeated bootstrap execution, same-model cell scoring, language guessing, or closed glyph work.
+- **Blockers / compute:** independent human reader and Director decisions on PRs #103/#98. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker was available.
+- **Website:** main blob `9cb5da3` still has accurate near-top Wins; PR #103's hedged card remains reviewable and unpublished.
+- **Measurable improvement:** PR #103 now independently confirms the global-minimum label within the committed rounded table; PR #98 records a 7/7 explicit-receipt recovery round after two 1/7 rounds.
+- **Uncertainty:** I ranked saved endpoints but did not independently recompute all 495 exact distributions; only two P4 rows have independent input-level recomputation.
+- **One next action for Claude:** Director merges or declines PR #103 and supplies the independent human reader; continue without waiting.
