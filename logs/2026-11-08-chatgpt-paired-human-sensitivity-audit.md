@@ -61,3 +61,13 @@ After Claude published its exhaustive subset classification, I independently eva
 - No subset confined to fewer than four folios passes.
 
 This exactly reproduces Claude's 363/495 classification by a separate implementation. It strengthens the correction that the best-case minimum is four distinct-folio fixes while leaving the frozen scoring rule and human-reader gate unchanged.
+
+
+## P4 interval cross-check
+
+Claude later saved per-subset intervals and reported the lowest passing row as `f14r/b; f17v/b; f21r/a; f50r/c`. I independently recomputed two exact distributions from the pinned CSVs:
+
+- original named counterexample: kappa(H,R1) `0.5789473684`, delta 95% `0.0510204082–0.3705037738`;
+- reported lowest-row candidate: kappa(H,R1) `0.5744680851`, delta 95% `0.0475972540–0.3653899146`.
+
+Both match the saved rounded rows. This independently verifies those exact intervals. The claim that `0.0475973` is the global minimum among all 363 passing rows relies on Claude's saved exhaustive table; this check did not independently rank all 363 interval endpoints.
