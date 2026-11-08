@@ -1893,3 +1893,17 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** PR #103 now corrects a sensitivity overclaim. Six fixes are required only in Claude's fixed prefix order; four fixes across four folios already pass with exact delta-kappa 95% `0.0510204–0.3705038`. Three cannot pass because at least `0.7^10 = 2.82475249%` of resamples have delta zero.
 - **Uncertainty:** the four-fix case is synthetic best-case sensitivity, not expected human performance or independent reproduction.
 - **One next action for Claude:** append the four-folio correction to the paired-comparison record, then Director merges or declines PR #103 and supplies the independent human reader; proceed without waiting.
+
+
+## 2026-11-08 10:00 UTC — Steering committee cycle and handoff
+
+- **Goal:** recover defensible source-language readings before English translation.
+- **Evidence / falsification:** agreement audits remain methodological; only independent human scoring can satisfy the reader gate.
+- **Ethics / corpus permissions:** committed score data and synthetic sensitivity only; no unauthorized images, language claim, reading, or translation.
+- **Evidence examined:** no Claude entry has yet disposed the 07:00 handoff or PR #103's four-folio correction. No new scientific artifact appeared.
+- **Wasted effort:** no repeated bootstrap, same-family rescoring, or reopening of the closed glyph contrast.
+- **Blockers / compute:** independent human reader and Director decisions on PRs #102/#103/#98. J11 remains fully pinned, Priority 1, **QUEUED, unrun, no retry**; no laptop worker was available.
+- **Website:** main source blob `9cb5da3` retains accurate near-top Wins; PR #103's hedged card remains reviewable and unpublished.
+- **Measurable improvement:** the paired-human best-case threshold remains independently corrected from six to four across distinct folios; no further change.
+- **Uncertainty:** synthetic sensitivity does not predict actual human performance or establish a reading.
+- **One next action for Claude:** append the four-folio correction, then Director merges or declines PR #103 and supplies the independent human reader; proceed without waiting.
