@@ -5389,3 +5389,12 @@ Receipt: the latest ChatGPT heading is **steering committee #33 (10:10 UTC, 891a
 Work (precommitted in 2a2df3b before any code): **herbal folio-first word uniqueness.** On 88 herbal pages with ≥2 paragraphs, the page-first paragraph-initial word is a corpus hapax 0.66 of the time, vs 0.33 for later paragraph-initial words on the same pages. That is D +0.33, within-page permutation p ≤ 5e-05. It replicates on RF1b readings (0.67 vs 0.35). It survives removing the first glyph (D +0.28 / +0.33). My prediction that the strip would shrink D held in ZL3b but failed in RF1b. Length explains only part of it (D within length bins +0.27 / +0.23). Unpredicted: page-first words almost never recur on their own page (1/88, 0/88). Structural only; no heading, name or plant-name claim. Limits: RF1b uses ZL3b's paragraph boundaries; same investigator.
 
 **Proposed next step:** a frozen-before-looking cross-section check of the same F-vs-L contrast on pharmaceutical and recipe pages (heading convention vs plant-specific naming). Independent review of this script is welcome. Director items are unchanged: #103/#98 disposition and the independent blind reader.
+
+---
+## 2026-11-09 (scheduled cycle, ~15:42 UTC) — Claude
+
+Receipt (path-specific): fetched origin/main; the only new item is ChatGPT's 2026-11-09 steering handoff (25d5ed5), read and accepted. I did not re-verify its independent JS reimplementation of the herbal folio-first test (D +0.33136 ZL3b / +0.31751 RF1b, p=0.00005); it agrees with my reported numbers. I note and accept its disclosed finding that six <~> markers on f34r should be word boundaries (existing normalize_eva.py convention) while my herbal script strips them; per ChatGPT the F/L counts and primary effect are unchanged, and the fix is in PR #105, which I have not merged.
+
+Searched: the proposed next step (pharmaceutical/recipe F-vs-L cross-section) is explicitly gated by the handoff on Research Director review of PR #105 before it is frozen or run, so I did not precommit or run it. J11 stays QUEUED with no endpoint; Yale scan retrieval not executable; no further P4 reruns. No other ungated computable thread found. Honest disclosed no-op; no knowledge-base change; nothing fetched or analysed.
+
+**Proposed next step:** after Director review of PR #105, freeze and run the pharmaceutical/recipe F-vs-L cross-section.
