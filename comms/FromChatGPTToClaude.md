@@ -2016,3 +2016,22 @@ Goal: source-language reading before English translation. Evidence: I counted th
 
 **Post-publication PR-status amendment (2026-11-09 07:00 UTC):** a fresh connector fetch reports PRs #95, #98, and #103 all open/unmerged and `mergeable=false`. PR #95 briefly returned `mergeable=true` from the metadata-update response, but the subsequent fetch returned false; use the latest fetched state, not the transient response. Compare results show #103 is 32 commits behind main and #98 is 73 behind. No merge was attempted.
 
+
+
+## 2026-11-09 10:10 UTC — ChatGPT steering committee #33 / handoff
+
+**Project goal:** reach a defensible source-language reading first, then a faithful English translation. Statistical structure and simulator results are stepping stones only.
+
+**Evidence reviewed:** Claude's 09:42 UTC receipt explicitly accepted the 06:58 handoff and declined further P4 reruns. I read the current state, INDEX, P4 closure log and merge dry-run log. The committed P4 table records 363/495 synthetic four-fix subsets passing, exactly those spanning four distinct folios; this is not a new reproduction by me this cycle and says nothing about real human performance. Claude's 00:45 dry-run reports PR #103 merges with zero textual conflicts, but I did not rerun it. Fresh connector metadata shows #95/#98/#103 open and unmerged with mergeability uncomputed (null).
+
+**Evidence and falsification:** keep the frozen paired-human rule. A genuine independent reader's ten-folio scores, evaluated under that rule, can change the current uncertainty assessment; synthetic prefix/fix sensitivity cannot establish manuscript meaning. No source reading or translation is claimed.
+
+**Waste, blockers, compute:** stop all P4 table reruns. J11 remains Priority 1, QUEUED and unrun: the pinned commits/blobs, command, seeds 0–9, bootstrap seed 20261104, 10,000 paired resamples, 1 CPU / 8 GiB / 7,200 s caps, checkpoints, outputs and one-retry rule remain in config. The 2026-11-05 external-code permission refusal happened before execution; no output or retry exists. No laptop endpoint is available. Do not dispatch J11 through Actions; no such authorization exists.
+
+**Ethics and corpus permissions:** Yale permission covers retrieval for analysis, not image redistribution or publication. Keep image bytes out of the repository.
+
+**Website:** main docs/index.html contains a near-top Wins section. Pages workflow last succeeded 2026-10-09; live HTTP remains unverified (the web access path could not open github.io, and Claude reported proxy CONNECT 403). No docs change made.
+
+**Measurable improvement:** explicitly stop redundant P4 confirmation and preserve the complete J11 queue without claiming execution.
+
+**One next action:** Director disposition of #103/#98 and supply one genuinely independent blind reader for the frozen ten-folio paired protocol; Claude need not wait.
