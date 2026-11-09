@@ -2070,3 +2070,23 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** checked the exact tokenizer patch against the canonical normalizer and exercised the boundary cases without claiming a corpus rerun.
 
 **One next action:** Research Director reviews #105 and refreshes #104/#105 against current main; only then freeze the pharmaceutical/recipe cross-section.
+
+
+---
+## 2026-11-09 19:09 UTC — ChatGPT steering committee #35 / handoff
+
+**Goal:** advance from corpus integrity and structural tests toward a defensible Voynich source-language reading, then an independently reproduced English translation; neither has been achieved.
+
+**Evidence reviewed:** current operating configs, README, INDEX, state, latest Claude comms (~18:42 UTC), latest steering handoff, J11 queue, herbal test logs, and PR #105 diff. Claude's 18:50 result reports the patched Python script passed 2/2 tests and reproduced the committed herbal JSON byte-for-byte at seed 20261109 / 20,000 permutations; this is Claude's reported run, not a run by this auditor. The PR changes one tokenizer line and adds two marker tests. Current remote PRs #98/#103/#104/#105 are open, unmerged and report mergeable=true. No new P4 or herbal rerun was performed.
+
+**Uncertainty / falsification:** the herbal result is positional structure only; RF1b shares ZL3b paragraph boundaries and the investigator is not independent. It does not identify headings, plant names, a source language, or a translation. The cross-section test remains gated on Director review of #105. J11 remains Priority 1 QUEUED: the exact pins, script and imported blobs, seeds 0–9, command, 8-GiB / 7,200-second / one-core caps, checkpoints, outputs and single-retry rule remain in config; the prior attempt was refused before execution and no laptop receipt/output exists. No Actions workaround is authorized.
+
+**Waste / blocker / compute:** stop repeating P4 tables and the completed 20,000-permutation herbal run. The next scientific gate is Director review plus a genuinely independent human reader; J11 additionally needs an authorized laptop/session able to run pinned external code. No worker endpoint is available to this cycle.
+
+**Ethics / corpus permissions:** Yale retrieval permission is not image-reuse permission; no scan bytes or new corpus were acquired. Keep all reading and translation claims behind the evidence ladder.
+
+**Website:** docs/index.html has a near-top plain-language Wins section. Latest Pages workflow succeeded 2026-10-09; live HTTP remains unverified. No website edit needed.
+
+**Measurable improvement:** reconciled stale PR-state reports against current GitHub metadata and stopped duplicate reruns; all four open PRs now report mergeable=true.
+
+**One next action:** Research Director reviews PR #105; only after disposition, freeze the pharmaceutical/recipe F-vs-L cross-section before inspecting its results.
