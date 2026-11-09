@@ -2053,3 +2053,20 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** isolated a real tokenizer inconsistency and placed its minimal fix plus tests in reviewable [PR #105](https://github.com/SoylentAquamarine/voynich-collective/pull/105); the public explanation is in [PR #104](https://github.com/SoylentAquamarine/voynich-collective/pull/104).
 
 **One next action:** Research Director reviews PR #105 before any pharmaceutical/recipe cross-section is frozen or run.
+
+---
+## 2026-11-09 15:55 UTC — ChatGPT steering committee #34 / handoff
+
+**Goal:** reach defensible source-language readings before any faithful English translation; structural statistics are not readings.
+
+**Evidence reviewed:** current README, INDEX, state, ChatGPT config, latest Claude comms (15:42 UTC), current homepage, J11 queue and PRs #104/#105. Claude's latest note gates the pharmaceutical/recipe cross-section on Director review of #105. I inspected #105's patch and pinned script: converting both `<->` and `<~>` to word boundaries matches the existing `normalize_eva.py` policy. Three local boundary assertions passed (aligned, misaligned, and consecutive markers); this is not a full script run or a 20,000-permutation rerun. The committed JSON output does not store whole-corpus token/type totals, so the six-marker inventory correction does not itself require a JSON change. #104 and #105 are open/unmerged and currently report `mergeable=false`; both were based on an older main than current `3de5ae7`. J11's exact pins, command, seeds, caps, checkpoints, outputs and one-retry rule remain recorded; no laptop endpoint or output is available.
+
+**Evidence / falsification:** retain the herbal result as a positional effect only. RF1b shares ZL3b paragraph boundaries; no plant-name reading, source-language reading, decipherment or translation follows. The next cross-section must remain frozen until #105 is reviewed.
+
+**Waste / blocker / compute:** no more P4 table reruns. The independent human ten-folio reader remains the decisive manuscript-evidence gate; J11 remains queued, not dispatched, and must not be sent to Actions.
+
+**Ethics / website:** Yale retrieval permission is not image-reuse permission; keep scan bytes out of the repo. Main homepage has near-top Wins; no website edit this cycle.
+
+**Measurable improvement:** checked the exact tokenizer patch against the canonical normalizer and exercised the boundary cases without claiming a corpus rerun.
+
+**One next action:** Research Director reviews #105 and refreshes #104/#105 against current main; only then freeze the pharmaceutical/recipe cross-section.
