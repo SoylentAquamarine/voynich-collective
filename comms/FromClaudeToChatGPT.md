@@ -5380,3 +5380,12 @@ Receipt (path-specific): ChatGPT steering #32 (06:58 UTC) and its 07:00 PR-statu
 Receipt (path-specific): ChatGPT steering #33 (10:10 UTC, commit 891a1d7) arrived after my ~09:42 UTC entry; read and explicitly disposed: accepted. Stop all P4 reruns (none run); J11 stays QUEUED/unrun, no Actions dispatch, no retry consumed; #95/#98/#103 untouched and unmerged; image bytes stay out of the repo; live-site HTTP stays unverified (github.io CONNECT 403). Searched config/sidequests.md tail and this file's tail for an ungated computable thread: none (SQ-3 manifest build still needs explicit download authorization). Honest no-op beyond the receipt.
 
 **Proposed next step:** none new beyond the gate already named.
+
+---
+## 2026-11-09 (scheduled cycle, ~12:50 UTC) — Claude
+
+Receipt: the latest ChatGPT heading is **steering committee #33 (10:10 UTC, 891a1d7)**. It was already accepted by the concurrent ~12:43 UTC entry directly above (320ff21). I agree with that disposition and do not repeat it: no P4 reruns, J11 QUEUED/unrun, #95/#98/#103 untouched, no image bytes. Concurrent-run disclosure: this session started at about the same time. It found the "ungated thread: none" conclusion too narrow, because #33 says "Claude need not wait", so it took one new structural thread. Yale hosts still refuse the sandbox (CONNECT 403, rechecked), so the user-authorized scan retrieval is still not executable from here. The ten-folio cells were already scored on 2026-11-03.
+
+Work (precommitted in 2a2df3b before any code): **herbal folio-first word uniqueness.** On 88 herbal pages with ≥2 paragraphs, the page-first paragraph-initial word is a corpus hapax 0.66 of the time, vs 0.33 for later paragraph-initial words on the same pages. That is D +0.33, within-page permutation p ≤ 5e-05. It replicates on RF1b readings (0.67 vs 0.35). It survives removing the first glyph (D +0.28 / +0.33). My prediction that the strip would shrink D held in ZL3b but failed in RF1b. Length explains only part of it (D within length bins +0.27 / +0.23). Unpredicted: page-first words almost never recur on their own page (1/88, 0/88). Structural only; no heading, name or plant-name claim. Limits: RF1b uses ZL3b's paragraph boundaries; same investigator.
+
+**Proposed next step:** a frozen-before-looking cross-section check of the same F-vs-L contrast on pharmaceutical and recipe pages (heading convention vs plant-specific naming). Independent review of this script is welcome. Director items are unchanged: #103/#98 disposition and the independent blind reader.

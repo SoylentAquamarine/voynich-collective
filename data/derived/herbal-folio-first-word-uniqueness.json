@@ -1,0 +1,137 @@
+{
+  "seed": 20261109,
+  "n_perm": 20000,
+  "preregistration": "logs/2026-11-09-herbal-folio-first-word-uniqueness-selfreview.md",
+  "ZL3b": {
+    "transcription": "ZL3b",
+    "herbal_pages_with_paragraphs": 128,
+    "pages_used_ge2_paragraphs": 88,
+    "n_F": 88,
+    "n_L": 119,
+    "starts_missing_or_empty": 0,
+    "all_pages_F_hapax_rate": 0.6328,
+    "results": {
+      "hapax": {
+        "F": 0.6591,
+        "L": 0.3277,
+        "D": 0.3314,
+        "p_one_sided": 5e-05
+      },
+      "strip_hapax": {
+        "F": 0.4659,
+        "L": 0.1849,
+        "D": 0.281,
+        "p_one_sided": 5e-05
+      },
+      "len": {
+        "F": 7.1136,
+        "L": 6.084,
+        "D": 1.0296,
+        "p_one_sided": 0.00045
+      },
+      "page_recur": {
+        "F": 0.0114,
+        "L": 0.0504,
+        "D": -0.0391,
+        "p_one_sided": 0.973
+      },
+      "hapax_length_bin_pooled": {
+        "D": 0.2702,
+        "p_one_sided": 5e-05
+      }
+    },
+    "F_words_sample": [
+      "pchocthy",
+      "paiin",
+      "tshol",
+      "torshor",
+      "koair",
+      "pcho",
+      "pocheody",
+      "pchroiin",
+      "fshody",
+      "pdrairdy",
+      "pochaiin",
+      "kchsy",
+      "kdchody",
+      "faiis",
+      "pchor",
+      "pol",
+      "pysaiinor",
+      "pydchdom",
+      "podairol",
+      "tchodar",
+      "psheoky",
+      "ksor",
+      "kshol",
+      "posaiin",
+      "kooiin"
+    ]
+  },
+  "RF1b": {
+    "transcription": "RF1b (ZL3b paragraph starts)",
+    "herbal_pages_with_paragraphs": 128,
+    "pages_used_ge2_paragraphs": 88,
+    "n_F": 88,
+    "n_L": 119,
+    "starts_missing_or_empty": 0,
+    "all_pages_F_hapax_rate": 0.6797,
+    "results": {
+      "hapax": {
+        "F": 0.6705,
+        "L": 0.3529,
+        "D": 0.3175,
+        "p_one_sided": 5e-05
+      },
+      "strip_hapax": {
+        "F": 0.5341,
+        "L": 0.2017,
+        "D": 0.3324,
+        "p_one_sided": 5e-05
+      },
+      "len": {
+        "F": 7.7614,
+        "L": 6.3025,
+        "D": 1.4588,
+        "p_one_sided": 5e-05
+      },
+      "page_recur": {
+        "F": 0.0,
+        "L": 0.0588,
+        "D": -0.0588,
+        "p_one_sided": 1.0
+      },
+      "hapax_length_bin_pooled": {
+        "D": 0.2342,
+        "p_one_sided": 0.00015
+      }
+    },
+    "F_words_sample": [
+      "pchocthy",
+      "paiin",
+      "tshol",
+      "torshor",
+      "koair",
+      "pchodaiin",
+      "pocheody",
+      "pchr@221;iin",
+      "fshody",
+      "pdrairdy",
+      "pochaiin",
+      "kchsy",
+      "kdchody",
+      "faiisar",
+      "pchor",
+      "pol",
+      "pysaiinor",
+      "pydchdom",
+      "podairol",
+      "tchodar",
+      "psheoky",
+      "ksor",
+      "kshol",
+      "posaiin",
+      "kooiin"
+    ]
+  }
+}
