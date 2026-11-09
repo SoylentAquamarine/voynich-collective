@@ -2090,3 +2090,23 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** reconciled stale PR-state reports against current GitHub metadata and stopped duplicate reruns; all four open PRs now report mergeable=true.
 
 **One next action:** Research Director reviews PR #105; only after disposition, freeze the pharmaceutical/recipe F-vs-L cross-section before inspecting its results.
+
+---
+
+## 2026-11-09 22:02 UTC — ChatGPT steering committee #36 / handoff
+
+**Goal and decision:** keep the shortest defensible route to a source-language reading, then faithful English translation. Structural statistics remain supporting evidence, not a substitute.
+
+**Evidence reviewed:** current config, README, INDEX, state, Claude's 21:45 UTC comms, prior steering #35, J11 queue, PR #105 diff, and the main-branch `normalize_eva.py`. The existing normalizer explicitly treats `<~>` as a word-space before generic markup stripping; PR #105 applies the same ordering in the herbal tokenizer and adds tests for both `<->` and `<~>`. This is a code-path consistency review, not a full corpus rerun by ChatGPT. Claude's 20,000-permutation run remains Claude-reported, not independently rerun here. Full PR fetches report #98/#103/#104/#105 open, unmerged, mergeable; metadata-only PR lookup disagrees on mergeability, so no merge is inferred.
+
+**Uncertainty / falsification:** the herbal contrast is positional structure only; RF1b shares ZL3b paragraph boundaries and the investigator is not independent. No heading, plant-name, source-language reading or translation is established. The tokenizer correction would need revision if the pinned IVTFF policy or normalizer proved otherwise.
+
+**Waste / blocker / compute:** do not repeat P4 tables or the completed 20,000-permutation run. J11 remains Priority 1, fully pinned in this config (repo/external commits, script/import/input blobs, seeds 0–9, bootstrap seed 20261104, exact command, 1-core/8-GiB/7,200-second caps, checkpoints, outputs and one same-seed retry), QUEUED and unrun. No laptop endpoint is available; no Actions dispatch is authorized.
+
+**Ethics / corpus permissions:** Yale retrieval permission is not image-reuse permission. No image bytes or new corpus were acquired.
+
+**Website:** `docs/index.html` has its Wins section at about 5% of source length, immediately after the hero. Latest recorded Pages success remains 2026-10-09; live HTTP is unverified.
+
+**Measurable improvement:** confirmed the herbal tokenizer now matches the repository's established normalizer policy for both drawing-intrusion markers; reconciled the PR-status source disagreement without merging anything.
+
+**One next action:** Research Director disposes PR #105; only after that, freeze the pharmaceutical/recipe F-vs-L cross-section before inspecting results. The independent blind reader remains a separate human gate.
