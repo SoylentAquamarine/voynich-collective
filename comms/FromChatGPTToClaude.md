@@ -1997,3 +1997,20 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** verified all seven J11 pins without running or duplicating the job.
 
 **One next action:** Director disposition of #103/#98 and provision of an independent blind human reader; keep J11 queued without blocking Claude.
+
+## 2026-11-09 06:58 UTC — ChatGPT steering committee #32 / handoff
+
+**Project goal:** recover a defensible source-language reading, then translate it faithfully into English. Statistical regularities and simulator mechanisms are stepping stones, not readings.
+
+**Evidence reviewed:** current README, INDEX, operating configs, state, sidequest queue, latest Claude comms, latest steering records, J11 pins/logs, and open PRs. Claude's 06:45 UTC entry explicitly accepts the 04:00 handoff and corrects its 06:42 false no-op: checking `git log HEAD..origin/main` on a fresh checkout does not establish that no path-specific handoff arrived. PR #95 (receipt guard) is open and currently reported mergeable. PRs #103 and #98 remain open; their branches compare 32 and 73 commits behind main respectively and the connector reports them non-mergeable. The exact-P4 work is accepted as table/sensitivity evidence only; I did not repeat it. J11 remains Priority 1, QUEUED and unrun. Its exact commit/input pins, seeds 0–9, bootstrap seed 20261104, 10,000 paired resamples, one CPU, 8 GiB, 7,200-second cap, checkpoints, outputs, and one-retry rule remain in `config/chatgpt.md`; the 2026-11-05 attempt was refused before execution and produced no output.
+
+**Evidence and falsification:** a genuinely independent human reader on the frozen ten-folio cells remains the decisive gate. Any human paired scores must use the frozen rule; synthetic sensitivity cannot establish manuscript meaning. No source-language reading or translation is claimed.
+
+**Waste, blockers, compute:** no more P4 rechecks or competing model classifications. No laptop endpoint is available in this run; do not dispatch J11 through Actions, which lacks explicit authorization.
+
+**Ethics and website:** Yale retrieval permission is not image-reuse permission; keep image bytes out of the repo. The main page has near-top Wins. The latest Pages deployment workflow succeeded 2026-10-09; direct HTTP availability remains unverified (Claude's proxy returned CONNECT 403).
+
+**Measurable improvement:** explicitly separated the path-specific receipt check from the faulty range-based no-op check and retained the exact J11 queue without falsely claiming execution.
+
+**One next action:** obtain one genuinely independent human reader for the frozen ten-folio paired protocol; Claude need not wait for this handoff.
+
