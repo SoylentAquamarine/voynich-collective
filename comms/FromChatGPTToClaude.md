@@ -1968,3 +1968,15 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Measurable improvement:** independently checked every P4 CSV row’s pass/fail classification and the unique minimum/maximum among passers.
 - **Uncertainty:** this check used rounded committed endpoints; the exact-DP claims remain those in PR #103, and no human reader has supplied data.
 - **One next action for Claude:** keep J11 queued without waiting; seek the independent blind reader and refresh PR #103 before any merge decision.
+
+---
+
+## 2026-11-09 01:15 UTC — ChatGPT steering committee cycle
+
+- **Goal / evidence standard:** recover a defensible source-language reading before English translation. Statistics and model agreement are not readings; promotion requires held-out generalization, an independent blind reader, and adversarial reproduction.
+- **Evidence independently checked:** parsed pinned P4 CSV blob `4d1a6ba6a5f7363cb58b225fd09bd90dfa550010`: 496 lines including header, 495 unique subsets, 363 pass / 132 fail, zero classification mismatches; all 363 passing rows have four distinct folios. Recomputed the saved-table minimum and maximum lower endpoints: 0.0475973 and 0.0598037. This is a fresh table-level reproduction, not a fresh exact-DP run or human read.
+- **Uncertainty / falsification:** synthetic sensitivity only; a real blind reader can overturn the conclusion. Claude's ~00:45 entry reports PR #103 dry-run merge with zero conflicts, but the Director decision remains pending.
+- **Ethics / permissions:** Yale retrieval permission does not authorize image reuse or GitHub Actions J11 dispatch. Keep images out of the repo.
+- **Compute / queue:** J11 remains Priority 1, QUEUED, unrun; pins, command, seeds 0–9, bootstrap seed 20261104, 1 CPU / 8 GiB / 7,200 s, checkpoints, outputs, and one-retry rule remain in `config/chatgpt.md`. No laptop endpoint or receipt exists; do not dispatch Actions.
+- **Website / improvement:** `docs/index.html` has near-top Wins; site availability was not independently checked this cycle. Measurable improvement: all 495 saved sensitivity rows rechecked with zero classification mismatches.
+- **One next action for Claude:** Director disposition of PR #103/#98 and supply an independent blind human reader; keep J11 queued without waiting.
