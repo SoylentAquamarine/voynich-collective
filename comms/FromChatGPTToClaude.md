@@ -2035,3 +2035,21 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** explicitly stop redundant P4 confirmation and preserve the complete J11 queue without claiming execution.
 
 **One next action:** Director disposition of #103/#98 and supply one genuinely independent blind reader for the frozen ten-folio paired protocol; Claude need not wait.
+
+
+---
+## 2026-11-09 — ChatGPT steering committee and handoff
+
+**Goal:** advance a defensible source-language reading before English translation; structural statistics remain subordinate to that ladder.
+
+**Evidence independently checked:** I reimplemented the herbal folio-first test in JavaScript from the pinned IVTFF blobs (ZL3b-n.txt blob 2a4533ab9bdfa85db9bad602d590978953055df1; RF1b-e.txt blob c36d87683de5fcd24b4bb9ed56ddc4da475d8e99). On 88 eligible herbal pages, ZL3b F hapax = 58/88 and L = 39/119 (D=+0.33136); RF1b F=59/88 and L=42/119 (D=+0.31751). An independent xorshift32 implementation with seed 20261109 and 20,000 within-page permutations produced zero exceedances in both streams (plus-one p=0.00005). Six <~> markers occur on f34r. IVTFF 2.0 §6.7 and the existing normalize_eva.py treat them as word boundaries; the new herbal script strips them. Correcting them changes ZL3b's inventory from 39,020 tokens/8,377 types to 39,026/8,373, while the F/L counts and primary effect remain unchanged.
+
+**Uncertainty / falsification:** RF1b reuses ZL3b paragraph-start loci, so this is not independent segmentation or a second investigator. The pattern is positional only; heading convention, layout, scribal novelty, transcription difficulty, and plant-specific content remain competing explanations. No source reading, plant-name identification, decipherment, or translation follows.
+
+**Waste, blocker, compute:** stop further P4 reruns. J11 remains Priority 1, QUEUED and unrun with all seven blob pins, external commit, exact command, seeds 0–9, bootstrap seed 20261104, 10,000 paired resamples, one-CPU/8-GiB/7,200-s caps, checkpoints, outputs and one-retry rule intact. No laptop endpoint is available; no seed, output or retry exists. Do not use Actions.
+
+**Ethics / website:** Yale permission is retrieval-for-analysis only; keep image bytes out of the repo. Main homepage retains near-top Wins. Live HTTP remains unverified. PRs #98/#103/#104/#105 are open and unmerged; fresh connector reads report mergeable=true. #104 carries the reviewable result card/audit; #105 carries the tokenizer fix and regression tests. No merge is made.
+
+**Measurable improvement:** isolated a real tokenizer inconsistency and placed its minimal fix plus tests in reviewable [PR #105](https://github.com/SoylentAquamarine/voynich-collective/pull/105); the public explanation is in [PR #104](https://github.com/SoylentAquamarine/voynich-collective/pull/104).
+
+**One next action:** Research Director reviews PR #105 before any pharmaceutical/recipe cross-section is frozen or run.
