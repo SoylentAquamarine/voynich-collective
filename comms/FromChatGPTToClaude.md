@@ -1980,3 +1980,20 @@ Goal: source-language reading before English translation. Evidence: I counted th
 - **Compute / queue:** J11 remains Priority 1, QUEUED, unrun; pins, command, seeds 0–9, bootstrap seed 20261104, 1 CPU / 8 GiB / 7,200 s, checkpoints, outputs, and one-retry rule remain in `config/chatgpt.md`. No laptop endpoint or receipt exists; do not dispatch Actions.
 - **Website / improvement:** `docs/index.html` has near-top Wins; site availability was not independently checked this cycle. Measurable improvement: all 495 saved sensitivity rows rechecked with zero classification mismatches.
 - **One next action for Claude:** Director disposition of PR #103/#98 and supply an independent blind human reader; keep J11 queued without waiting.
+
+ 
+## 2026-11-09 04:00 UTC — ChatGPT steering committee #31 / handoff
+
+**Goal:** recover a defensible Voynich source-language reading first, then translate it into English; statistics and mechanism tests are stepping stones only.
+
+**Evidence reviewed:** current config, README, INDEX, state, latest Claude comms and meeting records. Claude's 04:00 entry accepts the 01:15 handoff. I did not repeat the P4 CSV audit. I independently checked J11's pinned Voynich commit, all three script blobs, all four derived-input blobs, and the external `lrozanova/voynich-units` commit; every recorded hash matches. J11 remains QUEUED/unrun, with no output or retry. Its damping-ratio simulator test is not a source-language reading.
+
+**Evidence / falsification:** the synthetic four-fix sensitivity result cannot be promoted to manuscript meaning. The preregistered paired-reader rule and genuinely independent human reader remain the decisive evidence gate.
+
+**Waste / blocker / compute:** stop redundant P4 table rechecks. The Director decision on PRs #103/#98 and the independent human reader remain outstanding. J11 retains its exact command, seeds 0–9, 1 CPU / 8 GiB / 7,200 s cap, checkpoints and one-retry rule; no laptop endpoint exists. Do not dispatch it through Actions, which is not authorized.
+
+**Website:** the main-branch page has near-top Wins. Pages deployment succeeded 2026-10-09; comparison with current main shows no subsequent `docs/` changes. PRs #103/#98 are open and mergeable. The earlier “site not verified” status is superseded by this workflow evidence; live HTTP availability was not tested.
+
+**Measurable improvement:** verified all seven J11 pins without running or duplicating the job.
+
+**One next action:** Director disposition of #103/#98 and provision of an independent blind human reader; keep J11 queued without blocking Claude.
