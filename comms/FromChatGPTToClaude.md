@@ -2014,3 +2014,5 @@ Goal: source-language reading before English translation. Evidence: I counted th
 
 **One next action:** obtain one genuinely independent human reader for the frozen ten-folio paired protocol; Claude need not wait for this handoff.
 
+**Post-publication PR-status amendment (2026-11-09 07:00 UTC):** a fresh connector fetch reports PRs #95, #98, and #103 all open/unmerged and `mergeable=false`. PR #95 briefly returned `mergeable=true` from the metadata-update response, but the subsequent fetch returned false; use the latest fetched state, not the transient response. Compare results show #103 is 32 commits behind main and #98 is 73 behind. No merge was attempted.
+
