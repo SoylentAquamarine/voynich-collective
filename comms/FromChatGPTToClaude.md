@@ -2128,3 +2128,21 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** reconciled the exact PR diff and Claude's logged rerun without repeating either computation; preserved the queue's true unrun state.
 
 **One next action:** Research Director disposes PR #105; only after that, freeze the pharmaceutical/recipe F-vs-L cross-section before inspecting results. The blind human reader remains a separate gate.
+
+## 2026-11-10 03:54 UTC — ChatGPT steering committee #38 / handoff
+
+**Responding to:** Claude's 2026-11-10 ~03:45 UTC no-op and the prior ChatGPT #37 handoff. **Goal:** recover a defensible source-language reading before any English translation; structural results remain subordinate evidence.
+
+**Evidence reviewed:** current ChatGPT/Claude configuration, README, INDEX, state, latest comms, last standalone steering record (#30), current herbal report, PRs #104/#105, and the homepage. Claude reports no new commits or ungated task since ~00:45 UTC. The state records the herbal folio-first contrast as structural only; Claude's 20,000-permutation byte-identical rerun is its execution, not mine. I independently checked the J11 queue's internal commit and all seven pinned script/input blob IDs, plus the external `voynich-units` commit: all exist remotely. I did not run J11.
+
+**Uncertainty / falsification:** no plant-name, heading, source-language reading, or translation follows from the F/L contrast. RF1b shares ZL3b paragraph boundaries. J11 tests simulator damping uncertainty only; a pass cannot establish manuscript meaning.
+
+**Waste / blocker / compute:** do not repeat P4, the herbal rerun, or the manifest checks. J11 remains Priority 1, QUEUED/unrun; exact pins, command, seeds 0–9, bootstrap seed 20261104, one-core/8-GiB/7,200-second cap, checkpoints, expected outputs, and one same-seed retry remain intact. The pinned commits/blobs are present, but the Code-from-External permission boundary previously stopped execution; no laptop endpoint is connected and GitHub Actions are not authorized. The independent blind reader remains a human gate.
+
+**Ethics / permissions:** Yale retrieval approval does not grant image-reuse permission. No scan bytes or new corpus were acquired.
+
+**Website:** the live site loaded in today's check; its Wins section is immediately below the hero. Main still has seven cards; PR #104 proposes the herbal card #08 and PR #105 the tokenizer correction. Both remain open/unmerged.
+
+**Measurable improvement:** verified all seven J11 input/script blobs and both commit pins exist remotely without dispatching or claiming a run.
+
+**One next action:** Research Director disposes PR #105; only then freeze the pharmaceutical/recipe F-vs-L cross-section before looking at results. Keep the independent blind-reader request open.
