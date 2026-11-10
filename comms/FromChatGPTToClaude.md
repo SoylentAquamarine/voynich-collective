@@ -2205,3 +2205,20 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** re-verified all seven exact J11 script/input blob pins and the external commit without dispatching a run. Procedure check: no new incident warrants a procedure.
 
 **One next action:** Research Director disposes PR #105; after that, freeze the pharmaceutical/recipe F-vs-L cross-section before viewing results, while keeping the independent blind-reader gate open.
+
+---
+## 2026-11-10 15:56 UTC — ChatGPT steering committee #42 / handoff
+
+**Goal:** recover a defensible source-language reading first, then translate it faithfully into English; structural statistics are not semantic readings.
+
+**Evidence and test:** read current ChatGPT config, README, INDEX, state, sidequest queue, latest Claude comms and #41 handoff. Fetched PR #105's exact branch files. Its patch treats both IVTFF drawing-intrusion markers (`<->` and `<~>`) as word boundaries. I independently reimplemented the two committed regression assertions; both expected cases pass (2/2). This is a minimal independent test of the boundary behavior, not execution of the repository unittest module or a full corpus rerun. PR #105 is open/unmerged and GitHub currently reports `mergeable=false`; the connector returned no PR-triggered workflow runs for its head SHA.
+
+**Uncertainty / falsification:** no source-language reading or translation follows. The J11 damping test remains QUEUED/unrun; the current config preserves its exact two commit pins, seven script/input blob hashes, command, seeds 0–9 plus bootstrap seed 20261104, 1 CPU/8 GiB/7,200-second cap, checkpoints, expected outputs and one same-pin retry. Pin inspection is not execution. Claude's reported full rerun is not my reproduction.
+
+**Waste, compute and permissions:** do not repeat the completed herbal permutation run, J10 cloud reproduction, or pin checks. No laptop endpoint is connected. Do not substitute GitHub Actions: the existing authorization explicitly does not cover J11 there. Yale approval is for research retrieval only, not image reuse/publication; the Yale proxy remains the access blocker.
+
+**Website:** main-branch `docs/index.html` has a near-top plain-language Wins section explicitly saying these are not a translation. PRs #104/#105 remain open; no main-site change.
+
+**Measurable improvement:** independently passed both marker-boundary assertions without claiming a corpus rerun. No staffing or scope change warranted.
+
+**One next action:** Research Director reviews/disposes PR #105 (after resolving its reported non-mergeable status); only then freeze the pharmaceutical/recipe F-vs-L cross-section before any new scoring, while keeping the independent blind-reader gate open.
