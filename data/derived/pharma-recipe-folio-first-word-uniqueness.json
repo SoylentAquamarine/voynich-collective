@@ -1,0 +1,1046 @@
+{
+  "seed": 20261110,
+  "n_perm": 20000,
+  "preregistration": "logs/2026-11-10-pharma-recipe-folio-first-selfreview.md",
+  "tokenizer_primary": "<-> and <~> are word breaks",
+  "primary": {
+    "corpus_tokens_ZL3b": 39026,
+    "corpus_types_ZL3b": 8373,
+    "P": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 16,
+        "pages_used_ge2_paragraphs": 15,
+        "n_F": 15,
+        "n_L": 28,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.4375,
+        "results": {
+          "hapax": {
+            "F": 0.4,
+            "L": 0.6429,
+            "D": -0.2429,
+            "p_one_sided": 0.99075
+          },
+          "strip_hapax": {
+            "F": 0.2,
+            "L": 0.4286,
+            "D": -0.2286,
+            "p_one_sided": 0.9709
+          },
+          "len": {
+            "F": 6.2,
+            "L": 7.25,
+            "D": -1.05,
+            "p_one_sided": 0.91985
+          },
+          "page_recur": {
+            "F": 0.0,
+            "L": 0.0714,
+            "D": -0.0714,
+            "p_one_sided": 1.0
+          },
+          "hapax_length_bin_pooled": {
+            "D": -0.2074,
+            "p_one_sided": 0.9652
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "poaiin",
+          "podeesho",
+          "dorsheoy",
+          "teodal",
+          "qoar",
+          "qokcheody",
+          "koldal",
+          "kosar",
+          "pcheody",
+          "sol"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 16,
+        "pages_used_ge2_paragraphs": 15,
+        "n_F": 15,
+        "n_L": 28,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.5625,
+        "results": {
+          "hapax": {
+            "F": 0.5333,
+            "L": 0.6429,
+            "D": -0.1095,
+            "p_one_sided": 0.89651
+          },
+          "strip_hapax": {
+            "F": 0.3333,
+            "L": 0.4643,
+            "D": -0.131,
+            "p_one_sided": 0.9373
+          },
+          "len": {
+            "F": 7.2667,
+            "L": 7.3571,
+            "D": -0.0905,
+            "p_one_sided": 0.60442
+          },
+          "page_recur": {
+            "F": 0.0,
+            "L": 0.0357,
+            "D": -0.0357,
+            "p_one_sided": 1.0
+          },
+          "hapax_length_bin_pooled": {
+            "D": -0.069,
+            "p_one_sided": 0.77496
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "p@221;aiin",
+          "po@152;eesheo",
+          "dor{ch'}eoy",
+          "teodal",
+          "qoar",
+          "qokchindy",
+          "@176;oldal",
+          "kosar",
+          "pcheody",
+          "sol"
+        ]
+      }
+    },
+    "S": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 25,
+        "pages_used_ge2_paragraphs": 25,
+        "n_F": 25,
+        "n_L": 267,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6,
+        "results": {
+          "hapax": {
+            "F": 0.6,
+            "L": 0.5131,
+            "D": 0.0869,
+            "p_one_sided": 0.23174
+          },
+          "strip_hapax": {
+            "F": 0.52,
+            "L": 0.3258,
+            "D": 0.1942,
+            "p_one_sided": 0.0466
+          },
+          "len": {
+            "F": 6.92,
+            "L": 6.5693,
+            "D": 0.3507,
+            "p_one_sided": 0.11519
+          },
+          "page_recur": {
+            "F": 0.12,
+            "L": 0.1236,
+            "D": -0.0036,
+            "p_one_sided": 0.65477
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0753,
+            "p_one_sided": 0.21499
+          }
+        },
+        "F_words_sample": [
+          "pchedal",
+          "pol",
+          "pchdar",
+          "pchdoiin",
+          "@199;aiin",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kaisar",
+          "teodeeor",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pches@186;chy",
+          "folorarom",
+          "tchedol",
+          "pchdol",
+          "f{c'hh}dar",
+          "tchedor",
+          "kchdpy",
+          "kor",
+          "tol"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 25,
+        "pages_used_ge2_paragraphs": 25,
+        "n_F": 25,
+        "n_L": 267,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.72,
+        "results": {
+          "hapax": {
+            "F": 0.72,
+            "L": 0.5918,
+            "D": 0.1282,
+            "p_one_sided": 0.15479
+          },
+          "strip_hapax": {
+            "F": 0.56,
+            "L": 0.3858,
+            "D": 0.1742,
+            "p_one_sided": 0.09065
+          },
+          "len": {
+            "F": 7.64,
+            "L": 7.0824,
+            "D": 0.5576,
+            "p_one_sided": 0.0888
+          },
+          "page_recur": {
+            "F": 0.04,
+            "L": 0.0861,
+            "D": -0.0461,
+            "p_one_sided": 0.92585
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0959,
+            "p_one_sided": 0.18719
+          }
+        },
+        "F_words_sample": [
+          "pchedal",
+          "poldar",
+          "pchdar",
+          "pchd@221;iin",
+          "paiindar",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kais@221;r",
+          "teodee@221;r",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pcheskchy",
+          "folorarom",
+          "tchedol",
+          "pchdol",
+          "f{c'hh}@152;ar",
+          "tchedor",
+          "kchdpy",
+          "@176;or",
+          "tol"
+        ]
+      }
+    },
+    "PS": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 41,
+        "pages_used_ge2_paragraphs": 40,
+        "n_F": 40,
+        "n_L": 295,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.5366,
+        "results": {
+          "hapax": {
+            "F": 0.525,
+            "L": 0.5254,
+            "D": -0.0004,
+            "p_one_sided": 0.63242
+          },
+          "strip_hapax": {
+            "F": 0.4,
+            "L": 0.3356,
+            "D": 0.0644,
+            "p_one_sided": 0.29509
+          },
+          "len": {
+            "F": 6.65,
+            "L": 6.6339,
+            "D": 0.0161,
+            "p_one_sided": 0.50507
+          },
+          "page_recur": {
+            "F": 0.075,
+            "L": 0.1186,
+            "D": -0.0436,
+            "p_one_sided": 0.76871
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0095,
+            "p_one_sided": 0.57172
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "poaiin",
+          "podeesho",
+          "pchedal",
+          "pol",
+          "pchdar",
+          "pchdoiin",
+          "@199;aiin",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kaisar",
+          "teodeeor",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pches@186;chy",
+          "folorarom"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 41,
+        "pages_used_ge2_paragraphs": 40,
+        "n_F": 40,
+        "n_L": 295,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6585,
+        "results": {
+          "hapax": {
+            "F": 0.65,
+            "L": 0.5966,
+            "D": 0.0534,
+            "p_one_sided": 0.36083
+          },
+          "strip_hapax": {
+            "F": 0.475,
+            "L": 0.3932,
+            "D": 0.0818,
+            "p_one_sided": 0.29294
+          },
+          "len": {
+            "F": 7.5,
+            "L": 7.1085,
+            "D": 0.3915,
+            "p_one_sided": 0.18869
+          },
+          "page_recur": {
+            "F": 0.025,
+            "L": 0.0814,
+            "D": -0.0564,
+            "p_one_sided": 0.95325
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0387,
+            "p_one_sided": 0.38233
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "p@221;aiin",
+          "po@152;eesheo",
+          "pchedal",
+          "poldar",
+          "pchdar",
+          "pchd@221;iin",
+          "paiindar",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kais@221;r",
+          "teodee@221;r",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pcheskchy",
+          "folorarom"
+        ]
+      }
+    },
+    "H": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 128,
+        "pages_used_ge2_paragraphs": 88,
+        "n_F": 88,
+        "n_L": 119,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6328,
+        "results": {
+          "hapax": {
+            "F": 0.6591,
+            "L": 0.3277,
+            "D": 0.3314,
+            "p_one_sided": 5e-05
+          },
+          "strip_hapax": {
+            "F": 0.4659,
+            "L": 0.1849,
+            "D": 0.281,
+            "p_one_sided": 5e-05
+          },
+          "len": {
+            "F": 7.1136,
+            "L": 6.084,
+            "D": 1.0296,
+            "p_one_sided": 0.0003
+          },
+          "page_recur": {
+            "F": 0.0114,
+            "L": 0.0504,
+            "D": -0.0391,
+            "p_one_sided": 0.97305
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.2702,
+            "p_one_sided": 5e-05
+          }
+        },
+        "F_words_sample": [
+          "pchocthy",
+          "paiin",
+          "tshol",
+          "torshor",
+          "koair",
+          "pcho",
+          "pocheody",
+          "pchroiin",
+          "fshody",
+          "pdrairdy",
+          "pochaiin",
+          "kchsy",
+          "kdchody",
+          "faiis",
+          "pchor",
+          "pol",
+          "pysaiinor",
+          "pydchdom",
+          "podairol",
+          "tchodar",
+          "psheoky",
+          "ksor",
+          "kshol",
+          "posaiin",
+          "kooiin"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 128,
+        "pages_used_ge2_paragraphs": 88,
+        "n_F": 88,
+        "n_L": 119,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6797,
+        "results": {
+          "hapax": {
+            "F": 0.6705,
+            "L": 0.3529,
+            "D": 0.3175,
+            "p_one_sided": 5e-05
+          },
+          "strip_hapax": {
+            "F": 0.5341,
+            "L": 0.2017,
+            "D": 0.3324,
+            "p_one_sided": 5e-05
+          },
+          "len": {
+            "F": 7.7614,
+            "L": 6.3025,
+            "D": 1.4588,
+            "p_one_sided": 5e-05
+          },
+          "page_recur": {
+            "F": 0.0,
+            "L": 0.0588,
+            "D": -0.0588,
+            "p_one_sided": 1.0
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.2342,
+            "p_one_sided": 0.0002
+          }
+        },
+        "F_words_sample": [
+          "pchocthy",
+          "paiin",
+          "tshol",
+          "torshor",
+          "koair",
+          "pchodaiin",
+          "pocheody",
+          "pchr@221;iin",
+          "fshody",
+          "pdrairdy",
+          "pochaiin",
+          "kchsy",
+          "kdchody",
+          "faiisar",
+          "pchor",
+          "pol",
+          "pysaiinor",
+          "pydchdom",
+          "podairol",
+          "tchodar",
+          "psheoky",
+          "ksor",
+          "kshol",
+          "posaiin",
+          "kooiin"
+        ]
+      }
+    }
+  },
+  "sensitivity_strip_tilde": {
+    "corpus_tokens_ZL3b": 39020,
+    "corpus_types_ZL3b": 8377,
+    "P": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 16,
+        "pages_used_ge2_paragraphs": 15,
+        "n_F": 15,
+        "n_L": 28,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.4375,
+        "results": {
+          "hapax": {
+            "F": 0.4,
+            "L": 0.6429,
+            "D": -0.2429,
+            "p_one_sided": 0.99075
+          },
+          "strip_hapax": {
+            "F": 0.2,
+            "L": 0.4286,
+            "D": -0.2286,
+            "p_one_sided": 0.9709
+          },
+          "len": {
+            "F": 6.2,
+            "L": 7.25,
+            "D": -1.05,
+            "p_one_sided": 0.91985
+          },
+          "page_recur": {
+            "F": 0.0,
+            "L": 0.0714,
+            "D": -0.0714,
+            "p_one_sided": 1.0
+          },
+          "hapax_length_bin_pooled": {
+            "D": -0.2074,
+            "p_one_sided": 0.9652
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "poaiin",
+          "podeesho",
+          "dorsheoy",
+          "teodal",
+          "qoar",
+          "qokcheody",
+          "koldal",
+          "kosar",
+          "pcheody",
+          "sol"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 16,
+        "pages_used_ge2_paragraphs": 15,
+        "n_F": 15,
+        "n_L": 28,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.5625,
+        "results": {
+          "hapax": {
+            "F": 0.5333,
+            "L": 0.6429,
+            "D": -0.1095,
+            "p_one_sided": 0.89651
+          },
+          "strip_hapax": {
+            "F": 0.3333,
+            "L": 0.4643,
+            "D": -0.131,
+            "p_one_sided": 0.9373
+          },
+          "len": {
+            "F": 7.2667,
+            "L": 7.3571,
+            "D": -0.0905,
+            "p_one_sided": 0.60442
+          },
+          "page_recur": {
+            "F": 0.0,
+            "L": 0.0357,
+            "D": -0.0357,
+            "p_one_sided": 1.0
+          },
+          "hapax_length_bin_pooled": {
+            "D": -0.069,
+            "p_one_sided": 0.77496
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "p@221;aiin",
+          "po@152;eesheo",
+          "dor{ch'}eoy",
+          "teodal",
+          "qoar",
+          "qokchindy",
+          "@176;oldal",
+          "kosar",
+          "pcheody",
+          "sol"
+        ]
+      }
+    },
+    "S": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 25,
+        "pages_used_ge2_paragraphs": 25,
+        "n_F": 25,
+        "n_L": 267,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6,
+        "results": {
+          "hapax": {
+            "F": 0.6,
+            "L": 0.5131,
+            "D": 0.0869,
+            "p_one_sided": 0.23174
+          },
+          "strip_hapax": {
+            "F": 0.52,
+            "L": 0.3258,
+            "D": 0.1942,
+            "p_one_sided": 0.0466
+          },
+          "len": {
+            "F": 6.92,
+            "L": 6.5693,
+            "D": 0.3507,
+            "p_one_sided": 0.11519
+          },
+          "page_recur": {
+            "F": 0.12,
+            "L": 0.1236,
+            "D": -0.0036,
+            "p_one_sided": 0.65477
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0753,
+            "p_one_sided": 0.21499
+          }
+        },
+        "F_words_sample": [
+          "pchedal",
+          "pol",
+          "pchdar",
+          "pchdoiin",
+          "@199;aiin",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kaisar",
+          "teodeeor",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pches@186;chy",
+          "folorarom",
+          "tchedol",
+          "pchdol",
+          "f{c'hh}dar",
+          "tchedor",
+          "kchdpy",
+          "kor",
+          "tol"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 25,
+        "pages_used_ge2_paragraphs": 25,
+        "n_F": 25,
+        "n_L": 267,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.72,
+        "results": {
+          "hapax": {
+            "F": 0.72,
+            "L": 0.5918,
+            "D": 0.1282,
+            "p_one_sided": 0.15479
+          },
+          "strip_hapax": {
+            "F": 0.56,
+            "L": 0.3858,
+            "D": 0.1742,
+            "p_one_sided": 0.09065
+          },
+          "len": {
+            "F": 7.64,
+            "L": 7.0824,
+            "D": 0.5576,
+            "p_one_sided": 0.0888
+          },
+          "page_recur": {
+            "F": 0.04,
+            "L": 0.0861,
+            "D": -0.0461,
+            "p_one_sided": 0.92585
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0959,
+            "p_one_sided": 0.18719
+          }
+        },
+        "F_words_sample": [
+          "pchedal",
+          "poldar",
+          "pchdar",
+          "pchd@221;iin",
+          "paiindar",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kais@221;r",
+          "teodee@221;r",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pcheskchy",
+          "folorarom",
+          "tchedol",
+          "pchdol",
+          "f{c'hh}@152;ar",
+          "tchedor",
+          "kchdpy",
+          "@176;or",
+          "tol"
+        ]
+      }
+    },
+    "PS": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 41,
+        "pages_used_ge2_paragraphs": 40,
+        "n_F": 40,
+        "n_L": 295,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.5366,
+        "results": {
+          "hapax": {
+            "F": 0.525,
+            "L": 0.5254,
+            "D": -0.0004,
+            "p_one_sided": 0.63242
+          },
+          "strip_hapax": {
+            "F": 0.4,
+            "L": 0.3356,
+            "D": 0.0644,
+            "p_one_sided": 0.29509
+          },
+          "len": {
+            "F": 6.65,
+            "L": 6.6339,
+            "D": 0.0161,
+            "p_one_sided": 0.50507
+          },
+          "page_recur": {
+            "F": 0.075,
+            "L": 0.1186,
+            "D": -0.0436,
+            "p_one_sided": 0.76871
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0095,
+            "p_one_sided": 0.57172
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "poaiin",
+          "podeesho",
+          "pchedal",
+          "pol",
+          "pchdar",
+          "pchdoiin",
+          "@199;aiin",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kaisar",
+          "teodeeor",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pches@186;chy",
+          "folorarom"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 41,
+        "pages_used_ge2_paragraphs": 40,
+        "n_F": 40,
+        "n_L": 295,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6585,
+        "results": {
+          "hapax": {
+            "F": 0.65,
+            "L": 0.5966,
+            "D": 0.0534,
+            "p_one_sided": 0.36083
+          },
+          "strip_hapax": {
+            "F": 0.475,
+            "L": 0.3932,
+            "D": 0.0818,
+            "p_one_sided": 0.29294
+          },
+          "len": {
+            "F": 7.5,
+            "L": 7.1085,
+            "D": 0.3915,
+            "p_one_sided": 0.18869
+          },
+          "page_recur": {
+            "F": 0.025,
+            "L": 0.0814,
+            "D": -0.0564,
+            "p_one_sided": 0.95325
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.0387,
+            "p_one_sided": 0.38233
+          }
+        },
+        "F_words_sample": [
+          "pcheol",
+          "pcheol",
+          "tolchor",
+          "polaiin",
+          "lsais",
+          "p@221;aiin",
+          "po@152;eesheo",
+          "pchedal",
+          "poldar",
+          "pchdar",
+          "pchd@221;iin",
+          "paiindar",
+          "polairy",
+          "pshdar",
+          "fsheda",
+          "pchdlar",
+          "kais@221;r",
+          "teodee@221;r",
+          "pchedal",
+          "kcholchdar",
+          "koshey",
+          "folchey",
+          "keeoal",
+          "pcheskchy",
+          "folorarom"
+        ]
+      }
+    },
+    "H": {
+      "ZL3b": {
+        "transcription": "ZL3b",
+        "herbal_pages_with_paragraphs": 128,
+        "pages_used_ge2_paragraphs": 88,
+        "n_F": 88,
+        "n_L": 119,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6328,
+        "results": {
+          "hapax": {
+            "F": 0.6591,
+            "L": 0.3277,
+            "D": 0.3314,
+            "p_one_sided": 5e-05
+          },
+          "strip_hapax": {
+            "F": 0.4659,
+            "L": 0.1849,
+            "D": 0.281,
+            "p_one_sided": 5e-05
+          },
+          "len": {
+            "F": 7.1136,
+            "L": 6.084,
+            "D": 1.0296,
+            "p_one_sided": 0.0003
+          },
+          "page_recur": {
+            "F": 0.0114,
+            "L": 0.0504,
+            "D": -0.0391,
+            "p_one_sided": 0.97305
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.2702,
+            "p_one_sided": 5e-05
+          }
+        },
+        "F_words_sample": [
+          "pchocthy",
+          "paiin",
+          "tshol",
+          "torshor",
+          "koair",
+          "pcho",
+          "pocheody",
+          "pchroiin",
+          "fshody",
+          "pdrairdy",
+          "pochaiin",
+          "kchsy",
+          "kdchody",
+          "faiis",
+          "pchor",
+          "pol",
+          "pysaiinor",
+          "pydchdom",
+          "podairol",
+          "tchodar",
+          "psheoky",
+          "ksor",
+          "kshol",
+          "posaiin",
+          "kooiin"
+        ]
+      },
+      "RF1b": {
+        "transcription": "RF1b (ZL3b paragraph starts)",
+        "herbal_pages_with_paragraphs": 128,
+        "pages_used_ge2_paragraphs": 88,
+        "n_F": 88,
+        "n_L": 119,
+        "starts_missing_or_empty": 0,
+        "all_pages_F_hapax_rate": 0.6797,
+        "results": {
+          "hapax": {
+            "F": 0.6705,
+            "L": 0.3529,
+            "D": 0.3175,
+            "p_one_sided": 5e-05
+          },
+          "strip_hapax": {
+            "F": 0.5341,
+            "L": 0.2017,
+            "D": 0.3324,
+            "p_one_sided": 5e-05
+          },
+          "len": {
+            "F": 7.7614,
+            "L": 6.3025,
+            "D": 1.4588,
+            "p_one_sided": 5e-05
+          },
+          "page_recur": {
+            "F": 0.0,
+            "L": 0.0588,
+            "D": -0.0588,
+            "p_one_sided": 1.0
+          },
+          "hapax_length_bin_pooled": {
+            "D": 0.2342,
+            "p_one_sided": 0.0002
+          }
+        },
+        "F_words_sample": [
+          "pchocthy",
+          "paiin",
+          "tshol",
+          "torshor",
+          "koair",
+          "pchodaiin",
+          "pocheody",
+          "pchr@221;iin",
+          "fshody",
+          "pdrairdy",
+          "pochaiin",
+          "kchsy",
+          "kdchody",
+          "faiisar",
+          "pchor",
+          "pol",
+          "pysaiinor",
+          "pydchdom",
+          "podairol",
+          "tchodar",
+          "psheoky",
+          "ksor",
+          "kshol",
+          "posaiin",
+          "kooiin"
+        ]
+      }
+    }
+  }
+}
