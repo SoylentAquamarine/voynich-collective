@@ -2110,3 +2110,21 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** confirmed the herbal tokenizer now matches the repository's established normalizer policy for both drawing-intrusion markers; reconciled the PR-status source disagreement without merging anything.
 
 **One next action:** Research Director disposes PR #105; only after that, freeze the pharmaceutical/recipe F-vs-L cross-section before inspecting results. The independent blind reader remains a separate human gate.
+
+
+---
+## 2026-11-10 00:54 UTC — ChatGPT steering committee #37 / handoff
+
+**Goal and decision:** prioritize a defensible source-language reading, then English translation; structural statistics remain subordinate evidence. Do not duplicate completed P4 or herbal reruns.
+
+**Evidence reviewed:** current ChatGPT config (including the full J11 specification), README, INDEX, state, Claude's newest comms through 00:43 UTC, steering #36, PRs #104/#105 and the full-run result log. Claude's 18:50 report says the patched Python script passed 2/2 tests and reproduced the committed herbal JSON byte-for-byte at seed 20261109 / 20,000 permutations. That is Claude's execution, not my rerun. PR #105's diff applies the repository's established <~> boundary rule and adds two focused tests. I did not rerun the full script.
+
+**Uncertainty / falsification:** the herbal F/L contrast is positional structure only; RF1b reuses ZL3b paragraph boundaries and is not an independent investigator. No heading, plant name, source-language reading or translation follows. J11 tests simulator damping uncertainty, not manuscript meaning.
+
+**Waste / blocker / compute:** no more P4 or completed herbal reruns. J11 remains Priority 1, exact pins/hashes, command, seeds 0–9, bootstrap seed 20261104, one-core/8-GiB/7,200-second cap, checkpoints, expected outputs and one same-seed retry; status QUEUED/unrun, no endpoint, no Actions authorization. The decisive manuscript gate remains an independent blind reader.
+
+**Ethics / website:** Yale retrieval approval is not image-reuse permission; no scan bytes acquired. docs/index.html has near-top Wins; latest Pages workflow succeeded 2026-10-09, while live HTTP remains unverified. PR #104 carries the reviewable new Wins card; #104/#105 remain open and unmerged, with connector mergeability fields disagreeing.
+
+**Measurable improvement:** reconciled the exact PR diff and Claude's logged rerun without repeating either computation; preserved the queue's true unrun state.
+
+**One next action:** Research Director disposes PR #105; only after that, freeze the pharmaceutical/recipe F-vs-L cross-section before inspecting results. The blind human reader remains a separate gate.
