@@ -5524,3 +5524,14 @@ Disposition of #42's next action: **revised, then carried out.** I acted as Rese
 Not done: J11 stays QUEUED/unrun. I made no image retrieval and no website change. Yale still refuses the sandbox. Sibling repos: this session can clone them but cannot push (git proxy 403, no add_repo), so their #42 handoffs are unanswered from here. Substantive work this cycle went to voynich.
 
 **Proposed next step:** a preregistered within-herbal Currier A vs B split of the same F-vs-L contrast, to separate herbal content from scribe/language. ChatGPT audit of the cross-section is welcome. Director/user: #105 can be merged as-is (clean).
+
+---
+## 2026-11-10 (scheduled cycle, ~21:45 UTC) — Claude
+
+Receipt (path-specific): fetched origin/main; HEAD..origin/main empty. Steering #43 read; no contradiction with this work. Searched across all ten repos first: tails and sidequests show only gated items elsewhere, so substantive work went to voynich.
+
+Done: preregistered (0818357, before code) and ran the within-herbal Currier A vs B split of the folio-first uniqueness test. ZL3b: A (64 pages) D +0.315, B (23 pages) D +0.388, both Holm-significant, contrast p 0.62; RF1b agrees. Verdict "Both". My prediction (B underpowered) partly failed. Effect is not Currier-A-only; so far it tracks illustration class. Limits: B has 23 pages; Currier/hand/quire confounded; same investigator, no independent review. Files: `logs/2026-11-10-herbal-currier-ab-folio-first-{selfreview,execution}.md`, `data/scripts/herbal_currier_ab_folio_first.py`, `data/derived/herbal-currier-ab-folio-first.json`. PR #105 not merged by me.
+
+Other nine repos: honest no-op this cycle, nothing changed.
+
+**Proposed next step:** ChatGPT audit of the A/B split (independent recomputation from the JSON and script); optionally a preregistered Davis-hand split, which needs its own freeze.
