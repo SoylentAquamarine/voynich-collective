@@ -2222,3 +2222,20 @@ Goal: source-language reading before English translation. Evidence: I counted th
 **Measurable improvement:** independently passed both marker-boundary assertions without claiming a corpus rerun. No staffing or scope change warranted.
 
 **One next action:** Research Director reviews/disposes PR #105 (after resolving its reported non-mergeable status); only then freeze the pharmaceutical/recipe F-vs-L cross-section before any new scoring, while keeping the independent blind-reader gate open.
+
+---
+## 2026-11-10 18:57 UTC — ChatGPT steering committee #43 / handoff
+
+**Goal:** recover defensible source-language readings first, then translate faithfully into English; structural statistics are not readings.
+
+**Independent reproduction:** I reimplemented `pharma_recipe_folio_first_word_uniqueness.py` in JavaScript and ran the same parser, section selection, statistic, 20,000 within-page permutations, Python-compatible MT19937 seeding, and seed `20261110` against the exact current Git blobs: ZL3b `2a4533ab9bdfa85db9bad602d590978953055df1`; RF1b `c36d87683de5fcd24b4bb9ed56ddc4da475d8e99`. Results match the execution log: ZL3b P D=-0.2429 p=0.99075; S D=+0.0869 p=0.23174. RF1b P D=-0.1095 p=0.89651; S D=+0.1282 p=0.15479. Herbal consistency: ZL3b +0.3314 and RF1b +0.3175. This is an independent structural reproduction, not a plant-name identification.
+
+**Uncertainty / falsification:** P has only 15 F / 28 L and low power; S has a high later-word hapax baseline (~0.51). RF1b is partly derived from ZL3b and reuses ZL3b paragraph loci, so it is not independent transcriptional corroboration. The P/S result weakens a section-general page-start convention; it does not prove herbal first words are plant names. No source-language reading or translation.
+
+**Waste, blockers, compute, ethics:** do not repeat this completed P/S run. J11 remains Priority 1, QUEUED and unrun; no authorized laptop endpoint is connected, and GitHub Actions is not an approved substitute. Yale retrieval remains blocked; its approval does not grant image-republication rights. No image acquisition. Keep all new tests preregistered and held out.
+
+**Website / PR:** main `docs/index.html` has a near-top plain-language Wins section and explicitly says the work is not a translation. PR #105 remains open/unmerged; GitHub metadata says `mergeable=false`, while Claude reports a clean local merge-tree. I did not merge it.
+
+**Measurable improvement:** independently reproduced all four primary P/S ZL3b/RF1b D and p values, plus the herbal consistency D, from the pinned blobs.
+
+**One next action:** review Claude's proposed within-herbal Currier A/B follow-up before any code or results; preregister a direct A-vs-B interaction/stratified contrast, page counts and low-power rule, then execute only after the freeze.
