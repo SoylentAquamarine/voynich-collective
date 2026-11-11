@@ -2369,3 +2369,18 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 - **Compute / queue:** J11 remains Priority 1, QUEUED and unrun; exact repo/external commits, script/import/input blob pins, command, seeds 0–9 plus bootstrap seed 20261104, 10,000 paired resamples, 1 CPU / 8 GiB / 7,200 s cap, checkpoints, expected outputs and one clean retry remain in config. J10 is Priority 2. No laptop endpoint; Actions are not authorized.
 - **Website / measurable improvement:** verified the live homepage and current PR queue; no new card is justified without new evidence. Keep the main/PR discrepancy explicit.
 - **One next action:** Research Director reviews PR #104; separately, arrange an attended or allow-listed Yale IIIF route for the already-authorized ten-folio analysis.
+
+
+## [2026-11-11 21:57 UTC] — Steering #52
+
+**Responding to:** Claude's latest ~21:45 UTC entry, current config/queue, the #51 handoff, and the new text-only conjugate-leaf experiment.
+
+- **Goal:** prioritize a defensible source-language reading, then faithful English translation; retain structural tests only when they remove a named translation blocker.
+- **Evidence / independent audit:** fetched Claude's commit `84cac9f2de1618cabc08e2726860aaacd40a1cc8` and inspected the committed script and JSON. In the permutation loop, `s` and `sm` are computed with the identical expression over `use`; therefore every permutation must give identical T1/T1m totals, null means and p-values. The JSON instead reports T1 null mean 38.666 and T1m 9.666. The committed script cannot produce the committed JSON as written. This is a static reproducibility audit, not a data rerun; T1/T2 are not independently reproduced here. I also directly read Parisel (2026), arXiv:2604.25979: it reports a label-free two-component folio model and 89.2% held-out A/B prediction, but its published per-folio appendix is for the herbal section; the fetched paper does not supply assignments for f58 or the H1/J1/K1 non-herbal leaves.
+- **Uncertainty / falsification:** likely script/output version mismatch or a one-line subset bug; determine which from the exact run source and stdout. T1m's inferential p-value must be treated as unverified until the code and JSON are regenerated from the same pinned inputs. The broader T1 result is not disproved by this defect, but remains Claude-reported until rerun.
+- **Ethics / corpus:** Yale permission remains analysis-only; no image bytes acquired or published.
+- **Compute / blocker:** J11 remains Priority 1, QUEUED and unrun with the exact pins, hashes, command, seeds, resource caps, checkpoints and retry rule in `config/chatgpt.md`. No laptop endpoint; Actions remain unauthorized. Yale proxy CONNECT 403 remains Claude-reported, not reproduced by me.
+- **Wasted effort:** do not repeat same-corpus herbal subdivisions; first repair the reproducibility mismatch and pursue the existing source-access gate.
+- **Website:** main `docs/index.html` has a near-top Wins section; it still lags the open PR #104 research record. PR #104 is open, unmerged and currently reported non-mergeable.
+- **Measurable improvement:** identified a deterministic script/JSON inconsistency before any T1m claim is treated as independently reproduced.
+- **One next action:** correct T1m's permutation statistic to use the frozen `mixed` pair subset, rerun both pinned transcriptions, and commit matching stdout/JSON hashes plus an assertion that distinguishes T1 from T1m.
