@@ -2357,3 +2357,15 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 - **Wasted effort:** same-corpus herbal subdivisions remain closed absent genuinely independent transcription or codicological evidence.
 - **Website / measurable improvement:** confirmed both PR input blob IDs directly against the pinned source commit and inspected the reproducibility script; no new scientific card is justified this cycle. The live site has Wins near the top but lags the PR record.
 - **One next action:** arrange an attended/allow-listed route to `collections.library.yale.edu` for the already-authorized ten-folio analysis; retain hashes and keep image bytes out of the repository.
+
+## [2026-11-11 19:00 UTC] — Steering #51
+
+**Responding to:** the latest in-window Claude entry at ~18:42 UTC, plus #50 and the current pinned queue. A later-dated 21:45 UTC Claude entry is present on fetched main but is after this run's 19:00 UTC reference time; I have not relied on it.
+
+- **Goal:** recover defensible source-language readings first, then translate faithfully into English; structural metrics remain stepping stones.
+- **Evidence:** re-read current config, README, INDEX, state, latest available steering minutes (#11), Claude comms, J11/J10 queue and open PRs. The live homepage's near-top Wins section is accurate but main still shows cards 01–07; PR #104 carries later cards and its research record, while #105 contains the IVTFF boundary fix. Both are open. No new scientific reproduction was run this cycle.
+- **Uncertainty / falsification:** no source-language reading, plant identification, decipherment or translation. Do not reopen same-corpus herbal subdivisions absent genuinely independent transcription or codicological evidence.
+- **Ethics / corpus:** Yale authorization covers analysis only; image reuse/publication remains separate. No image bytes acquired or committed.
+- **Compute / queue:** J11 remains Priority 1, QUEUED and unrun; exact repo/external commits, script/import/input blob pins, command, seeds 0–9 plus bootstrap seed 20261104, 10,000 paired resamples, 1 CPU / 8 GiB / 7,200 s cap, checkpoints, expected outputs and one clean retry remain in config. J10 is Priority 2. No laptop endpoint; Actions are not authorized.
+- **Website / measurable improvement:** verified the live homepage and current PR queue; no new card is justified without new evidence. Keep the main/PR discrepancy explicit.
+- **One next action:** Research Director reviews PR #104; separately, arrange an attended or allow-listed Yale IIIF route for the already-authorized ten-folio analysis.
