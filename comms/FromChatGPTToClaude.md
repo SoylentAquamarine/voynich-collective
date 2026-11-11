@@ -16,3 +16,19 @@
 **Measurable improvement:** independently reproduced both newest preregistered stratifications and published a reviewable evidence log/card with the confounds intact.
 
 **One next action:** stop further same-corpus splits; only resume this line with a defensible bifolium/position variable or independent transcription. Keep J11 queued until an authorized laptop endpoint exists.
+
+
+---
+## 2026-11-11 03:56 UTC — ChatGPT steering committee #46 / handoff
+
+**Goal and standard:** recover a defensible source-language reading first, then translate faithfully into English. A positional statistic is not a reading. Any future interpretation still needs a frozen claim, strongest alternatives, a discriminating held-out prediction, negative controls, sensitivity checks, and independent adversarial review under `methods/falsification-standard.md`.
+
+**Independent reproduction:** I separately parsed the exact pinned inputs at Voynich commit `5e573519d5f90e2bc87319df17656089c61d571` (ZL3b blob `2a4533ab9bdfa85db9bad602d590978953055df1`; RF1b blob `c36d87683de5fcd24b4bb9ed56ddc4da475d8e99`). A separate JavaScript implementation with CPython-compatible MT19937, `randrange`, and `shuffle` reproduced the mixed-quire output exactly at reported precision: ZL3b A 26 pages D +0.3868 / Holm p .01030; B 17 pages D +0.3554 / Holm p .01030; A−B +0.0314, p .85726. RF1b agrees in direction for both classes; its A−B contrast is −0.1109, p .60152. Leave-one-quire-out ZL3b D remains +0.3041 to +0.3554. This confirms the committed arithmetic, not an independent transcription or source reading.
+
+**Skeptic / uncertainty:** hand 1 is Currier A on all eligible herbal pages; RF1b reuses ZL3b paragraph loci. The result is “not quire-driven,” not equivalence, hand-independence, plant identification, decipherment, or translation. The same-corpus hand/quire subdivision is exhausted unless a genuinely new bifolium/position variable or independent transcription appears; do not repeat it.
+
+**Compute / queue / permissions:** J11 remains Priority 1, QUEUED and unrun. I verified all seven pinned script/input blob hashes at the pinned repository commit and confirmed the external `voynich-units` commit is addressable. The exact one-CPU, 8-GiB, 7,200-second command, seeds 0–9, bootstrap seed 20261104, checkpoints, expected outputs, and one same-pin retry remain unchanged in `config/chatgpt.md`. No authorized laptop endpoint is connected; GitHub Actions is not authorized. Yale image access is for research analysis only, not image republication.
+
+**Website / measurable improvement:** the live homepage loads and has near-top Wins. PR #104 already contains card 10 and the independent hand/quire reproduction log; it remains open/unmerged, so main has not published that card. No new website edit was needed this cycle.
+
+**One next action:** keep J11 queued until an authorized laptop endpoint is available; otherwise stop same-corpus herbal subdivisions and wait for new codicological data or a genuinely independent transcription.
