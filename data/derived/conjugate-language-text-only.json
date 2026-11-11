@@ -1,0 +1,307 @@
+{
+  "seed": 20261113,
+  "n_perm": 20000,
+  "min_tokens": 30,
+  "alpha": 1.0,
+  "preregistration": "logs/2026-11-11-conjugate-language-text-only-selfreview.md (78436f0)",
+  "ZL3b": {
+    "n_pairs": 50,
+    "n_pairs_used": 50,
+    "leaves_below_min_tokens": [],
+    "T1": {
+      "concordant": 48,
+      "null_mean": 38.666,
+      "p_one_sided": 0.0001,
+      "discordant_pairs": [
+        "H1a/H1z (A/B)",
+        "J1a/J1z (A/B)"
+      ]
+    },
+    "T1m": {
+      "mixed_quires": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "Q"
+      ],
+      "n_pairs": 21,
+      "concordant": 19,
+      "null_mean": 9.666,
+      "p_one_sided": 0.0001
+    },
+    "T2": {
+      "n_leaves_with_header": 91,
+      "agree": 90,
+      "disagreeing_leaves": {
+        "H2b": {
+          "n_tok": 753,
+          "llr_B_minus_A": 161.05,
+          "text": "B",
+          "header": "A",
+          "pages": [
+            "f58r",
+            "f58v"
+          ]
+        }
+      },
+      "leaves_without_single_header_label": {
+        "H1a": {
+          "n_tok": 285,
+          "llr_B_minus_A": -20.8,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f57r",
+            "f57v"
+          ]
+        },
+        "H2y": {
+          "n_tok": 48,
+          "llr_B_minus_A": 14.67,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f65r",
+            "f65v"
+          ]
+        },
+        "I1a": {
+          "n_tok": 492,
+          "llr_B_minus_A": -69.99,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f67r1",
+            "f67r2",
+            "f67v2",
+            "f67v1"
+          ]
+        },
+        "I1z": {
+          "n_tok": 622,
+          "llr_B_minus_A": -160.15,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f68r1",
+            "f68r2",
+            "f68r3",
+            "f68v3",
+            "f68v2",
+            "f68v1"
+          ]
+        },
+        "J1a": {
+          "n_tok": 300,
+          "llr_B_minus_A": -21.57,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f69r",
+            "f69v"
+          ]
+        },
+        "J1z": {
+          "n_tok": 575,
+          "llr_B_minus_A": 18.77,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f70r1",
+            "f70r2",
+            "f70v2",
+            "f70v1"
+          ]
+        },
+        "K1a": {
+          "n_tok": 190,
+          "llr_B_minus_A": 2.01,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f71r",
+            "f71v"
+          ]
+        },
+        "K1z": {
+          "n_tok": 714,
+          "llr_B_minus_A": 48.7,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f72r1",
+            "f72r2",
+            "f72r3",
+            "f72v3",
+            "f72v2",
+            "f72v1"
+          ]
+        },
+        "T1z": {
+          "n_tok": 555,
+          "llr_B_minus_A": 612.43,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f116r",
+            "f116v"
+          ]
+        }
+      }
+    }
+  },
+  "RF1b": {
+    "n_pairs": 50,
+    "n_pairs_used": 50,
+    "leaves_below_min_tokens": [],
+    "T1": {
+      "concordant": 47,
+      "null_mean": 37.666,
+      "p_one_sided": 0.0001,
+      "discordant_pairs": [
+        "H1a/H1z (A/B)",
+        "J1a/J1z (A/B)",
+        "K1a/K1z (B/A)"
+      ]
+    },
+    "T1m": {
+      "mixed_quires": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "Q"
+      ],
+      "n_pairs": 22,
+      "concordant": 19,
+      "null_mean": 9.666,
+      "p_one_sided": 0.0001
+    },
+    "T2": {
+      "n_leaves_with_header": 91,
+      "agree": 90,
+      "disagreeing_leaves": {
+        "H2b": {
+          "n_tok": 742,
+          "llr_B_minus_A": 151.64,
+          "text": "B",
+          "header": "A",
+          "pages": [
+            "f58r",
+            "f58v"
+          ]
+        }
+      },
+      "leaves_without_single_header_label": {
+        "H1a": {
+          "n_tok": 281,
+          "llr_B_minus_A": -24.58,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f57r",
+            "f57v"
+          ]
+        },
+        "H2y": {
+          "n_tok": 47,
+          "llr_B_minus_A": 10.76,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f65r",
+            "f65v"
+          ]
+        },
+        "I1a": {
+          "n_tok": 480,
+          "llr_B_minus_A": -60.62,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f67r1",
+            "f67r2",
+            "f67v2",
+            "f67v1"
+          ]
+        },
+        "I1z": {
+          "n_tok": 606,
+          "llr_B_minus_A": -155.57,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f68r1",
+            "f68r2",
+            "f68r3",
+            "f68v3",
+            "f68v2",
+            "f68v1"
+          ]
+        },
+        "J1a": {
+          "n_tok": 292,
+          "llr_B_minus_A": -12.64,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f69r",
+            "f69v"
+          ]
+        },
+        "J1z": {
+          "n_tok": 555,
+          "llr_B_minus_A": 1.87,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f70r1",
+            "f70r2",
+            "f70v2",
+            "f70v1"
+          ]
+        },
+        "K1a": {
+          "n_tok": 186,
+          "llr_B_minus_A": 1.9,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f71r",
+            "f71v"
+          ]
+        },
+        "K1z": {
+          "n_tok": 687,
+          "llr_B_minus_A": -0.29,
+          "text": "A",
+          "header": null,
+          "pages": [
+            "f72r1",
+            "f72r2",
+            "f72r3",
+            "f72v3",
+            "f72v2",
+            "f72v1"
+          ]
+        },
+        "T1z": {
+          "n_tok": 557,
+          "llr_B_minus_A": 564.71,
+          "text": "B",
+          "header": null,
+          "pages": [
+            "f116r",
+            "f116v"
+          ]
+        }
+      }
+    }
+  }
+}
