@@ -1,0 +1,219 @@
+{
+  "date": "2026-11-11",
+  "source_commit": "c4ed3ce2844a99ee48f44b446a04465ee2ea86e6",
+  "inputs": {
+    "ZL3b_blob": "2a4533ab9bdfa85db9bad602d590978953055df1",
+    "RF1b_blob": "c36d87683de5fcd24b4bb9ed56ddc4da475d8e99"
+  },
+  "method": "Exact two-sided permutation of whole (Q,B) bifolium clusters within each mixed quire D-G; preserve the number of A/B bifolia per quire.",
+  "paragraph_start_rule": "ZL3b <%> loci on $I=H pages; first paragraph-initial word versus all later paragraph-initial words; retain pages with at least two non-empty starts.",
+  "statistic": "D_A - D_B, where D is the first-paragraph-start hapax rate minus the later-paragraph-start hapax rate.",
+  "p_value_rule": "Exact fraction of all allowed cluster-label assignments with |D*| >= |D_observed|; no Monte Carlo or +1 correction.",
+  "eligible_pages": 43,
+  "paragraph_starts": 103,
+  "total_exact_assignments": 576,
+  "cluster_census": [
+    {
+      "quire": "D",
+      "n_bifolia": 4,
+      "n_A_bifolia": 3,
+      "n_B_bifolia": 1,
+      "bifolia": [
+        {
+          "key": "D|1",
+          "label": "A",
+          "eligible_pages": 2,
+          "pages": [
+            "f32r",
+            "f32v"
+          ]
+        },
+        {
+          "key": "D|2",
+          "label": "B",
+          "eligible_pages": 3,
+          "pages": [
+            "f26r",
+            "f31r",
+            "f31v"
+          ]
+        },
+        {
+          "key": "D|3",
+          "label": "A",
+          "eligible_pages": 2,
+          "pages": [
+            "f27r",
+            "f30r"
+          ]
+        },
+        {
+          "key": "D|4",
+          "label": "A",
+          "eligible_pages": 3,
+          "pages": [
+            "f28v",
+            "f29r",
+            "f29v"
+          ]
+        }
+      ]
+    },
+    {
+      "quire": "E",
+      "n_bifolia": 4,
+      "n_A_bifolia": 2,
+      "n_B_bifolia": 2,
+      "bifolia": [
+        {
+          "key": "E|1",
+          "label": "B",
+          "eligible_pages": 3,
+          "pages": [
+            "f33v",
+            "f40r",
+            "f40v"
+          ]
+        },
+        {
+          "key": "E|2",
+          "label": "B",
+          "eligible_pages": 4,
+          "pages": [
+            "f34r",
+            "f34v",
+            "f39r",
+            "f39v"
+          ]
+        },
+        {
+          "key": "E|3",
+          "label": "A",
+          "eligible_pages": 1,
+          "pages": [
+            "f35r"
+          ]
+        },
+        {
+          "key": "E|4",
+          "label": "A",
+          "eligible_pages": 4,
+          "pages": [
+            "f36r",
+            "f36v",
+            "f37r",
+            "f37v"
+          ]
+        }
+      ]
+    },
+    {
+      "quire": "F",
+      "n_bifolia": 4,
+      "n_A_bifolia": 2,
+      "n_B_bifolia": 2,
+      "bifolia": [
+        {
+          "key": "F|1",
+          "label": "B",
+          "eligible_pages": 2,
+          "pages": [
+            "f41r",
+            "f48v"
+          ]
+        },
+        {
+          "key": "F|2",
+          "label": "A",
+          "eligible_pages": 4,
+          "pages": [
+            "f42r",
+            "f42v",
+            "f47r",
+            "f47v"
+          ]
+        },
+        {
+          "key": "F|3",
+          "label": "B",
+          "eligible_pages": 3,
+          "pages": [
+            "f43r",
+            "f43v",
+            "f46r"
+          ]
+        },
+        {
+          "key": "F|4",
+          "label": "A",
+          "eligible_pages": 4,
+          "pages": [
+            "f44r",
+            "f44v",
+            "f45r",
+            "f45v"
+          ]
+        }
+      ]
+    },
+    {
+      "quire": "G",
+      "n_bifolia": 4,
+      "n_A_bifolia": 3,
+      "n_B_bifolia": 1,
+      "bifolia": [
+        {
+          "key": "G|1",
+          "label": "A",
+          "eligible_pages": 4,
+          "pages": [
+            "f49r",
+            "f49v",
+            "f56r",
+            "f56v"
+          ]
+        },
+        {
+          "key": "G|2",
+          "label": "B",
+          "eligible_pages": 2,
+          "pages": [
+            "f55r",
+            "f55v"
+          ]
+        },
+        {
+          "key": "G|3",
+          "label": "A",
+          "eligible_pages": 1,
+          "pages": [
+            "f54r"
+          ]
+        },
+        {
+          "key": "G|4",
+          "label": "A",
+          "eligible_pages": 1,
+          "pages": [
+            "f52v"
+          ]
+        }
+      ]
+    }
+  ],
+  "ZL3b": {
+    "observed_D_A_minus_B": 0.0314,
+    "extreme_assignments": 476,
+    "exact_two_sided_p": 0.826389,
+    "permutation_D_min": -0.3855,
+    "permutation_D_max": 0.3497
+  },
+  "RF1b": {
+    "observed_D_A_minus_B": -0.1109,
+    "extreme_assignments": 262,
+    "exact_two_sided_p": 0.454861,
+    "permutation_D_min": -0.3819,
+    "permutation_D_max": 0.2297
+  },
+  "interpretation": "No clear A/B contrast is detected by this cluster-level test. This is not evidence of equivalence or independence; RF1b reuses ZL3b paragraph-start loci."
+}
