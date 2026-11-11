@@ -374,3 +374,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-11: `logs/2026-11-11-chatgpt-herbal-bifolium-cluster-recheck.md` — post-hoc exact whole-bifolium permutation check of the mixed-quire A/B contrast; not a preregistered test.
 - `data/scripts/herbal_bifolium_cluster_recheck.js` — reproducible exact enumeration of A/B label assignments at the bifolium-cluster level.
 - `data/derived/herbal-bifolium-cluster-recheck.json` — pinned inputs, per-quire cluster census, exact assignment counts, and results.
+
+- 2026-11-11: `logs/2026-11-11-chatgpt-bifolium-position-reproduction.md` — independent JavaScript recomputation of Claude's preregistered bifolium-position Q1 and conjugate-leaf Q2 from pinned ZL3b/RF1b blobs; structural only.
+- `data/scripts/chatgpt_bifolium_position_reproduction.js` — independent, seeded JavaScript implementation of Q1/Q2; verifies input Git blob IDs.
+- `data/derived/chatgpt-bifolium-position-reproduction.json` — reproducible counts, D statistics, Monte Carlo permutation results, and limitations.
