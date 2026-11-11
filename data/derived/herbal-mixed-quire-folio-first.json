@@ -1,0 +1,243 @@
+{
+  "seed": 20261111,
+  "n_perm": 20000,
+  "mixed_quires": [
+    "D",
+    "E",
+    "F",
+    "G"
+  ],
+  "preregistration": "logs/2026-11-11-herbal-hand-quire-stratified-selfreview.md",
+  "ZL3b": {
+    "n_eligible": 88,
+    "Q1_census": {
+      "D": {
+        "A": 7,
+        "B": 3
+      },
+      "E": {
+        "A": 5,
+        "B": 7
+      },
+      "F": {
+        "A": 8,
+        "B": 5
+      },
+      "G": {
+        "A": 6,
+        "B": 2
+      }
+    },
+    "Q1": {
+      "A": {
+        "n_pages": 26,
+        "n_L": 36,
+        "F": 0.6923,
+        "L": 0.3056,
+        "D": 0.3868,
+        "p_one_sided": 0.0078,
+        "p_holm": 0.0103
+      },
+      "B": {
+        "n_pages": 17,
+        "n_L": 24,
+        "F": 0.6471,
+        "L": 0.2917,
+        "D": 0.3554,
+        "p_one_sided": 0.00515,
+        "p_holm": 0.0103
+      }
+    },
+    "Q1c": {
+      "diff_A_minus_B": 0.0314,
+      "p_two_sided": 0.85726
+    },
+    "Q2": {
+      "hand2": {
+        "n_pages": 15,
+        "n_L": 22,
+        "F": 0.6,
+        "L": 0.2727,
+        "D": 0.3273,
+        "p_one_sided": 0.0115
+      },
+      "hand3": {
+        "n_pages": 5,
+        "n_L": 8,
+        "F": 0.4,
+        "L": 0.25,
+        "D": 0.15,
+        "p_one_sided": null,
+        "note": "descriptive only (low-power rule, <10 pages)"
+      },
+      "hand5": {
+        "n_pages": 4,
+        "n_L": 5,
+        "F": 1.0,
+        "L": 0.2,
+        "D": 0.8,
+        "p_one_sided": null,
+        "note": "descriptive only (low-power rule, <10 pages)"
+      }
+    },
+    "Q3_all_D": 0.3314,
+    "Q3_leave_one_quire_out": {
+      "A": {
+        "n_dropped": 13,
+        "D": 0.3427
+      },
+      "B": {
+        "n_dropped": 10,
+        "D": 0.3554
+      },
+      "C": {
+        "n_dropped": 11,
+        "D": 0.3258
+      },
+      "D": {
+        "n_dropped": 10,
+        "D": 0.327
+      },
+      "E": {
+        "n_dropped": 12,
+        "D": 0.3249
+      },
+      "F": {
+        "n_dropped": 13,
+        "D": 0.3041
+      },
+      "G": {
+        "n_dropped": 8,
+        "D": 0.3447
+      },
+      "H": {
+        "n_dropped": 3,
+        "D": 0.3197
+      },
+      "O": {
+        "n_dropped": 4,
+        "D": 0.333
+      },
+      "Q": {
+        "n_dropped": 4,
+        "D": 0.3363
+      }
+    }
+  },
+  "RF1b": {
+    "n_eligible": 88,
+    "Q1_census": {
+      "D": {
+        "A": 7,
+        "B": 3
+      },
+      "E": {
+        "A": 5,
+        "B": 7
+      },
+      "F": {
+        "A": 8,
+        "B": 5
+      },
+      "G": {
+        "A": 6,
+        "B": 2
+      }
+    },
+    "Q1": {
+      "A": {
+        "n_pages": 26,
+        "n_L": 36,
+        "F": 0.6538,
+        "L": 0.3333,
+        "D": 0.3205,
+        "p_one_sided": 0.02725,
+        "p_holm": 0.02725
+      },
+      "B": {
+        "n_pages": 17,
+        "n_L": 24,
+        "F": 0.7647,
+        "L": 0.3333,
+        "D": 0.4314,
+        "p_one_sided": 0.00655,
+        "p_holm": 0.0131
+      }
+    },
+    "Q1c": {
+      "diff_A_minus_B": -0.1109,
+      "p_two_sided": 0.60152
+    },
+    "Q2": {
+      "hand2": {
+        "n_pages": 15,
+        "n_L": 22,
+        "F": 0.7333,
+        "L": 0.3182,
+        "D": 0.4152,
+        "p_one_sided": 0.01055
+      },
+      "hand3": {
+        "n_pages": 5,
+        "n_L": 8,
+        "F": 0.4,
+        "L": 0.25,
+        "D": 0.15,
+        "p_one_sided": null,
+        "note": "descriptive only (low-power rule, <10 pages)"
+      },
+      "hand5": {
+        "n_pages": 4,
+        "n_L": 5,
+        "F": 1.0,
+        "L": 0.4,
+        "D": 0.6,
+        "p_one_sided": null,
+        "note": "descriptive only (low-power rule, <10 pages)"
+      }
+    },
+    "Q3_all_D": 0.3175,
+    "Q3_leave_one_quire_out": {
+      "A": {
+        "n_dropped": 13,
+        "D": 0.3269
+      },
+      "B": {
+        "n_dropped": 10,
+        "D": 0.3276
+      },
+      "C": {
+        "n_dropped": 11,
+        "D": 0.3094
+      },
+      "D": {
+        "n_dropped": 10,
+        "D": 0.321
+      },
+      "E": {
+        "n_dropped": 12,
+        "D": 0.2829
+      },
+      "F": {
+        "n_dropped": 13,
+        "D": 0.3101
+      },
+      "G": {
+        "n_dropped": 8,
+        "D": 0.3297
+      },
+      "H": {
+        "n_dropped": 3,
+        "D": 0.3141
+      },
+      "O": {
+        "n_dropped": 4,
+        "D": 0.3307
+      },
+      "Q": {
+        "n_dropped": 4,
+        "D": 0.3214
+      }
+    }
+  }
+}
