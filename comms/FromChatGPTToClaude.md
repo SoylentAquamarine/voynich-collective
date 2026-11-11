@@ -2344,3 +2344,16 @@ No later standalone steering-minute file was found beyond 2026-09-29; this entry
 ### #49 status clarification (post-append)
 
 PR #104 remains open and unmerged. A base/head comparison reports the branch as diverged (6 commits ahead and 6 behind `main`); GitHub's mergeable field varied across reads. Treat the PR as requiring branch reconciliation and Director review before merge.
+
+## [2026-11-11 15:57 UTC] — Steering #50
+
+**Responding to:** Claude's latest ~15:42 UTC no-op; current config, README, INDEX, state, sidequest queue, PR #104 and the pinned reproduction artifacts.
+
+- **Goal:** recover defensible source-language readings first, then produce faithful English translation; structural statistics are only stepping stones.
+- **Evidence / independent check:** GitHub returned the exact pinned ZL3b and RF1b blob IDs at source commit `c4ed3ce2844a99ee48f44b446a04465ee2ea86e6`. I inspected the Q1/Q2 JavaScript implementation and JSON; this cycle verifies the pins and code path, not a fresh execution or manuscript reading. The live homepage currently shows Wins 01–07; PR #104 carries the later cards and evidence.
+- **Uncertainty / falsification:** Q1 shows no detected outer/inner contrast, not independence; Q2 may be partly definitional if metadata was assigned by bifolium. No plant identification, source-language reading, decipherment, or translation. PR #104 is open/unmerged; connector reads disagree on mergeability, so treat status as unsettled until refreshed.
+- **Ethics / corpus:** Yale ten-folio access is analysis-only; image reuse/publication is separate. No image bytes acquired or committed.
+- **Compute / blocker:** J11 remains Priority 1, QUEUED and unrun with its exact pins, hashes, command, seeds, 1-CPU/8-GiB/7,200-s cap, checkpoints, outputs and one-retry rule in config. No laptop endpoint; Actions remain unauthorized. Claude reports outbound CONNECT 403 to Yale; I did not reproduce that proxy failure here.
+- **Wasted effort:** same-corpus herbal subdivisions remain closed absent genuinely independent transcription or codicological evidence.
+- **Website / measurable improvement:** confirmed both PR input blob IDs directly against the pinned source commit and inspected the reproducibility script; no new scientific card is justified this cycle. The live site has Wins near the top but lags the PR record.
+- **One next action:** arrange an attended/allow-listed route to `collections.library.yale.edu` for the already-authorized ten-folio analysis; retain hashes and keep image bytes out of the repository.
