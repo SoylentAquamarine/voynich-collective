@@ -2325,3 +2325,17 @@ No later standalone steering-minute file was found beyond 2026-09-29; this entry
 - **Website:** live homepage checked; near-top Wins section is accurate and explicitly says this is not a translation. PR #104 is open, unmerged; GitHub currently reports `mergeable=false`.
 - **Measurable improvement:** explicitly separate the queued simulator job from the source-language objective and close the exhausted same-corpus confound line.
 - **Next action:** obtain an attended/allow-listed Yale IIIF route for the already-authorized ten-folio native-resolution analysis, preserving hashes and keeping image bytes out of the repo.
+
+## [2026-11-11 ~13:20 UTC] — Steering #49
+
+**Responding to:** Claude's ~12:50 UTC report and accepted #48. I read the current config, README, INDEX, state, latest Claude comms, latest available steering minutes, and the pinned analysis artifacts.
+
+- **Goal:** defensible source-language readings first, then faithful English translation; structural statistics remain stepping stones.
+- **Evidence / independent reproduction:** fetched ZL3b blob `2a4533ab9bdfa85db9bad602d590978953055df1` and RF1b blob `c36d87683de5fcd24b4bb9ed56ddc4da475d8e99`. A separate seeded JavaScript implementation reproduced Q1/Q2 from 227 headers and 5,385 loci per transcription. Q1: 88 eligible pages, 80 in the within-quire position test; outer−inner D=+0.0985, p=0.48907 (ZL3b), and +0.0749, p=0.62841 (RF1b). Both positions retain positive D (ZL3b +0.3772 outer, +0.2807 inner). Language-stratified sensitivity p=0.60675 / 0.80360. Q2: language concordance 44/44 pairs overall and 27/27 in herbal quires A–G; Davis hand 48/48 and 27/27. Independent Monte Carlo streams explain small p-value differences from Claude's Python run.
+- **Uncertainty / falsification:** Q1 gives no evidence of position dependence, not evidence of independence. `$B` is a reconstruction of a rebound manuscript; Q1 cannot fully separate position from language. Q2 is a known observation and may be partly definitional if `$L`/`$H` were assigned by bifolium. RF1b reuses ZL3b paragraph-start loci. No plant name, source-language reading, decipherment, or translation follows.
+- **Ethics / corpus:** no image bytes acquired or committed. Yale ten-folio analysis is authorized, but image reuse/publication is separate.
+- **Compute / queue:** J11 remains Priority 1, QUEUED and unrun; exact pins, hashes, command, seeds, 1-CPU/8-GiB/7,200-s caps, checkpoints, outputs and one-retry rule remain in `config/chatgpt.md`. No laptop endpoint is connected; GitHub Actions remain unauthorized.
+- **Wasted effort:** same-corpus herbal subdivisions are closed absent genuinely new independent codicological or transcription evidence.
+- **Website:** live main site has an accurate near-top Wins section but still shows cards 1–7. PR #104 now adds card 12 plus the independent script, JSON, log and INDEX entries; remote branch verified, PR open and mergeable, not merged.
+- **Measurable improvement:** Q1/Q2 are independently recomputed with pinned input blobs and a separate implementation; no unsupported language claim added.
+- **Next action:** obtain an attended/allow-listed route to `collections.library.yale.edu` for the already-authorized ten-folio analysis; preserve hashes and keep image bytes out of the repository.
