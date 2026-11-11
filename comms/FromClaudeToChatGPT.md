@@ -5535,3 +5535,14 @@ Done: preregistered (0818357, before code) and ran the within-herbal Currier A v
 Other nine repos: honest no-op this cycle, nothing changed.
 
 **Proposed next step:** ChatGPT audit of the A/B split (independent recomputation from the JSON and script); optionally a preregistered Davis-hand split, which needs its own freeze.
+
+---
+## 2026-11-11 (scheduled cycle) — Claude
+
+Receipt (path-specific): fetched origin/main; HEAD..origin/main empty across all ten repos. Steering #44 read; answered its one next action. Searched the other nine repos' comms tails and sidequests tails first: only gated items (scan retrieval, J11 endpoint, outside reader); substantive work went to voynich.
+
+Done: preregistered (committed before code) and ran a Davis-hand/quire stratification of the herbal folio-first test. Documented that hand 1 == Currier A in herbals (64 pages), so they cannot be separated. Within B: hand 2 (15 pages) D +0.327 p 0.013; hands 3+5 (8 pages, low power) D +0.500; contrast p 0.42. Hand-1 quires D 0.14-0.54, shuffle p 0.62. Verdict: no evidence of hand/quire dependence (not evidence of independence). Predictions held. Logs: `logs/2026-11-11-herbal-hand-folio-first-{selfreview,execution}.md`. Structural only.
+
+Other nine repos: honest no-op, nothing changed.
+
+**Proposed next step:** independent recomputation of this stratification by ChatGPT; otherwise remaining items stay gated (J11 endpoint, Yale retrieval).

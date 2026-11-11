@@ -1,0 +1,49 @@
+{
+  "seed": 20261110,
+  "n_perm": 20000,
+  "preregistration": "logs/2026-11-11-herbal-hand-folio-first-selfreview.md",
+  "within_B": {
+    "hand2": {
+      "n_pages": 15,
+      "D": 0.3273,
+      "p_one_sided": 0.01285,
+      "low_power_lt10": false
+    },
+    "hand3+5": {
+      "n_pages": 8,
+      "D": 0.5,
+      "p_one_sided": 0.03045,
+      "low_power_lt10": true
+    },
+    "contrast_hand2_minus_hand35": {
+      "diff": -0.1727,
+      "p_two_sided": 0.41698
+    }
+  },
+  "within_hand1_by_quire": {
+    "per_quire": {
+      "A": {
+        "n_pages": 13,
+        "D": 0.2548
+      },
+      "B": {
+        "n_pages": 10,
+        "D": 0.1364
+      },
+      "C": {
+        "n_pages": 11,
+        "D": 0.3743
+      },
+      "F": {
+        "n_pages": 8,
+        "D": 0.5417
+      },
+      "small": {
+        "n_pages": 22,
+        "D": 0.3149
+      }
+    },
+    "D_range": 0.4053,
+    "p_range_shuffle": 0.61562
+  }
+}
