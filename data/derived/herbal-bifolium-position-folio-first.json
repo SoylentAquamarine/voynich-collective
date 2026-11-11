@@ -1,0 +1,224 @@
+{
+  "seed": 20261112,
+  "n_perm": 20000,
+  "maxB_by_quire": {
+    "A": 4,
+    "B": 4,
+    "C": 4,
+    "D": 4,
+    "E": 4,
+    "F": 4,
+    "G": 4,
+    "H": 2,
+    "I": 1,
+    "J": 1,
+    "K": 1,
+    "L": 1,
+    "M": 5,
+    "N": 1,
+    "O": 2,
+    "Q": 2,
+    "S": 2,
+    "T": 6
+  },
+  "preregistration": "logs/2026-11-11-herbal-bifolium-position-selfreview.md (c5429ae)",
+  "ZL3b": {
+    "n_eligible": 88,
+    "n_dropped_no_B": 0,
+    "census_by_quire": {
+      "A": {
+        "outer": 7,
+        "inner": 6
+      },
+      "B": {
+        "outer": 6,
+        "inner": 4
+      },
+      "C": {
+        "outer": 5,
+        "inner": 6
+      },
+      "D": {
+        "outer": 5,
+        "inner": 5
+      },
+      "E": {
+        "outer": 7,
+        "inner": 5
+      },
+      "F": {
+        "outer": 6,
+        "inner": 7
+      },
+      "G": {
+        "outer": 6,
+        "inner": 2
+      },
+      "H": {
+        "outer": 2,
+        "inner": 1
+      },
+      "O": {
+        "outer": 4,
+        "inner": 0
+      },
+      "Q": {
+        "outer": 0,
+        "inner": 4
+      }
+    },
+    "Q1": {
+      "n_pages_used": 80,
+      "n_strata": 8,
+      "n_outer": 44,
+      "n_inner": 36,
+      "diff_outer_minus_inner": 0.0985,
+      "p_two_sided": 0.49443
+    },
+    "Q1a": {
+      "outer": {
+        "n_pages": 48,
+        "n_L": 58,
+        "F": 0.6875,
+        "L": 0.3103,
+        "D": 0.3772,
+        "p_one_sided": 0.00035,
+        "p_holm": 0.0007
+      },
+      "inner": {
+        "n_pages": 40,
+        "n_L": 61,
+        "F": 0.625,
+        "L": 0.3443,
+        "D": 0.2807,
+        "p_one_sided": 0.0042,
+        "p_holm": 0.0042
+      }
+    },
+    "Q1s_quire_x_language": {
+      "n_pages_used": 60,
+      "n_strata": 7,
+      "n_outer": 30,
+      "n_inner": 30,
+      "diff_outer_minus_inner": 0.0912,
+      "p_two_sided": 0.61402
+    }
+  },
+  "RF1b": {
+    "n_eligible": 88,
+    "n_dropped_no_B": 0,
+    "census_by_quire": {
+      "A": {
+        "outer": 7,
+        "inner": 6
+      },
+      "B": {
+        "outer": 6,
+        "inner": 4
+      },
+      "C": {
+        "outer": 5,
+        "inner": 6
+      },
+      "D": {
+        "outer": 5,
+        "inner": 5
+      },
+      "E": {
+        "outer": 7,
+        "inner": 5
+      },
+      "F": {
+        "outer": 6,
+        "inner": 7
+      },
+      "G": {
+        "outer": 6,
+        "inner": 2
+      },
+      "H": {
+        "outer": 2,
+        "inner": 1
+      },
+      "O": {
+        "outer": 4,
+        "inner": 0
+      },
+      "Q": {
+        "outer": 0,
+        "inner": 4
+      }
+    },
+    "Q1": {
+      "n_pages_used": 80,
+      "n_strata": 8,
+      "n_outer": 44,
+      "n_inner": 36,
+      "diff_outer_minus_inner": 0.0749,
+      "p_two_sided": 0.62672
+    },
+    "Q1a": {
+      "outer": {
+        "n_pages": 48,
+        "n_L": 58,
+        "F": 0.6875,
+        "L": 0.3448,
+        "D": 0.3427,
+        "p_one_sided": 0.0012,
+        "p_holm": 0.0024
+      },
+      "inner": {
+        "n_pages": 40,
+        "n_L": 61,
+        "F": 0.65,
+        "L": 0.3607,
+        "D": 0.2893,
+        "p_one_sided": 0.0028,
+        "p_holm": 0.0028
+      }
+    },
+    "Q1s_quire_x_language": {
+      "n_pages_used": 60,
+      "n_strata": 7,
+      "n_outer": 30,
+      "n_inner": 30,
+      "diff_outer_minus_inner": 0.0463,
+      "p_two_sided": 0.81171
+    }
+  },
+  "Q2_conjugate_language": {
+    "pages_without_F_dropped": [
+      "fRos"
+    ],
+    "n_QB_groups": 52,
+    "n_conjugate_pairs": 50,
+    "group_sizes": {
+      "2": 50,
+      "1": 2
+    },
+    "all_quires": {
+      "n_pairs_used": 44,
+      "n_pairs_dropped": 6,
+      "concordant": 44,
+      "null_mean": 34.654,
+      "p_one_sided": 5e-05,
+      "n_pairs_in_mixed_quires": 18,
+      "concordant_in_mixed_quires": 18,
+      "discordant_pairs": [],
+      "Q2h_hand_concordant": "48/48",
+      "p_holm": 0.0001
+    },
+    "herbal_quires_A_G": {
+      "n_pairs_used": 27,
+      "n_pairs_dropped": 0,
+      "concordant": 27,
+      "null_mean": 19.024,
+      "p_one_sided": 0.00025,
+      "n_pairs_in_mixed_quires": 16,
+      "concordant_in_mixed_quires": 16,
+      "discordant_pairs": [],
+      "Q2h_hand_concordant": "27/27",
+      "p_holm": 0.00025
+    }
+  }
+}
