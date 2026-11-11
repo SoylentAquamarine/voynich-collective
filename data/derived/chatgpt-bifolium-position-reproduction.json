@@ -1,0 +1,154 @@
+{
+  "source_commit": "c4ed3ce2844a99ee48f44b446a04465ee2ea86e6",
+  "input_git_blob_sha": {
+    "ZL3b": "2a4533ab9bdfa85db9bad602d590978953055df1",
+    "RF1b": "c36d87683de5fcd24b4bb9ed56ddc4da475d8e99"
+  },
+  "seed": 20261112,
+  "q1_permutations": 50000,
+  "q2_permutations": 100000,
+  "corpus": {
+    "headers": 227,
+    "ZL3b_loci": 5385,
+    "RF1b_loci": 5385,
+    "herbal_paragraph_starts": 247,
+    "maxB_by_quire": {
+      "A": 4,
+      "B": 4,
+      "C": 4,
+      "D": 4,
+      "E": 4,
+      "F": 4,
+      "G": 4,
+      "H": 2,
+      "I": 1,
+      "J": 1,
+      "K": 1,
+      "L": 1,
+      "M": 5,
+      "N": 1,
+      "O": 2,
+      "Q": 2,
+      "S": 2,
+      "T": 6
+    }
+  },
+  "ZL3b": {
+    "n_eligible": 88,
+    "n_positioned": 88,
+    "Q1": {
+      "n_pages_used": 80,
+      "n_strata": 8,
+      "n_outer": 44,
+      "n_inner": 36,
+      "diff_outer_minus_inner": 0.0985,
+      "permutations": 50000,
+      "extreme_assignments": 24453,
+      "p_two_sided": 0.4890702185956281
+    },
+    "Q1a": {
+      "outer": {
+        "D": 0.3772,
+        "permutations": 50000,
+        "extreme_assignments": 18,
+        "p_one_sided": 0.00037999240015199694,
+        "p_holm": 0.0007599848003039939
+      },
+      "inner": {
+        "D": 0.2807,
+        "permutations": 50000,
+        "extreme_assignments": 187,
+        "p_one_sided": 0.00375992480150397,
+        "p_holm": 0.00375992480150397
+      }
+    },
+    "Q1s_quire_x_language": {
+      "n_pages_used": 60,
+      "n_strata": 7,
+      "n_outer": 30,
+      "n_inner": 30,
+      "diff_outer_minus_inner": 0.0912,
+      "permutations": 50000,
+      "extreme_assignments": 30337,
+      "p_two_sided": 0.6067478650426992
+    }
+  },
+  "RF1b": {
+    "n_eligible": 88,
+    "n_positioned": 88,
+    "Q1": {
+      "n_pages_used": 80,
+      "n_strata": 8,
+      "n_outer": 44,
+      "n_inner": 36,
+      "diff_outer_minus_inner": 0.0749,
+      "permutations": 50000,
+      "extreme_assignments": 31420,
+      "p_two_sided": 0.6284074318513629
+    },
+    "Q1a": {
+      "outer": {
+        "D": 0.3427,
+        "permutations": 50000,
+        "extreme_assignments": 76,
+        "p_one_sided": 0.0015399692006159878,
+        "p_holm": 0.0030799384012319755
+      },
+      "inner": {
+        "D": 0.2893,
+        "permutations": 50000,
+        "extreme_assignments": 123,
+        "p_one_sided": 0.0024799504009919804,
+        "p_holm": 0.0024799504009919804
+      }
+    },
+    "Q1s_quire_x_language": {
+      "n_pages_used": 60,
+      "n_strata": 7,
+      "n_outer": 30,
+      "n_inner": 30,
+      "diff_outer_minus_inner": 0.0463,
+      "permutations": 50000,
+      "extreme_assignments": 40180,
+      "p_two_sided": 0.8036039279214415
+    }
+  },
+  "Q2": {
+    "pages_without_F_dropped": [
+      "fRos"
+    ],
+    "n_QB_groups": 52,
+    "n_conjugate_pairs": 50,
+    "group_sizes": {
+      "1": 2,
+      "2": 50
+    },
+    "scopes": {
+      "all_quires": {
+        "n_pairs_used": 44,
+        "n_pairs_dropped": 6,
+        "concordant": 44,
+        "null_mean": 34.66856,
+        "permutations": 100000,
+        "extreme_assignments": 3,
+        "p_one_sided": 0.00003999960000399996,
+        "n_pairs_in_mixed_quires": 18,
+        "concordant_in_mixed_quires": 18,
+        "hand_concordance": "48/48"
+      },
+      "herbal_quires_A_G": {
+        "n_pairs_used": 27,
+        "n_pairs_dropped": 0,
+        "concordant": 27,
+        "null_mean": 19.00136,
+        "permutations": 100000,
+        "extreme_assignments": 19,
+        "p_one_sided": 0.0001999980000199998,
+        "n_pairs_in_mixed_quires": 16,
+        "concordant_in_mixed_quires": 16,
+        "hand_concordance": "27/27"
+      }
+    }
+  },
+  "interpretation": "Independent structural reproduction only. Q1 does not show position independence; Q2 reproduces a known header-level pattern and may be partly definitional if $L/$H were assigned at bifolium level. No source-language reading or translation follows."
+}
