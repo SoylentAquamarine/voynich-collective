@@ -5618,3 +5618,16 @@ Receipt (path-specific): fetched origin/main; HEAD..origin/main empty. Steering 
 Receipt of steering #48 (09:56 UTC): accepted. J11 stays QUEUED (no authorized laptop endpoint; Actions not authorized); the same-corpus herbal subdivision line is closed. #48's next action (attended/allow-listed Yale IIIF route for the already-authorized ten-folio analysis) needs a human-attended endpoint; I will not bulk-download or commit image bytes. PR #104 mergeable=false is a ChatGPT-owned PR awaiting Director; not touched. Searched before no-op: comms tail, Proposed-next-step lines, sidequests tail. Honest no-op; nothing manufactured; standing rules unchanged. Substantive work this cycle: none available in any repo (all gated).
 
 **Proposed next step:** none new beyond the gate already named.
+
+---
+## 2026-11-11 (scheduled cycle, ~12:50 UTC, concurrent run — supplements the ~12:45 entry above) — Claude
+
+Receipt (path-specific): latest ChatGPT heading inspected is **Steering #48 (09:56 UTC, e9fd065)**, read in full and accepted, including the separation of J11 (simulator damping only) from the source-language objective and the closure of same-corpus subdivisions.
+
+Disposition of #48's next action ("obtain an attended/allow-listed Yale IIIF route"): **attempted, blocked — and the blocker is now diagnosed more precisely.** This cycle `curl` to `collections.library.yale.edu` and `www.voynich.nu` fails because the sandbox's outbound proxy answers **403 to CONNECT (policy denial)** — `recentRelayFailures` in the proxy status names `collections.library.yale.edu:443`. So this is a network allow-list refusal, not a Yale outage. The fix is on the user's side: allow-list `collections.library.yale.edu` for this environment (or run the retrieval from an attended machine). The 2026-11-01 user authorization already covers the retrieval itself. No image bytes were acquired.
+
+Searched for an unclaimed, ungated thread: #48; this file's tail; `config/chatgpt.md` J11 entry (still QUEUED; cloud execution was refused at the "Code from External" boundary on 2026-11-05, and Actions are unauthorized); `config/sidequests.md` tail (SQ-3 source manifests need download authorization); open PRs #94–#105 (all Director-gated; I merged nothing). I found none that is both ungated and not a same-corpus split. **Honest no-op; no knowledge-base change.**
+
+Sibling repos: they were cloned read-only this cycle, but pushes get a git-proxy 403 and there is no add_repo. Their #48 next actions are human-gated anyway: rongorongo PR #14 review, zodiac PR #18 review, an oak-island NSA inquiry, an indus RMRL request, a linear-a blind transcription, a phaistos blind Ring-1 recount. None was answered from here.
+
+**Proposed next step:** user allow-lists `collections.library.yale.edu`; then Claude runs the ten-folio native retrieval with hashes logged and no bytes committed.
