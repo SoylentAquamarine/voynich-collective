@@ -112,6 +112,36 @@ Total output lines: 520
             <p>A new model can reproduce much of the Currier A/B difference, but part of its first apparent success came from unequal line lengths. Isolating its parts found a real control-parameter effect. Three tests showed a rising damping ratio across their tested range; a fourth, much closer to the no-change setting, was too noisy for that trend to extend reliably. At the most extreme setting, one run missed the H2 limit by only 0.00086 bits while the other five tests passed. This is a better-understood model, not a translation or an identified historical method.</p>
             <a class="read-more" href="#confirmed-findings">See the evidence and limits →</a>
           </article>
+          <article class="highlight-card">
+            <span class="highlight-number">08</span>
+            <h3>The first words on herbal pages stand out</h3>
+            <p>Across 88 herbal pages with at least two paragraphs, the first paragraph's opening word appears only once in the manuscript about 66% of the time, compared with 33% for later paragraph openings. A separate code path reproduces the pattern in both transcriptions. This is a positional pattern—not a plant-name reading or translation—and the second transcription shares the first one's paragraph boundaries.</p>
+            <a class="read-more" href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-11-09-chatgpt-herbal-word-uniqueness-audit.md">Read the independent audit and limitations →</a>
+          </article>
+          <article class="highlight-card">
+            <span class="highlight-number">09</span>
+            <h3>The herbal pattern appears in both Currier A and B</h3>
+            <p>In 64 Currier A and 23 Currier B herbal pages, the first paragraph's opening word was unique in the full transcription about 67% and 65% of the time, versus 36% and 26% for later paragraph openings. ChatGPT independently recomputed the frozen 20,000-permutation results from the pinned ZL3b and RF1b files. This shows the pattern is present in both groups, not that the groups are equal: their difference was not statistically distinguishable, and Currier class is confounded with scribal hand and quire. RF1b reuses the same paragraph loci. This is structural only—not a plant-name reading or translation.</p>
+            <a class="read-more" href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-11-10-herbal-currier-ab-folio-first-execution.md">Read the test and limitations →</a>
+          </article>
+          <article class="highlight-card">
+            <span class="highlight-number">10</span>
+            <h3>The herbal pattern persists within mixed quires</h3>
+            <p>In the four quires that contain both Currier A and B herbal pages, the first paragraph's opening word remains unusually likely to be a one-off in both groups. Holding quire fixed does not explain the pattern. The A/B contrast is not significant, and Currier A is perfectly confounded with Davis hand 1 in this section. The second transcription reuses the same paragraph locations. This is structural only—not a plant-name reading or translation.</p>
+            <a class="read-more" href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-11-11-chatgpt-herbal-hand-quire-reproduction.md">Read the independent reproduction and limits →</a>
+          </article>
+          <article class="highlight-card">
+            <span class="highlight-number">11</span>
+            <h3>We checked the A/B comparison using whole bifolia</h3>
+            <p>Currier labels are shared across the two leaves of a bifolium, so we rechecked the mixed-quire A/B contrast by shuffling whole bifolia, not individual pages. Exact enumeration of 576 assignments gives a two-sided p=0.826 for ZL3b and p=0.455 for RF1b. This finds no clear A/B difference; it does not prove equivalence or independence. RF1b reuses ZL3b paragraph locations. Structural only—not a reading or translation.</p>
+            <a class="read-more" href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-11-11-chatgpt-herbal-bifolium-cluster-recheck.md">Read the exact method and limits →</a>
+          </article>
+          <article class="highlight-card">
+            <span class="highlight-number">12</span>
+            <h3>The first-word pattern survives an outer-versus-inner check</h3>
+            <p>We independently rechecked the herbal pages using the manuscript's reconstructed bifolium positions. The first-word pattern remains in both outer and inner positions, and their difference is not statistically clear. The two leaves of each checked pair also carry the same recorded language and hand. This is a reproduction of structure in the pinned transcriptions—not a new reading. The binding is reconstructed, and the labels may partly reflect how the transcriptions were made. No plant names, source language, or translation were identified.</p>
+            <a class="read-more" href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-11-11-chatgpt-bifolium-position-reproduction.md">Read the independent reproduction and limits →</a>
+          </article>
         </div>
       </section>
 
