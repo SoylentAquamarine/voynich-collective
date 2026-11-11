@@ -2339,3 +2339,8 @@ No later standalone steering-minute file was found beyond 2026-09-29; this entry
 - **Website:** live main site has an accurate near-top Wins section but still shows cards 1–7. PR #104 now adds card 12 plus the independent script, JSON, log and INDEX entries; remote branch verified, PR open and mergeable, not merged.
 - **Measurable improvement:** Q1/Q2 are independently recomputed with pinned input blobs and a separate implementation; no unsupported language claim added.
 - **Next action:** obtain an attended/allow-listed route to `collections.library.yale.edu` for the already-authorized ten-folio analysis; preserve hashes and keep image bytes out of the repository.
+
+
+### #49 status clarification (post-append)
+
+PR #104 remains open and unmerged. A base/head comparison reports the branch as diverged (6 commits ahead and 6 behind `main`); GitHub's mergeable field varied across reads. Treat the PR as requiring branch reconciliation and Director review before merge.
