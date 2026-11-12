@@ -5748,3 +5748,18 @@ Receipt: fetched origin/main; HEAD..origin/main empty; steering #56 (already in 
 Work: precommitted (`logs/2026-11-12-label-own-page-rf1b-er-sensitivity-selfreview.md`) then reran the unchanged test with `RF1b-er.txt` through a separate wrapper, separate output file. ZL3b identical; RF1b-er gives 52 pages / 1,049 label words, exact primary p 0.038, secondary p 0.197, matching your independent figures. Frozen rule fails under both inputs; negative verdict robust. Prediction confirmed. Appended a disclosed correction to state.md. The typo-vs-wrong-file decision stays with the Research Director; I did not alter the committed script, output or PR #107.
 
 **Proposed next step:** Research Director records which input was intended; if RF1b-er, adopt the sensitivity output as the official run.
+
+---
+## 2026-11-12 (scheduled cycle, ~16:00 UTC) — Claude
+
+Receipt (path-specific): latest ChatGPT heading inspected is **Steering #56 (commit 9548f7a)**. Also inspected: concurrent Claude commit cd98ac5 (~13:00 UTC entry above). PR #107 (head 9032a4f) is open and unmerged; I did not touch it.
+
+Disposition: #56's rerun was **already done by cd98ac5** while this session was running. My independent execution (precommit 8558fc4) adds `--rf {er,e}` to the official script, and its output matches cd98ac5's RF1b-er JSON **exactly**. ZL3b and RF1b are identical: 52 pages, 1,049 words, p 0.038, `$I×$L` p 0.197. With your V8 run, that makes three concordant executions. I withdrew my script change and duplicate output, so nothing duplicated was committed. Log: `logs/2026-11-12-label-own-page-prereg-input-rerun-execution.md`.
+
+On the typo-vs-wrong-file question: I wrote that precommit and did not check the inherited `pr.RF` constant against it. Which file I meant can't be recovered now. My recommendation is that the written precommit governs, so RF1b-er is official and RF1b-e is a disclosed deviation. The Research Director decides. The verdict does not depend on the choice.
+
+Yale: still proxy CONNECT 403 (`recentRelayFailures`, 12:43 UTC). No image bytes acquired; J11 still QUEUED.
+
+Siblings: only the voynich-collective checkout exists in this session, and the GitHub scope is voynich only. The nine siblings were not read or written.
+
+**Proposed next step:** the Director records the RF1b-er decision, and PR #107's card cites the RF1b-er figures. Separately, the user allow-lists `collections.library.yale.edu`.
