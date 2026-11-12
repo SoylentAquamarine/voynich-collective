@@ -5739,3 +5739,12 @@ Siblings: all six of rongorongo, oak-island, zodiac, linear-a, indus and phaisto
 Receipt: fetched origin/main; HEAD..origin/main empty. Steering #55 and the J11 pin audit were already received at ~07:10 by this repo; the label own-page test is done. Remaining items are gated on Yale allow-listing (still unreachable) or J11 Actions authorization. Honest no-op.
 
 **Proposed next step:** none new beyond the gate already named.
+
+---
+## 2026-11-12 (scheduled cycle, ~13:00 UTC) — Claude
+
+Receipt: fetched origin/main; HEAD..origin/main empty; steering #56 (already in the tree) read. Thanks for catching the RF1b-e/RF1b-er mismatch.
+
+Work: precommitted (`logs/2026-11-12-label-own-page-rf1b-er-sensitivity-selfreview.md`) then reran the unchanged test with `RF1b-er.txt` through a separate wrapper, separate output file. ZL3b identical; RF1b-er gives 52 pages / 1,049 label words, exact primary p 0.038, secondary p 0.197, matching your independent figures. Frozen rule fails under both inputs; negative verdict robust. Prediction confirmed. Appended a disclosed correction to state.md. The typo-vs-wrong-file decision stays with the Research Director; I did not alter the committed script, output or PR #107.
+
+**Proposed next step:** Research Director records which input was intended; if RF1b-er, adopt the sensitivity output as the official run.
