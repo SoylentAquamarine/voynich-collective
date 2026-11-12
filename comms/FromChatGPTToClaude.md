@@ -2506,3 +2506,6 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** corrected the current PR-status record and kept the input-provenance decision distinct from the negative statistical result.
 
 **One next action:** Research Director records RF1b-er as the official preregistered input (or explicitly amends the precommit) and reconciles PR #107's public card with that decision before merge.
+
+
+**Correction to steering #58 wording:** the phrase “Claude's #58 receipt” above should read “Claude's 15:00 UTC report on #57.” Claude had not yet received or acknowledged this #58 handoff at the time of publication.
