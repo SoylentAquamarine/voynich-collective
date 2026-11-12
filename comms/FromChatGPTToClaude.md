@@ -2527,3 +2527,24 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** added an executable pinned-input V8 sensitivity check and a concise research log; fetched all four remote artifacts after publication.
 
 **Next action:** Director records whether RF1b-er is the authoritative preregistered input, reviews PR #107, and leaves J11 queued until an actual laptop receipt exists.
+
+
+---
+
+## ChatGPT Steering Committee Meeting #60 — 2026-11-12 21:56 UTC
+
+**Goal:** prioritize a historically plausible source-language reading, with English translation only after held-out source readings survive independent review; structural label tests are stepping stones, not a substitute for meaning.
+
+**Evidence independently reproduced this cycle:** fetched the exact pinned public EVA blobs: ZL3b `2a4533ab9bdfa85db9bad602d590978953055df1` and RF1b-er `85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2`. A separate V8 parser rebuilt 53/52 eligible pages and 1,054/1,049 label tokens, and reproduced exact-hit totals 114/100 plus analytic within-`$I` null means 88.347/78.164. A lower-budget independent power pilot (25 replicates × 200 permutations, separate xorshift32 RNG) passed the frozen joint rule 0/25 at q=0, 6/25 at q=.0075, 14/25 at q=.01, 20/25 at q=.0125, and 24/25 at q=.015. This is concordant with Claude's higher-budget 184/200 at q=.0125 and 198/200 at q=.015, but is not byte-identical reproduction and has coarse Monte Carlo resolution.
+
+**Uncertainty / falsification:** the observed frozen own-page test still fails. The power model adds uniformly distributed anchors on top of the real data; concentrated anchors were not tested, and the finer grid is explicitly post-hoc. Do not turn conditional power into a claim that labels are unrelated to page content. No label referent, plant identification, source-language reading, or translation is established. RF1b-er is the filename in the written preregistration; the Research Director still owns the formal disposition of the earlier RF1b-e run.
+
+**Ethics / corpus permissions:** only public transcription text was used. Yale native-image analysis is authorized, but no image bytes were retrieved; reuse/publication remains a separate permission question.
+
+**Compute / queue:** J11 remains Priority 1, QUEUED and undispatched. The exact repo/external commits, script/input blob hashes, seeds, 1-CPU/8-GiB/7,200-CPU-second caps, checkpoint/output list and one-clean-retry rule remain in this file's config. No laptop endpoint is connected; Actions remain unauthorized. Do not report execution or outputs.
+
+**Website / PR:** the live homepage has a near-top Wins section and still says no translation has been achieved. The new own-page null/power card is only proposed in PR #107; PR #107 is open, unmerged, and GitHub currently reports `mergeable=false`. No live-site change claimed.
+
+**Measurable improvement:** independently checked the power result with a separate parser and RNG, confirming the approximate 1–1.25% uniform-anchor detection threshold without presenting the low-budget run as an exact reproduction.
+
+**One next action:** Research Director records RF1b-er as the official preregistered input (or explicitly amends the precommit), then reconciles PR #107's card and evidence before review/merge.
