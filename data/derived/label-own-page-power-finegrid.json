@@ -1,0 +1,142 @@
+{
+  "precommit": "logs/2026-11-12-label-own-page-power-selfreview.md",
+  "reps": 200,
+  "n_perm": 2000,
+  "seed": 20261113,
+  "q_grid": [
+    0.0025,
+    0.005,
+    0.0075,
+    0.01,
+    0.0125,
+    0.015,
+    0.0175
+  ],
+  "rule": "primary p<0.01 both AND IxL p<0.05 both (exact statistic)",
+  "inputs": {
+    "ZL3b": "data/ZL3b-n.txt",
+    "RF1b-er": "data/RF1b-er.txt"
+  },
+  "curve": [
+    {
+      "q": 0.0025,
+      "power": 0.01,
+      "passes": 2,
+      "ZL3b": {
+        "mean_planted_tokens": 2.23,
+        "mean_obs_H": 116.33,
+        "mean_null_mean": 88.72,
+        "share_primary_p_lt_0.01": 0.535
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 2.24,
+        "mean_obs_H": 102.42,
+        "mean_null_mean": 78.54,
+        "share_primary_p_lt_0.01": 0.01
+      }
+    },
+    {
+      "q": 0.005,
+      "power": 0.185,
+      "passes": 37,
+      "ZL3b": {
+        "mean_planted_tokens": 4.83,
+        "mean_obs_H": 119.03,
+        "mean_null_mean": 89.14,
+        "share_primary_p_lt_0.01": 0.88
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 4.93,
+        "mean_obs_H": 105.23,
+        "mean_null_mean": 78.93,
+        "share_primary_p_lt_0.01": 0.26
+      }
+    },
+    {
+      "q": 0.0075,
+      "power": 0.51,
+      "passes": 102,
+      "ZL3b": {
+        "mean_planted_tokens": 7.2,
+        "mean_obs_H": 121.5,
+        "mean_null_mean": 89.44,
+        "share_primary_p_lt_0.01": 0.965
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 7.19,
+        "mean_obs_H": 107.57,
+        "mean_null_mean": 79.27,
+        "share_primary_p_lt_0.01": 0.535
+      }
+    },
+    {
+      "q": 0.01,
+      "power": 0.715,
+      "passes": 143,
+      "ZL3b": {
+        "mean_planted_tokens": 9.38,
+        "mean_obs_H": 123.8,
+        "mean_null_mean": 89.9,
+        "share_primary_p_lt_0.01": 0.985
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 9.47,
+        "mean_obs_H": 109.94,
+        "mean_null_mean": 79.67,
+        "share_primary_p_lt_0.01": 0.755
+      }
+    },
+    {
+      "q": 0.0125,
+      "power": 0.92,
+      "passes": 184,
+      "ZL3b": {
+        "mean_planted_tokens": 11.4,
+        "mean_obs_H": 125.93,
+        "mean_null_mean": 90.12,
+        "share_primary_p_lt_0.01": 0.995
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 11.66,
+        "mean_obs_H": 112.21,
+        "mean_null_mean": 79.92,
+        "share_primary_p_lt_0.01": 0.925
+      }
+    },
+    {
+      "q": 0.015,
+      "power": 0.99,
+      "passes": 198,
+      "ZL3b": {
+        "mean_planted_tokens": 14.28,
+        "mean_obs_H": 129.04,
+        "mean_null_mean": 90.65,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 14.38,
+        "mean_obs_H": 115.22,
+        "mean_null_mean": 80.4,
+        "share_primary_p_lt_0.01": 0.99
+      }
+    },
+    {
+      "q": 0.0175,
+      "power": 0.995,
+      "passes": 199,
+      "ZL3b": {
+        "mean_planted_tokens": 16.75,
+        "mean_obs_H": 131.51,
+        "mean_null_mean": 91.02,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 16.73,
+        "mean_obs_H": 117.54,
+        "mean_null_mean": 80.8,
+        "share_primary_p_lt_0.01": 0.995
+      }
+    }
+  ],
+  "q_power80": 0.0125
+}

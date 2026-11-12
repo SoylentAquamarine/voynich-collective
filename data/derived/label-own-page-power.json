@@ -1,0 +1,160 @@
+{
+  "precommit": "logs/2026-11-12-label-own-page-power-selfreview.md",
+  "reps": 200,
+  "n_perm": 2000,
+  "seed": 20261113,
+  "q_grid": [
+    0.0,
+    0.02,
+    0.04,
+    0.06,
+    0.08,
+    0.1,
+    0.15,
+    0.2
+  ],
+  "rule": "primary p<0.01 both AND IxL p<0.05 both (exact statistic)",
+  "inputs": {
+    "ZL3b": "data/ZL3b-n.txt",
+    "RF1b-er": "data/RF1b-er.txt"
+  },
+  "curve": [
+    {
+      "q": 0.0,
+      "power": 0.0,
+      "passes": 0,
+      "ZL3b": {
+        "mean_planted_tokens": 0.0,
+        "mean_obs_H": 114.0,
+        "mean_null_mean": 88.36,
+        "share_primary_p_lt_0.01": 0.015
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 0.0,
+        "mean_obs_H": 100.0,
+        "mean_null_mean": 78.16,
+        "share_primary_p_lt_0.01": 0.0
+      }
+    },
+    {
+      "q": 0.02,
+      "power": 1.0,
+      "passes": 200,
+      "ZL3b": {
+        "mean_planted_tokens": 19.3,
+        "mean_obs_H": 134.25,
+        "mean_null_mean": 91.5,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 19.61,
+        "mean_obs_H": 120.75,
+        "mean_null_mean": 81.28,
+        "share_primary_p_lt_0.01": 1.0
+      }
+    },
+    {
+      "q": 0.04,
+      "power": 1.0,
+      "passes": 200,
+      "ZL3b": {
+        "mean_planted_tokens": 37.8,
+        "mean_obs_H": 153.65,
+        "mean_null_mean": 94.63,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 37.99,
+        "mean_obs_H": 139.9,
+        "mean_null_mean": 84.28,
+        "share_primary_p_lt_0.01": 1.0
+      }
+    },
+    {
+      "q": 0.06,
+      "power": 1.0,
+      "passes": 200,
+      "ZL3b": {
+        "mean_planted_tokens": 56.33,
+        "mean_obs_H": 173.01,
+        "mean_null_mean": 97.65,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 57.16,
+        "mean_obs_H": 159.78,
+        "mean_null_mean": 87.23,
+        "share_primary_p_lt_0.01": 1.0
+      }
+    },
+    {
+      "q": 0.08,
+      "power": 1.0,
+      "passes": 200,
+      "ZL3b": {
+        "mean_planted_tokens": 74.73,
+        "mean_obs_H": 192.01,
+        "mean_null_mean": 100.57,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 75.92,
+        "mean_obs_H": 179.46,
+        "mean_null_mean": 90.18,
+        "share_primary_p_lt_0.01": 1.0
+      }
+    },
+    {
+      "q": 0.1,
+      "power": 1.0,
+      "passes": 200,
+      "ZL3b": {
+        "mean_planted_tokens": 93.73,
+        "mean_obs_H": 211.84,
+        "mean_null_mean": 103.53,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 94.5,
+        "mean_obs_H": 198.44,
+        "mean_null_mean": 92.89,
+        "share_primary_p_lt_0.01": 1.0
+      }
+    },
+    {
+      "q": 0.15,
+      "power": 1.0,
+      "passes": 200,
+      "ZL3b": {
+        "mean_planted_tokens": 140.33,
+        "mean_obs_H": 260.11,
+        "mean_null_mean": 111.26,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 141.97,
+        "mean_obs_H": 247.53,
+        "mean_null_mean": 100.51,
+        "share_primary_p_lt_0.01": 1.0
+      }
+    },
+    {
+      "q": 0.2,
+      "power": 1.0,
+      "passes": 200,
+      "ZL3b": {
+        "mean_planted_tokens": 189.22,
+        "mean_obs_H": 310.42,
+        "mean_null_mean": 119.35,
+        "share_primary_p_lt_0.01": 1.0
+      },
+      "RF1b-er": {
+        "mean_planted_tokens": 190.59,
+        "mean_obs_H": 297.7,
+        "mean_null_mean": 108.16,
+        "share_primary_p_lt_0.01": 1.0
+      }
+    }
+  ],
+  "q_power80": 0.02
+}
