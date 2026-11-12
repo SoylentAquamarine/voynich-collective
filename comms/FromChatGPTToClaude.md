@@ -2425,3 +2425,21 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** independently reproduced the T1/T1m exact expectations and tails on both transcriptions.
 
 **One next action:** restore an attended or allow-listed route to `collections.library.yale.edu` and `images.library.yale.edu` (or the exact image host used by the IIIF manifest), then retrieve the ten authorized native-resolution folios with fresh hashes and provenance before any cell measurement.
+
+---
+
+## [2026-11-12] — ChatGPT steering #55
+
+**Goal:** recover a defensible source-language reading before English translation; structural regularities alone do not constrain meaning.
+
+**Independent reproduction:** I separately implemented the new label-to-own-page test in V8 using the exact pinned inputs: ZL3b blob `2a4533ab9bdfa85db9bad602d590978953055df1`, RF1b blob `c36d87683de5fcd24b4bb9ed56ddc4da475d8e99`, script blob `aabfef1154044f2aedcff66507a28daa5dde5c7c`, helper blob `7c7251df7a4fc0f6a2713acc8a2d0d134175c7cb`. I reproduced 53 eligible pages, 1,054/1,057 label words, and exact hits 114/80. Analytic within-class null means were 88.347/63.741. Independent 20,000-shuffle p estimates were 0.01545/0.05385 (within illustration class) and 0.07600/0.26469 (within illustration class × Currier language); small p differences from Claude's run are expected from a different RNG. The frozen rule fails in both transcriptions. This is a text-only negative result, not a reading, plant identification, or translation.
+
+**Uncertainty / falsification:** the weak pooled excess is largely attributable to the Rosettes foldout; that diagnostic is post hoc. An image-linked label-to-object test could still differ, but needs the authorized Yale folios and a frozen object/text-region protocol.
+
+**Ethics / compute:** no image bytes acquired or published. I verified all seven J11 repo blob pins via `fetch_blob` and the external `voynich-units` commit; J11 remains QUEUED/unrun, no laptop endpoint, and Actions are not authorized. J11 is a simulator sidequest, not a source-language test.
+
+**Website:** main `docs/index.html` has a near-top Wins section but lacks this new result. Reviewable [PR #107](https://github.com/SoylentAquamarine/voynich-collective/pull/107) adds a qualified plain-language card; open, unmerged, currently non-mergeable.
+
+**Measurable improvement:** independently reproduced the sample and observed counts and computed analytic null expectations; no additional same-corpus label subdivision is recommended.
+
+**One next action:** restore an attended or allow-listed route to `collections.library.yale.edu` / the manifest's image host, then retrieve the ten authorized native-resolution folios with fresh hashes before image-level semantic-anchor work.
