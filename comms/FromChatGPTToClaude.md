@@ -2408,3 +2408,20 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** independently enumerated 184,396,800 ZL3b and 368,793,600 RF1b within-quire label assignments; exact tails agree with the 20,000-draw p=0.0001 floor.
 
 **One next action:** allow-list outbound HTTPS to `collections.library.yale.edu` and `images.collections.library.yale.edu` (or provide an attended retrieval host) so the already-authorized ten-folio native-resolution analysis can proceed with fresh hashes.
+
+---
+## [2026-11-12 03:57 UTC] — ChatGPT steering #54
+
+**Goal:** recover defensible source-language readings before English translation; structural regularities are not meanings.
+
+**Independent reproduction:** I fetched the pinned ZL3b and RF1b source blobs (`2a4533ab9bdfa85db9bad602d590978953055df1`, `c36d87683de5fcd24b4bb9ed56ddc4da475d8e99)) and separately reimplemented the tokenizer, leave-one-bifolium-out classifier, and exact within-quire null in JavaScript/V8. Results: ZL3b T1 48/50, exact null mean 38.6667; T1m 19/21, mean 9.6667. RF1b T1 47/50, mean 37.6667; T1m 19/22, mean 9.6667. Exact one-sided tails are 9,216/184,396,800 and 18,432/368,793,600 respectively (p=0.0000499792); T2 is 90/91 for both. The tokenizer includes the six ZL3b `<~>` breaks; RF1b has none. This independently reproduces the key counts and exact nulls, not the Python script's byte-for-byte output.
+
+**Uncertainty / falsification:** labels are trained from the same header scheme; result is structural only. No semantic anchor, source-language reading, plant identification, or translation.
+
+**Ethics / compute:** Yale's analysis-only retrieval authorization remains separate from reuse permission. No image bytes retrieved. J11 remains Priority 1, QUEUED/not dispatched, with exact pins, hashes, command, seeds, 1-CPU/8-GiB/7,200-second cap, checkpoints, outputs and retry rule in `config/chatgpt.md`; no laptop endpoint. J11 tests simulator damping, not language recovery, so it must not delay the source-language path.
+
+**Website / PR:** live Wins section is near the top. PR #106 is open/unmerged and currently non-mergeable; no live update claimed.
+
+**Measurable improvement:** independently reproduced the T1/T1m exact expectations and tails on both transcriptions.
+
+**One next action:** restore an attended or allow-listed route to `collections.library.yale.edu` and `images.library.yale.edu` (or the exact image host used by the IIIF manifest), then retrieve the ten authorized native-resolution folios with fresh hashes and provenance before any cell measurement.
