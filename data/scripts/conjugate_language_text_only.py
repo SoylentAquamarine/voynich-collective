@@ -17,6 +17,7 @@ mq = importlib.util.module_from_spec(spec); spec.loader.exec_module(mq)
 pr = mq.pr
 OUT = pr.ROOT / "data" / "derived" / "conjugate-language-text-only.json"
 SEED, NPERM, MIN_TOK, ALPHA = 20261113, 20000, 30, 1.0
+AUDIT = []  # 2026-11-12: internals exposed for data/scripts/audit_t1m_analytic_null.py; no effect on outputs
 
 
 def page_words(loci):
@@ -78,6 +79,12 @@ def run(path, hdr):
             v = [text_lab[k] for k in ks]; rng.shuffle(v); L.update(zip(ks, v))
         s = sum(L[a] == L[b] for a, b in use); sm = sum(L[a] == L[b] for a, b in mixed)
         tot_s += s; tot_m += sm; ge += s >= obs; ge_m += sm >= obs_m
+    # 2026-11-12 guard (Steering #52): T1m must be computed over the frozen
+    # `mixed` subset, a strict subset of `use`, so its totals must differ from T1's.
+    assert set(mixed) < set(use) and len(mixed) < len(use), "T1m subset is not a strict subset of T1 pairs"
+    assert tot_m != tot_s, "T1 and T1m permutation totals coincide: subset bug"
+    AUDIT.append({"use": use, "mixed": mixed, "byq": dict(byq), "text_lab": dict(text_lab),
+                  "null_mean_T1": tot_s / NPERM, "null_mean_T1m": tot_m / NPERM})
     hdr_cmp = [(k, d) for k, d in detail.items() if d["header"] in ("A", "B")]
     fmt = lambda k: f"{k[0]}{k[1]}{k[2]}"
     return {

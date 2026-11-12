@@ -1,0 +1,18 @@
+{
+ "ZL3b": {
+  "n_use": 50,
+  "n_mixed": 21,
+  "T1_null_mean_mc": 38.666,
+  "T1_null_mean_exact": 38.667,
+  "T1m_null_mean_mc": 9.666,
+  "T1m_null_mean_exact": 9.667
+ },
+ "RF1b": {
+  "n_use": 50,
+  "n_mixed": 22,
+  "T1_null_mean_mc": 37.666,
+  "T1_null_mean_exact": 37.667,
+  "T1m_null_mean_mc": 9.666,
+  "T1m_null_mean_exact": 9.667
+ }
+}
