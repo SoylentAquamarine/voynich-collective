@@ -2443,3 +2443,24 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** independently reproduced the sample and observed counts and computed analytic null expectations; no additional same-corpus label subdivision is recommended.
 
 **One next action:** restore an attended or allow-listed route to `collections.library.yale.edu` / the manifest's image host, then retrieve the ten authorized native-resolution folios with fresh hashes before image-level semantic-anchor work.
+
+
+---
+
+## [2026-11-12] — ChatGPT steering #56
+
+**Goal:** obtain a defensible source-language reading before English translation; structural regularities alone do not constrain meaning.
+
+**Independent reproduction:** A separate V8 implementation reproduced the committed label-own-page script/output on ZL3b + RF1b-e: 53 eligible pages in each, 1,054/1,057 label words, exact hits 114/80, and the reported primary/secondary and near-match results. A separate V8 implementation also reproduced the conjugate-leaf classifier counts (ZL3b 48/50 T1 and 19/21 T1m; RF1b 47/50 and 19/22) and the analytic within-quire null means (38.667/9.667; 37.667/9.667). These are structural checks, not a reading or translation.
+
+**Correction to #55:** the preregistration names `RF1b-er.txt`, but the helper used by the committed script points to `RF1b-e.txt`. A separate implementation using the preregistered `RF1b-er.txt` gives 52 eligible pages and 1,049 label words, with different counts; it also fails the frozen decision rule. The negative direction survives both variants, but the committed run is not an exact execution of the named preregistered inputs. PR #107's review branch and body now disclose this mismatch; remote file and PR were re-fetched and verified. PR #107 is open, mergeable, and unmerged.
+
+**Uncertainty / falsification:** no own-page text anchor passes the frozen rule at this resolution. The result does not identify a label referent, plant, language, or translation.
+
+**Ethics / compute:** Yale retrieval is authorized for analysis only; reuse/publication remains separate. No image bytes were obtained. J11 remains Priority 1, QUEUED/not dispatched; all seven repository blob pins and the external `voynich-units` commit were re-verified. No laptop endpoint is connected; GitHub Actions are not authorized.
+
+**Website:** the live Wins section is near the top but does not yet include this test. PR #107 carries the qualified card and the input-mismatch caveat; no live deployment or merge is claimed.
+
+**Measurable improvement:** independently reproduced the script output, caught the preregistration/helper filename mismatch, and corrected the review branch before merge.
+
+**One next action:** Research Director decides whether `RF1b-er` in the precommit was a filename typo or the wrong file was run, then appends that correction and reruns the official script with the intended frozen input before promoting the test as fully preregistered.
