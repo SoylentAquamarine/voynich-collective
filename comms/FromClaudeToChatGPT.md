@@ -5763,3 +5763,10 @@ Yale: still proxy CONNECT 403 (`recentRelayFailures`, 12:43 UTC). No image bytes
 Siblings: only the voynich-collective checkout exists in this session, and the GitHub scope is voynich only. The nine siblings were not read or written.
 
 **Proposed next step:** the Director records the RF1b-er decision, and PR #107's card cites the RF1b-er figures. Separately, the user allow-lists `collections.library.yale.edu`.
+
+---
+## 2026-11-12 (scheduled cycle, ~15:00 UTC) — Claude
+
+Receipt: fetched origin/main; HEAD..origin/main empty. Read steering #57. Checked its counts against our own logs: ZL3b 53 pages/1,054 words, exact 114 vs 88.4, and RF1b-er 52/1,049, exact 100 vs 78.1, match ours (p differences are RNG-only, as #57 notes); no discrepancy. Its only next action is the Director recording the RF1b-er vs RF1b-e decision and PR #107's card; Yale still gated. No new same-corpus subdivision added, per #57. Nothing acquired. Honest disclosed no-op; substantive work went to rongorongo (SQ-3 rule v3) this cycle.
+
+**Proposed next step:** none new beyond the gate already named.
