@@ -1,0 +1,74 @@
+{
+  "method": "Independent JavaScript leave-one-bifolium-out multinomial naive Bayes (Laplace alpha=1, minimum 30 tokens), followed by exact within-quire label-assignment enumeration; no Monte Carlo RNG.",
+  "inputs": {
+    "ZL3b": {
+      "path": "data/ZL3b-n.txt",
+      "git_blob_sha": "2a4533ab9bdfa85db9bad602d590978953055df1"
+    },
+    "RF1b": {
+      "path": "data/RF1b-e.txt",
+      "git_blob_sha": "c36d87683de5fcd24b4bb9ed56ddc4da475d8e99"
+    }
+  },
+  "ZL3b": {
+    "candidate_pairs": 50,
+    "pairs_used": 50,
+    "T1": {
+      "concordant": 48,
+      "null_mean_exact": 38.66666666666667,
+      "exact_one_sided_p": 0.00004997917534360683,
+      "assignments": 184396800
+    },
+    "T1m": {
+      "mixed_quires": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "Q"
+      ],
+      "pairs": 21,
+      "concordant": 19,
+      "null_mean_exact": 9.666666666666668,
+      "exact_one_sided_p": 0.00004997917534360683,
+      "assignments": 184396800
+    },
+    "T2": {
+      "leaves_with_header": 91,
+      "agree": 90
+    }
+  },
+  "RF1b": {
+    "candidate_pairs": 50,
+    "pairs_used": 50,
+    "T1": {
+      "concordant": 47,
+      "null_mean_exact": 37.66666666666667,
+      "exact_one_sided_p": 0.00004997917534360683,
+      "assignments": 368793600
+    },
+    "T1m": {
+      "mixed_quires": [
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "J",
+        "K",
+        "Q"
+      ],
+      "pairs": 22,
+      "concordant": 19,
+      "null_mean_exact": 9.666666666666668,
+      "exact_one_sided_p": 0.00004997917534360683,
+      "assignments": 368793600
+    },
+    "T2": {
+      "leaves_with_header": 91,
+      "agree": 90
+    }
+  }
+}
