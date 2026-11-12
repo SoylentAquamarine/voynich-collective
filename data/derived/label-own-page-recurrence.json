@@ -1,0 +1,478 @@
+{
+  "seed": 20261112,
+  "n_perm": 20000,
+  "min_text_tokens": 20,
+  "min_label_len": 3,
+  "min_near_len": 4,
+  "preregistration": "logs/2026-11-12-label-own-page-recurrence-selfreview.md (5637618)",
+  "ZL3b": {
+    "n_pages": 53,
+    "n_label_words": 1054,
+    "n_label_words_len_ge4": 977,
+    "pages_per_I": {
+      "P": 15,
+      "H": 4,
+      "C": 5,
+      "T": 1,
+      "A": 5,
+      "Z": 12,
+      "B": 11
+    },
+    "primary_within_I": {
+      "exact": {
+        "obs": 114,
+        "null_mean": 88.371,
+        "E": 1.29,
+        "p_one_sided": 0.01625
+      },
+      "near_lev1": {
+        "obs": 346,
+        "null_mean": 299.182,
+        "E": 1.156,
+        "p_one_sided": 0.0169
+      }
+    },
+    "secondary_within_I_x_L": {
+      "exact": {
+        "obs": 114,
+        "null_mean": 104.663,
+        "E": 1.089,
+        "p_one_sided": 0.08085
+      },
+      "near_lev1": {
+        "obs": 346,
+        "null_mean": 329.439,
+        "E": 1.05,
+        "p_one_sided": 0.08275
+      }
+    },
+    "per_class_exact": {
+      "A": {
+        "pages": 5,
+        "label_words": 141,
+        "obs_exact": 5,
+        "null_mean_exact_analytic": 5.8
+      },
+      "B": {
+        "pages": 11,
+        "label_words": 117,
+        "obs_exact": 24,
+        "null_mean_exact_analytic": 22.364
+      },
+      "C": {
+        "pages": 5,
+        "label_words": 195,
+        "obs_exact": 36,
+        "null_mean_exact_analytic": 17.2
+      },
+      "H": {
+        "pages": 4,
+        "label_words": 11,
+        "obs_exact": 0,
+        "null_mean_exact_analytic": 0.0
+      },
+      "P": {
+        "pages": 15,
+        "label_words": 236,
+        "obs_exact": 16,
+        "null_mean_exact_analytic": 15.733
+      },
+      "T": {
+        "pages": 1,
+        "label_words": 24,
+        "obs_exact": 3,
+        "null_mean_exact_analytic": 3.0
+      },
+      "Z": {
+        "pages": 12,
+        "label_words": 330,
+        "obs_exact": 30,
+        "null_mean_exact_analytic": 24.25
+      }
+    },
+    "hit_examples_exact": {
+      "f102v1": [
+        "okeody"
+      ],
+      "f102v2": [
+        "cheor"
+      ],
+      "f66r": [
+        "daiin",
+        "dary",
+        "qokal"
+      ],
+      "f67r2": [
+        "air",
+        "daiin",
+        "dal",
+        "ofar"
+      ],
+      "f68r1": [
+        "otor"
+      ],
+      "f69r": [
+        "chey",
+        "daiin",
+        "dair",
+        "dal",
+        "dar",
+        "okeey",
+        "yteey"
+      ],
+      "f70v1": [
+        "oteo"
+      ],
+      "f70v2": [
+        "arar",
+        "ody",
+        "otal",
+        "otar"
+      ],
+      "f71r": [
+        "oteeol",
+        "oteos"
+      ],
+      "f71v": [
+        "aly",
+        "otaiin",
+        "otar"
+      ],
+      "f72r1": [
+        "otaiin"
+      ],
+      "f72r2": [
+        "okal",
+        "okaly",
+        "okeey"
+      ],
+      "f72r3": [
+        "ches",
+        "olaiin",
+        "oteey"
+      ],
+      "f72v2": [
+        "air"
+      ],
+      "f72v3": [
+        "daiin",
+        "okeeol",
+        "oteey"
+      ],
+      "f73r": [
+        "opaiin"
+      ],
+      "f73v": [
+        "otedy",
+        "oteody",
+        "ykeody"
+      ],
+      "f75v": [
+        "dal",
+        "lol",
+        "olol",
+        "otedy",
+        "oteey",
+        "qokal",
+        "qotedy"
+      ],
+      "f77r": [
+        "otedy"
+      ],
+      "f77v": [
+        "shedy"
+      ],
+      "f78r": [
+        "dar"
+      ],
+      "f80r": [
+        "okaly",
+        "olky"
+      ],
+      "f81v": [
+        "otain"
+      ],
+      "f82r": [
+        "okal"
+      ],
+      "f82v": [
+        "okain",
+        "olkeedy",
+        "olkol",
+        "oteedy"
+      ],
+      "f83v": [
+        "okaiin",
+        "okchdy"
+      ],
+      "f84r": [
+        "dshedy",
+        "okedy",
+        "otedy"
+      ],
+      "f88r": [
+        "okol"
+      ],
+      "f89r1": [
+        "chol"
+      ],
+      "f89r2": [
+        "cheody",
+        "opcheor"
+      ],
+      "f89v2": [
+        "chody",
+        "sheol"
+      ],
+      "f99r": [
+        "dar",
+        "okeoly",
+        "okor"
+      ],
+      "f99v": [
+        "chor",
+        "dar",
+        "doldam",
+        "oldy"
+      ],
+      "fRos": [
+        "odal",
+        "okar",
+        "okary",
+        "okchdy",
+        "okchy",
+        "okedy",
+        "okody",
+        "okor",
+        "opar",
+        "otdar",
+        "otedaiin",
+        "otedy",
+        "oteedy",
+        "oteey",
+        "otodar",
+        "otody",
+        "otol",
+        "qokal",
+        "ykedy"
+      ]
+    }
+  },
+  "RF1b": {
+    "n_pages": 53,
+    "n_label_words": 1057,
+    "n_label_words_len_ge4": 995,
+    "pages_per_I": {
+      "P": 15,
+      "H": 4,
+      "C": 5,
+      "T": 1,
+      "A": 5,
+      "Z": 12,
+      "B": 11
+    },
+    "primary_within_I": {
+      "exact": {
+        "obs": 80,
+        "null_mean": 63.702,
+        "E": 1.256,
+        "p_one_sided": 0.0563
+      },
+      "near_lev1": {
+        "obs": 288,
+        "null_mean": 246.252,
+        "E": 1.17,
+        "p_one_sided": 0.0306
+      }
+    },
+    "secondary_within_I_x_L": {
+      "exact": {
+        "obs": 80,
+        "null_mean": 76.165,
+        "E": 1.05,
+        "p_one_sided": 0.26684
+      },
+      "near_lev1": {
+        "obs": 288,
+        "null_mean": 275.939,
+        "E": 1.044,
+        "p_one_sided": 0.14614
+      }
+    },
+    "per_class_exact": {
+      "A": {
+        "pages": 5,
+        "label_words": 138,
+        "obs_exact": 2,
+        "null_mean_exact_analytic": 3.8
+      },
+      "B": {
+        "pages": 11,
+        "label_words": 118,
+        "obs_exact": 23,
+        "null_mean_exact_analytic": 19.091
+      },
+      "C": {
+        "pages": 5,
+        "label_words": 198,
+        "obs_exact": 24,
+        "null_mean_exact_analytic": 11.6
+      },
+      "H": {
+        "pages": 4,
+        "label_words": 10,
+        "obs_exact": 0,
+        "null_mean_exact_analytic": 0.0
+      },
+      "P": {
+        "pages": 15,
+        "label_words": 239,
+        "obs_exact": 10,
+        "null_mean_exact_analytic": 11.0
+      },
+      "T": {
+        "pages": 1,
+        "label_words": 22,
+        "obs_exact": 2,
+        "null_mean_exact_analytic": 2.0
+      },
+      "Z": {
+        "pages": 12,
+        "label_words": 332,
+        "obs_exact": 19,
+        "null_mean_exact_analytic": 16.25
+      }
+    },
+    "hit_examples_exact": {
+      "f102v2": [
+        "cheor"
+      ],
+      "f66r": [
+        "daiin",
+        "qokal"
+      ],
+      "f67r2": [
+        "@152;aiin",
+        "air"
+      ],
+      "f69r": [
+        "dar",
+        "yteey"
+      ],
+      "f70v2": [
+        "arar"
+      ],
+      "f71r": [
+        "otal",
+        "oteeol",
+        "oteos"
+      ],
+      "f71v": [
+        "otaiin",
+        "otar"
+      ],
+      "f72r1": [
+        "otaiin"
+      ],
+      "f72r2": [
+        "okal",
+        "okaly"
+      ],
+      "f72r3": [
+        "olaiin"
+      ],
+      "f72v3": [
+        "okeeol",
+        "oteey"
+      ],
+      "f73r": [
+        "opaiin"
+      ],
+      "f73v": [
+        "ote@152;y",
+        "oty",
+        "ykeody"
+      ],
+      "f75v": [
+        "dal",
+        "lol",
+        "olol",
+        "otedy",
+        "oteey",
+        "qokal",
+        "qotedy"
+      ],
+      "f77r": [
+        "otedy"
+      ],
+      "f77v": [
+        "shedy"
+      ],
+      "f80r": [
+        "okaly",
+        "olky"
+      ],
+      "f82r": [
+        "okal",
+        "okeeor"
+      ],
+      "f82v": [
+        "daiin",
+        "okain",
+        "olkee@152;y",
+        "olkol",
+        "otedy",
+        "oteedy",
+        "oty"
+      ],
+      "f83v": [
+        "okaiin"
+      ],
+      "f84r": [
+        "okedy",
+        "otedy"
+      ],
+      "f88r": [
+        "okol"
+      ],
+      "f89r1": [
+        "chol"
+      ],
+      "f89r2": [
+        "cheody",
+        "chos",
+        "otol"
+      ],
+      "f89v1": [
+        "shos"
+      ],
+      "f99r": [
+        "okeoly"
+      ],
+      "f99v": [
+        "dol@152;am",
+        "oldy"
+      ],
+      "fRos": [
+        "dar",
+        "odal",
+        "ody",
+        "okalar",
+        "okar",
+        "okary",
+        "okchdy",
+        "okchy",
+        "okedy",
+        "oko@152;y",
+        "okor",
+        "oky",
+        "opar",
+        "ote@152;y",
+        "otedy",
+        "oteedy",
+        "otody",
+        "otol"
+      ]
+    }
+  }
+}
