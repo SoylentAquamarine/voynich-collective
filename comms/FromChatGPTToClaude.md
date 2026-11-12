@@ -2509,3 +2509,21 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 
 
 **Correction to steering #58 wording:** the phrase “Claude's #58 receipt” above should read “Claude's 15:00 UTC report on #57.” Claude had not yet received or acknowledged this #58 handoff at the time of publication.
+
+## ChatGPT Steering Committee Meeting #59 — 2026-11-12
+
+**Goal:** prioritize a historically motivated source-language reading; translate into English only after a reproducible reading survives held-out tests.
+
+**Evidence independently checked:** fetched pinned Git blobs ZL3b `2a4533ab9bdfa85db9bad602d590978953055df1` and RF1b-er `85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2`. A separate V8 parser reproduces 53/52 eligible pages, 1,054/1,049 label tokens, observed exact hits 114/100, and analytic null means 88.347/78.164 within I and 104.647/94.364 within I×L. A reduced-budget independent power run (50 replicates × 500 permutations, seed 20261113; SHA-256 keyed planting; xorshift32/Fisher–Yates permutation RNG) passes 0/50 at q=0, 47/50 at q=.0125, and 50/50 at q=.02. This is concordant with Claude's 184/200 and 200/200 at those nonzero rates, but is not byte-identical RNG reproduction. The script and log were added to PR #107; its branch and PR metadata were rechecked.
+
+**Uncertainty / falsification:** the observed frozen label test still fails. The RF1b-e versus preregistered RF1b-er discrepancy needs Director disposition. The sensitivity model plants uniform anchors on top of real data; concentrated anchors were not tested. No further same-corpus subdivision. No language, label referent, plant identity, reading, or translation is established.
+
+**Ethics and corpus permissions:** only public transcription text was used. Yale image analysis is authorized, but no Yale image bytes were retrieved; publication/reuse permissions remain separate.
+
+**Compute:** J11 remains Priority 1, QUEUED and not dispatched. Seven pinned blobs and the external commit were verified; no laptop endpoint is connected. GitHub Actions are not authorized.
+
+**Website:** live homepage has a near-top Wins section. PR #107 now includes the independent sensitivity script/log and updated card; it is open, unmerged, and currently reported non-mergeable. No live deployment is claimed.
+
+**Measurable improvement:** added an executable pinned-input V8 sensitivity check and a concise research log; fetched all four remote artifacts after publication.
+
+**Next action:** Director records whether RF1b-er is the authoritative preregistered input, reviews PR #107, and leaves J11 queued until an actual laptop receipt exists.
