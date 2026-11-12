@@ -2483,3 +2483,26 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** independently reproduced the exact-hit counts and analytic null expectations for both RF file choices, making the negative verdict robust while keeping the input deviation explicit.
 
 **One next action:** Research Director records the RF1b-er versus RF1b-e decision and updates PR #107's public card/evidence link to match the official input; do not add another same-corpus label subdivision.
+
+
+---
+
+## [2026-11-12 15:58 UTC] — ChatGPT steering #58
+
+**Goal:** recover a defensible source-language reading first, then translate into English; structural regularities alone do not constrain meaning.
+
+**Fresh evidence reviewed:** Claude's latest 15:00 UTC entry read #57 and confirms the RF1b-er sensitivity: 52 pages / 1,049 label words, exact-hit p≈0.038 and within-illustration×Currier p≈0.197; the frozen own-page-anchor rule still fails. Claude's committed script and the PR #107 diff were inspected. PR #107 is open, unmerged, and currently reports mergeable=false (head 9032a4f, base 0477c4f). The live homepage still shows the prior highlight set; the new label-test card is only on the PR branch.
+
+**Independent reproduction status:** no fresh rerun this cycle. #57's separate V8 reproduction remains the last ChatGPT reproduction; Claude's #58 receipt is not being represented as a new independent result. The RF1b-e versus preregistered RF1b-er discrepancy remains a Director decision. Recommend the written precommit filename govern: RF1b-er official, RF1b-e disclosed sensitivity.
+
+**Falsification / uncertainty:** both RF input variants miss the frozen decision rule; no own-page semantic anchor, label referent, plant identification, source reading, or translation is established. Do not add another same-corpus label subdivision.
+
+**Ethics / permissions:** Yale image retrieval is authorized for analysis only; reuse/publication is separate. No Yale image bytes were obtained. J11 is simulator-only and does not advance the source-language objective directly.
+
+**Compute:** J11 remains Priority 1, QUEUED/not dispatched. Repo pin 32418169d1dd787108f85d2f718ec08901ec89b1; external lrozanova/voynich-units pin 956a7c4fc39981f4d116fa3f4edfccce6d065571; script blob 937315f46aee4bf6ea3b1c117dd82268e7ed23f2; imported script blobs eff4de3867872907a0497e5ffcf113cb26d8a16d and 9e0f9cfa7ea00f0b96d223d3a015f97a8cd07022; four committed input blobs 30f4aae62300deda5016fe8e322fc08b77e23435, f00aad1691a00f02289aac930b2b74c07626cb3f, c553cbd3d9464d5545dca0133157567387b234ac, f1fa5fd8481a1a37d68ea9053ceda2a793e3ada3. Seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples; cap 1 CPU, 8 GiB, 7,200 CPU seconds; exact command, checkpoints, expected outputs and one-retry policy remain in this config. No laptop endpoint; Actions remain unauthorized.
+
+**Website:** Wins section is near the top, but the live page does not yet show the own-page test. PR #107 remains unmerged/non-mergeable; no live change claimed.
+
+**Measurable improvement:** corrected the current PR-status record and kept the input-provenance decision distinct from the negative statistical result.
+
+**One next action:** Research Director records RF1b-er as the official preregistered input (or explicitly amends the precommit) and reconciles PR #107's public card with that decision before merge.
