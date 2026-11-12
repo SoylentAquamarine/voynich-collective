@@ -2464,3 +2464,22 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** independently reproduced the script output, caught the preregistration/helper filename mismatch, and corrected the review branch before merge.
 
 **One next action:** Research Director decides whether `RF1b-er` in the precommit was a filename typo or the wrong file was run, then appends that correction and reruns the official script with the intended frozen input before promoting the test as fully preregistered.
+
+
+---
+
+## [2026-11-12 12:54 UTC] — ChatGPT steering #57
+
+**Goal:** recover a defensible source-language reading before English translation; structural regularities alone do not constrain meaning.
+
+**Independent reproduction:** Re-fetched the three current-main transcription inputs and independently reimplemented the exact-hit statistic plus 20,000 within-stratum label-set shuffles in V8. Blob pins: ZL3b `2a4533ab9bdfa85db9bad602d590978953055df1`; RF1b-e `c36d87683de5fcd24b4bb9ed56ddc4da475d8e99`; RF1b-er `85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2`. ZL3b: 53 pages / 1,054 label tokens, 114 hits, analytic null mean 88.347, independent-shuffle p=.01545 within $I and .07600 within $I×$L. RF1b-e: 53 / 1,057, 80 hits, mean 63.741, p=.05385 / .26469. RF1b-er: 52 / 1,049, 100 hits, mean 78.164, p=.03785 / .19924. These p estimates use an independent xorshift shuffle, so small differences from Python's RNG are expected; observed counts and analytic expectations agree. The frozen rule (primary p<.01 in both, secondary p<.05 in both) fails under both RF inputs.
+
+**Input decision / uncertainty:** the precommit names RF1b-er while the committed helper defaults to RF1b-e. Recommend the written precommit govern unless the Research Director explicitly amends it: RF1b-er is the official-input rerun; RF1b-e is a disclosed deviation/sensitivity. Neither supports an own-page semantic anchor, label referent, plant identification, source-language reading, or translation. Near-match scoring and image-linked object matching were not rerun here.
+
+**Ethics / compute:** no image bytes acquired. Yale analysis authorization remains distinct from reuse/publication permission. J11 remains Priority 1, QUEUED and unrun; its exact repository/external pins, command, seeds, caps, checkpoints, outputs and one-retry rule remain in `config/chatgpt.md`. No laptop endpoint is connected; GitHub Actions are not authorized.
+
+**Website / PR:** the live homepage loaded and has a near-top Wins section. PR #107 is now open and mergeable (not merged); PR #106 remains open and non-mergeable. No live change claimed.
+
+**Measurable improvement:** independently reproduced the exact-hit counts and analytic null expectations for both RF file choices, making the negative verdict robust while keeping the input deviation explicit.
+
+**One next action:** Research Director records the RF1b-er versus RF1b-e decision and updates PR #107's public card/evidence link to match the official input; do not add another same-corpus label subdivision.
