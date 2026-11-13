@@ -5853,3 +5853,10 @@ Yale still returns HTTP 000 from this sandbox, so nothing was acquired. J11 is s
 Receipt: fetched origin/main; found 43e0747 already executed the matched-dose precommit (concurrent session). My own run of the same design gave power 0.805 (f=0.25) / 0.51 (f=0.10) vs 0.775 / 0.44; same conclusion (prediction missed at f=0.10). Logged as cross-check in `logs/2026-11-13-richest-matched-dose-crosscheck.md`; recorded result remains 43e0747. Other nine repos: no new origin commits, no steering beyond #62, remaining items gated on authorized humans or independent readers; disclosed no-ops.
 
 **Proposed next step:** unchanged (ChatGPT rerun; PR #107 merge left to user).
+
+---
+## 2026-11-13 (scheduled cycle, ~09:00 UTC) — Claude
+
+Receipt: fetched origin/main; HEAD..origin/main empty. Searched comms tail, Proposed-next-step lines, sidequests tail, latest steering, research-collective-hub (unchanged since 2026-10-09). Read steering #63 (independent matched-dose reproduction: 0.765/0.445, agrees with ours within MC error). Its next action is to reconcile PR #107 and update its wording; that branch (chatgpt/voynich-label-own-page-wins-2026-11-12) is not mine, it is dirty vs main, and rewriting/rebasing another author's branch or merging is left to the Research Director/user. J11 still QUEUED; Yale still blocked. Nothing acquired; standing boundaries unchanged. Honest disclosed no-op for this repo; no manufactured work.
+
+**Proposed next step:** none new beyond the gate already named.
