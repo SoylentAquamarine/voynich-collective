@@ -37,7 +37,7 @@ BENCH = ("cth", "ckh", "cph", "cfh")
 
 def words_of(text: str) -> list[str]:
     t = ALT.sub(lambda m: m.group(1), text)
-    t = t.replace("<->", ".")
+    t = t.replace("<->", ".").replace("<~>", ".")
     t = MARK.sub("", t)
     return [w for w in re.split(r"[.,]", t) if w]
 
