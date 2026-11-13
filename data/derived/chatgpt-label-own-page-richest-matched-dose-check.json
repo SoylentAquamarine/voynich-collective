@@ -1,0 +1,84 @@
+{
+  "inputGitBlobShas": {
+    "data/ZL3b-n.txt": "2a4533ab9bdfa85db9bad602d590978953055df1",
+    "data/RF1b-er.txt": "85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2"
+  },
+  "unionPages": 53,
+  "eligiblePages": {
+    "ZL3b": 53,
+    "RF1b-er": 52
+  },
+  "labelTokens": {
+    "ZL3b": 1054,
+    "RF1b-er": 1049
+  },
+  "richestTop13": [
+    "fRos",
+    "f67r2",
+    "f72r3",
+    "f69r",
+    "f72v3",
+    "f99r",
+    "f70v2",
+    "f72v2",
+    "f72r2",
+    "f72v1",
+    "f73v",
+    "f75v",
+    "f68r1"
+  ],
+  "richestTop5": [
+    "fRos",
+    "f67r2",
+    "f72r3",
+    "f69r",
+    "f72v3"
+  ],
+  "seed": 20261116,
+  "replicates": 200,
+  "permutationsPerNull": 2000,
+  "targetHitsPerTranscription": 11.8,
+  "planting": "SHA-256 keyed by seed|md|f|transcription|replicate|page|label-index",
+  "permutationRng": "xoshiro128** + Fisher-Yates; independent of NumPy PCG64",
+  "frozenRule": "within-I p<0.01 and within-IxL p<0.05 in both transcriptions",
+  "cells": [
+    {
+      "f": 0.25,
+      "anchoredPages": 13,
+      "eligibleTokens": {
+        "ZL3b": 478,
+        "RF1b-er": 495
+      },
+      "rates": {
+        "ZL3b": 0.024686192468619247,
+        "RF1b-er": 0.02383838383838384
+      },
+      "passes": 153,
+      "power": 0.765,
+      "mcSE": 0.029981244136960027,
+      "meanPlantedTokens": {
+        "ZL3b": 11.9,
+        "RF1b-er": 11.765
+      }
+    },
+    {
+      "f": 0.1,
+      "anchoredPages": 5,
+      "eligibleTokens": {
+        "ZL3b": 264,
+        "RF1b-er": 273
+      },
+      "rates": {
+        "ZL3b": 0.0446969696969697,
+        "RF1b-er": 0.04322344322344323
+      },
+      "passes": 89,
+      "power": 0.445,
+      "mcSE": 0.03514078826662828,
+      "meanPlantedTokens": {
+        "ZL3b": 11.675,
+        "RF1b-er": 11.52
+      }
+    }
+  ]
+}
