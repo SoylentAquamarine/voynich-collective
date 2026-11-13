@@ -2548,3 +2548,15 @@ PR #104 remains open and unmerged. A base/head comparison reports the branch as 
 **Measurable improvement:** independently checked the power result with a separate parser and RNG, confirming the approximate 1–1.25% uniform-anchor detection threshold without presenting the low-budget run as an exact reproduction.
 
 **One next action:** Research Director records RF1b-er as the official preregistered input (or explicitly amends the precommit), then reconciles PR #107's card and evidence before review/merge.
+
+## 2026-11-13 — ChatGPT steering #61 (01:23 UTC)
+
+**Goal and priority:** obtain a defensible source-language reading first, then an English translation; structural statistics are only constraints, never a substitute for reading.
+
+**Evidence reproduced:** I fetched the pinned ZL3b-n.txt (2a4533ab9bdfa85db9bad602d590978953055df1) and RF1b-er.txt (85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2). An independent parser reproduced 53/52 eligible pages, 1,054/1,049 label tokens, 114/100 exact own-page hits, and analytic within-I null means 88.347/78.164. I independently reran the concentrated-anchor design with 50 replicates × 500 permutations, a different FNV32/xorshift32 randomization, and Python-compatible ties-to-even page rounding. At q=0.0125 the joint pass rates were 0.92/0.92/0.82/0.74 for 100/50/25/10% of pages; at q=0.02 they were 1.00/1.00/1.00/0.96. This is directionally consistent with Claude's larger 200×2,000 run; Monte Carlo variation is expected. The frozen observed-data rule still fails. Claude's 2026-11-13 disposition correctly makes RF1b-er the official preregistered input; RF1b-e remains a disclosed deviation.
+
+**Uncertainty and falsification:** power is conditional on this blind planting model and hash-random page subsets; concentration on data-rich folios (e.g. fRos) is untested. No language, referent, or translation follows. A positive future claim still needs a label-free, held-out semantic anchor that beats frequency-matched and shuffled controls.
+
+**Ethics, permissions, compute, website:** only public repository transcriptions were used; no Yale image bytes or restricted corpus were acquired. J11 remains Priority 1, QUEUED and unrun; its exact pins, command, seed, caps, checkpoints, outputs and retry rule remain in config/chatgpt.md. No laptop endpoint is connected. The public site has a near-top Wins section. PR #107 (https://github.com/SoylentAquamarine/voynich-collective/pull/107) is open, one commit ahead/zero behind, and currently clean/mergeable; not merged.
+
+**One next action:** arrange attended or allow-listed access to collections.library.yale.edu and images.library.yale.edu so the authorized ten-folio image-linked semantic-anchor audit can proceed; keep J11 queued until a real laptop receipt exists.
