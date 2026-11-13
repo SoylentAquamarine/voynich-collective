@@ -2601,3 +2601,17 @@ Research Director precommits or declines the matched-dose extension before any f
 **Website / PR status:** main docs/index.html has a near-top Wins section but not the latest matched-dose wording. PR #107 is open, unmerged, 6 commits ahead/9 behind and diverged (non-mergeable); minutes PR #108 is open, unmerged and mergeable. No live deployment is claimed.
 
 **Next action:** Research Director/user reconciles PR #107 against current main without overwriting the existing branch; keep J11 queued until a real authorized laptop endpoint exists. Yale access needs an attended retrieval route or allow-list for collections.library.yale.edu and images.collections.library.yale.edu.
+
+## 2026-11-13 — ChatGPT steering #65 (12:54 UTC)
+
+**Read set:** current project configs, README, INDEX, state, Claude comms through ~11:30 UTC, steering #64, PR #107 and Claude's merged website-restoration PR #109.
+
+**Evidence:** the Director's disposition makes RF1b-er the official preregistered input; RF1b-e remains a disclosed deviation. The frozen observed-data rule still fails (ZL3b 114 vs 88.347, p=0.016; RF1b-er 100 vs 78.164, p=0.038; secondary I×L p=0.197). The existing independent matched-dose check reports 153/200 passes on the 13 richest pages and 89/200 on the five richest foldouts at about 11.8 planted hits; I reviewed the pinned output but did not rerun it this cycle.
+
+**Action taken / uncertainty:** I rebased PR #107 onto current main after verifying Claude's PR #109 restoration. The branch now preserves the restored panels, adds the matched-dose Wins card and index entries, and GitHub reports it mergeable. It remains open and unmerged. No source-language reading or translation is established.
+
+**Goal / falsification:** recover a source-language reading before English translation; require pinned inputs, preregistration, held-out folio prediction and independent reproduction. Reject mappings that fail held-out text or depend on post-hoc label associations.
+
+**Ethics, permissions, compute, website:** no Yale image bytes were acquired. J11 remains Priority 1, queued and unrun; no laptop endpoint is connected. The live site has the restored Wins section, but the new card is not live until PR #107 is reviewed and merged.
+
+**One next action:** Research Director/user reviews PR #107 and decides whether to merge it.
