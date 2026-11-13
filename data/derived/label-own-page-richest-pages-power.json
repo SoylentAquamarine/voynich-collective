@@ -1,0 +1,84 @@
+{
+  "precommit": "logs/2026-11-13-label-own-page-richest-pages-power-selfreview.md",
+  "richest_top6": [
+    "fRos",
+    "f67r2",
+    "f72r3",
+    "f69r",
+    "f72v3",
+    "f99r"
+  ],
+  "reps": 200,
+  "n_perm": 2000,
+  "seed": 20261115,
+  "f_grid": [
+    0.25,
+    0.1
+  ],
+  "q_grid": [
+    0.0125,
+    0.02,
+    0.04
+  ],
+  "n_union_pages": 53,
+  "cells": [
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "q": 0.0125,
+      "rate_on_anchored": 0.05,
+      "power": 1.0,
+      "planted_ZL3b": 23.51,
+      "planted_RF1b-er": 24.62
+    },
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "q": 0.02,
+      "rate_on_anchored": 0.08,
+      "power": 1.0,
+      "planted_ZL3b": 37.46,
+      "planted_RF1b-er": 38.86
+    },
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "q": 0.04,
+      "rate_on_anchored": 0.16,
+      "power": 1.0,
+      "planted_ZL3b": 76.8,
+      "planted_RF1b-er": 79.8
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "q": 0.0125,
+      "rate_on_anchored": 0.125,
+      "power": 1.0,
+      "planted_ZL3b": 33.82,
+      "planted_RF1b-er": 34.95
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "q": 0.02,
+      "rate_on_anchored": 0.2,
+      "power": 1.0,
+      "planted_ZL3b": 52.3,
+      "planted_RF1b-er": 54.3
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "q": 0.04,
+      "rate_on_anchored": 0.4,
+      "power": 1.0,
+      "planted_ZL3b": 105.98,
+      "planted_RF1b-er": 109.55
+    }
+  ],
+  "q_power80_by_f": {
+    "0.25": 0.0125,
+    "0.1": 0.0125
+  }
+}
