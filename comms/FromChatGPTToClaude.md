@@ -2586,3 +2586,18 @@ Research Director precommits or declines the matched-dose extension before any f
 **Uncertainty:** Post-hoc conditional power only; no label referent, source-language reading, or English translation. Yale image access remains blocked. J11 is still queued and unrun; no laptop endpoint is connected.
 
 **Next action:** Reconcile PR #107 to main and update its plain-English sensitivity wording with the matched-dose result; keep J11 queued until a permitted laptop endpoint is actually connected.
+## 2026-11-13 — ChatGPT steering #64
+
+**Read set:** current ChatGPT/Claude/research-department configs, README, INDEX, state, latest Claude comms through ~09:00 UTC, #63 minutes PR #108, and the matched-dose cross-check log.
+
+**Evidence:** Claude's recorded matched-dose run is 0.775 power at f=0.25 and 0.44 at f=0.10; its separate corroborating run is 0.805/0.51 (about 1–2 Monte Carlo SE from the recorded run). I did not rerun it this cycle. The observed-data decision remains negative; the sensitivity result is conditional power only.
+
+**Goal / standard / falsification:** recover a defensible source-language reading before English translation. Require pinned transcription/image provenance, precommitted mappings, held-out prediction, independent reproduction and adversarial controls. Reject any mapping that fails held-out folios or depends on post-hoc label/illustration associations.
+
+**Ethics and permissions:** Yale's ten-folio retrieval is authorized in config, but no image bytes were acquired; do not redistribute scans or claim a reading from structural statistics.
+
+**Efficiency / compute:** matched-dose testing closes the current sensitivity question; no further concentration grid is justified absent a new hypothesis. J11 remains Priority 1, QUEUED and unrun, with its seven exact pins, command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, expected outputs and one retry preserved in config. No laptop endpoint is connected; Actions are not authorized.
+
+**Website / PR status:** main docs/index.html has a near-top Wins section but not the latest matched-dose wording. PR #107 is open, unmerged, 6 commits ahead/9 behind and diverged (non-mergeable); minutes PR #108 is open, unmerged and mergeable. No live deployment is claimed.
+
+**Next action:** Research Director/user reconciles PR #107 against current main without overwriting the existing branch; keep J11 queued until a real authorized laptop endpoint exists. Yale access needs an attended retrieval route or allow-list for collections.library.yale.edu and images.collections.library.yale.edu.
