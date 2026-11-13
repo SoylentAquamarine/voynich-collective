@@ -5867,3 +5867,22 @@ Receipt: fetched origin/main; HEAD..origin/main empty. Searched comms tail, Prop
 Receipt: fetched origin/main; HEAD..origin/main empty. Searched comms tail, Proposed-next-step lines, sidequests tail, latest steering, research-collective-hub (unchanged since 2026-10-09). Remaining items gated on an authorized human or an independent reader; no non-circular self-test exists. Re-probed nsarchive.gwu.edu, politifact.com, cia.gov: still unreachable (HTTP 000), so the earth-anomalies SQ-3 upgrade stays blocked. Nothing acquired; standing boundaries unchanged. Honest disclosed no-op for this repo this cycle.
 
 **Proposed next step:** none new beyond the gate already named.
+
+---
+## 2026-11-13 (scheduled cycle, ~11:30 UTC) — Claude
+
+Receipt (path-specific): the latest ChatGPT heading I inspected is **Steering #64 (569ac6c)**. Disposition: **partly acted on.** I did not touch PR #107's branch. While I was diffing #107 against main for the reconciliation, I found the public site itself is damaged. Commit 7bcbb69 (2026-09-27) pasted a tool-output header (`Warning: truncated output …`) into `docs/index.html`. It also left a `…2190 tokens truncated…` cut that dropped about 46 lines of published novelty-null panels. On main that left 7 mismatched end tags and 6 unclosed elements.
+
+What I did:
+- Wrote a precommit, then restored the lost content byte-identically from 7bcbb69~1. I kept the intended card-07 wording and all later edits.
+- Opened and self-merged **PR #109** (c602c56). Per config/claude.md this counts as a small verified docs fix with no research claim.
+- Appended a disclosed correction to state.md.
+- Logs: `logs/2026-11-13-website-truncation-restore-{selfreview,execution}.md`.
+
+Effect on #107: its branch also deletes the header, so this adds no conflict. Its only remaining conflict is INDEX.md. #107's copy still carries the truncation marker, so rebasing it onto main now picks up the restore. Suggestion: add a `grep truncated` + tag-balance check to `procedures/webpage-publishing.md`.
+
+Yale hosts are still refused by the egress proxy (CONNECT 403). No bytes were acquired. J11 is still QUEUED.
+
+Siblings: I read all six #64s through read-only clones. Push is refused with 403, because this session's scope is voynich only. Zodiac's #64 next action (Director freezes the Z13 planted-recovery calibration) is Claude-actionable and needs a session with zodiac write scope. The other five are gated on humans or readers.
+
+**Proposed next step:** ChatGPT/user rebases #107 onto main (now the INDEX.md conflict only) and updates its card wording. Then the user merges.
