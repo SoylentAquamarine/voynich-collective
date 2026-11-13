@@ -1,0 +1,171 @@
+{
+  "precommit": "logs/2026-11-13-label-own-page-concentrated-power-selfreview.md",
+  "reps": 200,
+  "n_perm": 2000,
+  "seed": 20261114,
+  "f_grid": [
+    1.0,
+    0.5,
+    0.25,
+    0.1
+  ],
+  "q_grid": [
+    0.0125,
+    0.02,
+    0.04,
+    0.08
+  ],
+  "n_union_pages": 53,
+  "cells": [
+    {
+      "f": 1.0,
+      "k_pages": 53,
+      "q": 0.0125,
+      "rate_on_anchored": 0.0125,
+      "power": 0.895,
+      "planted_ZL3b": 11.79,
+      "planted_RF1b-er": 11.82
+    },
+    {
+      "f": 1.0,
+      "k_pages": 53,
+      "q": 0.02,
+      "rate_on_anchored": 0.02,
+      "power": 0.995,
+      "planted_ZL3b": 18.29,
+      "planted_RF1b-er": 18.28
+    },
+    {
+      "f": 1.0,
+      "k_pages": 53,
+      "q": 0.04,
+      "rate_on_anchored": 0.04,
+      "power": 1.0,
+      "planted_ZL3b": 38.22,
+      "planted_RF1b-er": 38.49
+    },
+    {
+      "f": 1.0,
+      "k_pages": 53,
+      "q": 0.08,
+      "rate_on_anchored": 0.08,
+      "power": 1.0,
+      "planted_ZL3b": 75.3,
+      "planted_RF1b-er": 76.39
+    },
+    {
+      "f": 0.5,
+      "k_pages": 26,
+      "q": 0.0125,
+      "rate_on_anchored": 0.025,
+      "power": 0.865,
+      "planted_ZL3b": 11.6,
+      "planted_RF1b-er": 11.66
+    },
+    {
+      "f": 0.5,
+      "k_pages": 26,
+      "q": 0.02,
+      "rate_on_anchored": 0.04,
+      "power": 0.99,
+      "planted_ZL3b": 18.64,
+      "planted_RF1b-er": 18.95
+    },
+    {
+      "f": 0.5,
+      "k_pages": 26,
+      "q": 0.04,
+      "rate_on_anchored": 0.08,
+      "power": 1.0,
+      "planted_ZL3b": 38.09,
+      "planted_RF1b-er": 38.51
+    },
+    {
+      "f": 0.5,
+      "k_pages": 26,
+      "q": 0.08,
+      "rate_on_anchored": 0.16,
+      "power": 1.0,
+      "planted_ZL3b": 74.58,
+      "planted_RF1b-er": 75.2
+    },
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "q": 0.0125,
+      "rate_on_anchored": 0.05,
+      "power": 0.815,
+      "planted_ZL3b": 11.38,
+      "planted_RF1b-er": 11.53
+    },
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "q": 0.02,
+      "rate_on_anchored": 0.08,
+      "power": 0.985,
+      "planted_ZL3b": 19.03,
+      "planted_RF1b-er": 19.3
+    },
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "q": 0.04,
+      "rate_on_anchored": 0.16,
+      "power": 1.0,
+      "planted_ZL3b": 37.34,
+      "planted_RF1b-er": 37.88
+    },
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "q": 0.08,
+      "rate_on_anchored": 0.32,
+      "power": 1.0,
+      "planted_ZL3b": 74.79,
+      "planted_RF1b-er": 75.8
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "q": 0.0125,
+      "rate_on_anchored": 0.125,
+      "power": 0.765,
+      "planted_ZL3b": 11.24,
+      "planted_RF1b-er": 11.38
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "q": 0.02,
+      "rate_on_anchored": 0.2,
+      "power": 0.97,
+      "planted_ZL3b": 17.66,
+      "planted_RF1b-er": 17.95
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "q": 0.04,
+      "rate_on_anchored": 0.4,
+      "power": 1.0,
+      "planted_ZL3b": 35.1,
+      "planted_RF1b-er": 35.53
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "q": 0.08,
+      "rate_on_anchored": 0.8,
+      "power": 1.0,
+      "planted_ZL3b": 70.06,
+      "planted_RF1b-er": 70.65
+    }
+  ],
+  "q_power80_by_f": {
+    "1.0": 0.0125,
+    "0.5": 0.0125,
+    "0.25": 0.0125,
+    "0.1": 0.02
+  }
+}
