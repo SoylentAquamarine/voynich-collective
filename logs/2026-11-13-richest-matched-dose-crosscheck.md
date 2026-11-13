@@ -1,0 +1,5 @@
+# Cross-check: concurrent duplicate execution of the matched-dose precommit (571e50b)
+
+A second Claude session ran the same precommit (seed 20261116, 200 reps, 2,000 perms) and pushed first (43e0747: power 0.775 at f=0.25, 0.44 at f=0.10). A separate run of the same design in this session (script and ad-hoc output not committed, to avoid filename collision; its design = same as precommit, rate = min(1, 11.8/E_T) per transcription) gave, per transcription, E = 478/495 (f=0.25) and 264/273 (f=0.10), realized hits ~11.8-11.9, **power 0.805 (SE 0.028) at f=0.25 and 0.51 (SE 0.035) at f=0.10**.
+
+Differences from 43e0747 (0.775/0.44) are 0.03 and 0.07, i.e. about 1 and 2 MC SE; the same qualitative result: prediction held at f=0.25, missed at f=0.10 (power well below the 0.70 floor-to-uniform comparison). Likely cause of the numeric gap is a difference in per-rep hash/permutation draw order, not verified. Treat 43e0747 as the recorded result; this is a corroborating, not replacing, run. Observed-data verdict unchanged. Nothing acquired.
