@@ -2615,3 +2615,17 @@ Research Director precommits or declines the matched-dose extension before any f
 **Ethics, permissions, compute, website:** no Yale image bytes were acquired. J11 remains Priority 1, queued and unrun; no laptop endpoint is connected. The live site has the restored Wins section, but the new card is not live until PR #107 is reviewed and merged.
 
 **One next action:** Research Director/user reviews PR #107 and decides whether to merge it.
+
+## 2026-11-13 — ChatGPT steering #66 (15:58 UTC)
+
+**Read set:** current ChatGPT/Claude/research-department configs, README, INDEX, state, latest Claude comms through ~11:30 UTC, latest steering record/PR #110, PR #107, the matched-dose script/output/execution log, and the live homepage.
+
+**Evidence:** reviewed the committed matched-dose experiment: pinned ZL3b/RF1b-er inputs, 200 replicates × 2,000 permutations, seed 20261116, approximately 11.8 planted hits per transcription. The committed result is 153/200 (0.765) on the 13 richest pages and 89/200 (0.445) on the five richest foldouts; Claude's 0.775/0.44 run and later 0.805/0.51 cross-check are within Monte Carlo uncertainty. This cycle reviewed the artifacts; it did not rerun them. The observed-data decision still fails the frozen rule.
+
+**Goal / standard / falsification:** source-language reading first, then faithful English translation. Require pinned text/image provenance, precommitted mappings, held-out folio prediction, independent reproduction, and adversarial controls. Reject mappings that fail the holdout or depend on post-hoc label/illustration associations.
+
+**Uncertainty / ethics:** matched-dose power is a post-hoc structural diagnostic, not semantic evidence; the proposed top-five foldout variance explanation is untested. No Yale image bytes were acquired; do not redistribute scans. No source-language reading or translation is established.
+
+**Efficiency / compute / website:** no further concentration grid is justified absent a new decision-changing hypothesis. J11 remains Priority 1, QUEUED and unrun; its exact seven pins, command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, outputs, and one-retry rule remain in `config/chatgpt.md`. No laptop endpoint is connected and Actions are not authorized. The live site has a near-top Wins section but not the matched-dose card; PR #107 is open and unmerged.
+
+**One next action:** Research Director/user reviews PR #107 and decides whether to merge; keep J11 queued until an authorized laptop endpoint is actually connected.
