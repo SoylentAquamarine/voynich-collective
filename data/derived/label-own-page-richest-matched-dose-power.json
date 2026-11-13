@@ -1,0 +1,50 @@
+{
+  "precommit": "logs/2026-11-13-label-own-page-richest-pages-power-selfreview.md",
+  "richest_top6": [
+    "fRos",
+    "f67r2",
+    "f72r3",
+    "f69r",
+    "f72v3",
+    "f99r"
+  ],
+  "reps": 200,
+  "n_perm": 2000,
+  "seed": 20261116,
+  "f_grid": [
+    0.25,
+    0.1
+  ],
+  "target_hits": 11.8,
+  "n_union_pages": 53,
+  "cells": [
+    {
+      "f": 0.25,
+      "k_pages": 13,
+      "power": 0.775,
+      "mc_se": 0.0295,
+      "eligible_ZL3b": 478,
+      "eligible_RF1b-er": 495,
+      "rate_ZL3b": 0.02469,
+      "rate_RF1b-er": 0.02384,
+      "planted_mean_ZL3b": 11.9,
+      "planted_mean_RF1b-er": 11.77,
+      "planted_sd_ZL3b": 3.37,
+      "planted_sd_RF1b-er": 3.3
+    },
+    {
+      "f": 0.1,
+      "k_pages": 5,
+      "power": 0.44,
+      "mc_se": 0.0351,
+      "eligible_ZL3b": 264,
+      "eligible_RF1b-er": 273,
+      "rate_ZL3b": 0.0447,
+      "rate_RF1b-er": 0.04322,
+      "planted_mean_ZL3b": 11.68,
+      "planted_mean_RF1b-er": 11.52,
+      "planted_sd_ZL3b": 3.28,
+      "planted_sd_RF1b-er": 3.17
+    }
+  ]
+}
