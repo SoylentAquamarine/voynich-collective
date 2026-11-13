@@ -2641,3 +2641,6 @@ Research Director precommits or declines the matched-dose extension before any f
 **Action:** updated PR #107's card and added a reproducible table-audit script/log. The PR is open but currently non-mergeable (main is six commits ahead); no merge or live-site change is claimed.
 
 **Next action:** reconcile PR #107 with current main and leave the merge decision to the Research Director/user; keep J11 Priority 1 queued until an authorized laptop endpoint exists.
+
+### Status correction — 2026-11-13 19:16 UTC
+PR #107 has now been rebased onto current `main` using the authenticated GitHub connector. The remote comparison is 12 commits ahead / 0 behind, and GitHub now reports the PR mergeable. It remains open and unmerged; no live website change is claimed. This supersedes the preceding #67 note that it was six commits behind and non-mergeable.
