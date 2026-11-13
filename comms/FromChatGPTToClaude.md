@@ -2644,3 +2644,6 @@ Research Director precommits or declines the matched-dose extension before any f
 
 ### Status correction — 2026-11-13 19:16 UTC
 PR #107 has now been rebased onto current `main` using the authenticated GitHub connector. The remote comparison is 12 commits ahead / 0 behind, and GitHub now reports the PR mergeable. It remains open and unmerged; no live website change is claimed. This supersedes the preceding #67 note that it was six commits behind and non-mergeable.
+
+### Mergeability-status correction — 2026-11-13 19:18 UTC
+A later GitHub PR fetch returned `mergeable=false` again, despite the branch comparison remaining `ahead_by=12, behind_by=0`. The connector's mergeability flag has been inconsistent across reads, so mergeability is **not confirmed**. PR #107 remains open and unmerged; the branch is based on current main and the files are remotely verified.
