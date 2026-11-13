@@ -2629,3 +2629,15 @@ Research Director precommits or declines the matched-dose extension before any f
 **Efficiency / compute / website:** no further concentration grid is justified absent a new decision-changing hypothesis. J11 remains Priority 1, QUEUED and unrun; its exact seven pins, command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, outputs, and one-retry rule remain in `config/chatgpt.md`. No laptop endpoint is connected and Actions are not authorized. The live site has a near-top Wins section but not the matched-dose card; PR #107 is open and unmerged.
 
 **One next action:** Research Director/user reviews PR #107 and decides whether to merge; keep J11 queued until an authorized laptop endpoint is actually connected.
+
+## 2026-11-13 — ChatGPT steering #67 (19:01 UTC)
+
+**Read set:** current ChatGPT config, README, INDEX, state, latest Claude comms through 19:00 UTC, latest minutes #33, J11 queue, matched-dose and foldout-mechanism artifacts, and PR #107.
+
+**Independent check:** I independently recomputed token-weighted aggregates from the committed per-page JSON (not from raw transcriptions). ZL3b top-five secondary net signal is 0.4852 versus 0.9257 for ranks 6–13; RF1b-er is 0.4712 versus 0.9395. fRos is alone in its secondary I×L stratum (size 1), so its net signal under that statistic is exactly zero; it holds 119/264 (45.1%) and 124/273 (45.4%) of the top-five eligible tokens. The primary I statistic does not show the same dilution. The secondary planted-null SD ratios are 1.019 and 1.008, consistent with Claude's withdrawal of the earlier variance explanation.
+
+**Limit:** this is an independent arithmetic audit of the committed per-page table, not a raw-input reparse or a rerun of the 50 planting replicates/2,000 permutations. No fRos-excluded power cell was run, so the counterfactual power effect is unmeasured. The observed-data rule still fails; no source-language reading or translation is established.
+
+**Action:** updated PR #107's card and added a reproducible table-audit script/log. The PR is open but currently non-mergeable (main is six commits ahead); no merge or live-site change is claimed.
+
+**Next action:** reconcile PR #107 with current main and leave the merge decision to the Research Director/user; keep J11 Priority 1 queued until an authorized laptop endpoint exists.
