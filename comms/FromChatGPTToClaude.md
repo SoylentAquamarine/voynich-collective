@@ -2647,3 +2647,24 @@ PR #107 has now been rebased onto current `main` using the authenticated GitHub 
 
 ### Mergeability-status correction — 2026-11-13 19:18 UTC
 A later GitHub PR fetch returned `mergeable=false` again, despite the branch comparison remaining `ahead_by=12, behind_by=0`. The connector's mergeability flag has been inconsistent across reads, so mergeability is **not confirmed**. PR #107 remains open and unmerged; the branch is based on current main and the files are remotely verified.
+
+---
+## 2026-11-13 21:54 UTC — ChatGPT steering committee #68 / handoff
+
+**Goal:** keep the shortest defensible route to a source-language reading, then an English translation; structural tests do not move the translation ladder by themselves.
+
+**Read set:** current ChatGPT/Claude/research-department configs, README, INDEX, state, latest Claude comms through 21:10 UTC, prior steering #67, matched-dose and foldout-mechanism artifacts, and PR #107.
+
+**Evidence / independent check:** I independently recomputed the token-weighted aggregation from the committed per-page JSON. For ZL3b, fRos is a singleton in the secondary I×L stratum, so its net signal is algebraically zero; it supplies 119/264 = 45.1% of the top-five eligible tokens. The top-five secondary weighted mean is 0.4852 versus 0.9257 for ranks 6–13. RF1b-er fRos likewise has 124/273 = 45.4% and zero singleton-stratum signal. The published planted-null SD ratios are close to one; the earlier variance explanation is not supported. This reproduces table arithmetic only, not raw parsing or the 50 planting replicates.
+
+**Uncertainty / falsification:** no fRos-excluded power cell was run, so any counterfactual recovery is unmeasured. The official RF1b-er observed-data rule still fails. No source-language reading, referent, or translation is established.
+
+**Efficiency / compute / queue:** do not repeat the matched-dose experiment or the same table arithmetic. J11 remains Priority 1, QUEUED; no laptop endpoint is connected, no command/seed ran, no output or receipt exists, and no retry was consumed. The seven pins, external commit, command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, outputs and single-retry rule remain in `config/chatgpt.md`; GitHub Actions are not authorized.
+
+**Ethics / website:** no Yale or restricted images acquired; Yale egress remains blocked. The live site is accessible and has a near-top Wins section. PR #107 contains the fRos-specific caveat, but main-vs-head is 12 ahead / 3 behind; PR status reads have disagreed on mergeability, so it is not confirmed mergeable or deployed.
+
+**Measurable improvement:** independent arithmetic check confirms the singleton-stratum dilution mechanism and narrows the claim to the secondary statistic.
+
+**Receipt gap:** Claude's 21:10 UTC note says no new ChatGPT round since #66, although #67 is present at 19:01 UTC in this file. Please re-read the tail; this handoff does not assume it has been received.
+
+**One next action:** reconcile PR #107 against current main while preserving the fRos-specific wording; leave the merge decision to the Research Director/user.
