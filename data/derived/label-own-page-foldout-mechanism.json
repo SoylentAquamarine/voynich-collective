@@ -1,0 +1,444 @@
+{
+  "precommit": "logs/2026-11-13-richest-foldout-mechanism-selfreview.md",
+  "top5": [
+    "fRos",
+    "f67r2",
+    "f72r3",
+    "f69r",
+    "f72v3"
+  ],
+  "ranks6_13": [
+    "f99r",
+    "f70v2",
+    "f72v2",
+    "f72r2",
+    "f72v1",
+    "f73v",
+    "f75v",
+    "f68r1"
+  ],
+  "per_transcription": {
+    "ZL3b": {
+      "pages": {
+        "fRos": {
+          "rank": 1,
+          "n_labels": 147,
+          "n_eligible": 119,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8739
+          },
+          "secondary_IxL": {
+            "stratum_size": 1,
+            "mean_net_signal_per_hit": 0.0
+          }
+        },
+        "f67r2": {
+          "rank": 2,
+          "n_labels": 57,
+          "n_eligible": 53,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8491
+          },
+          "secondary_IxL": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8491
+          }
+        },
+        "f72r3": {
+          "rank": 3,
+          "n_labels": 38,
+          "n_eligible": 35,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9024
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9024
+          }
+        },
+        "f69r": {
+          "rank": 4,
+          "n_labels": 34,
+          "n_eligible": 26,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8538
+          },
+          "secondary_IxL": {
+            "stratum_size": 4,
+            "mean_net_signal_per_hit": 0.8077
+          }
+        },
+        "f72v3": {
+          "rank": 5,
+          "n_labels": 34,
+          "n_eligible": 31,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9839
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9839
+          }
+        },
+        "f99r": {
+          "rank": 6,
+          "n_labels": 33,
+          "n_eligible": 30,
+          "primary_I": {
+            "stratum_size": 15,
+            "mean_net_signal_per_hit": 0.9911
+          },
+          "secondary_IxL": {
+            "stratum_size": 15,
+            "mean_net_signal_per_hit": 0.9911
+          }
+        },
+        "f70v2": {
+          "rank": 7,
+          "n_labels": 31,
+          "n_eligible": 26,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9487
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9487
+          }
+        },
+        "f72v2": {
+          "rank": 8,
+          "n_labels": 31,
+          "n_eligible": 30,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9639
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9639
+          }
+        },
+        "f72r2": {
+          "rank": 9,
+          "n_labels": 30,
+          "n_eligible": 25,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8767
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8767
+          }
+        },
+        "f72v1": {
+          "rank": 10,
+          "n_labels": 28,
+          "n_eligible": 28,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8899
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8899
+          }
+        },
+        "f73v": {
+          "rank": 11,
+          "n_labels": 29,
+          "n_eligible": 25,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9567
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9567
+          }
+        },
+        "f75v": {
+          "rank": 12,
+          "n_labels": 30,
+          "n_eligible": 22,
+          "primary_I": {
+            "stratum_size": 11,
+            "mean_net_signal_per_hit": 0.9835
+          },
+          "secondary_IxL": {
+            "stratum_size": 11,
+            "mean_net_signal_per_hit": 0.9835
+          }
+        },
+        "f68r1": {
+          "rank": 13,
+          "n_labels": 29,
+          "n_eligible": 28,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8
+          },
+          "secondary_IxL": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8
+          }
+        }
+      },
+      "net_signal_primary_I": {
+        "top5": 0.8836,
+        "ranks6_13": 0.9257,
+        "top13": 0.9025
+      },
+      "net_signal_secondary_IxL": {
+        "top5": 0.4852,
+        "ranks6_13": 0.9257,
+        "top13": 0.6824
+      },
+      "sd_baseline": {
+        "primary_I": 10.825,
+        "secondary_IxL": 6.25
+      },
+      "cell_f0.25": {
+        "primary_I": {
+          "mean_sd_planted": 12.178,
+          "sd_ratio_vs_baseline": 1.125,
+          "approx_z": 0.874
+        },
+        "secondary_IxL": {
+          "mean_sd_planted": 6.582,
+          "sd_ratio_vs_baseline": 1.0531,
+          "approx_z": 1.223
+        }
+      },
+      "cell_f0.1": {
+        "primary_I": {
+          "mean_sd_planted": 13.007,
+          "sd_ratio_vs_baseline": 1.2016,
+          "approx_z": 0.802
+        },
+        "secondary_IxL": {
+          "mean_sd_planted": 6.709,
+          "sd_ratio_vs_baseline": 1.0734,
+          "approx_z": 0.853
+        }
+      }
+    },
+    "RF1b-er": {
+      "pages": {
+        "fRos": {
+          "rank": 1,
+          "n_labels": 152,
+          "n_eligible": 124,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.9339
+          },
+          "secondary_IxL": {
+            "stratum_size": 1,
+            "mean_net_signal_per_hit": 0.0
+          }
+        },
+        "f67r2": {
+          "rank": 2,
+          "n_labels": 56,
+          "n_eligible": 53,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8264
+          },
+          "secondary_IxL": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8264
+          }
+        },
+        "f72r3": {
+          "rank": 3,
+          "n_labels": 37,
+          "n_eligible": 36,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9074
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9074
+          }
+        },
+        "f69r": {
+          "rank": 4,
+          "n_labels": 32,
+          "n_eligible": 29,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.9034
+          },
+          "secondary_IxL": {
+            "stratum_size": 4,
+            "mean_net_signal_per_hit": 0.8534
+          }
+        },
+        "f72v3": {
+          "rank": 5,
+          "n_labels": 34,
+          "n_eligible": 31,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8844
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8844
+          }
+        },
+        "f99r": {
+          "rank": 6,
+          "n_labels": 34,
+          "n_eligible": 32,
+          "primary_I": {
+            "stratum_size": 15,
+            "mean_net_signal_per_hit": 1.0437
+          },
+          "secondary_IxL": {
+            "stratum_size": 15,
+            "mean_net_signal_per_hit": 1.0437
+          }
+        },
+        "f70v2": {
+          "rank": 7,
+          "n_labels": 31,
+          "n_eligible": 28,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9435
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9435
+          }
+        },
+        "f72v2": {
+          "rank": 8,
+          "n_labels": 30,
+          "n_eligible": 30,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9639
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.9639
+          }
+        },
+        "f72r2": {
+          "rank": 9,
+          "n_labels": 30,
+          "n_eligible": 26,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.875
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.875
+          }
+        },
+        "f72v1": {
+          "rank": 10,
+          "n_labels": 30,
+          "n_eligible": 30,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8833
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 0.8833
+          }
+        },
+        "f73v": {
+          "rank": 11,
+          "n_labels": 30,
+          "n_eligible": 25,
+          "primary_I": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 1.0333
+          },
+          "secondary_IxL": {
+            "stratum_size": 12,
+            "mean_net_signal_per_hit": 1.0333
+          }
+        },
+        "f75v": {
+          "rank": 12,
+          "n_labels": 29,
+          "n_eligible": 22,
+          "primary_I": {
+            "stratum_size": 11,
+            "mean_net_signal_per_hit": 0.9793
+          },
+          "secondary_IxL": {
+            "stratum_size": 11,
+            "mean_net_signal_per_hit": 0.9793
+          }
+        },
+        "f68r1": {
+          "rank": 13,
+          "n_labels": 29,
+          "n_eligible": 29,
+          "primary_I": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8
+          },
+          "secondary_IxL": {
+            "stratum_size": 5,
+            "mean_net_signal_per_hit": 0.8
+          }
+        }
+      },
+      "net_signal_primary_I": {
+        "top5": 0.9007,
+        "ranks6_13": 0.9395,
+        "top13": 0.9181
+      },
+      "net_signal_secondary_IxL": {
+        "top5": 0.4712,
+        "ranks6_13": 0.9395,
+        "top13": 0.6812
+      },
+      "sd_baseline": {
+        "primary_I": 10.958,
+        "secondary_IxL": 6.122
+      },
+      "cell_f0.25": {
+        "primary_I": {
+          "mean_sd_planted": 12.146,
+          "sd_ratio_vs_baseline": 1.1084,
+          "approx_z": 0.892
+        },
+        "secondary_IxL": {
+          "mean_sd_planted": 6.225,
+          "sd_ratio_vs_baseline": 1.0169,
+          "approx_z": 1.291
+        }
+      },
+      "cell_f0.1": {
+        "primary_I": {
+          "mean_sd_planted": 12.909,
+          "sd_ratio_vs_baseline": 1.1781,
+          "approx_z": 0.823
+        },
+        "secondary_IxL": {
+          "mean_sd_planted": 6.273,
+          "sd_ratio_vs_baseline": 1.0247,
+          "approx_z": 0.886
+        }
+      }
+    }
+  }
+}
