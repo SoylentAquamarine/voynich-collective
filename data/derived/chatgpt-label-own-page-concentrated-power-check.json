@@ -1,0 +1,216 @@
+{
+  "inputGitBlobShas": {
+    "data/ZL3b-n.txt": "2a4533ab9bdfa85db9bad602d590978953055df1",
+    "data/RF1b-er.txt": "85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2"
+  },
+  "unionPages": 53,
+  "baseline": {
+    "ZL3b": {
+      "pages": 53,
+      "labelTokens": 1054,
+      "exactHits": 114,
+      "analyticNullMeanWithinI": 88.347
+    },
+    "RF1b-er": {
+      "pages": 52,
+      "labelTokens": 1049,
+      "exactHits": 100,
+      "analyticNullMeanWithinI": 78.164
+    }
+  },
+  "hashSeed": "20261114",
+  "permutationSeed": "0x20261114",
+  "replicates": 50,
+  "permutationsPerNull": 500,
+  "fGrid": [
+    "1.0",
+    "0.5",
+    "0.25",
+    "0.1"
+  ],
+  "qGrid": [
+    "0.0125",
+    "0.02",
+    "0.04",
+    "0.08"
+  ],
+  "permutationRng": "Mulberry32 + Fisher-Yates; independent of NumPy PCG64",
+  "results": [
+    {
+      "f": "1.0",
+      "anchoredPages": 53,
+      "q": "0.0125",
+      "passes": 43,
+      "power": 0.86,
+      "meanPlantedTokens": {
+        "ZL3b": 11.58,
+        "RF1b-er": 11.18
+      }
+    },
+    {
+      "f": "1.0",
+      "anchoredPages": 53,
+      "q": "0.02",
+      "passes": 48,
+      "power": 0.96,
+      "meanPlantedTokens": {
+        "ZL3b": 18.8,
+        "RF1b-er": 18.56
+      }
+    },
+    {
+      "f": "1.0",
+      "anchoredPages": 53,
+      "q": "0.04",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 38.36,
+        "RF1b-er": 38.56
+      }
+    },
+    {
+      "f": "1.0",
+      "anchoredPages": 53,
+      "q": "0.08",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 74.92,
+        "RF1b-er": 75.88
+      }
+    },
+    {
+      "f": "0.5",
+      "anchoredPages": 26,
+      "q": "0.0125",
+      "passes": 44,
+      "power": 0.88,
+      "meanPlantedTokens": {
+        "ZL3b": 12.44,
+        "RF1b-er": 12.72
+      }
+    },
+    {
+      "f": "0.5",
+      "anchoredPages": 26,
+      "q": "0.02",
+      "passes": 49,
+      "power": 0.98,
+      "meanPlantedTokens": {
+        "ZL3b": 19.12,
+        "RF1b-er": 19.48
+      }
+    },
+    {
+      "f": "0.5",
+      "anchoredPages": 26,
+      "q": "0.04",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 39,
+        "RF1b-er": 39.54
+      }
+    },
+    {
+      "f": "0.5",
+      "anchoredPages": 26,
+      "q": "0.08",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 75.64,
+        "RF1b-er": 76.02
+      }
+    },
+    {
+      "f": "0.25",
+      "anchoredPages": 13,
+      "q": "0.0125",
+      "passes": 38,
+      "power": 0.76,
+      "meanPlantedTokens": {
+        "ZL3b": 11.9,
+        "RF1b-er": 12.12
+      }
+    },
+    {
+      "f": "0.25",
+      "anchoredPages": 13,
+      "q": "0.02",
+      "passes": 49,
+      "power": 0.98,
+      "meanPlantedTokens": {
+        "ZL3b": 19.24,
+        "RF1b-er": 19.44
+      }
+    },
+    {
+      "f": "0.25",
+      "anchoredPages": 13,
+      "q": "0.04",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 38.42,
+        "RF1b-er": 39.06
+      }
+    },
+    {
+      "f": "0.25",
+      "anchoredPages": 13,
+      "q": "0.08",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 77.12,
+        "RF1b-er": 78.64
+      }
+    },
+    {
+      "f": "0.1",
+      "anchoredPages": 5,
+      "q": "0.0125",
+      "passes": 35,
+      "power": 0.7,
+      "meanPlantedTokens": {
+        "ZL3b": 10.78,
+        "RF1b-er": 11.06
+      }
+    },
+    {
+      "f": "0.1",
+      "anchoredPages": 5,
+      "q": "0.02",
+      "passes": 47,
+      "power": 0.94,
+      "meanPlantedTokens": {
+        "ZL3b": 16,
+        "RF1b-er": 16.14
+      }
+    },
+    {
+      "f": "0.1",
+      "anchoredPages": 5,
+      "q": "0.04",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 33.26,
+        "RF1b-er": 33.72
+      }
+    },
+    {
+      "f": "0.1",
+      "anchoredPages": 5,
+      "q": "0.08",
+      "passes": 50,
+      "power": 1,
+      "meanPlantedTokens": {
+        "ZL3b": 64.76,
+        "RF1b-er": 65.36
+      }
+    }
+  ]
+}
