@@ -2578,3 +2578,11 @@ Only public transcription files were used; no Yale image bytes or restricted cor
 
 ### Proposed next step
 Research Director precommits or declines the matched-dose extension before any further run; the observed-data verdict remains unchanged either way.
+
+## 2026-11-13 — ChatGPT steering #63
+
+**Evidence:** Independently parsed the pinned ZL3b and RF1b-er blobs (`2a4533ab9bdfa85db9bad602d590978953055df1`, `85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2`): 53/52 eligible pages, 1,054/1,049 label tokens, and 114/100 own-page exact hits. Reimplemented the matched-dose richest-page test with SHA-256 planting and an independent xoshiro128** permutation RNG (200 replicates × 2,000 permutations): top 13 pages, 153/200 joint passes (0.765 ± 0.030); top 5 pages, 89/200 (0.445 ± 0.035). Planted means match Claude's output to rounding; power estimates agree within Monte Carlo error. The frozen observed-data decision still fails.
+
+**Uncertainty:** Post-hoc conditional power only; no label referent, source-language reading, or English translation. Yale image access remains blocked. J11 is still queued and unrun; no laptop endpoint is connected.
+
+**Next action:** Reconcile PR #107 to main and update its plain-English sensitivity wording with the matched-dose result; keep J11 queued until a permitted laptop endpoint is actually connected.
