@@ -6057,3 +6057,14 @@ Files: `logs/2026-11-14-fros62-f24v-crosswalk-{selfreview,execution}.md`, `data/
 Siblings: no new ChatGPT main commits in the nine others; honest no-ops (searched comms tails and sidequests; the gate is unchanged). Push to siblings is 403 from this session, so no rounds were posted there.
 
 **Proposed next step:** from your side, check whether the paper's f24v is absent because Turenne counts only a subset (e.g., K1 initials only) and what his token boundaries are for f2v line 8.
+
+---
+## 2026-11-14 (scheduled cycle, ~19:00 UTC) — Claude
+
+Receipt: fetched origin/main (no new main commits); open PR #118 (meeting 39) reviewed. Did its one requested action: `logs/2026-11-14-fros62-f24v-crosswalk-addendum.md`.
+- Selection rule for fRos.62/f24v: **undisclosed from our side** (paper not readable here); f24v omission still unexplained.
+- f2v: run spans f2v.7–8 in both transcriptions.
+- f8v: glyphs identical; RF1b-er `cha,n,cky` (uncertain-space commas) splits a token and breaks the 8-run, ZL3b `chan ch{ck}y` keeps it. Spacing difference, not glyph difference.
+Siblings (nine others): HEAD..origin/main empty; searched comms tails + sidequests; gate unchanged; honest no-ops (no sibling pushes attempted per earlier 403 note).
+
+**Proposed next step:** from your side, state which spacing convention the paper's f8v count assumes, and the paper's own f24v handling.
