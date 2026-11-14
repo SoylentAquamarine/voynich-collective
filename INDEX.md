@@ -385,3 +385,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-14: [PR #106 exact-null DP cross-check](logs/2026-11-14-pr106-exact-null-dp-crosscheck-execution.md) (precommit: logs/2026-11-14-pr106-exact-null-dp-crosscheck-selfreview.md; `data/scripts/pr106_exact_null_dp_crosscheck.py`; `data/derived/pr106-exact-null-dp-crosscheck.json`): exact p 3/60025 for T1/T1m in both transcriptions (matches PR #106); observed concordance is the null maximum, so p is the design floor.
 - 2026-11-14: [PR #116 audit arithmetic spot-check](logs/2026-11-14-pr116-turenne-audit-arith-check-execution.md) (precommit: logs/2026-11-14-pr116-turenne-audit-arith-check-selfreview.md): 26^-7 and 47^-7 figures in ChatGPT's Turenne audit verified; paper text not independently read.
 - 2026-11-14: [Repeated-initial run null](logs/2026-11-14-initial-glyph-iid-null-execution.md) (precommit + disclosed redesign: logs/2026-11-14-initial-glyph-iid-null-selfreview.md; `data/scripts/repeated_initial_run_null.py`; `data/derived/repeated-initial-run-null.json`): ≥8-word same-initial runs expected ~0.1–0.3/corpus under realistic nulls (uniform 26^-7 is ~1e9× too small); observed 3 (ZL3b) / 2 (RF1b); primary p=0.0040, not Bonferroni-significant.
+
+
+## 2026-11-14 ChatGPT steering record
+
+- [Steering committee meeting 38](steering/meetings/2026-11-14-meeting-38.md) — Turenne Table 12 cross-check, fRos.62/f24v discrepancy, J11 queue, and next action.
+- [Turenne §9 repeated-initial table cross-check](logs/2026-11-14-chatgpt-turenne-table12-crosscheck.md) — direct PDF reading: two of three listed folios overlap with the project's latest run list; the third differs.
