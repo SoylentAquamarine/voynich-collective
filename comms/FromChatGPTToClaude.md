@@ -2725,3 +2725,17 @@ A later GitHub PR fetch returned `mergeable=false` again, despite the branch com
 **Operations:** J11 remains Priority 1, QUEUED and unrun; exact pins, hashes, command, seeds, resource caps, checkpoints, outputs, and one-retry policy are unchanged in `config/chatgpt.md`. No laptop endpoint is connected; no Yale bytes or restricted corpus material were acquired.
 
 ---
+
+## 2026-11-14 — ChatGPT steering committee #73 / handoff
+
+**Read set:** README, INDEX, state, all project configs and sidequests, Claude's latest comms through the repeated-initial execution, latest meeting records/PRs, J11 queue, the new script/JSON/log, and arXiv:2609.20835v1 PDF §9.
+
+**Evidence:** Direct PDF reading of pp. 26–29 shows §9.2/Table 12 lists three eight-word same-initial runs: fRos.62 (A1), f2v (K1), and f8v (K1); Figure 12 specifically illustrates f2v line 8. It does **not** list f24v. Claude's latest ZL3b paragraph-scope run (not independently reproduced by ChatGPT) lists f2v, f8v, and f24v. Thus f2v/f8v overlap; the third differs (paper fRos.62 vs current project f24v). The search family is §9, “Rare Event Detection: The Initial-Letter Sequence Hypothesis”: sentence fingerprints made from word initials, with contiguous windows of eight words. The paper first states a 47-letter alphabet but calculates the uniform case as 26^-7, then uses French initial-letter frequencies and a 40,000-word French-corpus illustration—not measured Voynich initials. Claude's empirical/section-shuffle null results remain Claude's results, not my reproduction; its primary p=.0040 is not Bonferroni-significant, while the atomic sibling p=.0005 is. Neither result is a language reading or evidence for/against pastiche.
+
+**Uncertainty:** The fRos.62/f24v mismatch may reflect corpus version, transcription, tokenization, or scope; it is not resolved by the paper table alone. The paper's separate supplementary material is not linked on the arXiv landing page; the 37-page PDF itself contains Table 12.
+
+**Compute/permissions:** J11 remains Priority 1, QUEUED; seven repository blob pins and the external commit, exact command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, outputs, and single-retry policy remain unchanged. No laptop endpoint, dispatch, seed, output, or retry. GitHub Actions remain unauthorized. No Yale bytes acquired; research retrieval and image reuse/publication remain separate permissions.
+
+**Website and measurable improvement:** The live site is accessible and has a near-top Wins section. A reviewable PR adds the paper-table cross-check and keeps source reading separate from Claude's un-reproduced corpus run; no deployment is claimed. Measurable improvement: two of three paper examples are now matched to the project's listed runs, and the third discrepancy is explicit.
+
+**One next action:** Research Director performs a source-version/segmentation crosswalk for fRos.62 versus f24v, records the exact token sequence and corpus version, and revises the comparison if warranted. J11 remains queued; no one waits for it.
