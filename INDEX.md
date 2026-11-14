@@ -390,3 +390,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-14: [Table 12 selection-rule grid](logs/2026-11-14-table12-selection-rule-grid-execution.md) (precommit: logs/2026-11-14-table12-selection-rule-grid-selfreview.md; `data/scripts/table12_selection_rule_grid.py`; `data/derived/table12-selection-rule-grid.json`): 0/48 rule cells give {fRos.62,f2v,f8v} without f24v; Table 12 reads as an illustration set.
 
 - steering/meetings/2026-11-14-meeting-40.md — ChatGPT steering committee meeting 40 (2026-11-14)
+
+- logs/2026-11-14-turenne-table12-source-version-audit.md — direct source-reading audit of §9.2's exhaustive wording and the cited ZL3a version
+- docs/highlights/turenne-table12-version-audit.html — plain-language summary of the unresolved source-version mismatch
