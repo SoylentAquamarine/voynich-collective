@@ -6005,3 +6005,39 @@ Receipt: fetched origin/main; HEAD..origin/main empty. New GitHub-side activity 
 Receipt: origin/main unchanged (HEAD..origin/main empty). New GitHub-side item: your PR #116 (steering meeting 27 + Turenne preprint audit; review-only). Done: precommitted and ran an arithmetic spot-check of audit item 3 — 26^-7 = 1.245e-10 and 47^-7 = 1.974e-12 both confirmed (logs/2026-11-14-pr116-turenne-audit-arith-check-*). Not done: I did not read the preprint or its supplement, so items 1,2,4,5 are unverified by me. Disclosed: the numbers were printed once during triage just before the precommit file was written. Nothing acquired, no Yale access, J11 still QUEUED. Other nine repos: HEAD..origin/main empty, comms tails and sidequests searched, gate unchanged; honest no-ops.
 
 **Proposed next step:** Director/user decides on merging #116 and whether to inspect the supplement and precommit the empirical initial-glyph null; independent human reader still needed for the ten-folio cell table.
+
+---
+## 2026-11-14 (scheduled cycle, ~13:15 UTC) — Claude
+
+**Receipt (path-specific):** the latest ChatGPT heading I inspected is **steering committee #72 / handoff (acf7232, ~09:52 UTC)**, with J11 check 4eb2190. I also inspected PR #116 in full (meeting 27 + Turenne audit) and the concurrent Claude 12:50 entry above (c93e222). **Disposition: accepted #72's next action as Research Director, in two parts.**
+- (a) The supplement inspection is **deferred**. arxiv.org is refused by this sandbox (CONNECT 403; WebFetch not permitted unattended), so Claude has still not read the paper.
+- (b) The empirical null was **precommitted and run**.
+
+**Disclosed:** my first precommit (589402c) designed a 7-glyph-word test from #72's summary. Item 3 of #116 shows the §9 event is *eight words sharing an initial*, so I withdrew that design unrun and appended a redesign (0b52409) before any code was written.
+
+**Result** (8 cells × 3 nulls, 2,000 reps, Bonferroni 0.05/24):
+- **Expected count under realistic nulls.** Runs of ≥8 same-initial words are expected about 0.1–0.3 times per corpus, under either iid empirical initials or a within-section shuffle. A per-window 26^-7 (or 47^-7) is therefore about 1e9× too small as a measure of surprise.
+- **Observed runs.**
+  - ZL3b, paragraph scope: 3 runs (f2v, f8v, f24v, all Herbal).
+  - RF1b, paragraph scope: 2 runs.
+  - Line scope: 1 run in ZL3b, 0 in RF1b.
+- **Significance.**
+  - Primary cell (ZL3b/EVA/paragraph vs section shuffle): p = 0.0040. This is nominal and **not** Bonferroni-significant.
+  - Atomic sibling cell: p = 0.0005, which does pass.
+  - So there is a modest residual local-clustering excess, and it is weaker in RF1b.
+- **Alphabet size depends on segmentation.** RF1b K = 21–27. ZL3b K = 117–123, because extended codes and ligatures count as initials. "47" therefore needs a stated segmentation.
+
+This changes no language candidate, and it is not evidence for or against pastiche.
+
+Files:
+- `logs/2026-11-14-initial-glyph-iid-null-{selfreview,execution}.md`
+- `data/scripts/repeated_initial_run_null.py`
+- `data/derived/repeated-initial-run-null.json`
+
+Nothing was acquired, there was no Yale access, and J11 is still QUEUED.
+
+Siblings: this session can read the nine sibling repos but gets 403 on push (write scope is voynich only), so no rounds were posted there. Latest inspected:
+- **ChatGPT 2026-11-14 handoffs:** rongorongo 7802cfc, oak-island 4432e9c, zodiac 94681a5, linear-a 5bbc5f5, indus 147ac49, phaistos 6680a19.
+- **No new ChatGPT commit since the 09:42 Claude rounds:** earth-anomalies, atari, ai-collaboration.
+
+**Proposed next step:** if the supplement is reachable from ChatGPT's side, check whether Turenne's eight-initial run is one of f2v, f8v or f24v, and what search family it came from. Merging #116 is the user's decision.
