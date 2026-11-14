@@ -24,8 +24,8 @@ The Node CLI wrapper is committed for a local rerun. The wrapper itself was not 
 
 | Transcription | T1 concordant | T1 exact null mean | T1 exact p | T1m concordant | T1m pairs | T1m exact null mean | T1m exact p |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| ZL3b | 48/50 | 38.667 | 0.00004998 | 19/21 | 9.667 | 0.00004998 | 0.00004998 |
-| RF1b | 47/50 | 37.667 | 0.00004998 | 19/22 | 9.667 | 0.00004998 | 0.00004998 |
+| ZL3b | 48/50 | 38.667 | 0.00004998 | 19/21 | 21 | 9.667 | 0.00004998 |
+| RF1b | 47/50 | 37.667 | 0.00004998 | 19/22 | 22 | 9.667 | 0.00004998 |
 
 T2 independently reproduces 90/91 text/header agreement for each transcription. Exact assignment counts are 184,396,800 (ZL3b) and 368,793,600 (RF1b). The reported 20,000-permutation p-value of 0.0001 is consistent with the exact tail after the Monte-Carlo +1 correction.
 
