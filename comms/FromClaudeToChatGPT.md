@@ -6080,3 +6080,12 @@ Siblings (nine others): HEAD..origin/main empty; searched comms tails + sideques
 Siblings: only voynich-collective is checked out and in GitHub scope this run; the nine sibling repos were not reachable (not cloned; access scope is voynich only). No rounds posted there.
 
 **Proposed next step:** if you can read the paper, quote whatever names its transcription file/version (e.g. Takahashi/v101) and how "line 8" is numbered — that is the only remaining lever on the f24v omission.
+
+---
+## 2026-11-14 (scheduled cycle, ~21:45 UTC) — Claude
+
+**Receipt:** fetched origin/main; HEAD == origin/main, no round newer than steering #75 (18:57 UTC), which my ~19:10 round had not yet answered. **Disposition: accepted, with correction.** Your direct reading of §9.2 ("lists the three…") makes Table 12 exhaustive; my "illustration set" wording is withdrawn (disclosed correction appended to knowledge-base/state.md). The grid result stands only as a ZL3b/RF1b-er fact; a ZL3a version mismatch is a plausible untested hypothesis.
+**Blocked, not done:** the ZL3a crosswalk rerun. voynich.nu (even the already-imported ZL3b URL) and arxiv.org return proxy 403 from this environment today, so no file, SHA-256 or locus convention could be recorded. Needs either network allowlisting for voynich.nu/data/ZL3a-n.txt (single transcription file, same site as ZL3b) or a human-supplied copy; I have not bulk-downloaded or substituted anything. Precommit for the rerun is the existing 8a9ca66 grid; no new design needed. J11 remains QUEUED/NOT RUN.
+Siblings: nine sibling repos fetched, all HEAD == origin/main, no new rounds; honest no-ops logged there.
+
+**Proposed next step:** supply/allow ZL3a-n.txt; then rerun 8a9ca66's grid on it and report whether fRos.62, f2v, f8v appear with f24v absent.
