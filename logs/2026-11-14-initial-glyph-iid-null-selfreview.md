@@ -71,3 +71,58 @@ Per cell:
 - Report numbers whether or not they match predictions. No translation, reading, or
   language claim. No Yale bytes, no new corpus acquired. The paper itself remains
   unread by Claude and this is disclosed in every output.
+
+---
+## Correction and redesign (appended ~13:00 UTC, still BEFORE any code for this check)
+
+**Disclosed error in the design above.** I wrote the design from steering #72's one-paragraph
+summary. On reading PR #116's full audit log (item 3) — and the concurrent Claude cycle's
+arithmetic spot-check c93e222, which I had not seen when writing the above — Turenne §9 is a
+**repeated-initial** null: the probability that **eight words share the same initial**,
+26·(1/26)^8 = 26^-7. It is not a 7-symbol word probability. The 7-glyph-word design above
+therefore tests the wrong event and is **withdrawn, never run**. The arithmetic (26^-7, 47^-7)
+is already confirmed in c93e222 and is not repeated here. Replacement design:
+
+**Event.** A maximal run of ≥ 8 consecutive words sharing the same initial unit, counted within
+a scope (no run crosses a scope boundary). Words containing `?` break a run (counted as a
+non-matching word, not dropped, so no artificial adjacency is created).
+
+**Inputs.** `data/ZL3b-n.txt` and `data/RF1b-er.txt`, parsed by one new script with the
+committed `normalize_eva.py` policies (first option of `[x:y]`, `,` / `<->` / `<~>` = boundary,
+inline markup stripped, `{..}` kept as one unit). Only paragraph-text loci (locus type `P*`);
+labels, circular and radial text excluded. Page section = the `$I=` illustration code in the
+page header.
+
+**Cells (8, all reported):** transcription {ZL3b, RF1b-er} × segmentation {EVA character,
+atomic glyph `ckh cth cph cfh ch sh`} × scope {line, paragraph}. A paragraph runs from a
+locus whose type char is `@` or `*` through the next `=` (or until the next `@`/`*` or page end).
+
+**Statistic.** S = number of maximal same-initial runs of length ≥ 8; also reported: longest
+run, and counts for thresholds 4–7 (descriptive only, not tested).
+
+**Nulls (per cell):**
+- N0 (reference only, not tested): uniform K: expected windows × K·(1/K)^8, K = observed initial
+  inventory size.
+- N1: iid initials from the global empirical word-initial distribution of that cell, words
+  re-drawn independently, scope sizes held fixed. 2,000 replicates.
+- N2: iid initials from the **section-specific** empirical initial distribution. 2,000 reps.
+- N3: permutation — shuffle word order within each section (preserves each section's exact
+  word multiset and scope sizes). 2,000 reps.
+One-sided p = (1 + #{null S ≥ obs S}) / 2001. Seed 20261114 (per cell/null derived deterministically).
+
+**Multiple-search control.** 8 cells × 3 tested nulls = 24 p-values; Bonferroni α = 0.05/24.
+**Primary** fixed now: ZL3b / EVA character / paragraph / N3.
+
+**Predictions (replace P1–P3 above).**
+- Q1: observed S in the primary cell is ≥ 1 (the paper presumably reports such a run) but small
+  (< 20).
+- Q2: N1 (global iid) expected S is below observed (p < 0.05) in most cells, because initials
+  are section- and position-dependent.
+- Q3: the primary N3 test is **not** Bonferroni-significant (p > 0.05/24): once section word
+  frequencies are preserved, long same-initial runs are roughly what a shuffled text produces.
+  I hold this at low-to-moderate confidence; it is the outcome that would most directly undercut
+  the paper's use of the run as evidence, so I will report it with special care if it fails.
+
+**Interpretation precommitment.** Results bear only on whether the repeated-initial run is
+surprising under realistic nulls. Not evidence for/against pastiche, any language, or any
+reading. The paper and supplement remain unread by Claude (arxiv.org refused by this sandbox).
