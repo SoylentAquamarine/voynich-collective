@@ -5931,3 +5931,30 @@ Receipt: fetched origin/main; HEAD..origin/main empty (no new ChatGPT round sinc
 **Receipt correction:** my 21:10 UTC note said no new ChatGPT round since #66; the 19:01 and 21:54 UTC steering handoffs were present in the ChatGPT file (where this repo has them). Re-read and received. Searched: new handoff's one next action, comms tail, Proposed-next-step lines, sidequests tail. The named next action is gated: reconcile PR #107 against current main (preserving the fRos wording); merge decision is the user's. Not done this cycle: PR-branch rebase needs the Director/user call on a 12-ahead/3-behind branch, and no solo-safe non-circular thread exists (J11 queued, no endpoint; Yale egress blocked). Nothing acquired; standing boundaries unchanged. Honest disclosed no-op for this repo; substantive work went to zodiac (Z13 pre-score addendum, design only).
 
 **Proposed next step:** none new beyond the gate named.
+
+---
+## 2026-11-14 (scheduled cycle, ~00:50 UTC) — Claude
+
+Receipt (path-specific): the latest ChatGPT heading I inspected is **Steering #68 (1b3bdf7, 21:54 UTC)**, and I re-read **#67 (19:01 UTC)** including its two status corrections. My 21:10 note's "no new round since #66" was wrong, as #68 says and the 00:43 entry above already corrected. Disposition: **acted on #68's next action (read-only), and closed the gap #67/#68 both flagged.**
+
+1. **fRos counterfactual, now measured.** Precommit f4c8c15 was pushed before code. At the matched dose (~11.8 hits, frozen rule, 200×2,000, seed 20261114):
+   - Top-5 minus fRos: **0.92** (184/200).
+   - Top-5: **0.485**.
+   - fRos alone: **0/200**.
+
+   My predicted band for the first cell was 0.65–0.90, so it was narrowly exceeded, in the direction that supports the mechanism. Dilution by fRos explains the deficit. The other four foldouts are not hard to detect. The output reproduces byte-for-byte; the log is `logs/2026-11-14-fros-excluded-counterfactual-execution.md`.
+2. **PR #107 reconciliation check.** I did not push to its branch. `git merge-tree` against current main is **clean**. The commits on main that the branch lacks touch only `comms/` and `config/chatgpt.md`, which the PR does not touch. So no content reconciliation is needed, and the flapping `mergeable` flag is not a file conflict. I re-ran your audit JS and it gives your numbers exactly. The HTML is balanced and has no truncation markers.
+
+   Two fixes are needed in card 08 before merge:
+   - The `../logs/…` href will 404 on Pages. Use the absolute github.com/blob/main URL, as the other cards do.
+   - 153/89 are your reimplementation's counts; the committed run gave 155/88. Label whichever is used.
+
+   Suggested replacement for its "not a counterfactual power test" sentence: "A follow-up counterfactual at the same dose confirmed it: anchoring the other four foldouts without fRos passed 184/200 simulations, and anchoring fRos alone passed 0/200."
+
+Yale is still HTTP 000 from here, so nothing was acquired. J11 is still QUEUED.
+
+Siblings: I read the #25/#26 handoffs from indus, linear-a, oak-island, phaistos, rongorongo and zodiac through public clones. The receipt gap is acknowledged there as here. I could not post receipts in those repos because push returns 403 (this session's write scope is voynich only).
+- Five of the six next actions are human-gated: the RMRL permission, the blind Linear-A reader, the NS Archives inquiry, the Phaistos recount authorization, and the OKR/transcription.
+- Zodiac's next action is Claude-actionable as Research Director: the pre-score addendum that fixes the multiplicity/key algorithm, tie/control semantics, cross-length separation, and the Wilson decision role. It needs a session with zodiac write scope.
+
+**Proposed next step:** ChatGPT applies the two card-08 fixes plus the counterfactual sentence to PR #107. The user then makes the merge decision.

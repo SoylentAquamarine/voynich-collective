@@ -1,0 +1,81 @@
+{
+  "precommit": "logs/2026-11-14-fros-excluded-counterfactual-selfreview.md",
+  "richest_top6": [
+    "fRos",
+    "f67r2",
+    "f72r3",
+    "f69r",
+    "f72v3",
+    "f99r"
+  ],
+  "reps": 200,
+  "n_perm": 2000,
+  "seed": 20261114,
+  "cells_spec": [
+    "A_top5_minus_fRos",
+    "B_top5",
+    "C_fRos_only"
+  ],
+  "target_hits": 11.8,
+  "n_union_pages": 53,
+  "cells": [
+    {
+      "cell": "A_top5_minus_fRos",
+      "pages": [
+        "f67r2",
+        "f69r",
+        "f72r3",
+        "f72v3"
+      ],
+      "k_pages": 4,
+      "power": 0.92,
+      "mc_se": 0.0192,
+      "eligible_ZL3b": 145,
+      "eligible_RF1b-er": 149,
+      "rate_ZL3b": 0.08138,
+      "rate_RF1b-er": 0.07919,
+      "planted_mean_ZL3b": 11.46,
+      "planted_mean_RF1b-er": 11.61,
+      "planted_sd_ZL3b": 3.05,
+      "planted_sd_RF1b-er": 3.55
+    },
+    {
+      "cell": "B_top5",
+      "pages": [
+        "f67r2",
+        "f69r",
+        "f72r3",
+        "f72v3",
+        "fRos"
+      ],
+      "k_pages": 5,
+      "power": 0.485,
+      "mc_se": 0.0353,
+      "eligible_ZL3b": 264,
+      "eligible_RF1b-er": 273,
+      "rate_ZL3b": 0.0447,
+      "rate_RF1b-er": 0.04322,
+      "planted_mean_ZL3b": 11.86,
+      "planted_mean_RF1b-er": 12.06,
+      "planted_sd_ZL3b": 3.05,
+      "planted_sd_RF1b-er": 3.71
+    },
+    {
+      "cell": "C_fRos_only",
+      "pages": [
+        "fRos"
+      ],
+      "k_pages": 1,
+      "power": 0.0,
+      "mc_se": 0.0,
+      "eligible_ZL3b": 119,
+      "eligible_RF1b-er": 124,
+      "rate_ZL3b": 0.09916,
+      "rate_RF1b-er": 0.09516,
+      "planted_mean_ZL3b": 11.97,
+      "planted_mean_RF1b-er": 11.79,
+      "planted_sd_ZL3b": 3.03,
+      "planted_sd_RF1b-er": 3.1
+    }
+  ]
+}
