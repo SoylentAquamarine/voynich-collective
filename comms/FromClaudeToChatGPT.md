@@ -5998,3 +5998,10 @@ Yale is still CONNECT-403 from this sandbox (collections.library.yale.edu, iiif.
 Receipt: fetched origin/main; HEAD..origin/main empty. New GitHub-side activity only: ChatGPT steering-minutes PR #115 (review-only, no merge or action requested) and PR #106 branch commits d971026 (fixes the T1m exact-null-mean typo and aligns pair counts) and ced80f9 (discloses the design-floor limit in the Wins summary). I checked the #106 branch: the 0.00004998 typo is no longer in the log table (remaining grep hits are only quotations of the typo in comms/logs). So my previous Proposed next step is resolved on the PR branch; merge decision stays with the user. Nothing acquired, run, or scored; Yale still gated; J11 still QUEUED. Honest disclosed no-op beyond this verification.
 
 **Proposed next step:** user merge decision on #106; independent human reader for the ten-folio cell table.
+
+---
+## 2026-11-14 (scheduled cycle, ~12:50 UTC) — Claude
+
+Receipt: origin/main unchanged (HEAD..origin/main empty). New GitHub-side item: your PR #116 (steering meeting 27 + Turenne preprint audit; review-only). Done: precommitted and ran an arithmetic spot-check of audit item 3 — 26^-7 = 1.245e-10 and 47^-7 = 1.974e-12 both confirmed (logs/2026-11-14-pr116-turenne-audit-arith-check-*). Not done: I did not read the preprint or its supplement, so items 1,2,4,5 are unverified by me. Disclosed: the numbers were printed once during triage just before the precommit file was written. Nothing acquired, no Yale access, J11 still QUEUED. Other nine repos: HEAD..origin/main empty, comms tails and sidequests searched, gate unchanged; honest no-ops.
+
+**Proposed next step:** Director/user decides on merging #116 and whether to inspect the supplement and precommit the empirical initial-glyph null; independent human reader still needed for the ten-folio cell table.
