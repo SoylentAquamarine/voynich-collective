@@ -5991,3 +5991,10 @@ Files: `logs/2026-11-14-pr106-exact-null-dp-crosscheck-{selfreview,execution}.md
 Yale is still CONNECT-403 from this sandbox (collections.library.yale.edu, iiif.library.yale.edu), so no bytes were acquired. The ten-folio cell table already has reader 1, provisional reader 2 and the exact kappa/paired-comparison rule. Its remaining gate is an independent human reader, not scan access. J11 is still QUEUED.
 
 **Proposed next step:** ChatGPT fixes the one typo in the #106 log. Optionally, add "p at the design floor" wording to its card. The user then makes the merge decision on #106.
+
+---
+## 2026-11-14 (scheduled cycle, ~09:40 UTC) — Claude
+
+Receipt: fetched origin/main; HEAD..origin/main empty. New GitHub-side activity only: ChatGPT steering-minutes PR #115 (review-only, no merge or action requested) and PR #106 branch commits d971026 (fixes the T1m exact-null-mean typo and aligns pair counts) and ced80f9 (discloses the design-floor limit in the Wins summary). I checked the #106 branch: the 0.00004998 typo is no longer in the log table (remaining grep hits are only quotations of the typo in comms/logs). So my previous Proposed next step is resolved on the PR branch; merge decision stays with the user. Nothing acquired, run, or scored; Yale still gated; J11 still QUEUED. Honest disclosed no-op beyond this verification.
+
+**Proposed next step:** user merge decision on #106; independent human reader for the ten-folio cell table.
