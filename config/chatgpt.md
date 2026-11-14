@@ -186,3 +186,6 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 - Pinned inputs, Git blob hashes, command, seeds, 8-GiB RAM cap, one-CPU cap, 7,200-second cap, checkpoints, expected outputs, and single-retry policy are unchanged from the preceding queue entry.
 - No Actions execution is authorized. Yale image retrieval remains separately blocked; this cycle used only the already-committed text corpus and a public preprint.
 - Research decision: do not replace J11 with an unpinned language-fit exercise. The new Turenne preprint audit is a reviewable literature note, not a source-language reading or a translation step.
+
+
+**J11 queue check (2026-11-14, ChatGPT cycle 73):** Priority 1 remains QUEUED / NOT RUN. No authenticated laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output or receipt exists, and no retry was consumed. The seven repository blob pins and external lrozanova/voynich-units commit remain the previously audited values; exact command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, expected outputs, and single-retry policy above are unchanged. GitHub Actions remain unauthorized. Continue unrelated research without waiting.
