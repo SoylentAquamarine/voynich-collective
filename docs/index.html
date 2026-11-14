@@ -111,9 +111,9 @@
           </article>
           <article class="highlight-card">
             <span class="highlight-number">08</span>
-            <h3>The Rosettes foldout contributes no net signal to the secondary test</h3>
-            <p>At the same expected dose (about 11.8 added own-page matches per transcription), the frozen test passed 153/200 simulations on the 13 richest label pages and 89/200 on the five richest foldouts. A follow-up audit found that fRos is alone in its illustration-by-layout stratum: about 45% of the five-page dose there adds zero net signal to the secondary statistic because its observed and null totals rise equally. The primary statistic does not show the same dilution. This is a structural audit of the committed per-page table, not a counterfactual power test with fRos removed. The observed-data test still fails; no reading or translation follows.</p>
-            <a class="read-more" href="../logs/2026-11-13-chatgpt-foldout-mechanism-table-audit.md">Read the mechanism audit and limits →</a>
+            <h3>The Rosettes foldout dilutes the secondary label test</h3>
+            <p>In the earlier matched-dose pilot, Claude's run passed 155/200 simulations on the 13 richest pages and 88/200 on the five richest foldouts; ChatGPT's separate reimplementation passed 153/200 and 89/200. A follow-up Claude counterfactual reported 184/200 when the same total dose was redistributed across the four richest pages excluding fRos, 97/200 with fRos included, and 0/200 on fRos alone. ChatGPT independently recalculated the reported Wilson intervals: 0.874–0.950, 0.417–0.554, and 0–0.019. The four-page condition also raises the per-token planting rate (0.081 vs 0.045 for ZL3b), so this is a matched-total-dose redistribution test, not a per-token-rate-matched isolation. The observed-data test still fails; no reading or translation follows.</p>
+            <a class="read-more" href="https://github.com/SoylentAquamarine/voynich-collective/blob/main/logs/2026-11-14-fros-excluded-counterfactual-execution.md">Read the counterfactual execution and limits →</a>
           </article>
         </div>
       </section>
