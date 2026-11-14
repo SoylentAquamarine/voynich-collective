@@ -1,0 +1,845 @@
+{
+ "ZL3b|P-only|line": [
+  {
+   "page": "f8v",
+   "loci": [
+    "f8v.15,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chol",
+    "chan",
+    "ch{ck}y",
+    "chor",
+    "cheain",
+    "char",
+    "cheeky",
+    "chor"
+   ]
+  }
+ ],
+ "ZL3b|P-only|page": [
+  {
+   "page": "f2v",
+   "loci": [
+    "f2v.7,+P0",
+    "f2v.8,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chokeos",
+    "chees",
+    "chr",
+    "cheaiin",
+    "chokoishe",
+    "chor",
+    "cheol",
+    "chol"
+   ]
+  },
+  {
+   "page": "f8v",
+   "loci": [
+    "f8v.15,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chol",
+    "chan",
+    "ch{ck}y",
+    "chor",
+    "cheain",
+    "char",
+    "cheeky",
+    "chor"
+   ]
+  },
+  {
+   "page": "f24v",
+   "loci": [
+    "f24v.2,+P0",
+    "f24v.3,+P0"
+   ],
+   "initial": "o",
+   "n": 9,
+   "tokens": [
+    "otol",
+    "otaiir",
+    "otchos",
+    "okchom",
+    "okcho",
+    "octhyl",
+    "odchees",
+    "oesearies",
+    "okam"
+   ]
+  }
+ ],
+ "ZL3b|all-loci|line": [
+  {
+   "page": "f8v",
+   "loci": [
+    "f8v.15,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chol",
+    "chan",
+    "ch{ck}y",
+    "chor",
+    "cheain",
+    "char",
+    "cheeky",
+    "chor"
+   ]
+  },
+  {
+   "page": "fRos",
+   "loci": [
+    "fRos.62,@Cc"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "ol",
+    "oir",
+    "or",
+    "oroa",
+    "oteeedy",
+    "okal",
+    "okodar",
+    "otshe",
+    "okody",
+    "otedy"
+   ]
+  }
+ ],
+ "ZL3b|all-loci|page": [
+  {
+   "page": "f2v",
+   "loci": [
+    "f2v.7,+P0",
+    "f2v.8,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chokeos",
+    "chees",
+    "chr",
+    "cheaiin",
+    "chokoishe",
+    "chor",
+    "cheol",
+    "chol"
+   ]
+  },
+  {
+   "page": "f8v",
+   "loci": [
+    "f8v.15,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chol",
+    "chan",
+    "ch{ck}y",
+    "chor",
+    "cheain",
+    "char",
+    "cheeky",
+    "chor"
+   ]
+  },
+  {
+   "page": "f24v",
+   "loci": [
+    "f24v.2,+P0",
+    "f24v.3,+P0"
+   ],
+   "initial": "o",
+   "n": 9,
+   "tokens": [
+    "otol",
+    "otaiir",
+    "otchos",
+    "okchom",
+    "okcho",
+    "octhyl",
+    "odchees",
+    "oesearies",
+    "okam"
+   ]
+  },
+  {
+   "page": "f68r1",
+   "loci": [
+    "f68r1.19,@Ls",
+    "f68r1.20,@Ls",
+    "f68r1.21,@Ls",
+    "f68r1.22,@Ls",
+    "f68r1.23,@Ls",
+    "f68r1.24,@Ls",
+    "f68r1.25,@Ls",
+    "f68r1.26,@Ls",
+    "f68r1.27,@Ls",
+    "f68r1.28,@Ls"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "otys",
+    "olor",
+    "ockhy",
+    "ofcheor",
+    "otchdy",
+    "otykchs",
+    "otol",
+    "otor",
+    "oiinar",
+    "okoldy"
+   ]
+  },
+  {
+   "page": "f70v1",
+   "loci": [
+    "f70v1.10,&Lz",
+    "f70v1.11,&Lz",
+    "f70v1.4,&Lz",
+    "f70v1.5,&Lz",
+    "f70v1.6,&Lz",
+    "f70v1.7,&Lz",
+    "f70v1.8,&Lz",
+    "f70v1.9,&Lz"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "otakaizan",
+    "okalal",
+    "otaly",
+    "oalcheg",
+    "otchodals",
+    "okolshy",
+    "otshshdy",
+    "otal"
+   ]
+  },
+  {
+   "page": "f71r",
+   "loci": [
+    "f71r.12,@Cc",
+    "f71r.13,@Lz",
+    "f71r.14,&Lz",
+    "f71r.15,&Lz",
+    "f71r.16,&Lz",
+    "f71r.17,&Lz",
+    "f71r.18,@Cc"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "o",
+    "otolchdy",
+    "otoloaram",
+    "oteeol",
+    "otolchd",
+    "otaldar",
+    "oteeol",
+    "otal"
+   ]
+  },
+  {
+   "page": "f72r2",
+   "loci": [
+    "f72r2.10,&Lz",
+    "f72r2.11,&Lz",
+    "f72r2.12,&Lz",
+    "f72r2.6,@Cc",
+    "f72r2.7,@Lz",
+    "f72r2.8,&Lz",
+    "f72r2.9,&Lz"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "otois",
+    "otees",
+    "otaraldy",
+    "okalar",
+    "okal",
+    "okaly",
+    "okal",
+    "okeey"
+   ]
+  },
+  {
+   "page": "f72r2",
+   "loci": [
+    "f72r2.15,&Lz",
+    "f72r2.16,&Lz",
+    "f72r2.17,&Lz",
+    "f72r2.18,&Lz",
+    "f72r2.19,&Lz",
+    "f72r2.20,&Lz",
+    "f72r2.21,&Lz",
+    "f72r2.22,@Cc"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "okaircham",
+    "okeal",
+    "otar{cr}",
+    "okaly",
+    "orary",
+    "okyd",
+    "otolam",
+    "oteey"
+   ]
+  },
+  {
+   "page": "f72v3",
+   "loci": [
+    "f72v3.25,&Lz",
+    "f72v3.26,&Lz",
+    "f72v3.27,&Lz",
+    "f72v3.28,&Lz",
+    "f72v3.29,&Lz",
+    "f72v3.30,&Lz",
+    "f72v3.31,&Lz",
+    "f72v3.32,&Lz"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "oeedy",
+    "odairan",
+    "okary",
+    "oeesaiin",
+    "oteesed",
+    "opal",
+    "otaly",
+    "otaly"
+   ]
+  },
+  {
+   "page": "f72v1",
+   "loci": [
+    "f72v1.1,@Cc",
+    "f72v1.10,&Lz",
+    "f72v1.2,@Lz",
+    "f72v1.3,&Lz",
+    "f72v1.4,&Lz",
+    "f72v1.5,&Lz",
+    "f72v1.6,&Lz",
+    "f72v1.7,&Lz",
+    "f72v1.8,&Lz",
+    "f72v1.9,&Lz"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "otechety",
+    "oeeoty",
+    "octhy",
+    "oteoly",
+    "okeoly",
+    "oeees",
+    "o{cfh'h}y",
+    "oees",
+    "okeeoly",
+    "odal"
+   ]
+  },
+  {
+   "page": "f80r",
+   "loci": [
+    "f80r.10,+Ln",
+    "f80r.2,=Ln",
+    "f80r.3,=Ln",
+    "f80r.4,=Ln",
+    "f80r.5,=Ln",
+    "f80r.6,=Ln",
+    "f80r.7,~Ln",
+    "f80r.8,=Ln",
+    "f80r.9,~Ln"
+   ],
+   "initial": "o",
+   "n": 9,
+   "tokens": [
+    "olchdy",
+    "okaly",
+    "okolo",
+    "okary",
+    "opor",
+    "olky",
+    "otalshedy",
+    "okar",
+    "okan"
+   ]
+  },
+  {
+   "page": "f82v",
+   "loci": [
+    "f82v.39,@Ln",
+    "f82v.40,@Ln",
+    "f82v.41,@Ln",
+    "f82v.42,~Lt",
+    "f82v.43,~Lt",
+    "f82v.44,~Ln",
+    "f82v.45,@Lt",
+    "f82v.46,@Lt",
+    "f82v.47,@Lt",
+    "f82v.48,+Lt"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "olkeedy",
+    "okalchy",
+    "okain",
+    "okaoky",
+    "okedor",
+    "okol",
+    "okoldy",
+    "olkol",
+    "otedol",
+    "oteedy"
+   ]
+  },
+  {
+   "page": "fRos",
+   "loci": [
+    "fRos.62,@Cc"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "ol",
+    "oir",
+    "or",
+    "oroa",
+    "oteeedy",
+    "okal",
+    "okodar",
+    "otshe",
+    "okody",
+    "otedy"
+   ]
+  },
+  {
+   "page": "fRos",
+   "loci": [
+    "fRos.133,@Cc",
+    "fRos.134,@L0",
+    "fRos.135,@L0",
+    "fRos.136,@L0",
+    "fRos.137,@Pb"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "opal",
+    "olkar",
+    "okedaiin",
+    "oror",
+    "o@214;alda",
+    "osaram",
+    "oparodam",
+    "otam",
+    "opchody",
+    "oteey"
+   ]
+  }
+ ],
+ "RF1b-er|P-only|line": [],
+ "RF1b-er|P-only|page": [
+  {
+   "page": "f2v",
+   "loci": [
+    "f2v.7,+P0",
+    "f2v.8,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chokeos",
+    "chees",
+    "chr",
+    "cheaiin",
+    "chokoishe",
+    "chor",
+    "cheol",
+    "chol"
+   ]
+  },
+  {
+   "page": "f24v",
+   "loci": [
+    "f24v.2,+P0",
+    "f24v.3,+P0"
+   ],
+   "initial": "o",
+   "n": 9,
+   "tokens": [
+    "otol",
+    "otaiir",
+    "otchos",
+    "okchom",
+    "okcho",
+    "octhol",
+    "odchees",
+    "oesearees",
+    "okam"
+   ]
+  },
+  {
+   "page": "f49v",
+   "loci": [
+    "f49v.48,=P0",
+    "f49v.50,=P0"
+   ],
+   "initial": "c",
+   "n": 11,
+   "tokens": [
+    "chey",
+    "chor",
+    "chokaly",
+    "chordal",
+    "chaiind",
+    "chol",
+    "chor",
+    "ches",
+    "chkalchy",
+    "chokeeoky",
+    "chok"
+   ]
+  }
+ ],
+ "RF1b-er|all-loci|line": [
+  {
+   "page": "fRos",
+   "loci": [
+    "fRos.62,@Cc"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "ol",
+    "or",
+    "or",
+    "oroa",
+    "oteeedy",
+    "okal",
+    "okodar",
+    "otshe",
+    "okody",
+    "otedy"
+   ]
+  }
+ ],
+ "RF1b-er|all-loci|page": [
+  {
+   "page": "f2v",
+   "loci": [
+    "f2v.7,+P0",
+    "f2v.8,+P0"
+   ],
+   "initial": "c",
+   "n": 8,
+   "tokens": [
+    "chokeos",
+    "chees",
+    "chr",
+    "cheaiin",
+    "chokoishe",
+    "chor",
+    "cheol",
+    "chol"
+   ]
+  },
+  {
+   "page": "f24v",
+   "loci": [
+    "f24v.2,+P0",
+    "f24v.3,+P0"
+   ],
+   "initial": "o",
+   "n": 9,
+   "tokens": [
+    "otol",
+    "otaiir",
+    "otchos",
+    "okchom",
+    "okcho",
+    "octhol",
+    "odchees",
+    "oesearees",
+    "okam"
+   ]
+  },
+  {
+   "page": "f68r1",
+   "loci": [
+    "f68r1.19,@Ls",
+    "f68r1.20,@Ls",
+    "f68r1.21,@Ls",
+    "f68r1.22,@Ls",
+    "f68r1.23,@Ls",
+    "f68r1.24,@Ls",
+    "f68r1.25,@Ls",
+    "f68r1.26,@Ls",
+    "f68r1.27,@Ls",
+    "f68r1.28,@Ls"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "otys",
+    "olor",
+    "ockhy",
+    "ofcheor",
+    "otchdo",
+    "otykchs",
+    "otol",
+    "otor",
+    "oiinar",
+    "okoldy"
+   ]
+  },
+  {
+   "page": "f70v1",
+   "loci": [
+    "f70v1.10,&Lz",
+    "f70v1.11,&Lz",
+    "f70v1.4,&Lz",
+    "f70v1.5,&Lz",
+    "f70v1.6,&Lz",
+    "f70v1.7,&Lz",
+    "f70v1.8,&Lz",
+    "f70v1.9,&Lz"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "otakaiman",
+    "okalal",
+    "otaly",
+    "oalcheg",
+    "otchodals",
+    "okolshy",
+    "otshshdy",
+    "otal"
+   ]
+  },
+  {
+   "page": "f71r",
+   "loci": [
+    "f71r.12,@Cc",
+    "f71r.13,@Lz",
+    "f71r.14,&Lz",
+    "f71r.15,&Lz",
+    "f71r.16,&Lz",
+    "f71r.17,&Lz"
+   ],
+   "initial": "o",
+   "n": 9,
+   "tokens": [
+    "okeey",
+    "otey",
+    "oteoshaly",
+    "o",
+    "otolchdy",
+    "otoloaram",
+    "oteeol",
+    "otolchd",
+    "otal"
+   ]
+  },
+  {
+   "page": "f72r2",
+   "loci": [
+    "f72r2.10,&Lz",
+    "f72r2.11,&Lz",
+    "f72r2.12,&Lz",
+    "f72r2.6,@Cc",
+    "f72r2.7,@Lz",
+    "f72r2.8,&Lz",
+    "f72r2.9,&Lz"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "otair",
+    "otees",
+    "otaraldy",
+    "okalar",
+    "okal",
+    "okaly",
+    "okal",
+    "okeey"
+   ]
+  },
+  {
+   "page": "f72r2",
+   "loci": [
+    "f72r2.13,&Lz",
+    "f72r2.14,&Lz",
+    "f72r2.15,&Lz",
+    "f72r2.16,&Lz",
+    "f72r2.17,&Lz",
+    "f72r2.18,&Lz",
+    "f72r2.19,&Lz",
+    "f72r2.20,&Lz",
+    "f72r2.21,&Lz",
+    "f72r2.22,@Cc"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "oteeary",
+    "otairdy",
+    "okaircham",
+    "okealy",
+    "otarcr",
+    "okaly",
+    "orary",
+    "okyd",
+    "otolam",
+    "oteey"
+   ]
+  },
+  {
+   "page": "f72v3",
+   "loci": [
+    "f72v3.25,&Lz",
+    "f72v3.26,&Lz",
+    "f72v3.27,&Lz",
+    "f72v3.28,&Lz",
+    "f72v3.29,&Lz",
+    "f72v3.30,&Lz",
+    "f72v3.31,&Lz",
+    "f72v3.32,&Lz"
+   ],
+   "initial": "o",
+   "n": 8,
+   "tokens": [
+    "oeedy",
+    "odairan",
+    "okary",
+    "oeesaiin",
+    "oteesed",
+    "opal",
+    "otaly",
+    "okoly"
+   ]
+  },
+  {
+   "page": "f72v1",
+   "loci": [
+    "f72v1.1,@Cc",
+    "f72v1.10,&Lz",
+    "f72v1.2,@Lz",
+    "f72v1.3,&Lz",
+    "f72v1.4,&Lz",
+    "f72v1.5,&Lz",
+    "f72v1.6,&Lz",
+    "f72v1.7,&Lz",
+    "f72v1.8,&Lz",
+    "f72v1.9,&Lz"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "otechety",
+    "oeeoty",
+    "octhy",
+    "oteoly",
+    "okeoly",
+    "oeees",
+    "ocfshy",
+    "oees",
+    "okeeoly",
+    "odal"
+   ]
+  },
+  {
+   "page": "f82v",
+   "loci": [
+    "f82v.39,@Ln",
+    "f82v.40,@Ln",
+    "f82v.41,@Ln",
+    "f82v.42,~Lt",
+    "f82v.43,~Lt",
+    "f82v.44,~Ln",
+    "f82v.45,@Lt",
+    "f82v.46,@Lt",
+    "f82v.47,@Lt",
+    "f82v.48,+Lt"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "olkeedy",
+    "okalchy",
+    "okain",
+    "okooky",
+    "okedor",
+    "okol",
+    "otoldy",
+    "olkol",
+    "otedal",
+    "oteedy"
+   ]
+  },
+  {
+   "page": "fRos",
+   "loci": [
+    "fRos.47,@Cc",
+    "fRos.48,@L0",
+    "fRos.49,@L0",
+    "fRos.50,@L0",
+    "fRos.51,@L0"
+   ],
+   "initial": "o",
+   "n": 9,
+   "tokens": [
+    "otchdar",
+    "or",
+    "olkoaiin",
+    "okal",
+    "olaiin",
+    "otedal",
+    "opaiino",
+    "otchdy",
+    "okchy"
+   ]
+  },
+  {
+   "page": "fRos",
+   "loci": [
+    "fRos.62,@Cc"
+   ],
+   "initial": "o",
+   "n": 10,
+   "tokens": [
+    "ol",
+    "or",
+    "or",
+    "oroa",
+    "oteeedy",
+    "okal",
+    "okodar",
+    "otshe",
+    "okody",
+    "otedy"
+   ]
+  }
+ ]
+}
