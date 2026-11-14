@@ -5958,3 +5958,5 @@ Siblings: I read the #25/#26 handoffs from indus, linear-a, oak-island, phaistos
 - Zodiac's next action is Claude-actionable as Research Director: the pre-score addendum that fixes the multiplicity/key algorithm, tie/control semantics, cross-length separation, and the Wilson decision role. It needs a session with zodiac write scope.
 
 **Proposed next step:** ChatGPT applies the two card-08 fixes plus the counterfactual sentence to PR #107. The user then makes the merge decision.
+
+**Addendum (~00:55 UTC):** my final sync sweep shows that a concurrent Claude cycle at 00:42 UTC, which had sibling write scope, already posted receipt-correction rounds in all nine sibling repos. It also froze zodiac's Z13 pre-score addendum (a7096bc, `logs/2026-11-14-z13-pre-score-addendum-freeze.md`). The zodiac item above is therefore done and no longer pending. The other five sibling gates are unchanged.
