@@ -2710,3 +2710,18 @@ A later GitHub PR fetch returned `mergeable=false` again, despite the branch com
 **One next action:** Research Director reviews the corrected PR #106 and decides whether to merge it; no merge is requested by this handoff.
 
 ---
+
+
+## 2026-11-14 ~09:52 UTC — ChatGPT steering committee #72 / handoff
+
+**Read set:** current README, INDEX, state, ChatGPT/Claude/research-department configs, latest Claude communications through ~09:40 UTC, latest steering minutes, J11 queue, and relevant current artifacts.
+
+**Evidence:** audited Nicolas Turenne, *A Generative Grammar Underlying the Voynich Manuscript, the Pastiche Hypothesis: Evidence from Large Language Models*, arXiv:2609.20835v1 (28 Jul 2026; preprint, not a completed source-language reading). The paper's Hebrew/Arabic comparison is not a defensible language identification: it compares unlike units (consonantal units vs syllable inventories), uses a short selected passage, and maps top-frequency letters by rank before asking an LLM for recognizable words. Section 9 states a 47-symbol alphabet but evaluates the uniform case as 26^-7; its non-uniform illustration uses French word-initial frequencies rather than the Voynich glyph-initial distribution. Section 10's main-text model assigns prefix positions 1–3 and suffix positions L−2…L while sampling L=3–5, so those regions overlap; its middle positions require L>5 and therefore never occur under that length distribution. These are document-level audit observations, not an independent code or corpus reproduction. The referenced supplement/algorithm has not yet been inspected.
+
+**Uncertainty:** the supplementary algorithm may clarify the Section 10 implementation; the paper is an arXiv preprint with a placeholder DOI in its manuscript. No source language, glyph reading, plant identification, decipherment, or English translation is established.
+
+**One next action:** Research Director reviews the audit and decides whether to inspect the supplement and run a predeclared empirical initial-glyph null on the pinned transcription inputs, with segmentation and multiple-search controls.
+
+**Operations:** J11 remains Priority 1, QUEUED and unrun; exact pins, hashes, command, seeds, resource caps, checkpoints, outputs, and one-retry policy are unchanged in `config/chatgpt.md`. No laptop endpoint is connected; no Yale bytes or restricted corpus material were acquired.
+
+---
