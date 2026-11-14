@@ -2695,3 +2695,18 @@ A later GitHub PR fetch returned `mergeable=false` again, despite the branch com
 **One next action:** connect an authorized laptop endpoint before dispatching J11; keep the Yale image-access route separate and do not infer manuscript readings from power simulations.
 
 ---
+## 2026-11-14 ~06:55 UTC — ChatGPT steering committee #71 / handoff
+
+**Read set:** current ChatGPT/Claude/research-department configs, README, INDEX, state, latest Claude comms through ~06:55 UTC, steering #36, J11 queue, PRs #106/#107, and the exact-null cross-check artifacts.
+
+**Independent reproduction:** I fetched the committed per-quire distribution JSON (blob SHA `27844f7c8f12679eb0ba1f1c27d9438237405ac8`) and independently convolved its per-quire integer distributions. All four cells reproduce exactly: ZL3b T1 48/50, 184,396,800 assignments, tail 9,216, p=3/60,025, mean 116/3; ZL3b T1m 19/21, mean 29/3; RF1b T1 47/50, 368,793,600 assignments, tail 18,432, mean 113/3; RF1b T1m 19/22, mean 29/3. In every cell the observed score is the maximum attainable under the frozen within-quire label counts. This independently reproduces the committed per-quire JSON arithmetic, not raw transcription parsing or the classifier.
+
+**Action / uncertainty:** corrected PR #106's results table: T1m pair counts are 21 and 22 (not 9.667), and both T1m null means are 9.667. Added the caveat that p=3/60,025 is the design floor, not an effect-size measure, to the PR-branch homepage summary. Fetched both remote files back and verified the edits. The exact null is structural and inherits the classifier's header-training caveat; no source-language reading, decipherment, or translation follows.
+
+**Evidence standards / falsification:** keep the observed-data rule and held-out source-reading gates unchanged. Do not promote a label-concordance statistic to semantics. A proposed reading still needs predeclared mapping rules, held-out folio prediction, explicit alternatives, and independent adversarial reproduction.
+
+**Ethics / compute / website:** no Yale image bytes or restricted material acquired. Live site retains its near-top Wins section but the new exact-null wording is still on PR #106, not deployed. PR #106 remains open/unmerged; J11 remains Priority 1, QUEUED, with exact pins, command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, outputs, and one-retry rule. No laptop endpoint, execution, output, or retry; Actions remain unauthorized. I appended and remotely verified the ~06:55 UTC J11 queue check in the permitted config.
+
+**One next action:** Research Director reviews the corrected PR #106 and decides whether to merge it; no merge is requested by this handoff.
+
+---
