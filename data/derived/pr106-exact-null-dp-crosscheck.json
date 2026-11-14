@@ -1,0 +1,476 @@
+{
+ "precommit": "logs/2026-11-14-pr106-exact-null-dp-crosscheck-selfreview.md (3e39cda)",
+ "ZL3b": {
+  "T1": {
+   "observed": 48,
+   "assignments": 184396800,
+   "tail_count": 9216,
+   "p_exact_fraction": "3/60025",
+   "p_exact": 4.997917534360683e-05,
+   "null_mean_fraction": "116/3",
+   "null_mean": 38.666666666666664,
+   "per_quire": {
+    "A": {
+     "n_leaves": 8,
+     "nA": 8,
+     "n_pairs": 4,
+     "dist": {
+      "4": 1
+     }
+    },
+    "B": {
+     "n_leaves": 6,
+     "nA": 6,
+     "n_pairs": 3,
+     "dist": {
+      "3": 1
+     }
+    },
+    "C": {
+     "n_leaves": 8,
+     "nA": 8,
+     "n_pairs": 4,
+     "dist": {
+      "4": 1
+     }
+    },
+    "D": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "E": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "F": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "G": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "H": {
+     "n_leaves": 4,
+     "nA": 1,
+     "n_pairs": 2,
+     "dist": {
+      "1": 4
+     }
+    },
+    "I": {
+     "n_leaves": 2,
+     "nA": 2,
+     "n_pairs": 1,
+     "dist": {
+      "1": 1
+     }
+    },
+    "J": {
+     "n_leaves": 2,
+     "nA": 1,
+     "n_pairs": 1,
+     "dist": {
+      "0": 2
+     }
+    },
+    "K": {
+     "n_leaves": 2,
+     "nA": 0,
+     "n_pairs": 1,
+     "dist": {
+      "1": 1
+     }
+    },
+    "M": {
+     "n_leaves": 10,
+     "nA": 0,
+     "n_pairs": 5,
+     "dist": {
+      "5": 1
+     }
+    },
+    "N": {
+     "n_leaves": 2,
+     "nA": 0,
+     "n_pairs": 1,
+     "dist": {
+      "1": 1
+     }
+    },
+    "O": {
+     "n_leaves": 4,
+     "nA": 4,
+     "n_pairs": 2,
+     "dist": {
+      "2": 1
+     }
+    },
+    "Q": {
+     "n_leaves": 4,
+     "nA": 2,
+     "n_pairs": 2,
+     "dist": {
+      "0": 4,
+      "2": 2
+     }
+    },
+    "S": {
+     "n_leaves": 4,
+     "nA": 4,
+     "n_pairs": 2,
+     "dist": {
+      "2": 1
+     }
+    },
+    "T": {
+     "n_leaves": 12,
+     "nA": 0,
+     "n_pairs": 6,
+     "dist": {
+      "6": 1
+     }
+    }
+   }
+  },
+  "T1m": {
+   "observed": 19,
+   "assignments": 184396800,
+   "tail_count": 9216,
+   "p_exact_fraction": "3/60025",
+   "p_exact": 4.997917534360683e-05,
+   "null_mean_fraction": "29/3",
+   "null_mean": 9.666666666666666,
+   "per_quire": {
+    "D": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "E": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "F": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "G": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "H": {
+     "n_leaves": 4,
+     "nA": 1,
+     "n_pairs": 2,
+     "dist": {
+      "1": 4
+     }
+    },
+    "J": {
+     "n_leaves": 2,
+     "nA": 1,
+     "n_pairs": 1,
+     "dist": {
+      "0": 2
+     }
+    },
+    "Q": {
+     "n_leaves": 4,
+     "nA": 2,
+     "n_pairs": 2,
+     "dist": {
+      "0": 4,
+      "2": 2
+     }
+    }
+   }
+  },
+  "pure_quire_pairs_always_concordant": 29
+ },
+ "RF1b": {
+  "T1": {
+   "observed": 47,
+   "assignments": 368793600,
+   "tail_count": 18432,
+   "p_exact_fraction": "3/60025",
+   "p_exact": 4.997917534360683e-05,
+   "null_mean_fraction": "113/3",
+   "null_mean": 37.666666666666664,
+   "per_quire": {
+    "A": {
+     "n_leaves": 8,
+     "nA": 8,
+     "n_pairs": 4,
+     "dist": {
+      "4": 1
+     }
+    },
+    "B": {
+     "n_leaves": 6,
+     "nA": 6,
+     "n_pairs": 3,
+     "dist": {
+      "3": 1
+     }
+    },
+    "C": {
+     "n_leaves": 8,
+     "nA": 8,
+     "n_pairs": 4,
+     "dist": {
+      "4": 1
+     }
+    },
+    "D": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "E": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "F": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "G": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "H": {
+     "n_leaves": 4,
+     "nA": 1,
+     "n_pairs": 2,
+     "dist": {
+      "1": 4
+     }
+    },
+    "I": {
+     "n_leaves": 2,
+     "nA": 2,
+     "n_pairs": 1,
+     "dist": {
+      "1": 1
+     }
+    },
+    "J": {
+     "n_leaves": 2,
+     "nA": 1,
+     "n_pairs": 1,
+     "dist": {
+      "0": 2
+     }
+    },
+    "K": {
+     "n_leaves": 2,
+     "nA": 1,
+     "n_pairs": 1,
+     "dist": {
+      "0": 2
+     }
+    },
+    "M": {
+     "n_leaves": 10,
+     "nA": 0,
+     "n_pairs": 5,
+     "dist": {
+      "5": 1
+     }
+    },
+    "N": {
+     "n_leaves": 2,
+     "nA": 0,
+     "n_pairs": 1,
+     "dist": {
+      "1": 1
+     }
+    },
+    "O": {
+     "n_leaves": 4,
+     "nA": 4,
+     "n_pairs": 2,
+     "dist": {
+      "2": 1
+     }
+    },
+    "Q": {
+     "n_leaves": 4,
+     "nA": 2,
+     "n_pairs": 2,
+     "dist": {
+      "0": 4,
+      "2": 2
+     }
+    },
+    "S": {
+     "n_leaves": 4,
+     "nA": 4,
+     "n_pairs": 2,
+     "dist": {
+      "2": 1
+     }
+    },
+    "T": {
+     "n_leaves": 12,
+     "nA": 0,
+     "n_pairs": 6,
+     "dist": {
+      "6": 1
+     }
+    }
+   }
+  },
+  "T1m": {
+   "observed": 19,
+   "assignments": 368793600,
+   "tail_count": 18432,
+   "p_exact_fraction": "3/60025",
+   "p_exact": 4.997917534360683e-05,
+   "null_mean_fraction": "29/3",
+   "null_mean": 9.666666666666666,
+   "per_quire": {
+    "D": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "E": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "F": {
+     "n_leaves": 8,
+     "nA": 4,
+     "n_pairs": 4,
+     "dist": {
+      "0": 16,
+      "2": 48,
+      "4": 6
+     }
+    },
+    "G": {
+     "n_leaves": 8,
+     "nA": 6,
+     "n_pairs": 4,
+     "dist": {
+      "2": 24,
+      "4": 4
+     }
+    },
+    "H": {
+     "n_leaves": 4,
+     "nA": 1,
+     "n_pairs": 2,
+     "dist": {
+      "1": 4
+     }
+    },
+    "J": {
+     "n_leaves": 2,
+     "nA": 1,
+     "n_pairs": 1,
+     "dist": {
+      "0": 2
+     }
+    },
+    "K": {
+     "n_leaves": 2,
+     "nA": 1,
+     "n_pairs": 1,
+     "dist": {
+      "0": 2
+     }
+    },
+    "Q": {
+     "n_leaves": 4,
+     "nA": 2,
+     "n_pairs": 2,
+     "dist": {
+      "0": 4,
+      "2": 2
+     }
+    }
+   }
+  },
+  "pure_quire_pairs_always_concordant": 28
+ },
+ "leaves_with_different_text_label_ZL3b_vs_RF1b": [
+  "K1z"
+ ]
+}
