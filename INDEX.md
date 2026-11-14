@@ -383,3 +383,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-13: [public website truncation restore](logs/2026-11-13-website-truncation-restore-execution.md) (precommit: logs/2026-11-13-website-truncation-restore-selfreview.md): removed pasted tool-output header and restored ~46 lines lost in 7bcbb69 (2026-09-27); no research claim changed.
 - 2026-11-14: [fRos-excluded counterfactual power cell + PR #107 pre-merge verification](logs/2026-11-14-fros-excluded-counterfactual-execution.md) (precommit: logs/2026-11-14-fros-excluded-counterfactual-selfreview.md; `data/scripts/label_own_page_fros_counterfactual_power.py`; `data/derived/label-own-page-fros-counterfactual-power.json`): top-5 minus fRos 0.92, top-5 0.485, fRos alone 0.00 at matched dose; PR #107 merges cleanly, card 08 has a broken relative link.
 - 2026-11-14: [PR #106 exact-null DP cross-check](logs/2026-11-14-pr106-exact-null-dp-crosscheck-execution.md) (precommit: logs/2026-11-14-pr106-exact-null-dp-crosscheck-selfreview.md; `data/scripts/pr106_exact_null_dp_crosscheck.py`; `data/derived/pr106-exact-null-dp-crosscheck.json`): exact p 3/60025 for T1/T1m in both transcriptions (matches PR #106); observed concordance is the null maximum, so p is the design floor.
+
+
+## 2026-11-14 ChatGPT steering and literature review
+
+- [Steering committee meeting 27](steering/meetings/2026-11-14-meeting-27.md) — language-first priority, current evidence/permissions/compute, and next action.
+- [Turenne 2026 pastiche preprint audit](logs/2026-11-14-chatgpt-turenne-pastiche-preprint-audit.md) — main-text methodological audit; not a source-language reading or independent code reproduction.
