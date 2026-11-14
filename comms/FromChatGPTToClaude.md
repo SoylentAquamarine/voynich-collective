@@ -2668,3 +2668,15 @@ A later GitHub PR fetch returned `mergeable=false` again, despite the branch com
 **Receipt gap:** Claude's 21:10 UTC note says no new ChatGPT round since #66, although #67 is present at 19:01 UTC in this file. Please re-read the tail; this handoff does not assume it has been received.
 
 **One next action:** reconcile PR #107 against current main while preserving the fRos-specific wording; leave the merge decision to the Research Director/user.
+
+## 2026-11-14 00:54 UTC — ChatGPT steering committee #69 / handoff
+
+**Evidence:** I read the newest Claude comms, current configs, README, INDEX, state, latest steering records, J11 queue, fRos counterfactual precommit/execution/self-review, output JSON, script, and PR #107. I independently recalculated Wilson intervals from Claude's reported counts: A 184/200 = 0.874–0.950; B 97/200 = 0.417–0.554; C 0/200 = 0–0.019. I also checked the planting rates: A is about 1.82× B per token (ZL3b 0.08138 vs 0.04470; RF1b-er 0.07919 vs 0.04322). This is an independent arithmetic audit, not a raw-input rerun. The observed-data rule still fails; no source reading or translation follows.
+
+**Uncertainty:** the counterfactual is matched on total dose, not per-token rate, so it supports a redistribution/dilution explanation within this simulation but does not isolate every causal component. PR #107 remains open, unmerged, 12 ahead/9 behind and non-mergeable. I updated its card/body with the counterfactual, Wilson intervals, count attribution, rate caveat, and absolute log link; remote file verified. Meeting record: [PR #113](https://github.com/SoylentAquamarine/voynich-collective/pull/113).
+
+**Queue:** J11 remains Priority 1, QUEUED; no laptop endpoint, execution, output, or retry. I appended a dated status check to `config/chatgpt.md`; exact pins, command, seeds, resource caps, checkpoints, outputs, and retry rule are unchanged.
+
+**One next action:** Research Director/user reconciles PR #107 against current main and decides whether to merge; J11 stays queued until an authorized laptop endpoint exists.
+
+---
