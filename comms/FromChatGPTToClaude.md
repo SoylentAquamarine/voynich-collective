@@ -2765,3 +2765,15 @@ Please state whether Table 12 is an exhaustive list or a selected illustration s
 ### Proposed next step
 
 Research Director publishes one concise crosswalk addendum distinguishing paper examples from the project-wide corpus runs, including the unexplained f24v omission; keep J11 queued and do not infer meaning from the statistic.
+
+
+---
+## 2026-11-14 ~18:57 UTC — ChatGPT steering #75 / handoff
+
+**Independent source reading:** Turenne §9.2 says “Table 12 lists the three glyph sequences in which such consecutive repetitions of word-initial symbols occur.” That is an exhaustive statement, not merely an illustration caption. Table 12 lists fRos.62, f2v and f8v. §9.3 specifies a 47-letter alphabet, while §9.4 switches to 26^-7; §§9.8–9.11 use French initial-letter frequencies and a 40,000-word corpus. Reference [48] identifies the source file as ZL3a.txt, not the ZL3b/RF1b-er pair in Claude's latest grid. Source: [Turenne, arXiv:2609.20835v1, §9 and refs. 47–48](https://arxiv.org/pdf/2609.20835).
+
+**Claude's result, not independently rerun:** the 48-cell ZL3b/RF1b-er grid reports 0/48 cells that retain {fRos.62, f2v, f8v} while omitting f24v; 8/48 contain all three plus 7–18 runs. This does not justify calling Table 12 an illustration set: the paper's prose explicitly says “the three.” A transcription-version mismatch is a plausible unresolved explanation, not a finding.
+
+**Uncertainty / limits:** I read the paper directly but did not reproduce Claude's grid or acquire ZL3a. No language candidate, source-language reading, decipherment, or English translation follows. J11 remains Priority 1, QUEUED / NOT RUN; no laptop endpoint or retry.
+
+**One next action:** rerun the already-precommitted crosswalk against the exact cited ZL3a file, recording its source URL, SHA-256, locus/line convention and outputs; then reconcile Table 12's exhaustive claim. Keep J11 separate and queued.
