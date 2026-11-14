@@ -1,0 +1,3634 @@
+{
+ "summary": {
+  "cells": 48,
+  "F1": 8,
+  "F2": 0,
+  "F3": 0,
+  "f24v_present": 32,
+  "fRos_present_P_only": 0,
+  "f8v_present_RF1b_join": [
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false,
+   false
+  ]
+ },
+ "cells": [
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 1,
+   "pages": [
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 1,
+   "pages": [
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 1,
+   "pages": [
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 1,
+   "pages": [
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 4,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 4,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v",
+    "f8v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 2,
+   "pages": [
+    "f8v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 2,
+   "pages": [
+    "f8v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 3,
+   "pages": [
+    "f71r",
+    "f8v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 3,
+   "pages": [
+    "f71r",
+    "f8v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": true,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 7,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 7,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 9,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 9,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 14,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.133,@Cc",
+      "fRos.134,@L0",
+      "fRos.135,@L0",
+      "fRos.136,@L0",
+      "fRos.137,@Pb"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "opal",
+      "olkar",
+      "okedaiin",
+      "oror",
+      "o@214;alda",
+      "osaram",
+      "oparodam",
+      "otam",
+      "opchody",
+      "oteey"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 14,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.133,@Cc",
+      "fRos.134,@L0",
+      "fRos.135,@L0",
+      "fRos.136,@L0",
+      "fRos.137,@Pb"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "opal",
+      "olkar",
+      "okedaiin",
+      "oror",
+      "o@214;alda",
+      "osaram",
+      "oparodam",
+      "otam",
+      "opchody",
+      "oteey"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 18,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f69v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.47,@Cc",
+      "fRos.48,@L0",
+      "fRos.49,@L0",
+      "fRos.50,@L0",
+      "fRos.51,@L0"
+     ],
+     "initial": "o",
+     "n": 8,
+     "tokens": [
+      "otchdor",
+      "or",
+      "olkoaiin",
+      "okalolaiin",
+      "otedal",
+      "opaiino",
+      "otchdy",
+      "okchy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.133,@Cc",
+      "fRos.134,@L0",
+      "fRos.135,@L0",
+      "fRos.136,@L0",
+      "fRos.137,@Pb"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "opal",
+      "olkar",
+      "okedaiin",
+      "oror",
+      "o@214;alda",
+      "osaram",
+      "oparodam",
+      "otam",
+      "opchody",
+      "oteey"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 18,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f69v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "F1": true,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": true,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f8v",
+     "loci": [
+      "f8v.15,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chol",
+      "chan",
+      "ch{ck}y",
+      "chor",
+      "cheain",
+      "char",
+      "cheeky",
+      "chor"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhyl",
+      "odchees",
+      "oesearies",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.47,@Cc",
+      "fRos.48,@L0",
+      "fRos.49,@L0",
+      "fRos.50,@L0",
+      "fRos.51,@L0"
+     ],
+     "initial": "o",
+     "n": 8,
+     "tokens": [
+      "otchdor",
+      "or",
+      "olkoaiin",
+      "okalolaiin",
+      "otedal",
+      "opaiino",
+      "otchdy",
+      "okchy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "oir",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.133,@Cc",
+      "fRos.134,@L0",
+      "fRos.135,@L0",
+      "fRos.136,@L0",
+      "fRos.137,@Pb"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "opal",
+      "olkar",
+      "okedaiin",
+      "oror",
+      "o@214;alda",
+      "osaram",
+      "oparodam",
+      "otam",
+      "opchody",
+      "oteey"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 0,
+   "pages": [],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": []
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 0,
+   "pages": [],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": []
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 0,
+   "pages": [],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": []
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 0,
+   "pages": [],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": []
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 2,
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 2,
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 2,
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 2,
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 3,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": false,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 1,
+   "pages": [
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 1,
+   "pages": [
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 1,
+   "pages": [
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 1,
+   "pages": [
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": false,
+    "f8v": false,
+    "f24v": false
+   },
+   "runs": [
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 7,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 7,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 7,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 7,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "n_runs": 12,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.47,@Cc",
+      "fRos.48,@L0",
+      "fRos.49,@L0",
+      "fRos.50,@L0",
+      "fRos.51,@L0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otchdar",
+      "or",
+      "olkoaiin",
+      "okal",
+      "olaiin",
+      "otedal",
+      "opaiino",
+      "otchdy",
+      "okchy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "n_runs": 12,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.47,@Cc",
+      "fRos.48,@L0",
+      "fRos.49,@L0",
+      "fRos.50,@L0",
+      "fRos.51,@L0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otchdar",
+      "or",
+      "olkoaiin",
+      "okal",
+      "olaiin",
+      "otedal",
+      "opaiino",
+      "otchdy",
+      "okchy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "n_runs": 12,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "c",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.47,@Cc",
+      "fRos.48,@L0",
+      "fRos.49,@L0",
+      "fRos.50,@L0",
+      "fRos.51,@L0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otchdar",
+      "or",
+      "olkoaiin",
+      "okal",
+      "olaiin",
+      "otedal",
+      "opaiino",
+      "otchdy",
+      "okchy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "n_runs": 12,
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "F1": false,
+   "F2": false,
+   "F3": false,
+   "has": {
+    "fRos": true,
+    "f2v": true,
+    "f8v": false,
+    "f24v": true
+   },
+   "runs": [
+    {
+     "page": "f2v",
+     "loci": [
+      "f2v.7,+P0",
+      "f2v.8,+P0"
+     ],
+     "initial": "ch",
+     "n": 8,
+     "tokens": [
+      "chokeos",
+      "chees",
+      "chr",
+      "cheaiin",
+      "chokoishe",
+      "chor",
+      "cheol",
+      "chol"
+     ]
+    },
+    {
+     "page": "f24v",
+     "loci": [
+      "f24v.2,+P0",
+      "f24v.3,+P0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otol",
+      "otaiir",
+      "otchos",
+      "okchom",
+      "okcho",
+      "octhol",
+      "odchees",
+      "oesearees",
+      "okam"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.47,@Cc",
+      "fRos.48,@L0",
+      "fRos.49,@L0",
+      "fRos.50,@L0",
+      "fRos.51,@L0"
+     ],
+     "initial": "o",
+     "n": 9,
+     "tokens": [
+      "otchdar",
+      "or",
+      "olkoaiin",
+      "okal",
+      "olaiin",
+      "otedal",
+      "opaiino",
+      "otchdy",
+      "okchy"
+     ]
+    },
+    {
+     "page": "fRos",
+     "loci": [
+      "fRos.62,@Cc"
+     ],
+     "initial": "o",
+     "n": 10,
+     "tokens": [
+      "ol",
+      "or",
+      "or",
+      "oroa",
+      "oteeedy",
+      "okal",
+      "okodar",
+      "otshe",
+      "okody",
+      "otedy"
+     ]
+    }
+   ]
+  }
+ ]
+}
