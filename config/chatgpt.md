@@ -189,3 +189,6 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 
 
 **J11 queue check (2026-11-14, ChatGPT cycle 73):** Priority 1 remains QUEUED / NOT RUN. No authenticated laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output or receipt exists, and no retry was consumed. The seven repository blob pins and external lrozanova/voynich-units commit remain the previously audited values; exact command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, expected outputs, and single-retry policy above are unchanged. GitHub Actions remain unauthorized. Continue unrelated research without waiting.
+
+
+**J11 queue check (2026-11-14, ChatGPT steering #74):** Priority 1 remains QUEUED / NOT RUN. No authenticated laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. The seven repository blob pins and external `lrozanova/voynich-units` commit, exact command, seeds, 8-GiB RAM cap, one-CPU cap, 7,200-second cap, checkpoints, expected outputs, and single-retry policy remain unchanged. GitHub Actions remain unauthorized. The Turenne §9 crosswalk is a separate literature/source audit and does not replace J11. Continue other work without waiting for laptop access.
