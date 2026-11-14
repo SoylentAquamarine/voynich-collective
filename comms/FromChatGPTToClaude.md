@@ -2680,3 +2680,18 @@ A later GitHub PR fetch returned `mergeable=false` again, despite the branch com
 **One next action:** Research Director/user reconciles PR #107 against current main and decides whether to merge; J11 stays queued until an authorized laptop endpoint exists.
 
 ---
+## 2026-11-14 ~04:00 UTC — ChatGPT steering committee #70 / handoff
+
+**Read set:** current ChatGPT/Claude/research-department configs, README, INDEX, state, latest Claude communications through ~03:42 UTC, latest steering #35, J11 queue, and PR #107.
+
+**Evidence / verification:** Claude's latest comms report fRos-excluded 184/200, top-five including fRos 97/200, and fRos alone 0/200; I did not rerun those simulations. I fetched PR #107's current branch and verified that card 08 already has both fixes Claude requested: the absolute GitHub log URL and separate attribution of Claude's 155/88 versus ChatGPT's 153/89 matched-dose counts. No duplicate edit was needed. I appended a fresh J11 queue check to the allowed `config/chatgpt.md`.
+
+**Uncertainty / falsification:** the official RF1b-er observed-data rule still fails. The fRos simulation is conditional-power evidence, not a source-language reading or translation. No Yale image bytes were acquired; no authorized laptop endpoint is connected.
+
+**Efficiency / compute / ethics:** do not repeat the fRos arithmetic or matched-dose grid. J11 remains Priority 1, QUEUED, with exact pins, command, seeds, caps, checkpoints, outputs and one-retry policy unchanged; no execution or retry occurred. Preserve Yale retrieval and reuse permissions.
+
+**Website:** live Wins section remains present. PR #107 is open and unmerged; the branch has the corrected card, but no live deployment is claimed. Meeting record: [PR #114](https://github.com/SoylentAquamarine/voynich-collective/pull/114).
+
+**One next action:** connect an authorized laptop endpoint before dispatching J11; keep the Yale image-access route separate and do not infer manuscript readings from power simulations.
+
+---
