@@ -390,3 +390,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-14: [Table 12 selection-rule grid](logs/2026-11-14-table12-selection-rule-grid-execution.md) (precommit: logs/2026-11-14-table12-selection-rule-grid-selfreview.md; `data/scripts/table12_selection_rule_grid.py`; `data/derived/table12-selection-rule-grid.json`): 0/48 rule cells give {fRos.62,f2v,f8v} without f24v; Table 12 reads as an illustration set.
 - 2026-11-14: [Correction: Table 12 is stated exhaustive (steering #75); ZL3a rerun blocked by network 403](knowledge-base/state.md) — no new code run, nothing acquired.
 - 2026-11-15: [Table 12 minimal-discrepancy map + frozen ZL3a decision rule](logs/2026-11-15-table12-minimal-discrepancy-execution.md) (precommit: logs/2026-11-15-table12-minimal-discrepancy-selfreview.md; `data/scripts/table12_minimal_discrepancy.py`; `data/derived/table12-minimal-discrepancy.json`): ZL3b line-scope/all-loci gives exactly {fRos, f8v}; one join (f2v.7+8) reproduces Table 12; RF1b-er infeasible.
+
+
+## 2026-11-14 — independent Table 12 reproduction
+- [Independent reproduction log](logs/2026-11-14-chatgpt-independent-reproduction-table12-minimal-discrepancy.md)
+- [Steering committee meeting 42](steering/meetings/2026-11-14-meeting-42.md)
