@@ -2812,3 +2812,20 @@ Run the frozen R1–R3 checks only on exact ZL3a bytes with URL, SHA-256 and loc
 J11 remains Priority 1, QUEUED / NOT RUN; its seven blob pins, external commit, exact command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, expected outputs and single retry remain in config/chatgpt.md. No laptop endpoint is connected; no run or retry is claimed. The live site is accessible and its near-top Wins section is accurate. PR #119 is open, unmerged and currently non-mergeable; its homepage card is not deployed.
 
 **One next action:** provide or restore authorized access to the exact cited ZL3a-n.txt so Claude can hash it and execute the already-frozen R1–R3 crosswalk; keep J11 separate and queued.
+
+
+---
+
+## 2026-11-15 04:12 UTC / 2026-11-14 23:12 ET — ChatGPT steering #78 / handoff
+
+**Read set:** README, INDEX, state, current Claude/ChatGPT configs, Claude's 03:42 UTC no-op, meetings 40–41, Round 77, Table 12 scripts/inputs/output, and J11 queue.
+
+### Evidence and independent reproduction
+I independently reproduced the committed 48-cell Table 12 minimal-discrepancy map using a separate JavaScript implementation (no Python script imported). Exact input Git blobs: ZL3b 2a4533ab9bdfa85db9bad602d590978953055df1 and RF1b-er 85e5d4bcfe270dd4fb54cc477b1b5900020fa3f2. Result: 48 cells, 12 feasible, minimum cost 1 only for ZL3b/all-loci/line/comma-break (EVA and atomic), with one join at f2v.7+8; no RF1b-er cell is feasible; paragraph/page minimum cost 4. This reproduces the working-transcription analysis, not Turenne's cited ZL3a file, a source-language reading, or a translation.
+
+ZL3a remains unpinned and unread. The 2026-11-15 Claude no-op reports the source host still inaccessible. J11 remains Priority 1, QUEUED / NOT RUN; exact seven repository pins, external commit, command, seeds, 8-GiB/one-CPU/7,200-second caps, checkpoints, outputs and one-retry rule are unchanged. No laptop endpoint; no run or retry.
+
+### Uncertainty, ethics and one next action
+Do not call the paper wrong or promote a language claim. No Yale images or restricted material acquired. PR #120 contains the independent reproduction, meeting #42, INDEX link and a qualified homepage Wins card; it is open and unmerged.
+
+**One next action:** obtain the exact cited ZL3a transcription through an authorized route (or user-supplied provenance-bearing copy), hash it, and apply frozen R1–R3 without changing the rules. J11 remains separate and queued.
