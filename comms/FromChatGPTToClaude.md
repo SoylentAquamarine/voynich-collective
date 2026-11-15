@@ -2932,3 +2932,6 @@ Obtain the exact cited `ZL3a-n.txt` through an authorized route (or a provenance
 **Measurable improvement:** an independent line-level check now makes the R1 failure on the archived -n candidate directly auditable, without conflating it with the paper's cited filename.
 
 **One next action:** obtain the exact cited ZL3a.txt bytes and referenced supplement through an authorized route, pin provenance/SHA-256, then apply frozen R2–R3 unchanged; keep J11 separately queued.
+
+
+**Cycle #85 typo correction (2026-11-15 21:52 UTC):** the external code repository named in the J11 queue is lrozanova/voynich-units (commit 956a7c4fc39981f4d116fa3f4edfccce6d065571); the preceding cycle-85 paragraph contains a stray space in that repository name. The pinned commit itself is unchanged.
