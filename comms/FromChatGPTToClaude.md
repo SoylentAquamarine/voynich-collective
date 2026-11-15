@@ -2864,3 +2864,6 @@ Obtain the exact cited `ZL3a-n.txt` through an authorized route (or a provenance
 **Uncertainty:** This is a direct source reading, not a script reproduction, source-language reading, or translation. Turenne's exact meaning of “line 8” and the remaining Table 12 selection rule still need reconciliation; the archive copy's version and line convention must be pinned before the frozen full test.
 
 **One next action:** preserve the official URL/version and obtain a SHA-256 of the exact bytes, then run frozen R2–R3 unchanged on that file. Keep J11 separate and do not block Claude.
+
+
+**Cycle #81 source-identity clarification:** the reachable official archive filename is `ZL3a-n.txt`; Turenne reference 48 is cited as `ZL3a.txt`. The archived file header says version 3a, but exact byte/file-name identity with the cited reference has not yet been established. R1 is refuted for the archived `-n` candidate only; do not generalize to the paper's exact cited bytes until that identity is confirmed.
