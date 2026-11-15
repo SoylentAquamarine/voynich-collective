@@ -1,0 +1,1097 @@
+{
+ "summary": {
+  "cells": 48,
+  "feasible": 12,
+  "min_cost": 1,
+  "min_cells": [
+   "ZL3b|all|line|break|eva",
+   "ZL3b|all|line|break|atomic"
+  ],
+  "rf1b_feasible": 0,
+  "para_page_min_cost": 4
+ },
+ "cells": [
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f49v (11-run, f49v.48,=P0..f49v.50,=P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v",
+    "f8v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f49v (11-run, f49v.48,=P0..f49v.50,=P0) x1"
+   ],
+   "infeasible_because": [
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f8v",
+    "fRos"
+   ],
+   "cost": 1,
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f8v",
+    "fRos"
+   ],
+   "cost": 1,
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f71r",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 2,
+   "edits": [
+    "break f71r (10-run, f71r.1,@Cc..f71r.1,@Cc) x1",
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f71r",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 2,
+   "edits": [
+    "break f71r (10-run, f71r.1,@Cc..f71r.1,@Cc) x1",
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 4,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 4,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 6,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (10-run, f71r.1,@Cc..f71r.1,@Cc) x1",
+    "break f72r2 (9-run, f72r2.13,&Lz..f72r2.21,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 6,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (10-run, f71r.1,@Cc..f71r.1,@Cc) x1",
+    "break f72r2 (9-run, f72r2.13,&Lz..f72r2.21,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 10,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (8-run, f71r.12,@Cc..f71r.18,@Cc) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (8-run, f72r2.15,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f80r (9-run, f80r.2,=Ln..f80r.10,+Ln) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 10,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (8-run, f71r.12,@Cc..f71r.18,@Cc) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (8-run, f72r2.15,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f80r (9-run, f80r.2,=Ln..f80r.10,+Ln) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f69v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 13,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f69v (8-run, f69v.24,@Ri..f69v.31,@Ri) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (10-run, f71r.1,@Cc..f71r.1,@Cc) x1",
+    "break f71r (11-run, f71r.12,@Cc..f71r.18,@Cc) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (10-run, f72r2.13,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (10-run, f72v3.25,&Lz..f72v3.33,@Cc) x1",
+    "break f72v2 (8-run, f72v2.20,@Cc..f72v2.27,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f80r (9-run, f80r.2,=Ln..f80r.10,+Ln) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "ZL3b",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f69v",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v2",
+    "f72v3",
+    "f80r",
+    "f82v",
+    "f8v",
+    "fRos"
+   ],
+   "cost": 13,
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f69v (8-run, f69v.24,@Ri..f69v.31,@Ri) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (10-run, f71r.1,@Cc..f71r.1,@Cc) x1",
+    "break f71r (11-run, f71r.12,@Cc..f71r.18,@Cc) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (10-run, f72r2.13,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (10-run, f72v3.25,&Lz..f72v3.33,@Cc) x1",
+    "break f72v2 (8-run, f72v2.20,@Cc..f72v2.27,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f80r (9-run, f80r.2,=Ln..f80r.10,+Ln) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": []
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f49v (11-run, f49v.48,=P0..f49v.50,=P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f49v (11-run, f49v.48,=P0..f49v.50,=P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f49v (11-run, f49v.48,=P0..f49v.50,=P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "P-only",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f49v"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f49v (11-run, f49v.48,=P0..f49v.50,=P0) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join",
+    "fRos missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "line",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "join f2v.7,+P0+f2v.8,+P0 (f2v)"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f72r2 (9-run, f72r2.13,&Lz..f72r2.21,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f72r2 (9-run, f72r2.13,&Lz..f72r2.21,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f72r2 (9-run, f72r2.13,&Lz..f72r2.21,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "paragraph",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f70v1",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f72r2 (9-run, f72r2.13,&Lz..f72r2.21,&Lz) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (9-run, f72v1.2,@Lz..f72v1.10,&Lz) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (9-run, f71r.12,@Cc..f71r.17,&Lz) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (10-run, f72r2.13,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "break",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (9-run, f71r.12,@Cc..f71r.17,&Lz) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (10-run, f72r2.13,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "eva",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (11-run, f71r.12,@Cc..f71r.18,@Cc) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (10-run, f72r2.13,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  },
+  {
+   "transcription": "RF1b-er",
+   "loci": "all",
+   "scope": "page",
+   "comma": "join",
+   "initial": "atomic",
+   "pages": [
+    "f24v",
+    "f2v",
+    "f68r1",
+    "f70v1",
+    "f71r",
+    "f72r2",
+    "f72v1",
+    "f72v3",
+    "f82v",
+    "fRos"
+   ],
+   "cost": "inf",
+   "edits": [
+    "break f24v (9-run, f24v.2,+P0..f24v.3,+P0) x1",
+    "break f68r1 (10-run, f68r1.19,@Ls..f68r1.28,@Ls) x1",
+    "break f70v1 (8-run, f70v1.4,&Lz..f70v1.11,&Lz) x1",
+    "break f71r (11-run, f71r.12,@Cc..f71r.18,@Cc) x1",
+    "break f72r2 (8-run, f72r2.6,@Cc..f72r2.12,&Lz) x1",
+    "break f72r2 (10-run, f72r2.13,&Lz..f72r2.22,@Cc) x1",
+    "break f72v3 (8-run, f72v3.25,&Lz..f72v3.32,&Lz) x1",
+    "break f72v1 (10-run, f72v1.1,@Cc..f72v1.10,&Lz) x1",
+    "break f82v (10-run, f82v.39,@Ln..f82v.48,+Lt) x1"
+   ],
+   "infeasible_because": [
+    "f8v missing, not recoverable by one join"
+   ]
+  }
+ ]
+}
