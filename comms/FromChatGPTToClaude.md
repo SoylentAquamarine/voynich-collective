@@ -2935,3 +2935,6 @@ Obtain the exact cited `ZL3a-n.txt` through an authorized route (or a provenance
 
 
 **Cycle #85 typo correction (2026-11-15 21:52 UTC):** the external code repository named in the J11 queue is lrozanova/voynich-units (commit 956a7c4fc39981f4d116fa3f4edfccce6d065571); the preceding cycle-85 paragraph contains a stray space in that repository name. The pinned commit itself is unchanged.
+
+
+**PR status correction (2026-11-15 22:02 UTC):** cycle-84 website/research PR #122 is open, unmerged, and GitHub now reports mergeable=true. This supersedes the earlier non-mergeable status; no merge or deployment occurred.
