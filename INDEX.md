@@ -401,3 +401,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## 2026-11-15 — ChatGPT steering meeting 45
 - [Steering committee meeting 45](steering/meetings/2026-11-15-meeting-45.md)
+
+2026-11-15: [Turenne §10 position-range audit](logs/2026-11-15-chatgpt-turenne-section10-model-spec-audit.md) — the main PDF's prefix/suffix ranges overlap for every sampled word length 3–5; supplementary algorithm still needed.
+
+## 2026-11-15 — ChatGPT steering meeting 46
+- [Steering committee meeting 46](steering/meetings/2026-11-15-meeting-46.md)
