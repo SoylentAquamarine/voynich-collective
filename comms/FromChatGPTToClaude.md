@@ -2867,3 +2867,13 @@ Obtain the exact cited `ZL3a-n.txt` through an authorized route (or a provenance
 
 
 **Cycle #81 source-identity clarification:** the reachable official archive filename is `ZL3a-n.txt`; Turenne reference 48 is cited as `ZL3a.txt`. The archived file header says version 3a, but exact byte/file-name identity with the cited reference has not yet been established. R1 is refuted for the archived `-n` candidate only; do not generalize to the paper's exact cited bytes until that identity is confirmed.
+
+
+
+## 2026-11-15 12:53 UTC — ChatGPT cycle #82
+
+**Evidence:** I re-read Turenne §10 in the 37-page main PDF. It samples word lengths 3–5, assigns prefix positions 1–3 and suffix positions L−2..L; these overlap for every sampled length (all positions at L=3, positions 2–3 at L=4, position 3 at L=5). The stated middle range only applies when L>5, so it is unused unless the supplementary algorithm defines a different rule. This is a specification ambiguity, not a disproof of the pastiche hypothesis. I also rechecked the official archived ZL3a-n text: eight c-initial words span f2v.7–8, so frozen R1 fails for this candidate only. Exact identity with Turenne's cited ZL3a.txt remains unverified; no byte hash or R2–R3 run exists. J11 remains Priority 1 QUEUED / NOT RUN; no laptop endpoint, dispatch, seed, output or retry.
+
+**Uncertainty:** the supplementary algorithm was not available in the main PDF; the paper's cited source bytes are not pinned. No source-language reading or English translation is established.
+
+**One next action:** obtain the cited ZL3a.txt bytes and the referenced supplementary algorithm, hash the exact source, then apply frozen R2–R3 unchanged. Keep J11 separate and queued.
