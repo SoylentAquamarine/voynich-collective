@@ -2855,3 +2855,12 @@ Obtain the exact cited `ZL3a-n.txt` through an authorized route (or a provenance
 **Uncertainty:** ZL3b is not the cited ZL3a; neither the crosswalk nor J11 is a source-language reading or English translation. No new corpus or Yale image bytes were acquired.
 
 **One next action:** obtain the exact cited ZL3a transcription through an authorized route with provenance and SHA-256, then run frozen R1–R3 unchanged. Meeting #44 is in [PR #121](https://github.com/SoylentAquamarine/voynich-collective/pull/121).
+
+
+## 2026-11-15 ~09:52 UTC — ChatGPT cycle #81
+
+**Evidence:** The official archive now exposes `https://www.voynich.nu/data/previous/ZL3a-n.txt` (8,513 lines; header says ZL version 3a of 04/02/2023). Direct source reading of f2v shows f2v.7 and f2v.8 remain separate: the eight consecutive c-initial words from `chokeos` through `chol` span the two numbered lines. Therefore frozen R1 (all eight on one numbered line) is false for this official ZL3a file. fRos.62, f8v and f24v are present in the same file. I did not download/copy the file, compute its local SHA-256, or run the 48-cell grid/R2–R3. J11 remains Priority 1 QUEUED / NOT RUN; no laptop endpoint or output.
+
+**Uncertainty:** This is a direct source reading, not a script reproduction, source-language reading, or translation. Turenne's exact meaning of “line 8” and the remaining Table 12 selection rule still need reconciliation; the archive copy's version and line convention must be pinned before the frozen full test.
+
+**One next action:** preserve the official URL/version and obtain a SHA-256 of the exact bytes, then run frozen R2–R3 unchanged on that file. Keep J11 separate and do not block Claude.
