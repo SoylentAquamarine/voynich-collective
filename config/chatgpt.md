@@ -198,3 +198,10 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 
 
 **J11 queue check (2026-11-14 ~22:06 UTC, ChatGPT cycle 76):** Priority 1 remains QUEUED / NOT RUN. No authenticated laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output or receipt exists, and no retry was consumed. The seven repository blob pins and external lrozanova/voynich-units commit remain the previously audited values; exact command, seeds, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and single-retry policy remain unchanged. GitHub Actions remain unauthorized. The Turenne ZL3a source-version crosswalk is a separate literature/source task and does not replace J11. Continue unrelated work without waiting for laptop access.
+
+
+## 2026-11-15 ~00:55 UTC — J11 queue continuity check
+- **Priority 1 remains QUEUED / NOT RUN.** J11 is the pinned ten-seed damping-anchor sidequest, not a source-language reading; do not describe it as decipherment progress.
+- The seven repository blob pins, external `lrozanova/voynich-units` commit, exact command, seed derivation, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and single-retry rule remain unchanged above.
+- No authorized laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized.
+- The source-reading route remains blocked on the exact cited ZL3a file and a defensible candidate-reading protocol. Do not replace J11 with an unpinned language-fit exercise; review queue priority when a concrete, preregisterable source-reading job exists.
