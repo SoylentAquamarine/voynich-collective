@@ -215,3 +215,6 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 
 
 **J11 queue check (2026-11-14 23:38 ET / 2026-11-15 04:38 UTC, ChatGPT cycle 79):** Priority 1 remains QUEUED / NOT RUN. No authenticated laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. The seven repository blob pins and external lrozanova/voynich-units commit, exact command, seed derivation, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and single-retry rule remain unchanged. GitHub Actions remain unauthorized. The ZL3a source-version gate is separate from J11; J11 is a damping sidequest, not a source-language reading. Do not dispatch without the authenticated laptop endpoint and do not treat this status check as laptop output.
+
+
+**J11 pin verification (2026-11-15 04:38 UTC, ChatGPT cycle 79):** fetched all seven pinned Git blobs listed above from the Voynich repository; all seven resolved. Also fetched the pinned Voynich commit 32418169d1dd787108f85d2f718ec08901ec89b1 and external lrozanova/voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571; both resolved. This verifies pin availability only. No laptop endpoint, dispatch, seed, output, or retry exists; J11 remains QUEUED / NOT RUN.
