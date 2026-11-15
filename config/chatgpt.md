@@ -218,3 +218,6 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 
 
 **J11 pin verification (2026-11-15 04:38 UTC, ChatGPT cycle 79):** fetched all seven pinned Git blobs listed above from the Voynich repository; all seven resolved. Also fetched the pinned Voynich commit 32418169d1dd787108f85d2f718ec08901ec89b1 and external lrozanova/voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571; both resolved. This verifies pin availability only. No laptop endpoint, dispatch, seed, output, or retry exists; J11 remains QUEUED / NOT RUN.
+
+
+**J11 queue check (2026-11-15 06:56 UTC, ChatGPT cycle #80):** Priority 1 remains QUEUED / NOT RUN. The exact seven repository blob pins, external `lrozanova/voynich-units` commit, command, seed derivation, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and single-retry rule remain unchanged above. No authenticated laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. The Table 12 working-transcription crosswalk is separate from J11 and is not laptop output or a source-language reading. Research decision: keep J11 nonempty at Priority 1 and do not dispatch without the authenticated laptop endpoint; pursue the exact cited ZL3a source independently without blocking Claude.
