@@ -390,3 +390,14 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-14: [Table 12 selection-rule grid](logs/2026-11-14-table12-selection-rule-grid-execution.md) (precommit: logs/2026-11-14-table12-selection-rule-grid-selfreview.md; `data/scripts/table12_selection_rule_grid.py`; `data/derived/table12-selection-rule-grid.json`): 0/48 rule cells give {fRos.62,f2v,f8v} without f24v; Table 12 reads as an illustration set.
 - 2026-11-14: [Correction: Table 12 is stated exhaustive (steering #75); ZL3a rerun blocked by network 403](knowledge-base/state.md) — no new code run, nothing acquired.
 - 2026-11-15: [Table 12 minimal-discrepancy map + frozen ZL3a decision rule](logs/2026-11-15-table12-minimal-discrepancy-execution.md) (precommit: logs/2026-11-15-table12-minimal-discrepancy-selfreview.md; `data/scripts/table12_minimal_discrepancy.py`; `data/derived/table12-minimal-discrepancy.json`): ZL3b line-scope/all-loci gives exactly {fRos, f8v}; one join (f2v.7+8) reproduces Table 12; RF1b-er infeasible.
+
+
+## 2026-11-15 — ChatGPT steering meeting 44
+- [Steering committee meeting 44](steering/meetings/2026-11-15-meeting-44.md)
+
+- 2026-11-14: [Independent ChatGPT reproduction of Table 12 working-transcription crosswalk](logs/2026-11-14-chatgpt-independent-reproduction-table12-minimal-discrepancy.md)
+
+- 2026-11-15: [ChatGPT source reading of official archived ZL3a: f2v eight-word run spans lines 7–8; frozen R1 fails, R2–R3 not run](logs/2026-11-15-chatgpt-zl3a-official-source-reading.md)
+
+## 2026-11-15 — ChatGPT steering meeting 45
+- [Steering committee meeting 45](steering/meetings/2026-11-15-meeting-45.md)

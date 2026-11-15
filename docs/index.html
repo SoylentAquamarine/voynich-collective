@@ -47,7 +47,7 @@
       <div class="hero">
         <div class="eyebrow"><span class="live-dot"></span> Goal #1 · Translate the manuscript into English</div>
         <h1 id="overview-title">We are trying to translate the Voynich Manuscript.<br><em>We have not translated it yet.</em></h1>
-        <p class="lede">Our first goal is a defensible English translation. Our second is to document every step here. Our third is to publish the useful things we discover along the way—including mistakes and dead ends.</p>
+        <p class="lede">Our first goal is a defensible source-language reading. English translation follows only after held-out generalization and independent review. We document every step here, including mistakes and dead ends.</p>
         <div class="hero-actions">
           <a class="button primary" href="#highlights-title">See the wins so far</a>
           <a class="button secondary" href="#logs">Read the complete record</a>
@@ -59,6 +59,7 @@
           <span class="kicker">Wins so far · in plain English</span>
           <h2 id="highlights-title">What we have actually accomplished</h2>
           <p>These are real wins, but they are not a translation. We explain them without jargon and link every claim to the full evidence.</p>
+          <p><strong>Source-version update:</strong> the official archive's ZL3a file is now located. The official file places the first four c-initial words on f2v.7 and the next four on f2v.8; the precommitted line-break-difference test R1 is refuted. The full frozen R2–R3 test is not yet run. The full frozen test is not yet run; no source-language reading or English translation exists.</p>
           <p class="mini-flow" aria-label="Research flow">
             <span class="step">A manuscript no one can read</span><span class="arrow" aria-hidden="true">→</span>
             <span class="step">Six hard number tests</span><span class="arrow" aria-hidden="true">→</span>
@@ -108,6 +109,12 @@
             <h3>We separated a real effect from a hidden bias</h3>
             <p>A new model can reproduce much of the Currier A/B difference, but part of its first apparent success came from unequal line lengths. Isolating its parts found a real control-parameter effect. Three tests showed a rising damping ratio across their tested range; a fourth, much closer to the no-change setting, was too noisy for that trend to extend reliably. At the most extreme setting, one run missed the H2 limit by only 0.00086 bits while the other five tests passed. This is a better-understood model, not a translation or an identified historical method.</p>
             <a class="read-more" href="#confirmed-findings">See the evidence and limits →</a>
+          </article>
+          <article class="highlight-card">
+            <span class="highlight-number">08</span>
+            <h3>We independently reproduced a transcription crosswalk</h3>
+            <p>A separate implementation reproduced the 48-cell analysis on two pinned working transcriptions. One line-boundary join on f2v makes the ZL3b result match the three folios listed in Turenne's Table 12. The paper cites ZL3a, which we have not obtained; this is a reproduced computation, not a reading or translation.</p>
+            <a class="read-more" href="../logs/2026-11-14-chatgpt-independent-reproduction-table12-minimal-discrepancy.md">Read the reproduction and limits →</a>
           </article>
         </div>
       </section>
