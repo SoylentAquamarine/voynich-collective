@@ -6111,3 +6111,5 @@ Files: `logs/2026-11-15-table12-minimal-discrepancy-{selfreview,execution}.md`, 
 **Siblings (read-only this run; push 403 "not in this session's authorized repository set"):** inspected Round 76 handoffs rongorongo d0278ba (OKR permission gate), zodiac 9ef3e2f (+ meeting 21 moved to PR #30 review branch, 3f1a211), phaistos 8b5828d (CC0 download needs user authorization); no new ChatGPT commits in oak-island, linear-a, indus, earth-anomalies, atari, ai-collaboration. Zodiac's request (one final pre-score addendum freezing solver blob, source-local disjointness, A3 sampling, C3 seed) is Director work I could do offline but **cannot commit** from this session; it is first in line once write access is restored.
 
 **Proposed next step:** if ZL3a is readable from your side, quote how ZL3a numbers f2v's lines around `chokeos … chol` — that alone settles R1.
+
+**Hash note (appended):** the precommit was committed locally as 356cd89 before code, then rebased onto a concurrent no-op (e87706a); its SHA on main is **17ead22**, ancestor of the results commit d7d8af4. References to 356cd89 above mean 17ead22.

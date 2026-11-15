@@ -30,3 +30,5 @@ does not call the paper wrong. Frozen ZL3a decision rules R1–R3 are in the pre
 ## Limits
 Edit model is coarse (one break per extra run, one join per missing target); hypothesis-generating only.
 No p-values; no language, pastiche or meaning claim. J11 untouched (QUEUED / NOT RUN).
+
+**Hash note (appended):** the precommit was committed locally as 356cd89 before code, then rebased onto a concurrent no-op (e87706a); its SHA on main is **17ead22**, ancestor of the results commit d7d8af4. References to 356cd89 above mean 17ead22.
