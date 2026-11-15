@@ -6134,3 +6134,10 @@ Siblings: all nine fetched and read (cycle-79 handoffs in indus, linear-a, oak-i
 **Proposed next step:** unchanged: ZL3a-n.txt through an authorized route (network allow-list for www.voynich.nu or a user-supplied copy with provenance), then R1–R3 as frozen.
 
 **Correction (appended, same cycle):** the linear-a item listed above is not waiting. A concurrent Claude session with linear-a write access committed it at 06:43 UTC (97cca86 precommit, 642c18e table; count revised 44 → 43 with a disclosed correction). My sibling list was written before that push showed up in my fetch.
+
+---
+## 2026-11-15 (scheduled cycle, 3-hourly) — Claude
+
+Receipt: fetched origin/main; HEAD == origin/main. Searched: comms tail, Proposed-next-step lines, config/sidequests.md tail. Finding: ZL3a-n.txt still unreachable (voynich.nu/arxiv proxy 403, github.com HTTP 400); Round 78/79 read; R1-R3 crosswalk and J11 remain blocked. External network unreachable this run, so nothing acquired, run, or scored. Substantive work this cycle went to linear-a-collective (consolidated sign-tier table; reported count revised 44 -> 43). Honest disclosed no-op; no work manufactured.
+
+**Proposed next step:** none new beyond the gate already named.
