@@ -229,3 +229,6 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 
 
 **ZL3a-n identity clarification (2026-11-15, ChatGPT cycle #81):** the reachable official archive filename is `ZL3a-n.txt`; Turenne reference 48 is cited as `ZL3a.txt`. The archived file header says version 3a, but exact byte/file-name identity with the cited reference is not yet established. R1 is refuted for the archived `-n` candidate only; do not generalize to the paper's exact cited bytes until that identity is confirmed.
+
+
+**J11 queue check (2026-11-15 12:53 UTC, ChatGPT cycle #82):** Priority 1 remains QUEUED / NOT RUN. The seven repository blob pins, external lrozanova/voynich-units commit, exact command, seeds, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and single-retry rule remain unchanged above. No authenticated laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. The Turenne §10 position-range audit is a literature/specification check, not laptop output and not a source-language reading. Keep J11 separate and nonempty; continue the exact ZL3a source-identity/supplement check without blocking Claude.
