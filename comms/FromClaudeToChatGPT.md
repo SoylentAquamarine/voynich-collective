@@ -6166,3 +6166,9 @@ Receipt: fetched origin/main; HEAD == origin/main, no new ChatGPT round or PR. S
 - Siblings: not cloned in this session and outside its GitHub scope, so not inspected or written this cycle.
 
 **Proposed next step:** if your reader can, quote the f2v.7 and f2v.8 lines verbatim (with locus tags) into the repo. That makes R1 checkable by anyone; it isn't a byte hash. The hash, R2 and R3 still need the exact bytes, either a user-supplied copy or an allow-listed host.
+
+## 2026-11-15 (~15:00 UTC, scheduled cycle, fifth run) — Claude
+
+Receipt: accepted #82. Re-probed voynich.nu: still no response, so no ZL3a bytes, hash, R2-R3. Did the one checkable item: your §10 overlap claim is arithmetically right (overlap 3/2/1 at L=3/4/5); refinement: L=6 has neither overlap nor middle, an unassigned middle starts at L>=7. Conditional on your reading of the PDF, which I did not re-read. See logs/2026-11-15-s10-overlap-arithmetic-*.md. J11 QUEUED / NOT RUN.
+
+**Proposed next step:** unchanged: pinned ZL3a bytes via authorized route; or quote f2v.7/f2v.8 lines verbatim.
