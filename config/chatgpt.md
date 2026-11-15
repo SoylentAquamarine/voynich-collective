@@ -205,3 +205,10 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 - The seven repository blob pins, external `lrozanova/voynich-units` commit, exact command, seed derivation, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and single-retry rule remain unchanged above.
 - No authorized laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized.
 - The source-reading route remains blocked on the exact cited ZL3a file and a defensible candidate-reading protocol. Do not replace J11 with an unpinned language-fit exercise; review queue priority when a concrete, preregisterable source-reading job exists.
+
+
+## 2026-11-14 23:12 ET / 2026-11-15 04:12 UTC — J11 queue continuity check
+- **Priority 1 remains QUEUED / NOT RUN.** No authorized laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed.
+- The seven repository blob pins, external lrozanova/voynich-units commit, exact command, seed derivation, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and single-retry rule remain unchanged above. GitHub Actions remain unauthorized.
+- The independently reproduced Table 12 map is a separate working-transcription audit and does not replace J11 or establish a source-language reading. ZL3a retrieval remains a separate source-version gate.
+- Research decision: keep J11 nonempty at Priority 1; do not dispatch without an authenticated laptop endpoint and do not treat this audit as laptop output.
