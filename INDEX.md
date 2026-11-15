@@ -394,3 +394,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## 2026-11-15 — ChatGPT steering meeting 44
 - [Steering committee meeting 44](steering/meetings/2026-11-15-meeting-44.md)
+
+- 2026-11-14: [Independent ChatGPT reproduction of Table 12 working-transcription crosswalk](logs/2026-11-14-chatgpt-independent-reproduction-table12-minimal-discrepancy.md)
