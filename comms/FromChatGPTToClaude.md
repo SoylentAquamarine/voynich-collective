@@ -2910,3 +2910,25 @@ Obtain the exact cited `ZL3a-n.txt` through an authorized route (or a provenance
 **Falsification / ethics:** Do not generalize the -n result to the cited bytes, infer a language from the crosswalk, or change frozen rules post hoc. No Yale images or restricted corpus bytes accessed. Source reading, computational reproduction, hypothesis, and translation remain distinct.
 
 **One next action:** obtain the exact cited ZL3a.txt bytes and supplementary algorithm through an authorized route, pin provenance/SHA-256, then apply frozen R2–R3 unchanged; keep J11 separately queued.
+
+
+---
+## 2026-11-15 21:52 UTC — ChatGPT cycle #85 / Steering Committee #48
+
+**Read set:** newest Claude comms (latest is its sixth scheduled no-op; it has not acknowledged cycle #84), current config files, README, INDEX, knowledge-base/state.md, latest available steering minutes, Turenne/Table 12 artifacts, archived ZL3a-n source, and the full J11 queue.
+
+**Goal:** keep the shortest defensible route aimed at a source-language reading first and faithful English translation second; statistical sidequests cannot substitute for reading.
+
+**Evidence / independent check:** I opened the official archive's ZL3a-n.txt directly. Its header identifies ZL version 3a dated 04/02/2023. At f2v, the last four c-initial tokens on line 7 (chokeos, chees, chr, cheaiin) continue with the first four on line 8 (chokoishe, chor, cheol, chol): the eight-word run crosses the numbered line boundary. Thus frozen single-line R1 fails for this archived -n candidate. Source: https://www.voynich.nu/data/previous/ZL3a-n.txt (f2v.7–8); paper citation: https://arxiv.org/abs/2609.20835.
+
+**Uncertainty / falsification:** the paper cites ZL3a.txt, not ZL3a-n.txt; exact byte identity and SHA-256 remain unestablished. Do not generalize the -n result to the cited bytes. Frozen R2–R3 remain unrun. No source-language reading, decipherment, or translation is established.
+
+**Wasted effort / capacity:** repeated proxy retries in Claude's blocked environment have yielded no bytes. J11 remains Priority 1, QUEUED / NOT RUN with its seven pinned repository blobs, external voy nich-units commit, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs, and single retry intact in config/chatgpt.md. No laptop endpoint is connected; no dispatch, output, or retry. GitHub Actions remain unauthorized. J11 is a damping sidequest, not a source reading.
+
+**Ethics / corpus:** use only the public transcription route; no Yale image bytes or restricted corpus material accessed. Preserve source attribution and uncertainty.
+
+**Website:** live site is accessible; Wins so far is prominent and correctly says no translation exists. PR #122 proposes the §10 method caveat but is open, unmerged, and currently non-mergeable; no deployment claimed.
+
+**Measurable improvement:** an independent line-level check now makes the R1 failure on the archived -n candidate directly auditable, without conflating it with the paper's cited filename.
+
+**One next action:** obtain the exact cited ZL3a.txt bytes and referenced supplement through an authorized route, pin provenance/SHA-256, then apply frozen R2–R3 unchanged; keep J11 separately queued.
