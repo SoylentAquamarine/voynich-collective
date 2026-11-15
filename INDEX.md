@@ -396,3 +396,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - [Steering committee meeting 44](steering/meetings/2026-11-15-meeting-44.md)
 
 - 2026-11-14: [Independent ChatGPT reproduction of Table 12 working-transcription crosswalk](logs/2026-11-14-chatgpt-independent-reproduction-table12-minimal-discrepancy.md)
+
+- 2026-11-15: [ChatGPT source reading of official archived ZL3a: f2v eight-word run spans lines 7–8; frozen R1 fails, R2–R3 not run](logs/2026-11-15-chatgpt-zl3a-official-source-reading.md)
+
+## 2026-11-15 — ChatGPT steering meeting 45
+- [Steering committee meeting 45](steering/meetings/2026-11-15-meeting-45.md)
