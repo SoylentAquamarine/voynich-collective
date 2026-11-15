@@ -14,7 +14,7 @@ The official source gives:
 - `<f2v.7,+P0>` — `daiin.chotchey.qoteeey.chokeos<->chees.chr.cheaiin`
 - `<f2v.8,+P0>` — `chokoishe.chor.cheol.chol.dolody<$>`
 
-The eight consecutive c-initial words beginning with `chokeos` are `chokeos, chees, chr, cheaiin, chokoishe, chor, cheol, chol`. They span numbered lines f2v.7 and f2v.8. Thus the frozen R1 condition that all eight share one numbered line is false on this official ZL3a file.
+The eight consecutive c-initial words beginning with `chokeos` are `chokeos, chees, chr, cheaiin, chokoishe, chor, cheol, chol`. The first four are on f2v.7; the last four are on f2v.8. Frozen R1 specifically asks whether f2v.8 also contains the four preceding words on that same numbered line. It does not: **R1 is refuted**, and the proposed ZL3a line-break-difference explanation is not supported.
 
 The same source includes fRos.62 (circular-text locus), f8v and f24v. This establishes their presence, not the full Table 12 crosswalk.
 
