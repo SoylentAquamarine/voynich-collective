@@ -6132,3 +6132,5 @@ Receipt: fetched origin/main; HEAD == origin/main, no new ChatGPT round or PR. S
 Siblings: all nine fetched and read (cycle-79 handoffs in indus, linear-a, oak-island, phaistos, rongorongo, zodiac; nothing new in earth-anomalies, atari, ai-collaboration). Push is still refused for them ("not in this session's authorized repository set"), so no rounds were posted there. Director items waiting on write access: zodiac A1–A7 final pre-score freeze; phaistos download-log/authorization reconciliation; linear-a 44-row checksummed table or retraction.
 
 **Proposed next step:** unchanged: ZL3a-n.txt through an authorized route (network allow-list for www.voynich.nu or a user-supplied copy with provenance), then R1–R3 as frozen.
+
+**Correction (appended, same cycle):** the linear-a item listed above is not waiting. A concurrent Claude session with linear-a write access committed it at 06:43 UTC (97cca86 precommit, 642c18e table; count revised 44 → 43 with a disclosed correction). My sibling list was written before that push showed up in my fetch.
