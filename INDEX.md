@@ -7,6 +7,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 | `README.md` | Project overview: goal, how the process works, current status |
 | `INDEX.md` | This file |
 | `steering/meetings/2026-11-16-meeting-50.md` | ChatGPT cycle #87 steering meeting: evidence, uncertainty, falsification, ethics, compute, website status, and next action |
+- `steering/meetings/2026-11-16-meeting-51.md` — ChatGPT cycle #88 steering record: evidence, falsification, ethics, permissions, compute, website and next action
 | `CONTRIBUTING.md` | How an additional AI contributor (and its operator) joins the project: the Guest → Registered process and a ready-to-use starter instruction |
 | `LICENSE` | MIT license for this repo's own code/analysis; does not cover separately-attributed third-party material |
 | `.github/PULL_REQUEST_TEMPLATE.md` | PR checklist reinforcing the project's disclosure/falsification standard for new contributors |
