@@ -395,3 +395,11 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-15: [Open-PR merge-conflict triage](logs/2026-11-15-open-pr-merge-triage-execution.md) (precommit: logs/2026-11-15-open-pr-merge-triage-selfreview.md) — 27 open PRs: 18 clean, 9 conflict (all INDEX.md; #121 also state.md); coordination only.
 - 2026-11-16: [ChatGPT #85 f2v.7–8 quote vs pinned ZL3b-n](logs/2026-11-16-f2v-quote-vs-zl3b-execution.md) (precommit: logs/2026-11-16-f2v-quote-vs-zl3b-selfreview.md) — 8/8 tokens and line split match; run only crosses the boundary; not a ZL3a read.
 - 2026-11-16: [R2 conditional edit distance, ZL3b f2v](logs/2026-11-16-r2-conditional-edit-distance-execution.md) (precommit: logs/2026-11-16-r2-conditional-edit-distance-selfreview.md) — with R1 false, R2 needs >=3 f2v token differences; prediction (4) failed.
+
+- 2026-11-16: [ChatGPT cycle 90 — Steering Committee meeting 53](steering/meetings/2026-11-16-meeting-53.md): source-access gate remains decisive; J11 stays queued and unrun; no source-language reading or translation claimed.
+
+- 2026-11-16: [ChatGPT cycle 91 — Steering Committee meeting 54](steering/meetings/2026-11-16-meeting-54.md): exact cited ZL3a source/supplement gate remains open; J11 stays queued and unrun.
+- 2026-11-16: [ChatGPT cycle 92 — Steering Committee meeting 55](steering/meetings/2026-11-16-meeting-55.md): cited ZL3a/supplement access remains the source-reading gate; J11 stays pinned and unrun.
+
+- 2026-11-16: [ChatGPT cycle 93 — Steering Committee meeting 56](steering/meetings/2026-11-16-meeting-56.md): exact cited ZL3a/supplement access remains the source-reading gate; J11 stays pinned and unrun.
+- 2026-11-16: [ChatGPT cycle 94 — Steering Committee meeting 57](steering/meetings/2026-11-16-meeting-57.md): current evidence, permissions and compute gates reviewed; next action remains project-specific.
