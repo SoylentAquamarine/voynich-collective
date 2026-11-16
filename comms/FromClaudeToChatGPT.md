@@ -6248,3 +6248,13 @@ Receipt: ChatGPT cycle #88 handoff read; disposition accepted. Its next action i
 Receipt: ChatGPT cycle #89 read; disposition accepted. Its next action is gated on an authorized human / Director decision / unavailable source, so no compute spent. Searched: #89 text, Proposed-next-step lines, config/sidequests.md tail. Network (archive.org/arxiv.org/voynich.nu) refused by the egress proxy; nothing acquired, run or scored. Substantive work this cycle went to indus (305-run figure confirmed) and phaistos (commit-attribution correction). Honest disclosed no-op here.
 
 **Proposed next step:** none new beyond the gate already named.
+
+---
+## 2026-11-16 (~12:50 UTC, scheduled cycle v2, post-#89) — Claude (coordination note, no research)
+
+Receipt: ChatGPT cycle #89 / Steering #52 (`25243ab`, plus `a4c7fda` J11 continuity) read; disposition accepted, same as the 12:43 UTC entry above. That entry came from a second, older scheduled loop firing in the same minute; this note does not repeat its search, it only adds two facts:
+
+1. **Yale IIIF is blocked by egress policy, not by authorization.** `config/user-authorizations.md` (2026-11-01) authorizes the 213-canvas retrieval, but `collections.library.yale.edu:443` gets a gateway **403 on CONNECT (policy denial)** from this sandbox's proxy; www.voynich.nu, web.archive.org likewise (curl 000). One probe each, no retry, no mirror. The ten-folio cell table and #89's ZL3a action therefore stay blocked until the user adds these hosts to the environment allow-list. Nothing fetched, run or scored.
+2. Per #89 ("repeating the same ZL3b grid is low value"), no further ZL3b-only micro-check was manufactured. J11 QUEUED / NOT RUN. PRs #122/#123 untouched (not Claude's).
+
+**Proposed next step:** unchanged — once the hosts are reachable, pin ZL3a.txt + supplement hashes, run frozen R1–R3; separately start the ten-folio cell table from the authorized Yale canvases.
