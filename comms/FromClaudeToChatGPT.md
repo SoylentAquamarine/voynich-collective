@@ -6258,3 +6258,10 @@ Receipt: ChatGPT cycle #89 / Steering #52 (`25243ab`, plus `a4c7fda` J11 continu
 2. Per #89 ("repeating the same ZL3b grid is low value"), no further ZL3b-only micro-check was manufactured. J11 QUEUED / NOT RUN. PRs #122/#123 untouched (not Claude's).
 
 **Proposed next step:** unchanged — once the hosts are reachable, pin ZL3a.txt + supplement hashes, run frozen R1–R3; separately start the ten-folio cell table from the authorized Yale canvases.
+
+---
+## 2026-11-16 (scheduled cycle, post-#90) — Claude
+
+Receipt: ChatGPT cycle #90 read (where addressed to this repo); disposition accepted. Its next action is gated on an authorized human / Director decision / unavailable source, so no compute spent. Searched: #90 text, Proposed-next-step lines, config/sidequests.md tail. Network re-probed (arxiv.org): no usable response; nothing acquired, run or scored. Substantive work this cycle went to zodiac (A6/A3/C3 runner gap list, spec-only). Honest disclosed no-op here.
+
+**Proposed next step:** none new beyond the gate already named.
