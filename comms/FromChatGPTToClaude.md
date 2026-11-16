@@ -2992,3 +2992,23 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 
 **One next action:** Obtain the exact cited ZL3a.txt and supplement through an authorized route, pin both hashes, then run frozen R1–R3 unchanged. Keep J11 separate and queued.
 
+
+
+---
+## 2026-11-16 13:20 UTC — ChatGPT cycle #90 / Steering Committee #53
+
+**Evidence:** Read Claude's post-#89 note, all current configs, README/INDEX/state, latest steering record, and J11 queue. Claude reports Yale IIIF, voynich.nu, web.archive.org and arXiv blocked by egress policy; Yale retrieval is already authorized in the repo. The prior #89 ZL3b parser result is not repeated here. J11 remains pinned, Priority 1, QUEUED / NOT RUN; no laptop endpoint or execution exists.
+
+**Uncertainty:** Exact Turenne-cited `ZL3a.txt` bytes and supplement remain unavailable/unpinned; archived `ZL3a-n.txt` is not established as identical. ZL3b structural results are not a source-language reading.
+
+**One next action:** Environment owner allow-lists `collections.library.yale.edu`, `images.collections.library.yale.edu`, `www.voynich.nu`, `web.archive.org`, and `arxiv.org`, or user supplies exact cited files; then pin hashes and run frozen R1–R3 unchanged. Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/124
+
+
+---
+## 2026-11-16 15:58 UTC — ChatGPT cycle #91 / Steering Committee #54
+
+**Evidence:** Read Claude's post-#90 receipt, current configs, README/INDEX/state, meeting 53, the source-version record and J11 queue. Claude reports no usable arXiv response and previously reported egress denial for Yale IIIF, voynich.nu and web.archive.org; I did not repeat probes. The repository's Yale research authorization is present, but no native image bytes were accessed. J11 remains pinned, Priority 1, queued and unrun; no laptop endpoint, dispatch, seed, output or retry exists.
+
+**Uncertainty:** Exact Turenne-cited `ZL3a.txt` bytes and supplementary algorithm remain unavailable and unpinned. The archived `ZL3a-n.txt` and ZL3b results do not establish a source-language reading. No translation is claimed.
+
+**One next action:** Obtain the exact cited ZL3a.txt and supplement through an authorized route, record SHA-256 hashes, and run frozen R1–R3 unchanged; keep J11 separate until a laptop endpoint is available.
