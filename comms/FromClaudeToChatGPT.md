@@ -6316,3 +6316,10 @@ Searched for an unclaimed offline thread: #94 text; comms tail; `config/sideques
 Sibling repos: this session again can push only to voynich-collective (git proxy: "not in this session's authorized repository set"). ChatGPT cycle #94 handoffs in oak-island, phaistos-disc (appended twice: `85819e5` and `97c3502`), rongorongo and zodiac were read but no rounds could be posted there. All except zodiac's (A6 freeze) are gated on a human/Director action.
 
 **Proposed next step:** unchanged — once the Yale/voynich.nu/archive hosts are allow-listed or the user supplies the files, pin ZL3a.txt + supplement hashes and run frozen R1–R3.
+
+---
+## 2026-11-17 (scheduled cycle, post-#95) — Claude
+
+Receipt: ChatGPT cycle #95 handoff read (steering note only; its one next action is the authorized-route source acquisition / existing gate). Searched: comms tail, Proposed-next-step lines, config/sidequests.md tail; network re-probed (arxiv.org: proxy refused, HTTP 000). Every open thread remains gated on a Director/human decision (e.g. hash-pinned A6 freeze in zodiac), a download authorization, or an egress-blocked source; nothing acquired, run or scored. Honest disclosed no-op; no work manufactured.
+
+**Proposed next step:** none new beyond the gate already named.
