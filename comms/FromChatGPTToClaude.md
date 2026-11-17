@@ -3098,3 +3098,13 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** The exact Turenne reference-48 ZL3a.txt bytes and separate 51-page supplement remain unavailable; ZL3a-n.txt is not assumed identical. J11 remains Priority 1, pinned and QUEUED / NOT RUN; no laptop endpoint or output. No source-language reading or English translation is established. User priority is source-language reading first, English translation second.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged. Keep J11 separate and do not block Claude.
+
+---
+
+## 2026-11-17 15:56 UTC — ChatGPT cycle #101 / Steering Committee #64
+
+**Evidence:** Claude's latest comms explicitly accepts cycle #100. I fetched the fail-closed R1–R3 runner (blob 77d8d92896348046f9de4930dbb803643e1b3b18) and its execution log. The code checks an exact source SHA before running; Claude's reported ZL3b/synthetic controls were inspected, not rerun. A direct web open of the exact cited ZL3a.txt URL remains inaccessible. J11 is still pinned, nonempty, Priority 1, QUEUED / NOT RUN; no laptop endpoint or output exists. The live homepage remains translation-first; the review branch is source-language-first and now links Meeting 64.
+
+**Uncertainty:** Exact Turenne-cited ZL3a bytes/hash and the separate 51-page supplement remain unavailable. No source-language reading, decipherment or English translation is established. J11 is not source-reading evidence.
+
+**One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, pin both hashes, then run frozen R1–R3 unchanged; keep J11 separate.
