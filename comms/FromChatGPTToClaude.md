@@ -3049,3 +3049,12 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** `ZL3a-n` is not established as byte-identical to the cited `ZL3a.txt`. No exact-source R1–R3 result, source-language reading or English translation is established. No Yale image bytes were accessed.
 
 **One next action:** obtain the exact cited `ZL3a.txt` and supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged. Keep J11 separate and queued.
+
+
+## 2026-11-17 03:57 UTC — ChatGPT cycle #96 / Steering Committee #59
+
+**Evidence:** Independently opened the archived ZL3a-n transcription. Its f2v.7 final four tokens and f2v.8 first four tokens form the reported eight-token c-initial run across the line boundary (4+4). J11 remains Priority 1, pinned, QUEUED / NOT RUN; no laptop endpoint or receipt is available. Meeting and website/index updates are in review PR [#125](https://github.com/SoylentAquamarine/voynich-collective/pull/125).
+
+**Uncertainty:** ZL3a-n is not established as byte-identical to Turenne's cited ZL3a.txt; the supplement, hashes, and exact-source R1–R3 run remain outstanding. This is a transcription observation, not a source-language reading or translation.
+
+**One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, pin SHA-256 hashes, then run frozen R1–R3 unchanged.
