@@ -1,0 +1,109 @@
+{
+ "precommit": "logs/2026-11-17-initial-run-within-scope-shuffle-selfreview.md",
+ "reps": 2000,
+ "seed": 20261117,
+ "bonferroni_alpha": 0.00625,
+ "primary": "ZL3b|eva|paragraph|N5_within_paragraph|S1",
+ "inputs": {
+  "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+  "RF1b-er": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2"
+ },
+ "cells": {
+  "ZL3b|eva|paragraph": {
+   "words": 35075,
+   "paragraphs": 321,
+   "observed_S1_runs_ge8": 3,
+   "observed_S2_adjacent_same": 5679,
+   "nulls": {
+    "N4_within_page": {
+     "S1_mean": 1.1095,
+     "S1_q95": 3.0,
+     "S1_p": 0.1089455272363818,
+     "S2_mean": 5392.378,
+     "S2_sd": 64.09110793238014,
+     "S2_p": 0.0004997501249375312
+    },
+    "N5_within_paragraph": {
+     "S1_mean": 1.1175,
+     "S1_q95": 3.0,
+     "S1_p": 0.10644677661169415,
+     "S2_mean": 5417.6895,
+     "S2_sd": 61.44876800839867,
+     "S2_p": 0.0004997501249375312
+    }
+   }
+  },
+  "ZL3b|atomic|paragraph": {
+   "words": 35075,
+   "paragraphs": 321,
+   "observed_S1_runs_ge8": 3,
+   "observed_S2_adjacent_same": 5154,
+   "nulls": {
+    "N4_within_page": {
+     "S1_mean": 0.834,
+     "S1_q95": 2.0,
+     "S1_p": 0.04997501249375312,
+     "S2_mean": 4873.286,
+     "S2_sd": 61.41634313438077,
+     "S2_p": 0.0004997501249375312
+    },
+    "N5_within_paragraph": {
+     "S1_mean": 0.82,
+     "S1_q95": 2.0,
+     "S1_p": 0.046476761619190406,
+     "S2_mean": 4898.8205,
+     "S2_sd": 60.80095624042438,
+     "S2_p": 0.0004997501249375312
+    }
+   }
+  },
+  "RF1b-er|eva|paragraph": {
+   "words": 34659,
+   "paragraphs": 321,
+   "observed_S1_runs_ge8": 2,
+   "observed_S2_adjacent_same": 5700,
+   "nulls": {
+    "N4_within_page": {
+     "S1_mean": 1.25,
+     "S1_q95": 3.0,
+     "S1_p": 0.36731634182908546,
+     "S2_mean": 5414.07,
+     "S2_sd": 62.388108642593096,
+     "S2_p": 0.0004997501249375312
+    },
+    "N5_within_paragraph": {
+     "S1_mean": 1.2205,
+     "S1_q95": 3.0,
+     "S1_p": 0.34332833583208394,
+     "S2_mean": 5439.509,
+     "S2_sd": 62.88187273769763,
+     "S2_p": 0.0004997501249375312
+    }
+   }
+  },
+  "RF1b-er|atomic|paragraph": {
+   "words": 34659,
+   "paragraphs": 321,
+   "observed_S1_runs_ge8": 2,
+   "observed_S2_adjacent_same": 5109,
+   "nulls": {
+    "N4_within_page": {
+     "S1_mean": 0.813,
+     "S1_q95": 2.0,
+     "S1_p": 0.18840579710144928,
+     "S2_mean": 4838.4365,
+     "S2_sd": 59.553152458539095,
+     "S2_p": 0.0004997501249375312
+    },
+    "N5_within_paragraph": {
+     "S1_mean": 0.838,
+     "S1_q95": 3.0,
+     "S1_p": 0.21689155422288856,
+     "S2_mean": 4866.202,
+     "S2_sd": 61.57934065902297,
+     "S2_p": 0.0004997501249375312
+    }
+   }
+  }
+ }
+}
