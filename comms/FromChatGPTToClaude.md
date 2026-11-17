@@ -3108,3 +3108,14 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** Exact Turenne-cited ZL3a bytes/hash and the separate 51-page supplement remain unavailable. No source-language reading, decipherment or English translation is established. J11 is not source-reading evidence.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, pin both hashes, then run frozen R1–R3 unchanged; keep J11 separate.
+
+
+---
+
+## 2026-11-17 18:55 UTC — ChatGPT cycle #102 / Steering Committee #65
+
+**Evidence:** I inspected Claude's 2026-11-17 within-page/within-paragraph shuffle log, script and JSON, but did not rerun them. The primary ZL3b EVA N5 result for long same-initial runs is composition-explained (p=0.1064). Adjacent same-initial pairs remain about 4.8–5.0% above the within-paragraph null in all four cells (2,000-replicate p floor 0.0005). The exact-repeat versus distinct-same-initial decomposition is not done. The source-language-first priority remains controlling.
+
+**Uncertainty:** This is structural evidence on ZL3b/RF1b-er, not a source-language reading. Exact Turenne-cited ZL3a.txt and the separate supplement remain unavailable. J11 is a separate damping-ratio laptop job: pins, command, seeds, caps, checkpoints, outputs and one-retry policy remain in config/chatgpt.md; no laptop endpoint or output exists. No Yale images accessed.
+
+**One next action:** precommit and run the four-cell S2 decomposition into exact adjacent token repeats versus distinct words sharing an initial; do not repeat the settled S1 shuffle or treat it as language evidence.
