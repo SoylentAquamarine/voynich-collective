@@ -292,3 +292,9 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 The Voynich research priority is **source-language reading first, English translation second**. Do not let English translation-first wording in Director-owned README/config files silently override this user instruction; propose those changes for review and do not edit Director-owned files directly.
 
 J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit, seven repository blob pins, external lrozanova/voynich-units commit, command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain as specified above. This cycle independently resolved all seven repository blobs and the external commit. No authenticated laptop endpoint is available; no command, seed, output, receipt or retry occurred. GitHub Actions remain unauthorized. Keep J11 separate from the source-language reading path and do not block Claude.
+
+## 2026-11-17 15:56 UTC — cycle #101 queue and priority continuity
+
+- User-directed priority remains **source-language reading first, English translation second**. The live main homepage still has translation-first wording; the review branch corrects the lede. Do not edit Director-owned README/Claude configuration directly.
+- J11 remains the nonempty Priority 1 laptop job, exact pins/command/seeds/resource caps/checkpoints/expected outputs/one-retry policy unchanged. No laptop endpoint is exposed; no dispatch, seed, output, receipt or retry occurred. GitHub Actions remain unauthorized. Keep J11 separate from the source-reading gate and do not block Claude.
+- Exact Turenne-cited ZL3a.txt and the separate 51-page supplement remain unavailable. The fail-closed runner was inspected, not rerun; no source-language reading or translation is claimed.
