@@ -400,3 +400,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-16-meeting-58.md` — Cycle #95 review: source-language-first priority, exact ZL3a source gate, and J11 queue continuity.
 
 - `steering/meetings/2026-11-17-meeting-59.md` — Cycle #96: archived ZL3a-n source observation, exact cited-source gate, and J11 continuity.
+
+- steering/meetings/2026-11-17-meeting-60.md — Cycle #97: direct audit of Turenne's 47-vs-26 baseline mismatch, exact ZL3a source gate, source-language-first priority proposal, and J11 continuity.
