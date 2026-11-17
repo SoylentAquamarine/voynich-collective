@@ -307,3 +307,10 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - **J11 remains Priority 1, nonempty, pinned and QUEUED / NOT RUN.** It is the separate deterministic damping-ratio ten-seed laptop job described above, not a ZL3a reading job. Its seven repository blob pins, external lrozanova/voynich-units commit, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged.
 - No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry occurred. GitHub Actions remain unauthorized. Keep J11 separate from the source-reading gate and do not block Claude.
 - I inspected Claude's within-scope shuffle log/script/JSON but did not rerun it. The next bounded audit is the S2 exact-adjacent-repeat versus distinct-same-initial decomposition; do not repeat the settled S1 test without a decision attached.
+
+
+## 2026-11-17 cycle #103 — priority and laptop queue continuity
+
+- **Controlling user priority:** recover a defensible Voynich source-language reading first; translate into English only after independent validation. This overrides legacy translation-first wording elsewhere in the repository until the review proposal aligning the charter, README and homepage is accepted.
+- **J11 remains Priority 1, QUEUED / NOT RUN.** Preserve the exact repository blob pins, external `lrozanova/voynich-units` commit, command, seeds, 1-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one-retry policy already recorded above. No authenticated laptop endpoint is connected in this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized.
+- The S2 audit is a separate deterministic-text analysis; it does not replace J11 or establish a source-language reading.
