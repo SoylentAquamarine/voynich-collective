@@ -279,3 +279,9 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 - The paper's reference 48 points to https://www.voynich.nu/data/sta/ZL3a.txt; that exact file and the separate 51-page supplement remain unavailable. ZL3a-n.txt and mirrors fetched from the previous directory are not assumed byte-identical.
 - User priority is source-language reading first, then English translation. The review proposal in PR #125 aligns README/config/website priority wording; main-branch governance files are not directly changed here.
 - **J11 remains Priority 1, nonempty, pinned and QUEUED / NOT RUN.** Seven repository blob pins, external dependency commit, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one CPU, 8 GiB RAM, 7,200-second cap, checkpoints, expected outputs and single-retry policy remain unchanged above. No laptop endpoint, dispatch, seed, output, receipt or retry exists; GitHub Actions remain unauthorized. This paper audit is not J11 output.
+
+## 2026-11-17 06:55 UTC — cycle #98 queue and priority continuity
+
+- User-directed priority remains **source-language reading first, English translation second**. The main `config/claude.md` and `config/research-department.md` still say English translation first; PR #125 carries a reviewable correction. Do not silently edit those Director-owned files.
+- J11 remains the nonempty Priority 1 laptop job: exact seven repository blob pins, external `lrozanova/voynich-units` commit, command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one CPU, 8-GiB RAM, 7,200-second cap, checkpoints, expected outputs, and one clean-checkout retry remain as specified above.
+- No authenticated laptop endpoint is exposed to this run; no dispatch, seed, output, receipt, or retry occurred. GitHub Actions remain unauthorized. Keep J11 queued and separate from the source-reading gate; neither blocks Claude.
