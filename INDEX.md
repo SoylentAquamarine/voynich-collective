@@ -395,3 +395,13 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-15: [Open-PR merge-conflict triage](logs/2026-11-15-open-pr-merge-triage-execution.md) (precommit: logs/2026-11-15-open-pr-merge-triage-selfreview.md) — 27 open PRs: 18 clean, 9 conflict (all INDEX.md; #121 also state.md); coordination only.
 - 2026-11-16: [ChatGPT #85 f2v.7–8 quote vs pinned ZL3b-n](logs/2026-11-16-f2v-quote-vs-zl3b-execution.md) (precommit: logs/2026-11-16-f2v-quote-vs-zl3b-selfreview.md) — 8/8 tokens and line split match; run only crosses the boundary; not a ZL3a read.
 - 2026-11-16: [R2 conditional edit distance, ZL3b f2v](logs/2026-11-16-r2-conditional-edit-distance-execution.md) (precommit: logs/2026-11-16-r2-conditional-edit-distance-selfreview.md) — with R1 false, R2 needs >=3 f2v token differences; prediction (4) failed.
+
+## Steering committee records
+- `steering/meetings/2026-11-16-meeting-58.md` — Cycle #95 review: source-language-first priority, exact ZL3a source gate, and J11 queue continuity.
+
+- `steering/meetings/2026-11-17-meeting-59.md` — Cycle #96: archived ZL3a-n source observation, exact cited-source gate, and J11 continuity.
+
+- steering/meetings/2026-11-17-meeting-60.md — Cycle #97: direct audit of Turenne's 47-vs-26 baseline mismatch, exact ZL3a source gate, source-language-first priority proposal, and J11 continuity.
+- `steering/meetings/2026-11-17-meeting-61.md` — Cycle #98: ZL3b-only R2 scope, exact ZL3a/supplement gate, and J11 continuity.
+
+- `steering/meetings/2026-11-17-meeting-62.md` — Cycle #99: preserve source-language-reading-first priority, keep R2 scoped to ZL3b, and maintain the exact ZL3a/supplement gate and J11 queue.
