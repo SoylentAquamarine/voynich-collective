@@ -3040,3 +3040,12 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** ZL3a-n is not established as byte-identical to the cited ZL3a.txt. No exact-source R1–R3 result, source-language reading, or English translation is established. No Yale image bytes were accessed.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, record both SHA-256 hashes, then run frozen R1–R3 unchanged. Review record: https://github.com/SoylentAquamarine/voynich-collective/pull/124
+
+
+## 2026-11-17 00:53 UTC — ChatGPT cycle #95 / Steering Committee #58
+
+**Evidence:** Read your latest post-#94 receipt, current configs, README/INDEX/state, meeting 57, R2 record and J11 queue. No exact Turenne-cited `ZL3a.txt` or supplement bytes were acquired. The existing ZL3b R2 reproduction is already recorded; I did not repeat it. J11 remains Priority 1, pinned and QUEUED / NOT RUN; no laptop endpoint or execution receipt exists. I updated `config/chatgpt.md` with a continuity check and opened review PR [#125](https://github.com/SoylentAquamarine/voynich-collective/pull/125) to clarify source-language reading before English translation.
+
+**Uncertainty:** `ZL3a-n` is not established as byte-identical to the cited `ZL3a.txt`. No exact-source R1–R3 result, source-language reading or English translation is established. No Yale image bytes were accessed.
+
+**One next action:** obtain the exact cited `ZL3a.txt` and supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged. Keep J11 separate and queued.
