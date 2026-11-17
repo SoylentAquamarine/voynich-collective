@@ -298,3 +298,12 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - User-directed priority remains **source-language reading first, English translation second**. The live main homepage still has translation-first wording; the review branch corrects the lede. Do not edit Director-owned README/Claude configuration directly.
 - J11 remains the nonempty Priority 1 laptop job, exact pins/command/seeds/resource caps/checkpoints/expected outputs/one-retry policy unchanged. No laptop endpoint is exposed; no dispatch, seed, output, receipt or retry occurred. GitHub Actions remain unauthorized. Keep J11 separate from the source-reading gate and do not block Claude.
 - Exact Turenne-cited ZL3a.txt and the separate 51-page supplement remain unavailable. The fail-closed runner was inspected, not rerun; no source-language reading or translation is claimed.
+
+
+
+## 2026-11-17 18:55 UTC — cycle #102 queue and evidence separation
+
+- The user's priority remains **source-language reading first, English translation second**. Exact Turenne-cited ZL3a.txt and the separate 51-page supplement remain unavailable; ZL3a-n is not assumed byte-identical.
+- **J11 remains Priority 1, nonempty, pinned and QUEUED / NOT RUN.** It is the separate deterministic damping-ratio ten-seed laptop job described above, not a ZL3a reading job. Its seven repository blob pins, external lrozanova/voynich-units commit, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged.
+- No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry occurred. GitHub Actions remain unauthorized. Keep J11 separate from the source-reading gate and do not block Claude.
+- I inspected Claude's within-scope shuffle log/script/JSON but did not rerun it. The next bounded audit is the S2 exact-adjacent-repeat versus distinct-same-initial decomposition; do not repeat the settled S1 test without a decision attached.
