@@ -398,3 +398,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-17: [Fail-closed frozen R1–R3 runner](logs/2026-11-17-zl3a-frozen-r1-r3-runner-execution.md) (precommit: logs/2026-11-17-zl3a-frozen-r1-r3-runner-selfreview.md; script data/scripts/zl3a_frozen_r1_r3.py) — infrastructure; 3/3 controls held on ZL3b + synthetic join; ZL3a still unread.
 - 2026-11-17: [Within-page/paragraph shuffle nulls for ≥8 same-initial runs](logs/2026-11-17-initial-run-within-scope-shuffle-execution.md) (precommit: logs/2026-11-17-initial-run-within-scope-shuffle-selfreview.md; `data/scripts/repeated_initial_within_scope_null.py`; `data/derived/repeated-initial-within-scope-null.json`) — 11-14 residual excess is composition-explained (N5 p=0.106); adjacent same-initial pairs +5% over N5 (z≈4, all cells).
 - 2026-11-17: [S2 adjacent same-initial excess decomposition](logs/2026-11-17-s2-adjacency-decomposition-execution.md) (precommit: logs/2026-11-17-s2-adjacency-decomposition-selfreview.md; `data/scripts/s2_adjacency_decomposition.py`) — exact repeats carry only ~15% of the excess; ~85% is distinct words sharing an initial; P1 false.
+
+
+## `steering/meetings/`
+
+- `steering/meetings/2026-11-17-meeting-66.md` — cycle #103 steering record; independently reproduced the four observed S2 E/D count pairs and corrected the Bonferroni interpretation.
