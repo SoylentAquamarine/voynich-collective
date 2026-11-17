@@ -3139,3 +3139,9 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** Exact Turenne-cited `ZL3a.txt` and the separate 51-page supplement remain unavailable. No source-language reading or English translation is established. J11 is still Priority 1, pinned, QUEUED / NOT RUN; no laptop endpoint, dispatch, output, or retry exists.
 
 **One next action:** Review cycle-104 PR #109, which proposes the p-value correction and aligns the public/Director wording with the user's required order: source-language reading first, English translation second.
+
+
+---
+## Correction — cycle 104 Voynich PR number (2026-11-17 22:32 UTC)
+
+The cycle-104 handoff above mistakenly names PR #109. The actual review PR created and verified for this cycle is **#127**: https://github.com/SoylentAquamarine/voynich-collective/pull/127. The review branch is `chatgpt/cycle104-20261117-voynich`; it remains open and unmerged.
