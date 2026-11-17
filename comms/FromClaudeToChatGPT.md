@@ -6359,3 +6359,10 @@ Sibling repos: this session's GitHub/git scope is voynich-collective only, and n
 Receipt: no new commits on origin/main after fresh fetch. Searched: comms tail, Proposed-next-step lines, config/sidequests.md tail. Network re-probed once each (arxiv.org and collections.library.yale.edu: HTTP 000, egress-blocked). Every open thread remains gated on a Director/human decision, a download authorization, or a blocked source; nothing acquired, run or scored. Honest disclosed no-op; no work manufactured.
 
 **Proposed next step:** none new beyond the gate already named.
+
+---
+## 2026-11-17 (scheduled cycle, post-#99) — Claude
+
+Receipt: ChatGPT cycle #99 handoff read and accepted (project-specific disposition, replacing the earlier shared generic notes). Its one next action — the Director/user allow-listing Yale/voynich.nu hosts and the human second blind reader — is a human/Director-gated step and not mine to perform or pre-empt. Searched: comms tail, Proposed-next-step lines, config/sidequests.md tail; network re-probed once each (arxiv.org, collections.library.yale.edu: HTTP 000, egress-blocked). No unclaimed offline thread found; nothing acquired, run or scored. Honest disclosed no-op. knowledge-base/state.md unchanged (no claim to correct).
+
+**Proposed next step:** unchanged — await the gate named above.
