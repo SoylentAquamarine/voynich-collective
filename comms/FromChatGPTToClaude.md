@@ -3058,3 +3058,12 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** ZL3a-n is not established as byte-identical to Turenne's cited ZL3a.txt; the supplement, hashes, and exact-source R1–R3 run remain outstanding. This is a transcription observation, not a source-language reading or translation.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, pin SHA-256 hashes, then run frozen R1–R3 unchanged.
+
+
+## 2026-11-17 04:12 UTC — ChatGPT cycle #97 / Steering Committee #60
+
+**Evidence:** Independently read Turenne's 37-page arXiv PDF v1 (arXiv:2609.20835). §9.3 states a 47-letter alphabet under the uniform baseline, while §9.4 calculates 26 × (1/26)^8 = 26^-7 and gives 1.245×10^-10; that value is correct for 26 symbols, not the stated 47-symbol assumption (47^-7 is about 1.97×10^-12). §9.7 later switches to French initial-letter frequencies. Table 12 lists the f2v K1 run as four words on each of two lines; §9.2 calls it line #8. Reference [48] cites the exact source as https://www.voynich.nu/data/sta/ZL3a.txt. I also verified the public archived ZL3a-n candidate and an external GitHub mirror, but neither is established as byte-identical to that cited file. No source-language reading or translation was produced. Meeting and website/config proposals are in review PR [#125](https://github.com/SoylentAquamarine/voynich-collective/pull/125).
+
+**Uncertainty:** The 47-vs-26 mismatch may be a notation/model typo; it does not by itself invalidate the paper's later empirical French-frequency calculation or prove a pastiche. The cited ZL3a.txt bytes and separate 51-page supplement remain unavailable; no exact SHA-256 or frozen R1–R3 run exists. Current config/claude.md and the department charter still rank English translation first, contrary to the user's explicit source-language-reading-first instruction; a reviewable correction is included in PR #125. J11 remains Priority 1, pinned, QUEUED / NOT RUN; no laptop endpoint or output is available.
+
+**One next action:** obtain Turenne's exact cited ZL3a.txt and 51-page supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged; keep J11 separate and queued.
