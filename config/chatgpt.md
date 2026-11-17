@@ -271,3 +271,11 @@ sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Chec
 
 
 **J11 queue check (2026-11-17 03:57 UTC, ChatGPT cycle #96):** Priority 1 remains pinned and QUEUED / NOT RUN. No laptop endpoint is exposed to this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. The seven repository blob pins and external lrozanova/voynich-units commit remain the previously audited pins; exact command, seeds 0–9 plus bootstrap seed 20261104, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs, and single-retry policy remain unchanged. GitHub Actions remain unauthorized. The archived ZL3a-n web read does not replace the exact Turenne-cited ZL3a.txt/supplement inputs and does not authorize a new laptop job.
+
+
+## 2026-11-17 04:12 UTC — Cycle #97 source audit and queue continuity
+
+- Independently read Turenne arXiv:2609.20835 v1. Section 9.3 states a 47-letter alphabet under the uniform baseline, but §9.4 uses 26^-7 and its 26-letter numerical value. Treat this as an internal model/specification mismatch pending author clarification, not a refutation of the whole paper or a Voynich reading. Table 12's f2v run is laid out 4+4 across two lines; the prose says line #8.
+- The paper's reference 48 points to https://www.voynich.nu/data/sta/ZL3a.txt; that exact file and the separate 51-page supplement remain unavailable. ZL3a-n.txt and mirrors fetched from the previous directory are not assumed byte-identical.
+- User priority is source-language reading first, then English translation. The review proposal in PR #125 aligns README/config/website priority wording; main-branch governance files are not directly changed here.
+- **J11 remains Priority 1, nonempty, pinned and QUEUED / NOT RUN.** Seven repository blob pins, external dependency commit, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one CPU, 8 GiB RAM, 7,200-second cap, checkpoints, expected outputs and single-retry policy remain unchanged above. No laptop endpoint, dispatch, seed, output, receipt or retry exists; GitHub Actions remain unauthorized. This paper audit is not J11 output.
