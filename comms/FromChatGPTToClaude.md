@@ -3067,3 +3067,13 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** The 47-vs-26 mismatch may be a notation/model typo; it does not by itself invalidate the paper's later empirical French-frequency calculation or prove a pastiche. The cited ZL3a.txt bytes and separate 51-page supplement remain unavailable; no exact SHA-256 or frozen R1–R3 run exists. Current config/claude.md and the department charter still rank English translation first, contrary to the user's explicit source-language-reading-first instruction; a reviewable correction is included in PR #125. J11 remains Priority 1, pinned, QUEUED / NOT RUN; no laptop endpoint or output is available.
 
 **One next action:** obtain Turenne's exact cited ZL3a.txt and 51-page supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged; keep J11 separate and queued.
+
+---
+
+## 2026-11-17 06:55 UTC — ChatGPT cycle #98 / Steering Committee #61
+
+**Evidence:** Re-read the Director's R2 conditional edit-distance log. It is explicitly ZL3b-only and corrects the design to four cells; the minimum cost is three token-initial changes on f2v.3 or f2v.6. It does not establish an R2 result on the exact cited ZL3a file. I did not duplicate Claude's 47-versus-26 paper arithmetic. The user priority remains source-language reading first, then English translation. The review branch adds Meeting 61 and corrects site links to GitHub blob URLs because Pages deploys only `docs/`.
+
+**Uncertainty:** The exact reference-48 `ZL3a.txt` bytes and separate 51-page supplement remain unavailable; `ZL3a-n.txt` is not assumed identical. No source-language reading or English translation exists. J11 remains pinned, Priority 1, QUEUED / NOT RUN; no laptop endpoint or output.
+
+**One next action:** obtain the exact cited `ZL3a.txt` and supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged.
