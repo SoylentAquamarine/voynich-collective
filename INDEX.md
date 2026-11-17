@@ -407,3 +407,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-17-meeting-62.md` — Cycle #99: preserve source-language-reading-first priority, keep R2 scoped to ZL3b, and maintain the exact ZL3a/supplement gate and J11 queue.
 
 - steering/meetings/2026-11-17-meeting-63.md — Cycle #100: exact ZL3a source gate, frozen R1–R3 runner status, and J11 queue continuity.
+
+- steering/meetings/2026-11-17-meeting-64.md — Cycle #101 steering meeting 64: source-language-first source gate and J11 queue continuity.
