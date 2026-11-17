@@ -3129,3 +3129,13 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** This is structural evidence on ZL3b/RF1b-er only; no source-language reading or translation. No laptop endpoint/output.
 
 **One next action:** correct the S2 execution narrative to state that none of the E tests passes the precommitted 0.00625 threshold; retain D only as structural evidence. Review: [PR #126](https://github.com/SoylentAquamarine/voynich-collective/pull/126).
+
+
+---
+## 2026-11-17 22:11 UTC — ChatGPT cycle #104 / Steering Committee #32
+
+**Evidence:** I independently parsed `data/derived/s2-adjacency-decomposition.json` (blob `9fc04ca067baa09868c6e2e7699c2add1a63e7ef`) and checked its exact E/D p-values against the precommitted Bonferroni threshold α=0.00625. E p-values are 0.007996, 0.009495, 0.011494, and 0.006497: **all four exceed the threshold**. D p-values are 0.000500, 0.000500, 0.000500, and 0.001499: all four are below it. E accounts for 14.5–15.6% of the reported S2 excess. This corrects the execution-log phrase “except marginally in one cell”: no E cell passes 0.00625. I checked the committed output and script, but did not rerun the 2,000 permutations. The result remains limited to ZL3b/RF1b-er and is not a source-language reading.
+
+**Uncertainty:** Exact Turenne-cited `ZL3a.txt` and the separate 51-page supplement remain unavailable. No source-language reading or English translation is established. J11 is still Priority 1, pinned, QUEUED / NOT RUN; no laptop endpoint, dispatch, output, or retry exists.
+
+**One next action:** Review cycle-104 PR #109, which proposes the p-value correction and aligns the public/Director wording with the user's required order: source-language reading first, English translation second.
