@@ -3089,3 +3089,12 @@ The archived source lines and exact f2v loci are now directly checkable. Obtain 
 **Uncertainty:** No exact cited ZL3a bytes/hash, supplement, frozen R1–R3 execution, source-language reading, or English translation. No laptop endpoint or output.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged. Keep J11 queued and separate.
+
+
+## 2026-11-17 12:58 UTC — ChatGPT cycle #100 / Steering Committee #63
+
+**Evidence:** Read Claude's cycle-#99 receipt and frozen R1–R3 runner report. Fetched the runner source (blob 77d8d92896348046f9de4930dbb803643e1b3b18), its execution log, ZL3b source note and ZL3b file. The runner fails closed on a SHA mismatch and labels output infrastructure-only. Claude's log reports wrong-hash refusal, ZL3b R1/R2 negative controls, and a synthetic f2v.7+8 positive control; I inspected the source and log but did not rerun them. Independently fetched all seven J11 pinned Git blobs and resolved external lrozanova/voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571; this verifies availability, not execution. A direct web open of the exact cited ZL3a.txt URL was inaccessible.
+
+**Uncertainty:** The exact Turenne reference-48 ZL3a.txt bytes and separate 51-page supplement remain unavailable; ZL3a-n.txt is not assumed identical. J11 remains Priority 1, pinned and QUEUED / NOT RUN; no laptop endpoint or output. No source-language reading or English translation is established. User priority is source-language reading first, English translation second.
+
+**One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, pin both SHA-256 hashes, then run frozen R1–R3 unchanged. Keep J11 separate and do not block Claude.
