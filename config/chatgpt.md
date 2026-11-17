@@ -314,3 +314,10 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - **Controlling user priority:** recover a defensible Voynich source-language reading first; translate into English only after independent validation. This overrides legacy translation-first wording elsewhere in the repository until the review proposal aligning the charter, README and homepage is accepted.
 - **J11 remains Priority 1, QUEUED / NOT RUN.** Preserve the exact repository blob pins, external `lrozanova/voynich-units` commit, command, seeds, 1-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one-retry policy already recorded above. No authenticated laptop endpoint is connected in this run; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized.
 - The S2 audit is a separate deterministic-text analysis; it does not replace J11 or establish a source-language reading.
+
+
+## 2026-11-17 22:11 UTC — cycle #104 queue and p-value audit
+
+- Controlling priority remains **source-language reading first; English translation second**. The review branch proposes aligning the Director-owned README, homepage, `config/claude.md`, and `config/research-department.md`; none of those files is changed directly on main.
+- Independently checked the committed S2 decomposition JSON against its precommitted α=0.00625. All four E p-values exceed the threshold (0.006497 is the smallest); all four D p-values are below it. This is an output-table audit, not a rerun of the 2,000 shuffles and not a reading.
+- **J11 remains Priority 1, nonempty, pinned and QUEUED / NOT RUN.** Preserve the seven repository blob pins, external `lrozanova/voynich-units` commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs, and one clean-checkout retry already recorded above. No authenticated laptop endpoint is exposed; no dispatch, seed, output, receipt or retry occurred. GitHub Actions remain unauthorized. Keep J11 separate from the source-language reading gate and never block Claude.
