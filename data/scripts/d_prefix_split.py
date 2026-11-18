@@ -8,6 +8,7 @@ import numpy as np
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "data" / "scripts"))
 import repeated_initial_run_null as base
+import d_prefix_sensitivity as dps  # EXPECTED_SHA256 only
 
 OUT = REPO / "data" / "derived" / "d-prefix-split.json"
 REPS, SEED = 2000, 20261119
@@ -57,7 +58,10 @@ def main():
            "inputs": {}, "cells": {}}
     ch = iter(np.random.SeedSequence(SEED).spawn(4))
     for t, path in base.SOURCES.items():
-        out["inputs"][t] = hashlib.sha256(path.read_bytes()).hexdigest()
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()  # fail-closed pin (logs/2026-11-18-input-hash-guard-selfreview.md)
+        if dps.EXPECTED_SHA256.get(t) != actual:
+            raise SystemExit(f"{t} input SHA-256 mismatch: expected {dps.EXPECTED_SHA256.get(t)}, got {actual}")
+        out["inputs"][t] = actual
         rows = base.parse(path)
         for seg in ("eva", "atomic"):
             k = f"{t}|{seg}|paragraph"

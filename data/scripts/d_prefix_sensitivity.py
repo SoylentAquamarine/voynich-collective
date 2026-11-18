@@ -15,6 +15,10 @@ REPS, SEED = 2000, 20261120
 BINS = ("L1", "L2", "L3", "L4+")
 OBS_D_1117 = {"ZL3b|eva": 5388, "ZL3b|atomic": 4863, "RF1b-er|eva": 5414, "RF1b-er|atomic": 4823}
 OBS_D3_1118 = {"ZL3b|eva": 1225, "ZL3b|atomic": 1225, "RF1b-er|eva": 1216, "RF1b-er|atomic": 1216}
+EXPECTED_SHA256 = {
+    "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+    "RF1b-er": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2",
+}
 
 def units(w, rx):
     out, i = [], 0
@@ -91,7 +95,11 @@ def main():
            "reps": REPS, "seed": SEED, "inputs": {}, "checks": {}, "cells": {}}
     ch = iter(np.random.SeedSequence(SEED).spawn(4))
     for t, path in base.SOURCES.items():
-        out["inputs"][t] = hashlib.sha256(path.read_bytes()).hexdigest()
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        expected = EXPECTED_SHA256.get(t)
+        if expected is None or actual != expected:
+            raise SystemExit(f"{t} input SHA-256 mismatch: expected {expected}, got {actual}")
+        out["inputs"][t] = actual
         rows = base.parse(path)
         for seg in ("eva", "atomic"):
             k = f"{t}|{seg}"

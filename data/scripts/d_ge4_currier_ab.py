@@ -24,7 +24,10 @@ def main():
     out = {"precommit": "logs/2026-11-18-currier-ab-ge4-selfreview.md", "seed": SEED, "reps": 2000, "inputs": {}, "meta": {"lang_tag_counts_pages": {k: sum(1 for v in lm.values() if v == k) for k in sorted(set(lm.values()))}}, "cells": {}}
     ss = np.random.SeedSequence(SEED).spawn(8); i = 0
     for t, path in base.SOURCES.items():
-        out["inputs"][t] = hashlib.sha256(path.read_bytes()).hexdigest()
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()  # fail-closed pin (logs/2026-11-18-input-hash-guard-selfreview.md)
+        if dps.EXPECTED_SHA256.get(t) != actual:
+            raise SystemExit(f"{t} input SHA-256 mismatch: expected {dps.EXPECTED_SHA256.get(t)}, got {actual}")
+        out["inputs"][t] = actual
         rows = base.parse(path)
         out["meta"][t] = {"rows": len(rows), "rows_dropped_no_AB": sum(1 for r in rows if lm.get(r[0], "?") not in "AB")}
         for lang in "AB":

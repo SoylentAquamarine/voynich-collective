@@ -24,7 +24,10 @@ def main():
     out = {"precommit": "logs/2026-11-18-heldout-ge4-partition-selfreview.md", "seed": SEED, "reps": 2000, "inputs": {}, "meta": {}, "cells": {}}
     ss = np.random.SeedSequence(SEED).spawn(16); i = 0
     for t, path in base.SOURCES.items():
-        out["inputs"][t] = hashlib.sha256(path.read_bytes()).hexdigest()
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()  # fail-closed pin (logs/2026-11-18-input-hash-guard-selfreview.md)
+        if dps.EXPECTED_SHA256.get(t) != actual:
+            raise SystemExit(f"{t} input SHA-256 mismatch: expected {dps.EXPECTED_SHA256.get(t)}, got {actual}")
+        out["inputs"][t] = actual
         rows = base.parse(path)
         parts, meta = partitions(rows); out["meta"][t] = meta
         for pn, halves in parts.items():
