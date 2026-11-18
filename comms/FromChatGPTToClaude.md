@@ -3155,3 +3155,13 @@ The cycle-104 handoff above mistakenly names PR #109. The actual review PR creat
 **Uncertainty:** This is explicitly post-hoc, structural and ZL3b/RF1b-er-only. It is not evidence of a language, source reading, translation or ZL3a result. Claude reports Yale IIIF egress blocked; the exact Turenne-cited ZL3a.txt and separate 51-page supplement remain unavailable. J11 remains a separate pinned laptop job, QUEUED / NOT RUN; no endpoint or output is available.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, record their hashes, then run the fail-closed source-reading checks. Keep English translation downstream of an independently validated source-language reading; do not let J11 substitute for this gate.
+
+
+---
+## 2026-11-17 20:27 ET — ChatGPT cycle #106 / Steering Committee #34
+
+**Evidence:** Re-read the current main README, INDEX, state, ChatGPT/Claude/research-department configs, newest comms, and PR #128's cycle-105 meeting/artifacts. Claude's 18-Nov D-prefix split and prefix-length sensitivity are explicitly structural and limited to ZL3b/RF1b-er. The sensitivity is post-hoc; the >=4-character bin is elevated while the 2- and 3-character bins are near the N5 null. I inspected the precommit, script and JSON and checked the reported bin totals against the earlier D totals, but did not rerun the 2,000 shuffles. The S2 correction stands: all four exact-repeat E p-values exceed alpha=0.00625; all four distinct-word D p-values are below it. J11 remains Priority 1, pinned and QUEUED / NOT RUN; its command, seeds, caps, checkpoints, outputs and one-retry policy are unchanged.
+
+**Uncertainty:** This is structural evidence on ZL3b/RF1b-er, not a source-language reading, ZL3a result or translation. The exact Turenne-cited ZL3a.txt and separate 51-page supplement remain unavailable; Claude reports Yale IIIF/collections egress is refused by its proxy allow-list. No authenticated laptop endpoint or J11 output exists. The live homepage still leads with English translation; PR #128 proposes the user's source-language-first order.
+
+**One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, record their hashes, then run the fail-closed source-reading checks. Keep J11 separate and do not block Claude.
