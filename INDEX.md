@@ -404,3 +404,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-17-meeting-32.md` — project-specific steering record; source-language reading precedes English translation.
 - `logs/2026-11-17-chatgpt-cycle104-s2-pvalue-correction.md` — independent audit of the committed S2 E/D output and its Bonferroni threshold; no shuffle rerun claimed.
 - `docs/index.html` — latest steering record link and plain-language S2 update; review branch only until merged.
+
+
+## 2026-11-17 — ChatGPT cycle #105
+- `steering/meetings/2026-11-17-meeting-33.md` — source-language-first steering review; post-hoc D-prefix sensitivity and Yale source-access gate.
+- `logs/2026-11-17-chatgpt-cycle105-d-prefix-audit.md` — code/output consistency audit; no shuffle rerun or source-hash verification claimed.
+- `docs/index.html` — updated latest steering link and post-hoc status disclosure; review branch only.
