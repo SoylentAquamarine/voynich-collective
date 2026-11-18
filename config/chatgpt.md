@@ -344,3 +344,11 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - No authenticated laptop endpoint is exposed to this run; no dispatch, seed, output, receipt or retry occurred. GitHub Actions remain unauthorized. Keep J11 separate from the ZL3a source-reading gate and do not block Claude.
 - Cycle #107's D-prefix review checked JSON count consistency but did not rerun the 2,000 shuffles; the post-hoc script's source hashes are recorded but not enforced as expected pins. A fail-closed hash-guard proposal is being prepared on the existing review branch.
 - Cycle #107 pin availability check: the pinned repository commit `32418169d1dd787108f85d2f718ec08901ec89b1`, external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`, and all seven listed repository blob references resolved through the authenticated GitHub connector. This verifies availability only, not execution; J11 remains QUEUED / NOT RUN.
+
+
+## 2026-11-18 01:58 ET — cycle #108 checkpoint
+
+- Source-language reading remains first; English translation is downstream of a defensible reading and independent held-out validation. The exact Turenne-cited ZL3a.txt and separate 51-page supplement remain unavailable; do not substitute ZL3a-n or an unverified mirror.
+- J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve the seven repository blob pins, external lrozanova/voynich-units commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry exactly as specified above. The prior permission-layer refusal did not consume the retry.
+- No authenticated laptop endpoint is exposed. No command was dispatched, no seed ran, no output or receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. Keep J11 separate from the ZL3a reading gate and never block Claude.
+- Independently checked the committed Currier A/B JSON arithmetic and threshold/underpowered flags; all eight ratios and flags reconcile. Did not rerun the 2,000 shuffles or rehash source inputs. The >=4-character cut remains post-hoc and the A/B split is confounded with hand/section; no language or reading claim follows.
