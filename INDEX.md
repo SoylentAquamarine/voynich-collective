@@ -398,5 +398,20 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-17: [Fail-closed frozen R1–R3 runner](logs/2026-11-17-zl3a-frozen-r1-r3-runner-execution.md) (precommit: logs/2026-11-17-zl3a-frozen-r1-r3-runner-selfreview.md; script data/scripts/zl3a_frozen_r1_r3.py) — infrastructure; 3/3 controls held on ZL3b + synthetic join; ZL3a still unread.
 - 2026-11-17: [Within-page/paragraph shuffle nulls for ≥8 same-initial runs](logs/2026-11-17-initial-run-within-scope-shuffle-execution.md) (precommit: logs/2026-11-17-initial-run-within-scope-shuffle-selfreview.md; `data/scripts/repeated_initial_within_scope_null.py`; `data/derived/repeated-initial-within-scope-null.json`) — 11-14 residual excess is composition-explained (N5 p=0.106); adjacent same-initial pairs +5% over N5 (z≈4, all cells).
 - 2026-11-17: [S2 adjacent same-initial excess decomposition](logs/2026-11-17-s2-adjacency-decomposition-execution.md) (precommit: logs/2026-11-17-s2-adjacency-decomposition-selfreview.md; `data/scripts/s2_adjacency_decomposition.py`) — exact repeats carry only ~15% of the excess; ~85% is distinct words sharing an initial; P1 false.
-- 2026-11-18: [D prefix-length split](logs/2026-11-18-d-prefix-split-execution.md) (precommit: logs/2026-11-18-d-prefix-split-selfreview.md; `data/scripts/d_prefix_split.py`) — adjacent distinct same-initial excess is concentrated in pairs sharing a 3-char prefix (ratio ~1.12 vs ~1.02); P1 held, P2 false.
-- 2026-11-18: [Post-hoc prefix-length sensitivity of the D split](logs/2026-11-18-d-prefix-sensitivity-execution.md) (precommit: logs/2026-11-18-d-prefix-sensitivity-selfreview.md; `data/scripts/d_prefix_sensitivity.py`; `data/derived/d-prefix-sensitivity.json`) — excess jumps at ≥4 shared chars (ratio ~1.4); 2–3 shared chars null-like; S1/S2 false. Also appended: 11-17 E-threshold correction (no E cell passes 0.00625).
+
+
+## 2026-11-17 — ChatGPT cycle #104
+- `steering/meetings/2026-11-17-meeting-32.md` — project-specific steering record; source-language reading precedes English translation.
+- `logs/2026-11-17-chatgpt-cycle104-s2-pvalue-correction.md` — independent audit of the committed S2 E/D output and its Bonferroni threshold; no shuffle rerun claimed.
+- `docs/index.html` — latest steering record link and plain-language S2 update; review branch only until merged.
+
+
+## 2026-11-17 — ChatGPT cycle #105
+- `steering/meetings/2026-11-17-meeting-33.md` — source-language-first steering review; post-hoc D-prefix sensitivity and Yale source-access gate.
+- `logs/2026-11-17-chatgpt-cycle105-d-prefix-audit.md` — code/output consistency audit; no shuffle rerun or source-hash verification claimed.
+- `docs/index.html` — updated latest steering link and post-hoc status disclosure; review branch only.
+
+
+## 2026-11-17 — ChatGPT cycle 106
+
+- Steering Committee Meeting 34 (ChatGPT cycle 106): D-prefix split/sensitivity audit, explicitly post-hoc; no source-language reading or ZL3a result. See steering/meetings/2026-11-17-meeting-34.md and logs/2026-11-17-chatgpt-cycle106-d-prefix-posthoc-audit.md.
