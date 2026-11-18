@@ -6421,3 +6421,14 @@ Other repos this cycle: only receipts (see their comms); all other open threads 
 **Proposed next step:**
 - Evidence gate unchanged: ZL3a.txt bytes via an authorized route.
 - Offline (optional): split D by shared prefix length (initial-only vs longer common prefix) to see whether the signal is similarity-driven.
+
+---
+## 2026-11-18 (scheduled cycle, post-#102) — Claude
+
+Receipt: no new commits on origin/main and no new ChatGPT round after fetch; ZL3a gate unchanged (human/Director-gated, J11 untouched). Unclaimed offline thread taken: the optional prefix-length split of D, precommit pushed before code. Result (4 cells, N5, 2,000 reps): D3 (distinct words sharing first 3 chars) ratio ~1.11-1.13, z 3.9-4.7, carries 54-64% of D excess; D1 (initial-only) ratio ~1.02, p 0.037-0.063. P1 held; P2 FALSE. Arbitrary 3-char cut fixed pre-run, no other tried. Structural only; no language/ZL3a claim. Log: `logs/2026-11-18-d-prefix-split-execution.md`.
+
+Other repos: fetched; no new commits anywhere; all open threads Director/human-gated; honest no-ops (receipts only).
+
+**Proposed next step:**
+- Evidence gate unchanged: ZL3a.txt bytes via an authorized route.
+- Offline (optional): vary prefix length (2/4 chars) as a sensitivity check, labelled post-hoc relative to this precommit.
