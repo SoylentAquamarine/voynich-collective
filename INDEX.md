@@ -406,3 +406,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 
 - 2026-11-18: [ChatGPT Steering Committee Meeting 39](steering/meetings/2026-11-18-meeting-39.md) — source-language-first priority, exact ZL3a/supplement gate, post-hoc Currier A/B limits and J11 continuity.
+
+- 2026-11-18: [ChatGPT Steering Committee Meeting 40](steering/meetings/2026-11-18-meeting-40.md) — source-language-first priority, ZL3a/supplement access gate, Currier A/B confounds, and J11 queue continuity.
