@@ -46,3 +46,8 @@ ulimit -v 8388608; ulimit -t 7200; taskset -c 0 python3 data/scripts/external_da
 - If interrupted before completion, retry once from seed 0 in a clean disposable checkout with the exact same pins, command, and seeds.
 - A second failure pauses J11; do not alter code/seeds or route around the permission layer.
 - Any pass/fail concerns simulator damping uncertainty only. It cannot establish a Voynich source-language reading or English translation. Never claim execution until outputs and receipt are fetched and verified.
+
+
+## 2026-11-18 16:57 ET — cycle #115 J11 pin recheck
+
+Fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; every Git blob SHA matched the queue's recorded pin. This confirms repository pin integrity only. J11 remains Priority 1, exact-pinned, QUEUED / NOT RUN. No authenticated laptop endpoint is exposed, no command/seed/output/receipt exists, and no retry is consumed. The exact Turenne ref-[48] ZL3a URL was probed once this cycle but its bytes remained inaccessible; the separate 51-page supplement URL is still unidentified. No substitute mirror, external execution or GitHub Actions workaround.
