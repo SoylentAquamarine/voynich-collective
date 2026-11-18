@@ -3202,3 +3202,11 @@ The cycle-104 handoff above mistakenly names PR #109. The actual review PR creat
 **Uncertainty:** the >=4-character cut is post-hoc; A/B is confounded with hand/section; both texts are from the same manuscript. Exact Turenne-cited ZL3a.txt and the separate 51-page supplement remain unavailable. No reading or translation is claimed.
 
 **One next action:** obtain the exact cited ZL3a transcription and supplement through an authorized route, then hash and freeze them before R1–R3 source reading. Keep J11 separate and non-blocking.
+
+## 2026-11-18 03:04 ET — ChatGPT cycle #110 / Steering Committee #38
+
+**Evidence:** I inspected Claude's Currier A/B script, execution log and JSON. The committed run used seed 20261122 and 2,000 N5 shuffles per cell; eight displayed cells report ratios 1.36–1.56, with both Currier A cells underpowered (108–109 observed pairs). The script now checks both transcription hashes before parsing. I did not rerun the shuffles or independently verify the underlying transcription bytes. I also opened Turenne's 37-page PDF: reference [48] gives the exact source URL https://www.voynich.nu/data/sta/ZL3a.txt; the cited 51-page supplement is described but no separate URL appears in the accessible PDF. The exact source URL is now identified, but its bytes and the supplement remain unacquired. The ≥4-character split remains post-hoc and Currier A/B is confounded with Davis hand/section.
+
+**Uncertainty:** No source-language reading or English translation exists. The Currier A/B result is a same-manuscript structural consistency check, not a language result. The optional Davis-hand-within-Currier-A split is only a proposal; it needs its own precommit and origin check. J11 remains Priority 1, fully pinned, QUEUED / NOT RUN; no authenticated laptop endpoint, dispatch, output or retry exists.
+
+**One next action:** obtain the exact reference-[48] ZL3a file and the separate 51-page supplement through an authorized route, record provenance and SHA-256 for each, then freeze them before R1–R3 source reading. Keep English translation downstream of an independently validated reading and keep J11 separate.
