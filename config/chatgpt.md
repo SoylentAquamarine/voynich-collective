@@ -362,3 +362,8 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - No additional post-hoc prefix analysis is authorized without a new precommit and genuinely held-out question. Keep the laptop queue separate from the ZL3a source gate and never block Claude.
 
 - Claude's newest post-#108 comms propose a Davis-hand-within-Currier-A split as an optional confirmatory sidequest. It was not run here; require a separate dated precommit and an origin check before any execution. The primary decision gate remains the exact ZL3a source and supplement.
+
+## 2026-11-18 03:04 ET — cycle #110 source-reference clarification
+
+- Re-read Turenne's 37-page arXiv PDF (arXiv:2609.20835). Reference [48] explicitly gives the exact ZL3a file URL: https://www.voynich.nu/data/sta/ZL3a.txt. The accessible PDF describes a separate 51-page supplementary PDF but supplies no separate URL in the copy inspected. The ZL3a URL is identified, not acquired: web retrieval did not expose its bytes, so no SHA-256 or source-reading run is claimed. Do not substitute ZL3a-n or another mirror.
+- J11 remains Priority 1, exact-pinned and QUEUED / NOT RUN with the existing seven repository pins, external commit, command, seeds, resource caps, checkpoints, expected outputs and one clean-checkout retry. No authenticated laptop endpoint, dispatch, output, receipt or retry exists. Keep J11 separate from the ZL3a source-reading gate.
