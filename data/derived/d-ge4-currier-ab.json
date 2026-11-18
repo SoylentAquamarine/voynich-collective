@@ -1,0 +1,186 @@
+{
+ "precommit": "logs/2026-11-18-currier-ab-ge4-selfreview.md",
+ "seed": 20261122,
+ "reps": 2000,
+ "inputs": {
+  "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+  "RF1b-er": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2"
+ },
+ "meta": {
+  "lang_tag_counts_pages": {
+   "?": 30,
+   "A": 114,
+   "B": 83
+  },
+  "ZL3b": {
+   "rows": 4130,
+   "rows_dropped_no_AB": 95
+  },
+  "RF1b-er": {
+   "rows": 4130,
+   "rows_dropped_no_AB": 95
+  }
+ },
+ "cells": {
+  "ZL3b|eva|A": {
+   "n_rows": 1557,
+   "n_pages": 114,
+   "obs_D_total": 1873,
+   "ge4": {
+    "obs": 109,
+    "null_mean": 69.9405,
+    "ratio": 1.5584675545642368,
+    "z": 4.94800944739361,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.016,
+    "L2": 1.008,
+    "L3": 1.205,
+    "L4+": 1.558
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|atomic|A": {
+   "n_rows": 1557,
+   "n_pages": 114,
+   "obs_D_total": 1536,
+   "ge4": {
+    "obs": 109,
+    "null_mean": 70.2725,
+    "ratio": 1.5511046284108294,
+    "z": 4.8971079531766675,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.043,
+    "L2": 1.007,
+    "L3": 1.208,
+    "L4+": 1.551
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|eva|B": {
+   "n_rows": 2478,
+   "n_pages": 83,
+   "obs_D_total": 3431,
+   "ge4": {
+    "obs": 274,
+    "null_mean": 194.616,
+    "ratio": 1.4079006864800427,
+    "z": 5.9270425749051565,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.051,
+    "L2": 0.986,
+    "L3": 0.941,
+    "L4+": 1.408
+   },
+   "replicated": true,
+   "underpowered": false
+  },
+  "ZL3b|atomic|B": {
+   "n_rows": 2478,
+   "n_pages": 83,
+   "obs_D_total": 3249,
+   "ge4": {
+    "obs": 274,
+    "null_mean": 194.1595,
+    "ratio": 1.4112108858953591,
+    "z": 6.20537110413015,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.043,
+    "L2": 0.985,
+    "L3": 0.942,
+    "L4+": 1.411
+   },
+   "replicated": true,
+   "underpowered": false
+  },
+  "RF1b-er|eva|A": {
+   "n_rows": 1557,
+   "n_pages": 114,
+   "obs_D_total": 1907,
+   "ge4": {
+    "obs": 108,
+    "null_mean": 74.1615,
+    "ratio": 1.4562812240852734,
+    "z": 4.160776169419883,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.015,
+    "L2": 1.027,
+    "L3": 1.15,
+    "L4+": 1.456
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|A": {
+   "n_rows": 1557,
+   "n_pages": 114,
+   "obs_D_total": 1515,
+   "ge4": {
+    "obs": 108,
+    "null_mean": 73.931,
+    "ratio": 1.4608215768757356,
+    "z": 4.059913738648577,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.041,
+    "L2": 1.025,
+    "L3": 1.15,
+    "L4+": 1.461
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|eva|B": {
+   "n_rows": 2478,
+   "n_pages": 83,
+   "obs_D_total": 3424,
+   "ge4": {
+    "obs": 266,
+    "null_mean": 195.315,
+    "ratio": 1.3619025676471341,
+    "z": 5.160262021055676,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.058,
+    "L2": 0.988,
+    "L3": 0.954,
+    "L4+": 1.362
+   },
+   "replicated": true,
+   "underpowered": false
+  },
+  "RF1b-er|atomic|B": {
+   "n_rows": 2478,
+   "n_pages": 83,
+   "obs_D_total": 3233,
+   "ge4": {
+    "obs": 266,
+    "null_mean": 195.375,
+    "ratio": 1.361484325015995,
+    "z": 5.390288967050347,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.047,
+    "L2": 0.99,
+    "L3": 0.956,
+    "L4+": 1.361
+   },
+   "replicated": true,
+   "underpowered": false
+  }
+ }
+}
