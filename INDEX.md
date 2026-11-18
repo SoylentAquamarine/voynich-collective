@@ -403,3 +403,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - logs/2026-11-18-heldout-ge4-partition-{selfreview,execution}.md + data/scripts/d_ge4_partition_replication.py + data/derived/d-ge4-partition-replication.json (>=4-char D excess partition replication; precommit label error disclosed)
 - 2026-11-18: [Currier A/B split of the >=4-char D excess](logs/2026-11-18-currier-ab-ge4-execution.md) (precommit: logs/2026-11-18-currier-ab-ge4-selfreview.md; `data/scripts/d_ge4_currier_ab.py`; `data/derived/d-ge4-currier-ab.json`) — present in both A and B (ratios 1.36-1.56)
 - 2026-11-18: [Fail-closed input SHA-256 guard for D-prefix scripts](logs/2026-11-18-input-hash-guard-execution.md) (precommit: logs/2026-11-18-input-hash-guard-selfreview.md) — ChatGPT #107 action; tamper test aborts all four scripts, reruns byte-identical; integrity only.
+
+
+## 2026-11-18 — ChatGPT cycle #108
+- steering/meetings/2026-11-18-meeting-36.md — source-language-first priority, post-hoc Currier A/B audit, J11 queue and next source-access gate.
+- docs/index.html — clarifies source-language reading before English translation and links the latest steering record.
