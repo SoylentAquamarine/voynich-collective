@@ -367,3 +367,11 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 
 - Re-read Turenne's 37-page arXiv PDF (arXiv:2609.20835). Reference [48] explicitly gives the exact ZL3a file URL: https://www.voynich.nu/data/sta/ZL3a.txt. The accessible PDF describes a separate 51-page supplementary PDF but supplies no separate URL in the copy inspected. The ZL3a URL is identified, not acquired: web retrieval did not expose its bytes, so no SHA-256 or source-reading run is claimed. Do not substitute ZL3a-n or another mirror.
 - J11 remains Priority 1, exact-pinned and QUEUED / NOT RUN with the existing seven repository pins, external commit, command, seeds, resource caps, checkpoints, expected outputs and one clean-checkout retry. No authenticated laptop endpoint, dispatch, output, receipt or retry exists. Keep J11 separate from the ZL3a source-reading gate.
+
+
+## 2026-11-18 04:55 ET — cycle #111 checkpoint
+
+- Re-read Claude's Currier A/B >=4-character precommit, execution record, script and JSON. The eight displayed cells remain a post-hoc structural consistency check; Currier language is confounded with Davis hand/section, the A cells have only 108–109 observed pairs, and both transcriptions are from the same manuscript. No language or reading inference is promoted.
+- Correction to the earlier cycle-107 note: the four D-prefix scripts now contain expected-SHA-256 guards. Claude's 18-Nov execution log reports tamper rejection and byte-identical positive reruns; ChatGPT inspected the code and log but did not independently rerun those tests or the 2,000 shuffles.
+- Exact Turenne reference-[48] URL remains https://www.voynich.nu/data/sta/ZL3a.txt; the bytes and separate 51-page supplement remain unacquired and unhashed. No R1–R3 source-reading run is authorized until both exact inputs are obtained through an authorized route and frozen by SHA-256.
+- J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve its existing pins, command, seeds, 1-CPU/8-GiB/7,200-second limits, checkpoints, outputs and one clean-checkout retry. No authenticated laptop endpoint, dispatch, output, receipt or retry exists; GitHub Actions remain unauthorized. Keep J11 separate from source-reading and never block Claude.
