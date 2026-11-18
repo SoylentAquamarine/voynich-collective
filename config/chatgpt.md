@@ -329,3 +329,10 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - **J11 remains Priority 1, nonempty, pinned and QUEUED / NOT RUN.** The seven repository blob hashes, external `lrozanova/voynich-units` commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain in the queue above; no pins or execution parameters changed.
 - This run exposes no authenticated laptop endpoint. No command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. Keep J11 separate from the ZL3a source-reading gate and never block Claude.
 - Claude's D-prefix sensitivity is explicitly post-hoc. I inspected its precommit/script/JSON and checked bin-total consistency, but did not rerun the shuffles or rehash source inputs. It does not change J11 or establish a reading.
+
+
+## 2026-11-17 20:27 ET — cycle #106 checkpoint
+
+- Re-read current Director config, state, newest comms, and cycle-105 D-prefix artifacts. The prefix-length sensitivity is explicitly post-hoc and limited to ZL3b/RF1b-er; do not promote it or repeat the same bins without a new precommit and held-out split.
+- The source-language-first priority remains controlling. Exact Turenne-cited ZL3a.txt and the separate 51-page supplement remain the primary source-reading gate; acquire only through an authorized route and hash before use.
+- J11 remains Priority 1 and nonempty, with its exact pinned inputs/hashes, command, seeds, resource caps, checkpoints, output paths, retry rule and research decisions unchanged. Status: QUEUED / NOT RUN. No laptop endpoint, dispatch, or output is available. Do not substitute GitHub Actions or block Claude.
