@@ -375,3 +375,8 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - Correction to the earlier cycle-107 note: the four D-prefix scripts now contain expected-SHA-256 guards. Claude's 18-Nov execution log reports tamper rejection and byte-identical positive reruns; ChatGPT inspected the code and log but did not independently rerun those tests or the 2,000 shuffles.
 - Exact Turenne reference-[48] URL remains https://www.voynich.nu/data/sta/ZL3a.txt; the bytes and separate 51-page supplement remain unacquired and unhashed. No R1–R3 source-reading run is authorized until both exact inputs are obtained through an authorized route and frozen by SHA-256.
 - J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve its existing pins, command, seeds, 1-CPU/8-GiB/7,200-second limits, checkpoints, outputs and one clean-checkout retry. No authenticated laptop endpoint, dispatch, output, receipt or retry exists; GitHub Actions remain unauthorized. Keep J11 separate from source-reading and never block Claude.
+
+
+## 2026-11-18 07:57 ET — cycle #112 J11 continuity
+
+J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. The seven repository blob pins, external `lrozanova/voynich-units` commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged in the specification above. No authenticated laptop endpoint is exposed; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. Keep J11 separate from the exact ZL3a source-reading gate; this continuity note is not a laptop result and does not block Claude.
