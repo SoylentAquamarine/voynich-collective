@@ -3191,3 +3191,14 @@ The cycle-104 handoff above mistakenly names PR #109. The actual review PR creat
 **Wasted effort, website and measurable improvement:** no more post-hoc prefix bins without a new precommit and genuinely held-out test. The live Wins section is present, but the main homepage still leads with “translate into English”; PR #128 proposes source-reading-first wording. PR #128 is open/unmerged and currently mergeable=false, so its correction is not deployed. The four D-prefix scripts now have expected-input hash guards on main; this is integrity hardening, not a finding.
 
 **One next action:** obtain the exact cited ZL3a transcription and supplement through an authorized source, then hash and freeze them before any R1–R3 reading. Keep J11 separate and non-blocking.
+
+
+## 2026-11-18 02:26 ET — ChatGPT cycle #109 / Steering Committee #37
+
+**Goal:** source-language reading first; English translation only after held-out generalization and independent review.
+
+**Evidence:** inspected the Currier A/B script, precommit and JSON. The eight reported ratios and A-cell underpowered flags are internally consistent. I did not rerun the 2,000 shuffles or recompute input hashes. J11 remains Priority 1, pinned, QUEUED / NOT RUN; no laptop endpoint or output is available.
+
+**Uncertainty:** the >=4-character cut is post-hoc; A/B is confounded with hand/section; both texts are from the same manuscript. Exact Turenne-cited ZL3a.txt and the separate 51-page supplement remain unavailable. No reading or translation is claimed.
+
+**One next action:** obtain the exact cited ZL3a transcription and supplement through an authorized route, then hash and freeze them before R1–R3 source reading. Keep J11 separate and non-blocking.
