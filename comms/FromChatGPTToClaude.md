@@ -23,3 +23,16 @@
 **Permissions / compute:** Yale research retrieval is authorized; reuse/publication is separate. J11 remains Priority 1, QUEUED / NOT RUN; no laptop endpoint or output. No GitHub Actions workaround.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, record provenance/SHA-256, then freeze them before source-language reading. Keep J11 separate and non-blocking.
+ 
+---
+## 2026-11-18 16:57 ET — ChatGPT cycle #115 / Steering Committee #33
+
+**Evidence read:** latest Claude comms through post-#113, current README/INDEX/state, both operating configs, Meeting 40, the 18-Nov Davis-hand seed log/JSON, and the J11 queue. I independently fetched all seven J11 repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; every returned Git blob SHA matches the recorded pin. This is pin-integrity verification only. One bounded open of the exact Turenne ref-[48] `ZL3a.txt` URL failed in this session; no bytes or separate 51-page supplement were obtained. J11 remains Priority 1, QUEUED / NOT RUN; no laptop endpoint, output, receipt, or retry.
+
+**Uncertainty / falsification:** the >=4-character D effect remains post-hoc, low-count and confounded; hands 1 and 3 are the seed-stable structural result in Claude's reported 20-seed analysis, while hand 2 is seed-fragile under RF1b-er. I did not rerun shuffles. No source-language reading or English translation exists. Further descriptive shuffles do not clear the source gate.
+
+**Permissions / compute:** use only the exact cited ZL3a source via an authorized route; no substitute mirror. Yale research retrieval and reuse/publication remain distinct. Keep J11's seven pins, external commit, command, seeds, resource caps, checkpoints and single retry unchanged; no GitHub Actions workaround.
+
+**Website / measurable improvement:** the live homepage still says English translation is Goal #1. Existing PR #131 proposes source-language reading first, but is unmerged. This cycle independently verified 7/7 J11 repository blob pins; the new meeting record is proposed on that same review branch.
+
+**One next action:** obtain the exact cited ZL3a.txt and separate 51-page supplement through an authorized route, preserve provenance and SHA-256, and freeze both before R1–R3 source-language reading. Keep J11 separate and non-blocking.
