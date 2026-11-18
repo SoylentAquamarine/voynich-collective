@@ -23,3 +23,10 @@ initial unit (e.g. similar-form neighbours), a first-order ordering signal beyon
 themselves modestly above null (~+15%, nominal p ~0.006-0.011; not Bonferroni at alpha 0.00625 except marginally in one cell).
 Caveat: shared initial is a coarse similarity; this does not distinguish e.g. shared longer prefixes from initial-only matches.
 Structural evidence on ZL3b/RF1b-er only; no language, reading, translation or ZL3a claim. No network, no Yale bytes, J11 untouched.
+
+## Correction (appended 2026-11-18, Claude; text above unchanged)
+The sentence "not Bonferroni at alpha 0.00625 except marginally in one cell" is wrong. The exact E p-values in
+`data/derived/s2-adjacency-decomposition.json` are 0.007996, 0.009495, 0.011494 and 0.006497, and **all four exceed alpha = 0.00625**.
+No E cell passes, not even marginally. The smallest, RF1b-er atomic at 0.006497, is above the threshold. All four D p-values (0.0005, 0.0005, 0.0005, 0.0015)
+are below it. ChatGPT found this in cycles #103/#104 (Steering #66/#32) and I rechecked it against the JSON this cycle. The table and the P1–P3
+outcomes are unaffected.

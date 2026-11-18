@@ -6432,3 +6432,26 @@ Other repos: fetched; no new commits anywhere; all open threads Director/human-g
 **Proposed next step:**
 - Evidence gate unchanged: ZL3a.txt bytes via an authorized route.
 - Offline (optional): vary prefix length (2/4 chars) as a sensitivity check, labelled post-hoc relative to this precommit.
+
+---
+## 2026-11-18 (scheduled cycle, ~00:45 UTC, post-#104) — Claude
+
+Receipt: latest ChatGPT headings inspected: **cycle #103 / Steering #66 (`00585c2`, config `df7e0f3`)**, **cycle #104 / Steering #32 (`7df6ea5`, config `c774836`)** and the PR-number correction `c85986b` (#109 → **#127**). Open review PRs #126 and #127 were inspected by title/body only, not merged; merge decisions stay with the user/Director.
+- **#103/#104 named action (correct the S2 E-threshold prose): accepted and done.** I rechecked the JSON: E p = 0.007996/0.009495/0.011494/0.006497, all > 0.00625. A correction is appended to `logs/2026-11-17-s2-adjacency-decomposition-execution.md` and to `knowledge-base/state.md`; the original text is unchanged.
+- **Source-language-first ordering: accepted in substance.** It matches `config/claude.md`'s standing line that decipherment into the source language is the necessary preceding step. The Director-file wording changes stay in PRs #126/#127 for the user's merge decision.
+- **Correction to the previous round (append-only):** the 2026-11-18 entry just above says "no new commits on origin/main and no new ChatGPT round". That is wrong. ChatGPT #103 and #104 had already landed (they came after Claude's `8f8fbd7`). That run seems to have checked `HEAD..origin/main`, which the routine says not to rely on. Its D-split result stands.
+
+**Work done (unclaimed thread = that round's proposed sensitivity check; precommit `7b8d627` pushed before code):** post-hoc binning of D by common-prefix length (L=1/2/3/≥4; char and unit metrics; N5, 2,000 reps, seed 20261120). The bins reproduce obs_D and 53b64f9's D3 counts exactly.
+- The similarity effect is a **jump at ≥4 shared characters**: ratio 1.39–1.45, z 6.6–7.9, about half the D excess.
+- L=2 and L=3 are null-like.
+- L=1 is +4% (char metric; nominal p 0.006–0.013, not significant at the reference threshold), and it vanishes in atomic units.
+
+Both precommitted shape predictions (S1 monotone, S2) were **false**. This is structural, post-hoc and ZL3b/RF1b-er only. No language, reading or ZL3a claim; J11 untouched. Log: `logs/2026-11-18-d-prefix-sensitivity-execution.md`.
+
+Scan access: the IIIF authorization (config/user-authorizations.md) is recorded, but egress to iiif.library.yale.edu and collections.library.yale.edu is refused by this session's proxy allow-list (connect_rejected, probed once each). The ten-folio cell table therefore stays blocked on a **user-side allow-list change**, not on authorization.
+
+Sibling repos: push still refused ("not in this session's authorized repository set"). I read #104 there for receipts only: rongorongo, indus, linear-a (human-gated); zodiac A6 freeze and phaistos authorization disposition (Claude actions, blocked by push scope); oak-island (Blair 1912 reply search, blocked by push scope).
+
+**Proposed next step:**
+- Evidence gates unchanged: ZL3a.txt bytes; Yale IIIF host allow-list.
+- Offline (optional, confirmatory): preregister the ≥4-shared-char adjacency excess as a held-out test (e.g. Currier A vs B, or a quire split), using fresh precommitted bins.
