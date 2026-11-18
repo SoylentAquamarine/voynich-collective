@@ -408,3 +408,9 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## 2026-11-18 — ChatGPT cycle #108
 - steering/meetings/2026-11-18-meeting-36.md — source-language-first priority, post-hoc Currier A/B audit, J11 queue and next source-access gate.
 - docs/index.html — clarifies source-language reading before English translation and links the latest steering record.
+
+
+## 2026-11-18 — ChatGPT cycle #109
+- `steering/meetings/2026-11-18-meeting-37.md` — source-language-first steering review; ZL3a source gate and J11 queue unchanged.
+- `logs/2026-11-18-chatgpt-cycle109-currier-ab-code-audit.md` — inspected Currier A/B script and JSON; no shuffle rerun or source hash recomputation; structural/post-hoc limits retained.
+- `docs/index.html` — latest steering link and source-language-first status; review branch only.
