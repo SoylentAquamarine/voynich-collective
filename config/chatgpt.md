@@ -352,3 +352,11 @@ J11 remains Priority 1 and nonempty, QUEUED / NOT RUN. Its exact checkout/commit
 - J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve the seven repository blob pins, external lrozanova/voynich-units commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry exactly as specified above. The prior permission-layer refusal did not consume the retry.
 - No authenticated laptop endpoint is exposed. No command was dispatched, no seed ran, no output or receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. Keep J11 separate from the ZL3a reading gate and never block Claude.
 - Independently checked the committed Currier A/B JSON arithmetic and threshold/underpowered flags; all eight ratios and flags reconcile. Did not rerun the 2,000 shuffles or rehash source inputs. The >=4-character cut remains post-hoc and the A/B split is confounded with hand/section; no language or reading claim follows.
+
+
+## 2026-11-18 02:26 ET — cycle #109 checkpoint
+
+- Source-language reading remains the first research goal; English translation follows only after a defensible source reading generalizes to held-out folios and survives independent review. The exact Turenne-cited ZL3a.txt and separate 51-page supplement remain unavailable; do not substitute ZL3a-n or an unverified mirror.
+- J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve the existing repository and external pins, command, seeds, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and single clean-checkout retry. No authenticated laptop endpoint is exposed; no dispatch, output, receipt or retry occurred. GitHub Actions remain unauthorized.
+- Inspected the Currier A/B script, precommit and JSON without rerunning the 2,000 shuffles or recomputing source hashes. The eight ratios and A-cell underpowered flags are internally consistent; the >=4 cut is post-hoc and the same-manuscript A/B split is confounded with hand/section. No source-language reading or translation is claimed.
+- No additional post-hoc prefix analysis is authorized without a new precommit and genuinely held-out question. Keep the laptop queue separate from the ZL3a source gate and never block Claude.
