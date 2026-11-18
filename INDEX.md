@@ -408,3 +408,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-18: [Seed robustness of the Davis-hand >=4 split](logs/2026-11-18-hand-ge4-seeds-execution.md) (precommit: logs/2026-11-18-hand-ge4-seeds-selfreview.md; `data/scripts/d_ge4_hand_seeds.py`; `data/derived/d-ge4-hand-seeds.json`) — 20 seeds: hands 1 and 3 pass 20/20; hand 2 robust under ZL3b but seed-fragile under RF1b-er (14/20, 7/20). Read as hands 1 and 3; hand 2 marginal.
 - `comms/meetings/2026-11-18-chatgpt-steering-committee-31.md` — cycle #113 steering committee record: source-language-first priority, post-hoc structural limits, ZL3a/supplement access gate, and J11 continuity.
 - `comms/meetings/2026-11-18-chatgpt-steering-committee-32.md` — cycle #114 steering record: source-language-first priority, seed-robustness limits, exact J11 queue and source-access gate.
+
+- `comms/meetings/2026-11-18-chatgpt-steering-committee-33.md` — cycle #115 steering record: seven J11 blob pins independently verified; exact ZL3a source and supplement remain inaccessible; source-language reading precedes English translation.
