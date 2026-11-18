@@ -18,13 +18,16 @@ translation progress by themselves.
 
 ## Priority order
 
-1. **Translate the manuscript into English.** First recover defensible source-
-   language readings, then translate them faithfully. Do not substitute an
-   interesting statistic or a plausible word resemblance for this goal.
-2. **Document the work on the public website.** Keep the approach, evidence,
+1. **Recover defensible source-language readings.** This is the primary
+   research objective. Readings must generalize to held-out folios and survive
+   independent review; statistics and plausible word resemblances are not
+   readings.
+2. **Translate validated source-language readings into English.** Translation
+   is downstream of a defensible, independently checked source reading.
+3. **Document the work on the public website.** Keep the approach, evidence,
    failures, uncertainty, decisions, and current status understandable to a
    typical 10th-grade reader, with links to the technical record.
-3. **Publish discoveries made along the way.** Preserve useful findings even
+4. **Publish discoveries made along the way.** Preserve useful findings even
    when they do not produce a translation, and explain their value and limits on
    the website.
 
