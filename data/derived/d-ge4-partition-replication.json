@@ -1,0 +1,343 @@
+{
+ "precommit": "logs/2026-11-18-heldout-ge4-partition-selfreview.md",
+ "seed": 20261121,
+ "reps": 2000,
+ "inputs": {
+  "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+  "RF1b-er": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2"
+ },
+ "meta": {
+  "ZL3b": {
+   "tags": [
+    "A",
+    "B",
+    "C",
+    "H",
+    "P",
+    "S",
+    "T"
+   ],
+   "n_unknown_tag": 3329,
+   "n_pages": 207
+  },
+  "RF1b-er": {
+   "tags": [
+    "A",
+    "B",
+    "C",
+    "H",
+    "P",
+    "S",
+    "T"
+   ],
+   "n_unknown_tag": 3329,
+   "n_pages": 207
+  }
+ },
+ "cells": {
+  "ZL3b|eva|P1|A": {
+   "n_rows": 56,
+   "obs_D_total": 55,
+   "ge4": {
+    "obs": 1,
+    "null_mean": 0.9025,
+    "ratio": 1.10803324099723,
+    "z": 0.10955790993454959,
+    "p": 0.6166916541729135
+   },
+   "bins": {
+    "L1": 1.422,
+    "L2": 1.629,
+    "L3": 0.291,
+    "L4+": 1.108
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "ZL3b|atomic|P1|A": {
+   "n_rows": 56,
+   "obs_D_total": 51,
+   "ge4": {
+    "obs": 1,
+    "null_mean": 0.902,
+    "ratio": 1.1086474501108647,
+    "z": 0.10947185833284664,
+    "p": 0.6151924037981009
+   },
+   "bins": {
+    "L1": 1.504,
+    "L2": 1.618,
+    "L3": 0.293,
+    "L4+": 1.109
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "ZL3b|eva|P1|B": {
+   "n_rows": 745,
+   "obs_D_total": 903,
+   "ge4": {
+    "obs": 87,
+    "null_mean": 69.06,
+    "ratio": 1.259774109470026,
+    "z": 2.300559704568463,
+    "p": 0.014992503748125937
+   },
+   "bins": {
+    "L1": 1.032,
+    "L2": 0.808,
+    "L3": 0.777,
+    "L4+": 1.26
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "ZL3b|atomic|P1|B": {
+   "n_rows": 745,
+   "obs_D_total": 831,
+   "ge4": {
+    "obs": 87,
+    "null_mean": 68.9535,
+    "ratio": 1.2617198546846786,
+    "z": 2.366617480866705,
+    "p": 0.01199400299850075
+   },
+   "bins": {
+    "L1": 1.027,
+    "L2": 0.808,
+    "L3": 0.778,
+    "L4+": 1.262
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|eva|P2|early": {
+   "n_rows": 1310,
+   "obs_D_total": 1503,
+   "ge4": {
+    "obs": 62,
+    "null_mean": 43.079,
+    "ratio": 1.4392163234986883,
+    "z": 2.9314365385094563,
+    "p": 0.004497751124437781
+   },
+   "bins": {
+    "L1": 1.0,
+    "L2": 1.015,
+    "L3": 1.205,
+    "L4+": 1.439
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|atomic|P2|early": {
+   "n_rows": 1310,
+   "obs_D_total": 1265,
+   "ge4": {
+    "obs": 62,
+    "null_mean": 43.1075,
+    "ratio": 1.4382648031085077,
+    "z": 2.972822204402799,
+    "p": 0.0034982508745627187
+   },
+   "bins": {
+    "L1": 1.025,
+    "L2": 1.018,
+    "L3": 1.204,
+    "L4+": 1.438
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|eva|P2|late": {
+   "n_rows": 2820,
+   "obs_D_total": 3885,
+   "ge4": {
+    "obs": 324,
+    "null_mean": 223.226,
+    "ratio": 1.4514438282278945,
+    "z": 6.951039917113325,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.058,
+    "L2": 0.984,
+    "L3": 0.964,
+    "L4+": 1.451
+   },
+   "replicated": true,
+   "underpowered": false
+  },
+  "ZL3b|atomic|P2|late": {
+   "n_rows": 2820,
+   "obs_D_total": 3598,
+   "ge4": {
+    "obs": 324,
+    "null_mean": 223.0555,
+    "ratio": 1.4525532883071701,
+    "z": 7.396731610245093,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.054,
+    "L2": 0.983,
+    "L3": 0.963,
+    "L4+": 1.453
+   },
+   "replicated": true,
+   "underpowered": false
+  },
+  "RF1b-er|eva|P1|A": {
+   "n_rows": 56,
+   "obs_D_total": 53,
+   "ge4": {
+    "obs": 1,
+    "null_mean": 0.7455,
+    "ratio": 1.341381623071764,
+    "z": 0.3096002243870565,
+    "p": 0.5407296351824088
+   },
+   "bins": {
+    "L1": 1.351,
+    "L2": 1.567,
+    "L3": 0.265,
+    "L4+": 1.341
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|P1|A": {
+   "n_rows": 56,
+   "obs_D_total": 48,
+   "ge4": {
+    "obs": 1,
+    "null_mean": 0.77,
+    "ratio": 1.2987012987012987,
+    "z": 0.28974976753957854,
+    "p": 0.5702148925537232
+   },
+   "bins": {
+    "L1": 1.398,
+    "L2": 1.576,
+    "L3": 0.266,
+    "L4+": 1.299
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|eva|P1|B": {
+   "n_rows": 745,
+   "obs_D_total": 904,
+   "ge4": {
+    "obs": 84,
+    "null_mean": 69.1785,
+    "ratio": 1.2142500921529087,
+    "z": 1.826204971902875,
+    "p": 0.047476261869065464
+   },
+   "bins": {
+    "L1": 1.062,
+    "L2": 0.808,
+    "L3": 0.766,
+    "L4+": 1.214
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|P1|B": {
+   "n_rows": 745,
+   "obs_D_total": 823,
+   "ge4": {
+    "obs": 84,
+    "null_mean": 69.418,
+    "ratio": 1.2100607911492696,
+    "z": 1.861271601107945,
+    "p": 0.03948025987006497
+   },
+   "bins": {
+    "L1": 1.038,
+    "L2": 0.807,
+    "L3": 0.768,
+    "L4+": 1.21
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|eva|P2|early": {
+   "n_rows": 1310,
+   "obs_D_total": 1507,
+   "ge4": {
+    "obs": 63,
+    "null_mean": 46.102,
+    "ratio": 1.3665350744002431,
+    "z": 2.5260712666362513,
+    "p": 0.009495252373813094
+   },
+   "bins": {
+    "L1": 0.988,
+    "L2": 1.022,
+    "L3": 1.162,
+    "L4+": 1.367
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|P2|early": {
+   "n_rows": 1310,
+   "obs_D_total": 1234,
+   "ge4": {
+    "obs": 63,
+    "null_mean": 46.1485,
+    "ratio": 1.3651581308168197,
+    "z": 2.6017471543416058,
+    "p": 0.004497751124437781
+   },
+   "bins": {
+    "L1": 1.012,
+    "L2": 1.015,
+    "L3": 1.161,
+    "L4+": 1.365
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|eva|P2|late": {
+   "n_rows": 2820,
+   "obs_D_total": 3907,
+   "ge4": {
+    "obs": 314,
+    "null_mean": 224.777,
+    "ratio": 1.3969400783888033,
+    "z": 6.150250299831647,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.067,
+    "L2": 0.994,
+    "L3": 0.966,
+    "L4+": 1.397
+   },
+   "replicated": true,
+   "underpowered": false
+  },
+  "RF1b-er|atomic|P2|late": {
+   "n_rows": 2820,
+   "obs_D_total": 3589,
+   "ge4": {
+    "obs": 314,
+    "null_mean": 224.903,
+    "ratio": 1.3961574545470714,
+    "z": 6.176747071114832,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.059,
+    "L2": 0.994,
+    "L3": 0.966,
+    "L4+": 1.396
+   },
+   "replicated": true,
+   "underpowered": false
+  }
+ }
+}
