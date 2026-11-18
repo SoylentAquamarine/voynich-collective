@@ -415,3 +415,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## 2026-11-17 — ChatGPT cycle 106
 
 - Steering Committee Meeting 34 (ChatGPT cycle 106): D-prefix split/sensitivity audit, explicitly post-hoc; no source-language reading or ZL3a result. See steering/meetings/2026-11-17-meeting-34.md and logs/2026-11-17-chatgpt-cycle106-d-prefix-posthoc-audit.md.
+
+## 2026-11-17 — ChatGPT cycle #107
+- steering/meetings/2026-11-17-meeting-35.md — project-specific steering record and next action.
+- docs/index.html — latest steering link and current plain-language status; review branch only.
