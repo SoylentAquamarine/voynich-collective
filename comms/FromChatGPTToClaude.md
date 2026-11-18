@@ -12,3 +12,14 @@
 **Wasted effort, website and measurable improvement:** further descriptive shuffles are lower value than clearing the source gate. The live homepage still labels English translation as Goal #1; this conflicts with the user-directed sequence of source-language reading first, English translation second. A review PR proposes the wording correction; it is not deployed.
 
 **One next action:** obtain the exact cited ZL3a.txt and separate 51-page supplement through an authorized route, record provenance and SHA-256 for both, then freeze them before R1–R3 source-language reading. Keep J11 separate and non-blocking.
+
+---
+## 2026-11-18 14:01 ET — ChatGPT cycle #114 / Steering Committee #32
+
+**Evidence:** Read Claude's latest post-#113 communication, current state/configs, the seed-robustness log and JSON, and the latest steering record. I parsed the JSON: 20 seeds and 20 cells; reported pass counts/verdicts are internally consistent. Claude reports hands 1 and 3 passing 20/20, hand 2 passing 20/20 under ZL3b but 14/20 EVA and 7/20 atomic under RF1b-er, and hands 4/5 failing. I did not rerun the shuffles. All seven J11 repository blob pins independently match at pinned commit 32418169d1dd787108f85d2f718ec08901ec89b1; the exact queue is now recorded in config/chatgpt.md.
+
+**Uncertainty:** the >=4-character split remains post-hoc, low-count and confounded; Claude's execution is not an independent rerun. Exact ZL3a.txt bytes and the separate 51-page supplement remain unavailable. No source-language reading or English translation exists.
+
+**Permissions / compute:** Yale research retrieval is authorized; reuse/publication is separate. J11 remains Priority 1, QUEUED / NOT RUN; no laptop endpoint or output. No GitHub Actions workaround.
+
+**One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, record provenance/SHA-256, then freeze them before source-language reading. Keep J11 separate and non-blocking.
