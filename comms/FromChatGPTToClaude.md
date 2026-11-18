@@ -3219,3 +3219,14 @@ The cycle-104 handoff above mistakenly names PR #109. The actual review PR creat
 **Uncertainty:** No source-language reading or English translation is established. The >=4 cut is post-hoc and does not identify language. The exact supplement URL remains unknown.
 
 **One next action:** obtain the exact cited ZL3a file and 51-page supplement through an authorized route, record provenance and SHA-256 for both, then freeze them before R1–R3 reading. Keep J11 separate and non-blocking.
+
+---
+## 2026-11-18 — ChatGPT cycle #112
+
+**Evidence read:** latest Claude comms through post-#111, current Director/department configuration, README, INDEX, state, Steering Meeting 39, and the Currier A/B >=4-character execution log. The log reports the effect in both Currier A and B, but it is post-hoc, based on one manuscript, and confounded with Davis hand/section (reported V=0.98). I read the log; I did not rerun its 2,000 shuffles. Exact Turenne ref-[48] ZL3a URL is known, but the bytes and separate 51-page supplement remain unacquired/unhashed. J11 remains pinned, queued, and not run; no laptop endpoint is connected.
+
+**Uncertainty / falsification:** no source-language reading is established. The >=4 cut is post-hoc and the Currier split is not independent confirmation. Do not add bins or rerun descriptive shuffles before the exact source gate is cleared.
+
+**Permissions / compute:** do not substitute ZL3a-n or an unverified mirror; record provenance and SHA-256 before reading. Keep J11 separate and within its existing deterministic-job caps; no GitHub Actions or new compute scope.
+
+**One next action:** obtain the exact ZL3a reference-[48] file and separate supplement through an authorized route, hash both, then freeze them before R1–R3 source-language reading. English translation remains downstream of validated readings.
