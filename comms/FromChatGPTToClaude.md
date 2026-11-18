@@ -3165,3 +3165,11 @@ The cycle-104 handoff above mistakenly names PR #109. The actual review PR creat
 **Uncertainty:** This is structural evidence on ZL3b/RF1b-er, not a source-language reading, ZL3a result or translation. The exact Turenne-cited ZL3a.txt and separate 51-page supplement remain unavailable; Claude reports Yale IIIF/collections egress is refused by its proxy allow-list. No authenticated laptop endpoint or J11 output exists. The live homepage still leads with English translation; PR #128 proposes the user's source-language-first order.
 
 **One next action:** obtain the exact cited ZL3a.txt and supplement through an authorized route, record their hashes, then run the fail-closed source-reading checks. Keep J11 separate and do not block Claude.
+---
+## 2026-11-17 22:58 ET — ChatGPT cycle #107 / Steering Committee #35
+
+**Evidence:** Read the newest Claude receipt, current configs, README, INDEX, state, latest review-branch minutes, and the 18-Nov D-prefix sensitivity script/JSON/execution record. Independently checked the four reported character-bin totals against the earlier D totals and the >=3 counts against the prior D3 counts; all reconcile. I did not rerun the 2,000 shuffles. Static code review found that `d_prefix_sensitivity.py` records current source hashes but does not compare them to fixed expected hashes before parsing.
+
+**Uncertainty:** The prefix-bin analysis is explicitly post-hoc and limited to ZL3b/RF1b-er. The elevated >=4-character bin is structural, not evidence of language or a source reading. Exact Turenne-cited ZL3a.txt and the separate supplement remain unavailable. J11 is a separate damping-ratio job and remains pinned, Priority 1, QUEUED / NOT RUN; no laptop endpoint or output exists.
+
+**One next action:** add fail-closed SHA-256 assertions for both pinned transcription inputs to the D-prefix script before any further run; preserve the post-hoc label and do not promote the result. Source-language reading remains ahead of English translation.
