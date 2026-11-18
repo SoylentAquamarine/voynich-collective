@@ -1,0 +1,429 @@
+{
+ "precommit": "logs/2026-11-18-hand-ge4-selfreview.md",
+ "seed": 20261123,
+ "reps": 2000,
+ "inputs": {
+  "ZL3b": "bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc",
+  "RF1b-er": "eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2"
+ },
+ "meta": {
+  "hand_tag_counts_pages": {
+   "1": 113,
+   "2": 46,
+   "3": 33,
+   "4": 27,
+   "5": 7,
+   "?": 1
+  },
+  "ZL3b": {
+   "rows": 4130,
+   "rows_dropped_no_hand": 45
+  },
+  "RF1b-er": {
+   "rows": 4130,
+   "rows_dropped_no_hand": 45
+  }
+ },
+ "cells": {
+  "ZL3b|eva|1": {
+   "n_rows": 1477,
+   "n_pages": 112,
+   "obs_D_total": 1759,
+   "ge4": {
+    "obs": 97,
+    "null_mean": 63.569,
+    "ratio": 1.5259009894760025,
+    "z": 4.305522516742304,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.016,
+    "L2": 1.005,
+    "L3": 1.206,
+    "L4+": 1.526
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|atomic|1": {
+   "n_rows": 1477,
+   "n_pages": 112,
+   "obs_D_total": 1427,
+   "ge4": {
+    "obs": 97,
+    "null_mean": 63.379,
+    "ratio": 1.5304753940579687,
+    "z": 4.388687357110281,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.043,
+    "L2": 1.004,
+    "L3": 1.209,
+    "L4+": 1.53
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|eva|2": {
+   "n_rows": 1228,
+   "n_pages": 46,
+   "obs_D_total": 1526,
+   "ge4": {
+    "obs": 116,
+    "null_mean": 90.913,
+    "ratio": 1.2759451343592225,
+    "z": 2.800030854105704,
+    "p": 0.0029985007496251873
+   },
+   "bins": {
+    "L1": 0.997,
+    "L2": 0.913,
+    "L3": 0.8,
+    "L4+": 1.276
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|atomic|2": {
+   "n_rows": 1228,
+   "n_pages": 46,
+   "obs_D_total": 1417,
+   "ge4": {
+    "obs": 116,
+    "null_mean": 90.7145,
+    "ratio": 1.278737136841409,
+    "z": 2.7628735942683877,
+    "p": 0.005997001499250375
+   },
+   "bins": {
+    "L1": 0.987,
+    "L2": 0.913,
+    "L3": 0.803,
+    "L4+": 1.279
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|eva|3": {
+   "n_rows": 1186,
+   "n_pages": 31,
+   "obs_D_total": 1783,
+   "ge4": {
+    "obs": 154,
+    "null_mean": 99.5945,
+    "ratio": 1.546270125358328,
+    "z": 5.453323836614304,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.072,
+    "L2": 1.028,
+    "L3": 1.098,
+    "L4+": 1.546
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|atomic|3": {
+   "n_rows": 1186,
+   "n_pages": 31,
+   "obs_D_total": 1717,
+   "ge4": {
+    "obs": 154,
+    "null_mean": 99.3415,
+    "ratio": 1.550208120473317,
+    "z": 5.787326893982063,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.061,
+    "L2": 1.027,
+    "L3": 1.099,
+    "L4+": 1.55
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "ZL3b|eva|4": {
+   "n_rows": 100,
+   "n_pages": 10,
+   "obs_D_total": 92,
+   "ge4": {
+    "obs": 2,
+    "null_mean": 1.4305,
+    "ratio": 1.3981125480601186,
+    "z": 0.5145121036008086,
+    "p": 0.42478760619690153
+   },
+   "bins": {
+    "L1": 1.252,
+    "L2": 1.044,
+    "L3": 0.74,
+    "L4+": 1.398
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "ZL3b|atomic|4": {
+   "n_rows": 100,
+   "n_pages": 10,
+   "obs_D_total": 85,
+   "ge4": {
+    "obs": 2,
+    "null_mean": 1.456,
+    "ratio": 1.3736263736263736,
+    "z": 0.48442922504572045,
+    "p": 0.4312843578210895
+   },
+   "bins": {
+    "L1": 1.345,
+    "L2": 1.052,
+    "L3": 0.753,
+    "L4+": 1.374
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "ZL3b|eva|5": {
+   "n_rows": 94,
+   "n_pages": 7,
+   "obs_D_total": 143,
+   "ge4": {
+    "obs": 8,
+    "null_mean": 6.982,
+    "ratio": 1.1458034947006588,
+    "z": 0.4060750734202487,
+    "p": 0.4017991004497751
+   },
+   "bins": {
+    "L1": 1.191,
+    "L2": 1.254,
+    "L3": 1.419,
+    "L4+": 1.146
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "ZL3b|atomic|5": {
+   "n_rows": 94,
+   "n_pages": 7,
+   "obs_D_total": 133,
+   "ge4": {
+    "obs": 8,
+    "null_mean": 6.9675,
+    "ratio": 1.1481880157875852,
+    "z": 0.40231346365812976,
+    "p": 0.3953023488255872
+   },
+   "bins": {
+    "L1": 1.203,
+    "L2": 1.255,
+    "L3": 1.415,
+    "L4+": 1.148
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|eva|1": {
+   "n_rows": 1477,
+   "n_pages": 112,
+   "obs_D_total": 1792,
+   "ge4": {
+    "obs": 95,
+    "null_mean": 67.6945,
+    "ratio": 1.4033636410638972,
+    "z": 3.5014484951650937,
+    "p": 0.0014992503748125937
+   },
+   "bins": {
+    "L1": 1.015,
+    "L2": 1.021,
+    "L3": 1.152,
+    "L4+": 1.403
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|1": {
+   "n_rows": 1477,
+   "n_pages": 112,
+   "obs_D_total": 1405,
+   "ge4": {
+    "obs": 95,
+    "null_mean": 67.235,
+    "ratio": 1.4129545623559159,
+    "z": 3.504917095198537,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.042,
+    "L2": 1.015,
+    "L3": 1.151,
+    "L4+": 1.413
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|eva|2": {
+   "n_rows": 1228,
+   "n_pages": 46,
+   "obs_D_total": 1523,
+   "ge4": {
+    "obs": 113,
+    "null_mean": 91.449,
+    "ratio": 1.2356614069043947,
+    "z": 2.39074522053793,
+    "p": 0.01249375312343828
+   },
+   "bins": {
+    "L1": 1.019,
+    "L2": 0.902,
+    "L3": 0.804,
+    "L4+": 1.236
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|2": {
+   "n_rows": 1228,
+   "n_pages": 46,
+   "obs_D_total": 1402,
+   "ge4": {
+    "obs": 113,
+    "null_mean": 91.4605,
+    "ratio": 1.2355060381257483,
+    "z": 2.3683735491462357,
+    "p": 0.009495252373813094
+   },
+   "bins": {
+    "L1": 0.995,
+    "L2": 0.903,
+    "L3": 0.801,
+    "L4+": 1.236
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|eva|3": {
+   "n_rows": 1186,
+   "n_pages": 31,
+   "obs_D_total": 1787,
+   "ge4": {
+    "obs": 152,
+    "null_mean": 99.997,
+    "ratio": 1.520045601368041,
+    "z": 5.377734915651454,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.065,
+    "L2": 1.049,
+    "L3": 1.121,
+    "L4+": 1.52
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|3": {
+   "n_rows": 1186,
+   "n_pages": 31,
+   "obs_D_total": 1726,
+   "ge4": {
+    "obs": 152,
+    "null_mean": 99.6975,
+    "ratio": 1.5246119511522354,
+    "z": 5.5808586399992075,
+    "p": 0.0004997501249375312
+   },
+   "bins": {
+    "L1": 1.064,
+    "L2": 1.05,
+    "L3": 1.12,
+    "L4+": 1.525
+   },
+   "replicated": true,
+   "underpowered": true
+  },
+  "RF1b-er|eva|4": {
+   "n_rows": 100,
+   "n_pages": 10,
+   "obs_D_total": 87,
+   "ge4": {
+    "obs": 2,
+    "null_mean": 1.36,
+    "ratio": 1.4705882352941175,
+    "z": 0.572113108556289,
+    "p": 0.4027986006996502
+   },
+   "bins": {
+    "L1": 1.142,
+    "L2": 1.03,
+    "L3": 0.714,
+    "L4+": 1.471
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|4": {
+   "n_rows": 100,
+   "n_pages": 10,
+   "obs_D_total": 79,
+   "ge4": {
+    "obs": 2,
+    "null_mean": 1.3705,
+    "ratio": 1.459321415541773,
+    "z": 0.5670872584876384,
+    "p": 0.39930034982508744
+   },
+   "bins": {
+    "L1": 1.224,
+    "L2": 1.04,
+    "L3": 0.717,
+    "L4+": 1.459
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|eva|5": {
+   "n_rows": 94,
+   "n_pages": 7,
+   "obs_D_total": 142,
+   "ge4": {
+    "obs": 8,
+    "null_mean": 6.9775,
+    "ratio": 1.1465424579003942,
+    "z": 0.40289036158316005,
+    "p": 0.41179410294852575
+   },
+   "bins": {
+    "L1": 1.198,
+    "L2": 1.201,
+    "L3": 1.427,
+    "L4+": 1.147
+   },
+   "replicated": false,
+   "underpowered": true
+  },
+  "RF1b-er|atomic|5": {
+   "n_rows": 94,
+   "n_pages": 7,
+   "obs_D_total": 129,
+   "ge4": {
+    "obs": 8,
+    "null_mean": 6.9785,
+    "ratio": 1.1463781614960233,
+    "z": 0.41420354857359265,
+    "p": 0.39730134932533734
+   },
+   "bins": {
+    "L1": 1.168,
+    "L2": 1.213,
+    "L3": 1.44,
+    "L4+": 1.146
+   },
+   "replicated": false,
+   "underpowered": true
+  }
+ }
+}
