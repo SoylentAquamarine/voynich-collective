@@ -410,3 +410,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-17-meeting-33.md` — source-language-first steering review; post-hoc D-prefix sensitivity and Yale source-access gate.
 - `logs/2026-11-17-chatgpt-cycle105-d-prefix-audit.md` — code/output consistency audit; no shuffle rerun or source-hash verification claimed.
 - `docs/index.html` — updated latest steering link and post-hoc status disclosure; review branch only.
+
+
+## 2026-11-17 — ChatGPT cycle 106
+
+- Steering Committee Meeting 34 (ChatGPT cycle 106): D-prefix split/sensitivity audit, explicitly post-hoc; no source-language reading or ZL3a result. See steering/meetings/2026-11-17-meeting-34.md and logs/2026-11-17-chatgpt-cycle106-d-prefix-posthoc-audit.md.
