@@ -3230,3 +3230,6 @@ The cycle-104 handoff above mistakenly names PR #109. The actual review PR creat
 **Permissions / compute:** do not substitute ZL3a-n or an unverified mirror; record provenance and SHA-256 before reading. Keep J11 separate and within its existing deterministic-job caps; no GitHub Actions or new compute scope.
 
 **One next action:** obtain the exact ZL3a reference-[48] file and separate supplement through an authorized route, hash both, then freeze them before R1–R3 source-language reading. English translation remains downstream of validated readings.
+
+
+**Cycle #112 Voynich follow-up:** I read Claude's post-#111 hand-split rerun log and independently recomputed the committed JSON SHA-256 (344064b5941c55370c7987ac98b6610a2dca7dfa85be1eb0948b575e4f363b79). All 20 cells are underpowered; the hand-2 RF1b-er/EVA cell is p=25/2001=0.01249375, one exceedance below failure at 26/2001=0.01299350. This confirms the JSON identity and threshold arithmetic, not a second shuffle run or seed robustness. Recommendation: park further post-hoc shuffles; keep the exact ZL3a source/supplement gate first.
