@@ -5,3 +5,44 @@
 J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve the existing seven repository blob pins, external lrozanova/voynich-units commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry. No authenticated laptop endpoint is exposed; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. Keep J11 separate from the source-reading gate and never block Claude.
 
 The exact Turenne ref-[48] ZL3a URL is known, but this run's web reader still cannot retrieve its bytes; the separate 51-page supplement URL remains unidentified. No substitute transcription, mirror, or unverified source is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
+
+## Prioritized laptop queue — 24/7 when an authenticated laptop endpoint is connected
+
+### Priority 1 — J11: ten-seed damping anchors
+**Status:** QUEUED / NOT RUN. No laptop endpoint is currently exposed; no command, seed, output, receipt, or retry has been produced. GitHub Actions are not authorized. Do not route around the missing endpoint or run externally sourced code in another environment.
+
+**Pinned checkout**
+- Voynich repository commit: `32418169d1dd787108f85d2f718ec08901ec89b1` (Python 3.11+, `PYTHONHASHSEED=0`, disposable clean checkout).
+- External repository: `lrozanova/voynich-units`, commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`; clone/check out before execution, then no network.
+- Seven verified repository blob pins at the pinned Voynich commit:
+  1. `data/scripts/external_damping_ratio_ten_seed_anchors_check.py` — `937315f46aee4bf6ea3b1c117dd82268e7ed23f2`
+  2. `data/scripts/external_coupling_v2_section_aware_preregistered.py` — `eff4de3867872907a0497e5ffcf113cb26d8a16d`
+  3. `data/scripts/external_coupling_v2_section_varying_beta_check.py` — `9e0f9cfa7ea00f0b96d223d3a015f97a8cd07022`
+  4. `data/derived/external-coupling-v2-recalibrated-beta-check-summary.json` — `30f4aae62300deda5016fe8e322fc08b77e23435`
+  5. `data/derived/external-coupling-only-beta-curvature-check-summary.json` — `f00aad1691a00f02289aac930b2b74c07626cb3f`
+  6. `data/derived/external-coupling-v2-limit-point-full-pipeline-more-seeds-check-summary.json` — `c553cbd3d9464d5545dca0133157567387b234ac`
+  7. `data/derived/external-coupling-only-beta-limit-point-more-seeds-check-summary.json` — `f1fa5fd8481a1a37d68ea9053ceda2a793e3ada3`
+- All seven blob pins were fetched independently at the pinned repository commit during cycle #114 and matched exactly.
+
+**Exact command** (from the pinned Voynich checkout, with the external checkout at `../voynich-units`):
+```sh
+ulimit -v 8388608; ulimit -t 7200; taskset -c 0 python3 data/scripts/external_damping_ratio_ten_seed_anchors_check.py ../voynich-units
+```
+
+**Seeds, rule, and caps**
+- Cipher/postprocessor manifest seeds: 0–9.
+- Bootstrap: 10,000 paired resamples, RNG seed `20261104`.
+- Reproduction tolerance: `1e-9`.
+- Resolve the dip only if the 95% interval for ratio(0.4172) − ratio(0.48) excludes zero on the positive side.
+- One CPU, 8 GiB virtual memory, 7,200 CPU seconds; no network after both pinned checkouts exist.
+
+**Checkpoints and outputs**
+- Preserve stdout after every emitted `seed ...` line and at the reproduction-gate line.
+- Expected durable JSON: `data/derived/external-damping-ratio-ten-seed-anchors-check-summary.json`.
+- Also preserve stdout, stderr, wall/resource report, SHA-256 for all four outputs, and a receipt recording both commits and exit status.
+- The script writes its durable result only at completion.
+
+**Retry and research decision**
+- If interrupted before completion, retry once from seed 0 in a clean disposable checkout with the exact same pins, command, and seeds.
+- A second failure pauses J11; do not alter code/seeds or route around the permission layer.
+- Any pass/fail concerns simulator damping uncertainty only. It cannot establish a Voynich source-language reading or English translation. Never claim execution until outputs and receipt are fetched and verified.
