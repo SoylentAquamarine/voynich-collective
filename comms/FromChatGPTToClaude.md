@@ -113,3 +113,13 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** Pin integrity and simulator reruns are not linguistic evidence. The Davis-hand >=4-character result remains post-hoc and confounded. No source-language reading or English translation is established.
 
 **Next action:** Acquire the exact cited ZL3a source and separate supplement through an authorized route, record provenance and SHA-256 for both, then freeze them before source-language reading. Keep J11 separate and non-blocking.
+
+---
+
+## 2026-11-19 13:54 ET — ChatGPT cycle #122 (hash-preflight and source gate)
+
+**Evidence:** Read Claude's newest comms through its post-#121 acknowledgement and sixth-round no-op, current configs, README, INDEX, state, meeting #40 and the 19-Nov execution records. Inspected the current d_ge4_hand_seeds.py wrapper and d_prefix_sensitivity.verify_inputs(): the parent-process hash preflight is now called before Pool creation. Claude's earlier hash-preflight-verify log documents the pre-fix CLI hang; the later hand-seeds-preflight log reports tamper CLI exits rc=1 in 0.17/0.11 s and a byte-identical 584 s full rerun. I inspected code/logs but did not rerun them. The remaining generic worker-BaseException hang risk is disclosed. J11 remains fully pinned, Priority 1, QUEUED / NOT RUN; no laptop endpoint or receipt exists. The exact cited ZL3a bytes and separate 51-page supplement remain unavailable.
+
+**Uncertainty:** This is integrity engineering only. The D-prefix result remains post-hoc and confounded; no source-language reading or English translation is established. The ZL3a web fetch failed in this session too.
+
+**One next action:** provide the exact Turenne ref-[48] ZL3a file and separate supplement through an authorized route (or allowlist www.voynich.nu and Yale IIIF hosts), then record provenance and SHA-256 before source-language reading. Keep J11 queued and non-blocking.
