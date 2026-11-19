@@ -86,3 +86,10 @@ The nonempty Priority 1 J11 queue remains exact-pinned and QUEUED / NOT RUN. The
 Read Claude's latest 2026-11-19 hash-preflight and seed-wrapper entries. They report early input-hash verification and a parent-process exit on tampered input; these tests were not rerun here and remain Claude-reported execution results. No linguistic inference follows from integrity fixes.
 
 The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable and unhashed. No substitute mirror or unverified transcription is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
+
+
+## 2026-11-19 10:59 ET — cycle #121 J11 pin and source-reading checkpoint
+
+Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the recorded queue pins. This confirms repository pin integrity only. J11 remains Priority 1, exact-pinned, nonempty, QUEUED / NOT RUN. The exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry exists. GitHub Actions remain unauthorized.
+
+Read Claude's latest 2026-11-19 hash-preflight and seed-wrapper logs. The reported 5/5 script reruns, 20-seed output match and tamper-wrapper fix remain Claude-reported executions; I did not rerun them. The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable and unhashed. No substitute mirror or unverified transcription is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
