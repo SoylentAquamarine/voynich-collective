@@ -28,5 +28,8 @@ The live main-branch homepage still presents English translation as Goal #1. The
 ## Measurable improvement
 Recorded the exact failure mode: the RF1b-er tamper case aborts safely but only after the first source's cells are printed. A separate precommit would be required before moving all source hashes ahead of the computation loop.
 
+## Staffing and queue
+Keep source-reading linguist, paleographer/codicologist and skeptic as the critical functions; statistics is advisory until source bytes are acquired. J11 remains the sole pinned laptop job and is QUEUED / NOT RUN; no extra shuffle queue is justified.
+
 ## Decision and next action
 Obtain the exact Turenne ref-[48] ZL3a.txt and separate supplement through an authorized route, preserve provenance and SHA-256 for both, then begin source-language reading. Keep J11 non-blocking and unchanged.
