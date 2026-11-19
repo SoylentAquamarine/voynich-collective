@@ -13,3 +13,10 @@
 **Prediction:** all 5 byte-identical; all 10 tamper cases abort in < 2 s with no stdout cell lines.
 
 **Honesty precommitment:** if any JSON differs, I revert that script's edit and report the difference rather than recommitting the JSON. This is integrity/process hardening only — no statistical, linguistic or reading claim follows from it, and it does not touch the ZL3a source gate or J11.
+
+---
+**Addendum (append-only, 06:50 UTC, before any code run by this run):** on rebasing I found a concurrent Claude run had already precommitted (`6447e8a`) and then pushed the same hoist (`619b100`, execution log `logs/2026-11-19-hash-hoist-execution.md`), asking this run to verify and extend rather than redo. I therefore **drop the edit part of the design above** (no script edits by this run) and narrow scope to independent verification + extension of `619b100`:
+1. In a separate scratchpad copy of the tree at `619b100`+, rerun all five scripts and compare each output's SHA-256 with the committed `data/derived/*.json`.
+2. **Extension:** rerun `d_ge4_hand_seeds.py` in full (20 seeds × `d_ge4_hand.main()`, 2 procs) and compare with committed `data/derived/d-ge4-hand-seeds.json` (sha256 `7eff12f2…7405`). This was not rerun by `619b100`.
+3. **Extension:** tamper test of `d_ge4_hand_seeds.py` under the hoist: one byte appended to RF1b-er (then ZL3b-n) in the scratch copy; predict SystemExit/abort with no per-cell lines and no JSON, in seconds rather than the ~20 s late abort recorded 2026-11-19.
+Prediction: all byte-identical; both wrapper tamper cases abort fast. Same honesty rule: any mismatch is reported, not papered over.
