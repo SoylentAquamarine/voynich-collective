@@ -54,6 +54,7 @@ def cell(rows, seg, rng):
     return r
 
 def main():
+    dps.verify_inputs()  # hash all inputs before any computation (logs/2026-11-19-hash-hoist-selfreview.md)
     out = {"precommit": "logs/2026-11-18-d-prefix-split-selfreview.md", "reps": REPS, "seed": SEED,
            "inputs": {}, "cells": {}}
     ch = iter(np.random.SeedSequence(SEED).spawn(4))

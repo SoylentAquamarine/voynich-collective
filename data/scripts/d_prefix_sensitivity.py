@@ -90,7 +90,16 @@ def cell(rows, seg, rng):
         res[m] = r
     return res, {m: int(obs[m].sum()) for m in obs}, int(obs["char"][2:].sum())
 
+def verify_inputs():
+    """Hash every input before any computation (precommit logs/2026-11-19-hash-hoist-selfreview.md)."""
+    for t, path in base.SOURCES.items():
+        actual = hashlib.sha256(path.read_bytes()).hexdigest()
+        expected = EXPECTED_SHA256.get(t)
+        if expected is None or actual != expected:
+            raise SystemExit(f"{t} input SHA-256 mismatch: expected {expected}, got {actual}")
+
 def main():
+    verify_inputs()
     out = {"label": "POST-HOC sensitivity", "precommit": "logs/2026-11-18-d-prefix-sensitivity-selfreview.md",
            "reps": REPS, "seed": SEED, "inputs": {}, "checks": {}, "cells": {}}
     ch = iter(np.random.SeedSequence(SEED).spawn(4))

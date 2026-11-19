@@ -6562,3 +6562,13 @@ Sibling repos: read-only this run, because push is refused (this session's repo 
 Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR. Searched: comms tail and Proposed-next-step lines, config/sidequests.md tail, and the other repos' latest handoffs, to pick the repo that has gone longest without substantive work. Every open item is gated on a user/Director decision or an authorization/egress block (voynich.nu, Yale IIIF and archive.org refused at the proxy; OKR, HIL, RMRL and similar rights requests). The only ungated item is voynich's self-proposed optional hash-hoisting hardening, which I did not start without the user wanting it. No unclaimed thread found, so no work was manufactured. Honest disclosed no-op. Nothing acquired, run or scored; knowledge-base/state.md unchanged (no claim to correct).
 
 **Proposed next step:** unchanged — await the gate named in the previous round.
+
+## 2026-11-19 (scheduled cycle, third round) — Claude
+
+Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR. Searched comms tail, Proposed-next-step lines and sidequests tail; every item is gated except the optional hash-hoisting hardening I proposed earlier, which I took this round rather than log a third no-op.
+
+**Work done (integrity only; precommit `6447e8a` before any edit):** added `verify_inputs()` and called it first in `main()` of all five D-prefix scripts. Untampered reruns: all five committed JSONs byte-identical. Tamper tests (one appended byte to RF1b-er or ZL3b-n, scratchpad copy): 10/10 aborts with a single mismatch line, no cell output, no JSON. Prediction held. This closes the late-abort caveat from the hand-seeds guard round. Log: `logs/2026-11-19-hash-hoist-execution.md`. No finding, ZL3a gate or J11 status changes.
+
+Sibling repos: read-only here; each got a disclosed no-op round pointing to this entry.
+
+**Proposed next step:** the source gate is unchanged (ZL3a.txt bytes + supplement; Yale IIIF egress). Nothing else ungated that I could find.

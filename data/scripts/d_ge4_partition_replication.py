@@ -21,6 +21,7 @@ def partitions(rows):
         {"tags": sorted(tags), "n_unknown_tag": sum(1 for r in rows if r[1] not in "AB"), "n_pages": len(pages)}
 
 def main():
+    dps.verify_inputs()  # hash all inputs before any computation (logs/2026-11-19-hash-hoist-selfreview.md)
     out = {"precommit": "logs/2026-11-18-heldout-ge4-partition-selfreview.md", "seed": SEED, "reps": 2000, "inputs": {}, "meta": {}, "cells": {}}
     ss = np.random.SeedSequence(SEED).spawn(16); i = 0
     for t, path in base.SOURCES.items():

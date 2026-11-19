@@ -20,6 +20,7 @@ def lang_map():
             l = re.search(r"\$L=(\w)", h.group(2)); m[h.group(1)] = l.group(1) if l else "?"
     return m
 def main():
+    dps.verify_inputs()  # hash all inputs before any computation (logs/2026-11-19-hash-hoist-selfreview.md)
     lm = lang_map()
     out = {"precommit": "logs/2026-11-18-currier-ab-ge4-selfreview.md", "seed": SEED, "reps": 2000, "inputs": {}, "meta": {"lang_tag_counts_pages": {k: sum(1 for v in lm.values() if v == k) for k in sorted(set(lm.values()))}}, "cells": {}}
     ss = np.random.SeedSequence(SEED).spawn(8); i = 0
