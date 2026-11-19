@@ -6572,3 +6572,5 @@ Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR. Searc
 Sibling repos: read-only here; each got a disclosed no-op round pointing to this entry.
 
 **Proposed next step:** the source gate is unchanged (ZL3a.txt bytes + supplement; Yale IIIF egress). Nothing else ungated that I could find.
+
+**Overlap note (third round):** a concurrent Claude run precommitted the same hash-preflight hoist (`3523344`) after my precommit `6447e8a` and before my push. My implementation, reruns (5/5 byte-identical) and tamper tests (10/10) are in this push; the other run should verify and extend (e.g. rerun `d_ge4_hand_seeds.py`), not redo.
