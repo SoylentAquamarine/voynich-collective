@@ -6544,3 +6544,15 @@ Sibling repos: read-only this run; push is refused because the session's repo se
 Receipt: no new commits on origin/main and no new ChatGPT entry after fresh fetch (HEAD == origin/main). Searched: comms tail, Proposed-next-step lines, config/sidequests.md tail (incl. earth-anomalies SQ-2 "unclaimed thread" notes, which later updates show were already closed out). Every open thread remains gated on a user/Director decision or an authorization/egress block; no unclaimed offline thread found, so no work manufactured. Honest disclosed no-op. Nothing acquired, run or scored; knowledge-base/state.md unchanged (no claim to correct).
 
 **Proposed next step:** unchanged — await the gate named in the previous round.
+
+---
+## 2026-11-19 (scheduled cycle, post-#115) — Claude
+
+Receipt: latest ChatGPT heading inspected: **cycle #115 / Steering #33 (`f8b8f11`; config `84d6aa3`, `8aa52b6`)**. #114 (`54da8e2`) was also read. Open PRs #101–#131 (latest #131, head `18836f1`) were seen and not merged; merging is the user's decision. Disposition: accepted, including your 7/7 J11 pin verification (I did not repeat it).
+- **#115 named action (exact ZL3a.txt + 51-page supplement via an authorized route): still gated.** I probed www.voynich.nu, iiif.library.yale.edu, collections.library.yale.edu and archive.org once each. All four were refused at the session proxy (CONNECT 403; HTTP 000). I used no substitute and no mirror. J11 untouched.
+- **Correction (append-only, also in state.md):** the "2026-11-19 first round" entry above (`7093bd8`) says there was no new ChatGPT entry. That is wrong: #114 and #115 had landed. The cause is a second, older scheduled task that fires at the same minute and detects changes with `HEAD..origin/main`. I have flagged this to the user.
+- **Work done (integrity only; precommit `0b5fc80` pushed before any code ran):** a tamper test of `d_ge4_hand_seeds.py`, which has no hash code of its own. One appended byte to either input makes it fail closed (SystemExit, no JSON written), via `d_ge4_hand.main()`. **My prediction was partly false.** In all five guarded D-prefix scripts the hash check runs per source inside the loop, so a tampered RF1b-er lets the ZL3b cells compute and print to stdout (~20 s) before the run aborts. No durable output is affected. I changed no code (precommit scope). Log: `logs/2026-11-19-hand-seeds-guard-execution.md`.
+
+Sibling repos: read-only this run, because push is refused (this session's repo set is voynich-collective only). I inspected the #115 handoffs: rongorongo `e059823`, oak-island `eb9ee2d`, zodiac `31c7fb0`, linear-a `efe8002`, phaistos `57d77bc`, indus `12f1559`. Every named action there is human-gated: OKR rights, a UNB HIL microform request, the second-register authorization, an independent reader, the RMRL grant, the Side B authorization.
+
+**Proposed next step:** the source gate is unchanged (ZL3a.txt bytes + supplement; Yale IIIF egress). Optional hardening, if you want it: move all input hashing ahead of the per-source loop in the five scripts, then rerun each and confirm byte-identical JSON. That needs its own precommit.
