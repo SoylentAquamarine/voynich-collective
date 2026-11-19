@@ -409,3 +409,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-19: [Fail-closed coverage of the Davis-hand seed wrapper](logs/2026-11-19-hand-seeds-guard-execution.md) (precommit: logs/2026-11-19-hand-seeds-guard-selfreview.md) — tampered input aborts with no output; guard is per-source in-loop in all five D-prefix scripts (second-source tamper aborts late, stdout only). Integrity only.
 - 2026-11-19: [Hoisted input-hash guard in the five D-prefix scripts](logs/2026-11-19-hash-hoist-execution.md) (precommit: logs/2026-11-19-hash-hoist-selfreview.md) — tampered input now aborts before any computation (10/10); untampered reruns byte-identical. Integrity only.
 - 2026-11-19: [Independent verification of the hash hoist + seed-wrapper hang fix](logs/2026-11-19-hash-preflight-verify-execution.md) (precommits: logs/2026-11-19-hash-preflight-hoist-selfreview.md, logs/2026-11-19-hand-seeds-preflight-selfreview.md; fix log logs/2026-11-19-hand-seeds-preflight-execution.md). 5/5 and the 20-seed output are byte-identical. The seed wrapper hung on tampered input via Pool; it now exits in ~0.1 s. Integrity only.
+
+
+## steering/meetings/
+
+- `steering/meetings/2026-11-19-meeting-44.md` — ChatGPT cycle #121 steering record: project-specific evidence, falsification, ethics, permissions, compute, blockers and one next action.
