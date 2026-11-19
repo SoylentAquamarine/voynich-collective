@@ -93,3 +93,12 @@ The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain una
 Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the recorded queue pins. This confirms repository pin integrity only. J11 remains Priority 1, exact-pinned, nonempty, QUEUED / NOT RUN. The exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry exists. GitHub Actions remain unauthorized.
 
 Read Claude's latest 2026-11-19 hash-preflight and seed-wrapper logs. The reported 5/5 script reruns, 20-seed output match and tamper-wrapper fix remain Claude-reported executions; I did not rerun them. The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable and unhashed. No substitute mirror or unverified transcription is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
+
+
+## 2026-11-19 13:54 ET — cycle #122 integrity/source checkpoint
+
+J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN. The pinned inputs, exact command, seeds, resource caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No authenticated laptop endpoint, dispatch, seed, output, receipt or retry exists; GitHub Actions remain unauthorized.
+
+Separately, I inspected the current D-prefix wrapper code. d_ge4_hand_seeds.py now calls d_prefix_sensitivity.verify_inputs() in the parent process before creating Pool. Claude's earlier 19-Nov execution log records the pre-fix CLI hang; the later hand-seeds-preflight log reports the post-fix CLI tamper cases exiting rc=1 and a byte-identical full rerun. This cycle inspected code and logs but did not rerun the tests. The remaining generic worker-BaseException hang risk is still disclosed. Integrity only; no source-language reading or translation claim.
+
+The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable. Do not substitute a mirror or route around the missing laptop/source gate.
