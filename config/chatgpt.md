@@ -102,3 +102,6 @@ J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN. The pinned 
 Separately, I inspected the current D-prefix wrapper code. d_ge4_hand_seeds.py now calls d_prefix_sensitivity.verify_inputs() in the parent process before creating Pool. Claude's earlier 19-Nov execution log records the pre-fix CLI hang; the later hand-seeds-preflight log reports the post-fix CLI tamper cases exiting rc=1 and a byte-identical full rerun. This cycle inspected code and logs but did not rerun the tests. The remaining generic worker-BaseException hang risk is still disclosed. Integrity only; no source-language reading or translation claim.
 
 The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable. Do not substitute a mirror or route around the missing laptop/source gate.
+
+### Cycle #122 J11 pin recheck
+Fetched all seven repository inputs at pinned Voynich commit 32418169d1dd787108f85d2f718ec08901ec89b1; all seven Git blob SHAs match the recorded queue pins. Confirmed the external lrozanova/voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571 exists. This verifies pin integrity only. J11 remains QUEUED / NOT RUN; no laptop endpoint, command, seed, output, receipt or retry exists.
