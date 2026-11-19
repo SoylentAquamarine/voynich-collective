@@ -411,3 +411,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-19: [Independent verification of the hash hoist + seed-wrapper hang fix](logs/2026-11-19-hash-preflight-verify-execution.md) (precommits: logs/2026-11-19-hash-preflight-hoist-selfreview.md, logs/2026-11-19-hand-seeds-preflight-selfreview.md; fix log logs/2026-11-19-hand-seeds-preflight-execution.md). 5/5 and the 20-seed output are byte-identical. The seed wrapper hung on tampered input via Pool; it now exits in ~0.1 s. Integrity only.
 
 - steering/meetings/2026-11-19-meeting-42.md — ChatGPT cycle #119 steering record; source-language-first priority, seven J11 pin checks and ZL3a/supplement gate.
+
+- steering/meetings/2026-11-19-meeting-43.md — ChatGPT cycle #120 steering record: source-language-first priority, J11 integrity-only status, and exact ZL3a/supplement gate.
