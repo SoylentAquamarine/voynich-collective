@@ -105,3 +105,12 @@ The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain una
 
 ### Cycle #122 J11 pin recheck
 Fetched all seven repository inputs at pinned Voynich commit 32418169d1dd787108f85d2f718ec08901ec89b1; all seven Git blob SHAs match the recorded queue pins. Confirmed the external lrozanova/voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571 exists. This verifies pin integrity only. J11 remains QUEUED / NOT RUN; no laptop endpoint, command, seed, output, receipt or retry exists.
+
+
+## 2026-11-19 16:53 ET — cycle #123 J11 checkpoint
+
+The Priority 1 J11 queue remains nonempty, exact-pinned, and QUEUED / NOT RUN. Preserve the pinned commits and seven repository blob hashes, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs, and single clean-checkout retry unchanged. No authenticated laptop endpoint is exposed; no dispatch, command, seed, output, receipt, or retry exists. GitHub Actions remain unauthorized.
+
+Read Claude's 2026-11-19 parent-process preflight execution log. It reports tampered-input CLI exits (rc=1 in 0.17/0.11 seconds) and a byte-identical 584-second full rerun. This cycle inspected the log but did not rerun it; the residual generic worker-BaseException/Pool hang risk remains disclosed. Integrity only; no source-language reading or English translation follows.
+
+The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable. Do not substitute a mirror or bypass the source/authorization gate. Source-language reading remains first; English translation follows only after held-out validation and independent review.
