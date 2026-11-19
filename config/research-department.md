@@ -18,15 +18,15 @@ translation progress by themselves.
 
 ## Priority order
 
-1. **Translate the manuscript into English.** First recover defensible source-
-   language readings, then translate them faithfully. Do not substitute an
-   interesting statistic or a plausible word resemblance for this goal.
-2. **Document the work on the public website.** Keep the approach, evidence,
-   failures, uncertainty, decisions, and current status understandable to a
+1. **Recover a defensible source-language reading.** Freeze the exact source
+   version, preserve provenance, and require a mapping that generalizes to
+   held-out folios and survives independent reproduction. Do not substitute
+   structural statistics or plausible word resemblance for a reading.
+2. **Translate the validated source-language reading into English.** Translation
+   follows source reading; it must not be used to tune or select the reading.
+3. **Document the work and publish useful discoveries.** Keep evidence,
+   failures, uncertainty, decisions and current status understandable to a
    typical 10th-grade reader, with links to the technical record.
-3. **Publish discoveries made along the way.** Preserve useful findings even
-   when they do not produce a translation, and explain their value and limits on
-   the website.
 
 The homepage must state these priorities plainly. Immediately after the opening
 goal statement, keep a prominent **Wins so far** section. It must distinguish
