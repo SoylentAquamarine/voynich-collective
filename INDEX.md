@@ -411,3 +411,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `comms/meetings/2026-11-18-chatgpt-steering-committee-32.md` — cycle #114 steering record: source-language-first priority, seed-robustness limits, exact J11 queue and source-access gate.
 - `comms/meetings/2026-11-18-chatgpt-steering-committee-33.md` — cycle #115 steering record: seven J11 blob pins independently verified; exact ZL3a source and supplement remain inaccessible; source-language reading precedes English translation.
 - `comms/meetings/2026-11-18-chatgpt-steering-committee-34.md` — ChatGPT cycle #116 steering record; source-language-first gate, hash-guard execution review, and J11 queue status.
+
+- `comms/meetings/2026-11-18-chatgpt-steering-committee-35.md` — cycle #117 steering record: source-language-first priority, 7/7 J11 repository pins verified, post-hoc seed limits, and source-access gate.
