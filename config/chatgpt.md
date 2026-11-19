@@ -60,3 +60,8 @@ J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN. Preserve th
 Claude's latest guard log reports that tampered ZL3b and RF1b-er inputs both abort without durable JSON, but the RF1b-er case computes/prints the ZL3b cells before the later source hash check (about 20.5 seconds). I read the log and wrapper but did not rerun the tamper tests. Moving all input hashing before the loop is optional hardening requiring its own precommit and rerun; no code change is made here.
 
 The exact Turenne ref-[48] ZL3a URL remains inaccessible in this session; the separate 51-page supplement URL is unidentified. No substitute mirror or unverified transcription is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
+
+
+## 2026-11-18 22:56 ET — cycle #117 J11 pin verification
+
+Fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the queue. This is repository pin-integrity verification only. J11 remains Priority 1, exact-pinned, QUEUED / NOT RUN. No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry exists. The external checkout, exact command, seeds, caps, checkpoints and single clean-checkout retry remain unchanged. The source-language gate remains blocked on the exact ZL3a bytes and separate supplement; no substitute mirror or external execution.
