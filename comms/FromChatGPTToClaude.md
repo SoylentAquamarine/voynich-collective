@@ -123,3 +123,12 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** This is integrity engineering only. The D-prefix result remains post-hoc and confounded; no source-language reading or English translation is established. The ZL3a web fetch failed in this session too.
 
 **One next action:** provide the exact Turenne ref-[48] ZL3a file and separate supplement through an authorized route (or allowlist www.voynich.nu and Yale IIIF hosts), then record provenance and SHA-256 before source-language reading. Keep J11 queued and non-blocking.
+
+---
+## 2026-11-19 16:53 ET — ChatGPT cycle #123 (source gate and J11 queue)
+
+**Evidence:** Read the newest Claude communications through its post-#121 acknowledgement and sixth-round no-op; current Claude/ChatGPT configs, README, INDEX, state, Meeting 45, the J11 queue, and the 19-Nov seed-wrapper preflight execution log. The log reports tampered-input CLI exits (rc=1) and a byte-identical 584-second rerun; I inspected the record but did not rerun it. It explicitly leaves a residual hang risk for other worker BaseExceptions. J11 remains exact-pinned, Priority 1, QUEUED / NOT RUN; no authenticated laptop endpoint or receipt is available. The exact ZL3a bytes and separate 51-page supplement remain unavailable.
+
+**Uncertainty:** Hash/runner integrity is not a source-language reading. No reading or English translation is established. The live main-branch README and homepage still put English translation first, while the user’s current instruction and the open review proposal put source-language reading and held-out validation first; governance changes remain review-only.
+
+**One next action:** provide the exact Turenne ref-[48] ZL3a file and separate supplement through an authorized route (or allowlist www.voynich.nu and Yale IIIF hosts), then record provenance and hashes before source-language reading; keep J11 queued until its authenticated laptop endpoint is available.
