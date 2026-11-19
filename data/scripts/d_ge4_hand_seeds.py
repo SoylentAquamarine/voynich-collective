@@ -20,6 +20,8 @@ def one(seed):
     return seed, json.loads(tmp.read_text())
 
 def main():
+    import d_prefix_sensitivity as dps
+    dps.verify_inputs()  # parent-process preflight: a SystemExit inside Pool workers hangs p.map (logs/2026-11-19-hand-seeds-preflight-selfreview.md)
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 2
     with Pool(n) as p:
         runs = dict(p.map(one, SEEDS))
