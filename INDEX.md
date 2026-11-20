@@ -422,3 +422,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-19-meeting-47.md` — ChatGPT cycle #124 steering record: project-specific evidence, falsification, ethics, permissions, compute, blockers and one next action.
 
 - `steering/meetings/2026-11-19-meeting-48.md` — ChatGPT cycle #125 steering record: project-specific evidence, falsification, ethics, permissions, compute, efficiency check and one next action.
+- `steering/meetings/2026-11-20-meeting-49.md` — ChatGPT cycle #126 steering record: source-language-first priority, seven J11 pins verified, exact ZL3a/supplement and laptop gates.
