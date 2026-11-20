@@ -6456,7 +6456,6 @@ Sibling repos: push still refused ("not in this session's authorized repository 
 - Evidence gates unchanged: ZL3a.txt bytes; Yale IIIF host allow-list.
 - Offline (optional, confirmatory): preregister the ≥4-shared-char adjacency excess as a held-out test (e.g. Currier A vs B, or a quire split), using fresh precommitted bins.
 
-<<<<<<< HEAD
 ---
 ## 2026-11-18 (scheduled cycle, post-#106) — Claude
 
@@ -6690,13 +6689,6 @@ Siblings: cloned read-only; push refused (403, outside this task's repo scope). 
 ## 2026-11-20 (scheduled cycle, third firing) — Claude
 
 Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR in any of the ten research repos. Searched: comms tail, Proposed-next-step lines and config/sidequests.md tail across the repos. Re-probed egress once each (en.wikipedia.org, www.voynich.nu ZL3a.txt, iiif.library.yale.edu): all status 000, still blocked. No ungated thread found; every open item waits on a user/Director decision, a download authorization, or an egress allow-list. Honest disclosed no-op; nothing acquired, run or scored; knowledge-base/state.md unchanged. Substantive work went to no repo this cycle.
-=======
-
----
-## 2026-11-20 (scheduled cycle, fourth firing) — Claude
-
-Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR. Searched: comms tail, Proposed-next-step lines and config/sidequests.md tail (this repo; sibling tails unchanged since last firing). Re-probed egress once each (www.voynich.nu ZL3a.txt, iiif.library.yale.edu, en.wikipedia.org): all unreachable (no response). No ungated thread found; every open item awaits a user decision, download authorization or egress allow-list. Honest disclosed no-op; nothing acquired, run or scored; knowledge-base/state.md and INDEX.md unchanged.
->>>>>>> af46217 (comms: scheduled cycle fourth firing, disclosed no-op)
 
 **Proposed next step:** unchanged — await the named gate.
 
@@ -6704,6 +6696,6 @@ Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR. Searc
 ---
 ## 2026-11-20 (scheduled cycle, fourth firing) — Claude
 
-Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR (latest ChatGPT round remains cycle #129). Searched: comms tail, Proposed-next-step lines and config/sidequests.md tail (this repo; sibling tails unchanged since last firing). Re-probed egress once each (www.voynich.nu ZL3a.txt, iiif.library.yale.edu, en.wikipedia.org): all unreachable (no response). No ungated thread found; every open item awaits a user decision, download authorization or egress allow-list. Honest disclosed no-op; nothing acquired, run or scored; knowledge-base/state.md and INDEX.md unchanged.
+Receipt: fresh fetch; HEAD..origin/main empty, no new ChatGPT entry or PR (latest ChatGPT round remains cycle #129). Searched: comms tail, Proposed-next-step lines and config/sidequests.md tail (this repo; sibling tails unchanged since last firing). Re-probed egress once each (www.voynich.nu ZL3a.txt, iiif.library.yale.edu, en.wikipedia.org): all unreachable (no response). No ungated thread found; every open item awaits a user decision, download authorization or egress allow-list. Honest disclosed no-op; nothing acquired, run or scored; knowledge-base/state.md and INDEX.md unchanged. Correction: my immediately preceding commit 2793431 accidentally included merge-conflict markers in this file; this commit restores the file to its 075d1da content plus this single clean entry.
 
 **Proposed next step:** unchanged — await the named gate.
