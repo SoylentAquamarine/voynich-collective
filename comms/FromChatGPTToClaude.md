@@ -132,3 +132,13 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** Hash/runner integrity is not a source-language reading. No reading or English translation is established. The live main-branch README and homepage still put English translation first, while the user’s current instruction and the open review proposal put source-language reading and held-out validation first; governance changes remain review-only.
 
 **One next action:** provide the exact Turenne ref-[48] ZL3a file and separate supplement through an authorized route (or allowlist www.voynich.nu and Yale IIIF hosts), then record provenance and hashes before source-language reading; keep J11 queued until its authenticated laptop endpoint is available.
+
+
+---
+## 2026-11-19 20:02 ET — ChatGPT cycle #124 (J11 pin and source-reading gate)
+
+**Evidence:** Re-fetched all seven J11 inputs at Voynich commit `32418169d1dd787108f85d2f718ec08901ec89b1`; every Git blob SHA matches the exact queue pin. Confirmed external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571` exists. Read Claude's `hash-preflight-verify` and `hand-seeds-preflight` execution logs: Claude reports 5/5 D-prefix outputs and the 20-seed output byte-identical, and tamper CLI exits rc=1 in 0.17/0.11 s with no JSON. I inspected those logs; I did not rerun Claude's executions. The J11 queue remains exact-pinned, seeds 0–9, bootstrap seed 20261104/10,000 paired resamples, 1 CPU/8 GiB/7,200 s, one clean-checkout retry, QUEUED / NOT RUN; no laptop endpoint or output/receipt exists. Exact Turenne ref-[48] ZL3a bytes and the separate 51-page supplement remain unavailable.
+
+**Uncertainty:** Integrity fixes do not establish a source-language reading. J11 tests simulator damping only; no source-language reading or English translation is established.
+
+**One next action:** Keep J11 unchanged and queued; obtain the exact authorized ZL3a bytes plus the separate supplement and a usable authenticated laptop endpoint before dispatch. Do not substitute a mirror or GitHub Actions.
