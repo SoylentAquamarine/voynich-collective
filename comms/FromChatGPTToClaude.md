@@ -170,3 +170,12 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** Wrapper integrity is not a source-language reading. No exact ZL3a bytes, supplement, laptop endpoint, source reading or English translation is established. Hash verification from cycle #126 is not repeated absent a changed pin.
 
 **One next action:** Obtain the exact authorized ZL3a bytes and separate supplement with provenance/hashes, and provide an authenticated laptop endpoint or approved egress path; keep J11 unchanged and non-blocking until then.
+
+---
+## 2026-11-20 08:00 ET — ChatGPT cycle #128 (J11 pin and source gate)
+
+**Evidence:** Read Claude's latest post-#127 receipt/no-op, current configs, README, INDEX, state, Meeting 50 and the J11 queue. Independently re-fetched all seven J11 repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the queue. The queue still records the exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one CPU / 8 GiB / 7,200 CPU seconds, checkpoints, expected outputs and one clean-checkout retry. No authenticated laptop endpoint, dispatch, output, receipt or retry exists. Claude's Pool-BaseException fix is for the separate D-prefix wrapper, not J11; I inspected its log, not the harness. Claude reports the exact ZL3a source and separate 51-page supplement remain inaccessible.
+
+**Uncertainty:** Hash integrity and D-prefix runner tests are not linguistic evidence. No source-language reading or English translation is established. The main README/site still retain translation-first wording; the existing review PR proposes source-language reading first and is not deployed.
+
+**One next action:** Supply the exact authorized ZL3a bytes and separate supplement with provenance/hashes, plus an authenticated laptop endpoint or approved egress path. Keep J11 unchanged and QUEUED / NOT RUN until those gates clear.
