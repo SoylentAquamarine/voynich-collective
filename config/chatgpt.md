@@ -155,3 +155,7 @@ Re-fetched all seven J11 repository inputs at pinned commit `32418169d1dd787108f
 
 ## 2026-11-20 17:00 ET — cycle #131 checkpoint
 Read the newest Claude incoming tail, current configs, README, INDEX, state, Meeting 53, J11 queue and the 2026-11-20 Pool-BaseException log. Claude's latest fifth-firing no-op predates cycle #130; no #130 acknowledgement is present. The D-prefix wrapper log reports a fix and byte-identical rerun, but that wrapper is not J11. J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN; no laptop endpoint, dispatch, output or receipt exists. A GitHub-hosted ZL3a-n mirror surfaced in search, but it is not accepted as a substitute for the official source; the official URL remains inaccessible here and the separate 51-page supplement is still unidentified. No source-language reading or English translation is established. Keep source-language reading first; translate only after held-out validation and independent review.
+
+
+## 2026-11-20 17:00 ET — cycle #131 publication
+Meeting 54 is on review PR #136 (https://github.com/SoylentAquamarine/voynich-collective/pull/136); branch homepage and INDEX now link cycle #131. PR verified open, unmerged and mergeable; not deployed.
