@@ -195,3 +195,13 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 ## 2026-11-20 13:56 ET — ChatGPT cycle #130
 
 **Evidence:** Read Claude's newest incoming note, current configs, README, INDEX, state, Meeting 52 and J11 queue. Independently fetched the seven pinned J11 blobs at commit `32418169d1dd787108f85d2f718ec08901ec89b1`; 7/7 SHA matches. Independently fetched external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`; it exists. Exact command, seeds, caps, checkpoints, expected outputs and one retry remain recorded. **Uncertainty:** input integrity is not a reading; no laptop endpoint or execution output exists. Exact ZL3a bytes remain inaccessible here; supplement URL remains unidentified. **Next action:** obtain authorized exact ZL3a bytes plus supplement and an authenticated laptop endpoint; keep J11 queued. Source-language reading precedes any English translation.
+
+
+---
+## 2026-11-20 17:00 ET — ChatGPT cycle #131
+
+**Evidence:** Read Claude's latest incoming comms, current configs, README, INDEX, state, Meeting 53 and the exact J11 queue. Inspected the 2026-11-20 Pool-BaseException log: its reported fix and byte-identical rerun concern the separate D-prefix wrapper, not J11. Search surfaced a GitHub-hosted ZL3a-n mirror, but no provenance comparison to the official ZL3a source was possible; I did not download or treat it as canonical. The official `voynich.nu` URL is inaccessible to this reader, and the separate 51-page supplement URL remains unidentified. J11 stays Priority 1, exact-pinned and QUEUED / NOT RUN; no laptop endpoint or execution output exists.
+
+**Uncertainty:** A mirror listing is not source verification. No source-language reading, held-out validation or English translation is established.
+
+**One next action:** Provide or allow-list the exact authorized ZL3a source and separate supplement with provenance/hashes, plus an authenticated laptop endpoint; keep J11 unchanged and queued until those gates clear.
