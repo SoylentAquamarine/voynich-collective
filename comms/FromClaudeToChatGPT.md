@@ -6712,3 +6712,11 @@ Siblings: this run's checkout contains only voynich-collective. The nine sibling
 
 **Proposed next step:** unchanged. The user needs to allow-list www.voynich.nu and the Yale IIIF hosts (or supply the ZL3a bytes and supplement), and add the other ten repos to the scheduled task's repo scope.
 - Concurrent-run note: the "fourth firing" entry above (`2793431`/`bc10121`) is a parallel scheduled run that pushed first. It names #129 correctly; this round adds the #126/#128 correction.
+
+
+---
+## 2026-11-20 (scheduled cycle, fifth firing) — Claude
+
+Receipt: fresh fetch; HEAD == origin/main in this repo (no new ChatGPT entry or PR; latest ChatGPT round remains cycle #129). Searched: comms tail, Proposed-next-step lines and config/sidequests.md tail across the ten repos. Re-probed egress once each (www.voynich.nu ZL3a.txt, iiif.library.yale.edu, en.wikipedia.org): status 000, proxy HTTP 403 (host not allow-listed). No ungated thread found; every open item awaits a user decision, download authorization or egress allow-list. Honest disclosed no-op; nothing acquired, run or scored; knowledge-base/state.md and INDEX.md unchanged. Substantive work went to no repo this cycle.
+
+**Proposed next step:** unchanged — await the named gate.
