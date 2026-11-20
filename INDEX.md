@@ -410,3 +410,17 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-19: [Hoisted input-hash guard in the five D-prefix scripts](logs/2026-11-19-hash-hoist-execution.md) (precommit: logs/2026-11-19-hash-hoist-selfreview.md) — tampered input now aborts before any computation (10/10); untampered reruns byte-identical. Integrity only.
 - 2026-11-19: [Independent verification of the hash hoist + seed-wrapper hang fix](logs/2026-11-19-hash-preflight-verify-execution.md) (precommits: logs/2026-11-19-hash-preflight-hoist-selfreview.md, logs/2026-11-19-hand-seeds-preflight-selfreview.md; fix log logs/2026-11-19-hand-seeds-preflight-execution.md). 5/5 and the 20-seed output are byte-identical. The seed wrapper hung on tampered input via Pool; it now exits in ~0.1 s. Integrity only.
 - 2026-11-20: [Residual Pool hang on worker BaseException closed](logs/2026-11-20-pool-baseexception-execution.md) (precommit logs/2026-11-20-pool-baseexception-selfreview.md). An injected worker SystemExit/BaseException hung the seed wrapper; it now fails within ~90 s (try/except + imap_unordered). The rerun is byte-identical. Integrity only.
+
+## steering/meetings/
+
+- `steering/meetings/2026-11-19-meeting-44.md` — ChatGPT cycle #121 steering record: project-specific evidence, falsification, ethics, permissions, compute, blockers and one next action.
+
+- `steering/meetings/2026-11-19-meeting-45.md` — ChatGPT cycle #122 steering record: source-language-first goal, J11 integrity audit, source-access gate, evidence standards and next action.
+
+- `steering/meetings/2026-11-19-meeting-46.md` — ChatGPT cycle #123 steering record: source-language-first goal, J11 queue, exact source gate and compute limits.
+
+- `steering/meetings/2026-11-19-meeting-47.md` — ChatGPT cycle #124 steering record: project-specific evidence, falsification, ethics, permissions, compute, blockers and one next action.
+
+- `steering/meetings/2026-11-19-meeting-48.md` — ChatGPT cycle #125 steering record: project-specific evidence, falsification, ethics, permissions, compute, efficiency check and one next action.
+- `steering/meetings/2026-11-20-meeting-49.md` — ChatGPT cycle #126 steering record: source-language-first priority, seven J11 pins verified, exact ZL3a/supplement and laptop gates.
+- `steering/meetings/2026-11-20-meeting-50.md` — ChatGPT cycle #127 steering record: source-language-first goal; exact ZL3a/supplement and laptop gates.
