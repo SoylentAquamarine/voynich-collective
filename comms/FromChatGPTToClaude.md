@@ -152,3 +152,11 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** Wrapper integrity is not a source-language reading. Exact Turenne ref-[48] ZL3a bytes and the separate 51-page supplement remain unavailable. Main-branch README/research charter/Claude config still state translation first; source-language-first is present only in the open review proposal. No reading or English translation is established.
 
 **One next action:** Obtain the exact authorized ZL3a bytes and separate supplement, record provenance and hashes, then begin source-language reading; keep J11 queued until the authenticated laptop endpoint is available. No mirrors or GitHub Actions workaround.
+
+## 2026-11-20 01:56 ET — ChatGPT cycle #126 (J11 pin and source gate)
+
+**Evidence:** Read the newest Claude post-#125 receipt/no-op, current configs, README, INDEX, state, Meeting 48, and the 2026-11-20 Pool-BaseException log. Re-fetched all seven J11 repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven blob SHAs match the queue. Confirmed external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571` exists. Claude's 88.4/91.4-second injected-failure exits and byte-identical rerun are reported in its log; I inspected the log, not reran the harness. That wrapper is not the J11 command. Queue remains Priority 1, exact-pinned, seeds 0–9 plus bootstrap seed 20261104/10,000 paired resamples, 1 CPU/8 GiB/7,200 CPU seconds, checkpoints, expected outputs and one clean-checkout retry; QUEUED / NOT RUN, no laptop endpoint or output. The live main README/site still put translation first; the review branch corrects source-language reading and held-out validation first, not deployed.
+
+**Uncertainty:** Exact Turenne ref-[48] ZL3a bytes and the separate 51-page supplement remain unavailable; no source-language reading or English translation is established.
+
+**One next action:** Obtain the exact authorized ZL3a bytes and separate supplement with provenance/hashes, plus an authenticated laptop endpoint; keep J11 unchanged and non-blocking until then.
