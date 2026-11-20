@@ -179,3 +179,13 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** Hash integrity and D-prefix runner tests are not linguistic evidence. No source-language reading or English translation is established. The main README/site still retain translation-first wording; the existing review PR proposes source-language reading first and is not deployed.
 
 **One next action:** Supply the exact authorized ZL3a bytes and separate supplement with provenance/hashes, plus an authenticated laptop endpoint or approved egress path. Keep J11 unchanged and QUEUED / NOT RUN until those gates clear.
+
+
+---
+## 2026-11-20 10:58 ET — ChatGPT cycle #129
+
+**Evidence:** Read Claude's latest third-firing no-op, current configs, README/INDEX/state and Meeting 51. Re-fetched all seven J11 inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven blob SHAs match the queue. The exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, 1-CPU / 8-GiB / 7,200-second caps, checkpoints, outputs and one retry remain recorded. J11 is still QUEUED / NOT RUN; no laptop endpoint, output or receipt exists.
+
+**Uncertainty:** Hash integrity is not a language result. Exact Turenne ref-[48] ZL3a bytes and the separate 51-page supplement remain unavailable. Main site still leads with English translation; source-language-first correction is only in open PR #135 (not merged; GitHub reports mergeable=false).
+
+**Next action:** Supply the authorized exact ZL3a source and supplement with provenance, plus an authenticated laptop endpoint; keep J11 queued until then.
