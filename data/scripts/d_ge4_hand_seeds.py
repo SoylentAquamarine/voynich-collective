@@ -15,16 +15,19 @@ def one(seed):
     import d_ge4_hand as h
     tmp = Path(tempfile.mkdtemp()) / f"hand-{seed}.json"
     h.SEED, h.OUT = seed, tmp
-    with contextlib.redirect_stdout(io.StringIO()):
-        h.main()
-    return seed, json.loads(tmp.read_text())
+    try:  # a worker BaseException (e.g. SystemExit) kills the worker and hangs p.map; re-raise as Exception so it reaches the parent (logs/2026-11-20-pool-baseexception-selfreview.md)
+        with contextlib.redirect_stdout(io.StringIO()):
+            h.main()
+        return seed, json.loads(tmp.read_text())
+    except BaseException as e:
+        raise RuntimeError(f"seed {seed}: {type(e).__name__}: {e}") from None
 
 def main():
     import d_prefix_sensitivity as dps
     dps.verify_inputs()  # parent-process preflight: a SystemExit inside Pool workers hangs p.map (logs/2026-11-19-hand-seeds-preflight-selfreview.md)
     n = int(sys.argv[1]) if len(sys.argv) > 1 else 2
     with Pool(n) as p:
-        runs = dict(p.map(one, SEEDS))
+        runs = dict(p.imap_unordered(one, SEEDS))  # raises on first failed seed; map would wait for all chunks (addendum A)
     inputs = {s: r["inputs"] for s, r in runs.items()}
     assert len({json.dumps(v, sort_keys=True) for v in inputs.values()}) == 1
     cells = {}
