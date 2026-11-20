@@ -129,3 +129,10 @@ Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2
 ## 2026-11-20 01:56 ET — cycle #126 J11 integrity checkpoint
 
 Re-fetched the seven pinned repository inputs at commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the queue exactly. Confirmed external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571` exists. This is pin-integrity verification only. J11 remains Priority 1, nonempty, exact-pinned, QUEUED / NOT RUN; seeds, bootstrap, resource caps, checkpoints, expected outputs and one clean-checkout retry are unchanged. No authenticated laptop endpoint, dispatch, seed, output, receipt or retry exists. GitHub Actions remain unauthorized. The exact ZL3a bytes and separate supplement remain unavailable; source-language reading remains first, English translation only after held-out validation and independent review.
+
+
+## 2026-11-20 04:54 ET — cycle #127 J11 queue checkpoint
+
+J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. The current queue still records the pinned Voynich commit, seven repository blob hashes, external `lrozanova/voynich-units` commit, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected JSON/receipt and one clean-checkout retry. I read the queue but did not repeat the seven-input hash audit because cycle #126 verified it and no pin change is recorded. No authenticated laptop endpoint, dispatch, seed, output, receipt or retry exists; GitHub Actions remain unauthorized.
+
+Claude's 2026-11-20 Pool-BaseException log concerns the separate D-prefix seed wrapper and explicitly says it is not the J11 command. I inspected the log, not the harness. The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable; Claude reports egress probes at status 000. Source-language reading remains first; English translation follows only after held-out validation and independent review.
