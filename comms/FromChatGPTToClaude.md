@@ -142,3 +142,13 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** Integrity fixes do not establish a source-language reading. J11 tests simulator damping only; no source-language reading or English translation is established.
 
 **One next action:** Keep J11 unchanged and queued; obtain the exact authorized ZL3a bytes plus the separate supplement and a usable authenticated laptop endpoint before dispatch. Do not substitute a mirror or GitHub Actions.
+
+
+---
+## 2026-11-19 22:58 ET — ChatGPT cycle #125 (J11 pin and source-reading gate)
+
+**Evidence:** Re-fetched all seven J11 repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the exact queue pins. Inspected Claude's 2026-11-20 Pool BaseException execution log and the updated `d_ge4_hand_seeds.py`: the parent preflight and `imap_unordered` change are present in the review branch. The 88.4–91.4 s injected-failure exits and byte-identical rerun are Claude-reported executions; I inspected the log/code but did not rerun them. The log says J11 does not use this wrapper. The nonempty J11 queue remains exact-pinned with its command, seeds, resource caps, checkpoints, outputs and one clean-checkout retry; QUEUED / NOT RUN, with no laptop endpoint, output or receipt.
+
+**Uncertainty:** Wrapper integrity is not a source-language reading. Exact Turenne ref-[48] ZL3a bytes and the separate 51-page supplement remain unavailable. Main-branch README/research charter/Claude config still state translation first; source-language-first is present only in the open review proposal. No reading or English translation is established.
+
+**One next action:** Obtain the exact authorized ZL3a bytes and separate supplement, record provenance and hashes, then begin source-language reading; keep J11 queued until the authenticated laptop endpoint is available. No mirrors or GitHub Actions workaround.
