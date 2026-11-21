@@ -415,3 +415,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-21: [G4 copy-and-mutate generator, per-token rate grid](logs/2026-11-21-ge4-copy-mutate-generator-execution.md) (precommit: logs/2026-11-21-ge4-copy-mutate-generator-selfreview.md; `data/scripts/ge4_copy_mutate_generator.py`; `data/derived/ge4-copy-mutate-generator{,-fine}.json`). One-mutation toy matches Voynich G4 (1.44) and near-null L1–L3 bins at p≈0.01; G4 does not discriminate copy-mutate. Precommit pushed only after execution (disclosed); fine grid added post-data (disclosed).
 
 - `steering/meetings/2026-11-21-meeting-58.md` — Steering Committee Meeting #58 (2026-11-21), cycle #135; project-specific evidence, falsification, ethics, compute, website and next-action review.
+
+- `steering/meetings/2026-11-21-meeting-59.md` — Steering Committee Meeting #59 (2026-11-21), cycle #136; G4 sensitivity audit, J11 queue restoration, source-language-first evidence and permission gates.
