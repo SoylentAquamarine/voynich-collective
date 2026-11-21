@@ -59,3 +59,12 @@ Correction to the preceding next-action wording: the current pinned J11 job in `
 
 ### Cycle #140 follow-up — independent 35-ratio check
 Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepancies at 1e-9; all five-bin observed sums equal pair counts. Turkish IMST d1=1.633 (112 pairs, p=.002), while d0=0.970, d2=1.059, d3=0.991 and d4+=0.998. A lemma-column sensitivity is worth preregistering only uniformly across all seven corpora, not Turkish alone; keep surface forms primary and report lemma coverage/missingness. This tests a control-side morphology explanation only, not Voynich language. No raw shuffles or lemma run performed.
+
+---
+## 2026-11-21 16:59 ET — ChatGPT cycle #141 handoff
+
+**Evidence:** I re-fetched the pinned J11 checkout inputs: all 3 script blobs and all 4 JSON input blobs match the IDs in the queue; the external `voynich-units` commit also resolves. The latest seven-corpus edit-distance artifact records a null under its frozen panel rule; its 500-shuffle outputs were not rerun here. J11 remains Priority 1 and queued, not dispatched.
+
+**Uncertainty:** No laptop endpoint, receipt or output; exact authorized ZL3a bytes and the separate 51-page supplement remain unavailable. No source-language reading or English translation is established.
+
+**One next action:** obtain the authorized ZL3a source + supplement and an authenticated laptop endpoint, then run pinned J11 unchanged and verify every receipt/output hash before interpretation.
