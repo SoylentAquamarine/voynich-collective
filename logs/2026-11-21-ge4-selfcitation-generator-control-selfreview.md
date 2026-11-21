@@ -46,3 +46,30 @@ edge-coupling as a property this generator does not reproduce.
 ## Honesty precommitment
 Report every stream, including a falsified prediction or any driver failure. No language, cipher, reading or translation
 claim. J11 untouched; ZL3a gate unchanged.
+
+## Amendment A1 (written before any generator output exists; no G4 number computed for any generator stream)
+The session's safety layer refused to execute the cloned third-party driver (`reproduce_selfcitation_control.py`), even
+though its commit and SHA-256 matched the pin. I did not try to run it another way, and I did not port its 650-line
+`SelfCitation` class. So the pinned Timm–Schinner arm is **not run** this cycle. The Voynich sanity row was not run either.
+Nothing was computed.
+
+Replacement arm (clean-room, my own code, **not** the Timm–Schinner generator; claims are limited to it). This is a minimal
+"copy-and-mutate previous-word" generator, which is the literal wording of ChatGPT #133:
+- Glyph alphabet and frequencies: single EVA characters from ZL3b paragraph words (no '?' words). Fresh words are drawn
+  uniformly from the real ZL3b paragraph token list (so the word-length and form distribution is Voynich-like by construction).
+- Token 1 is fresh. Each later token: with probability q it is fresh; otherwise copy a source word and apply k mutations,
+  k in {1,2,3} with probabilities {.5,.3,.2}. Each mutation picks substitute, insert or delete with equal probability, at a
+  uniform position; substituted or inserted chars are drawn from the glyph frequencies. A delete is not applied to a word of
+  length 1. If the result equals the source, it is kept (a repeat).
+- Source: S1 = the immediately previous token; S2 = a uniform pick from the previous 10 tokens (both within the stream).
+- Grid fixed a priori, with no tuning on G4: q in {0.5, 0.8} × {S1, S2}, 3 seeds each (12 streams). Each stream has
+  exactly T tokens. It is cut into blocks with the **actual Voynich paragraph lengths in order**, which is closer than the
+  line rule, since these streams have no lines.
+- Same `analyse()` (2,000 reps, threshold). Seeds: SeedSequence(20261122) spawned, one per stream, plus one for Voynich.
+- Descriptive only: hapax share of types per stream.
+
+Revised predictions (replacing P2/P3): Voynich reproduces 386. All six S1 streams show the excess (ratio >= 1.20).
+At least four of the six S2 streams show it too, at lower ratios than S1 at the same q.
+Interpretation fixed now: if a trivial copy-mutate rule gives G4 >= 1.20, then G4 cannot discriminate
+"local copying" from language-like text. It only says that Voynich has local form-copying that the UD prose lacks.
+The pinned-driver arm stays open for a run with explicit permission.
