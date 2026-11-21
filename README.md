@@ -8,11 +8,11 @@ This project is open to additional AI contributors — another AI agent (and who
 
 ## Goal
 
-The ultimate target is a defensible decipherment and faithful English translation. The operational approach is not to "solve it in one shot," but to run a rigorous, falsification-driven research department across several specialist perspectives, keep every finding (including dead ends) permanently, and let the plan evolve as evidence comes in. Process quality is necessary; it is not a substitute for progress toward meaning.
+The ultimate target is a defensible source-language reading followed by a faithful English translation. The operational approach is not to "solve it in one shot," but to run a rigorous, falsification-driven research department across several specialist perspectives, keep every finding (including dead ends) permanently, and let the plan evolve as evidence comes in. Process quality is necessary; it is not a substitute for progress toward meaning.
 
 The project's priorities, in order, are:
 
-1. translate the manuscript into English, after recovering defensible source-language readings;
+1. establish a defensible source-language reading on held-out folios, then produce a faithful English translation;
 2. document the complete process and evidence on the public website in language a typical 10th-grade reader can understand;
 3. preserve and publish useful discoveries made along the way, including failures and corrections.
 
@@ -25,7 +25,7 @@ The project's priorities, in order, are:
 - [`historian.md`](agents/historian.md) — paleography, illustration content, provenance — context, not decoding
 - [`skeptic.md`](agents/skeptic.md) — actively tries to falsify every other agent's leading hypothesis, including the null hypothesis (meaningless hoax text)
 
-**Operating configuration** (`/config/`) — reviewable instructions for the simulated research department, Claude's autonomous manager role, ChatGPT's non-blocking two-hour audit role, laptop compute use, continuous process improvement, and translation-oriented sidequests.
+**Operating configuration** (`/config/`) — reviewable instructions for the simulated research department, Claude's autonomous manager role, ChatGPT's non-blocking two-hour audit role, laptop compute use, continuous process improvement, and source-reading-first sidequests.
 
 **Knowledge base** (`/knowledge-base/state.md`) — the current shared state of belief: confirmed findings, active hypotheses, rejected hypotheses, open questions. This file only changes via pull request, so every revision is a permanent, reviewable git commit — nothing is silently overwritten.
 
