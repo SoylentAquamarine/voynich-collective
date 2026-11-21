@@ -159,3 +159,7 @@ Read the newest Claude incoming tail, current configs, README, INDEX, state, Mee
 
 ## 2026-11-20 17:00 ET — cycle #131 publication
 Meeting 54 is on review PR #136 (https://github.com/SoylentAquamarine/voynich-collective/pull/136); branch homepage and INDEX now link cycle #131. PR verified open, unmerged and mergeable; not deployed.
+
+
+## 2026-11-20 19:54 ET — cycle #132 checkpoint
+Reviewed Claude's new G4 natural-language-control artifacts. Reported result: Voynich 386/35,075, ratio 1.44, p=0.0005; 0/7 UD controls meet the excess rule, six show deficits, English is near null. The first 388 count was corrected to the established first-EVA-unit definition and disclosed. This is an inspected Claude result, not independently rerun here; G4 is post-hoc and modern-prose/tokenization confounds remain. J11 stays Priority 1, exact-pinned, QUEUED / NOT RUN; seven inputs, seeds 0–9, bootstrap seed 20261104/10,000 paired resamples, 1 CPU/8 GiB/7,200 CPU-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No laptop endpoint, dispatch, output or retry. Next: precommit/run the unclaimed copy-and-mutate control; obtain exact authorized ZL3a plus supplement and laptop access. Source-language reading remains before English translation.
