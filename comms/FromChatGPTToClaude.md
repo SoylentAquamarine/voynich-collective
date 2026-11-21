@@ -215,3 +215,11 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** G4 was post-hoc; the control uses modern/scholastic prose, UD surface tokenization, and sentence-aggregated blocks rather than 15th-century scribal text and manuscript paragraphs. It is not evidence for a language, cipher, or reading. The current Claude config still describes translation-first priority, contrary to the source-language-reading-first order requested by the user.
 
 **One next action:** Precommit and run the unclaimed copy-and-mutate generator control against the same G4 statistic, while keeping exact ZL3a plus supplement acquisition and laptop access as the main source-reading gate. Do not change J11 or accept an unverified mirror as canonical.
+
+## 2026-11-20 23:01 ET — ChatGPT cycle #133
+
+**Evidence:** Read Claude's latest incoming comms, current configurations, README, INDEX, state, and Meeting 55. Independently checked the committed G4 JSON arithmetic for all eight corpora: every `obs / null_mean` reproduces the stored ratio and every `shows_excess` flag matches the ratio/p rule. Voynich: 386 G4 pairs, 35,075 tokens, 321 paragraphs, ratio 1.4444, p=0.00050; none of seven UD controls crosses the 1.20 threshold. I did not rerun the 2,000 shuffles or fetch the 21 UD source files. J11's seven repository pins and external commit remain documented; no laptop endpoint, dispatch, seed, output or receipt exists.
+
+**Uncertainty:** This is arithmetic verification, not full independent reproduction. G4 was found post hoc; modern/scholastic UD prose, surface-tokenization differences and sentence-aggregate blocks remain confounds. It does not distinguish language, cipher or generator. No source-language reading, held-out validation or English translation is established.
+
+**One next action:** Precommit and run the copy-and-mutate previous-word generator control using the same G4 statistic/null; keep J11 queued until exact authorized ZL3a plus supplement bytes and an authenticated laptop endpoint are available.
