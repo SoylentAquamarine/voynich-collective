@@ -1,0 +1,382 @@
+{
+ "precommit": "logs/2026-11-21-ge4-natural-language-control-selfreview.md",
+ "reps": 2000,
+ "seed": 20261121,
+ "voynich_tokens_T": 35075,
+ "voynich_paragraphs": 321,
+ "mean_paragraph_len_m": 109.26791277258567,
+ "rule": "shows_excess iff G4 ratio >= 1.20 and p <= 0.0125",
+ "corpora": {
+  "voynich_ZL3b_eva": {
+   "L1": {
+    "obs": 2505,
+    "null_mean": 2408.254,
+    "null_sd": 42.76758683863283,
+    "ratio": 1.0401726728160734,
+    "z": 2.262133712735166,
+    "p": 0.012993503248375811
+   },
+   "L2": {
+    "obs": 1658,
+    "null_mean": 1670.0725,
+    "null_sd": 36.19483725270774,
+    "ratio": 0.9927712719058603,
+    "z": -0.33354204401338605,
+    "p": 0.6256871564217891
+   },
+   "L3": {
+    "obs": 839,
+    "null_mean": 819.448,
+    "null_sd": 26.559730721526524,
+    "ratio": 1.0238599642686297,
+    "z": 0.7361520417883314,
+    "p": 0.22688655672163918
+   },
+   "G4": {
+    "obs": 386,
+    "null_mean": 267.2365,
+    "null_sd": 15.34860149166692,
+    "ratio": 1.444413468968498,
+    "z": 7.737740800976509,
+    "p": 0.0004997501249375312,
+    "shows_excess": true
+   },
+   "tokens": 35075,
+   "blocks": 321,
+   "vocab": 7180,
+   "reproduces_1118_L4plus_obs": {
+    "ref": 386,
+    "match": true
+   }
+  },
+  "latin_ittb": {
+   "L1": {
+    "obs": 1840,
+    "null_mean": 1977.8375,
+    "null_sd": 40.85744844884467,
+    "ratio": 0.9303089864561673,
+    "z": -3.373619871847326,
+    "p": 1.0
+   },
+   "L2": {
+    "obs": 451,
+    "null_mean": 502.378,
+    "null_sd": 21.43236141912505,
+    "ratio": 0.8977303942449709,
+    "z": -2.397216013451187,
+    "p": 0.992503748125937
+   },
+   "L3": {
+    "obs": 63,
+    "null_mean": 97.12,
+    "null_sd": 9.854369589172105,
+    "ratio": 0.6486820428336079,
+    "z": -3.4624234144303623,
+    "p": 1.0
+   },
+   "G4": {
+    "obs": 43,
+    "null_mean": 169.7295,
+    "null_sd": 12.563611333927838,
+    "ratio": 0.25334429194689195,
+    "z": -10.08702805520328,
+    "p": 1.0,
+    "shows_excess": false
+   },
+   "tokens": 35081,
+   "blocks": 295,
+   "vocab": 4002,
+   "source": {
+    "repository": "https://github.com/UniversalDependencies/UD_Latin-ITTB",
+    "commit": "b19bcbd3ab66914570b5bb0616a9066d56d5e7ea",
+    "files": [
+     "la_ittb-ud-train.conllu",
+     "la_ittb-ud-dev.conllu",
+     "la_ittb-ud-test.conllu"
+    ]
+   }
+  },
+  "italian_isdt": {
+   "L1": {
+    "obs": 1479,
+    "null_mean": 1801.6745,
+    "null_sd": 39.51201778889557,
+    "ratio": 0.8209029988491261,
+    "z": -8.166490046749379,
+    "p": 1.0
+   },
+   "L2": {
+    "obs": 264,
+    "null_mean": 307.4285,
+    "null_sd": 16.83201971689672,
+    "ratio": 0.8587362590000602,
+    "z": -2.5801122343270873,
+    "p": 0.9970014992503748
+   },
+   "L3": {
+    "obs": 35,
+    "null_mean": 56.9785,
+    "null_sd": 7.577667038739563,
+    "ratio": 0.6142667848398958,
+    "z": -2.900430948950194,
+    "p": 0.9980009995002499
+   },
+   "G4": {
+    "obs": 6,
+    "null_mean": 24.5435,
+    "null_sd": 4.840775531875032,
+    "ratio": 0.24446391101513637,
+    "z": -3.8306878469982144,
+    "p": 1.0,
+    "shows_excess": false
+   },
+   "tokens": 35077,
+   "blocks": 290,
+   "vocab": 8397,
+   "source": {
+    "repository": "https://github.com/UniversalDependencies/UD_Italian-ISDT",
+    "commit": "ff2447f6b21e03adbbbed5eff306f79b8857286b",
+    "files": [
+     "it_isdt-ud-train.conllu",
+     "it_isdt-ud-dev.conllu",
+     "it_isdt-ud-test.conllu"
+    ]
+   }
+  },
+  "turkish_imst": {
+   "L1": {
+    "obs": 1690,
+    "null_mean": 1780.0535,
+    "null_sd": 39.89817837633693,
+    "ratio": 0.9494096666195707,
+    "z": -2.2570829963858574,
+    "p": 0.9835082458770614
+   },
+   "L2": {
+    "obs": 344,
+    "null_mean": 369.489,
+    "null_sd": 18.53803870424269,
+    "ratio": 0.9310155376750052,
+    "z": -1.3749566718817163,
+    "p": 0.920039980009995
+   },
+   "L3": {
+    "obs": 88,
+    "null_mean": 77.5605,
+    "null_sd": 8.619648470210372,
+    "ratio": 1.1345981524100541,
+    "z": 1.211128276991696,
+    "p": 0.13093453273363317
+   },
+   "G4": {
+    "obs": 81,
+    "null_mean": 100.193,
+    "null_sd": 9.952022457772088,
+    "ratio": 0.8084397113570808,
+    "z": -1.9285527219656862,
+    "p": 0.9775112443778111,
+    "shows_excess": false
+   },
+   "tokens": 35073,
+   "blocks": 360,
+   "vocab": 14388,
+   "source": {
+    "repository": "https://github.com/UniversalDependencies/UD_Turkish-IMST",
+    "commit": "0c939115d8277ecfb39e1bbc3f066b1852ab5ddc",
+    "files": [
+     "tr_imst-ud-train.conllu",
+     "tr_imst-ud-dev.conllu",
+     "tr_imst-ud-test.conllu"
+    ]
+   }
+  },
+  "estonian_edt": {
+   "L1": {
+    "obs": 1991,
+    "null_mean": 2010.5935,
+    "null_sd": 41.78539526856243,
+    "ratio": 0.9902548675304084,
+    "z": -0.4689078534274695,
+    "p": 0.6821589205397302
+   },
+   "L2": {
+    "obs": 290,
+    "null_mean": 310.5335,
+    "null_sd": 17.12672991992342,
+    "ratio": 0.933876699293313,
+    "z": -1.1989153852489673,
+    "p": 0.896551724137931
+   },
+   "L3": {
+    "obs": 40,
+    "null_mean": 60.0225,
+    "null_sd": 7.569279605748489,
+    "ratio": 0.6664167603815235,
+    "z": -2.6452319167591476,
+    "p": 0.9975012493753124
+   },
+   "G4": {
+    "obs": 38,
+    "null_mean": 73.362,
+    "null_sd": 8.360619355047806,
+    "ratio": 0.5179793353507266,
+    "z": -4.229590954723927,
+    "p": 1.0,
+    "shows_excess": false
+   },
+   "tokens": 35084,
+   "blocks": 301,
+   "vocab": 13715,
+   "source": {
+    "repository": "https://github.com/UniversalDependencies/UD_Estonian-EDT",
+    "commit": "594d1c3902783812d383227e640c0ae782798efd",
+    "files": [
+     "et_edt-ud-train.conllu",
+     "et_edt-ud-dev.conllu",
+     "et_edt-ud-test.conllu"
+    ]
+   }
+  },
+  "arabic_padt": {
+   "L1": {
+    "obs": 2666,
+    "null_mean": 3030.134,
+    "null_sd": 44.71920218429663,
+    "ratio": 0.8798290768659076,
+    "z": -8.142676573238766,
+    "p": 1.0
+   },
+   "L2": {
+    "obs": 2914,
+    "null_mean": 2481.476,
+    "null_sd": 37.559478484132335,
+    "ratio": 1.174301101441239,
+    "z": 11.515708349963573,
+    "p": 0.0004997501249375312
+   },
+   "L3": {
+    "obs": 196,
+    "null_mean": 171.998,
+    "null_sd": 12.462222755190986,
+    "ratio": 1.1395481342806313,
+    "z": 1.9259806594294964,
+    "p": 0.037481259370314844
+   },
+   "G4": {
+    "obs": 16,
+    "null_mean": 35.6895,
+    "null_sd": 5.838843185940174,
+    "ratio": 0.4483111279227784,
+    "z": -3.3721576985338384,
+    "p": 1.0,
+    "shows_excess": false
+   },
+   "tokens": 35082,
+   "blocks": 354,
+   "vocab": 10305,
+   "source": {
+    "repository": "https://github.com/UniversalDependencies/UD_Arabic-PADT",
+    "commit": "dfb6b4c547f1fe10f1857b39e44de3f86c47a2fe",
+    "files": [
+     "ar_padt-ud-train.conllu",
+     "ar_padt-ud-dev.conllu",
+     "ar_padt-ud-test.conllu"
+    ]
+   }
+  },
+  "hebrew_iahltwiki": {
+   "L1": {
+    "obs": 2957,
+    "null_mean": 3018.73,
+    "null_sd": 48.3188379413247,
+    "ratio": 0.9795510032364604,
+    "z": -1.2775555586614267,
+    "p": 0.895552223888056
+   },
+   "L2": {
+    "obs": 190,
+    "null_mean": 205.1675,
+    "null_sd": 13.505644884639903,
+    "ratio": 0.9260725992177125,
+    "z": -1.1230489272859625,
+    "p": 0.8820589705147426
+   },
+   "L3": {
+    "obs": 18,
+    "null_mean": 19.6195,
+    "null_sd": 4.343468631174858,
+    "ratio": 0.9174545732561993,
+    "z": -0.3728586845030219,
+    "p": 0.6796601699150425
+   },
+   "G4": {
+    "obs": 11,
+    "null_mean": 24.7335,
+    "null_sd": 4.961499546508092,
+    "ratio": 0.44474093840338,
+    "z": -2.7680139585351067,
+    "p": 0.9995002498750625,
+    "shows_excess": false
+   },
+   "tokens": 35087,
+   "blocks": 296,
+   "vocab": 12537,
+   "source": {
+    "repository": "https://github.com/UniversalDependencies/UD_Hebrew-IAHLTwiki",
+    "commit": "fece0b2599e504aea329d7424561564a2756a630",
+    "files": [
+     "he_iahltwiki-ud-train.conllu",
+     "he_iahltwiki-ud-dev.conllu",
+     "he_iahltwiki-ud-test.conllu"
+    ]
+   }
+  },
+  "english_ewt": {
+   "L1": {
+    "obs": 1662,
+    "null_mean": 1780.1055,
+    "null_sd": 40.24962570943983,
+    "ratio": 0.9336525278979252,
+    "z": -2.9343254233616474,
+    "p": 0.999000499750125
+   },
+   "L2": {
+    "obs": 344,
+    "null_mean": 373.2265,
+    "null_sd": 18.18296449289829,
+    "ratio": 0.9216923235622337,
+    "z": -1.6073561608402724,
+    "p": 0.9480259870064968
+   },
+   "L3": {
+    "obs": 35,
+    "null_mean": 98.5445,
+    "null_sd": 9.245540533143533,
+    "ratio": 0.35516949195541103,
+    "z": -6.872989174857311,
+    "p": 1.0
+   },
+   "G4": {
+    "obs": 28,
+    "null_mean": 27.446,
+    "null_sd": 5.115670435045636,
+    "ratio": 1.0201850907236027,
+    "z": 0.10829470096524238,
+    "p": 0.4737631184407796,
+    "shows_excess": false
+   },
+   "tokens": 35081,
+   "blocks": 297,
+   "vocab": 6246,
+   "source": {
+    "repository": "https://github.com/UniversalDependencies/UD_English-EWT",
+    "commit": "4a4d77f599ea53cc405f85d0cec4b2f14f81d42b",
+    "files": [
+     "en_ewt-ud-train.conllu",
+     "en_ewt-ud-dev.conllu",
+     "en_ewt-ud-test.conllu"
+    ]
+   }
+  }
+ }
+}
