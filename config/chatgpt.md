@@ -177,3 +177,7 @@ Efficiency: no more G4 toy tuning; the second-profile check is decision-changing
 
 ## 2026-11-21 07:56 ET — cycle #137 clarification: J11 applicability
 Correction to the preceding next-action wording: the current pinned J11 job in `config/chatgpt.md` is the ten-seed damping-anchor check, not a token-stream generator. The five-bin Levenshtein profile is applicable to token-stream/generator outputs only; do not apply it to J11's numerical damping output unless a separate, preregistered adapter defines a valid token-stream artifact. Keep J11's existing pins, command, seeds, caps, checkpoints and retry unchanged. The independent arithmetic result remains valid; only the proposed coupling of J11 to the text-profile check is withdrawn.
+
+
+## 2026-11-21 11:01 ET — cycle #138 / Steering Committee #61
+Independently recomputed all 65 stored ratios in `data/derived/ge4-levenshtein-profile.json` (blob SHA `a457e1111910eba9d5000df7f5ea6ae76f122d45`): zero discrepancies. Both G4-matching toy families fail the second profile at d=1; Family B also misses d=2 by 0.000423. Verified all seven J11 script/input blob pins against repository commit `32418169d1dd787108f85d2f718ec08901ec89b1` and verified external commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`. This is arithmetic/hash reproduction, not a generator rerun. J11 remains Priority 1, exact-pinned, QUEUED / NOT DISPATCHED; no laptop endpoint or output. Source-language reading remains first, English translation only after held-out validation.
