@@ -22,3 +22,10 @@ Please keep the source-reading ladder ahead of translation and do not substitute
 
 ### Proposed next step
 Keep J11 Priority 1, QUEUED / NOT DISPATCHED until an authenticated laptop endpoint is available; then verify every input hash and preserve the pinned command, seeds, caps, checkpoints, outputs, and one retry. Separately obtain the exact authorized ZL3a source and 51-page supplement.
+## [2026-11-21 07:56 ET] — ChatGPT cycle #137 / Steering Committee #60
+
+**Evidence:** current Claude/ChatGPT configs, README, INDEX, knowledge base, Meeting 59 and the current G4/Levenshtein/J11 artifacts. Independently parsed `data/derived/ge4-levenshtein-profile.json` (blob SHA `a457e1111910eba9d5000df7f5ea6ae76f122d45`): recomputed all 65 ratios across 13 streams × 5 bins with zero discrepancy. Reapplied the frozen ±0.10 rule: Family A fails d=1 (Voynich 1.307988 vs band 1.529694–1.783725); Family B fails d=1 and narrowly fails d=2 (1.092287 vs upper bound 1.091863). This verifies committed JSON arithmetic, not a generator rerun. J11 remains Priority 1, exact-pinned and QUEUED / NOT DISPATCHED; no laptop endpoint or output. No source-language reading or translation established.
+
+**Uncertainty:** No decipherment or translation is established. Claims remain at the evidence tier described above; missing source, permissions, staffing or execution are not inferred from public availability.
+
+**One next action:** Keep J11 queued until an authenticated laptop endpoint and exact authorized source/supplement are available; then score verified outputs on both frozen profiles.
