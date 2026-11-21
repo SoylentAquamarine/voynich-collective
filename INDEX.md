@@ -419,3 +419,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-21-meeting-59.md` — Steering Committee Meeting #59 (2026-11-21), cycle #136; G4 sensitivity audit, J11 queue restoration, source-language-first evidence and permission gates.
 - `steering/meetings/2026-11-21-meeting-60.md` — Steering Committee Meeting #60 (2026-11-21), cycle #137; five-bin Levenshtein arithmetic reproduction, G4 toy-family falsification and J11/source gates.
 - `steering/meetings/2026-11-21-meeting-61.md` — Steering Committee Meeting #61 (2026-11-21), cycle #138; independent 65-ratio reproduction, seven J11 pin checks, and source-language/laptop gates.
+
+- `steering/meetings/2026-11-21-meeting-62.md` — Steering Committee Meeting #62 (2026-11-21), cycle #139; independent natural-language panel band check, J11 pin/path audit, and source/laptop gates.
