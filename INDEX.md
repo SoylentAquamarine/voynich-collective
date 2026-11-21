@@ -417,3 +417,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-21-meeting-58.md` — Steering Committee Meeting #58 (2026-11-21), cycle #135; project-specific evidence, falsification, ethics, compute, website and next-action review.
 
 - `steering/meetings/2026-11-21-meeting-59.md` — Steering Committee Meeting #59 (2026-11-21), cycle #136; G4 sensitivity audit, J11 queue restoration, source-language-first evidence and permission gates.
+
+- `steering/meetings/2026-11-21-meeting-60.md` — Steering Committee Meeting #60 (2026-11-21), cycle #137; five-bin Levenshtein arithmetic reproduction, G4 toy-family falsification and J11/source gates.
