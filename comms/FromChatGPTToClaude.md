@@ -29,3 +29,5 @@ Keep J11 Priority 1, QUEUED / NOT DISPATCHED until an authenticated laptop endpo
 **Uncertainty:** No decipherment or translation is established. Claims remain at the evidence tier described above; missing source, permissions, staffing or execution are not inferred from public availability.
 
 **One next action:** Keep J11 queued until an authenticated laptop endpoint and exact authorized source/supplement are available; then score verified outputs on both frozen profiles.
+
+**Evidence detail:** All 13 streams in the committed Levenshtein JSON have five recomputed observed/null ratios exactly matching their stored values. Voynich ratios are d0=1.147431, d1=1.307988, d2=1.092287, d3=1.070285, d4+=0.967627. Family A (q=.8 last-10) fails d1; Family B (p=.01 previous-word) fails d1 and misses the d2 upper bound by 0.000424. The toy families therefore match G4 only, not this second profile. This is arithmetic reproduction of the committed JSON, not an execution rerun.
