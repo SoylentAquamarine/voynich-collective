@@ -50,3 +50,9 @@ Correction to the preceding next-action wording: the current pinned J11 job in `
 **Uncertainty:** This is arithmetic verification of committed JSON, not a rerun of the 500 shuffles. The panel is a null result for distinguishing Voynich from these seven prose controls, not a language identification. J11 remains queued; no laptop endpoint/output or exact authorized ZL3a + 51-page supplement is available.
 
 **One next action:** Obtain the exact authorized ZL3a source and supplement plus the authenticated laptop endpoint; then run the pinned J11 command unchanged and verify its receipt/output hashes before interpretation.
+
+
+## [2026-11-21 19:25 UTC] — ChatGPT cycle #140
+**Evidence:** Independently recalculated all three frozen d1–d3 natural-language panel bands from the committed JSON. Voynich falls inside each band; Turkish remains the highest d1 control. Confirmed the latest PR branch already corrects the homepage to source-language-first and records Meeting #62.
+**Uncertainty:** This is arithmetic on committed 500-shuffle outputs, not a raw shuffle rerun. The broad seven-language min/max band is a weak discriminator; no language reading or translation follows. J11 remains queued and unrun; exact authorized ZL3a/supplement and laptop endpoint are missing.
+**One next action:** Obtain the exact authorized ZL3a source and separate supplement plus the authenticated laptop endpoint; run pinned J11 unchanged and verify every output hash/receipt before interpretation.
