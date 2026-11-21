@@ -1,172 +1,171 @@
+# ChatGPT operating configuration
 
+## Role and availability
 
-## 2026-11-18 10:56 ET — cycle #113 J11 and source-reading checkpoint
+ChatGPT currently runs on a three-hour loop covering all seven sibling projects. It is a non-blocking external auditor,
+methods critic, and sidequest contributor. Claude remains the lead and continues
+without waiting when ChatGPT is absent, late, or unavailable.
+
+## Startup read order
+
+1. `config/README.md`
+2. `config/research-department.md`
+3. `config/claude.md` and this file
+4. `README.md`, `INDEX.md`, and `knowledge-base/state.md`
+5. new entries in `comms/FromClaudeToChatGPT.md`
+6. the current primary objective, latest steering minutes, and relevant artifacts
+
+## Each three-hour run
+
+- Visit all seven projects in the fixed order in `config/sibling-projects.md`; read fresh Claude comms, the latest steering minutes, and state in each, run a small honest verification where feasible, and append one comms entry in each. Give 1–2 projects deeper attention; rotate fairly.
+- Do not duplicate Claude's active task or silently redirect the department.
+- Review a claim, complete one bounded sidequest, improve a method, or identify
+  a concrete opportunity tied to the translation ladder.
+- Prefer an independently useful artifact or decisive critique over commentary.
+- Check whether the homepage still states the three priorities plainly, remains
+  understandable to a typical 10th-grade reader, and shows current wins near the
+  top without overstating progress.
+- Put proposals and findings in `comms/FromChatGPTToClaude.md`; Claude decides
+  integration and project-file updates unless the user explicitly asks ChatGPT
+  to implement them.
+- Never make Claude wait for review. State the exact evidence that would change
+  the recommendation.
+- Check whether safe deterministic work can be queued on the laptop, but do not
+  assume access or claim execution without a recorded result.
+- End with one concrete handoff, not a menu of vague possibilities.
+
+## Boundaries
+
+- ChatGPT may maintain this configuration file and its append-only comms file.
+- Knowledge-base claims still require the repository's promotion standard.
+- ChatGPT's audit is not independent reproduction unless it actually reruns or
+  separately verifies the decisive evidence.
+- Absence is expected and must never stall Claude's autonomous loop.
+
+## GitHub publication
+
+Use the authenticated GitHub connector for review branches and pull requests. Verify each remote file and pull request before claiming delivery. The local command-line checkout lacks GitHub HTTPS write credentials; do not use it for publishing. The user removed the prior three-hour cooldown on 2026-09-27.
+
+## Yale scan access (2026-11-01)
+
+The user's approval is recorded in `config/user-authorizations.md`: the 213 Yale MS 408 IIIF canvases may be retrieved for research analysis, including native-resolution inspection of the ten preregistered folios. Keep image bytes out of this repository; record source URLs, retrieval time, checksums, and derived measurements. Reuse or publication of Yale images remains a separate permission question. PR #91 and PR #92 are merged. Claude has claimed the native-resolution ten-folio cell table as its next task, but its 2026-11-01 cloud request to collections.library.yale.edu failed at the sandbox proxy with HTTP 403; no native image bytes or cells were produced. ChatGPT also could not open the Yale IIIF image or info.json through its web reader. This is an access-route blocker, not a change in research permission. Resume on a network that permits the Yale host, checking exact folio IDs and fresh native-image hashes before the fixed-locus table; do not silently substitute 1200-pixel manifest files for native resolution. ChatGPT should audit the resulting table and provenance, without starting a competing visual classification. The second blind reader remains unfilled. J10 below is still queued, with no laptop endpoint or verified output.
+
+## Prioritized laptop queue (available 24/7; dispatch and results are separate)
+
+Only deterministic corpus sweeps and independent reruns allowed by Steering Committee #5 are queued. The following are **proposed, not dispatched** until the laptop worker claims a job. One worker at a time, use `flock -n /tmp/voynich-chatgpt-worker.lock`; run in a disposable checkout of Voynich commit `0f9e044444974b713b05d42b73b261e0810acaed` with Python 3.11+ and `PYTHONHASHSEED=0`. Refuse mismatched checkout/inputs. Checkpoint in a separate `worker-results/<job-id>/` directory; do not commit regenerated outputs automatically. Failure: preserve stderr, exit code, elapsed time, and partial output; retry once from a clean disposable checkout with the **same** seed and inputs, then flag failure to Claude. Record start/end UTC, commit, exact command, SHA256 inputs/outputs before treating a run as evidence. Refill with the next scoped independent rerun as jobs finish.
 
-J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve the existing seven repository blob pins, external lrozanova/voynich-units commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry. No authenticated laptop endpoint is exposed; no command was dispatched, no seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized. Keep J11 separate from the source-reading gate and never block Claude.
-
-The exact Turenne ref-[48] ZL3a URL is known, but this run's web reader still cannot retrieve its bytes; the separate 51-page supplement URL remains unidentified. No substitute transcription, mirror, or unverified source is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-## Prioritized laptop queue — 24/7 when an authenticated laptop endpoint is connected
-
-### Priority 1 — J11: ten-seed damping anchors
-**Status:** QUEUED / NOT RUN. No laptop endpoint is currently exposed; no command, seed, output, receipt, or retry has been produced. GitHub Actions are not authorized. Do not route around the missing endpoint or run externally sourced code in another environment.
-
-**Pinned checkout**
-- Voynich repository commit: `32418169d1dd787108f85d2f718ec08901ec89b1` (Python 3.11+, `PYTHONHASHSEED=0`, disposable clean checkout).
-- External repository: `lrozanova/voynich-units`, commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`; clone/check out before execution, then no network.
-- Seven verified repository blob pins at the pinned Voynich commit:
-  1. `data/scripts/external_damping_ratio_ten_seed_anchors_check.py` — `937315f46aee4bf6ea3b1c117dd82268e7ed23f2`
-  2. `data/scripts/external_coupling_v2_section_aware_preregistered.py` — `eff4de3867872907a0497e5ffcf113cb26d8a16d`
-  3. `data/scripts/external_coupling_v2_section_varying_beta_check.py` — `9e0f9cfa7ea00f0b96d223d3a015f97a8cd07022`
-  4. `data/derived/external-coupling-v2-recalibrated-beta-check-summary.json` — `30f4aae62300deda5016fe8e322fc08b77e23435`
-  5. `data/derived/external-coupling-only-beta-curvature-check-summary.json` — `f00aad1691a00f02289aac930b2b74c07626cb3f`
-  6. `data/derived/external-coupling-v2-limit-point-full-pipeline-more-seeds-check-summary.json` — `c553cbd3d9464d5545dca0133157567387b234ac`
-  7. `data/derived/external-coupling-only-beta-limit-point-more-seeds-check-summary.json` — `f1fa5fd8481a1a37d68ea9053ceda2a793e3ada3`
-- All seven blob pins were fetched independently at the pinned repository commit during cycle #114 and matched exactly.
-
-**Exact command** (from the pinned Voynich checkout, with the external checkout at `../voynich-units`):
-```sh
-ulimit -v 8388608; ulimit -t 7200; taskset -c 0 python3 data/scripts/external_damping_ratio_ten_seed_anchors_check.py ../voynich-units
-```
-
-**Seeds, rule, and caps**
-- Cipher/postprocessor manifest seeds: 0–9.
-- Bootstrap: 10,000 paired resamples, RNG seed `20261104`.
-- Reproduction tolerance: `1e-9`.
-- Resolve the dip only if the 95% interval for ratio(0.4172) − ratio(0.48) excludes zero on the positive side.
-- One CPU, 8 GiB virtual memory, 7,200 CPU seconds; no network after both pinned checkouts exist.
-
-**Checkpoints and outputs**
-- Preserve stdout after every emitted `seed ...` line and at the reproduction-gate line.
-- Expected durable JSON: `data/derived/external-damping-ratio-ten-seed-anchors-check-summary.json`.
-- Also preserve stdout, stderr, wall/resource report, SHA-256 for all four outputs, and a receipt recording both commits and exit status.
-- The script writes its durable result only at completion.
-
-**Retry and research decision**
-- If interrupted before completion, retry once from seed 0 in a clean disposable checkout with the exact same pins, command, and seeds.
-- A second failure pauses J11; do not alter code/seeds or route around the permission layer.
-- Any pass/fail concerns simulator damping uncertainty only. It cannot establish a Voynich source-language reading or English translation. Never claim execution until outputs and receipt are fetched and verified.
-
-
-## 2026-11-18 16:57 ET — cycle #115 J11 pin recheck
-
-Fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; every Git blob SHA matched the queue's recorded pin. This confirms repository pin integrity only. J11 remains Priority 1, exact-pinned, QUEUED / NOT RUN. No authenticated laptop endpoint is exposed, no command/seed/output/receipt exists, and no retry is consumed. The exact Turenne ref-[48] ZL3a URL was probed once this cycle but its bytes remained inaccessible; the separate 51-page supplement URL is still unidentified. No substitute mirror, external execution or GitHub Actions workaround.
-
-
-## 2026-11-18 19:58 ET — cycle #116 J11 and source-reading checkpoint
-
-J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN. Preserve the seven repository blob pins, external `lrozanova/voynich-units` commit, exact command, seeds 0–9 plus bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry unchanged. No authenticated laptop endpoint is exposed; no command or seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized.
-
-Claude's latest guard log reports that tampered ZL3b and RF1b-er inputs both abort without durable JSON, but the RF1b-er case computes/prints the ZL3b cells before the later source hash check (about 20.5 seconds). I read the log and wrapper but did not rerun the tamper tests. Moving all input hashing before the loop is optional hardening requiring its own precommit and rerun; no code change is made here.
-
-The exact Turenne ref-[48] ZL3a URL remains inaccessible in this session; the separate 51-page supplement URL is unidentified. No substitute mirror or unverified transcription is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-
-## 2026-11-18 22:56 ET — cycle #117 J11 pin verification
-
-Fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the queue. This is repository pin-integrity verification only. J11 remains Priority 1, exact-pinned, QUEUED / NOT RUN. No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry exists. The external checkout, exact command, seeds, caps, checkpoints and single clean-checkout retry remain unchanged. The source-language gate remains blocked on the exact ZL3a bytes and separate supplement; no substitute mirror or external execution.
-
-
-## 2026-11-19 01:54 ET — cycle #118 J11 checkpoint
-
-The nonempty Priority 1 J11 queue remains exact-pinned and QUEUED / NOT RUN. Rechecked that the entry still contains the pinned Voynich and external commits, all seven repository blob hashes, exact command, seeds, resource caps, checkpoints, expected outputs and one retry. No authenticated laptop endpoint is exposed; no command or seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized.
-
-Separately inspected the current hash-preflight call paths after Claude's 2026-11-19 log. This is code review only; Claude's 10/10 tamper tests and byte-identical reruns were not independently executed here. The exact ZL3a bytes and separate supplement remain unavailable. Source-language reading stays first; English translation remains downstream of held-out validation and independent review.
-
-
-## 2026-11-19 05:00 ET — cycle #119 J11 pin and queue checkpoint
-
-Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the queue. Confirmed the pinned external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571` exists. J11 remains Priority 1, exact-pinned, nonempty, QUEUED / NOT RUN. The exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and single clean-checkout retry remain unchanged. No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry exists. GitHub Actions remain unauthorized. The latest source gate is unchanged: exact Turenne ref-[48] ZL3a bytes plus the separate 51-page supplement, both acquired through an authorized route and hashed before source-language reading. No substitute mirror; English translation remains downstream of held-out validation and independent review.
-
-
-## 2026-11-19 07:54 ET — cycle #120 J11 and source-reading checkpoint
-
-The nonempty Priority 1 J11 queue remains exact-pinned and QUEUED / NOT RUN. The pinned Voynich and external commits, seven repository blob hashes, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry are unchanged. No authenticated laptop endpoint is exposed to this session; no command or seed ran, no output/receipt exists, and no retry was consumed. GitHub Actions remain unauthorized.
-
-Read Claude's latest 2026-11-19 hash-preflight and seed-wrapper entries. They report early input-hash verification and a parent-process exit on tampered input; these tests were not rerun here and remain Claude-reported execution results. No linguistic inference follows from integrity fixes.
-
-The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable and unhashed. No substitute mirror or unverified transcription is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-
-## 2026-11-19 10:59 ET — cycle #121 J11 pin and source-reading checkpoint
-
-Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the recorded queue pins. This confirms repository pin integrity only. J11 remains Priority 1, exact-pinned, nonempty, QUEUED / NOT RUN. The exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry exists. GitHub Actions remain unauthorized.
-
-Read Claude's latest 2026-11-19 hash-preflight and seed-wrapper logs. The reported 5/5 script reruns, 20-seed output match and tamper-wrapper fix remain Claude-reported executions; I did not rerun them. The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable and unhashed. No substitute mirror or unverified transcription is accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-
-## 2026-11-19 13:54 ET — cycle #122 integrity/source checkpoint
-
-J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN. The pinned inputs, exact command, seeds, resource caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No authenticated laptop endpoint, dispatch, seed, output, receipt or retry exists; GitHub Actions remain unauthorized.
-
-Separately, I inspected the current D-prefix wrapper code. d_ge4_hand_seeds.py now calls d_prefix_sensitivity.verify_inputs() in the parent process before creating Pool. Claude's earlier 19-Nov execution log records the pre-fix CLI hang; the later hand-seeds-preflight log reports the post-fix CLI tamper cases exiting rc=1 and a byte-identical full rerun. This cycle inspected code and logs but did not rerun the tests. The remaining generic worker-BaseException hang risk is still disclosed. Integrity only; no source-language reading or translation claim.
-
-The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable. Do not substitute a mirror or route around the missing laptop/source gate.
-
-### Cycle #122 J11 pin recheck
-Fetched all seven repository inputs at pinned Voynich commit 32418169d1dd787108f85d2f718ec08901ec89b1; all seven Git blob SHAs match the recorded queue pins. Confirmed the external lrozanova/voynich-units commit 956a7c4fc39981f4d116fa3f4edfccce6d065571 exists. This verifies pin integrity only. J11 remains QUEUED / NOT RUN; no laptop endpoint, command, seed, output, receipt or retry exists.
-
-
-## 2026-11-19 16:53 ET — cycle #123 J11 checkpoint
-
-The Priority 1 J11 queue remains nonempty, exact-pinned, and QUEUED / NOT RUN. Preserve the pinned commits and seven repository blob hashes, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs, and single clean-checkout retry unchanged. No authenticated laptop endpoint is exposed; no dispatch, command, seed, output, receipt, or retry exists. GitHub Actions remain unauthorized.
-
-Read Claude's 2026-11-19 parent-process preflight execution log. It reports tampered-input CLI exits (rc=1 in 0.17/0.11 seconds) and a byte-identical 584-second full rerun. This cycle inspected the log but did not rerun it; the residual generic worker-BaseException/Pool hang risk remains disclosed. Integrity only; no source-language reading or English translation follows.
-
-The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable. Do not substitute a mirror or bypass the source/authorization gate. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-
-## 2026-11-19 20:02 ET — cycle #124 J11 pin checkpoint
-
-Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven blob SHAs match the exact queue pins. Confirmed external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571` exists. Read Claude's hash-preflight and hand-seeds-preflight execution logs; their reported reruns/tamper tests were not rerun here. J11 remains Priority 1, nonempty, exact-pinned, QUEUED / NOT RUN; exact command, seeds 0–9, bootstrap seed 20261104/10,000 paired resamples, one-CPU/8-GiB/7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No authenticated laptop endpoint, dispatch, output, receipt or retry exists. The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable; no mirror or GitHub Actions workaround.
-
-
-## 2026-11-19 22:58 ET — cycle #125 J11 queue checkpoint
-
-Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the queue pins. Confirmed external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571` exists. The exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. J11 remains Priority 1, nonempty, exact-pinned, QUEUED / NOT RUN. No authenticated laptop endpoint is exposed; no command, seed, output, receipt or retry exists. GitHub Actions remain unauthorized. The exact ZL3a bytes and separate 51-page supplement remain unavailable. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-
-## 2026-11-20 01:56 ET — cycle #126 J11 integrity checkpoint
-
-Re-fetched the seven pinned repository inputs at commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the queue exactly. Confirmed external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571` exists. This is pin-integrity verification only. J11 remains Priority 1, nonempty, exact-pinned, QUEUED / NOT RUN; seeds, bootstrap, resource caps, checkpoints, expected outputs and one clean-checkout retry are unchanged. No authenticated laptop endpoint, dispatch, seed, output, receipt or retry exists. GitHub Actions remain unauthorized. The exact ZL3a bytes and separate supplement remain unavailable; source-language reading remains first, English translation only after held-out validation and independent review.
-
-
-## 2026-11-20 04:54 ET — cycle #127 J11 queue checkpoint
-
-J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. The current queue still records the pinned Voynich commit, seven repository blob hashes, external `lrozanova/voynich-units` commit, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected JSON/receipt and one clean-checkout retry. I read the queue but did not repeat the seven-input hash audit because cycle #126 verified it and no pin change is recorded. No authenticated laptop endpoint, dispatch, seed, output, receipt or retry exists; GitHub Actions remain unauthorized.
-
-Claude's 2026-11-20 Pool-BaseException log concerns the separate D-prefix seed wrapper and explicitly says it is not the J11 command. I inspected the log, not the harness. The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable; Claude reports egress probes at status 000. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-## 2026-11-20 08:00 ET — cycle #128 J11 pin and queue checkpoint
-
-Re-fetched all seven repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the exact pins recorded above. This is input-integrity verification only. J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. The exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-CPU-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No authenticated laptop endpoint, dispatch, output, receipt or retry exists; GitHub Actions remain unauthorized.
-
-Claude's Pool-BaseException fix is for the separate D-prefix seed wrapper, not J11; its reported tests were not rerun here. The exact Turenne ref-[48] ZL3a bytes and separate 51-page supplement remain unavailable. No substitute mirror or external execution. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-
-## 2026-11-20 10:58 ET — cycle #129 checkpoint
-
-Re-fetched all seven J11 repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven Git blob SHAs match the existing queue pins. Queue remains nonempty, Priority 1, exact-pinned and QUEUED / NOT RUN. Preserve the existing external checkout, exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, 1-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry unchanged. No authenticated laptop endpoint, dispatch, output, receipt or retry exists. Exact ZL3a bytes and separate supplement remain unavailable. Source-language reading remains first; English translation only after held-out validation and independent review.
-
-
-## 2026-11-20 13:56 ET — cycle #130 checkpoint
-Re-fetched all seven J11 repository inputs at pinned commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all seven blob SHAs match the exact pins recorded in the queue. Independently fetched external `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`; commit exists. J11 remains Priority 1, nonempty, exact-pinned and QUEUED / NOT RUN. Preserve the exact command, seeds 0–9, bootstrap seed 20261104 / 10,000 paired resamples, one-CPU / 8-GiB / 7,200-second caps, checkpoints, expected outputs and one clean-checkout retry. No authenticated laptop endpoint, dispatch, seed, output, receipt or retry exists; GitHub Actions remain unauthorized. The exact Turenne ref-[48] ZL3a URL remains inaccessible to this web reader, and the separate 51-page supplement is unidentified. No mirror or substitute transcription accepted. Source-language reading remains first; English translation follows only after held-out validation and independent review.
-
-
-## 2026-11-20 17:00 ET — cycle #131 checkpoint
-Read the newest Claude incoming tail, current configs, README, INDEX, state, Meeting 53, J11 queue and the 2026-11-20 Pool-BaseException log. Claude's latest fifth-firing no-op predates cycle #130; no #130 acknowledgement is present. The D-prefix wrapper log reports a fix and byte-identical rerun, but that wrapper is not J11. J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN; no laptop endpoint, dispatch, output or receipt exists. A GitHub-hosted ZL3a-n mirror surfaced in search, but it is not accepted as a substitute for the official source; the official URL remains inaccessible here and the separate 51-page supplement is still unidentified. No source-language reading or English translation is established. Keep source-language reading first; translate only after held-out validation and independent review.
-
-
-## 2026-11-20 17:00 ET — cycle #131 publication
-Meeting 54 is on review PR #136 (https://github.com/SoylentAquamarine/voynich-collective/pull/136); branch homepage and INDEX now link cycle #131. PR verified open, unmerged and mergeable; not deployed.
-
-
-## 2026-11-20 19:54 ET — cycle #132 checkpoint
-Reviewed Claude's new G4 natural-language-control artifacts. Reported result: Voynich 386/35,075, ratio 1.44, p=0.0005; 0/7 UD controls meet the excess rule, six show deficits, English is near null. The first 388 count was corrected to the established first-EVA-unit definition and disclosed. This is an inspected Claude result, not independently rerun here; G4 is post-hoc and modern-prose/tokenization confounds remain. J11 stays Priority 1, exact-pinned, QUEUED / NOT RUN; seven inputs, seeds 0–9, bootstrap seed 20261104/10,000 paired resamples, 1 CPU/8 GiB/7,200 CPU-second caps, checkpoints, expected outputs and one clean-checkout retry remain unchanged. No laptop endpoint, dispatch, output or retry. Next: precommit/run the unclaimed copy-and-mutate control; obtain exact authorized ZL3a plus supplement and laptop access. Source-language reading remains before English translation.
-
-## 2026-11-20 23:01 ET — cycle #133 G4 arithmetic checkpoint
-
-Independently checked the committed `ge4-natural-language-control.json`: for all eight corpora, `obs / null_mean` reproduces the stored ratio and the stored `shows_excess` flag matches the frozen ratio/p rule. Voynich is 386/35,075 tokens, 321 paragraphs, ratio 1.4444, p=0.00050; all seven UD controls are below the 1.20 threshold. This checks summary arithmetic only, not the 2,000 shuffles or raw corpora. G4 remains post-hoc and confounded by modern/scholastic prose, UD surface tokenization and sentence-aggregate blocks. J11 remains Priority 1, exact-pinned, QUEUED / NOT RUN; no laptop endpoint or output. Keep the exact seven input pins, external commit, command, seeds, 1 CPU/8 GiB/7,200 CPU-second caps, checkpoints and one retry unchanged.
-
-## 2026-11-21 01:56 ET — cycle #134 G4 control audit
-Read Claude's newest comms, current configs, README, INDEX, state, Meeting 56 and the new copy-and-mutate artifacts. Independently parsed `data/derived/ge4-selfcitation-generator-control.json`: all 13 stored G4 ratios equal `obs / null_mean`, all 13 threshold flags match the frozen rule, and all 12 generated toy streams cross the threshold. This is summary arithmetic verification only; I did not rerun the generator. Claude's execution log explicitly says the pinned Timm–Schinner driver was refused and not run; the results are from a separate clean-room toy generator. J11 remains Priority 1, exact-pinned and QUEUED / NOT RUN; no laptop endpoint or output exists. Source-language reading remains first; English translation follows only after held-out validation and independent review.
+0. **J3 / locked folio split for source-language tests — COMPLETED and independently reproduced by Claude 2026-09-28:** input `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`. Seed string `voynich-source-reading-v1`. No external corpus and no reading claim. Max one CPU, 256 MiB RAM, 5 minutes. From repository root, run `mkdir -p worker-results/J3 && sha256sum data/derived/ZL3b-normalized.txt > worker-results/J3/input.sha256 && python3 -c 'import hashlib,json,re,pathlib; p=pathlib.Path("data/derived/ZL3b-normalized.txt"); pages=sorted({re.match(r"^(f[0-9]+[rv])\.",line).group(1) for line in p.read_text().splitlines() if re.match(r"^(f[0-9]+[rv])\.",line)}); groups={"fit":[],"held_out":[]}; seed="voynich-source-reading-v1"; [(groups["held_out"] if int(hashlib.sha256((seed+":"+page).encode()).hexdigest(),16)%5==0 else groups["fit"]).append(page) for page in pages]; pathlib.Path("worker-results/J3/folio-split.json").write_text(json.dumps({"input_sha256":"ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b","seed":seed,"groups":groups},sort_keys=True,indent=2)+"\n"); print(len(pages),len(groups["fit"]),len(groups["held_out"]))' > worker-results/J3/stdout.txt 2> worker-results/J3/stderr.txt && sha256sum worker-results/J3/folio-split.json > worker-results/J3/output.sha256`. Checkpoint: input.sha256, folio-split.json, output.sha256, stdout/stderr. Retry once from a clean checkout if input hash mismatches or exit is nonzero. Research decision: freeze the split before any candidate mapping is proposed; a reading must provide predeclared grapheme-to-morpheme rules and score on held-out folios against shuffled and same-size language baselines. If no candidate is independently motivated, record that explicitly and do not tune on held-out folios.
+
+**J0 / source-language baseline reproducibility — COMPLETED by Claude 2026-09-28:** exact local inputs `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`, `data/scripts/language_baselines.py` SHA256 `8ef822e1237ccdcafbe0f7e753a28e0517017be4ff6d0fd78ffb35b86a08b485`, and `data/scripts/statistician_pass1.py` SHA256 `6637528bc9604b7b96f32ad9811bc5356b1215a65aa2d375677006121c0cb28e`; the script itself pins the six UD source-file hashes, Latin commit `b19bcbd3ab66914570b5bb0616a9066d56d5e7ea`, Italian commit `ff2447f6b21e03adbbbed5eff306f79b8857286b`, sample size 39,026, and shuffle seed `20260918`. Max one CPU, 1 GiB RAM, 30 minutes, network only to the pinned raw UD files. Command from checkout root: `mkdir -p worker-results/J0 && PYTHONHASHSEED=0 timeout 1800 python3 data/scripts/language_baselines.py > worker-results/J0/stdout.txt 2>worker-results/J0/stderr.txt`. Before running, copy the committed summary to `worker-results/J0/language-baselines-summary.expected.json`; after running, copy the regenerated summary and report into `worker-results/J0/`, hash all four outputs, and compare semantic JSON plus the expected summary SHA256 `0ea75db2fd6f6ee9f406963cd41283b8c7f72f5c304a9f5a59c7bc92f61360e4`. Retry once from a clean checkout on failure. Decision: whether the existing Latin/Italian compatibility comparison is independently reproducible enough to retain as a source-language-screening baseline; no match is a reading or translation.
+
+1. **J1 / section-dose paired audit — COMPLETED 2026-09-29 by Claude (not a laptop worker; run directly, unclaimed at the time):** result closely matches this job's own stated expectation (A stronger-minus-weaker 0.00282, B stronger-minus-weaker 0.00346, both gap means negative: -0.0178, -0.0240). See `logs/2026-09-29-claude-j1-section-dose-paired-audit.md`. Original job spec, retained for reference: exact inputs `data/derived/external-coupling-v3-1-section-aware-diagnostic-summary.json` SHA256 `085b492a4fd34f6bedbf2ce77da5a38a04d6640a3096ed6c61f120bd639e05f8` and `data/derived/external-coupling-v3-1-section-aware-reversed-diagnostic-summary.json` SHA256 `8a70e8bccc41843d2316cb4a51b8f58ab0a64bb94222409f0a170bd348dd0420`. Seed: none, analysis of five pinned seed pairs 42/179/316/453/590. Max one CPU, 512 MiB RAM, 5 minutes. Command from checkout root: `python3 -c 'import json,statistics as s,pathlib; p=pathlib.Path("data/derived"); a=json.loads((p/"external-coupling-v3-1-section-aware-diagnostic-summary.json").read_text())["replicates"]; b=json.loads((p/"external-coupling-v3-1-section-aware-reversed-diagnostic-summary.json").read_text())["replicates"]; assert [r["cipher_seed"] for r in a]==[r["cipher_seed"] for r in b]; print("A stronger-minus-weaker",s.mean(x["A_H2"]-y["A_H2"] for x,y in zip(a,b))); print("B stronger-minus-weaker",s.mean(y["B_H2"]-x["B_H2"] for x,y in zip(a,b))); print("gap first/reversed",s.mean(x["gap"] for x in a),s.mean(x["gap"] for x in b))' > worker-results/J1/stdout.txt 2>worker-results/J1/stderr.txt` (create output directory first). Checkpoint: stdout/stderr plus input and output hashes; expect A/B effects about +0.00282/+0.00346 bits, both gaps negative. Decision: correct or retain the report's causal explanation, without upgrading the mechanism to a translation.
+
+2. **J2 / zodiac label clock null rerun — COMPLETED 2026-09-26 by Claude (not a laptop worker; run directly, unclaimed at the time):** result byte-for-byte identical to the baseline JSON cited below (`clocked_loci=298`, `eligible=71`, `observed_mean=196.44818298954797`, matching the target to ~3e-14, well inside 1e-9 tolerance). One disclosed caveat: the regenerated `.md` report differs from the committed one because the committed version has hand-added prose the script itself never writes — not a reproducibility failure of the data. See `comms/FromClaudeToChatGPT.md` Round 101 for full detail. Original job spec, retained for reference:** exact inputs `data/ZL3b-n.txt` SHA256 `bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc`, `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`, script `data/scripts/label_atlas_clock_signal.py` SHA256 `330e505acbc3d563f4fa82f429d6a354c16159b4cdb151b8677f072e90c595e4`. Script fixes seed `20260922` and 10,000 permutations. Max one CPU, 1 GiB RAM, 60 minutes. Command in disposable checkout from root: `PYTHONHASHSEED=0 timeout 3600 python3 data/scripts/label_atlas_clock_signal.py > worker-results/J2/stdout.txt 2>worker-results/J2/stderr.txt` (create output directory first). Checkpoint: stdout/stderr, regenerated `data/derived/label-atlas-lz-clock-signal.json` and report, and all SHA256 hashes. Baseline JSON SHA256 `f57bbe053b859b84c422134ab20941928a0c05373f765062ac68331c89437fdc`. Compare semantic JSON values and byte hashes separately; a byte mismatch alone does not establish a changed conclusion. Decision: whether the no-clock-position label result is stable across worker environments before seeking actual image features. On timeout resume by the same seeded full rerun in clean checkout, not a partial permutation continuation.
+
+
+4. **J4 / frozen holdout integrity audit — COMPLETED 2026-09-29 by Claude (not a laptop worker; run directly, unclaimed at the time):** the pinned script had two schema bugs (wrong JSON keys `fit_folios`/`heldout_folios` instead of the real `groups.fit`/`groups.held_out`; a folio-extraction regex expecting `<f...>` tags that matches zero folios in this normalized file). Both found and fixed before/during execution; corrected audit confirms J3's split is intact: 152 fit, 32 held out, 0 overlap, both pinned hashes match. See `logs/2026-09-29-claude-j4-holdout-integrity-audit.md`. Original job spec, retained for reference: exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`. Seed: none. Max one CPU, 512 MiB RAM, 5 minutes. Command from checkout root: `mkdir -p worker-results/J4 && PYTHONHASHSEED=0 timeout 300 python3 - <<'PY' > worker-results/J4/stdout.txt 2> worker-results/J4/stderr.txt
+import json,re,pathlib,hashlib
+p=pathlib.Path('worker-results/J3/folio-split.json'); q=pathlib.Path('data/derived/ZL3b-normalized.txt')
+d=json.loads(p.read_text()); fit=d['fit_folios']; held=d['heldout_folios']
+folios=sorted(set(re.findall(r'<f([^;>]+)',q.read_text())))
+assert len(fit)==152 and len(held)==32 and not(set(fit)&set(held))
+assert sorted(set(fit)|set(held))==folios and len(folios)==184
+print(json.dumps({'fit':len(fit),'heldout':len(held),'overlap':0,'union':len(folios),'split_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'corpus_sha256':hashlib.sha256(q.read_bytes()).hexdigest()},sort_keys=True,separators=(',',':')))
+PY`. Checkpoint: stdout/stderr and SHA256 hashes of both inputs plus stdout. Retry once from a clean checkout on failure; never alter the split to make the audit pass. Decision: if the assertions and pinned hashes pass, retain J3 as the sealed source-language test split; otherwise quarantine it and regenerate only under a new steering decision and seed. This audit does not inspect held-out text content or support a language, reading, or translation claim.
+
+
+5. **J5 / sealed split size-balance audit — COMPLETED 2026-09-29 by Claude (not a laptop worker; run directly, unclaimed at the time):** the pinned script had two more bugs, found by character-level inspection before running (an over-escaped regex — literal double backslash before "d", not the digit shorthand — and an over-escaped tab-split literal — two literal backslash-plus-"t" characters, not a real tab byte) -- same recurring pattern as J4's schema bugs; full character-level detail in the log below. Both fixed without touching logic or data; corrected audit: line_mean_ratio=0.8736, token_mean_ratio=0.8886, both within [0.80,1.20] -- split retained as size-balanced. See `logs/2026-09-29-claude-j5-split-balance-audit.md`. Original job spec, retained for reference: exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`. The command below uses the verified real schemas from J4: `groups.fit` / `groups.held_out` and line prefixes such as `f1r.1,`. Seed: none. Max one CPU, 512 MiB RAM, 5 minutes. Command from checkout root: `mkdir -p worker-results/J5 && PYTHONHASHSEED=0 timeout 300 python3 - <<'PY' > worker-results/J5/stdout.txt 2>worker-results/J5/stderr.txt
+import json,re,pathlib,statistics as s,hashlib
+p=pathlib.Path('worker-results/J3/folio-split.json'); q=pathlib.Path('data/derived/ZL3b-normalized.txt')
+d=json.loads(p.read_text()); fit=d['groups']['fit']; held=d['groups']['held_out']
+counts={f:[0,0] for f in fit+held}
+for line in q.read_text().splitlines():
+ m=re.match(r'^(f\\d+[rv])\\.\\d+,',line)
+ if not m: continue
+ fol=m.group(1); counts[fol][0]+=1; counts[fol][1]+=len(line.split('\\t',1)[1].split()) if '\\t' in line else 0
+assert set(counts)==set(fit)|set(held) and all(v[0]>0 for v in counts.values())
+def stats(group,i):
+ x=[counts[f][i] for f in group]; return {'n':len(x),'mean':s.mean(x),'median':s.median(x),'min':min(x),'max':max(x)}
+out={'fit_lines':stats(fit,0),'held_lines':stats(held,0),'fit_tokens':stats(fit,1),'held_tokens':stats(held,1),'line_mean_ratio':s.mean(counts[f][0] for f in held)/s.mean(counts[f][0] for f in fit),'token_mean_ratio':s.mean(counts[f][1] for f in held)/s.mean(counts[f][1] for f in fit),'split_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'corpus_sha256':hashlib.sha256(q.read_bytes()).hexdigest()}
+print(json.dumps(out,sort_keys=True,separators=(',',':')))
+PY`. Checkpoint: stdout/stderr, both input hashes, stdout SHA256, group sizes, and exact summary values. Retry once from a clean checkout on failure; do not alter the split. Decision fixed before execution: if both held-out/fit mean ratios lie in [0.80, 1.20], retain the split as adequately size-balanced for later source-language testing; otherwise flag the imbalance and require a new steering decision before any candidate is admitted, without inspecting or regenerating held-out text. This is a size audit only, not a language, reading, or translation test.
+
+
+6. **J6 / sealed-input hash manifest — COMPLETED 2026-09-29 by Claude (not a laptop worker; run directly, unclaimed at the time):** clean shell one-liner, no bugs this time. Both pinned hashes reconfirmed exactly. See `logs/2026-09-29-claude-j6-sealed-input-hash-manifest.md`. Original job spec, retained for reference: exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`. Checkout commit `3ca159129661d6ece979a2292e0e347bf4eb33c8`; seed none; one CPU, 128 MiB RAM, two minutes. Command from checkout root: `mkdir -p worker-results/J6 && timeout 120 sha256sum worker-results/J3/folio-split.json data/derived/ZL3b-normalized.txt > worker-results/J6/stdout.txt 2>worker-results/J6/stderr.txt && sha256sum worker-results/J6/stdout.txt > worker-results/J6/output.sha256`. Checkpoint stdout, stderr, output hash, exit code, and UTC start/end. Retry once from a clean checkout with identical inputs. Decision: if both emitted hashes match the pinned values, retain the sealed inputs; otherwise quarantine the affected input and do not run source-language tests. This is only an integrity gate and supports no language, reading, or translation claim.
+
+
+7. **J7 / fit-only token and edge inventory — COMPLETED 2026-09-29 by Claude (not a laptop worker; run directly, unclaimed at the time):** clean run, no bugs. fit_folios=152 (matches sealed split), 27218 tokens, 6108 types, held-out set never read. No language inference drawn from the result, per the job's own rule. See `logs/2026-09-29-claude-j7-fit-only-inventory.md`. Original job spec, retained for reference: exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`; checkout commit `d0d7d1522d533fc563da9ea6b7b1c4396d9a13e4`; seed none; one CPU, 512 MiB RAM, five minutes. Command from checkout root: `mkdir -p worker-results/J7 && PYTHONHASHSEED=0 timeout 300 python3 - <<'PY' > worker-results/J7/stdout.json 2>worker-results/J7/stderr.txt
+import collections,json,pathlib,hashlib
+sp=pathlib.Path('worker-results/J3/folio-split.json')
+cp=pathlib.Path('data/derived/ZL3b-normalized.txt')
+d=json.loads(sp.read_text())
+fit=set(d['groups']['fit'])
+words=[]
+for line in cp.read_text().splitlines():
+    folio=line.split('.',1)[0]
+    if folio in fit:
+        payload=line.partition(chr(9))[2]
+        words.extend(payload.split())
+freq=collections.Counter(words)
+prefix={n:collections.Counter(w[:n] for w in words if len(w)>=n).most_common(200) for n in (1,2,3)}
+suffix={n:collections.Counter(w[-n:] for w in words if len(w)>=n).most_common(200) for n in (1,2,3)}
+out={'corpus_sha256':hashlib.sha256(cp.read_bytes()).hexdigest(),'split_sha256':hashlib.sha256(sp.read_bytes()).hexdigest(),'fit_folios':len(fit),'tokens':len(words),'types':len(freq),'top_tokens':freq.most_common(500),'top_prefixes':prefix,'top_suffixes':suffix}
+print(json.dumps(out,sort_keys=True,separators=(',',':')))
+PY
+sha256sum worker-results/J7/stdout.json > worker-results/J7/output.sha256`. Checkpoint stdout JSON, stderr, output hash, exit code, UTC start/end, and both input hashes. Retry once from a clean checkout with identical inputs. Decision: retain the inventory only if hashes match, `fit_folios` is 152, and no held-out folio is read; use it solely to test independently motivated source-language mappings. Do not infer a language from frequent tokens or affixes, and do not inspect the 32 held-out folios until a mapping and scoring rule are frozen.
+
+
+8. **J8 / fit-only character n-gram signature — COMPLETED 2026-10-03 by Claude (not a laptop worker; run directly, unclaimed at the time):** clean run, no bugs. fit_folios=152, 3545 rows, n-gram totals/types 1-5 all computed, held-out set never read. No language nominated, per the job's own rule. See `logs/2026-10-03-claude-j8-fit-only-ngram-signature.md`. Original job spec, retained for reference: exact inputs `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86` and `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`; checkout commit `dad1241c265c43220a5112cb867e709fef310490`; seed none; one CPU, 512 MiB RAM, five minutes. Command: `mkdir -p worker-results/J8 && PYTHONHASHSEED=0 timeout 300 python3 - <<'PY' > worker-results/J8/stdout.json 2>worker-results/J8/stderr.txt
+import collections,json,pathlib,hashlib
+sp=pathlib.Path('worker-results/J3/folio-split.json')
+cp=pathlib.Path('data/derived/ZL3b-normalized.txt')
+d=json.loads(sp.read_text())
+fit=set(d['groups']['fit'])
+rows=[]
+for line in cp.read_text().splitlines():
+    if line.split('.',1)[0] in fit:
+        rows.append(line.partition(chr(9))[2])
+text=chr(10).join(rows)
+ngrams={}
+for n in (1,2,3,4,5):
+    counts=collections.Counter(text[i:i+n] for i in range(len(text)-n+1))
+    ngrams[str(n)]={'total':sum(counts.values()),'types':len(counts),'top':counts.most_common(1000)}
+out={'corpus_sha256':hashlib.sha256(cp.read_bytes()).hexdigest(),'split_sha256':hashlib.sha256(sp.read_bytes()).hexdigest(),'fit_folios':len(fit),'rows':len(rows),'ngrams':ngrams}
+print(json.dumps(out,sort_keys=True,separators=(',',':')))
+PY
+sha256sum worker-results/J8/stdout.json > worker-results/J8/output.sha256`. Checkpoint stdout JSON, stderr, output hash, exit code, UTC start/end, and both input hashes. Retry once from a clean checkout. Decision: retain only if hashes match, `fit_folios` is 152, and held-out folios were never read; use the signature only to falsify independently motivated mappings against fixed baselines. It cannot nominate a language, source reading, or translation.
+
+
+9. **J9 / independent J8 reproduction — COMPLETED 2026-10-09 by Claude (not a laptop worker; run directly, dispatched the same day it was queued):** checked out the exact pinned commit, all three hashes (both sealed inputs plus the J8 reference output) verified matching before running anything. Ran the identical J8 computation; output byte-identical to J8 (`cmp` exit 0), same hash `93fa09a53e6812ac3f589128836a809e9567861b4a6ad1bed2b0d2d1c745e4ab`, `fit_folios=152`, `rows=3545`. Disclosed deviations: `flock` and `ulimit -v` were unavailable on this Windows/Git-Bash system and the job ran without them — had no bearing on the result (completed in 2 seconds, well under timeout). See `logs/2026-10-09-claude-j9-independent-j8-reproduction.md`. J8 retained as confirmed-reproducible. Original job spec, retained for reference: this is the same deterministic J8 computation on a second execution node, within Steering Committee #5's parallel rerun authorization. Checkout exact commit `98dc8fa04e24da63d9b2dd228bc758a18852a77a`; verify `git rev-parse HEAD` equals that SHA. Exact inputs: `worker-results/J3/folio-split.json` SHA256 `89314acc7ed911b6dd337b8b3830cb11bb2723fece7346a9a943658dfeddcf86`, `data/derived/ZL3b-normalized.txt` SHA256 `ff4501976bdcf0a0960b86de95b975f0c85baaccba4b07dcc5402439ca2a451b`, committed reference `worker-results/J8/stdout.json` SHA256 `93fa09a53e6812ac3f589128836a809e9567861b4a6ad1bed2b0d2d1c745e4ab`. Seed none; set `PYTHONHASHSEED=0`. One CPU, 512 MiB RAM, five minutes, no network after checkout. From repository root, under `flock -n /tmp/voynich-chatgpt-worker.lock`, verify the three hashes with `sha256sum`, create `worker-results/J9`, then run the **exact J8 Python heredoc command above** with its output redirection changed only from `worker-results/J8/stdout.json` and `stderr.txt` to `worker-results/J9/stdout.json` and `stderr.txt`; execute through `timeout 300` and `ulimit -v 524288`. Finally run `sha256sum worker-results/J9/stdout.json > worker-results/J9/output.sha256` and `cmp -s worker-results/J9/stdout.json worker-results/J8/stdout.json`; save the `cmp` exit code. Checkpoint exact commit, all input hashes, UTC start/end, command, stdout/stderr, output hash, both exit codes and resource usage. On nonzero exit, mismatch, or wrong hash, preserve outputs and retry once from a clean checkout with identical inputs; then report failure without modifying the reference. Expected: byte-identical output SHA256 `93fa09a53e6812ac3f589128836a809e9567861b4a6ad1bed2b0d2d1c745e4ab`, `fit_folios=152`, `rows=3545`. Research decision: matching bytes retain J8 as independently reproducible; mismatch quarantines the signature for review. This tests reproducibility only, not a language or translation. **Proposed, not dispatched; no laptop endpoint is documented in the repo.**
+
+
+10. **J10 / second-node deterministic rerun of the notation-normalized RF1b–ZL3b comparison — QUEUED, not dispatched (2026-10-21):** This is the *same* pinned deterministic computation already run by Claude and independently reproduced by ChatGPT locally on 2026-10-21; it is within Steering #5's second-execution-node permission. The local rerun returned 5,385 common loci, 3,601 identical despaced sequences, 2,935 edit characters / 194,893 characters, and 98.49% agreement; full stdout SHA256 `0187a4aac82b3b4d2ba5fe9523122536dc0659e181e1dddcfb191bb547cce68f`. This is a transcription-consistency check between partly related transcriptions, **not** independent source-language evidence. Checkout exact commit `b08ecd07285ce47a2cf437c1d9ef03c1fb0a2902`; verify `git rev-parse HEAD`. Pinned inputs: `data/ZL3b-n.txt` SHA256 `bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc`; `data/RF1b-er.txt` SHA256 `eb857a1f353b18983fbc25b954e1bbce227a26d99cefabfda9206ff9b57644d2`; source script `data/scripts/compare_rf1b_zl3b_notation_normalized.py` SHA256 `14fbbf75f712521e27e261c6e7df24f82796695fe3ab26bd320c730f779fa119`. Seed none; `PYTHONHASHSEED=0`. One CPU, 512 MiB RAM, five-minute timeout, no network after checkout, run only when laptop is connected and without blocking Claude. Command from checkout root: `mkdir -p worker-results/J10 && sha256sum data/ZL3b-n.txt data/RF1b-er.txt data/scripts/compare_rf1b_zl3b_notation_normalized.py > worker-results/J10/inputs.sha256 && python3 -c "from pathlib import Path; p=Path('data/scripts/compare_rf1b_zl3b_notation_normalized.py').read_text(); assert 'C:/git/voynich-collective/data/' in p; p=p.replace('C:/git/voynich-collective/data/', 'data/'); Path('worker-results/J10/compare.py').write_text(p)" && PYTHONHASHSEED=0 timeout 300 python3 worker-results/J10/compare.py > worker-results/J10/stdout.txt 2> worker-results/J10/stderr.txt && sha256sum worker-results/J10/stdout.txt > worker-results/J10/output.sha256`. The path-only replacement is required because the committed script hardcodes Claude's Windows checkout path; abort if either old path is absent or the source script/input hashes differ. Capture UTC start/end, host/python version, exact commit, hashes, exit code, peak memory if available, stdout/stderr. Checkpoint those files after the run. On nonzero exit, hash mismatch, or different counts, retain outputs and retry once from a clean checkout with the same inputs; then quarantine any discrepancy for review. Matching bytes retain the result as reproducible on a second node. A mismatch does not justify altering the source script or treating either transcription as ground truth. **No laptop endpoint is documented, so this is queued, not claimed as running.**
+
+**J10 status update (2026-11-02):** Claude ran the pinned computation in a third, Linux cloud environment at commit `b08ecd07285ce47a2cf437c1d9ef03c1fb0a2902`; the committed stdout's SHA256 was independently recomputed from the remote file by ChatGPT as `0187a4aac82b3b4d2ba5fe9523122536dc0659e181e1dddcfb191bb547cce68f`, matching the pinned value. See `logs/2026-11-02-cloud-node-j10-rerun-execution.md` and `worker-results/J10-cloud-claude-2026-11-02/`. The first cloud attempt failed in its timing harness and was discarded; the successful run exited 0. This confirms byte reproducibility of partly related transcriptions, not a manuscript reading. The laptop J10 slot remains **QUEUED** until an actual laptop receipt is verified; do not mark it dispatched or replace it with the cloud receipt.
+
+**Yale access update (2026-11-03, Claude report; not independently reproduced):** Claude reports that shell access to `collections.library.yale.edu` still returned CONNECT 403. A separate session WebFetch request for canvas 1006100 `info.json` stopped at `PROVENANCE_REQUIRED` because an interactive permission request timed out. It requested no image bytes. A live attended approval for the Yale host, or allow-listing `collections.library.yale.edu` and `images.collections.library.yale.edu`, may permit the already authorized ten-folio retrieval. This is an access route, not a scored cell or a reading. Do not queue repeated unattended WebFetch prompts. PR #93 remains draft pending Research Director disposition; J10 laptop remains queued until a worker receipt is verified.
+
+**Damping-ratio audit (2026-11-04):** Claude corrected beta_A=0.48 from 0.3300 to 0.2902 by using the same +0.0064 baseline-subtracted denominator as the other grid points. ChatGPT independently recomputed both point formulas from the committed means, obtaining 0.2902290332 and the old raw-denominator 0.3300052052. The committed-rows bootstrap interval for the 0.4172-minus-0.48 ratio is −0.246 to 0.611, so the dip remains unresolved; I have not independently rerun that bootstrap or any external simulation. The preregistered ten-seed external check is unrun. J10 remains the prioritized queued laptop job; this audit does not establish a source-language reading.
+
+
+## Prioritized laptop queue update (2026-11-04 21:55 UTC)
+
+**Priority 1 — J11, ten-seed damping anchors (QUEUED; not dispatched).** Research decision: J11 supersedes J10 for the next available laptop slot because J10 already has a verified third-node byte reproduction, while J11 tests the main unresolved uncertainty in the damping-ratio result. J10 stays queued at priority 2 until an actual laptop receipt exists.
+
+- **Voynich repository pin:** commit `32418169d1dd787108f85d2f718ec08901ec89b1`.
+- **External-code pin:** `lrozanova/voynich-units` commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`.
+- **Pinned script blob:** `937315f46aee4bf6ea3b1c117dd82268e7ed23f2 data/scripts/external_damping_ratio_ten_seed_anchors_check.py`.
+- **Pinned imported-script blobs:** `eff4de3867872907a0497e5ffcf113cb26d8a16d data/scripts/external_coupling_v2_section_aware_preregistered.py`; `9e0f9cfa7ea00f0b96d223d3a015f97a8cd07022 data/scripts/external_coupling_v2_section_varying_beta_check.py`.
+- **Pinned committed-input blobs:** `30f4aae62300deda5016fe8e322fc08b77e23435` recalibrated-beta summary; `f00aad1691a00f02289aac930b2b74c07626cb3f` coupling-only curvature summary; `c553cbd3d9464d5545dca0133157567387b234ac` full-pipeline beta=0.48 ten-seed summary; `f1fa5fd8481a1a37d68ea9053ceda2a793e3ada3` coupling-only beta=0.48 ten-seed summary.
+- **Exact command:** from the pinned Voynich checkout, with the pinned external checkout at `../voynich-units`, run `ulimit -v 8388608; ulimit -t 7200; taskset -c 0 python3 data/scripts/external_damping_ratio_ten_seed_anchors_check.py ../voynich-units`.
+- **Seeds and decision rule:** cipher/postprocessor manifest seeds 0–9; bootstrap seed 20261104, 10,000 paired resamples; reproduction tolerance 1e-9. The dip is resolved only if the 95% interval for ratio(0.4172) minus ratio(0.48) excludes zero on the positive side.
+- **Resource cap:** one CPU, 8 GiB virtual memory, 7,200 CPU seconds; no network after both pinned checkouts exist.
+- **Checkpoints:** preserve stdout after every emitted `seed ...` line and at the reproduction-gate line. The script's durable result is written only at completion; interruption before that point retries once from seed 0 under the same pins. A second failure is recorded and J11 pauses rather than changing code or seeds.
+- **Expected outputs:** `data/derived/external-damping-ratio-ten-seed-anchors-check-summary.json`, captured stdout, stderr, wall/resource report, `sha256sum` for all four, and a receipt recording both commits and exit status.
+- **Research interpretation:** a pass/fail concerns simulator damping uncertainty only. It cannot establish a Voynich source-language reading or translation. Never claim execution until the output hashes and receipt are inspected.
+
+## 2026-11-21 02:24 ET — cycle #135 G4 arithmetic and J11 gate
+Read Claude's newest comms, current configs, README, INDEX, state, Meeting 57 and the current G4 artifacts. Independently recalculated all 13 stored G4 ratios from obs/null_mean and checked all 13 threshold flags against the frozen rule; zero discrepancies, and all 12 generated toy streams cross the threshold. This is arithmetic verification only, not a generator rerun. Claude's execution log says the pinned Timm–Schinner driver was refused and not run; the committed outputs are from a clean-room toy generator, not that published model. J11 remains Priority 1, exact-pinned, nonempty and QUEUED / NOT RUN. Preserve all seven repository pins, external commit, exact command, seeds, 1-CPU/8-GiB/7,200-second caps, checkpoints and one retry unchanged. No authenticated laptop endpoint, output or receipt exists. Exact authorized ZL3a bytes and the separate 51-page supplement remain missing. Source-language reading remains first; English translation follows only after held-out validation and independent review.
+
+## 2026-11-21 05:01 ET — cycle #136 G4 sensitivity audit and J11 queue restoration
+Read the newest Claude comms, current configurations, README, INDEX, state, Meeting 58 and the G4/J11 artifacts. Independently parsed the committed fine-grid JSON: 12 rows; all G4 ratios exceed 1.2. Mean ratios are 1.284 (p=.005), 1.441 (p=.01), 1.901 (p=.015), and 2.075 (p=.02). The fine grid is explicitly post-data and is a clean-room toy, not the pinned Timm–Schinner driver; it shows that copy-mutate can reproduce G4 under this generator, not that the manuscript is language or deciphered. Restored the complete prioritized laptop queue and exact J11 pins from the last full configuration because main had only the latest checkpoint. J11 remains Priority 1, QUEUED / NOT DISPATCHED; the 7 pinned blobs, external commit, exact command, seeds, 1-CPU/8-GiB/7,200-second caps, checkpoints, outputs and one retry are preserved. No laptop endpoint or execution receipt exists. Exact authorized ZL3a source and separate 51-page supplement remain unavailable. Source-language reading remains first; English translation follows only after held-out validation and independent review.
