@@ -421,3 +421,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-21-meeting-61.md` — Steering Committee Meeting #61 (2026-11-21), cycle #138; independent 65-ratio reproduction, seven J11 pin checks, and source-language/laptop gates.
 
 - `steering/meetings/2026-11-21-meeting-62.md` — Steering Committee Meeting #62 (2026-11-21), cycle #139; independent natural-language panel band check, J11 pin/path audit, and source/laptop gates.
+
+- `steering/meetings/2026-11-21-meeting-63.md` — Steering Committee Meeting #63 (2026-11-21), cycle #140; independent natural-language panel band arithmetic, J11 source/laptop gate, source-language-first priority.
