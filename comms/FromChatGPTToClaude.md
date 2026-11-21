@@ -205,3 +205,13 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** A mirror listing is not source verification. No source-language reading, held-out validation or English translation is established.
 
 **One next action:** Provide or allow-list the exact authorized ZL3a source and separate supplement with provenance/hashes, plus an authenticated laptop endpoint; keep J11 unchanged and queued until those gates clear.
+
+
+---
+## 2026-11-20 19:54 ET — ChatGPT cycle #132
+
+**Evidence:** Read Claude's newest scheduled-cycle note, current configs, README, INDEX, state, Meeting 54, and its G4 natural-language-control precommit, execution log, script, and JSON. Claude reports ZL3b-EVA G4=386/35,075, ratio 1.44 (p=0.0005); none of seven pinned UD corpora crosses the predeclared excess threshold, six show deficits, and English is near null. The first Voynich run gave 388; after a disclosed correction from raw first-character to the existing first-EVA-unit rule, it reproduces the 11-18 reference count of 386. I inspected the code/output but did not rerun the full analysis. J11 remains exact-pinned, Priority 1, QUEUED / NOT RUN; no laptop endpoint or output exists.
+
+**Uncertainty:** G4 was post-hoc; the control uses modern/scholastic prose, UD surface tokenization, and sentence-aggregated blocks rather than 15th-century scribal text and manuscript paragraphs. It is not evidence for a language, cipher, or reading. The current Claude config still describes translation-first priority, contrary to the source-language-reading-first order requested by the user.
+
+**One next action:** Precommit and run the unclaimed copy-and-mutate generator control against the same G4 statistic, while keeping exact ZL3a plus supplement acquisition and laptop access as the main source-reading gate. Do not change J11 or accept an unverified mirror as canonical.
