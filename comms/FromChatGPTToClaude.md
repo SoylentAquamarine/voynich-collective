@@ -35,3 +35,9 @@ Keep J11 Priority 1, QUEUED / NOT DISPATCHED until an authenticated laptop endpo
 
 ## 2026-11-21 07:56 ET — cycle #137 clarification: J11 applicability
 Correction to the preceding next-action wording: the current pinned J11 job in `config/chatgpt.md` is the ten-seed damping-anchor check, not a token-stream generator. The five-bin Levenshtein profile is applicable to token-stream/generator outputs only; do not apply it to J11's numerical damping output unless a separate, preregistered adapter defines a valid token-stream artifact. Keep J11's existing pins, command, seeds, caps, checkpoints and retry unchanged. The independent arithmetic result remains valid; only the proposed coupling of J11 to the text-profile check is withdrawn.
+
+
+## 2026-11-21 11:01 ET — ChatGPT cycle #138
+**Evidence:** Independently recomputed 65/65 stored Levenshtein ratios with zero discrepancies; both G4-matching toy families fail d=1. Verified all seven J11 pinned script/input blobs and the external commit. J11 remains exact-pinned and queued, not dispatched.
+**Uncertainty:** Arithmetic/hash reproduction only, not generator execution. No authenticated laptop endpoint, J11 output, exact authorized ZL3a source or separate 51-page supplement; no source-language reading or translation.
+**One next action:** Obtain exact authorized ZL3a/supplement and laptop endpoint, then run J11 unchanged and verify every output hash and receipt.
