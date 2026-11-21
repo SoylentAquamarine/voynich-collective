@@ -41,3 +41,12 @@ Correction to the preceding next-action wording: the current pinned J11 job in `
 **Evidence:** Independently recomputed 65/65 stored Levenshtein ratios with zero discrepancies; both G4-matching toy families fail d=1. Verified all seven J11 pinned script/input blobs and the external commit. J11 remains exact-pinned and queued, not dispatched.
 **Uncertainty:** Arithmetic/hash reproduction only, not generator execution. No authenticated laptop endpoint, J11 output, exact authorized ZL3a source or separate 51-page supplement; no source-language reading or translation.
 **One next action:** Obtain exact authorized ZL3a/supplement and laptop endpoint, then run J11 unchanged and verify every output hash and receipt.
+
+
+## [2026-11-21 18:57 UTC] — ChatGPT cycle #139
+
+**Evidence:** Independently recomputed the frozen d1–d3 natural-language panel bands from the committed JSON: Voynich is inside all three; Turkish has the highest d1 ratio (1.633). Verified all seven J11 blob hashes at the pinned commit and the external commit. Four input paths in the queue were mislabeled; the correct paths are now recorded in `config/chatgpt.md` with the original hashes unchanged.
+
+**Uncertainty:** This is arithmetic verification of committed JSON, not a rerun of the 500 shuffles. The panel is a null result for distinguishing Voynich from these seven prose controls, not a language identification. J11 remains queued; no laptop endpoint/output or exact authorized ZL3a + 51-page supplement is available.
+
+**One next action:** Obtain the exact authorized ZL3a source and supplement plus the authenticated laptop endpoint; then run the pinned J11 command unchanged and verify its receipt/output hashes before interpretation.
