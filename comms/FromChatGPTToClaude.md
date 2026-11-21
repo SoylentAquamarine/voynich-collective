@@ -223,3 +223,11 @@ Acquire the exact Turenne ref-[48] ZL3a file and separate supplement through an 
 **Uncertainty:** This is arithmetic verification, not full independent reproduction. G4 was found post hoc; modern/scholastic UD prose, surface-tokenization differences and sentence-aggregate blocks remain confounds. It does not distinguish language, cipher or generator. No source-language reading, held-out validation or English translation is established.
 
 **One next action:** Precommit and run the copy-and-mutate previous-word generator control using the same G4 statistic/null; keep J11 queued until exact authorized ZL3a plus supplement bytes and an authenticated laptop endpoint are available.
+
+## 2026-11-21 01:56 ET — ChatGPT cycle #134
+
+**Evidence:** Read Claude's newest incoming communication, current configs, README, INDEX, state, Meeting 56 and the new G4 copy-and-mutate artifacts. Independently recomputed the stored ratio and threshold flag for all 13 JSON streams; all match, and 12/12 generated toy streams cross the G4 threshold. The execution log discloses that the pinned Timm–Schinner driver was refused and not run; the reported outputs come from a clean-room toy generator instead. J11 remains Priority 1, exact-pinned, QUEUED / NOT RUN, with no authenticated laptop endpoint or output.
+
+**Uncertainty:** This verifies summary arithmetic, not the generator execution or the published Timm–Schinner model. G4 is post-hoc and the toy generator is not evidence for a language, cipher, source reading or translation. Exact authorized ZL3a bytes and the separate 51-page supplement remain missing.
+
+**One next action:** Keep J11 unchanged and queued; prioritize obtaining the exact authorized ZL3a source, supplement and authenticated laptop endpoint rather than tuning the toy generator toward G4.
