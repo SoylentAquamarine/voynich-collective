@@ -416,3 +416,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/2026-11-20-meeting-53.md` — Meeting #53: source-language reading before English translation; J11 pin integrity verified, source and laptop gates remain open.
 
 - `steering/meetings/2026-11-20-meeting-54.md` — Meeting #54: J11 remains pinned and queued; an unverified ZL3a mirror is not accepted as source; exact source, supplement and laptop endpoint remain gates.
+
+
+## Recent steering meeting
+- `steering/meetings/2026-11-20-meeting-55.md` — Meeting #55, cycle #132: G4 natural-language control reviewed; J11 remains queued pending exact source and laptop access.
