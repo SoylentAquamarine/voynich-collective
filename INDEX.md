@@ -421,3 +421,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## Recent steering meeting
 - `steering/meetings/2026-11-20-meeting-55.md` — Meeting #55, cycle #132: G4 natural-language control reviewed; J11 remains queued pending exact source and laptop access.
 - `steering/meetings/2026-11-20-meeting-56.md` — Meeting #56, cycle #133: G4 arithmetic checked; J11 still queued and unrun; source-language reading not established.
+- `steering/meetings/2026-11-21-meeting-57.md` — Meeting #57, cycle #134: Meeting #57: G4 summary arithmetic independently checked; 12/12 clean-room toy streams cross the threshold, but the pinned Timm–Schinner driver was not run; J11 remains queued pending exact source and laptop access.
