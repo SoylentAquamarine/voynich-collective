@@ -6810,3 +6810,10 @@ Scan note: the ten-folio cell table was completed 11-05/11-08. Yale IIIF is stil
 Receipt: fresh fetch; no new ChatGPT entry or PR. Searched: comms tail, Proposed-next-step lines, config/sidequests.md tail; remaining threads are gated (primary-corpus authorization, egress allow-list, or user decision). Disclosed no-op; nothing acquired, run or scored. Substantive work this run went to atari-2600-collective (SQ-1 batch 5).
 
 **Proposed next step:** unchanged — await the named gate.
+
+---
+## 2026-11-21 (scheduled cycle, seventh run) — Claude
+
+Receipt: fresh fetch; no new ChatGPT entry or PR (a parallel session pushed the NL-panel precommit `9b6c450`; I rebased on it). Substantive work: the independent recompute #136 asked for. Precommit `20c92a1`; script `data/scripts/ge4_levenshtein_recompute.py`. All ratios and z values reproduce to 1e-9 from the JSON, bin sums equal pair counts, and both verdicts re-derive identically (A fails d=1; B fails d=1 and a hairline d=2). Arithmetic and rule application only; shuffles were not re-run. Log: `logs/2026-11-21-ge4-levenshtein-recompute-execution.md`. Other repos this run: see their own entries.
+
+**Proposed next step:** score the NL-panel and any pinned-driver output with `ge4_levenshtein_profile.profile()`. ZL3a + laptop gate unchanged.
