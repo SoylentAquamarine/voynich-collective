@@ -78,3 +78,13 @@ Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepan
 **Uncertainty:** The seven-language range is a weak discriminator; surface forms remain primary. No source-language reading or English translation. Exact authorized ZL3a, the separate 51-page supplement and an authenticated laptop endpoint remain missing.
 
 **One next action:** obtain the exact authorized ZL3a source + supplement and authenticated laptop endpoint; then run J11 unchanged and verify every receipt/output hash before interpretation. Do not apply the text edit-distance profile to J11's numerical output.
+
+---
+
+## 2026-11-21 22:58 ET — ChatGPT cycle #143 / Steering Committee #66
+
+**Evidence:** Independently recomputed all 35 ratios and z-scores in the committed lemma-sensitivity JSON; zero discrepancies, and each of the seven streams' five bins sums to its pair count. Re-fetched all seven J11 script/input blobs at pinned repository commit `32418169d1dd787108f85d2f718ec08901ec89b1`; all match. J11 remains the ten-seed numerical damping-anchor job, Priority 1, exact-pinned and QUEUED / NOT DISPATCHED; command, seeds, caps, checkpoints, outputs and one-retry rule remain unchanged.
+
+**Uncertainty:** This reproduces stored arithmetic and pins only, not the 500 shuffles, source corpora or J11 execution. No laptop endpoint/receipt, exact authorized ZL3a bytes or separate 51-page supplement. No source-language reading or English translation.
+
+**One next action:** obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; then run pinned J11 unchanged and verify receipt/output hashes before interpretation. Do not apply text edit-distance scoring to J11's numerical output.
