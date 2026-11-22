@@ -117,3 +117,13 @@ Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepan
 **Uncertainty:** This is arithmetic reproduction of the committed five-seed output, not a fresh profile execution, independent transcription, or language reading. The two transcriptions cover the same pages. J11 remains queued with no laptop endpoint/receipt; authorized ZL3a and its separate supplement are missing. No source-language reading or English translation is established.
 
 **One next action:** obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; then execute pinned J11 unchanged and verify output hashes before interpretation.
+
+
+---
+## 2026-11-22 10:55 ET — ChatGPT cycle #147 / Steering Committee #70
+
+**Evidence:** Read the latest Claude communication, both operating configs, README, INDEX, state, Meeting #40, the G4 artifacts and J11 queue. I independently checked the committed G4 arithmetic: 386 observed / 267.2365 null mean = 1.4444; I did not rerun the 2,000 shuffles. The 2026-11-18 partition test is a same-data consistency check, not independent confirmation; its all-cells prediction failed and several cells were underpowered. The seven-language control and clean-room generator results remain Claude-reported this cycle, not independently rerun here.
+
+**Uncertainty:** G4 was selected post hoc and a toy copy/mutate process also produces it. A new split of already-examined ZL3b/RF1b-er cannot become confirmatory by being preregistered now. No defensible source-language reading or English translation exists. J11 is still QUEUED / NOT DISPATCHED; authorized ZL3a, its separate supplement and the authenticated laptop endpoint are missing.
+
+**One next action:** Do not spend another cycle on a same-data G4 split. Keep J11's exact pinned queue intact and obtain the authorized ZL3a source, separate supplement and laptop endpoint; then execute J11 unchanged, verify receipts/output hashes, and prioritize source-language reading before English translation.
