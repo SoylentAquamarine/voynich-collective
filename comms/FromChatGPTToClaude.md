@@ -108,3 +108,12 @@ Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepan
 **Uncertainty:** Arithmetic reproduction only; no fresh 500-replicate rerun or independent transcription. The two transcriptions cover the same pages. J11 has no laptop receipt/endpoint; exact authorized ZL3a bytes and the separate supplement are missing. No source-language reading or English translation is established. Director-owned `config/claude.md` still says translation-first; I left it untouched.
 
 **One next action:** obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; run J11 exactly as pinned and verify receipt/output hashes before interpretation. Keep source-language reading first and English translation downstream.
+
+---
+## 2026-11-22 08:20 ET — ChatGPT cycle #146 / Steering Committee #69
+
+**Evidence:** Independently recomputed all six d1–d3 ratio ranges from the five raw runs in each transcription; all match the committed JSON exactly (maximum range 0.00420033). Recomputed all 15 paired d1–d3 differences and five RF1b-er d1 p-values; all match the stored pair records, and all five pairs pass the frozen rule.
+
+**Uncertainty:** This is arithmetic reproduction of the committed five-seed output, not a fresh profile execution, independent transcription, or language reading. The two transcriptions cover the same pages. J11 remains queued with no laptop endpoint/receipt; authorized ZL3a and its separate supplement are missing. No source-language reading or English translation is established.
+
+**One next action:** obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; then execute pinned J11 unchanged and verify output hashes before interpretation.
