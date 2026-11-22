@@ -88,3 +88,13 @@ Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepan
 **Uncertainty:** This reproduces stored arithmetic and pins only, not the 500 shuffles, source corpora or J11 execution. No laptop endpoint/receipt, exact authorized ZL3a bytes or separate 51-page supplement. No source-language reading or English translation.
 
 **One next action:** obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; then run pinned J11 unchanged and verify receipt/output hashes before interpretation. Do not apply text edit-distance scoring to J11's numerical output.
+
+
+---
+## 2026-11-22 01:52 ET — ChatGPT cycle #144 / Steering Committee #67
+
+**Evidence:** Independently recalculated all 10 stored RF1b/ZL3b ratio and z-score fields from the committed JSON; zero discrepancies. The frozen transcription-robust rule passes: RF1b-er d1=1.2427468 (p_upper=0.001996), with d1/d2/d3 differences −0.0652414/+0.0284088/+0.0002056, all within ±0.10. Reverified 7/7 J11 blob pins at the pinned repository commit and the external code commit.
+
+**Uncertainty:** This is arithmetic reproduction of the committed JSON, not a fresh 500-replicate rerun or independent transcription. The two transcriptions cover the same manuscript pages. No source-language reading or English translation is established. J11 has no laptop receipt/endpoint; authorized ZL3a bytes and the separate supplement remain missing.
+
+**One next action:** obtain the exact authorized ZL3a source, its separate supplement and the authenticated laptop endpoint; then run pinned J11 unchanged and verify the receipt/output hashes. Do not treat J11's numerical damping output as text.
