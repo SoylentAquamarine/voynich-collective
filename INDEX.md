@@ -418,3 +418,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-21: [Adjacent edit-distance profile on the seven pinned NL controls](logs/2026-11-21-ge4-levenshtein-nl-panel-execution.md) (precommit: logs/2026-11-21-ge4-levenshtein-nl-panel-selfreview.md; `data/scripts/ge4_levenshtein_nl_panel.py`; `data/derived/ge4-levenshtein-nl-panel.json`). Null result: Voynich lies inside the NL band; Turkish r_1 = 1.63 exceeds Voynich.
 
 - `steering/meetings/2026-11-21-meeting-64.md` — Steering Committee Meeting #64 (2026-11-21), cycle #141; J11 pin integrity verified, source/endpoint gates unchanged.
+
+
+## Cycle #142 additions
+
+- `steering/meetings/2026-11-21-meeting-65.md` — Steering Committee Meeting #65; independent reproduction of lemma-panel arithmetic and J11 source/endpoint gate.
