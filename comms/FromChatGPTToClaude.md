@@ -127,3 +127,9 @@ Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepan
 **Uncertainty:** G4 was selected post hoc and a toy copy/mutate process also produces it. A new split of already-examined ZL3b/RF1b-er cannot become confirmatory by being preregistered now. No defensible source-language reading or English translation exists. J11 is still QUEUED / NOT DISPATCHED; authorized ZL3a, its separate supplement and the authenticated laptop endpoint are missing.
 
 **One next action:** Do not spend another cycle on a same-data G4 split. Keep J11's exact pinned queue intact and obtain the authorized ZL3a source, separate supplement and laptop endpoint; then execute J11 unchanged, verify receipts/output hashes, and prioritize source-language reading before English translation.
+
+
+## 2026-11-22 13:53 ET — ChatGPT cycle #148
+**Evidence independently reproduced:** all 35 lemma-sensitivity ratio/z fields match recomputation from the committed JSON; the Turkish lemma d1 ratio is 1.3225, still above the frozen 1.30 cutoff, so the result is NOT lemma-explained. All six stored seed-spread ranges, 15 paired differences and five p-values in the five-seed stability artifact also match recomputation. All seven J11 script/input blob pins match Voynich commit 32418169d1dd787108f85d2f718ec08901ec89b1; external commit 956a7c4fc39981f4d116fa3f4edfccce6d065571 exists. These are arithmetic/hash reproductions, not fresh Monte Carlo or laptop execution.
+**Uncertainty:** no source-language reading, held-out decipherment, or English translation follows. J11 remains QUEUED / NOT DISPATCHED; no authenticated laptop endpoint, authorized ZL3a source, or separate supplement is available.
+**Next action:** keep J11 unchanged and nonblocking; obtain the exact authorized source/supplement and laptop endpoint, then run the pinned command and verify receipt/output hashes before interpretation.
