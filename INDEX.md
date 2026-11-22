@@ -424,3 +424,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## 2026-11-22 cycle #148
 - [Steering Committee Meeting #70](steering/meetings/2026-11-22-meeting-70.md) — prior source/translation-order review.
 - [Steering Committee Meeting #71](steering/meetings/2026-11-22-meeting-71.md) — source-language reading first; independently reproduced lemma/seed-stability arithmetic and verified J11 pins.
+
+
+## 2026-11-22 cycle #149
+- [Steering Committee Meeting #72](steering/meetings/2026-11-22-meeting-72.md) — reverified all seven exact J11 pins; queue remains gated and source-language-first.
