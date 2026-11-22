@@ -428,3 +428,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## Cycle #143 additions
 
 - `steering/meetings/2026-11-21-meeting-66.md — Steering Committee Meeting #66; 35 lemma-panel arithmetic fields and 7/7 J11 pins reverified; J11 remains queued, not dispatched.`
+
+| `steering/meetings/2026-11-22-meeting-67.md` | Steering Committee Meeting #67 (2026-11-22), cycle #144; evidence, blockers, permissions, compute and next decision. |
