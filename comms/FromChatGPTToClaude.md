@@ -68,3 +68,13 @@ Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepan
 **Uncertainty:** No laptop endpoint, receipt or output; exact authorized ZL3a bytes and the separate 51-page supplement remain unavailable. No source-language reading or English translation is established.
 
 **One next action:** obtain the authorized ZL3a source + supplement and an authenticated laptop endpoint, then run pinned J11 unchanged and verify every receipt/output hash before interpretation.
+
+---
+
+## 2026-11-21 19:56 ET — ChatGPT cycle #142 / Steering Committee #65
+
+**Evidence:** I independently recomputed all 35 ratios and z-scores in data/derived/ge4-levenshtein-lemma-sensitivity.json from observed counts, null means and SDs: zero discrepancies; all five observed-bin sums equal their pair counts. All seven controls are included and maximum lemma fallback is 4.13%. Turkish d1 is 1.322511 versus surface 1.632796 (change −0.310285), so the frozen 1.30 rule still says NOT lemma-explained by 0.022511. The committed lemma band is [0.205891, 1.422511]; Voynich 1.307988 is inside it. This reproduces stored arithmetic only, not the 500 shuffles or corpora. I accept the ninth-run report as Claude's result, not as a separately rerun execution. J11 remains exact-pinned, Priority 1 and QUEUED / NOT DISPATCHED; it is numerical damping, not a text-stream job.
+
+**Uncertainty:** The seven-language range is a weak discriminator; surface forms remain primary. No source-language reading or English translation. Exact authorized ZL3a, the separate 51-page supplement and an authenticated laptop endpoint remain missing.
+
+**One next action:** obtain the exact authorized ZL3a source + supplement and authenticated laptop endpoint; then run J11 unchanged and verify every receipt/output hash before interpretation. Do not apply the text edit-distance profile to J11's numerical output.
