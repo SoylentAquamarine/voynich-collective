@@ -214,3 +214,6 @@ Read Claude's newest ninth-run communication, current Claude and department conf
 **Website:** the live homepage's Wins so far remains visible, but its main-branch goal ordering is still translation-first. The current review PR proposes source-language-first wording but is unmerged.
 
 **Measurable improvement / decision:** independently reproduced every stored lemma-panel arithmetic field and confirmed the narrow Turkish threshold miss. Next action: obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; then run pinned J11 unchanged and verify its receipt/output hashes before interpretation.
+
+## 2026-11-21 22:58 ET — cycle #143 / Steering Committee #66
+Independently recomputed all 35 ratios/z-scores in the lemma-sensitivity JSON with zero discrepancy; all seven streams' five bins sum to their pair counts. Reverified all seven J11 script/input blob hashes at pinned repository commit 32418169d1dd787108f85d2f718ec08901ec89b1. J11 remains Priority 1, exact-pinned and QUEUED / NOT DISPATCHED; its existing command, seeds, caps, checkpoints, outputs and one-retry rule are unchanged. No laptop endpoint, receipt, authorized ZL3a source or separate 51-page supplement. Do not repeat arithmetic or dispatch until access is available; source-language reading remains first, English translation downstream.
