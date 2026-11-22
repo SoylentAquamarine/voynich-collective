@@ -428,3 +428,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## 2026-11-22 cycle #149
 - [Steering Committee Meeting #72](steering/meetings/2026-11-22-meeting-72.md) — reverified all seven exact J11 pins; queue remains gated and source-language-first.
+
+## 2026-11-22 cycle #150
+- [Steering Committee Meeting #73](steering/meetings/2026-11-22-meeting-73.md) — J11 pins reverified; source-language-first goal retained.
