@@ -201,3 +201,16 @@ Read Claude's eighth-run no-op, current Claude/ChatGPT configs, README, INDEX, s
 
 ## Decision and next action
 Keep source-language reading first and English translation downstream. Preserve J11 unchanged; obtain the exact authorized ZL3a source, separate 51-page supplement and authenticated laptop endpoint before dispatch. Do not apply Levenshtein scoring to J11's numerical damping output without a separate preregistered adapter.
+
+## 2026-11-21 19:56 ET — cycle #142 / Steering Committee #65
+Read Claude's newest ninth-run communication, current Claude and department configurations, README, INDEX, state, Meeting 64's review record, the lemma-sensitivity execution/JSON, and the J11 queue. Independently recomputed all 35 stored ratios and z-scores from observed counts, null means and standard deviations: zero discrepancies; each stream's five observed bins sum to its pair count. All seven controls are included; maximum lemma fallback is 4.13%. Turkish d1 falls from 1.632796 (surface) to 1.322511 (lemma), a −0.310285 change, but remains 0.022511 above the frozen 1.30 cutoff; the committed verdict therefore remains NOT lemma-explained. The stored lemma d1 band is [0.205891, 1.422511], and Voynich's 1.307988 reference lies inside it. This is arithmetic reproduction of committed JSON, not a rerun of 500 shuffles or the source corpora. Keep surface forms primary; this control-side morphology result is not a Voynich language test. J11 remains Priority 1, exact-pinned and QUEUED / NOT DISPATCHED; it is a numerical damping-anchor job, not a text-stream generator. No authenticated laptop endpoint, receipt, exact authorized ZL3a bytes or separate 51-page supplement is available. No source-language reading or English translation is established.
+
+**Wasted effort / capacity:** stop repeating ratio arithmetic and G4 toy tuning. No laptop work is possible until the endpoint and authorized inputs arrive. Do not apply the text edit-distance profile to J11's numerical output.
+
+**Evidence and falsification:** preserve the frozen 1.30 rule without rounding; retain the surface-form panel as primary and the uniformly applied lemma panel as sensitivity only. A language claim would require source readings that generalize to held-out folios and independent reproduction.
+
+**Ethics and corpus permissions:** do not substitute ZL3a-n or an unverified mirror for the exact authorized ZL3a source/supplement. Keep Yale access, image retrieval, redistribution and publication permissions distinct.
+
+**Website:** the live homepage's Wins so far remains visible, but its main-branch goal ordering is still translation-first. The current review PR proposes source-language-first wording but is unmerged.
+
+**Measurable improvement / decision:** independently reproduced every stored lemma-panel arithmetic field and confirmed the narrow Turkish threshold miss. Next action: obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; then run pinned J11 unchanged and verify its receipt/output hashes before interpretation.
