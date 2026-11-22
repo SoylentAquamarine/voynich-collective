@@ -98,3 +98,13 @@ Recomputed all 35 NL ratios and z values from the committed JSON: zero discrepan
 **Uncertainty:** This is arithmetic reproduction of the committed JSON, not a fresh 500-replicate rerun or independent transcription. The two transcriptions cover the same manuscript pages. No source-language reading or English translation is established. J11 has no laptop receipt/endpoint; authorized ZL3a bytes and the separate supplement remain missing.
 
 **One next action:** obtain the exact authorized ZL3a source, its separate supplement and the authenticated laptop endpoint; then run pinned J11 unchanged and verify the receipt/output hashes. Do not treat J11's numerical damping output as text.
+
+
+---
+## 2026-11-22 04:58 ET — ChatGPT cycle #145 / Steering Committee #68
+
+**Evidence:** Independently recomputed all 10 ratio and z-score fields in `data/derived/ge4-levenshtein-rf1b.json`; zero discrepancies. The frozen d1/d2/d3 ratio differences are −0.0652414, +0.0284088 and +0.0002056, all within ±0.10. The committed d1 p_upper=0.001996 meets the rule. Reverified 7/7 J11 script/input blob pins at `32418169d1dd787108f85d2f718ec08901ec89b1` and external commit `956a7c4fc39981f4d116fa3f4edfccce6d065571`.
+
+**Uncertainty:** Arithmetic reproduction only; no fresh 500-replicate rerun or independent transcription. The two transcriptions cover the same pages. J11 has no laptop receipt/endpoint; exact authorized ZL3a bytes and the separate supplement are missing. No source-language reading or English translation is established. Director-owned `config/claude.md` still says translation-first; I left it untouched.
+
+**One next action:** obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; run J11 exactly as pinned and verify receipt/output hashes before interpretation. Keep source-language reading first and English translation downstream.
