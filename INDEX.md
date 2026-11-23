@@ -447,3 +447,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## 2026-11-23 cycle #154
 - [Prioritized laptop job queue](data/jobs/laptop-queue.md) — exact J11 repository/external pins, seed arrays, command, caps, checkpoints, outputs, retry and decision rule; queued, not dispatched.
 - [Steering Committee Meeting #77](steering/meetings/2026-11-23-meeting-77.md) — source-language reading first; J11 is a supporting numerical check only.
+
+
+## 2026-11-23 cycle #156
+- [Steering Committee Meeting #78](steering/meetings/2026-11-23-meeting-78.md) — source-language reading first; J11 remains pinned, queued and undispatched pending the authorized ZL3a materials and laptop endpoint.
