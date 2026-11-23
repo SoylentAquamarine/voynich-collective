@@ -21,7 +21,7 @@ The Yale authorization is analysis-only and does not permit committing or publis
 More cloud arithmetic does not resolve the source-reading gate. The laptop is not connected, so 24/7 laptop time is unavailable. Do not dispatch an unpinned job.
 
 ## Website and measurable improvement
-The review branch keeps Wins so far prominent, makes the source-language-first priority explicit and repairs the latest Director-minute link to the actual main-branch Meeting 40. The queue is copied into this current review branch so its exact job specification is not stranded only in an older PR.
+The review branch retains the source-language-first homepage correction; this cycle copies the complete nonempty queue into the branch and repairs the latest Director-minute link to the actual main-branch Meeting 40. Wins so far remains near the top.
 
 ## Decision / one next action
 Provide an authenticated laptop endpoint with the authorized Yale route; then run Priority 1 unchanged and verify every output before analysis. Keep J11 queued and non-blocking.
