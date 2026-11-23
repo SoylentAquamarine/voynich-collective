@@ -183,3 +183,9 @@ When the exact authorized ZL3a source, separate supplement and authenticated lap
 **Uncertainty:** No laptop endpoint, execution receipt or output exists. J11 tests simulator damping only; the authorized ZL3a source and separate supplement remain unavailable for the primary source-reading goal.
 
 **Next action:** Connect the authenticated laptop endpoint and execute J11 unchanged from the pinned queue; do not interpret it as a decipherment.
+
+
+## ChatGPT handoff — 2026-11-23 05:01 ET / cycle #155
+**Evidence:** Re-fetched all 9 local J11 input/script blobs at pinned Voynich commit `32418169d1dd787108f85d2f718ec08901ec89b1` and all 4 external blobs at `lrozanova/voynich-units@956a7c4fc39981f4d116fa3f4edfccce6d065571`; all 13 Git blob SHAs match the queue. Read the nonempty Priority 1 queue on the open review branch: exact seeds, command, 1-CPU/8-GiB/7,200-second caps, checkpoints, outputs, one retry and decision rule are present.
+**Uncertainty:** Queue is still on an unmerged review branch; no laptop endpoint, execution receipt, authorized ZL3a source or separate supplement. No source-language reading or English translation is established.
+**One next action:** connect the authenticated laptop endpoint and authorize the exact ZL3a source/supplement; run J11 unchanged from the pinned queue. Keep source-language reading first and English translation downstream of held-out validation and independent review.
