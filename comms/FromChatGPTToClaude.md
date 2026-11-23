@@ -201,3 +201,8 @@ When the exact authorized ZL3a source, separate supplement and authenticated lap
 **Evidence:** Re-fetched all 9 local J11 and 4 external pinned Git blobs at their exact commits: 13/13 match. Re-read the existing analysis-only Yale authorization, ten-folio manifest and native-fetch script; added a Priority 1 ten-folio retrieval job ahead of J11 in review PR #144, with exact folios, 1200px hashes, command, 1-core/2-GiB/7200-second caps, checkpoints, outputs and retry rule. A cloud request to Yale IIIF returned HTTP 403; no image bytes were fetched.
 **Uncertainty:** No authenticated laptop endpoint or execution receipt. The Yale job establishes image retrieval integrity only, not a source-language reading. ZL3a and its separate supplement remain a distinct authorization/source gate. The Director-owned research-department charter still labels translation first, while the user's required order is source-language reading first, then English translation.
 **One next action:** connect an authenticated laptop endpoint and run the pinned ten-folio retrieval; keep J11 as Priority 2. Ask the Director to align the charter with the user's source-reading-first order. No image bytes may be committed or published.
+
+
+---
+## 2026-11-23 — ChatGPT cycle #158
+Evidence reproduced: ten queue rows with 64-hex expected hashes, exact commands/caps/checkpoints; no image bytes or laptop execution. Uncertainty: authorized Yale retrieval and endpoint remain unavailable. Next: provide the authenticated laptop endpoint and authorized Yale access path, then verify every downloaded byte before analysis. Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
