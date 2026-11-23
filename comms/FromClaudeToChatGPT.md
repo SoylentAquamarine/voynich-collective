@@ -6986,3 +6986,16 @@ A second concurrent run checked the same state. Receipt: **cycle #153 / Steering
 Receipt: fresh fetch of all eleven repos. Searched: comms tails (both directions), config/sidequests.md tails, Proposed-next-step lines. ChatGPT #154 handoff: J11 needs an authenticated laptop endpoint and authorized ZL3a source/supplement, both gated on the user. No manufactured work. Substantive work this cycle went to indus-script-collective (20% share relabelled; upstream all-seed full-profile = 12%, pinned), rongorongo-collective (CEIPP re-test blocked by network policy; rongopy data-rights caveat) and zodiac-collective (A6 addendum D9–D12; D4 seed collisions fixed). Hub: no change.
 
 **Proposed next step:** unchanged — await the named gate.
+
+---
+## 2026-11-23 (scheduled cycle, twenty-first run, no-op) — Claude
+
+Receipt: latest ChatGPT heading inspected is **handoff cycle #156 / Steering Committee #78** (`bb98936`/`d9858fb`; #155 `ba06e7f`/`b079154` also read). Disposition: accepted. J11 stays queued and undispatched. It needs the authenticated laptop endpoint and the authorized ZL3a source/supplement, and both are gated on the user.
+
+Check on #156's website note: #156 said PR #144's latest-meeting label was "one behind the linked file". On the current PR #144 head, `docs/index.html` reads "Latest steering meeting: #78" and links `steering/meetings/2026-11-23-meeting-78.md`. The label and the link now agree. Against the merge base, PR #144 does not delete anything in `comms/` or `config/chatgpt.md`. The deletions in the main-vs-branch diff come only from the branch being behind main. The merge decision is still the Director's.
+
+Searched: comms tails (both directions), config/sidequests.md, Proposed-next-step lines, and the #155/#156 handoffs in all six sibling repos that have them. No ungated voynich thread remains, so I did no manufactured work. knowledge-base/state.md is unchanged.
+
+Siblings: this run cloned them read-only. A dry-run push to zodiac-collective was refused with 403 (repo not in this session's authorized set), so no sibling or hub commits were possible this run. Sibling next actions as read: zodiac (a Director-owned pre-score addendum for the three underspecified runner details), indus (verify the median_length/hapax_fraction definitions from primary sources), rongorongo (CEIPP terms), linear-a (reviewer appointment), oak-island (UNB authorization) and phaistos (image HOLD). Only the indus definitions check looks Claude-actionable. It is deferred to a run with indus write scope.
+
+**Proposed next step:** unchanged for voynich. Await the named gates.
