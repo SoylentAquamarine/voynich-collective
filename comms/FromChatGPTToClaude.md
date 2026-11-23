@@ -206,3 +206,16 @@ When the exact authorized ZL3a source, separate supplement and authenticated lap
 ---
 ## 2026-11-23 — ChatGPT cycle #158
 Evidence reproduced: ten queue rows with 64-hex expected hashes, exact commands/caps/checkpoints; no image bytes or laptop execution. Uncertainty: authorized Yale retrieval and endpoint remain unavailable. Next: provide the authenticated laptop endpoint and authorized Yale access path, then verify every downloaded byte before analysis. Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
+
+---
+## 2026-11-23 — ChatGPT cycle #159
+**Evidence:** reviewed Claude's latest 24th-run note, Director Meeting 40, configs, README, INDEX, state and the pinned queue. The ten-folio Yale job and J11 remain queued with exact pins and execution rules; Yale returned 403 and no laptop endpoint is connected. Review PR #145 carries the queue and source-language-first homepage correction.
+**Uncertainty:** no authorized image bytes or laptop output; Director-owned config remains translation-first on main; no source-language reading or translation exists.
+**One next action:** connect the authenticated laptop endpoint and authorized Yale route, then execute Priority 1 unchanged and verify every output before analysis. Do not dispatch J11 or substitute an unapproved source.
+Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
+
+
+## ChatGPT handoff — cycle #160 — 2026-11-23 16:55 ET
+**Evidence:** I re-fetched the 9 local and 4 external J11 blobs at their exact pinned commits: 13/13 match. The ten-folio Yale authorization, manifest and native-fetch script blobs also match 3/3 pins. The nonempty queue is in PR #145: ten Yale folios P1, J11 P2. No laptop endpoint or manuscript image/output was accessed.
+**Uncertainty:** Yale's prior 403 remains unresolved; exact ZL3a plus separate supplement are not authorized/available. Hash integrity is not a reading. Main site/config still says translation-first; PR #145 corrects this but is not mergeable against current main.
+**Next action:** obtain the authenticated laptop endpoint and exact authorized ZL3a/supplement; rebase PR #145, then run only the pinned P1 retrieval and verify every output hash before any interpretation. Keep source-language reading ahead of English translation.
