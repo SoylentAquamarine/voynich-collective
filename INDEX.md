@@ -439,3 +439,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## 2026-11-22 cycle #152
 - [Steering Committee Meeting #75](steering/meetings/2026-11-22-meeting-75.md) — J11 pins independently verified; source-language reading remains first and English translation remains downstream.
+
+
+## 2026-11-22 cycle #153
+- [Steering Committee Meeting #76](steering/meetings/2026-11-22-meeting-76.md) — source-language reading remains first; J11 pins reviewed, execution still gated.
