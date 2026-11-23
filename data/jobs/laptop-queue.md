@@ -1,9 +1,63 @@
 # Laptop job queue — Voynich Collective
 
-**Last reviewed:** 2026-11-23 02:22 ET  
+**Last reviewed:** 2026-11-23 08:01 ET  
 **Strategic objective:** source-language reading first; English translation only after held-out validation and independent review. J11 below is a supporting numerical check, not a decipherment.
 
-## Priority 1 — J11 ten-seed damping-ratio anchors
+## Priority 1 — Yale ten-folio native-resolution retrieval and blind cell template
+
+**State:** `QUEUED / NOT DISPATCHED`  
+**Purpose:** execute the already-authorized, preregistered ten-folio image-integrity job that supports corpus reliability and a later blind visual audit. This is not a source-language reading, decipherment or translation.
+
+### Authorization and exact pins
+
+- Authorization: `config/user-authorizations.md`, 2026-11-01 02:47 UTC — analysis use only; do not commit image bytes; Yale reuse/publication is separate.
+- Authorization file Git blob SHA: `843cf8e599b808c22b784facc9bdd93520b363ed`
+- Manifest: `research/2026-10-21-yale-canvas-manifest.csv`
+- Manifest Git blob SHA: `a9eb65a533521f0d7d797abb56e0503c0eead209`
+- Fetch script: `data/scripts/yale_ten_folio_native_fetch.py`
+- Script Git blob SHA: `b9bba202204b8e6399cd258d1ccfaa4efe5e7799`
+- Offline validation test Git blob SHA: `4448a5c266d3dc9b1f5a7a37142f6f333cdc5048`
+- Yale manifest: `https://collections.library.yale.edu/manifests/2002046`
+- Exact authorized folios and expected 1200px SHA-256 values:
+
+| Folio | Canvas | Expected 1200px SHA-256 |
+|---|---:|---|
+| f14r | 1006100 | `95f09e1ab2fe1fac070e6b6ef4012d39625787f8216b73e187aa65d5d3227c9b` |
+| f17r | 1006106 | `a667e10c9601e8c949886af95de6c764a27c6d92735f2f6b0a5ad0143d570677` |
+| f17v | 1006107 | `67e081b2d36b1c3f50e6b4086d42e9289077ca55f89ebfe8fd6728c191ee8332` |
+| f19v | 1006111 | `2693106472e6b7341307b578f4aa38ea4615e99b720a079d17701af2ba9dbb84` |
+| f21r | 1006114 | `c8d07e4a76bb8c219b24458c3c684819ecd3ac4290d5b1e8bcd4e135a201b9ce` |
+| f23v | 1006119 | `ef6f8e82982a2aa70c3761716f153d51ce0719d2c79598a3cfd082485d933489` |
+| f37v | 1006147 | `47dbff1531863c09085b44f879ae857c62e42ab4fe2e3a4de9166d7bb766a16e` |
+| f43v | 1006159 | `c3b71e21cc8617c97a71fae35dcc4dfaf668fbb07cd380d3b76ecf050f9edf78` |
+| f50r | 1006172 | `64d0590e4df1c33c68db580e2bfddc92c0e05888bf8910a64e8453849d830697` |
+| f65r | 1006190 | `02b9f7d943459d0b6687adb35bdd20087b51a7de7dfe3feccdaac1291bc044c1` |
+
+### Command, resources and checkpoints
+
+Seeds: N/A (deterministic retrieval; no RNG).
+
+Run from the pinned repository checkout on a laptop that can reach Yale:
+
+```sh
+ulimit -v 2097152
+ulimit -t 7200
+taskset -c 0 python3 data/scripts/yale_ten_folio_native_fetch.py --image-dir "$HOME/voynich-yale-native" --sleep 2
+```
+
+- One CPU core (CPU 0); 2 GiB virtual-memory cap; 7,200 CPU-second cap; no GPU.
+- Only the ten authorized Yale folios; 2-second polite delay; info.json timeout 120 s and native image timeout 600 s.
+- Network only to the pinned Yale IIIF service. No other corpus fetch.
+- Preserve each per-folio stdout line. The script writes a receipt with native SHA-256, JPEG validity, dimensions, 1200px hash match, timestamp and error. It writes the blank scoring template only if all ten validate.
+- Outputs: ten native JPEGs in `$HOME/voynich-yale-native` (outside the repo), `research/2026-11-01-ten-folio-native-receipt.csv`, and, only on complete success, `research/2026-11-01-ten-folio-cell-template.csv`. Never commit image bytes.
+- Retry: if interrupted before a receipt exists, preserve the partial image directory and retry exactly once using a new empty image directory and the same command/pins. If a receipt exists, do not rerun: the script deliberately refuses to overwrite it. Preserve and inspect the receipt; any failed folio stays out of analysis pending a separately reviewed recovery.
+- Decision: proceed to the preregistered blind cell-level audit only if all ten native JPEGs validate and each 1200px refetch matches the pinned manifest hash. A pass establishes image retrieval integrity only, not a reading.
+
+**Current blocker:** the cloud fetch attempt returned HTTP 403 for Yale's IIIF endpoint; no image bytes were fetched. No authenticated laptop endpoint is connected. The authorization is analysis-only and does not authorize public reuse or image publication.
+
+---
+
+## Priority 2 — J11 ten-seed damping-ratio anchors
 
 **State:** `QUEUED / NOT DISPATCHED`  
 **Why it is queued:** the exact job is pinned and reproducible, but no authenticated laptop endpoint or execution receipt is available to this run. Do not run it on an unpinned cloud checkout.
