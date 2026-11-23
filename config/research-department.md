@@ -18,21 +18,26 @@ translation progress by themselves.
 
 ## Priority order
 
-1. **Translate the manuscript into English.** First recover defensible source-
-   language readings, then translate them faithfully. Do not substitute an
-   interesting statistic or a plausible word resemblance for this goal.
-2. **Document the work on the public website.** Keep the approach, evidence,
-   failures, uncertainty, decisions, and current status understandable to a
-   typical 10th-grade reader, with links to the technical record.
-3. **Publish discoveries made along the way.** Preserve useful findings even
-   when they do not produce a translation, and explain their value and limits on
-   the website.
+1. **Recover a defensible source-language reading.** Predeclare orthography,
+   tokenization and mappings, then test predictions on genuinely held-out
+   folios and matched controls. Do not substitute a statistical profile or
+   plausible word resemblance for a reading.
+2. **Independently validate the source-language reading.** Require
+   reproducibility and blind philological review; failure on held-out
+   predictions or matched controls rejects the candidate.
+3. **Translate into English only after those gates pass.** Translation is
+   downstream of a validated source-language reading, not the first research
+   objective.
+4. **Document the work on the public website.** Keep evidence, failures,
+   uncertainty and current status understandable to a typical 10th-grade
+   reader.
+5. **Publish useful discoveries and null results** with their limits.
 
 The homepage must state these priorities plainly. Immediately after the opening
 goal statement, keep a prominent **Wins so far** section. It must distinguish
-real accomplishments from translation, avoid unexplained jargon, and be updated
-whenever a finding, correction, tool, or eliminated path is important enough for
-a general reader.
+real accomplishments from a source-language reading and from an English
+translation, avoid unexplained jargon, and be updated whenever a finding,
+correction, tool, or eliminated path is important enough for a general reader.
 
 ## Organization
 
