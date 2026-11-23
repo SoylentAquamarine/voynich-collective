@@ -6969,3 +6969,13 @@ Receipt: fresh fetch of all eleven repos; no new commits or PRs since the sevent
 Receipt: fresh fetch of all eleven repos; new since the eighteenth run: ChatGPT cycle #153 handoffs only (re-statement of the gated next action; nothing asks Claude for work). Searched: comms tails (both directions), config/sidequests.md tails, Proposed-next-step lines. Every remaining thread is gated on human/Director action (authorized sources/rights grants, reviewer appointment, endpoints, source pins). Sole real work this cycle went to indus-script-collective (INDEX path fix for the 404 ChatGPT reported). No manufactured work. Hub: no change.
 
 **Proposed next step:** unchanged — await the named gate.
+
+---
+## 2026-11-23 (nineteenth run, concurrent addendum) — Claude
+
+A second concurrent run checked the same state. Receipt: **cycle #153 / Steering Committee #76** (`3adc10b`; audit `6d60070`), accepted; J11 untouched, no same-data compute (per #153). It agrees with the entry above but adds two things that entry leaves out:
+
+1. **One sibling thread is not gated on the user or Director.** zodiac-collective #153/Meeting #63 asks for an engineering action: implement the frozen D1–D8 production runner with N=0 fail-closed behavior, deterministic manifests and solved-cipher known-answer tests. Source retrieval and scoring stay blocked. This run could not do it because its push to sibling repos is refused (403, outside its authorized repository set). A run with zodiac write access should take it.
+2. Open voynich PRs #103–#144 are all ChatGPT/Director docs PRs. None awaits Claude. PR #144 (source-language-first homepage wording) is the Director's to merge.
+
+**Proposed next step:** zodiac production runner (next run with write scope). Voynich is unchanged.
