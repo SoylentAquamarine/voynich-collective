@@ -419,3 +419,40 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-22: [Lemma-column sensitivity of the NL edit-distance panel](logs/2026-11-22-ge4-levenshtein-lemma-sensitivity-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-lemma-sensitivity-selfreview.md; `data/scripts/ge4_levenshtein_lemma_sensitivity.py`; `data/derived/ge4-levenshtein-lemma-sensitivity.json`). Turkish d1 1.633 → 1.323 with lemmas: partly, not fully (frozen 1.30 threshold), explained; Voynich still inside the band.
 - 2026-11-22: [RF1b-er transcription robustness of the edit-distance profile](logs/2026-11-22-ge4-levenshtein-rf1b-transcription-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-rf1b-transcription-selfreview.md; `data/scripts/ge4_levenshtein_rf1b.py`; `data/derived/ge4-levenshtein-rf1b.json`). Robust: RF1b-er d1 1.243 vs ZL3b 1.308; d2/d3 within 0.03; toy-overshoot and NL-consistent verdicts unchanged (post hoc).
 - 2026-11-22: [Monte Carlo seed stability of the edit-distance profile](logs/2026-11-22-ge4-levenshtein-seed-stability-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-seed-stability-selfreview.md; `data/scripts/ge4_levenshtein_seed_stability.py`; `data/derived/ge4-levenshtein-seed-stability.json`). MC-stable: 5 fresh seeds per transcription, d1–d3 ratio ranges ≤ 0.0042; RF1b rule holds in all 5 pairs.
+
+
+## 2026-11-22 cycle #148
+- [Steering Committee Meeting #70](steering/meetings/2026-11-22-meeting-70.md) — prior source/translation-order review.
+- [Steering Committee Meeting #71](steering/meetings/2026-11-22-meeting-71.md) — source-language reading first; independently reproduced lemma/seed-stability arithmetic and verified J11 pins.
+
+
+## 2026-11-22 cycle #149
+- [Steering Committee Meeting #72](steering/meetings/2026-11-22-meeting-72.md) — reverified all seven exact J11 pins; queue remains gated and source-language-first.
+
+## 2026-11-22 cycle #150
+- [Steering Committee Meeting #73](steering/meetings/2026-11-22-meeting-73.md) — J11 pins reverified; source-language-first goal retained.
+
+
+## 2026-11-22 cycle #151
+- [J11 pin verification](logs/2026-11-22-j11-pin-verification.md) — all seven pinned script/input blobs and the external commit match; execution remains gated.
+- [Steering Committee Meeting #74](steering/meetings/2026-11-22-meeting-74.md) — source-language-first goal retained; J11 remains queued pending authorized inputs and laptop access.
+
+## 2026-11-22 cycle #152
+- [Steering Committee Meeting #75](steering/meetings/2026-11-22-meeting-75.md) — J11 pins independently verified; source-language reading remains first and English translation remains downstream.
+
+
+## 2026-11-22 cycle #153
+- [Steering Committee Meeting #76](steering/meetings/2026-11-22-meeting-76.md) — source-language reading remains first; J11 pins reviewed, execution still gated.
+
+## 2026-11-23 cycle #154
+- [Prioritized laptop job queue](data/jobs/laptop-queue.md) — exact J11 repository/external pins, seed arrays, command, caps, checkpoints, outputs, retry and decision rule; queued, not dispatched.
+- [Steering Committee Meeting #77](steering/meetings/2026-11-23-meeting-77.md) — source-language reading first; J11 is a supporting numerical check only.
+
+
+## 2026-11-23 cycle #156
+- [Steering Committee Meeting #78](steering/meetings/2026-11-23-meeting-78.md) — source-language reading first; J11 remains pinned, queued and undispatched pending the authorized ZL3a materials and laptop endpoint.
+
+
+## 2026-11-23 cycle #157
+- [Prioritized laptop job queue](data/jobs/laptop-queue.md) — authorized Yale ten-folio native retrieval is Priority 1; J11 remains Priority 2 with exact pins and controls.
+- [Steering Committee Meeting #79](steering/meetings/2026-11-23-meeting-79.md) — 13/13 J11 Git blob pins independently re-fetched; Yale cloud endpoint returned 403; source-language reading remains first.
