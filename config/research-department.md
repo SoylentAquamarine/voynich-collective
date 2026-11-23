@@ -2,15 +2,19 @@
 
 ## Mission
 
-The ultimate target is a defensible decipherment of the Voynich Manuscript and
-a faithful English translation. Because the source language may not be English,
-the required chain is:
+The primary research target is a defensible reading of the Voynich Manuscript
+in its source language. A faithful English translation follows only after that
+reading survives held-out validation and independent philological review.
+Because the source language may not be English, the required chain is:
 
 1. establish reliable glyph, token, layout, and image data;
 2. identify a historically and linguistically plausible writing system;
-3. recover source-language readings that generalize to held-out text;
-4. translate those readings into English;
-5. survive independent reproduction and adversarial review.
+3. recover source-language readings that generalize to genuinely held-out text
+   and beat matched controls;
+4. reproduce the reading independently and obtain blind philological review;
+5. translate the validated source-language reading into English;
+6. publish a defensible null or unresolved conclusion if the evidence fails
+   these gates.
 
 Process quality is necessary, but it is not the final goal. Activity, generated
 files, statistical fit, or a few plausible-looking words do not count as
