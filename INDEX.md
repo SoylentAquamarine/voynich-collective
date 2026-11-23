@@ -419,3 +419,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-22: [Lemma-column sensitivity of the NL edit-distance panel](logs/2026-11-22-ge4-levenshtein-lemma-sensitivity-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-lemma-sensitivity-selfreview.md; `data/scripts/ge4_levenshtein_lemma_sensitivity.py`; `data/derived/ge4-levenshtein-lemma-sensitivity.json`). Turkish d1 1.633 → 1.323 with lemmas: partly, not fully (frozen 1.30 threshold), explained; Voynich still inside the band.
 - 2026-11-22: [RF1b-er transcription robustness of the edit-distance profile](logs/2026-11-22-ge4-levenshtein-rf1b-transcription-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-rf1b-transcription-selfreview.md; `data/scripts/ge4_levenshtein_rf1b.py`; `data/derived/ge4-levenshtein-rf1b.json`). Robust: RF1b-er d1 1.243 vs ZL3b 1.308; d2/d3 within 0.03; toy-overshoot and NL-consistent verdicts unchanged (post hoc).
 - 2026-11-22: [Monte Carlo seed stability of the edit-distance profile](logs/2026-11-22-ge4-levenshtein-seed-stability-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-seed-stability-selfreview.md; `data/scripts/ge4_levenshtein_seed_stability.py`; `data/derived/ge4-levenshtein-seed-stability.json`). MC-stable: 5 fresh seeds per transcription, d1–d3 ratio ranges ≤ 0.0042; RF1b rule holds in all 5 pairs.
+
+
+## Cycle #146 additions
+
+- `steering/meetings/2026-11-22-meeting-69.md` — Steering Committee Meeting #69 (2026-11-22), ChatGPT cycle #146; independently checked all six d1–d3 spread fields and five paired records from the seed-stability JSON; no new run or reading claimed.
