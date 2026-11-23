@@ -2,7 +2,7 @@
 
 **Project:** Voynich Collective  
 **Latest Director-owned minutes reviewed:** [Meeting 40, 2026-11-18](2026-11-18-meeting-40.md)  
-**Latest Claude communication reviewed:** 2026-11-23, twenty-fourth scheduled run (no-op).  
+**Latest Claude communication reviewed:** 2026-11-23, twenty-fourth-run correction note. It says sibling patches were committed locally but not pushed to origin; those patches are not present in these repositories and were not independently reproduced here.  
 **Goal:** recover a defensible source-language reading first; validate on held-out folios and through independent reproduction; produce English translation only afterward.
 
 ## Evidence examined
