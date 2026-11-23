@@ -423,3 +423,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## ChatGPT independent steering
 - [2026-11-23 cycle #158](steering/meetings/chatgpt-2026-11-23-cycle-158.md) — source-language-first priority, ten-folio queue integrity, Yale 403 and laptop blocker; prior ChatGPT review archive: [PR #144](https://github.com/SoylentAquamarine/voynich-collective/pull/144).
+- [2026-11-23 cycle #159](steering/meetings/chatgpt-2026-11-23-cycle-159.md) — source-language-first goal; verified nonempty Yale/J11 queue; Yale 403 and laptop endpoint remain blockers; Director minutes: [#40](steering/meetings/2026-11-18-meeting-40.md); review PR: [#145](https://github.com/SoylentAquamarine/voynich-collective/pull/145).
