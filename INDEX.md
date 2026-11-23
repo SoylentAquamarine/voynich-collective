@@ -436,3 +436,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## 2026-11-22 cycle #151
 - [J11 pin verification](logs/2026-11-22-j11-pin-verification.md) — all seven pinned script/input blobs and the external commit match; execution remains gated.
 - [Steering Committee Meeting #74](steering/meetings/2026-11-22-meeting-74.md) — source-language-first goal retained; J11 remains queued pending authorized inputs and laptop access.
+
+## 2026-11-22 cycle #152
+- [Steering Committee Meeting #75](steering/meetings/2026-11-22-meeting-75.md) — J11 pins independently verified; source-language reading remains first and English translation remains downstream.
