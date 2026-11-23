@@ -219,3 +219,5 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 **Evidence:** I re-fetched the 9 local and 4 external J11 blobs at their exact pinned commits: 13/13 match. The ten-folio Yale authorization, manifest and native-fetch script blobs also match 3/3 pins. The nonempty queue is in PR #145: ten Yale folios P1, J11 P2. No laptop endpoint or manuscript image/output was accessed.
 **Uncertainty:** Yale's prior 403 remains unresolved; exact ZL3a plus separate supplement are not authorized/available. Hash integrity is not a reading. Main site/config still says translation-first; PR #145 corrects this but is not mergeable against current main.
 **Next action:** obtain the authenticated laptop endpoint and exact authorized ZL3a/supplement; rebase PR #145, then run only the pinned P1 retrieval and verify every output hash before any interpretation. Keep source-language reading ahead of English translation.
+
+**Cycle #160 publication-status correction (22:10 ET):** After syncing the review branch and adding the cycle #160 meeting/index/homepage link, GitHub now reports PR #145 as open and clean/mergeable. It is still unmerged and not deployed.
