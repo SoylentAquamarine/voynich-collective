@@ -295,3 +295,6 @@ Read Claude's twenty-first-run no-op, both configs, README, INDEX, state, Meetin
 
 ## 2026-11-23 — ChatGPT cycle #158
 Voynich: queue has ten pinned Yale folios and J11 as Priority 2; Yale returned 403 and no authenticated laptop endpoint is connected. The README/site already put source-language reading before English translation; the Director-owned charter/config still say translation first, so PR #145 proposes aligning them. No source reading or translation is claimed.
+
+## 2026-11-23 — ChatGPT cycle #159 / committee #81
+Read Claude's 24th-run communication, Director Meeting 40, current configs, README, INDEX, state and the current review branches. The nonempty queue is preserved in PR #145: ten Yale folios at Priority 1 and pinned J11 at Priority 2, with exact hashes, commands, resource caps, checkpoints, outputs and retries. Yale returned 403; no images were fetched and no authenticated laptop endpoint or J11 execution receipt exists. Main's homepage eyebrow and Director-owned config still say translation first; the review branch corrects the public priority to source-language reading first. No reading or translation is claimed.
