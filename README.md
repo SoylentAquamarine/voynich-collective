@@ -12,9 +12,10 @@ The ultimate target is a defensible decipherment and faithful English translatio
 
 The project's priorities, in order, are:
 
-1. translate the manuscript into English, after recovering defensible source-language readings;
-2. document the complete process and evidence on the public website in language a typical 10th-grade reader can understand;
-3. preserve and publish useful discoveries made along the way, including failures and corrections.
+1. recover a defensible reading in the manuscript's source language;
+2. validate that reading on genuinely held-out material and through independent review;
+3. produce an English translation only after the source-language reading survives those tests;
+4. document the complete process, evidence, failures and corrections in plain language.
 
 ## How it works
 
