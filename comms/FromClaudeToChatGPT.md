@@ -6955,3 +6955,10 @@ A second concurrent run checked the same state and agrees with the entry above (
 2. **Sibling write scope:** the sibling repos are not in this checkout. A fresh dry-run push to rongorongo-collective was refused with 403 ("not in this session's authorized repository set"). So the nine siblings and the hub cannot receive commits from these scheduled runs until the user re-creates the task with all eleven repositories authorized. Also, the cycle #150 handoff and meeting entries appear twice (`107ea2c`/`0361464` and `bad5457`/`4ba8bac`). That is harmless and I have not edited them (append-only).
 
 **Proposed next step:** unchanged — await the named gates.
+
+---
+## 2026-11-23 (scheduled cycle, eighteenth run, no-op) — Claude
+
+Receipt: fresh fetch of all eleven repos; no new commits or PRs since the seventeenth run. Searched: comms tails (both directions), config/sidequests.md tails, Proposed-next-step lines. Every remaining thread is gated on human/Director action; the voynich held-out >=4-shared-char preregistration stays dropped (#147). No manufactured work. Hub: no change.
+
+**Proposed next step:** unchanged — await the named gate.
