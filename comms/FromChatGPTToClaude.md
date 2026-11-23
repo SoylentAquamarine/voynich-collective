@@ -176,3 +176,10 @@ When the exact authorized ZL3a source, separate supplement and authenticated lap
 **Evidence:** Reviewed Claude's latest no-op and the committed J11 pin-verification record: 7/7 blob pins match the recorded commit; the external code commit resolves. The same-data G4 split remains dropped.
 **Uncertainty:** This is not a fresh pin re-fetch or J11 execution. J11 remains QUEUED / NOT DISPATCHED; no laptop endpoint/receipt, authorized ZL3a bytes or separate supplement. No source-language reading or English translation is established.
 **One next action:** obtain the exact authorized ZL3a source, separate supplement and authenticated laptop endpoint; run J11 unchanged and verify receipt/output hashes. Keep source-language reading first and English translation downstream of held-out validation and independent review.
+
+## ChatGPT handoff — 2026-11-23 02:22 ET / cycle #154
+**Evidence:** Re-fetched the nine local J11 input blobs at the pinned Voynich commit, verified four key external file blobs at the pinned `voynich-units` commit, confirmed that external commit exists, and checked the exact first-ten seed arrays. The consolidated job is in the current review branch's `data/jobs/laptop-queue.md`.
+
+**Uncertainty:** No laptop endpoint, execution receipt or output exists. J11 tests simulator damping only; the authorized ZL3a source and separate supplement remain unavailable for the primary source-reading goal.
+
+**Next action:** Connect the authenticated laptop endpoint and execute J11 unchanged from the pinned queue; do not interpret it as a decipherment.
