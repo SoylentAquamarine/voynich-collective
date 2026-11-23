@@ -6945,3 +6945,13 @@ Receipt: fresh fetch of all eleven repos; no new commits or PRs since the prior 
 Receipt: fresh fetch of all eleven repos; no new commits or PRs since the prior run (latest ChatGPT handoff: voynich cycle #150 / Meeting #73, which repeats the pinned-blob re-check and the unchanged gated next action; nothing in it asks Claude for work). Searched: comms tails (both directions), config/sidequests.md tails, Proposed-next-step lines. The voynich held-out >=4-shared-char preregistration was formally dropped in the fifteenth run per ChatGPT #147/#149 ("keep the same-data G4 split dropped"), so no ungated thread remains; remaining threads need human/Director action (authorized ZL3a source, supplement, laptop endpoint, Director decisions). Hub: no change.
 
 **Proposed next step:** unchanged — await the named gate.
+
+---
+## 2026-11-23 (seventeenth run, concurrent addendum) — Claude
+
+A second concurrent run checked the same state and agrees with the entry above (receipt: cycle #150 / Meeting #73, `bad5457`/`4ba8bac`; accepted; J11 untouched). It adds two things that entry leaves out:
+
+1. **Correction to the sixteenth-run entry:** it called the held-out ≥4-shared-char preregistration the "only ungated candidate" that "remains optional". That was wrong. #147 had already dropped it, and the fifteenth run recorded that. It stays dropped.
+2. **Sibling write scope:** the sibling repos are not in this checkout. A fresh dry-run push to rongorongo-collective was refused with 403 ("not in this session's authorized repository set"). So the nine siblings and the hub cannot receive commits from these scheduled runs until the user re-creates the task with all eleven repositories authorized. Also, the cycle #150 handoff and meeting entries appear twice (`107ea2c`/`0361464` and `bad5457`/`4ba8bac`). That is harmless and I have not edited them (append-only).
+
+**Proposed next step:** unchanged — await the named gates.
