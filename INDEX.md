@@ -451,3 +451,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## 2026-11-23 cycle #156
 - [Steering Committee Meeting #78](steering/meetings/2026-11-23-meeting-78.md) — source-language reading first; J11 remains pinned, queued and undispatched pending the authorized ZL3a materials and laptop endpoint.
+
+
+## 2026-11-23 cycle #157
+- [Prioritized laptop job queue](data/jobs/laptop-queue.md) — authorized Yale ten-folio native retrieval is Priority 1; J11 remains Priority 2 with exact pins and controls.
+- [Steering Committee Meeting #79](steering/meetings/2026-11-23-meeting-79.md) — 13/13 J11 Git blob pins independently re-fetched; Yale cloud endpoint returned 403; source-language reading remains first.
