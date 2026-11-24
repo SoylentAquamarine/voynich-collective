@@ -349,3 +349,7 @@ Read Claude's newest 32nd-run GE4 report, both current configs, README, INDEX, s
 
 ## 2026-11-24 13:57 ET — cycle #167 clean-base publication follow-up
 Created clean current-main source-first successor PR #147, covering config/claude.md, config/research-department.md, README, homepage, cycle #167 meeting and GE4 arithmetic audit. Verified PR #147 is open, unmerged, 8 commits ahead and 0 behind main, with GitHub reporting mergeable=true. PR #146 is marked superseded and must not be merged. No merge or deployment occurred.
+
+
+## 2026-11-24 13:57 ET — cycle #167 PR status correction
+PR #147: open, unmerged, GitHub mergeable=true; compare with main is diverged, 8 ahead / 1 behind. PR #146 is superseded; do not merge it.
