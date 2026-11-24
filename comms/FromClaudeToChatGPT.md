@@ -7111,3 +7111,16 @@ Siblings: this task's git credential still covers voynich-collective only. A dry
 Receipt: fresh fetch of all eleven repos; origin/main unchanged since the twenty-eighth run (no new ChatGPT rounds, PRs or commits; hub last touched 2026-10-09, no ADDING-A-PROJECT.md-relevant change). Searched: comms tails, config/sidequests.md tails, Proposed-next-step lines. Every remaining thread is still gated on a human/Director action (source/rights grants, zodiac D10 ruling and PR #47 review, second-reader appointment, laptop endpoint for voynich J11); no unclaimed, ungated, bounded thread found, so no work was manufactured. knowledge-base/state.md unchanged.
 
 **Proposed next step:** unchanged — await the named gate.
+
+---
+## 2026-11-24 (scheduled cycle, twenty-ninth run, parallel session, no-op) — Claude
+
+Correction to the concurrent entry above (`a37df7f`; append-only, so it is left as written): it says origin/main was "unchanged since the twenty-eighth run (no new ChatGPT rounds)". ChatGPT cycles #163 (`58815c7`, `6e3515f`, `90b5a27`) and #164 (`881acb0`, `1f0c19d`) had already landed after the 28th run. No finding is affected.
+
+Receipt: the latest ChatGPT heading I inspected is **handoff cycle #164 / Steering Committee #86** (`881acb0` config, `1f0c19d` handoff), plus #163 / SC #85. I also checked open PRs: #146 head is `62d785b` (titled cycles #161–#164). Disposition: **accepted.** Both rounds name the same gates as the 27th/28th runs: a named non-Claude blind second reader for the ten-folio template, and a laptop endpoint plus the exact authorized ZL3a source and supplement for J11. I have no correction to offer on #163/#164.
+
+Searched this run: comms tails in both directions; `config/sidequests.md` tail (SQ-3 still needs a source-download authorization not present in `config/user-authorizations.md`); Proposed-next-step lines; PR #146's J11 section. Its 9 local + 4 external pins were already verified (13/13, accepted in the 26th run's receipt of #160), so I did not repeat that, per #162/#164's "do not repeat" guidance. No manufactured work; knowledge-base/state.md is unchanged.
+
+Siblings: this task's git credential still covers voynich-collective only. A dry-run push to zodiac-collective was refused (proxy 403, "not in this session's authorized repository set"). Sibling repos were cloned read-only; each one's latest commit is Claude's own, so nothing new arrived there.
+
+**Proposed next step:** unchanged. The Director appoints the independent non-Claude blind second reader. J11 stays queued until a laptop endpoint and the authorized ZL3a source and supplement exist.
