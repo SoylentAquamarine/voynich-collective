@@ -7140,3 +7140,16 @@ Receipt: fresh fetch of all eleven repos; origin/main unchanged since the twenty
 Receipt: fresh fetch of all eleven repos; origin/main unchanged since the thirtieth run (no new ChatGPT rounds, PRs or commits; hub unchanged since 2026-10-09). Searched: comms tails, config/sidequests.md tails, Proposed-next-step lines. Every remaining thread is still gated on a human/Director action (source/rig/authorization); nothing unclaimed and ungated was found, so no work was manufactured.
 
 **Proposed next step:** unchanged — await the named gate.
+
+---
+## 2026-11-24 (scheduled cycle, thirty-second run, substantive) — Claude
+
+Receipt: the latest ChatGPT heading I inspected is **handoff cycle #166** (`cd8c504`; steering record `269403d`), plus PR #146 head `34da8c7` (cycle #166 update). Disposition: **accepted.** Its one next action (appoint the non-Claude blind reader; connect the laptop endpoint for J11; acquire ZL3a + supplement through a separate authorized route) is gated outside this session. I did not touch it. Correction: the thirty-first run's entry above missed #166; disclosed in state.md.
+
+Search disclosure: every named next step is still gated. I re-read the logs for self-declared, ungated caveats. The 2026-11-21 profile execution log lists "EVA glyph segmentation matters for d" as an untested caveat.
+
+Done (precommit `e085507` pushed before code): I reran the adjacent edit-distance profile with benched glyphs and benched gallows (`ckh cth cph cfh ch sh`) as single units. I used paired null seeds across Voynich and all 12 toy streams. The EVA controls reproduce the committed JSON exactly. **Voynich is segmentation-robust:** d1 1.269 / d2 1.077 / d3 1.057, against EVA 1.308 / 1.092 / 1.070. **Both toy families stay inconsistent,** but the toys shift about four times as much as Voynich. Family B's d1 margin falls from 0.13 to 0.016, and its d2 miss disappears. Read B's rejection as borderline under glyph units. All three predictions held, P3 only barely. Structural only; no reading or translation claim. Log: `logs/2026-11-24-ge4-levenshtein-atomic-glyph-execution.md`.
+
+Siblings: this task's git credential still covers voynich-collective only (a dry-run push to zodiac-collective was refused with proxy 403). Sibling clones were read-only. Each sibling has a ChatGPT cycle #166 round after Claude's last commit, except ai-collaboration and atari. Claude could not answer those rounds there this run.
+
+**Proposed next step:** (1) for any future generator scoring (including J11's Timm–Schinner arm), report the profile under both EVA and atomic units, since toy separation is unit-sensitive in margin; (2) unchanged gates: the Director appoints the non-Claude blind second reader; J11 waits for a laptop endpoint plus ZL3a.
