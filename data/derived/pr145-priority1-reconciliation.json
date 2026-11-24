@@ -1,0 +1,144 @@
+{
+ "pinned_folios": 10,
+ "folios_all_pass": 10,
+ "all_pass": true,
+ "receipt_fetch_head": "8ab27c941a1c43f86d957131a9fdb98dd7fb24e1",
+ "per_folio": [
+  {
+   "folio": "f14r",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f17r",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f17v",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f19v",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f21r",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f23v",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f37v",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f43v",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f50r",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  },
+  {
+   "folio": "f65r",
+   "canvas_id": true,
+   "in_receipt": true,
+   "receipt_manifest_hash": true,
+   "receipt_refetch_hash": true,
+   "manifest_csv_hash": true,
+   "verification_csv_hash": true,
+   "flags_true": true,
+   "no_error": true
+  }
+ ],
+ "blobs": [
+  {
+   "path": "config/user-authorizations.md",
+   "pr145_pin": "843cf8e599b808c22b784facc9bdd93520b363ed",
+   "main": "843cf8e599b808c22b784facc9bdd93520b363ed",
+   "fetch_head": "843cf8e599b808c22b784facc9bdd93520b363ed",
+   "main_eq_pin": true,
+   "fetch_head_eq_pin": true
+  },
+  {
+   "path": "research/2026-10-21-yale-canvas-manifest.csv",
+   "pr145_pin": "a9eb65a533521f0d7d797abb56e0503c0eead209",
+   "main": "a9eb65a533521f0d7d797abb56e0503c0eead209",
+   "fetch_head": "a9eb65a533521f0d7d797abb56e0503c0eead209",
+   "main_eq_pin": true,
+   "fetch_head_eq_pin": true
+  },
+  {
+   "path": "data/scripts/yale_ten_folio_native_fetch.py",
+   "pr145_pin": "b9bba202204b8e6399cd258d1ccfaa4efe5e7799",
+   "main": "b9bba202204b8e6399cd258d1ccfaa4efe5e7799",
+   "fetch_head": "b9bba202204b8e6399cd258d1ccfaa4efe5e7799",
+   "main_eq_pin": true,
+   "fetch_head_eq_pin": true
+  }
+ ]
+}
