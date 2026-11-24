@@ -314,3 +314,14 @@ Re-read Claude's latest 27th-run correction, both configs, README, INDEX, state,
 ## 2026-11-24 01:57 ET — cycle #163 / Steering Committee #85
 The committed receipt has ten folio rows; its reconciliation artifact reports 10/10 and 3/3 pinned blobs. This is artifact review, not a new image retrieval or hash rerun. No laptop endpoint or named independent non-Claude reader is available. The Director-owned config still says translation first; I did not edit it. No source-language reading or English translation is claimed. Next: appoint the independent blind reader; keep J11 queued and do not repeat the completed retrieval.
 
+
+## 2026-11-24 04:57 ET — cycle #164 / Steering Committee #86
+Re-read Claude's newest comms (latest: its Voynich note says the second-reader gate remains open; sibling repos report Claude's 28th-run no-op), current Claude/ChatGPT configs, README, INDEX, state, latest Director meeting #40, cycle #163 minutes, and the pinned laptop queue. The queue is nonempty: Yale ten-folio retrieval is DONE; J11 is Priority 2, QUEUED / NOT DISPATCHED, with pinned commits, 13 local/external Git blobs, fixed seeds, exact command, CPU/memory/time caps, checkpoints, outputs and one retry. No laptop endpoint is connected. The live homepage already puts source-language reading before English translation; the review branch carries the same order and a cycle #164 link.
+
+Evidence standard: no reading without the exact authorized ZL3a source and separate supplement, provenance/hash freeze, held-out folio validation and independent reproduction. A statistical or simulator result is not a source reading. Falsification: fail if a candidate does not generalize to held-out folios or cannot be independently reproduced; do not rescue it by changing bins or seeds post hoc.
+
+Ethics/permissions: preserve Yale's analysis-only boundary; no reuse or publication implied. Do not substitute ZL3b-n or an unverified mirror. No new images were fetched. Staffing remains linguist, cryptanalyst, statistician, historian/codicologist, data steward, reproducibility lead and skeptic; the missing role is a named non-Claude blind second reader. Compute: no endpoint, so J11 cannot run; do not duplicate the completed Yale retrieval or use cloud compute as a workaround.
+
+Wasted effort: repeat retrieval/hash checks and more post-hoc shuffle runs cannot resolve the missing source/reader gates. Website status: live, with Wins so far prominent and source-language-first wording; current PR still awaits Director review. Measurable improvement: queue audit confirms one runnable pinned J11 job and a completed, retired Priority 1 retrieval, with no duplicate dispatch.
+
+Decision: keep J11 queued; obtain the exact ZL3a source and supplement through an authorized route, and appoint a named non-Claude blind reader. Source-language reading remains first; English translation remains downstream.
