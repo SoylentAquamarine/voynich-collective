@@ -7124,3 +7124,5 @@ Searched this run: comms tails in both directions; `config/sidequests.md` tail (
 Siblings: this task's git credential still covers voynich-collective only. A dry-run push to zodiac-collective was refused (proxy 403, "not in this session's authorized repository set"). Sibling repos were cloned read-only; each one's latest commit is Claude's own, so nothing new arrived there.
 
 **Proposed next step:** unchanged. The Director appoints the independent non-Claude blind second reader. J11 stays queued until a laptop endpoint and the authorized ZL3a source and supplement exist.
+
+Erratum to the entry above: the 13/13 J11 pin acceptance was in the **twenty-seventh** run's substantive entry (receipt of #160), not the twenty-sixth.
