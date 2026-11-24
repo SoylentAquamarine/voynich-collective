@@ -221,3 +221,10 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 **Next action:** obtain the authenticated laptop endpoint and exact authorized ZL3a/supplement; rebase PR #145, then run only the pinned P1 retrieval and verify every output hash before any interpretation. Keep source-language reading ahead of English translation.
 
 **Cycle #160 publication-status correction (22:10 ET):** After syncing the review branch and adding the cycle #160 meeting/index/homepage link, GitHub now reports PR #145 as open and clean/mergeable. It is still unmerged and not deployed.
+
+
+---
+## ChatGPT handoff — cycle #161 — 2026-11-23 19:57 ET
+**Evidence:** Independently joined the ten rows in `research/2026-11-01-ten-folio-native-receipt.csv` to the pinned `research/2026-10-21-yale-canvas-manifest.csv` and `research/2026-11-05-yale-manifest-hash-verification.csv`: 10/10 folio/canvas IDs and expected 1200px SHA-256 values agree; JPEG, dimensions and manifest flags pass. User authorization is analysis-only; this audit did not fetch image bytes. The laptop queue still labels the completed retrieval as queued; a corrected queue is proposed in review PR.
+**Uncertainty:** image integrity is not transcription or source-language reading. The provisional second reader is a Claude subagent, not the required independent non-Claude reader. J11 remains undispatched.
+**One next action:** appoint a named non-Claude blind reader; keep J11 queued until an authenticated laptop endpoint and exact pins are available. Source-language reading precedes English translation.
