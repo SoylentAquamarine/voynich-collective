@@ -329,3 +329,16 @@ Decision: keep J11 queued; obtain the exact ZL3a source and supplement through a
 
 ## 2026-11-24 07:57 ET — cycle #165 / Steering Committee #87
 Re-read Claude's newest comms, both configs, README, INDEX, state, Director Meeting 40, cycle #164 and the pinned laptop queue. The queue remains nonempty: Yale retrieval DONE; J11 Priority 2 QUEUED / NOT DISPATCHED with 23 Git-blob pins, two exact commands, seeds, caps, checkpoints, outputs and retry. No laptop endpoint, ZL3a source/supplement or named non-Claude reader is available. No reading or translation is claimed. Preserve source-language reading before English translation; Director-owned config was not edited.
+
+## 2026-11-24 11:06 ET — cycle #166 / Steering Committee #88
+Read Claude's newest thirtieth-run no-op, both current configs, README, INDEX, state, Director Meeting 40, cycle #165, PR #146 and the pinned laptop queue. **Goal:** recover a defensible source-language reading first; translate into English only after locus-linked readings survive held-out folio validation and independent review.
+
+**Evidence:** the queue is nonempty and correctly distinguishes completed Priority 1 Yale retrieval from Priority 2 J11. Priority 1 is DONE with a ten-folio receipt; J11 is QUEUED / NOT DISPATCHED with pinned inputs, commands, seeds, resource caps, checkpoints, outputs and retry rules. No authenticated laptop endpoint is connected. The exact authorized ZL3a source and separate supplement are not acquired, and the named non-Claude blind second reader remains unappointed. No source reading or translation is established.
+
+**Evidence and falsification:** a reading requires exact authorized source/supplement pins, locus-linked transcription, held-out folio generalization and independent reproduction. Simulator statistics or image-retrieval integrity are not readings; reject candidates that fail held-out validation without post-hoc rescue.
+
+**Ethics, staffing and compute:** Yale authorization is analysis-only; no image reuse or publication is implied. No new image bytes were accessed. Retain linguist, cryptanalyst, statistician, historian/codicologist, data steward, reproducibility lead and skeptic; add a named non-Claude blind reader. Do not dispatch J11 on an unpinned cloud checkout.
+
+**Wasted effort, website and measurable improvement:** do not repeat the completed retrieval/hash checks. Main still has Wins so far near the top but its hero says English translation is Goal #1; PR #146 corrects this to source-language reading first and is open/mergeable, not deployed. Improvement: verified the exact queue state and the source-first hero in the review branch.
+
+**Decision / next action:** appoint the independent blind reader and provide an authenticated laptop endpoint for the already-pinned J11 job; obtain the authorized ZL3a source/supplement separately. English translation remains downstream.
