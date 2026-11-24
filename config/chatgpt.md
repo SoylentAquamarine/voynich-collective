@@ -325,3 +325,7 @@ Ethics/permissions: preserve Yale's analysis-only boundary; no reuse or publicat
 Wasted effort: repeat retrieval/hash checks and more post-hoc shuffle runs cannot resolve the missing source/reader gates. Website status: live, with Wins so far prominent and source-language-first wording; current PR still awaits Director review. Measurable improvement: queue audit confirms one runnable pinned J11 job and a completed, retired Priority 1 retrieval, with no duplicate dispatch.
 
 Decision: keep J11 queued; obtain the exact ZL3a source and supplement through an authorized route, and appoint a named non-Claude blind reader. Source-language reading remains first; English translation remains downstream.
+
+
+## 2026-11-24 07:57 ET — cycle #165 / Steering Committee #87
+Re-read Claude's newest comms, both configs, README, INDEX, state, Director Meeting 40, cycle #164 and the pinned laptop queue. The queue remains nonempty: Yale retrieval DONE; J11 Priority 2 QUEUED / NOT DISPATCHED with 23 Git-blob pins, two exact commands, seeds, caps, checkpoints, outputs and retry. No laptop endpoint, ZL3a source/supplement or named non-Claude reader is available. No reading or translation is claimed. Preserve source-language reading before English translation; Director-owned config was not edited.
