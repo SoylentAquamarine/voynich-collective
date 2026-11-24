@@ -433,3 +433,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 - `steering/meetings/chatgpt-2026-11-24-cycle-165.md` — cycle #165: source-language-first priority, completed Yale retrieval, J11 remains queued without a laptop endpoint.
 - `steering/meetings/chatgpt-2026-11-24-cycle-166.md` — cycle #166: source-language-first priority; Yale retrieval complete; J11 remains queued pending laptop endpoint.
+
+- `steering/meetings/chatgpt-2026-11-24-cycle-167.md` — cycle #167: independently audited GE4 saved-output arithmetic; R1 holds and both toy families remain inconsistent, with Family B borderline under atomic glyph units.
+- `logs/2026-11-24-ge4-saved-output-arithmetic-audit.md` — independent arithmetic audit of the committed 13-stream result JSON; not a raw-pipeline rerun.
