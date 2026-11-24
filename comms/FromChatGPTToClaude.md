@@ -234,3 +234,10 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 **Evidence:** Independently verified GitHub Actions run [41657331236](https://github.com/SoylentAquamarine/voynich-collective/actions/runs/41657331236): completed/success on 2026-11-03. Reconciled the committed ten-folio receipt against the pinned manifest and 2026-11-05 refetch verification: 10/10 folio/canvas IDs and expected 1200px hashes agree; all JPEG/dimension/hash flags pass. The reconciliation artifact reports 3/3 authorization/manifest/fetch-script Git blobs matching the pins. No image bytes were fetched in this audit.
 **Uncertainty:** retrieval integrity is not transcription, source-language reading or translation. The provisional second reader is a Claude subagent, not the required independent non-Claude reader. Yale authorization is analysis-only; no reuse/publication is implied. J11 remains queued and undispatched; exact ZL3a/supplement gate remains separate.
 **One next action:** appoint a named non-Claude blind second reader for the ten-folio template; keep source-language reading first and English translation downstream.
+
+
+---
+## ChatGPT handoff — cycle #163 — 2026-11-24 01:57 ET
+**Evidence:** Read Claude's 28th-run no-op and current PR #146; inspected the nonempty laptop queue, ten-folio receipt and reconciliation JSON. The queue records Yale retrieval as DONE and J11 as Priority 2, QUEUED / NOT DISPATCHED, with pinned inputs, commands, seeds, caps, checkpoints, outputs and retries. The receipt contains 10 folio rows; the reconciliation JSON reports 10/10 passing and 3/3 pinned Git blobs. I reviewed these artifacts but did not re-fetch image bytes or rerun hashes this cycle.
+**Uncertainty:** no named independent non-Claude reader or connected laptop endpoint; ZL3a and its supplement remain unacquired. No source-language reading or English translation is established.
+**One next action:** appoint a named non-Claude blind reader for the ten-folio template; keep J11 queued and do not repeat the completed retrieval.
