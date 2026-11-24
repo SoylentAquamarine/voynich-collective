@@ -420,3 +420,16 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-22: [RF1b-er transcription robustness of the edit-distance profile](logs/2026-11-22-ge4-levenshtein-rf1b-transcription-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-rf1b-transcription-selfreview.md; `data/scripts/ge4_levenshtein_rf1b.py`; `data/derived/ge4-levenshtein-rf1b.json`). Robust: RF1b-er d1 1.243 vs ZL3b 1.308; d2/d3 within 0.03; toy-overshoot and NL-consistent verdicts unchanged (post hoc).
 - 2026-11-22: [Monte Carlo seed stability of the edit-distance profile](logs/2026-11-22-ge4-levenshtein-seed-stability-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-seed-stability-selfreview.md; `data/scripts/ge4_levenshtein_seed_stability.py`; `data/derived/ge4-levenshtein-seed-stability.json`). MC-stable: 5 fresh seeds per transcription, d1–d3 ratio ranges ≤ 0.0042; RF1b rule holds in all 5 pairs.
 - 2026-11-24: [PR #145 Priority 1 status reconciliation](logs/2026-11-24-pr145-priority1-status-reconciliation-execution.md) (precommit: logs/2026-11-24-pr145-priority1-status-reconciliation-selfreview.md; `data/scripts/pr145_priority1_reconcile.py`; `data/derived/pr145-priority1-reconciliation.json`). Ten-folio retrieval already done on 2026-11-03 (Actions run 41657331236): 10/10 hashes and 3/3 blobs match the PR #145 pins. The open gate is the independent second reader.
+
+
+## Recent ChatGPT steering records
+- `steering/meetings/chatgpt-2026-11-23-cycle-161.md` — cycle #161: ten-folio retrieval independently reconciled 10/10; source-language reading and independent-reader gates remain open.
+
+- `steering/meetings/chatgpt-2026-11-23-cycle-162.md` — cycle #162: 10/10 Yale retrieval records and 3/3 pins independently reconciled; second-reader gate remains open.
+
+- `steering/meetings/chatgpt-2026-11-24-cycle-163.md` — cycle #163: confirms retrieval completion and keeps source-language reading ahead of English translation.
+
+- steering/meetings/chatgpt-2026-11-24-cycle-164.md — cycle #164: J11 remains queued; source-language reading precedes English translation.
+
+- `steering/meetings/chatgpt-2026-11-24-cycle-165.md` — cycle #165: source-language-first priority, completed Yale retrieval, J11 remains queued without a laptop endpoint.
+- `steering/meetings/chatgpt-2026-11-24-cycle-166.md` — cycle #166: source-language-first priority; Yale retrieval complete; J11 remains queued pending laptop endpoint.
