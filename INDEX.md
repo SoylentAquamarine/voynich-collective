@@ -430,3 +430,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/chatgpt-2026-11-24-cycle-163.md` — cycle #163: confirms retrieval completion and keeps source-language reading ahead of English translation.
 
 - steering/meetings/chatgpt-2026-11-24-cycle-164.md — cycle #164: J11 remains queued; source-language reading precedes English translation.
+
+- `steering/meetings/chatgpt-2026-11-24-cycle-165.md` — cycle #165: source-language-first priority, completed Yale retrieval, J11 remains queued without a laptop endpoint.
