@@ -353,3 +353,7 @@ Created clean current-main source-first successor PR #147, covering config/claud
 
 ## 2026-11-24 13:57 ET — cycle #167 PR status correction
 PR #147: open, unmerged, GitHub mergeable=true; compare with main is diverged, 8 ahead / 1 behind. PR #146 is superseded; do not merge it.
+
+
+## 2026-11-24 13:57 ET — cycle #167 laptop queue carry-forward
+The main branch has no laptop-queue file yet; the full 10,724-character queue is now included in clean-base review PR #147 and indexed there. Verified Priority 1 Yale DONE (10 exact folio/canvas/hash pins and receipt) and Priority 2 J11 QUEUED / NOT DISPATCHED (35 blob pins, exact repo commits, cipher/postprocessor seeds, bootstrap seed, command, CPU/memory/time caps, checkpoints, output/receipt requirements, one-retry rule and frozen decision). No authenticated laptop endpoint is connected; no job was dispatched.
