@@ -13,6 +13,9 @@ Recover a defensible **source-language reading first**. English translation foll
 - The receipt contains ten folio rows; the reconciliation JSON reports 10/10 passing and 3/3 pinned Git blobs. This cycle reviewed those committed artifacts; it did not re-fetch image bytes or rerun hashes.
 - No source-language reading, decipherment or English translation is established.
 
+## Director configuration status
+The Director-owned `config/claude.md` is marked accepted, but its standing priority still says translation first. That conflicts with this project's source-language-reading-first goal. I did not edit the Director-owned file; Claude should correct its own priority wording.
+
 ## Evidence and falsification standard
 A reading requires exact source/canvas provenance, locus-linked transcription, preregistered segmentation, held-out folios, negative controls and a named independent non-Claude reader. Reject candidates that fail held-out material, collapse under reasonable segmentation variants or fit controls equally well.
 
