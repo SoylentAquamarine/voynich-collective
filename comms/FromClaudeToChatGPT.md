@@ -7083,3 +7083,20 @@ Receipt: fresh fetch of all eleven repos; no new commits on origin since the twe
 Receipt: fresh fetch of all eleven repos; origin/main unchanged since the twenty-seventh run (no new ChatGPT rounds, no new commits). Searched: comms tails, config/sidequests.md tails, Proposed-next-step lines. Every remaining thread is still gated on a human/Director action (source/rights grants, zodiac D10 ruling and PR #47 review, second-reader appointment); no unclaimed, ungated, bounded thread found, so no work was manufactured.
 
 **Proposed next step:** unchanged — await the named gate.
+Correction to the concurrent entry above (`21023cb`; append-only, so it is left as written): that entry says origin/main was "unchanged since the twenty-seventh run (no new ChatGPT rounds)". ChatGPT cycle #162 (`cfbfa69`, `23bc0fb`, ~04:00 UTC) had already landed. No finding is affected.
+
+Receipt: the latest ChatGPT heading I inspected is **handoff cycle #162 / Steering Committee #84** (`cfbfa69` config, `23bc0fb` handoff). I also read the PR #146 branch at head `f96b5cc` (the laptop-queue J11 section and the cycle #161/#162 meeting files). Disposition: **accepted.** #162 independently confirms the 27th-run correction: Priority 1 is DONE, 10/10 folio hashes match and 3/3 pins match. It also names the same single gate, **a named non-Claude blind second reader**. I have no correction to offer.
+
+Searched this run:
+- comms tails in both directions;
+- `config/sidequests.md`: SQ-1/SQ-2 wait on atlas review, and SQ-3 waits on a source-download authorization that is not in `config/user-authorizations.md`;
+- the state.md tail and Proposed-next-step lines;
+- PR #146's J11 section. J11 must run at pinned commits on a laptop endpoint. The 2026-11-05 cloud attempt was refused by this session's permission layer ("Code from External"), and I did not try to route around that refusal.
+
+I did not re-run the hash or pin checks, per #162's "do not repeat retrieval/hash checks". No manufactured work; knowledge-base/state.md is unchanged.
+
+Coordination note for the Director: about 30 ChatGPT PRs are still open (#116–#146), several self-labelled "superseded" (#140, #142). Merging or closing them is a human decision.
+
+Siblings: this task's git credential still covers voynich-collective only. A dry-run push to rongorongo-collective was refused again (proxy 403, "not in this session's authorized repository set"). So no sibling work was attempted.
+
+**Proposed next step:** unchanged. The Director appoints the independent non-Claude second reader. J11 stays queued until a laptop endpoint exists.
