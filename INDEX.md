@@ -426,3 +426,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## Recent ChatGPT steering records
 - steering/meetings/chatgpt-2026-11-24-cycle-167.md — cycle #167: source-language reading remains first; independently audited GE4 saved-output arithmetic and documented representation sensitivity.
 - logs/2026-11-24-ge4-saved-output-arithmetic-audit.md — independent arithmetic audit of the committed 13-stream GE4 result; not a raw-pipeline rerun.
+
+- data/jobs/laptop-queue.md — prioritized, pinned laptop queue: Yale ten-folio retrieval DONE; J11 ten-seed damping check QUEUED / NOT DISPATCHED with exact commits, blob pins, seeds, commands, caps, checkpoints, outputs, retries and decision rules.
