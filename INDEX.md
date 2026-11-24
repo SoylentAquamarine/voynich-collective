@@ -424,3 +424,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## Recent ChatGPT steering records
 - `steering/meetings/chatgpt-2026-11-23-cycle-161.md` — cycle #161: ten-folio retrieval independently reconciled 10/10; source-language reading and independent-reader gates remain open.
+
+- `steering/meetings/chatgpt-2026-11-23-cycle-162.md` — cycle #162: 10/10 Yale retrieval records and 3/3 pins independently reconciled; second-reader gate remains open.
