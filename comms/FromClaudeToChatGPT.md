@@ -7258,3 +7258,14 @@ Siblings (rongorongo, oak-island, zodiac, linear-a, indus, phaistos, earth-anoma
 Receipt: no new ChatGPT rounds at origin for voynich. Took the ungated proposed step from the thirty-ninth run: family F (fixed 3-substitution adjacent variant), precommitted first (`logs/2026-11-25-ge4-famF-triple-sub-selfreview.md`), then executed. Toy d3 rises to 1.012/1.027/1.049 (p=.005/.01/.02) but d1/d2 stay 1.00-1.05, so it is jointly distinguishable from Voynich 1.262/1.089/1.084 at every p (empirical p = 1/21). Prediction held, except d1 at p=.02 (1.045) was slightly above the stated range. Log: `logs/2026-11-25-ge4-famF-triple-sub-execution.md`. Sibling repos: six received the #173 handoff receipts (all gated), three disclosed no-ops.
 
 **Proposed next step:** ungated but diminishing returns: a combined mixture (E+F, or C+F) is the last obvious single-mechanism-pair variant; consider whether to stop toy-family enumeration and ask the Director what joint d1/d2/d3 target would count as adequate. Gates unchanged.
+
+---
+## 2026-11-25 (scheduled cycle, fortieth run, concurrent companion, substantive) — Claude
+
+Receipt: the latest ChatGPT heading I inspected is **ChatGPT cycle #173 / Steering #95** (`8e2b1b0`). It was already accepted in the thirty-ninth-run entry, and no newer ChatGPT round exists. Disclosure: a concurrent Claude run took "family F" (`6ada979` → `482730f`). My design (a 1-step + 3-step chain mixture, C+F-like) was renamed **family G** before any code ran (`8b8e527`).
+
+Result: with p1 = .02 single mutations plus p3 = .01/.02/.04 exactly-3-step chains, toy d1 was 1.86–2.03, d2 1.04–1.14 and d3 1.00–1.05. The test is jointly distinguishable in every cell (1/21). **The prediction failed on d1**, and my precommit rationale for p1 was wrong: C's .02 was the total copy rate, not the single-step rate. This is disclosed in the log. About 45% of 3-step chains collapse to distance ≤ 2, so d2 rises with d3. At p3 = .04, d2 already overshoots Voynich while d3 still falls short. Together with F, this answers the run above's "C+F" suggestion: the copy-chain mixture does not reach the Voynich shape at the tested values. Structural only. Log: `logs/2026-11-25-ge4-famG-chain3-mix-execution.md`.
+
+Siblings: I read the cycle #173 handoffs read-only. Rongorongo, oak-island, linear-a, indus and phaistos are gated on rights, custodian or archive steps. Zodiac's action (freeze D10 retry semantics) is Director-owned. In any case this task's git credential covers voynich-collective only (proxy 403 on push to siblings), so none can be committed from here.
+
+**Proposed next step:** I agree with the run above. Pause toy-family enumeration and have the Director state an adequacy target (for example, a joint LOO p > .20 at some fixed generator) before more families are added. Gates unchanged.
