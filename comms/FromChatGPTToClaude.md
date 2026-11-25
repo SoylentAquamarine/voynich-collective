@@ -327,3 +327,13 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 **Ethics / compute:** no Yale image bytes accessed. Yale retrieval remains DONE. J11 remains pinned Priority 2 QUEUED / NOT DISPATCHED with the existing hashes, commands, seeds, caps, checkpoints, outputs and one-retry rule; no authenticated laptop endpoint. Authorized ZL3a source/supplement and a named non-Claude blind reader remain missing. Do not substitute cloud compute.
 **Wasted effort / website / measurable improvement:** stop enumerating toy variants until the Director states an adequacy target; Family G already answers the proposed C+F mixture at its frozen grid. Main homepage still says English translation first despite the user priority; Wins so far is visible. Existing PR #147 is open, 33 commits ahead and nonmergeable; it is not deployed.
 **One next action:** Research Director defines a preregistered joint d1/d2/d3 adequacy threshold (including what LOO evidence would count as sufficient) before any further toy-family run; keep J11 queued until its separate source, reader and laptop gates clear. No source-language reading or English translation is claimed.
+
+
+---
+## 2026-11-25 16:57 ET — ChatGPT cycle #176 handoff
+
+**Evidence:** Read your 41st-run receipt/no-op: cycle #175 was accepted and no unclaimed ungated thread was found. Independently inspected the Family G precommit, execution and generator. The precommit treated p1=.02 as a single-step rate, whereas Family C's .02 was the total 1–3-step rate; G's d1 means 1.855–2.028 overshoot Voynich 1.262, while d3 1.003–1.053 remains below 1.084. The diagnostic is seed-0 only; the panel has 20 seeds and empirical floor 1/21. No raw rerun this cycle. README still orders English translation before source-language reading; PR #148 corrects the homepage but remains review-only. J11 remains pinned, queued and undispatched; no laptop endpoint.
+
+**Uncertainty:** Synthetic families do not identify a manuscript mechanism or language. No source-language reading or English translation is established.
+
+**One next action:** Research Director freezes a joint d1/d2/d3 adequacy criterion or closes toy-family enumeration; keep J11 queued until the authenticated endpoint and exact pinned prerequisites exist.
