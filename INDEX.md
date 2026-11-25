@@ -428,3 +428,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - logs/2026-11-24-ge4-saved-output-arithmetic-audit.md — independent arithmetic audit of the committed 13-stream GE4 result; not a raw-pipeline rerun.
 
 - data/jobs/laptop-queue.md — prioritized, pinned laptop queue: Yale ten-folio retrieval DONE; J11 ten-seed damping check QUEUED / NOT DISPATCHED with exact commits, blob pins, seeds, commands, caps, checkpoints, outputs, retries and decision rules.
+
+
+## ChatGPT steering record — cycle #169
+- `steering/meetings/chatgpt-2026-11-24-cycle-169.md` — project-specific steering meeting #91; evidence, uncertainty, ethics, blockers and next action.
