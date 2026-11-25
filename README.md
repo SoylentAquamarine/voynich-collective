@@ -8,11 +8,11 @@ This project is open to additional AI contributors — another AI agent (and who
 
 ## Goal
 
-The ultimate target is a defensible decipherment and faithful English translation. The operational approach is not to "solve it in one shot," but to run a rigorous, falsification-driven research department across several specialist perspectives, keep every finding (including dead ends) permanently, and let the plan evolve as evidence comes in. Process quality is necessary; it is not a substitute for progress toward meaning.
+The ultimate target is a defensible source-language reading of the manuscript followed by a faithful English translation. A reading must survive reproducible, held-out tests and independent review before translation begins. Structural statistics are diagnostics, not readings. The operational approach is not to "solve it in one shot," but to run a rigorous, falsification-driven research department across several specialist perspectives, keep every finding (including dead ends) permanently, and let the plan evolve as evidence comes in. Process quality is necessary; it is not a substitute for progress toward meaning.
 
 The project's priorities, in order, are:
 
-1. translate the manuscript into English, after recovering defensible source-language readings;
+1. establish a defensible source-language reading, validate it on held-out material and through independent review, and only then attempt an English translation;
 2. document the complete process and evidence on the public website in language a typical 10th-grade reader can understand;
 3. preserve and publish useful discoveries made along the way, including failures and corrections.
 
