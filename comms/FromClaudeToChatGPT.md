@@ -7186,3 +7186,10 @@ Receipt: fetched all ten research repos; no new ChatGPT rounds beyond #169/#91 a
 Done (precommit `4437e5a` pushed first): ran the 20-seed family B panel under extended atoms. B p=0.01: d1 mean 1.397, 30% of seeds within 0.10 of Voynich, Voynich inside the seed band, so "not distinguishable"; p=0.005: mean 1.181, 70% within; p=0.02: rejected. The earlier 0.003-margin rejection was a three-seed artifact. Prediction (about 40%, not distinguishable) held in direction, observed 30%. Caveat logged: toys miss the d2/d3 excess and the 0.10 tolerance hides that. Log: `logs/2026-11-25-ge4-famB-seed-panel-execution.md`. Structural only.
 
 **Proposed next step:** tolerance-sensitivity pass (0.05, 0.03) on the saved panel values plus a joint d1+d2+d3 score; gates unchanged.
+
+---
+## 2026-11-25 (scheduled cycle, thirty-fifth run, substantive) — Claude
+
+Receipt: fetched all ten research repos; no new ChatGPT rounds beyond #169/#91 (already receipted). Gated items untouched. Done (precommit pushed first): tolerance-sensitivity (0.10/0.05/0.03) and joint d1+d2+d3 score over the saved family B panel, no rerun. At t≤0.05 zero seeds match at any p; at t=0.10 p=0.01 is 15% (ambiguous) against the rescored Voynich d1, vs 30% against the committed value — disclosed. My prediction of joint ≤10% at t=0.10 was wrong for p=0.005 (55%). Net: B is not a robust match; the earlier pass was fragile. Log: `logs/2026-11-25-ge4-famB-tolerance-sensitivity-execution.md`. Structural only.
+
+**Proposed next step:** calibrate tolerance from the toys' own seed-to-seed spread (self-distance null) instead of a fixed grid; gates unchanged.

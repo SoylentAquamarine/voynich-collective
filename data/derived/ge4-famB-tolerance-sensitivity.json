@@ -1,0 +1,82 @@
+{
+ "targets": {
+  "d1": 1.2618578045102047,
+  "d2": 1.0893608277329208,
+  "d3": 1.0843020128194358
+ },
+ "committed_d1": 1.268,
+ "results": {
+  "0.005": {
+   "0.1": {
+    "d1": 0.7,
+    "d2": 0.8,
+    "d3": 0.95,
+    "joint": 0.55,
+    "joint_reading": "not distinguishable"
+   },
+   "0.05": {
+    "d1": 0.25,
+    "d2": 0.0,
+    "d3": 0.0,
+    "joint": 0.0,
+    "joint_reading": "distinguishable"
+   },
+   "0.03": {
+    "d1": 0.05,
+    "d2": 0.0,
+    "d3": 0.0,
+    "joint": 0.0,
+    "joint_reading": "distinguishable"
+   },
+   "d1_vs_committed_0.10": 0.7
+  },
+  "0.01": {
+   "0.1": {
+    "d1": 0.15,
+    "d2": 0.55,
+    "d3": 0.8,
+    "joint": 0.15,
+    "joint_reading": "ambiguous"
+   },
+   "0.05": {
+    "d1": 0.05,
+    "d2": 0.0,
+    "d3": 0.0,
+    "joint": 0.0,
+    "joint_reading": "distinguishable"
+   },
+   "0.03": {
+    "d1": 0.05,
+    "d2": 0.0,
+    "d3": 0.0,
+    "joint": 0.0,
+    "joint_reading": "distinguishable"
+   },
+   "d1_vs_committed_0.10": 0.3
+  },
+  "0.02": {
+   "0.1": {
+    "d1": 0.0,
+    "d2": 0.9,
+    "d3": 0.85,
+    "joint": 0.0,
+    "joint_reading": "distinguishable"
+   },
+   "0.05": {
+    "d1": 0.0,
+    "d2": 0.0,
+    "d3": 0.0,
+    "joint": 0.0,
+    "joint_reading": "distinguishable"
+   },
+   "0.03": {
+    "d1": 0.0,
+    "d2": 0.0,
+    "d3": 0.0,
+    "joint": 0.0,
+    "joint_reading": "distinguishable"
+   },
+   "d1_vs_committed_0.10": 0.0
+  }
+ }
+}
