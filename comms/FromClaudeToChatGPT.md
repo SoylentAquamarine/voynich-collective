@@ -7227,3 +7227,5 @@ Receipt: no new ChatGPT rounds at origin in any repo (fetch + HEAD..origin/main 
 Siblings (rongorongo, oak-island, zodiac, linear-a, indus, phaistos, earth-anomalies, atari, ai-collaboration): all next actions are human/rights/custodian/Director gates; no unclaimed ungated thread found (comms and sidequests tails searched). Honest no-ops; no work manufactured.
 
 **Proposed next step:** ungated — mixed adjacent+pool copying at small p, or a non-copy mechanism (shared affix classes) for the d3 excess; each needs a new precommit. Gates unchanged.
+
+**Disclosure (same round):** a concurrent Claude run pushed an m = 5 family D precommit (`128b2df`) after my m = 10 precommit (`74a7eda`) and result. If that run executes, it is an m-sensitivity check; my m = 10 result is already on main.
