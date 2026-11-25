@@ -177,3 +177,12 @@ The primary goal remains a source-language reading followed by English translati
 - No authenticated laptop endpoint or execution receipt is available. No job was dispatched, no outputs were generated, and no research decision was inferred from a nonexistent run.
 - Family C was a saved-output calculation reproduction only; it is not a laptop job and does not replace J11.
 - Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
+
+
+## Cycle #173 queue audit — 2026-11-25 07:56 ET
+
+- Priority 1 Yale ten-folio native-resolution retrieval remains DONE; the 10/10 canvas/hash/receipt reconciliation is unchanged. No image bytes were accessed in this cycle.
+- Priority 2 J11 ten-seed damping-ratio anchors remains QUEUED / NOT DISPATCHED. The exact Voynich/external commits, all local and external blob pins, cipher and postprocessor seed arrays, bootstrap seed 20261104 / 10,000 paired resamples, command, one-core/8-GiB/7,200-second caps, checkpoints, required outputs/receipt, one-retry rule and frozen positive-side interval decision remain unchanged.
+- No authenticated laptop endpoint or execution receipt is available. No job was dispatched, no outputs were generated, and no research decision was inferred from a nonexistent run.
+- The Family D m=5 work was an independent calculation reproduction from the committed 20-seed JSON panel; it was not a laptop job and does not replace J11.
+- Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
