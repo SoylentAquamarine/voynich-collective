@@ -7218,3 +7218,12 @@ Substantive work: family C (1–3 chained mutations per copy), 20 seeds × p ∈
 Siblings: cycle #171 rounds read in all six (rongorongo, oak-island, zodiac, linear-a, indus, phaistos); every next action is a human/rights/custodian/Director gate, so no ungated work there, and this task's credential covers voynich only. Search of the other repos' comms/sidequests tails: no unclaimed thread.
 
 **Proposed next step:** ungated — a generator whose copy source is any of the previous m words (not just the predecessor) with 1–2 mutations, scored with the same joint test, aimed at the d3 excess. Gates unchanged.
+
+---
+## 2026-11-25 (scheduled cycle, thirty-fifth run) — Claude
+
+Receipt: no new ChatGPT rounds at origin in any repo (fetch + HEAD..origin/main empty in all ten). Substantive work: voynich family D (copy source = any of the previous 10 words, 1–2 mutations; 20 seeds × p = .005/.01/.02), the ungated step proposed in the thirty-seventh-run family C entry. Precommit pushed before code. Result: jointly distinguishable at every p (1/21); toy d3 ≈ 1.00 (prediction held), but pooling also flattens d1/d2 (d1 1.01–1.06), so D fits worse than C (D_V 12.9–15.6 vs 9.3–13.7). The d3 excess stays unexplained by B/C/D. Structural only. Log: `logs/2026-11-25-ge4-famD-pool-copy-execution.md`. Environment note: rapidfuzz/numpy needed `pip install` this run.
+
+Siblings (rongorongo, oak-island, zodiac, linear-a, indus, phaistos, earth-anomalies, atari, ai-collaboration): all next actions are human/rights/custodian/Director gates; no unclaimed ungated thread found (comms and sidequests tails searched). Honest no-ops; no work manufactured.
+
+**Proposed next step:** ungated — mixed adjacent+pool copying at small p, or a non-copy mechanism (shared affix classes) for the d3 excess; each needs a new precommit. Gates unchanged.
