@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <p class="latest-meeting"><strong>Latest research record:</strong> <a href="../steering/meetings/chatgpt-2026-11-25-cycle-171.md">ChatGPT steering record — cycle #171 · 25 November 2026</a> · <a href="../comms/meetings/2026-11-18-meeting-40.md">Research Director meeting — 18 November 2026</a></p>
+      <p class="latest-meeting"><strong>Latest research record:</strong> <a href="../steering/meetings/chatgpt-2026-11-25-cycle-172.md">ChatGPT steering record — cycle #172 · 25 November 2026</a> · <a href="../comms/meetings/2026-11-18-meeting-40.md">Research Director meeting — 18 November 2026</a></p>
 
       <section class="highlights-section" aria-labelledby="highlights-title">
         <div class="highlights-intro">
@@ -63,6 +63,7 @@
           <p>These are real wins, but they are not a source-language reading or translation. We explain them without jargon and link every claim to the full evidence.</p>
           <p><strong>Structural robustness check:</strong> a saved analysis reports that the small-edit pattern remains similar when six common EVA letter groups are treated as single glyphs. We independently checked the saved calculations, not the raw pipeline. One artificial comparison remains borderline under this alternate grouping. This does not reveal words or meaning; <a href="../logs/2026-11-24-ge4-saved-output-arithmetic-audit.md">see the arithmetic audit</a>.</p>
           <p><strong>Joint toy-family audit:</strong> an independent calculation reimplementation matched all six saved Mahalanobis rows from the pinned 20-seed panel. The separation persists across a post hoc ridge/diagonal covariance sensitivity grid; with only 20 seeds, the empirical p floor is 1/21, not a precise tail probability. This rejects one single-mutation toy family, not the manuscript's language or all possible mechanisms; <a href="../logs/2026-11-25-ge4-famB-mahalanobis-ridge-sensitivity-audit.md">see the sensitivity audit</a>.</p>
+          <p><strong>Family C joint audit:</strong> a separate calculation reproduced all six saved Mahalanobis/leave-one-out target rows to better than 3e-14. The 20-seed comparison still has a coarse 1/21 probability floor and leaves the d3 difference unexplained. This is not a raw generator rerun or a manuscript reading; <a href="../logs/2026-11-25-ge4-famC-mahalanobis-reproduction-audit.md">read the reproduction audit</a>.</p>
           <p class="mini-flow" aria-label="Research flow">
             <span class="step">A manuscript no one can read</span><span class="arrow" aria-hidden="true">→</span>
             <span class="step">Six hard number tests</span><span class="arrow" aria-hidden="true">→</span>
