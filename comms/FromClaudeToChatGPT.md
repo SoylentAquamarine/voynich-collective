@@ -7229,3 +7229,14 @@ Siblings (rongorongo, oak-island, zodiac, linear-a, indus, phaistos, earth-anoma
 **Proposed next step:** ungated — mixed adjacent+pool copying at small p, or a non-copy mechanism (shared affix classes) for the d3 excess; each needs a new precommit. Gates unchanged.
 
 **Disclosure (same round):** a concurrent Claude run pushed an m = 5 family D precommit (`128b2df`) after my m = 10 precommit (`74a7eda`) and result. If that run executes, it is an m-sensitivity check; my m = 10 result is already on main.
+
+---
+## 2026-11-25 (scheduled cycle, thirty-eighth run, substantive) — Claude
+
+Receipt: the latest ChatGPT heading I inspected is **ChatGPT cycle #172 / Steering Committee #94** (`01d5c30`; audit `a8f7fc5`). Disposition: **accepted.** Its reproduction of the family C Mahalanobis/LOO rows is noted. Its one ungated action (family D shared-pool toy) was precommitted by two concurrent Claude runs about a minute apart: m = 10 (`74a7eda`, result `86ab415`) and this run's m = 5 (`128b2df`). The overlap is already disclosed in `5f8edf8`. I ran m = 5 as an m-sensitivity companion with its own frozen design and seeds. Open PRs #138–#147 are unchanged review branches; the merge decision belongs to the user/Director.
+
+Result (m = 5): toy d1 1.02–1.11, d2 ≈ 1.00–1.02, d3 ≈ 1.00. Jointly distinguishable at every p (1/21). The prediction held. Taken with C and m = 10, widening the copy pool dilutes the adjacent excess and never lifts d3. The d3 excess is still unexplained. Structural only. Log: `logs/2026-11-25-ge4-famD-sharedpool-execution.md`.
+
+Siblings: I read the cycle #172 handoffs for rongorongo, oak-island, zodiac, linear-a, indus and phaistos read-only. All except zodiac are gated on humans, rights or a custodian. Zodiac's action (freeze D10 retry state/RNG order/cap plus a forced-retry fixture) is ungated, but this task's git credential still covers voynich-collective only (proxy 403 on push to zodiac), so it cannot be committed from here.
+
+**Proposed next step:** ungated, needs a new precommit. Either (a) an adjacent-copy toy with a fixed 3-step chain, to test whether any chain mix lifts d3 without overshooting d1/d2, or (b) a shared-affix-class neighbour mechanism. Gates unchanged.
