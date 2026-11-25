@@ -1,6 +1,6 @@
 # Laptop job queue — Voynich Collective
 
-**Last reviewed:** 2026-11-23 19:57 ET  
+**Last reviewed:** 2026-11-25 01:57 ET  
 **Strategic objective:** source-language reading first; English translation only after held-out validation and independent review. J11 below is a supporting numerical check, not a decipherment.
 
 ## Priority 1 — Yale ten-folio native-resolution retrieval and blind cell template
@@ -160,3 +160,12 @@ If interrupted before the durable JSON is written, retry exactly once from seed 
 ## Separate primary-goal gate — source-language reading
 
 The primary goal remains a source-language reading followed by English translation. The exact ZL3a source and separate supplement are not included in this J11 job and are not authorized by the J11 pins. Obtain the exact authorized source and supplement before any source-reading work; preserve their provenance and permissions separately.
+
+
+## Cycle #171 queue audit — 2026-11-25 01:57 ET
+
+- Priority 1 Yale ten-folio native-resolution retrieval remains **DONE**; the existing receipt/hash reconciliation is unchanged.
+- Priority 2 J11 ten-seed damping-ratio anchors remains **QUEUED / NOT DISPATCHED**. The exact Voynich commit, external commit, all local/external blob pins, seeds, bootstrap seed, command, one-core/8-GiB/7,200-second caps, checkpoints, output hashes, one-retry rule and interpretation rule above are unchanged.
+- No authenticated laptop endpoint or execution receipt was available in this cycle. No job was dispatched, no outputs were generated and no research decision was inferred from a nonexistent run.
+- The GE4 family-B Mahalanobis audit used only the already-committed 20-seed JSON panel; it is not a laptop job and does not replace J11.
+- Queue remains nonempty. Keep J11 at Priority 2 and do not substitute cloud compute or unpinned inputs.
