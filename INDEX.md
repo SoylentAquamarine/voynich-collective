@@ -432,3 +432,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## ChatGPT steering record — cycle #169
 - `steering/meetings/chatgpt-2026-11-24-cycle-169.md` — project-specific steering meeting #91; evidence, uncertainty, ethics, blockers and next action.
+
+- `steering/meetings/chatgpt-2026-11-24-cycle-170.md` — ChatGPT Steering Committee Meeting #92; project-specific evidence, uncertainty, ethics, compute, website status and next action.
+- `logs/2026-11-24-ge4-famb-joint-profile-sensitivity-audit.md` — independent arithmetic sensitivity audit of the saved 20-seed GE4 panel; not a raw pipeline rerun.
