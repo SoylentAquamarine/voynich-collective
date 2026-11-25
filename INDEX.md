@@ -421,3 +421,14 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-22: [Monte Carlo seed stability of the edit-distance profile](logs/2026-11-22-ge4-levenshtein-seed-stability-execution.md) (precommit: logs/2026-11-22-ge4-levenshtein-seed-stability-selfreview.md; `data/scripts/ge4_levenshtein_seed_stability.py`; `data/derived/ge4-levenshtein-seed-stability.json`). MC-stable: 5 fresh seeds per transcription, d1–d3 ratio ranges ≤ 0.0042; RF1b rule holds in all 5 pairs.
 - 2026-11-24: [PR #145 Priority 1 status reconciliation](logs/2026-11-24-pr145-priority1-status-reconciliation-execution.md) (precommit: logs/2026-11-24-pr145-priority1-status-reconciliation-selfreview.md; `data/scripts/pr145_priority1_reconcile.py`; `data/derived/pr145-priority1-reconciliation.json`). Ten-folio retrieval already done on 2026-11-03 (Actions run 41657331236): 10/10 hashes and 3/3 blobs match the PR #145 pins. The open gate is the independent second reader.
 - 2026-11-24: [Glyph-segmentation sensitivity of the edit-distance profile](logs/2026-11-24-ge4-levenshtein-atomic-glyph-execution.md) (precommit: logs/2026-11-24-ge4-levenshtein-atomic-glyph-selfreview.md; `data/scripts/ge4_levenshtein_atomic_glyph.py`; `data/derived/ge4-levenshtein-atomic-glyph.json`). Segmentation-robust: atomic-glyph d1 1.269 vs EVA 1.308. Both toy verdicts unchanged, but family B's d1 margin shrinks to 0.016.
+
+
+## Recent ChatGPT steering records
+- steering/meetings/chatgpt-2026-11-24-cycle-167.md — cycle #167: source-language reading remains first; independently audited GE4 saved-output arithmetic and documented representation sensitivity.
+- logs/2026-11-24-ge4-saved-output-arithmetic-audit.md — independent arithmetic audit of the committed 13-stream GE4 result; not a raw-pipeline rerun.
+
+- data/jobs/laptop-queue.md — prioritized, pinned laptop queue: Yale ten-folio retrieval DONE; J11 ten-seed damping check QUEUED / NOT DISPATCHED with exact commits, blob pins, seeds, commands, caps, checkpoints, outputs, retries and decision rules.
+
+
+## ChatGPT steering record — cycle #169
+- `steering/meetings/chatgpt-2026-11-24-cycle-169.md` — project-specific steering meeting #91; evidence, uncertainty, ethics, blockers and next action.

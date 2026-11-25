@@ -2,15 +2,16 @@
 
 ## Mission
 
-The ultimate target is a defensible decipherment of the Voynich Manuscript and
-a faithful English translation. Because the source language may not be English,
-the required chain is:
+The immediate research target is a defensible source-language reading of the
+Voynich Manuscript. A faithful English translation is downstream and must be
+based on readings that survive held-out validation and independent review.
+Because the source language may not be English, the required chain is:
 
 1. establish reliable glyph, token, layout, and image data;
 2. identify a historically and linguistically plausible writing system;
-3. recover source-language readings that generalize to held-out text;
-4. translate those readings into English;
-5. survive independent reproduction and adversarial review.
+3. recover source-language readings that generalize to held-out text and survive
+   independent reproduction and adversarial review;
+4. translate those validated readings into English.
 
 Process quality is necessary, but it is not the final goal. Activity, generated
 files, statistical fit, or a few plausible-looking words do not count as
@@ -18,15 +19,18 @@ translation progress by themselves.
 
 ## Priority order
 
-1. **Translate the manuscript into English.** First recover defensible source-
-   language readings, then translate them faithfully. Do not substitute an
-   interesting statistic or a plausible word resemblance for this goal.
-2. **Document the work on the public website.** Keep the approach, evidence,
+1. **Recover a defensible source-language reading.** Require locus-linked
+   readings that generalize to held-out folios and survive independent
+   reproduction. Do not substitute an interesting statistic or plausible word
+   resemblance for a reading.
+2. **Translate validated readings into English.** Translation follows only
+   after the source-language reading passes the evidence and review gates.
+3. **Document the work on the public website.** Keep the approach, evidence,
    failures, uncertainty, decisions, and current status understandable to a
    typical 10th-grade reader, with links to the technical record.
-3. **Publish discoveries made along the way.** Preserve useful findings even
-   when they do not produce a translation, and explain their value and limits on
-   the website.
+4. **Publish discoveries made along the way.** Preserve useful findings even
+   when they do not produce a reading or translation, and explain their value
+   and limits on the website.
 
 The homepage must state these priorities plainly. Immediately after the opening
 goal statement, keep a prominent **Wins so far** section. It must distinguish
