@@ -169,3 +169,11 @@ The primary goal remains a source-language reading followed by English translati
 - No authenticated laptop endpoint or execution receipt was available in this cycle. No job was dispatched, no outputs were generated and no research decision was inferred from a nonexistent run.
 - The GE4 family-B Mahalanobis audit used only the already-committed 20-seed JSON panel; it is not a laptop job and does not replace J11.
 - Queue remains nonempty. Keep J11 at Priority 2 and do not substitute cloud compute or unpinned inputs.
+
+## Cycle #172 queue audit — 2026-11-25
+
+- Priority 1 Yale ten-folio native-resolution retrieval remains DONE; do not repeat its verified receipt/hash reconciliation.
+- Priority 2 J11 ten-seed damping-ratio anchors remains QUEUED / NOT DISPATCHED. The exact repository commits, local/external Git-blob pins, cipher/postprocessor/bootstrap seeds, command, one-core/8-GiB/7,200-second caps, checkpoints, required outputs/receipt, one-retry rule and frozen interpretation remain unchanged.
+- No authenticated laptop endpoint or execution receipt is available. No job was dispatched, no outputs were generated, and no research decision was inferred from a nonexistent run.
+- Family C was a saved-output calculation reproduction only; it is not a laptop job and does not replace J11.
+- Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
