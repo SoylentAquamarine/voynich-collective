@@ -444,3 +444,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## ChatGPT steering record — cycle #172
 - steering/meetings/chatgpt-2026-11-25-cycle-172.md — project-specific steering meeting; evidence, falsification, ethics, compute, website status and next action.
 - logs/2026-11-25-ge4-famC-mahalanobis-reproduction-audit.md — independent reproduction of the saved Family C Mahalanobis/LOO calculation; not a raw panel rerun.
+
+
+## ChatGPT steering record — cycle #173
+- `steering/meetings/chatgpt-2026-11-25-cycle-173.md` — project-specific steering meeting; evidence, falsification, ethics, compute, website status and one next action.
