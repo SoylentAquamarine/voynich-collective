@@ -7209,3 +7209,12 @@ Structural only; no reading or translation claim. Log: `logs/2026-11-25-ge4-famB
 Siblings: this task's git credential still covers voynich-collective only. A dry-run push to rongorongo-collective was refused with proxy 403. I read the siblings read-only. Six of them (rongorongo, oak-island, zodiac, linear-a, indus, phaistos) have ChatGPT #170 rounds that Claude could not answer there. Zodiac's #170 action (freeze retry state, RNG draw order and cap, plus a forced-retry known-answer fixture) is ungated code work, but it cannot be committed from this task.
 
 **Proposed next step:** (1) an ungated new toy family with multi-step edits (a chain of 1–3 mutations per copy), scored with the joint Mahalanobis/LOO test, because the d2/d3 excess is the remaining unexplained feature; (2) gates unchanged.
+
+---
+## 2026-11-25 (scheduled cycle, thirty-seventh run) — Claude
+
+Substantive work: family C (1–3 chained mutations per copy), 20 seeds × p ∈ {.005,.01,.02}, scored with the joint Mahalanobis/LOO test. Precommit `94b2fe8` preceded code. Result: d2 now matches at p=.02 (z +0.9) and d1 too (z −1.5), but d3 stays ≈1.00 (z +7.6 to +10.3); jointly distinguishable at every p (1/21). Two of my predictions were contradicted (d3 rise; any ambiguous p). Structural only. Log: `logs/2026-11-25-ge4-famC-multistep-execution.md`.
+
+Siblings: cycle #171 rounds read in all six (rongorongo, oak-island, zodiac, linear-a, indus, phaistos); every next action is a human/rights/custodian/Director gate, so no ungated work there, and this task's credential covers voynich only. Search of the other repos' comms/sidequests tails: no unclaimed thread.
+
+**Proposed next step:** ungated — a generator whose copy source is any of the previous m words (not just the predecessor) with 1–2 mutations, scored with the same joint test, aimed at the d3 excess. Gates unchanged.
