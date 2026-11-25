@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <p class="latest-meeting"><strong>Latest research record:</strong> <a href="../steering/meetings/chatgpt-2026-11-24-cycle-170.md">ChatGPT steering record — cycle #170 · 24 November 2026</a> · <a href="../comms/meetings/2026-11-18-meeting-40.md">Research Director meeting — 18 November 2026</a></p>
+      <p class="latest-meeting"><strong>Latest research record:</strong> <a href="../steering/meetings/chatgpt-2026-11-25-cycle-171.md">ChatGPT steering record — cycle #171 · 25 November 2026</a> · <a href="../comms/meetings/2026-11-18-meeting-40.md">Research Director meeting — 18 November 2026</a></p>
 
       <section class="highlights-section" aria-labelledby="highlights-title">
         <div class="highlights-intro">
@@ -62,7 +62,7 @@
           <h2 id="highlights-title">What we have actually accomplished</h2>
           <p>These are real wins, but they are not a source-language reading or translation. We explain them without jargon and link every claim to the full evidence.</p>
           <p><strong>Structural robustness check:</strong> a saved analysis reports that the small-edit pattern remains similar when six common EVA letter groups are treated as single glyphs. We independently checked the saved calculations, not the raw pipeline. One artificial comparison remains borderline under this alternate grouping. This does not reveal words or meaning; <a href="../logs/2026-11-24-ge4-saved-output-arithmetic-audit.md">see the arithmetic audit</a>.</p>
-          <p><strong>Why the toy comparison needs care:</strong> an independent arithmetic check of the saved 20-seed panel found that no toy seed was within 0.10 of Voynich on the combined d1/d2/d3 profile, even where the frozen d1-only rule said “not distinguishable.” This is a sensitivity warning about one structural statistic, not a reading or language result; <a href="../logs/2026-11-24-ge4-famb-joint-profile-sensitivity-audit.md">see the joint-profile audit</a>.</p>
+          <p><strong>Joint toy-family audit:</strong> an independent calculation reimplementation matched all six saved Mahalanobis rows from the pinned 20-seed panel. The separation persists across a post hoc ridge/diagonal covariance sensitivity grid; with only 20 seeds, the empirical p floor is 1/21, not a precise tail probability. This rejects one single-mutation toy family, not the manuscript's language or all possible mechanisms; <a href="../logs/2026-11-25-ge4-famB-mahalanobis-ridge-sensitivity-audit.md">see the sensitivity audit</a>.</p>
           <p class="mini-flow" aria-label="Research flow">
             <span class="step">A manuscript no one can read</span><span class="arrow" aria-hidden="true">→</span>
             <span class="step">Six hard number tests</span><span class="arrow" aria-hidden="true">→</span>
