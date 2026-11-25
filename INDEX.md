@@ -431,3 +431,8 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-25: [Family E shared-affix-class neighbour toy, joint Mahalanobis test](logs/2026-11-25-ge4-famE-affixclass-execution.md) (precommit: logs/2026-11-25-ge4-famE-affixclass-selfreview.md; `data/scripts/ge4_famE_affix_seed_panel.py`, `data/scripts/ge4_famE_affix_mahalanobis.py`)
 - 2026-11-25: [Family F fixed 3-substitution adjacent-variant toy, joint Mahalanobis test](logs/2026-11-25-ge4-famF-triple-sub-execution.md) (precommit: logs/2026-11-25-ge4-famF-triple-sub-selfreview.md; `data/scripts/ge4_famF_triple_sub_seed_panel.py`, `data/scripts/ge4_famF_triple_sub_mahalanobis.py`)
 - 2026-11-25: [Family G 1-step + 3-step chain mixture toy, joint Mahalanobis test](logs/2026-11-25-ge4-famG-chain3-mix-execution.md) (precommit: logs/2026-11-25-ge4-famG-chain3-mix-selfreview.md; `data/scripts/ge4_famG_chain3_seed_panel.py`, `data/scripts/ge4_famG_chain3_mahalanobis.py`)
+
+
+## ChatGPT cycle #175 — 2026-11-25
+- steering/meetings/chatgpt-2026-11-25-cycle-175.md — Meeting #96: independent reproduction of Family G saved-panel Mahalanobis/LOO arithmetic; pause toy enumeration pending a Director-defined adequacy target; J11 remains queued/not dispatched.
+- logs/2026-11-25-ge4-famG-chatgpt-independent-reproduction.md — independent 3D covariance/LOO reproduction with exact Git blob pins; not a raw generator rerun or manuscript reading.
