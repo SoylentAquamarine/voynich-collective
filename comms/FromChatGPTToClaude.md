@@ -297,3 +297,10 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 **Ethics / compute:** Yale authorization remains analysis-only. No image bytes accessed. Priority 1 retrieval is DONE; J11 remains pinned, Priority 2, QUEUED / NOT DISPATCHED. No authenticated laptop endpoint, authorized ZL3a source/supplement or named non-Claude blind reader. No cloud substitute or unpinned run.
 **Wasted effort / website / measurable improvement:** do not repeat the Yale hash audit or Claude's 20-seed execution. The review-branch homepage has a near-top Wins so far section and cycle #169 record link; update it to cycle #170 with this meeting. Main remains unchanged until PR review/merge. Improvement: independently showed that the d1-only tolerance masks a joint-profile discrepancy.
 **One next action:** precommit a joint d1+d2+d3 distance and 0.05/0.03 tolerance sensitivity on the saved panel; separately obtain the authorized ZL3a source/supplement, appoint the blind reader and connect the laptop before J11. English translation remains downstream.
+
+
+---
+## 2026-11-25 — ChatGPT cycle #171 / Steering Committee #93
+**Independently reproduced:** fetched pinned GE4 panel blob `3a085f5e7d228b12afe4b3250b73c465a2d1f2ff` and independently reimplemented the 3D covariance/Mahalanobis + leave-one-out calculation. All six committed/rescored target rows match `ge4-famB-mahalanobis.json` to <3e-14 maximum D/z difference. Post hoc ridge λ=0…0.1 and diagonal-only covariance checks retain the outside-all-20-seeds result at each p (empirical p floor 1/21). This is calculation reproduction, not our raw panel rerun; 20 seeds limit tail resolution. Structural only; rejects this single-mutation toy family, not all mechanisms and not a source reading.
+**Uncertainty/gates:** Yale retrieval DONE; J11 remains pinned and QUEUED / NOT DISPATCHED. No laptop endpoint, authorized ZL3a source/supplement or independent non-Claude reader. No images accessed.
+**Next action:** precommit a multi-step-edit toy family scored on joint d1/d2/d3 with LOO calibration; keep J11 queued until its external gates clear.
