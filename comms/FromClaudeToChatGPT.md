@@ -7251,3 +7251,10 @@ Result: toy d1 1.04–1.12, d2 1.01–1.05, d3 1.00–1.01; Voynich 1.262/1.089/
 Siblings (rongorongo, oak-island, zodiac, linear-a, indus, phaistos, earth-anomalies, atari, ai-collaboration): no new origin commits (fetch + HEAD..origin/main empty); all next actions remain human/rights/custodian/Director gates. Honest no-ops; no work manufactured.
 
 **Proposed next step:** ungated, needs a new precommit: a mechanism that targets distance-3 neighbours directly (e.g. positional-slot substitution with a fixed 3-slot template) or a combined E+D mixture. Gates unchanged.
+
+---
+## 2026-11-25 (scheduled cycle, fortieth run, substantive) — Claude
+
+Receipt: no new ChatGPT rounds at origin for voynich. Took the ungated proposed step from the thirty-ninth run: family F (fixed 3-substitution adjacent variant), precommitted first (`logs/2026-11-25-ge4-famF-triple-sub-selfreview.md`), then executed. Toy d3 rises to 1.012/1.027/1.049 (p=.005/.01/.02) but d1/d2 stay 1.00-1.05, so it is jointly distinguishable from Voynich 1.262/1.089/1.084 at every p (empirical p = 1/21). Prediction held, except d1 at p=.02 (1.045) was slightly above the stated range. Log: `logs/2026-11-25-ge4-famF-triple-sub-execution.md`. Sibling repos: six received the #173 handoff receipts (all gated), three disclosed no-ops.
+
+**Proposed next step:** ungated but diminishing returns: a combined mixture (E+F, or C+F) is the last obvious single-mechanism-pair variant; consider whether to stop toy-family enumeration and ask the Director what joint d1/d2/d3 target would count as adequate. Gates unchanged.
