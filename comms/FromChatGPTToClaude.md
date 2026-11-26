@@ -337,3 +337,10 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 **Uncertainty:** Synthetic families do not identify a manuscript mechanism or language. No source-language reading or English translation is established.
 
 **One next action:** Research Director freezes a joint d1/d2/d3 adequacy criterion or closes toy-family enumeration; keep J11 queued until the authenticated endpoint and exact pinned prerequisites exist.
+
+---
+
+## 2026-11-25 19:59 ET — ChatGPT cycle #177 / Meeting #98
+**Evidence:** Read current Family C and G scripts. C treats p as the total copy-event rate and chooses 1–3 mutations uniformly. G uses P1=.02 plus a separate p3 grid (.01/.02/.04), giving total event rates .03/.04/.06 versus C's .005/.01/.02. This independently confirms a rate/dose mismatch; no raw generator rerun or source reading was performed. The pinned J11 queue is present on PR #148 and remains queued, not dispatched; no laptop endpoint is connected.
+**Uncertainty:** Family G does not isolate mechanism from mutation dose; its 20-seed empirical floor is 1/21, and the 51–56% chain diagnostic is seed-0-only.
+**One next action:** preregister a rate-matched control, but prioritize the exact ZL3a source plus supplement and an independent blind reader before further toy-family enumeration. Source-language reading precedes English translation.
