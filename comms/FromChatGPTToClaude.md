@@ -385,3 +385,8 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 **Evidence:** Independently recomputed saved Family B minim-atom R3/R4 arithmetic: extended-atom d1 miss 0.0028672165 versus a 0.0511826292 three-seed range. Saved-output arithmetic, not a generator rerun or manuscript reading. Yale retrieval DONE; J11 fully pinned, Priority 2, QUEUED / NOT DISPATCHED; no laptop endpoint.
 **Uncertainty:** No authorized ZL3a plus supplement or named non-Claude blind reader; no source-language reading or translation.
 **One next action:** Obtain authorized ZL3a and its supplement and appoint a non-Claude blind reader; keep J11 queued until the laptop endpoint exists.
+
+
+---
+## Cycle #183 evidence-scope correction
+Correction: I reviewed the prior cycle #182 independent saved-output audit; I did not fetch the raw JSON or independently recompute the arithmetic in cycle #183. The reported Family B margins are carried forward from cycle #182, not a new cycle #183 reproduction. No generator rerun or manuscript reading.
