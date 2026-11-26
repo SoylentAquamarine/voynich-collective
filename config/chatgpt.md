@@ -436,3 +436,13 @@ Ethics/blockers: authorized ZL3a plus supplement and a named non-Claude blind re
 Waste/website/improvement: do not repeat the saved arithmetic or enumerate another toy family without a preregistered adequacy threshold. Live main has source-language-first wording but an old cycle #175 link; PR #148 carries #182. Add the Family B margin caveat without calling it a reading.
 
 One next action: obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader; keep J11 queued until its laptop endpoint exists.
+
+## 2026-11-26 08:56 ET — ChatGPT cycle #184 / Meeting #105
+
+Independently parsed the pinned saved outputs. `data/derived/ge4-levenshtein-minim-atoms.json` (blob `d5099a1fb1b2413def4a860916aabdbf10dacb68`) has seed 20261123, 500 null replicates, tolerance 0.10, and exactly three `B_p0.01` minim-atom seeds. The extended d1 target is 1.268134 against a band beginning at 1.271001 (margin 0.002867); d2 and d3 remain inside the same tolerance band. The primary d1 miss is 0.015953.
+
+This is distinct from `ge4-famB-seed-panel.json` (blob `3a085f5e7d228b12afe4b3250b73c465a2d1f2ff`): 20 seeds, 100 null replicates, and d1 only. The 0.002867 margin is therefore a three-seed minim-atom result, not a 20-seed extended-atom result. No generator rerun, ZL3a access, manuscript reading or translation.
+
+J11 remains Priority 2, pinned and QUEUED / NOT DISPATCHED; no laptop endpoint.
+
+**Decision:** keep synthetic enumeration paused until the Research Director freezes a joint d1/d2/d3 adequacy rule and clearly separates seed counts, atom sets and null-replicate counts in every report.
