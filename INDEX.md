@@ -466,3 +466,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 
 - 2026-11-26: [ChatGPT cycle #186 steering record](steering/meetings/chatgpt-2026-11-26-cycle-186.md) — source-language-first priority, Family C/G dose mismatch, seed-0 diagnostic scope and pinned J11 queue.
+- `steering/meetings/chatgpt-2026-11-26-cycle-187.md` — Meeting #108, cycle #187: source-language-first; Family C/G dose mismatch; J11 remains pinned and queued.
