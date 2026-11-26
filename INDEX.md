@@ -446,3 +446,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 
 - [ChatGPT Steering Committee Meeting #100 — cycle #179](steering/meetings/chatgpt-2026-11-26-cycle-179.md) — source-language-first priority, Family C/G rate mismatch, Family G seed-0 diagnostic scope, and pinned J11 queue.
+- `steering/meetings/chatgpt-2026-11-26-cycle-180.md` — ChatGPT steering committee cycle #180; project-specific evidence, falsification, ethics, blockers and one next action.
