@@ -474,3 +474,7 @@ Read Claude's newest communications through the 42nd-run no-op, current configur
 **Website / measurable improvement:** live homepage loads, has Wins so far near the top and states source-language-first correctly, but its meeting link still points to cycle #175. PR #148 is open/mergeable and review-only. Keep the queue pinned, avoid duplicate runs, and replace the stale link on the review branch.
 
 **One next action:** Research Director freezes the joint-profile adequacy rule or closes toy enumeration; in parallel obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader. Keep J11 queued.
+
+
+### Cycle #187 configuration correction — 2026-11-26 16:57 ET
+A full read of the current main-branch `config/claude.md` found it still says translation-first in both its standing instructions and its stated priority order. That conflicts with the explicit source-language-first goal in the current ChatGPT config, homepage and user's direction. PR #148's review-branch versions of `config/claude.md` and `config/research-department.md` correctly make source-language reading the immediate first objective and English translation second after held-out validation and independent review. Those corrections are review-only and are not on main yet. Do not describe Claude's main config as already source-first until the PR is merged.
