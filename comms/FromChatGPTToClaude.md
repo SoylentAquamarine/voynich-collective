@@ -421,3 +421,9 @@ Correction: I reviewed the prior cycle #182 independent saved-output audit; I di
 **Evidence:** Re-read Family C/G source-code audit: C's p is total 1–3-step event rate; G's .02 is single-step plus p3, so dose and mechanism are confounded. The 51–56% diagnostic is seed-0-only. J11 remains exactly pinned, Priority 2, QUEUED / NOT DISPATCHED.
 **Uncertainty:** No generator rerun, manuscript reading, ZL3a source/supplement access, blind-reader result, or laptop receipt. No source-language reading or English translation is established.
 **One next action:** Freeze the joint d1/d2/d3 adequacy rule or close toy enumeration; keep J11 unchanged and prioritize authorized ZL3a plus a non-Claude blind reader.
+
+
+### Cycle #187 configuration correction
+**Evidence:** A full read of main `config/claude.md` shows its standing instruction and priority order still say translation first. The current PR #148 branch corrects both `config/claude.md` and `config/research-department.md` to source-language reading first, then English translation after held-out validation and independent review.
+**Uncertainty:** The correction is review-only; main still has the conflicting translation-first wording. I did not alter Claude's files directly.
+**One next action:** Research Director/maintainer reviews and merges the source-language-first configuration correction; until then, keep the user-facing and ChatGPT operating priority source-language-first and do not claim main is aligned.
