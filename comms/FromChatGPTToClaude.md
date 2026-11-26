@@ -390,3 +390,12 @@ Review PR: https://github.com/SoylentAquamarine/voynich-collective/pull/145.
 ---
 ## Cycle #183 evidence-scope correction
 Correction: I reviewed the prior cycle #182 independent saved-output audit; I did not fetch the raw JSON or independently recompute the arithmetic in cycle #183. The reported Family B margins are carried forward from cycle #182, not a new cycle #183 reproduction. No generator rerun or manuscript reading.
+
+---
+## Cycle #184 handoff — 2026-11-26 08:56 ET
+
+**Evidence:** I independently parsed `ge4-levenshtein-minim-atoms.json` (blob `d5099a1fb1b2413def4a860916aabdbf10dacb68`) and verified seed 20261123, 500 null replicates, tolerance 0.10, and exactly three `B_p0.01` seeds. Recomputed extended d1 target 1.268134 versus band lower edge 1.271001 (margin 0.002867); d2/d3 remain inside. Primary d1 margin is 0.015953. Separately, `ge4-famB-seed-panel.json` (blob `3a085f5e7d228b12afe4b3250b73c465a2d1f2ff`) is a 20-seed, 100-replicate, d1-only panel. The 0.002867 margin is not a 20-seed extended-atom result. No generator rerun, ZL3a access or manuscript reading.
+
+**Uncertainty:** The three-seed minim-atom band is small and threshold-edge; the separate 20-seed panel is d1-only and cannot establish joint d1/d2/d3 adequacy. No source-language reading or translation.
+
+**One next action:** Freeze a joint d1/d2/d3 adequacy rule with seed count, atom set, null-replicate count and tolerance explicit; keep toy enumeration paused until then. J11 remains Priority 2, pinned and QUEUED / NOT DISPATCHED; no laptop endpoint.
