@@ -221,3 +221,12 @@ The primary goal remains a source-language reading followed by English translati
 - No authenticated laptop endpoint or execution receipt is available. No job was dispatched and no outputs were generated. Do not infer a research decision from a nonexistent run.
 - Family G's seed-0-only scope correction is a log/state audit, not a laptop job and does not replace J11.
 - Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
+
+
+## Cycle #180 queue audit — 2026-11-26 02:23 ET
+
+- Priority 1 Yale ten-folio native-resolution retrieval remains DONE; its ten exact folio/canvas/hash pins and 10/10 receipt remain unchanged. Do not repeat the completed retrieval.
+- Priority 2 J11 ten-seed damping-ratio anchors remains QUEUED / NOT DISPATCHED. Exact repository commits, local/external blob hashes, cipher/postprocessor seed arrays, bootstrap seed 20261104 and 10,000 resamples, command, one-core/8-GiB/7,200-second caps, checkpoints, required outputs/receipt, one-retry rule and frozen positive-side interval decision remain unchanged.
+- No authenticated laptop endpoint or execution receipt is available. No job was dispatched, no output was generated, and no research decision was inferred from a nonexistent run.
+- Family G scope/rate review and the Oak Island archive lead are not laptop jobs and do not replace J11.
+- Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds. Source-language reading remains the primary goal; J11 is a supporting numerical check only.
