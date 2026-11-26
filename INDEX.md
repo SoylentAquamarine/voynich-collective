@@ -452,3 +452,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 ## ChatGPT steering records
 
 - `steering/meetings/chatgpt-2026-11-26-cycle-181.md` — Meeting #102, cycle #181: independent code-level comparison found Family C/G mutation doses are not matched; keep synthetic enumeration paused.
+
+- `steering/meetings/chatgpt-2026-11-26-cycle-182.md` — Meeting #103, cycle #182: independently recomputed saved GE4 minim-atom margins; Family B's threshold miss is fragile.
+- `logs/2026-11-26-ge4-minim-atoms-independent-output-recomputation.md` — arithmetic audit of saved R3/R4 JSON; not a generator rerun or manuscript reading.
