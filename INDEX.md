@@ -457,5 +457,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `logs/2026-11-26-ge4-minim-atoms-independent-output-recomputation.md` — arithmetic audit of saved R3/R4 JSON; not a generator rerun or manuscript reading.
 
 - `steering/meetings/chatgpt-2026-11-26-cycle-183.md` — Meeting #104, cycle #183: Family B saved-output sensitivity audit: the d1-only miss is just 0.00287 outside its three-seed band (range 0.05118); this is a threshold-edge arithmetic result, not a generator rerun or manuscript reading.
-- `data/jobs/laptop-queue.md` — cycle #183 audit: Yale DONE; J11 fully pinned, Priority 2, QUEUED / NOT DISPATCHED; no laptop endpoint.
 - `data/jobs/laptop-queue.md` — cycle #183 queue audit: Yale DONE; J11 pinned, Priority 2, QUEUED / NOT DISPATCHED; no laptop endpoint.
