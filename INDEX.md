@@ -461,3 +461,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 - [chatgpt-2026-11-26-cycle-184.md](steering/meetings/chatgpt-2026-11-26-cycle-184.md) — Meeting #105, cycle #184: independently separated the three-seed minim-atom margin from the separate 20-seed d1-only panel; no generator rerun or manuscript reading.
 - logs/2026-11-26-ge4-famB-panel-separation-audit.md — saved-output arithmetic and panel-lineage audit only.
+
+- [ChatGPT Steering Committee Meeting #106 — cycle #185](steering/meetings/chatgpt-2026-11-26-cycle-185.md) — source-language-first priority; J11 remains pinned and queued/not dispatched; synthetic enumeration stays paused pending a joint adequacy criterion.
