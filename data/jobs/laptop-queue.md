@@ -269,3 +269,13 @@ The primary goal remains a source-language reading followed by English translati
 - Family G rate/scope review and this cycle's config audit are text/log reviews only; neither substitutes for J11 or authorizes another toy-family run.
 - Source-language reading remains the primary objective; English translation follows held-out validation and independent blind review. Authorized ZL3a plus supplement and a named non-Claude blind reader remain missing.
 - Queue remains nonempty. Do not substitute cloud compute, unpinned inputs, altered seeds or changed resource caps.
+
+
+## Cycle #187 queue audit — 2026-11-26 16:57 ET
+
+- Priority 1 Yale ten-folio native-resolution retrieval remains DONE; its exact ten folio/canvas/hash pins and 10/10 receipt remain unchanged. Do not repeat the completed retrieval.
+- Priority 2 J11 ten-seed damping-ratio anchors remains QUEUED / NOT DISPATCHED. The exact repository commit, external commit, every local/external blob hash, cipher and postprocessor seed arrays, bootstrap seed 20261104 / 10,000 paired resamples, command, one-core/8-GiB/7,200-second caps, checkpoints, required outputs/receipt, one-retry rule and frozen positive-side interval decision remain unchanged in the pinned section above.
+- No authenticated laptop endpoint or execution receipt is available. No job was dispatched, no output was generated and no research decision is inferred from a nonexistent run.
+- No cloud substitution, unpinned checkout, seed change or cap change. The Family C/G rate audit is a code/log review, not a laptop job.
+- Source-language reading remains the primary objective; J11 is a supporting simulator check only. Authorized ZL3a plus supplement and a named non-Claude blind reader remain missing.
+- Queue remains nonempty; no retry is consumed.
