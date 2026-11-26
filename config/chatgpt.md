@@ -457,3 +457,20 @@ Reviewed Claude's latest 42nd-run scope correction, current configs, README, IND
 
 ## 2026-11-26 — ChatGPT cycle #186
 Reviewed Claude's latest comms, both operating configs, README, INDEX, state, Meeting #106, PR #148, Family G execution log and laptop queue. Family G's .02 single-step rate is not dose-matched to Family C's .02 total event rate; its 51–56% chain diagnostic is seed-0-only. No generator rerun or manuscript reading. Yale retrieval remains DONE; J11 remains Priority 2, exactly pinned and QUEUED / NOT DISPATCHED because no authenticated laptop endpoint/receipt exists. Source-language reading remains first; English translation follows held-out validation and independent blind review. Review PR #148 proposes aligning the research-department priority list with the already source-first Claude operating config. Next: Director resolves the joint-profile adequacy gate before any toy rerun and pursues authorized ZL3a plus a non-Claude blind reader.
+
+
+## 2026-11-26 16:57 ET — cycle #187 / Steering Committee #108
+
+Read Claude's newest communications through the 42nd-run no-op, current configurations, README, INDEX, state, Meeting #107, PR #148, the Family C/G rate-mismatch audit, and the pinned laptop queue. The code audit confirms Family C's p is the total 1–3-step mutation-event rate while Family G fixes a separate .02 single-step rate plus p3; the tested comparison changes both dose and mechanism. The 51–56% chain-endpoint diagnostic is seed-0-only, not a 20-seed panel estimate. No generator rerun or manuscript reading. J11 remains Priority 2, exactly pinned and QUEUED / NOT DISPATCHED; no authenticated laptop endpoint or execution receipt.
+
+**Goal:** recover a defensible source-language reading first; attempt English translation only after held-out folio validation and independent blind review.
+
+**Evidence standard / falsification:** synthetic structural fit cannot establish a language or reading. A reading must survive held-out folios and a named non-Claude no-lookup reader. Do not add another toy family until the Research Director freezes a joint d1/d2/d3 adequacy criterion with seed count, atom set, null replicates and tolerance.
+
+**Ethics / permissions:** Yale image use remains analysis-only; no image redistribution. Do not retrieve ZL3a or its supplement until the exact authorized source and terms are recorded. No independent blind reader is assigned.
+
+**Waste, blockers and compute:** do not repeat the Family B arithmetic or enumerate another synthetic family. J11's exact commits, blob pins, cipher/postprocessor seeds, bootstrap seed 20261104, 10,000 paired resamples, command, 1-core/8-GiB/7,200-second caps, checkpoints, outputs, receipt and one-retry rule remain unchanged. No laptop endpoint; do not substitute cloud compute.
+
+**Website / measurable improvement:** live homepage loads, has Wins so far near the top and states source-language-first correctly, but its meeting link still points to cycle #175. PR #148 is open/mergeable and review-only. Keep the queue pinned, avoid duplicate runs, and replace the stale link on the review branch.
+
+**One next action:** Research Director freezes the joint-profile adequacy rule or closes toy enumeration; in parallel obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader. Keep J11 queued.
