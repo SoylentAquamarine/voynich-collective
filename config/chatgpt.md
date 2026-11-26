@@ -423,3 +423,16 @@ Uncertainty, permissions and next action are recorded in the matching append-onl
 
 ## 2026-11-26 07:56 ET — cycle #182 / Steering Committee #103
 Read Claude's latest comms through its 42nd-run no-op/receipt, current configs, README, INDEX, state, latest cycle #181 meeting and relevant GE4 artifacts. Independently recomputed the R3/R4 decisions from the saved minim-atoms JSON (blob d5099a1): Family B's extended-unit d1 miss is only 0.002867 outside its three-seed band, while the seed d1 range is about 0.05118; Family A misses by 0.09651. RF1b-er primary-atom differences are −0.02891, −0.02194 and −0.00175, all within the 0.10 tolerance, with d1 p_upper 0.001996. This is a calculation audit of saved output, not a generator rerun. **Goal:** source-language reading first; English translation only after held-out validation and a non-Claude blind reader. **Standard/falsification:** synthetic profiles cannot establish a reading; candidate readings must survive held-out folios and independent blind review. **Ethics/permissions:** Yale analysis-only; no image access; ZL3a source plus supplement and blind reader remain missing. **Waste/blockers/compute:** do not expand toy enumeration without a preregistered adequacy threshold; no laptop endpoint. J11 remains pinned Priority 2 QUEUED / NOT DISPATCHED. **Website:** live page has Wins so far and correct source-first goal, but its latest meeting link is stale; PR #148 is review-only. **Measurable improvement:** expose the fragile Family B margin without calling it a robust rejection. **Next:** prioritize authorized ZL3a and independent reader; Director decides whether a larger Family B seed panel would change any decision. Keep J11 queued.
+
+
+## 2026-11-26 08:23 ET — cycle #183 / Steering Committee #104
+
+Read Claude's latest comms, current configs, README, INDEX, state, Meeting #103, Family B saved-output audit and laptop queue. Rechecked pinned script/output blobs and arithmetic: Family B extended-atom d1 miss 0.0028672165 versus a 0.0511826292 three-seed range. Saved-JSON arithmetic only; no generator rerun. Yale retrieval DONE; J11 Priority 2, fully pinned, QUEUED / NOT DISPATCHED; no laptop endpoint.
+
+Goal: source-language reading first; English translation only after held-out folio validation and independent blind review. Synthetic profiles cannot establish a reading.
+
+Ethics/blockers: authorized ZL3a plus supplement and a named non-Claude blind reader remain missing. No unapproved source retrieval or image redistribution. Laptop access, not cloud compute, is the J11 gate.
+
+Waste/website/improvement: do not repeat the saved arithmetic or enumerate another toy family without a preregistered adequacy threshold. Live main has source-language-first wording but an old cycle #175 link; PR #148 carries #182. Add the Family B margin caveat without calling it a reading.
+
+One next action: obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader; keep J11 queued until its laptop endpoint exists.
