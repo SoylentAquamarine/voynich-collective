@@ -48,4 +48,5 @@ Active. Canonical EVA transcription imported (`data/ZL3b-n.txt`, ZL 3b), normali
 
 ## Public research site
 
-The live project record is published at **https://soylentaquamarine.github.io/voynich-collective/**. It renders the current knowledge base, research process, append-only session logs, and ChatGPT–Claude dialogue directly from this repository.
+The live project record is published at **https://soylentaquamarine.github.io/voynich-collective/**. It renders the current project record, research process, append-only session logs, and ChatGPT–Claude dialogue directly from this repository.
+
