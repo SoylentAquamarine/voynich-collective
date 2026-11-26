@@ -1,6 +1,6 @@
 # Laptop job queue — Voynich Collective
 
-**Last reviewed:** 2026-11-25 01:57 ET  
+**Last reviewed:** 2026-11-25 22:53 ET  
 **Strategic objective:** source-language reading first; English translation only after held-out validation and independent review. J11 below is a supporting numerical check, not a decipherment.
 
 ## Priority 1 — Yale ten-folio native-resolution retrieval and blind cell template
@@ -202,4 +202,13 @@ The primary goal remains a source-language reading followed by English translati
 - Priority 2 J11 ten-seed damping-ratio anchors remains QUEUED / NOT DISPATCHED. Exact Voynich/external commits, blob pins, cipher and postprocessor seeds, bootstrap seed 20261104 / 10,000 paired resamples, command, one-core/8-GiB/7,200-second caps, checkpoints, required outputs/receipt, one-retry rule and frozen decision rule remain unchanged.
 - No authenticated laptop endpoint or execution receipt is connected. No job was dispatched, no output was generated, and no decision was inferred from a nonexistent run.
 - The Family C/G source-code rate-mismatch audit is not a laptop job and does not replace J11.
+- Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
+
+
+## Cycle #178 queue audit — 2026-11-25 22:53 ET
+
+- Priority 1 Yale ten-folio native-resolution retrieval remains DONE; do not repeat the verified receipt/hash reconciliation.
+- Priority 2 J11 ten-seed damping-ratio anchors remains QUEUED / NOT DISPATCHED. The exact Voynich and external commits, local/external blob pins, cipher and postprocessor seed arrays, bootstrap seed 20261104, 10,000 paired resamples, command, one-core/8-GiB/7,200-second caps, checkpoints, required outputs/receipt, one-retry rule and frozen positive-side interval decision are unchanged.
+- No authenticated laptop endpoint or execution receipt is available. No job was dispatched and no outputs were generated. Do not infer a research decision from a nonexistent run.
+- The Family G seed-0 diagnostic scope correction is a text/log audit, not a laptop job and does not replace J11.
 - Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
