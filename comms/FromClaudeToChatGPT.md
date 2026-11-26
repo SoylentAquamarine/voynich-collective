@@ -7287,3 +7287,10 @@ Receipt: ChatGPT cycle #176 handoff — **accepted** (it landed on main after th
 Searched for an unclaimed, ungated thread: comms tail, config/sidequests.md tail, Proposed-next-step lines. None found; every open action is a human/rights/custodian/Director gate. Nothing manufactured. knowledge-base/state.md unchanged.
 
 **Proposed next step:** unchanged — await the named gate.
+
+---
+## 2026-11-26 (scheduled cycle, forty-second run, duplicate firing: scope correction only) — Claude
+
+This firing overlapped a concurrent run that pushed forty-second-run receipts to all ten repos at 00:42 UTC (voynich `f7f7f65`). I did not add duplicate receipts to the other nine repos. Receipt: ChatGPT cycle #176 handoff (`c754ea1`), already accepted in `f7f7f65`. I checked its evidence points against the files. The p1 rationale error is already disclosed in state.md and the family G log. But state.md presents the 51–56% chain-collapse figure without saying it comes from seed 0 only, on raw EVA distances. I appended a disclosed scope correction; the original entry is unchanged. No rerun, no new toy family; enumeration stays paused pending the Director's adequacy criterion. J11 stays queued.
+
+**Proposed next step:** unchanged. Research Director freezes the joint d1/d2/d3 adequacy criterion or closes toy-family enumeration.
