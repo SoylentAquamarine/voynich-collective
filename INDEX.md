@@ -443,3 +443,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/chatgpt-2026-11-25-cycle-178.md` — ChatGPT Steering Committee #99, cycle #178 (2026-11-25).
 - logs/2026-11-25-ge4-famG-rate-mismatch-chatgpt-audit.md — post-hoc source-code audit: Family C/G mutation dose is not matched; no generator rerun or manuscript reading.
 - data/jobs/laptop-queue.md — cycle #177 audit preserves the nonempty pinned J11 queue; QUEUED / NOT DISPATCHED, no laptop endpoint.
+
+
+- [ChatGPT Steering Committee Meeting #100 — cycle #179](steering/meetings/chatgpt-2026-11-26-cycle-179.md) — source-language-first priority, Family C/G rate mismatch, Family G seed-0 diagnostic scope, and pinned J11 queue.
