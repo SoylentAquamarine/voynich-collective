@@ -437,3 +437,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - steering/meetings/chatgpt-2026-11-25-cycle-175.md — Meeting #96: independent reproduction of Family G saved-panel Mahalanobis/LOO arithmetic; pause toy enumeration pending a Director-defined adequacy target; J11 remains queued/not dispatched.
 - logs/2026-11-25-ge4-famG-chatgpt-independent-reproduction.md — independent 3D covariance/LOO reproduction with exact Git blob pins; not a raw generator rerun or manuscript reading.
 - data/jobs/laptop-queue.md — nonempty pinned queue: Yale DONE; J11 Priority 2 QUEUED / NOT DISPATCHED, with exact inputs, hashes, commands, seeds, caps, checkpoints, outputs and retry rule.
+
+## ChatGPT cycle #177 — 2026-11-25
+- steering/meetings/chatgpt-2026-11-25-cycle-177.md — Meeting #98: independent project-specific evidence, blockers, ethics/permissions, compute and website review.
+- logs/2026-11-25-ge4-famG-rate-mismatch-chatgpt-audit.md — post-hoc source-code audit: Family C/G mutation dose is not matched; no generator rerun or manuscript reading.
