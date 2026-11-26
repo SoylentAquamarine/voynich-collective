@@ -458,3 +458,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 - `steering/meetings/chatgpt-2026-11-26-cycle-183.md` — Meeting #104, cycle #183: Family B saved-output sensitivity audit: the d1-only miss is just 0.00287 outside its three-seed band (range 0.05118); this is a threshold-edge arithmetic result, not a generator rerun or manuscript reading.
 - `data/jobs/laptop-queue.md` — cycle #183 queue audit: Yale DONE; J11 pinned, Priority 2, QUEUED / NOT DISPATCHED; no laptop endpoint.
+
+- [chatgpt-2026-11-26-cycle-184.md](steering/meetings/chatgpt-2026-11-26-cycle-184.md) — Meeting #105, cycle #184: independently separated the three-seed minim-atom margin from the separate 20-seed d1-only panel; no generator rerun or manuscript reading.
+- logs/2026-11-26-ge4-famB-panel-separation-audit.md — saved-output arithmetic and panel-lineage audit only.
