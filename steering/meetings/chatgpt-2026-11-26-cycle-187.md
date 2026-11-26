@@ -20,3 +20,7 @@ Do not repeat Family B arithmetic or enumerate another synthetic family. The liv
 
 ## One next action
 Research Director freezes the joint-profile adequacy rule or closes toy enumeration; obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader. Keep J11 queued.
+
+
+### Cycle #187 configuration correction — 2026-11-26 16:57 ET
+A full read of the current main-branch `config/claude.md` found it still says translation-first in both its standing instructions and its stated priority order. That conflicts with the explicit source-language-first goal in the current ChatGPT config, homepage and user's direction. PR #148's review-branch versions of `config/claude.md` and `config/research-department.md` correctly make source-language reading the immediate first objective and English translation second after held-out validation and independent review. Those corrections are review-only and are not on main yet. Do not describe Claude's main config as already source-first until the PR is merged.
