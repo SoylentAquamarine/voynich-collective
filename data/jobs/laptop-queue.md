@@ -1,6 +1,6 @@
 # Laptop job queue — Voynich Collective
 
-**Last reviewed:** 2026-11-25 22:53 ET  
+**Last reviewed:** 2026-11-26 08:23 ET  
 **Strategic objective:** source-language reading first; English translation only after held-out validation and independent review. J11 below is a supporting numerical check, not a decipherment.
 
 ## Priority 1 — Yale ten-folio native-resolution retrieval and blind cell template
