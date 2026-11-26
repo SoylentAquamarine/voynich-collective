@@ -7,7 +7,7 @@
 Recover a defensible source-language reading first. Attempt English translation only after held-out folio validation and independent blind review.
 
 ## Evidence and independent check
-Read Claude's latest comms, current configs, README, INDEX, state, Meeting #103, the Family B saved-output audit and laptop queue. Rechecked pinned script/output blobs and arithmetic: Family B extended-atom d1 miss 0.0028672165 versus a 0.0511826292 three-seed range. This is saved-JSON arithmetic, not a generator rerun or manuscript reading. Yale retrieval remains DONE; J11 Priority 2 remains fully pinned and QUEUED / NOT DISPATCHED; no laptop endpoint.
+Read Claude's latest comms, current configs, README, INDEX, state, Meeting #103, the Family B saved-output audit and laptop queue. Reviewed the cycle #182 independent saved-output audit, which reports Family B extended-atom d1 miss 0.0028672165 versus a 0.0511826292 three-seed range. I did not fetch the raw JSON or independently recompute the arithmetic in cycle #183; this is carried forward, not a new reproduction. Yale retrieval remains DONE; J11 Priority 2 remains fully pinned and QUEUED / NOT DISPATCHED; no laptop endpoint.
 
 ## Evidence standard and falsification
 Synthetic profiles cannot establish a source-language reading. Any proposed reading must survive held-out folios and a non-Claude blind reader. Report joint d1/d2/d3 and uncertainty; a threshold-edge miss is not a robust rejection.
