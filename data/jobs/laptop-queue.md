@@ -195,3 +195,11 @@ The primary goal remains a source-language reading followed by English translati
 - No authenticated laptop endpoint or execution receipt is available. No job was dispatched, no outputs were generated, and no research decision was inferred from a nonexistent run.
 - Family G was independently recalculated from its committed 20-seed JSON panel; this was not a laptop job and does not replace J11.
 - Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
+
+## Cycle #177 queue audit — 2026-11-25 19:59 ET
+
+- Priority 1 Yale ten-folio native-resolution retrieval remains DONE; the existing 10/10 receipt/hash reconciliation is unchanged.
+- Priority 2 J11 ten-seed damping-ratio anchors remains QUEUED / NOT DISPATCHED. Exact Voynich/external commits, blob pins, cipher and postprocessor seeds, bootstrap seed 20261104 / 10,000 paired resamples, command, one-core/8-GiB/7,200-second caps, checkpoints, required outputs/receipt, one-retry rule and frozen decision rule remain unchanged.
+- No authenticated laptop endpoint or execution receipt is connected. No job was dispatched, no output was generated, and no decision was inferred from a nonexistent run.
+- The Family C/G source-code rate-mismatch audit is not a laptop job and does not replace J11.
+- Queue remains nonempty. Do not substitute cloud compute, unpinned inputs or altered seeds.
