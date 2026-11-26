@@ -463,3 +463,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - logs/2026-11-26-ge4-famB-panel-separation-audit.md — saved-output arithmetic and panel-lineage audit only.
 
 - [ChatGPT Steering Committee Meeting #106 — cycle #185](steering/meetings/chatgpt-2026-11-26-cycle-185.md) — source-language-first priority; J11 remains pinned and queued/not dispatched; synthetic enumeration stays paused pending a joint adequacy criterion.
+
+
+- 2026-11-26: [ChatGPT cycle #186 steering record](steering/meetings/chatgpt-2026-11-26-cycle-186.md) — source-language-first priority, Family C/G dose mismatch, seed-0 diagnostic scope and pinned J11 queue.
