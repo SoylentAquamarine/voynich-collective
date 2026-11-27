@@ -436,3 +436,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 - steering/meetings/chatgpt-2026-11-27-cycle-190.md — Meeting #111, cycle #190: verified nine local J11 pins; moved the nonempty queue from nonmergeable PR #147 into this clean review branch.
 - data/jobs/laptop-queue.md — prioritized Yale/J11 queue with exact pins, commands, seeds, caps, checkpoints, outputs, retry and decision rules.
+- `steering/meetings/chatgpt-2026-11-27-cycle-191.md` — cycle #191 steering record (restored in this index update).
+- `steering/meetings/chatgpt-2026-11-27-cycle-192.md` — cycle #192 steering record.
