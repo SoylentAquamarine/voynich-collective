@@ -1,6 +1,6 @@
 # Voynich laptop job queue
 
-**Last reviewed:** 2026-11-27 01:58 ET  
+**Last reviewed:** 2026-11-27 04:59 ET  
 **Primary objective:** source-language reading first; English translation only after held-out folio validation and independent review. J11 is a supporting simulator check, not a decipherment.
 
 ## Priority 1 — Yale ten-folio native retrieval
@@ -26,7 +26,7 @@ No further Yale retrieval is scheduled. Do not commit image bytes or infer readi
 
 - Voynich checkout commit: 32418169d1dd787108f85d2f718ec08901ec89b1.
 - External checkout: lrozanova/voynich-units at commit 956a7c4fc39981f4d116fa3f4edfccce6d065571.
-- External pin is carried forward from the precommitted queue; this cycle independently rechecked the local blobs, not the external checkout.
+- External pin was re-fetched at the exact commit on 2026-11-27 04:59 ET; all four listed external Git blob SHAs match. This verifies file identity only, not execution or scientific output.
 
 ### Local pinned blobs (verified against current main)
 
