@@ -18,9 +18,9 @@ translation progress by themselves.
 
 ## Priority order
 
-1. **Translate the manuscript into English.** First recover defensible source-
-   language readings, then translate them faithfully. Do not substitute an
-   interesting statistic or a plausible word resemblance for this goal.
+1. **Recover a defensible source-language reading first.** Attempt an English
+   translation only after held-out folio validation and independent blind review.
+   Do not substitute an interesting statistic or plausible word resemblance for either step.
 2. **Document the work on the public website.** Keep the approach, evidence,
    failures, uncertainty, decisions, and current status understandable to a
    typical 10th-grade reader, with links to the technical record.
