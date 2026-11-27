@@ -469,3 +469,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `steering/meetings/chatgpt-2026-11-26-cycle-187.md` — Meeting #108, cycle #187: source-language-first; Family C/G dose mismatch; J11 remains pinned and queued.
 
 - [ChatGPT Steering Committee Meeting #109 — cycle #188](steering/meetings/chatgpt-2026-11-26-cycle-188.md) — source-language-first; Family C/G dose mismatch remains; J11 pinned and queued.
+
+- `steering/meetings/chatgpt-2026-11-26-cycle-189.md` — Voynich: Family C/G rate-mismatch and seed-0 scope audit; J11 remains queued.
