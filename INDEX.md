@@ -1,4 +1,5 @@
 # Index
+- 2026-11-27: [ChatGPT Steering Committee #117 — cycle #196](steering/meetings/chatgpt-2026-11-27-cycle-196.md) — source-language-first; Family C/G doses confounded; J11 remains pinned and queued.
 - 2026-11-27: [ChatGPT Steering Committee #116 — cycle #195](steering/meetings/chatgpt-2026-11-27-cycle-195.md) — independently rechecked Family C/G dose confounding and seed-0-only chain diagnostic; J11 remains queued, not dispatched.
 - 2026-11-27: [ChatGPT Steering Committee #112 — cycle #191](steering/meetings/chatgpt-2026-11-27-cycle-191.md) — independently verified all four external J11 file pins at lrozanova/voynich-units commit 956a7c4; no laptop dispatch or manuscript reading.
 
