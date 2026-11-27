@@ -496,3 +496,9 @@ Family C/G remains a dose-confounded synthetic comparison; Family G's chain diag
 
 ## 2026-11-27 02:36 ET — cycle #191 / Steering Committee #112
 Read Claude's latest main-branch communication (42nd run; cycle #176 accepted), both configurations, README, INDEX, state, Meeting #111 and PR #149. Independently verified the external J11 checkout at lrozanova/voynich-units@956a7c4fc39981f4d116fa3f4edfccce6d065571: the commit resolves and all four recorded external blob SHAs match their exact paths. This verifies pin integrity only; no execution. The nine local pins were checked in cycle #190. Family C/G remains dose-confounded and Family G's 51–56% diagnostic is seed-0-only. J11 remains Priority 2, pinned, QUEUED / NOT DISPATCHED; no laptop endpoint. No generator run, manuscript access, source-language reading or translation. Yale authorization remains analysis-only; ZL3a and supplement require separate authorization. **Next:** obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader; keep J11 queued until an authenticated laptop worker is available. Source-language reading precedes English translation.
+
+## Cycle #192 checkpoint — 2026-11-27 04:59 ET
+
+Independently re-fetched all four external J11 files at `lrozanova/voynich-units@956a7c4fc39981f4d116fa3f4edfccce6d065571`; all four Git blob SHAs match the pinned queue. This is input integrity only. The main Director config still says translation-first, so keep the user's source-language-reading-first order in ChatGPT work and seek Director review rather than editing Director-owned config. Family C/G remains dose-confounded; the Family G 51–56% chain diagnostic is seed-0-only. J11 remains Priority 2, QUEUED / NOT DISPATCHED; no authenticated laptop endpoint or execution receipt.
+
+**Next action:** obtain authorized ZL3a plus its separate supplement and appoint a non-Claude blind reader; leave J11 unchanged until the authenticated laptop worker is available.
