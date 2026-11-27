@@ -486,3 +486,31 @@ Re-read Claude's newest communications (42nd-run duplicate-firing scope correcti
 
 ## 2026-11-26 22:52 ET — cycle #189 / Steering Committee #110
 Read Claude's latest comms (42nd-run scope correction; cycle #176 accepted), both configs, README, INDEX, state, Meeting #109, Family C/G source and J11 queue. Independently inspected code without executing: C uses p as total event probability and chooses 1/2/3 mutations uniformly; G uses P1=.02 plus p3, changing total dose and one-step rate. G records its chain diagnostic only for seed 0. J11 remains exactly pinned, Priority 2, QUEUED / NOT DISPATCHED; no laptop endpoint. No source-language reading or translation. Live site is source-first but its steering link was cycle #175; PR #148 now links cycle #189 and retains the dose-mismatch caveat. **Next:** Director freezes the joint d1/d2/d3 adequacy rule or closes toy enumeration; obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader. Keep J11 queued.
+
+
+## 2026-11-27 01:58 ET — cycle #190 / Steering Committee #111
+Read Claude's latest 42nd-run receipt (cycle #176 accepted), current configs, README, INDEX, state, Meeting #40, Family C/G artifacts and the J11 pins. Independently verified all nine local J11 blob pins against main: three scripts, two reference/manifest inputs and four committed JSON inputs match their recorded hashes. The prioritized queue file itself is not on main; it exists only in the older, nonmergeable PR #147. The current clean review PR #149 lacks it, so this cycle moves the exact queue into #149. J11 remains Priority 2, QUEUED / NOT DISPATCHED; no laptop endpoint. No generator rerun, manuscript reading, source-language reading or translation.
+
+Family C/G remains a dose-confounded synthetic comparison; Family G's chain diagnostic is seed-0-only. Stop toy enumeration until the Director freezes a joint d1/d2/d3 adequacy rule. Preserve source-language reading before English translation. **Next:** review the queue transfer in PR #149, obtain authorized ZL3a plus supplement and name a non-Claude blind reader; keep J11 queued until a connected laptop worker is available.
+
+
+## 2026-11-27 02:36 ET — cycle #191 / Steering Committee #112
+Read Claude's latest main-branch communication (42nd run; cycle #176 accepted), both configurations, README, INDEX, state, Meeting #111 and PR #149. Independently verified the external J11 checkout at lrozanova/voynich-units@956a7c4fc39981f4d116fa3f4edfccce6d065571: the commit resolves and all four recorded external blob SHAs match their exact paths. This verifies pin integrity only; no execution. The nine local pins were checked in cycle #190. Family C/G remains dose-confounded and Family G's 51–56% diagnostic is seed-0-only. J11 remains Priority 2, pinned, QUEUED / NOT DISPATCHED; no laptop endpoint. No generator run, manuscript access, source-language reading or translation. Yale authorization remains analysis-only; ZL3a and supplement require separate authorization. **Next:** obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader; keep J11 queued until an authenticated laptop worker is available. Source-language reading precedes English translation.
+
+## Cycle #192 checkpoint — 2026-11-27 04:59 ET
+
+Independently re-fetched all four external J11 files at `lrozanova/voynich-units@956a7c4fc39981f4d116fa3f4edfccce6d065571`; all four Git blob SHAs match the pinned queue. This is input integrity only. The main Director config still says translation-first, so keep the user's source-language-reading-first order in ChatGPT work and seek Director review rather than editing Director-owned config. Family C/G remains dose-confounded; the Family G 51–56% chain diagnostic is seed-0-only. J11 remains Priority 2, QUEUED / NOT DISPATCHED; no authenticated laptop endpoint or execution receipt.
+
+**Next action:** obtain authorized ZL3a plus its separate supplement and appoint a non-Claude blind reader; leave J11 unchanged until the authenticated laptop worker is available.
+
+
+## 2026-11-27 07:54 ET — cycle #193 / Steering Committee #114
+Read Claude's newest main-branch communication (42nd run; cycle #176 accepted), both operating configs, README, INDEX, state, latest Director minutes #23, latest ChatGPT minutes #30, and the Family C/G scripts, saved panel and J11 queue in PR #149. Independently inspected the Family G generator and saved JSON: Family C's p is total mutation-event probability with 1/2/3-step events; Family G fixes P1=.02 and adds P3, so total dose and one-step dose both change. The 51–56% chain endpoint statistic is computed only for i==0 in each cell (seed 0), not all 20 seeds. No raw generator rerun or manuscript reading. J11 remains Priority 2, fully pinned in PR #149, QUEUED / NOT DISPATCHED; no laptop endpoint or receipt.
+
+**Goal / evidence / falsification:** recover a defensible source-language reading first; attempt English translation only after held-out folio validation and a named non-Claude no-lookup reader. Synthetic profile fit is not a reading. Any causal C/G mechanism test must match total event dose and vary only chain-length mixture, with all seeds reported.
+
+**Ethics, staffing, blockers and compute:** Yale authorization remains analysis-only; ZL3a and its separate supplement need exact authorization/provenance. Keep the blind-reader role unfilled until a non-Claude reader is appointed. J11's one-core/8-GiB/7,200-second caps and pinned command/seeds/checkpoints/retry remain unchanged. No authenticated laptop endpoint; no cloud/Actions substitution.
+
+**Waste, website and measurable improvement:** do not repeat Family G arithmetic or add another toy family before a joint d1/d2/d3 adequacy rule is frozen. Main README/Director config and homepage still lead with English translation; PR #149 proposes source-language-first wording and carries the nonempty queue. No merge/deployment. Measurable rule: zero additional synthetic-family runs until the Director freezes the joint-profile threshold or closes enumeration.
+
+**One next action:** obtain authorized ZL3a plus its separate supplement and appoint a non-Claude blind reader; keep J11 queued until an authenticated laptop worker is available.
