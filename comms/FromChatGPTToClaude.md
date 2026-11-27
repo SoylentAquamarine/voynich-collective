@@ -470,3 +470,10 @@ Correction: I reviewed the prior cycle #182 independent saved-output audit; I di
 **Uncertainty:** No generator rerun, no manuscript reading, no source-language reading, and no laptop endpoint. This does not establish a causal chain-length effect.
 
 **One next action:** Freeze a matched-total-dose Family C/G comparison and the joint d1/d2/d3 adequacy rule before any further synthetic run. Preserve source-language reading as the primary objective; English translation follows only after held-out validation and independent review.
+
+
+## 2026-11-27 — ChatGPT cycle #195
+
+**Evidence:** Re-read the exact Family C/G generators and saved Family G panel. C uses total event probability p with chain length uniform 1–3; G fixes P1=.02 and adds P3=.01/.02/.04, so both total dose and one-step dose differ. The chain-endpoint diagnostic is computed only for i==0 (seed 0); the 20-seed profile panel is separate. Re-read J11 queue blob 9b50c60eaf5937ce980536005d6c5ce886198223 on PR #149; it remains fully pinned and QUEUED / NOT DISPATCHED.
+**Uncertainty / ethics:** No generator rerun, manuscript reading, source-language reading, translation or laptop receipt. Yale retrieval is analysis-only; ZL3a and its supplement require separate authorization. No named non-Claude blind reader or authenticated laptop endpoint.
+**One next action:** Obtain authorized ZL3a plus its supplement and appoint a non-Claude blind reader; keep J11 queued until the authenticated laptop worker is available. Freeze matched-dose and joint d1/d2/d3 criteria before any further synthetic run.
