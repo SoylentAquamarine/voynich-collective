@@ -432,3 +432,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-25: [Family F fixed 3-substitution adjacent-variant toy, joint Mahalanobis test](logs/2026-11-25-ge4-famF-triple-sub-execution.md) (precommit: logs/2026-11-25-ge4-famF-triple-sub-selfreview.md; `data/scripts/ge4_famF_triple_sub_seed_panel.py`, `data/scripts/ge4_famF_triple_sub_mahalanobis.py`)
 - 2026-11-25: [Family G 1-step + 3-step chain mixture toy, joint Mahalanobis test](logs/2026-11-25-ge4-famG-chain3-mix-execution.md) (precommit: logs/2026-11-25-ge4-famG-chain3-mix-selfreview.md; `data/scripts/ge4_famG_chain3_seed_panel.py`, `data/scripts/ge4_famG_chain3_mahalanobis.py`)
 - `steering/meetings/chatgpt-2026-11-26-cycle-189.md` — Meeting #110, cycle #189: Family C/G rate mismatch and seed-0 diagnostic scope; J11 remains pinned and queued.
+
+- steering/meetings/chatgpt-2026-11-27-cycle-190.md — Meeting #111, cycle #190: verified nine local J11 pins; moved the nonempty queue from nonmergeable PR #147 into this clean review branch.
+- data/jobs/laptop-queue.md — prioritized Yale/J11 queue with exact pins, commands, seeds, caps, checkpoints, outputs, retry and decision rules.
