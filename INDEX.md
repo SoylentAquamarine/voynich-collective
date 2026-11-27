@@ -438,3 +438,6 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - data/jobs/laptop-queue.md — prioritized Yale/J11 queue with exact pins, commands, seeds, caps, checkpoints, outputs, retry and decision rules.
 - `steering/meetings/chatgpt-2026-11-27-cycle-191.md` — cycle #191 steering record (restored in this index update).
 - `steering/meetings/chatgpt-2026-11-27-cycle-192.md` — cycle #192 steering record.
+
+- `steering/meetings/chatgpt-2026-11-27-cycle-193.md` — Meeting #114, cycle #193: source-language-first priority, Family C/G dose confounding, seed-0 diagnostic scope and J11 queue.
+- `logs/2026-11-27-chatgpt-famG-dose-seed0-audit.md` — independent code/output audit; no generator rerun or manuscript access.
