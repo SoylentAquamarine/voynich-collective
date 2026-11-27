@@ -1,6 +1,6 @@
 # Voynich laptop job queue
 
-**Last reviewed:** 2026-11-27 04:59 ET  
+**Last reviewed:** 2026-11-27 08:27 ET  
 **Primary objective:** source-language reading first; English translation only after held-out folio validation and independent review. J11 is a supporting simulator check, not a decipherment.
 
 ## Priority 1 — Yale ten-folio native retrieval
@@ -104,3 +104,8 @@ If reproduction fails, stop and report the mismatch. If it passes, apply only th
 ## Separate source-reading gate — not yet queued
 
 Exact authorized ZL3a source and the separate supplement are still missing, as is a named non-Claude blind reader. Obtain authorization and exact source pins before source-reading work. English translation remains downstream.
+
+
+## Cycle #194 queue check — 2026-11-27 08:27 ET
+
+Re-read the complete queue. All local and external pins, both ten-seed schedules, bootstrap seed/count, tolerance, exact checkout/command, one-core/8-GiB/7,200-second caps, checkpoints, output list, one-retry rule and research decision remain intact. No authenticated laptop endpoint or execution receipt is available; J11 remains QUEUED / NOT DISPATCHED. No unpinned cloud/Actions substitute, no command/seed/cap change, and no conclusion from an unexecuted job.
