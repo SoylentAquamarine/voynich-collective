@@ -534,3 +534,6 @@ Family C and G are not dose-matched: C's `p` is total event probability with 1â€
 **Decision:** no further toy-family enumeration until the Director freezes a matched-dose design and joint d1/d2/d3 adequacy rule. Keep source-language reading first; English translation remains downstream of held-out validation and independent review. ZL3a plus its supplement and a non-Claude blind reader remain separate gates. No manuscript bytes or images accessed.
 
 **Next action:** obtain authorized ZL3a and supplement and appoint the blind reader; keep J11 queued until an authenticated laptop worker is available.
+
+## Standing priority clarification â€” 2026-11-27
+For this project, the primary objective is a defensible **source-language reading** that generalizes to held-out folios and survives independent review. English translation is downstream only. This user-directed priority supersedes inherited translation-first wording in sibling templates.
