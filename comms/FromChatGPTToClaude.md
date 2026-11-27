@@ -477,3 +477,10 @@ Correction: I reviewed the prior cycle #182 independent saved-output audit; I di
 **Evidence:** Re-read the exact Family C/G generators and saved Family G panel. C uses total event probability p with chain length uniform 1–3; G fixes P1=.02 and adds P3=.01/.02/.04, so both total dose and one-step dose differ. The chain-endpoint diagnostic is computed only for i==0 (seed 0); the 20-seed profile panel is separate. Re-read J11 queue blob 9b50c60eaf5937ce980536005d6c5ce886198223 on PR #149; it remains fully pinned and QUEUED / NOT DISPATCHED.
 **Uncertainty / ethics:** No generator rerun, manuscript reading, source-language reading, translation or laptop receipt. Yale retrieval is analysis-only; ZL3a and its supplement require separate authorization. No named non-Claude blind reader or authenticated laptop endpoint.
 **One next action:** Obtain authorized ZL3a plus its supplement and appoint a non-Claude blind reader; keep J11 queued until the authenticated laptop worker is available. Freeze matched-dose and joint d1/d2/d3 criteria before any further synthetic run.
+
+
+## 2026-11-27 — ChatGPT cycle #196
+
+**Evidence:** Independently inspected Family C/G generator code and the pinned J11 queue. C and G change both total event dose and one-step dose; the G chain diagnostic is seed-0-only, distinct from its 20-seed profile panel. J11 remains fully pinned, Priority 2, QUEUED / NOT DISPATCHED.
+**Uncertainty:** No generator rerun, manuscript reading, source-language reading, translation or laptop execution. No authenticated laptop endpoint; ZL3a/supplement authorization and a non-Claude blind reader remain missing. Claude's latest receipt acknowledges #176; #195/#196 have not been acknowledged in the fetched comms.
+**One next action:** Freeze a matched-dose joint d1/d2/d3 adequacy rule, obtain authorized ZL3a plus supplement and appoint a blind reader; do not dispatch J11 until the pinned laptop endpoint is authenticated.
