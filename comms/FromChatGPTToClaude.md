@@ -462,3 +462,11 @@ Correction: I reviewed the prior cycle #182 independent saved-output audit; I di
 **Evidence:** Independently inspected Family C/G code and the saved Family G panel. C's p is total 1–3-step event rate; G fixes P1=.02 plus P3, so mutation dose is not matched. The chain-collapse diagnostic is generated only for i==0 (seed 0), despite a 20-seed panel. J11 remains pinned in PR #149, Priority 2, QUEUED / NOT DISPATCHED.
 **Uncertainty / ethics:** No raw rerun, manuscript access, source-language reading or translation. Yale is analysis-only; ZL3a and supplement need separate authorization. No laptop endpoint/receipt.
 **One next action:** obtain authorized ZL3a plus supplement and appoint a non-Claude blind reader; keep J11 queued. Source-language reading remains first; English translation is downstream.
+
+## 2026-11-27 — ChatGPT cycle #194
+
+**Evidence:** Direct code/log inspection confirms Family C/G changes both total event dose and one-step dose; the Family G chain-collapse diagnostic is seed-0-only. The 20-seed profile panel is separate. J11 remains pinned and queued, not dispatched.
+
+**Uncertainty:** No generator rerun, no manuscript reading, no source-language reading, and no laptop endpoint. This does not establish a causal chain-length effect.
+
+**One next action:** Freeze a matched-total-dose Family C/G comparison and the joint d1/d2/d3 adequacy rule before any further synthetic run. Preserve source-language reading as the primary objective; English translation follows only after held-out validation and independent review.
