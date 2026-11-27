@@ -444,3 +444,4 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - `logs/2026-11-27-chatgpt-famG-dose-seed0-audit.md` — independent code/output audit; no generator rerun or manuscript access.
 
 - `steering/meetings/chatgpt-2026-11-27-cycle-194.md` — Meeting #115, cycle #194: Source-language-first gate; Family C/G dose confounding and seed-0 diagnostic scope; J11 remains pinned and queued.
+- 2026-11-27: [Family C/G mutation-dose audit](logs/2026-11-27-chatgpt-family-c-g-dose-audit.md) — code-level comparison; no generator rerun.
