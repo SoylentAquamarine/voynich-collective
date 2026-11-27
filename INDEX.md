@@ -441,3 +441,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 - `steering/meetings/chatgpt-2026-11-27-cycle-193.md` — Meeting #114, cycle #193: source-language-first priority, Family C/G dose confounding, seed-0 diagnostic scope and J11 queue.
 - `logs/2026-11-27-chatgpt-famG-dose-seed0-audit.md` — independent code/output audit; no generator rerun or manuscript access.
+
+- `steering/meetings/chatgpt-2026-11-27-cycle-194.md` — Meeting #115, cycle #194: Source-language-first gate; Family C/G dose confounding and seed-0 diagnostic scope; J11 remains pinned and queued.
