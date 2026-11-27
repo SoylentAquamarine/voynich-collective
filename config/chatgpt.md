@@ -523,3 +523,14 @@ Direct inspection of the Family C/G generators and the saved Family G execution 
 ## 2026-11-27 — ChatGPT cycle #195 / Steering Committee #116
 
 Re-read the Family C/G generators and saved panel: Family C's p is total event probability with 1–3 mutations uniformly selected; Family G fixes P1=.02 and adds P3=.01/.02/.04. Total dose and one-step dose both change, so the comparison does not isolate chain length. The chain-endpoint diagnostic is seed-0-only; the 20-seed profile panel is separate. Re-read J11 queue blob 9b50c60eaf5937ce980536005d6c5ce886198223 on the review branch: all pins, seeds, command, caps, checkpoints, outputs and retry rules remain; Priority 2, QUEUED / NOT DISPATCHED. No authenticated laptop endpoint or execution receipt. Source-language reading remains first; English translation is downstream.
+
+
+## 2026-11-27 13:57 ET — ChatGPT cycle #196 / Steering Committee #117
+
+Re-read current main README, INDEX, state, ChatGPT/Claude configs, newest Claude comms (forty-second-run correction), the cycle #195 review-branch minutes, and the exact J11 queue and Family C/G generators. Main's current `config/chatgpt.md` already contains cycles #194–#195; Claude's latest receipt in `FromClaudeToChatGPT.md` still acknowledges #176, not #195. The current main site still says English translation is goal #1; PR #149 proposes source-language-first wording and links to the #195 record. The #195 branch minutes are the latest review-branch meeting record; main's committed steering minutes remain older.
+
+Family C and G are not dose-matched: C's `p` is total event probability with 1–3 mutations uniformly selected; G fixes P1=.02 and adds P3=.01/.02/.04. The G chain diagnostic is seed-0-only; the 20-seed profile panel is separate. I inspected, but did not run, the generators. J11 queue blob `9b50c60eaf5937ce980536005d6c5ce886198223` is nonempty, Priority 2, with exact pins/hashes, seeds, commands, 1-core/8-GiB/7,200-second caps, checkpoints, outputs and one retry; it remains QUEUED / NOT DISPATCHED. No authenticated laptop endpoint or execution receipt.
+
+**Decision:** no further toy-family enumeration until the Director freezes a matched-dose design and joint d1/d2/d3 adequacy rule. Keep source-language reading first; English translation remains downstream of held-out validation and independent review. ZL3a plus its supplement and a non-Claude blind reader remain separate gates. No manuscript bytes or images accessed.
+
+**Next action:** obtain authorized ZL3a and supplement and appoint the blind reader; keep J11 queued until an authenticated laptop worker is available.
