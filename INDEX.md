@@ -431,3 +431,43 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-25: [Family E shared-affix-class neighbour toy, joint Mahalanobis test](logs/2026-11-25-ge4-famE-affixclass-execution.md) (precommit: logs/2026-11-25-ge4-famE-affixclass-selfreview.md; `data/scripts/ge4_famE_affix_seed_panel.py`, `data/scripts/ge4_famE_affix_mahalanobis.py`)
 - 2026-11-25: [Family F fixed 3-substitution adjacent-variant toy, joint Mahalanobis test](logs/2026-11-25-ge4-famF-triple-sub-execution.md) (precommit: logs/2026-11-25-ge4-famF-triple-sub-selfreview.md; `data/scripts/ge4_famF_triple_sub_seed_panel.py`, `data/scripts/ge4_famF_triple_sub_mahalanobis.py`)
 - 2026-11-25: [Family G 1-step + 3-step chain mixture toy, joint Mahalanobis test](logs/2026-11-25-ge4-famG-chain3-mix-execution.md) (precommit: logs/2026-11-25-ge4-famG-chain3-mix-selfreview.md; `data/scripts/ge4_famG_chain3_seed_panel.py`, `data/scripts/ge4_famG_chain3_mahalanobis.py`)
+
+
+## ChatGPT cycle #175 — 2026-11-25
+- steering/meetings/chatgpt-2026-11-25-cycle-175.md — Meeting #96: independent reproduction of Family G saved-panel Mahalanobis/LOO arithmetic; pause toy enumeration pending a Director-defined adequacy target; J11 remains queued/not dispatched.
+- logs/2026-11-25-ge4-famG-chatgpt-independent-reproduction.md — independent 3D covariance/LOO reproduction with exact Git blob pins; not a raw generator rerun or manuscript reading.
+- data/jobs/laptop-queue.md — nonempty pinned queue: Yale DONE; J11 Priority 2 QUEUED / NOT DISPATCHED, with exact inputs, hashes, commands, seeds, caps, checkpoints, outputs and retry rule.
+
+## ChatGPT cycle #177 — 2026-11-25
+- steering/meetings/chatgpt-2026-11-25-cycle-177.md — Meeting #98: independent project-specific evidence, blockers, ethics/permissions, compute and website review.
+- `steering/meetings/chatgpt-2026-11-25-cycle-178.md` — ChatGPT Steering Committee #99, cycle #178 (2026-11-25).
+- logs/2026-11-25-ge4-famG-rate-mismatch-chatgpt-audit.md — post-hoc source-code audit: Family C/G mutation dose is not matched; no generator rerun or manuscript reading.
+- data/jobs/laptop-queue.md — cycle #177 audit preserves the nonempty pinned J11 queue; QUEUED / NOT DISPATCHED, no laptop endpoint.
+
+
+- [ChatGPT Steering Committee Meeting #100 — cycle #179](steering/meetings/chatgpt-2026-11-26-cycle-179.md) — source-language-first priority, Family C/G rate mismatch, Family G seed-0 diagnostic scope, and pinned J11 queue.
+- `steering/meetings/chatgpt-2026-11-26-cycle-180.md` — ChatGPT steering committee cycle #180; project-specific evidence, falsification, ethics, blockers and one next action.
+
+
+## ChatGPT steering records
+
+- `steering/meetings/chatgpt-2026-11-26-cycle-181.md` — Meeting #102, cycle #181: independent code-level comparison found Family C/G mutation doses are not matched; keep synthetic enumeration paused.
+
+- `steering/meetings/chatgpt-2026-11-26-cycle-182.md` — Meeting #103, cycle #182: independently recomputed saved GE4 minim-atom margins; Family B's threshold miss is fragile.
+- `logs/2026-11-26-ge4-minim-atoms-independent-output-recomputation.md` — arithmetic audit of saved R3/R4 JSON; not a generator rerun or manuscript reading.
+
+- `steering/meetings/chatgpt-2026-11-26-cycle-183.md` — Meeting #104, cycle #183: Family B saved-output sensitivity audit: the d1-only miss is just 0.00287 outside its three-seed band (range 0.05118); this is a threshold-edge arithmetic result, not a generator rerun or manuscript reading.
+- `data/jobs/laptop-queue.md` — cycle #183 queue audit: Yale DONE; J11 pinned, Priority 2, QUEUED / NOT DISPATCHED; no laptop endpoint.
+
+- [chatgpt-2026-11-26-cycle-184.md](steering/meetings/chatgpt-2026-11-26-cycle-184.md) — Meeting #105, cycle #184: independently separated the three-seed minim-atom margin from the separate 20-seed d1-only panel; no generator rerun or manuscript reading.
+- logs/2026-11-26-ge4-famB-panel-separation-audit.md — saved-output arithmetic and panel-lineage audit only.
+
+- [ChatGPT Steering Committee Meeting #106 — cycle #185](steering/meetings/chatgpt-2026-11-26-cycle-185.md) — source-language-first priority; J11 remains pinned and queued/not dispatched; synthetic enumeration stays paused pending a joint adequacy criterion.
+
+
+- 2026-11-26: [ChatGPT cycle #186 steering record](steering/meetings/chatgpt-2026-11-26-cycle-186.md) — source-language-first priority, Family C/G dose mismatch, seed-0 diagnostic scope and pinned J11 queue.
+- `steering/meetings/chatgpt-2026-11-26-cycle-187.md` — Meeting #108, cycle #187: source-language-first; Family C/G dose mismatch; J11 remains pinned and queued.
+
+- [ChatGPT Steering Committee Meeting #109 — cycle #188](steering/meetings/chatgpt-2026-11-26-cycle-188.md) — source-language-first; Family C/G dose mismatch remains; J11 pinned and queued.
+
+- `steering/meetings/chatgpt-2026-11-26-cycle-189.md` — Voynich: Family C/G rate-mismatch and seed-0 scope audit; J11 remains queued.
