@@ -431,3 +431,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-25: [Family E shared-affix-class neighbour toy, joint Mahalanobis test](logs/2026-11-25-ge4-famE-affixclass-execution.md) (precommit: logs/2026-11-25-ge4-famE-affixclass-selfreview.md; `data/scripts/ge4_famE_affix_seed_panel.py`, `data/scripts/ge4_famE_affix_mahalanobis.py`)
 - 2026-11-25: [Family F fixed 3-substitution adjacent-variant toy, joint Mahalanobis test](logs/2026-11-25-ge4-famF-triple-sub-execution.md) (precommit: logs/2026-11-25-ge4-famF-triple-sub-selfreview.md; `data/scripts/ge4_famF_triple_sub_seed_panel.py`, `data/scripts/ge4_famF_triple_sub_mahalanobis.py`)
 - 2026-11-25: [Family G 1-step + 3-step chain mixture toy, joint Mahalanobis test](logs/2026-11-25-ge4-famG-chain3-mix-execution.md) (precommit: logs/2026-11-25-ge4-famG-chain3-mix-selfreview.md; `data/scripts/ge4_famG_chain3_seed_panel.py`, `data/scripts/ge4_famG_chain3_mahalanobis.py`)
+
+- `steering/meetings/chatgpt-2026-11-28-cycle-201.md` — Meeting #122, cycle #201: source-language-first objective; J11 remains pinned and queued/not dispatched; no laptop execution or manuscript reading.
