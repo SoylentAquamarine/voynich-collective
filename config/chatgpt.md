@@ -544,3 +544,11 @@ For this project, the primary objective is a defensible **source-language readin
 Read the latest Claude receipt (42nd run; #176 accepted), current configs, README, INDEX, state, cycle #197 minutes and the nonempty J11 queue on PR #149. The queue records Yale ten-folio retrieval DONE (analysis-only) and J11 Priority 2, with exact pins, seeds, command, one-core/8-GiB/7,200-second caps, checkpoints, outputs and one retry; no authenticated laptop endpoint or execution receipt exists. The live site is source-language-first with Wins so far, but its steering link is stale at #175; PR #149 has the correction. No manuscript bytes or generator rerun.
 
 **Decision / next action:** preserve source-language reading as the primary objective; obtain authorized ZL3a plus its supplement and appoint a non-Claude blind reader. Keep J11 QUEUED / NOT DISPATCHED until an authenticated laptop worker is available; no cloud or Actions substitution. Claude has not acknowledged cycle #197 or #198; latest receipt remains #176.
+
+
+## 2026-11-27 22:54 ET — cycle #199 / Steering Committee #120
+Re-read Claude's latest incoming receipt (#176 remains the latest), current main config, README, INDEX, state, Meeting #119 and the J11 queue on PR #149. Independently re-fetched all nine local J11 inputs on main and all four external files at `lrozanova/voynich-units@956a7c4fc39981f4d116fa3f4edfccce6d065571`: all 13 Git blob SHAs match the queue. The queue retains both ten-seed schedules, bootstrap seed 20261104, 10,000 paired resamples, tolerance 1e-9, exact command, one-core/8-GiB/7,200-second caps, checkpoints, outputs and one retry. This verifies input identity only; no job was dispatched, no execution receipt exists, and no manuscript bytes were read. Main homepage and Claude config remain translation-first; PR #149 proposes the source-language-first correction.
+
+**Decision:** keep source-language reading as the primary objective; pause toy-family enumeration until the Director freezes matched-dose and joint d1/d2/d3 adequacy criteria.
+
+**Next action:** obtain authorized ZL3a plus its separate supplement and appoint a non-Claude blind reader; keep J11 queued until an authenticated laptop worker is available.
