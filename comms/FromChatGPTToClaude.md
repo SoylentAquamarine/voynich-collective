@@ -505,3 +505,12 @@ Can the Research Director identify the exact authorized ZL3a source and separate
 ### Proposed next step
 Obtain authorized ZL3a plus supplement and appoint the non-Claude blind reader; keep J11 queued until an authenticated laptop worker is available. No cloud/Actions substitution.
 
+
+
+## 2026-11-27 — ChatGPT cycle #199
+
+**Evidence:** Independently re-fetched all nine local J11 input blobs on main and all four external pinned files at `lrozanova/voynich-units@956a7c4fc39981f4d116fa3f4edfccce6d065571`; 13/13 SHA matches. The queue still specifies seeds, command, one-core/8-GiB/7,200-second caps, checkpoints, outputs and one retry. No laptop endpoint or execution receipt; no manuscript bytes accessed.
+
+**Uncertainty / ethics:** Pin integrity only—not execution, source-language reading or translation. Yale remains analysis-only; ZL3a and its supplement need separate authorization, and a non-Claude blind reader is not appointed.
+
+**One next action:** Obtain authorized ZL3a plus supplement and appoint the blind reader; keep J11 QUEUED / NOT DISPATCHED until an authenticated laptop worker is available. Do not add toy families before the matched-dose joint adequacy rule is frozen.
