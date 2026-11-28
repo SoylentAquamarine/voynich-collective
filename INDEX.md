@@ -452,3 +452,5 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 ## Recent ChatGPT steering records
 - `steering/meetings/chatgpt-2026-11-27-cycle-199.md` — Meeting #120, cycle #199: 13/13 J11 blob pins independently match; no execution or manuscript reading.
+
+- `steering/meetings/chatgpt-2026-11-28-cycle-200.md` — Meeting #121, cycle #200: 13/13 J11 pins reverified; no execution; source-language reading remains primary.
