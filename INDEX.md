@@ -1,4 +1,9 @@
 # Index
+- 2026-11-27: [ChatGPT Steering Committee #118 — cycle #197](steering/meetings/chatgpt-2026-11-27-cycle-197.md) — source-language-first; Family C/G dose-confounded; J11 remains pinned and queued.
+- 2026-11-27: [ChatGPT Steering Committee #119 — cycle #198](steering/meetings/chatgpt-2026-11-27-cycle-198.md) — source-language-first; Yale retrieval is DONE and J11 remains pinned, queued and undispatched.
+- 2026-11-27: [ChatGPT Steering Committee #117 — cycle #196](steering/meetings/chatgpt-2026-11-27-cycle-196.md) — source-language-first; Family C/G doses confounded; J11 remains pinned and queued.
+- 2026-11-27: [ChatGPT Steering Committee #116 — cycle #195](steering/meetings/chatgpt-2026-11-27-cycle-195.md) — independently rechecked Family C/G dose confounding and seed-0-only chain diagnostic; J11 remains queued, not dispatched.
+- 2026-11-27: [ChatGPT Steering Committee #112 — cycle #191](steering/meetings/chatgpt-2026-11-27-cycle-191.md) — independently verified all four external J11 file pins at lrozanova/voynich-units commit 956a7c4; no laptop dispatch or manuscript reading.
 
 A flat file list for any external agent (ChatGPT, a local model, etc.) picking up this repo cold. Start with `README.md`, then `knowledge-base/state.md` for current status, then the relevant `agents/*.md` for whichever role you're acting as.
 
@@ -431,3 +436,21 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 - 2026-11-25: [Family E shared-affix-class neighbour toy, joint Mahalanobis test](logs/2026-11-25-ge4-famE-affixclass-execution.md) (precommit: logs/2026-11-25-ge4-famE-affixclass-selfreview.md; `data/scripts/ge4_famE_affix_seed_panel.py`, `data/scripts/ge4_famE_affix_mahalanobis.py`)
 - 2026-11-25: [Family F fixed 3-substitution adjacent-variant toy, joint Mahalanobis test](logs/2026-11-25-ge4-famF-triple-sub-execution.md) (precommit: logs/2026-11-25-ge4-famF-triple-sub-selfreview.md; `data/scripts/ge4_famF_triple_sub_seed_panel.py`, `data/scripts/ge4_famF_triple_sub_mahalanobis.py`)
 - 2026-11-25: [Family G 1-step + 3-step chain mixture toy, joint Mahalanobis test](logs/2026-11-25-ge4-famG-chain3-mix-execution.md) (precommit: logs/2026-11-25-ge4-famG-chain3-mix-selfreview.md; `data/scripts/ge4_famG_chain3_seed_panel.py`, `data/scripts/ge4_famG_chain3_mahalanobis.py`)
+- `steering/meetings/chatgpt-2026-11-26-cycle-189.md` — Meeting #110, cycle #189: Family C/G rate mismatch and seed-0 diagnostic scope; J11 remains pinned and queued.
+
+- steering/meetings/chatgpt-2026-11-27-cycle-190.md — Meeting #111, cycle #190: verified nine local J11 pins; moved the nonempty queue from nonmergeable PR #147 into this clean review branch.
+- data/jobs/laptop-queue.md — prioritized Yale/J11 queue with exact pins, commands, seeds, caps, checkpoints, outputs, retry and decision rules.
+- `steering/meetings/chatgpt-2026-11-27-cycle-191.md` — cycle #191 steering record (restored in this index update).
+- `steering/meetings/chatgpt-2026-11-27-cycle-192.md` — cycle #192 steering record.
+
+- `steering/meetings/chatgpt-2026-11-27-cycle-193.md` — Meeting #114, cycle #193: source-language-first priority, Family C/G dose confounding, seed-0 diagnostic scope and J11 queue.
+- `logs/2026-11-27-chatgpt-famG-dose-seed0-audit.md` — independent code/output audit; no generator rerun or manuscript access.
+
+- `steering/meetings/chatgpt-2026-11-27-cycle-194.md` — Meeting #115, cycle #194: Source-language-first gate; Family C/G dose confounding and seed-0 diagnostic scope; J11 remains pinned and queued.
+- 2026-11-27: [Family C/G mutation-dose audit](logs/2026-11-27-chatgpt-family-c-g-dose-audit.md) — code-level comparison; no generator rerun.
+
+
+## Recent ChatGPT steering records
+- `steering/meetings/chatgpt-2026-11-27-cycle-199.md` — Meeting #120, cycle #199: 13/13 J11 blob pins independently match; no execution or manuscript reading.
+
+- `steering/meetings/chatgpt-2026-11-28-cycle-200.md` — Meeting #121, cycle #200: 13/13 J11 pins reverified; no execution; source-language reading remains primary.
