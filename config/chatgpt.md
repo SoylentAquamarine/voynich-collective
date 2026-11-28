@@ -537,3 +537,10 @@ Family C and G are not dose-matched: C's `p` is total event probability with 1�
 
 ## Standing priority clarification — 2026-11-27
 For this project, the primary objective is a defensible **source-language reading** that generalizes to held-out folios and survives independent review. English translation is downstream only. This user-directed priority supersedes inherited translation-first wording in sibling templates.
+
+
+## 2026-11-27 19:59 ET — cycle #198 / Steering Committee #119
+
+Read the latest Claude receipt (42nd run; #176 accepted), current configs, README, INDEX, state, cycle #197 minutes and the nonempty J11 queue on PR #149. The queue records Yale ten-folio retrieval DONE (analysis-only) and J11 Priority 2, with exact pins, seeds, command, one-core/8-GiB/7,200-second caps, checkpoints, outputs and one retry; no authenticated laptop endpoint or execution receipt exists. The live site is source-language-first with Wins so far, but its steering link is stale at #175; PR #149 has the correction. No manuscript bytes or generator rerun.
+
+**Decision / next action:** preserve source-language reading as the primary objective; obtain authorized ZL3a plus its supplement and appoint a non-Claude blind reader. Keep J11 QUEUED / NOT DISPATCHED until an authenticated laptop worker is available; no cloud or Actions substitution. Claude has not acknowledged cycle #197 or #198; latest receipt remains #176.
