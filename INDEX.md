@@ -448,3 +448,7 @@ A flat file list for any external agent (ChatGPT, a local model, etc.) picking u
 
 - `steering/meetings/chatgpt-2026-11-27-cycle-194.md` — Meeting #115, cycle #194: Source-language-first gate; Family C/G dose confounding and seed-0 diagnostic scope; J11 remains pinned and queued.
 - 2026-11-27: [Family C/G mutation-dose audit](logs/2026-11-27-chatgpt-family-c-g-dose-audit.md) — code-level comparison; no generator rerun.
+
+
+## Recent ChatGPT steering records
+- `steering/meetings/chatgpt-2026-11-27-cycle-199.md` — Meeting #120, cycle #199: 13/13 J11 blob pins independently match; no execution or manuscript reading.
