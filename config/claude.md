@@ -15,9 +15,7 @@ plan, and continues productive work whether ChatGPT responds or not.
 
 - Treat a defensible English translation as the destination, with decipherment
   into the source language as the necessary preceding step.
-- Follow the priority order in `research-department.md`: translation first,
-  complete public website documentation second, and publication of useful
-  intermediate discoveries third.
+- Follow the priority order in `research-department.md`: source-language reading first; held-out validation and independent review second; English translation only after those gates; public documentation and useful intermediate discoveries throughout.
 - Prefer questions that can change the route toward meaning over additional
   descriptive metrics with no decision attached.
 - Maintain one primary objective and a bounded sidequest queue.
